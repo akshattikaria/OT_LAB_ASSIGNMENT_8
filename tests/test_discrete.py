@@ -1,11 +1,13 @@
 import random
 import unittest
+from dataclasses import replace
 import numpy as np
 
 from discopt.model import Knapsack,audit
 from discopt.data import teaching,controls,generate
 from discopt.solvers import SOLVERS,branch_bound,dynamic_programming,exhaustive,fractional_bound,density_order
 from discopt.qubo import QUBO,knapsack_qubo,enumerate_qubo,maxcut_qubo
+from discopt.supplement import feature_dataset,feature_select
 
 
 class KnownAnswers(unittest.TestCase):
@@ -74,6 +76,29 @@ class Validation(unittest.TestCase):
         for x in (None,[0],[np.nan,0,0,0]):self.assertFalse(audit(teaching(),x)['feasible'])
     def test_audit_recomputes_values(self):
         a=audit(teaching(),[0,1,0,1]);self.assertEqual(a['value'],6);self.assertEqual(a['weight'],3)
+
+
+class FeatureAndScaling(unittest.TestCase):
+    def test_selection_and_fit_counts(self):
+        data=feature_dataset(0);results={m:feature_select(data,m) for m in ('baseline','forward','backward','exhaustive')}
+        for m,r in results.items():
+            self.assertEqual(len(r['selected']),3)
+            self.assertEqual(r['model_fits'],{'baseline':1,'forward':21,'backward':31,'exhaustive':56}[m])
+            self.assertGreaterEqual(r['validation_mse']+1e-12,results['exhaustive']['validation_mse'])
+    def test_test_labels_do_not_change_selection(self):
+        data=feature_dataset(1);changed=dict(data);changed['ytest']=data['ytest']+100
+        for m in ('baseline','forward','backward','exhaustive'):
+            a=feature_select(data,m);b=feature_select(changed,m)
+            self.assertEqual(a['selected'],b['selected']);self.assertEqual(a['theta'],b['theta'])
+    def test_zero_features(self):
+        data=feature_dataset(2)
+        for m in ('baseline','forward','backward','exhaustive'):
+            r=feature_select(data,m,k=0);self.assertEqual(r['selected'],[]);self.assertEqual(len(r['theta']),1)
+    def test_scaled_integer_units_preserve_optimum(self):
+        p=generate(20,71);ref=audit(p,dynamic_programming(p).selection)['value']
+        for factor in (1,10,100):
+            q=replace(p,weights=tuple(w*factor for w in p.weights),capacity=p.capacity*factor)
+            r=dynamic_programming(q);self.assertEqual(audit(q,r.selection)['value'],ref)
 
 
 class QuantumMapping(unittest.TestCase):

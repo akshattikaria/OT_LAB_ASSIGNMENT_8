@@ -1,7 +1,7 @@
 {
-  "original_commit": "3d170da82844171f67691db27df5ffa1c5c53c9b",
-  "original_author_date": "2026-11-03T05:51:56Z",
-  "original_subject": "[AI:ChatGPT] Reject unsafe QUBO coefficient ranges and add regression check",
+  "original_commit": "dec1e243b392ed96add8f40986889062aa587f7d",
+  "original_author_date": "2026-11-03T06:02:00Z",
+  "original_subject": "[AI:ChatGPT] Complete Track B benchmarks and quantum handoff",
   "track": "B",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/B/history.bundle",
@@ -12,14 +12,29 @@
       "sha": "bc077c9b77f7bb72a3f522e003807e579f6916ee"
     },
     {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "5f0e2ef45228977bce30025d68b863a4f7a6ccb1"
+    },
+    {
       "path": "discopt/__init__.py",
       "mode": "100644",
       "sha": "f580a9a4e882eabc0d7dda196d1e7882f9bbd5a3"
     },
     {
+      "path": "discopt/__main__.py",
+      "mode": "100644",
+      "sha": "de2b9b751033e80c5cd4d7ec6b709d0c07c0fd80"
+    },
+    {
       "path": "discopt/data.py",
       "mode": "100644",
       "sha": "782c0bd5bd6ec22a518890b65c67741ad8c58bb3"
+    },
+    {
+      "path": "discopt/experiment.py",
+      "mode": "100644",
+      "sha": "420f1c754f5fe8a2e247e4cd8e87634ca1b5ef2c"
     },
     {
       "path": "discopt/model.py",
@@ -32,9 +47,59 @@
       "sha": "9717a3fbf1c64eb930c9d7defa61039fd68398e4"
     },
     {
+      "path": "discopt/report.py",
+      "mode": "100644",
+      "sha": "bf28f03aaf6a7d6d7f796008d6472ebc94333fe9"
+    },
+    {
       "path": "discopt/solvers.py",
       "mode": "100644",
       "sha": "a64c6fb30e75de95a0ea80a66b2146604fc366da"
+    },
+    {
+      "path": "discopt/supplement.py",
+      "mode": "100644",
+      "sha": "530ae65e399c6965026003072c17208d889c9bc1"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "bbbccfa680c7db770f258c82b41a159c2a6265c8"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "c9864f1c1e5d1d8eccee611646ccdb424e70c20d"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "d0eac6e85f6ce24336f9cf850c82504018af281a"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "3b12a7352abbda353437fd26d5e39b6a138e8f25"
+    },
+    {
+      "path": "docs/TRACK_C_HANDOFF.md",
+      "mode": "100644",
+      "sha": "5adb52d7668be347b5d48d906d2e5e4491293188"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "060ba2c23ebccc151713c06f83730d93688538c1"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "1f84adbcc8e55b1712b3e8a4762d0e451a617fa1"
+    },
+    {
+      "path": "prompts/B/001_continue.md",
+      "mode": "100644",
+      "sha": "3ede4b994d55bfdc0dc6974fbb3ce20ccfff1dae"
     },
     {
       "path": "requirements.txt",
@@ -44,7 +109,7 @@
     {
       "path": "tests/test_discrete.py",
       "mode": "100644",
-      "sha": "68b1281368933d6581519c70be3e77588ec6c986"
+      "sha": "43c305d983cbe2bc348c10a779aea3c12bb649b2"
     }
   ]
 }
