@@ -1,0 +1,146 @@
+[
+  {
+    "method": "greedy",
+    "fraction": 0.2,
+    "budget_kib": 112,
+    "selected": [
+      1,
+      5
+    ],
+    "utility_ms": 0.2674852,
+    "cost_kib": 112.0,
+    "seconds": 0.00012842099999943457,
+    "trace": [
+      {
+        "index": 5,
+        "marginal_gain_ms": 0.22953249999999997,
+        "gain_per_kib": 0.0047819270833333325
+      },
+      {
+        "index": 1,
+        "marginal_gain_ms": 0.037952700000000006,
+        "gain_per_kib": 0.0005930109375000001
+      }
+    ],
+    "portfolio": "p_1_5"
+  },
+  {
+    "method": "ilp",
+    "fraction": 0.2,
+    "budget_kib": 112,
+    "selected": [
+      2
+    ],
+    "utility_ms": 0.31267580000000006,
+    "cost_kib": 100.0,
+    "seconds": 0.00794024999981957,
+    "status": 0,
+    "gap": 0.0,
+    "nodes": 1,
+    "dual_bound": -0.31267580000000006,
+    "portfolio": "p_2"
+  },
+  {
+    "method": "greedy",
+    "fraction": 0.4,
+    "budget_kib": 228,
+    "selected": [
+      0,
+      1,
+      5
+    ],
+    "utility_ms": 0.34628600000000004,
+    "cost_kib": 196.0,
+    "seconds": 0.0005703120000362105,
+    "trace": [
+      {
+        "index": 5,
+        "marginal_gain_ms": 0.22953249999999997,
+        "gain_per_kib": 0.0047819270833333325
+      },
+      {
+        "index": 0,
+        "marginal_gain_ms": 0.07880080000000006,
+        "gain_per_kib": 0.0009381047619047626
+      },
+      {
+        "index": 1,
+        "marginal_gain_ms": 0.037952700000000006,
+        "gain_per_kib": 0.0005930109375000001
+      }
+    ],
+    "portfolio": "p_0_1_5"
+  },
+  {
+    "method": "ilp",
+    "fraction": 0.4,
+    "budget_kib": 228,
+    "selected": [
+      0,
+      2
+    ],
+    "utility_ms": 0.38961940000000006,
+    "cost_kib": 184.0,
+    "seconds": 0.014787859999842112,
+    "status": 0,
+    "gap": 0.0,
+    "nodes": 1,
+    "dual_bound": -0.3896194,
+    "portfolio": "p_0_2"
+  },
+  {
+    "method": "greedy",
+    "fraction": 0.6,
+    "budget_kib": 340,
+    "selected": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "utility_ms": 0.39746275,
+    "cost_kib": 296.0,
+    "seconds": 0.00026718699996308715,
+    "trace": [
+      {
+        "index": 5,
+        "marginal_gain_ms": 0.22953249999999997,
+        "gain_per_kib": 0.0047819270833333325
+      },
+      {
+        "index": 0,
+        "marginal_gain_ms": 0.07880080000000006,
+        "gain_per_kib": 0.0009381047619047626
+      },
+      {
+        "index": 2,
+        "marginal_gain_ms": 0.08431272499999998,
+        "gain_per_kib": 0.0008431272499999998
+      },
+      {
+        "index": 1,
+        "marginal_gain_ms": 0.004816724999999966,
+        "gain_per_kib": 7.526132812499947e-05
+      }
+    ],
+    "portfolio": "p_0_1_2_5"
+  },
+  {
+    "method": "ilp",
+    "fraction": 0.6,
+    "budget_kib": 340,
+    "selected": [
+      0,
+      2,
+      3
+    ],
+    "utility_ms": 0.3976190500000001,
+    "cost_kib": 328.0,
+    "seconds": 0.006701754999994591,
+    "status": 0,
+    "gap": 0.0,
+    "nodes": 1,
+    "dual_bound": -0.39761905000000003,
+    "portfolio": "p_0_2_3"
+  }
+]

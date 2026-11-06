@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "baseline",
+    "source_sha256": "ec069d60d2808f53d2c17f2ee9fc04e9c9a2a87d8491162ba4e93cd2055847e4",
+    "command": [
+      "make",
+      "-j4",
+      "TOOLPREFIX=riscv64-linux-gnu-",
+      "KMEM_PERCPU=0",
+      "HASHBCACHE=0",
+      "kernel/kernel",
+      "fs.img"
+    ],
+    "seconds": 0.029080913000143482,
+    "kernel_bytes": 285928,
+    "kernel_sha256": "0fc4196d43fbec97fcbec596e3f46f2358af70666f29e66b4ee1e87593143ea6",
+    "filesystem_bytes": 2048000,
+    "filesystem_sha256": "1fb694876f6e0bb36b505b5067e83e9a28146e13b7af20f45cc7ffcecb668bac"
+  },
+  {
+    "variant": "percpu",
+    "source_sha256": "ec069d60d2808f53d2c17f2ee9fc04e9c9a2a87d8491162ba4e93cd2055847e4",
+    "command": [
+      "make",
+      "-j4",
+      "TOOLPREFIX=riscv64-linux-gnu-",
+      "KMEM_PERCPU=1",
+      "HASHBCACHE=0",
+      "kernel/kernel",
+      "fs.img"
+    ],
+    "seconds": 0.03345669899999848,
+    "kernel_bytes": 291928,
+    "kernel_sha256": "ddfbeab4d4fbf0889f697ae00b12885b0f8e2cbbe5dfaa6709db676e23f4365a",
+    "filesystem_bytes": 2048000,
+    "filesystem_sha256": "1fb694876f6e0bb36b505b5067e83e9a28146e13b7af20f45cc7ffcecb668bac"
+  },
+  {
+    "variant": "hash",
+    "source_sha256": "ec069d60d2808f53d2c17f2ee9fc04e9c9a2a87d8491162ba4e93cd2055847e4",
+    "command": [
+      "make",
+      "-j4",
+      "TOOLPREFIX=riscv64-linux-gnu-",
+      "KMEM_PERCPU=0",
+      "HASHBCACHE=1",
+      "kernel/kernel",
+      "fs.img"
+    ],
+    "seconds": 0.03203718299982938,
+    "kernel_bytes": 292264,
+    "kernel_sha256": "514a4889fa82aa763ad12ee4c46279856ef6eb62ea2b2118e55637ccf2390e54",
+    "filesystem_bytes": 2048000,
+    "filesystem_sha256": "1fb694876f6e0bb36b505b5067e83e9a28146e13b7af20f45cc7ffcecb668bac"
+  },
+  {
+    "variant": "combined",
+    "source_sha256": "ec069d60d2808f53d2c17f2ee9fc04e9c9a2a87d8491162ba4e93cd2055847e4",
+    "command": [
+      "make",
+      "-j4",
+      "TOOLPREFIX=riscv64-linux-gnu-",
+      "KMEM_PERCPU=1",
+      "HASHBCACHE=1",
+      "kernel/kernel",
+      "fs.img"
+    ],
+    "seconds": 0.0335285770001974,
+    "kernel_bytes": 294184,
+    "kernel_sha256": "6f909e08616bea7b5d524a150930792a018968a1a75e91ea3ae15281102b6066",
+    "filesystem_bytes": 2048000,
+    "filesystem_sha256": "1fb694876f6e0bb36b505b5067e83e9a28146e13b7af20f45cc7ffcecb668bac"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "runtime_repeats": 5,
+  "iterations_per_timing": 100000,
+  "compile_repeats": 3,
+  "variants": [
+    "baseline",
+    "fold_only",
+    "cse_only",
+    "dce_only",
+    "strength_only",
+    "fixed",
+    "greedy_order",
+    "dp_order"
+  ],
+  "families": [
+    "constant_chain",
+    "redundant",
+    "dead_heavy",
+    "mixed"
+  ],
+  "native_levels": [
+    "O0",
+    "O2"
+  ],
+  "language": "Own lexer/precedence parser; immutable lets, one return, up to eight uint64 arguments; pure straight-line +,-,*,bitwise and masked shifts; no loops, memory, division or I/O.",
+  "semantics": "Each result wraps modulo 2**64; shift counts mask with 63. No signed-overflow assumptions or floating-point reassociation.",
+  "cost_model": {
+    "arg": 1,
+    "const": 1,
+    "copy": 1,
+    "add": 1,
+    "sub": 1,
+    "mul": 4,
+    "xor": 1,
+    "and": 1,
+    "or": 1,
+    "shl": 1,
+    "shr": 1
+  },
+  "score_note": "Synthetic target-model cost, not measured CPU cycles; all instructions weight 1 except multiplication weight 4.",
+  "search": "Exactly one use of each of four passes. DP state includes used subset and canonical transformed SSA, verified against all 24 permutations. Optimality concerns this score only.",
+  "fairness": "Same source, varying-input native driver, number of iterations, seed and compiler flags for each within-level comparison. Runtime trial order is predeclared and shuffled. No best timing selection.",
+  "native_controls": "All eight variants timed at -O0; baseline and DP timed at -O2. -O0 isolates pedagogical pass effects; -O2 exposes overlap with host optimizations. Functions use GCC/Clang noinline attribute, no LTO.",
+  "counts": "IR count excludes final return and benchmark driver; straight-line IR executes each retained instruction once/invocation. Disassembly count is static native instructions, including padding, not retired hardware counters.",
+  "compile_time": "Python frontend+optimization+C generation measured per variant/repetition. Native compile time is per combined eight-variant translation unit and cannot be assigned to one variant.",
+  "validation": "33 edge/random input vectors per program; AST, IR and both native levels must agree for every variant. 64-iteration native driver check against AST, plus same-seed checksums for each timed run.",
+  "scale": "20 synthetic teaching programs in the main protocol. No production-C compiler, LLVM/GCC pass plugin, branch/loop optimization or whole-program optimality claim."
+}

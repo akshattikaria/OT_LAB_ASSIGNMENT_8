@@ -1,0 +1,42 @@
+{
+  "rows": 200000,
+  "seed": 241070005,
+  "repeats": 5,
+  "profile_repeats": 3,
+  "stream_size": 100,
+  "write_rows": 2000,
+  "write_repeats": 3,
+  "weights": {
+    "customer": 40,
+    "station": 15,
+    "confirmed": 15,
+    "status": 10,
+    "daily": 10,
+    "city": 10
+  },
+  "budget_fractions": [
+    0.2,
+    0.4,
+    0.6
+  ],
+  "indexes": {
+    "customer_time": "CREATE INDEX customer_time ON bookings(customer_id,slot,id)",
+    "station_time": "CREATE INDEX station_time ON bookings(station_id,slot)",
+    "status_time": "CREATE INDEX status_time ON bookings(status,slot)",
+    "station_cover": "CREATE INDEX station_cover ON bookings(station_id,slot,status,total_cents,energy_wh)",
+    "time_cover": "CREATE INDEX time_cover ON bookings(slot,status,total_cents,energy_wh)",
+    "confirmed_station": "CREATE INDEX confirmed_station ON bookings(station_id,slot,total_cents) WHERE status='confirmed'"
+  },
+  "queries": {
+    "customer": "SELECT id,slot,total_cents,status FROM bookings WHERE customer_id=?\n ORDER BY slot DESC,id DESC LIMIT 20",
+    "station": "SELECT COUNT(*),SUM(total_cents),SUM(energy_wh) FROM bookings\n WHERE station_id=? AND slot>=? AND slot<?",
+    "confirmed": "SELECT COUNT(*),SUM(total_cents) FROM bookings\n WHERE station_id=? AND status='confirmed' AND slot>=? AND slot<?",
+    "status": "SELECT id,slot,station_id,total_cents FROM bookings\n WHERE status=? AND slot>=? AND slot<? ORDER BY slot,id LIMIT 80",
+    "daily": "SELECT slot/24 AS day,COUNT(*),SUM(total_cents) FROM bookings\n WHERE slot>=? AND slot<? GROUP BY day ORDER BY day",
+    "city": "SELECT s.city,COUNT(*),SUM(b.total_cents) FROM stations AS s\n JOIN bookings AS b ON b.station_id=s.id\n WHERE s.city=? AND b.slot>=? AND b.slot<? AND b.status='confirmed'\n GROUP BY s.city ORDER BY s.city"
+  },
+  "timing": "perf_counter_ns around execute+fetchall only for per-query latencies; hashes outside timing. Batch throughput includes the sequential execute/fetch/Python loop, checks after timing. Warmup excludes initial runs; no cold disk/cache claim.",
+  "planner": "SQLite default cost planner with automatic_index=ON and full ANALYZE for every portfolio; no INDEXED BY hints or manual join-order forcing.",
+  "storage": "Budget limits selected index B-tree bytes from dbstat, in exact KiB units; total DB bytes and build/analyze costs reported separately. Data/primary keys/statistics are not charged to the discretionary index budget.",
+  "evaluation": "Two training parameter sets per family select indexes. Three held-out sets per family evaluate generalization. Matched deterministic query orders per repeat; fresh connection per portfolio/repeat; OS caches warm, pager cache 8 MiB. Unique portfolios timed once and shared by method labels."
+}

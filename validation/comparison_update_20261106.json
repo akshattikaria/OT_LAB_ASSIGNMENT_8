@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-06",
+  "shared_harness": "ai_tool_comparison/evaluate.py",
+  "results": [
+    "ai_tool_comparison/chatgpt_result_20261106.json",
+    "ai_tool_comparison/gemini_result_01.json"
+  ],
+  "both_original_candidates_passed": true,
+  "tests_per_candidate": 9,
+  "exhaustive_small_cases_per_candidate": 100,
+  "repairs_needed": false,
+  "paired_runtime_evidence": "ai_tool_comparison/benchmark_results.json",
+  "timed_function_calls": 56,
+  "integrated_audit": "validation/integration_audit.json",
+  "imported_files_verified": 2013,
+  "report_visual_review": "validation/report_visual_check.json",
+  "video_duration_s": 100.0,
+  "generation_latency_comparable": false
+}

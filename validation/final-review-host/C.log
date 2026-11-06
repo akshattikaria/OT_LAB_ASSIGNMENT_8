@@ -1,0 +1,37 @@
+test_bell_state (test_quantum.QuantumTests.test_bell_state) ... ok
+test_cnot_truth_table (test_quantum.QuantumTests.test_cnot_truth_table) ... ok
+test_dense_single_gate (test_quantum.QuantumTests.test_dense_single_gate) ... ok
+test_density_matches_outer_product (test_quantum.QuantumTests.test_density_matches_outer_product) ... ok
+test_density_single_gate_dense (test_quantum.QuantumTests.test_density_single_gate_dense) ... ok
+test_depolarizing_identity (test_quantum.QuantumTests.test_depolarizing_identity) ... ok
+test_fresh_classical_baselines (test_quantum.QuantumTests.test_fresh_classical_baselines) ... ok
+test_invalid_simulator_inputs (test_quantum.QuantumTests.test_invalid_simulator_inputs) ... ok
+test_little_endian_basis (test_quantum.QuantumTests.test_little_endian_basis) ... ok
+test_measurement_basis_y_and_mixed_axes (test_quantum.QuantumTests.test_measurement_basis_y_and_mixed_axes) ... ok
+test_metric_finite_difference (test_quantum.QuantumTests.test_metric_finite_difference) ... ok
+test_metric_global_phase_and_ry (test_quantum.QuantumTests.test_metric_global_phase_and_ry) ... ok
+test_metric_psd_and_rank (test_quantum.QuantumTests.test_metric_psd_and_rank) ... ok
+test_noisy_density_physical (test_quantum.QuantumTests.test_noisy_density_physical) ... ok
+test_pauli_dense_oracle (test_quantum.QuantumTests.test_pauli_dense_oracle) ... ok
+test_qaoa_gate_decomposition (test_quantum.QuantumTests.test_qaoa_gate_decomposition) ... ok
+test_qaoa_independent_dense_exponential (test_quantum.QuantumTests.test_qaoa_independent_dense_exponential) ... ok
+test_qnn_loss_chain_rule (test_quantum.QuantumTests.test_qnn_loss_chain_rule) ... ok
+test_qnn_reproducible_dataset (test_quantum.QuantumTests.test_qnn_reproducible_dataset) ... ok
+test_readout_endpoints (test_quantum.QuantumTests.test_readout_endpoints) ... ok
+test_rotation_unitarity (test_quantum.QuantumTests.test_rotation_unitarity) ... ok
+test_same_vqe_initialization (test_quantum.QuantumTests.test_same_vqe_initialization) ... ok
+test_seeded_born_sampling (test_quantum.QuantumTests.test_seeded_born_sampling) ... ok
+test_shift_analytic_ry (test_quantum.QuantumTests.test_shift_analytic_ry) ... ok
+test_shift_vqe_finite_difference (test_quantum.QuantumTests.test_shift_vqe_finite_difference) ... ok
+test_shot_study_counts_and_metrics (test_quantum.QuantumTests.test_shot_study_counts_and_metrics) ... ok
+test_spsa_average_directions (test_quantum.QuantumTests.test_spsa_average_directions) ... ok
+test_spsa_two_calls (test_quantum.QuantumTests.test_spsa_two_calls) ... ok
+test_track_b_exact_minima_and_bits (test_quantum.QuantumTests.test_track_b_exact_minima_and_bits) ... ok
+test_track_b_input_hashes (test_quantum.QuantumTests.test_track_b_input_hashes) ... ok
+test_vqe_dense_energy_and_bound (test_quantum.QuantumTests.test_vqe_dense_energy_and_bound) ... ok
+test_vqe_work_accounting (test_quantum.QuantumTests.test_vqe_work_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.295s
+
+OK

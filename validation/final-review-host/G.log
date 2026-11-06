@@ -1,0 +1,19 @@
+test_cache_identity (test_host.HostTests.test_cache_identity) ... ok
+test_duplicate_field_rejected (test_host.HostTests.test_duplicate_field_rejected) ... ok
+test_failed_guest_rejected (test_host.HostTests.test_failed_guest_rejected) ... ok
+test_guest_cpu_bounds (test_host.HostTests.test_guest_cpu_bounds) ... ok
+test_invalid_budgets_rejected (test_host.HostTests.test_invalid_budgets_rejected) ... ok
+test_missing_and_duplicate_records (test_host.HostTests.test_missing_and_duplicate_records) ... ok
+test_negative_and_invalid_clocks (test_host.HostTests.test_negative_and_invalid_clocks) ... ok
+test_operation_units (test_host.HostTests.test_operation_units) ... ok
+test_parse_actual_counter_types (test_host.HostTests.test_parse_actual_counter_types) ... ok
+test_pinned_upstream_blobs (test_host.HostTests.test_pinned_upstream_blobs) ... ok
+test_qemu_is_headless_isolated_guest (test_host.HostTests.test_qemu_is_headless_isolated_guest) ... ok
+test_saved_qemu_timebase (test_host.HostTests.test_saved_qemu_timebase) ... ok
+test_source_digest_tracks_content (test_host.HostTests.test_source_digest_tracks_content) ... ok
+test_unknown_schema_rejected (test_host.HostTests.test_unknown_schema_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.006s
+
+OK

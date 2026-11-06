@@ -1,0 +1,428 @@
+{
+  "seed": 241070005,
+  "candidate_count": 32,
+  "count": 20,
+  "policy": "Single comparison-boundary/equality or +/\u2212 AST operator inside functions; skip while descendants; distinct source lines; seeded shuffle before any mutation execution. No outcome-based filtering.",
+  "source_digest": "5185ab647ee8834178a4bb996829a8e7a92e994e1e62366299a5196054a6c72d",
+  "mutants": [
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        8,
+        "body",
+        0,
+        "body",
+        0,
+        "body",
+        0,
+        "test",
+        "values",
+        0
+      ],
+      "node_type": "Compare",
+      "line": 679,
+      "column": 19,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M01"
+    },
+    {
+      "path": "src/cachetools/keys.py",
+      "route": [
+        "body",
+        4,
+        "body",
+        1,
+        "body",
+        0,
+        "value",
+        "args",
+        0,
+        "left"
+      ],
+      "node_type": "BinOp",
+      "line": 52,
+      "column": 28,
+      "old": "Add",
+      "new": "Sub",
+      "original_sha256": "a4abf97ebc7523245d67c616d9f42886a40d09a52dd0582ae8435815a4f08224",
+      "id": "M02"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        12,
+        "body",
+        4,
+        "body",
+        4,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 242,
+      "column": 11,
+      "old": "NotEq",
+      "new": "Eq",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M03"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        10,
+        "body",
+        4,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 697,
+      "column": 11,
+      "old": "Gt",
+      "new": "GtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M04"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        10,
+        "body",
+        6,
+        "body",
+        3,
+        "body",
+        0,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 64,
+      "column": 15,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M05"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        16,
+        "body",
+        4,
+        "body",
+        3,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 503,
+      "column": 11,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M06"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        12,
+        "body",
+        8,
+        "body",
+        3,
+        "body",
+        1,
+        "value",
+        "args",
+        0
+      ],
+      "node_type": "BinOp",
+      "line": 282,
+      "column": 34,
+      "old": "Add",
+      "new": "Sub",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M07"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        10,
+        "body",
+        6,
+        "body",
+        3,
+        "orelse",
+        2,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 77,
+      "column": 15,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M08"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        10,
+        "body",
+        6,
+        "body",
+        3,
+        "orelse",
+        3,
+        "orelse",
+        0,
+        "value"
+      ],
+      "node_type": "BinOp",
+      "line": 84,
+      "column": 27,
+      "old": "Sub",
+      "new": "Add",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M09"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        4,
+        "body",
+        0,
+        "orelse",
+        0,
+        "value"
+      ],
+      "node_type": "Compare",
+      "line": 633,
+      "column": 19,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M10"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        2,
+        "body",
+        2,
+        "body",
+        0,
+        "value"
+      ],
+      "node_type": "Compare",
+      "line": 619,
+      "column": 19,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M11"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        5,
+        "body",
+        3,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 642,
+      "column": 11,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M12"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        14,
+        "body",
+        4,
+        "body",
+        2,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 362,
+      "column": 11,
+      "old": "NotEq",
+      "new": "Eq",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M13"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        10,
+        "body",
+        5,
+        "test",
+        "values",
+        1,
+        "values",
+        1
+      ],
+      "node_type": "Compare",
+      "line": 700,
+      "column": 50,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M14"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        12,
+        "body",
+        8,
+        "body",
+        3,
+        "body",
+        0,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 279,
+      "column": 15,
+      "old": "Eq",
+      "new": "NotEq",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M15"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        10,
+        "body",
+        6,
+        "body",
+        3,
+        "orelse",
+        1,
+        "test"
+      ],
+      "node_type": "Compare",
+      "line": 75,
+      "column": 15,
+      "old": "Gt",
+      "new": "GtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M16"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        16,
+        "body",
+        6,
+        "body",
+        3,
+        "test",
+        "operand"
+      ],
+      "node_type": "Compare",
+      "line": 529,
+      "column": 16,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M17"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        16,
+        "body",
+        10,
+        "body",
+        4,
+        "test",
+        "values",
+        1
+      ],
+      "node_type": "Compare",
+      "line": 566,
+      "column": 27,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M18"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        17,
+        "body",
+        7,
+        "body",
+        3,
+        "test",
+        "operand"
+      ],
+      "node_type": "Compare",
+      "line": 672,
+      "column": 16,
+      "old": "Lt",
+      "new": "LtE",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M19"
+    },
+    {
+      "path": "src/cachetools/__init__.py",
+      "route": [
+        "body",
+        16,
+        "body",
+        5,
+        "body",
+        0,
+        "body",
+        0,
+        "value"
+      ],
+      "node_type": "BinOp",
+      "line": 510,
+      "column": 22,
+      "old": "Add",
+      "new": "Sub",
+      "original_sha256": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+      "id": "M20"
+    }
+  ]
+}

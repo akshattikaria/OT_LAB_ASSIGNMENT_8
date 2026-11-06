@@ -1,0 +1,1810 @@
+{
+  "none": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          13,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          192,
+          "SCAN b"
+        ],
+        [
+          17,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          25,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          32,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          13,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          192,
+          "SCAN b"
+        ],
+        [
+          17,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          25,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          32,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    }
+  ],
+  "customer_time": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          63,
+          "SEARCH bookings USING INDEX customer_time (customer_id=?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          13,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          192,
+          "SCAN b"
+        ],
+        [
+          17,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          25,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          32,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          63,
+          "SEARCH bookings USING INDEX customer_time (customer_id=?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          13,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          192,
+          "SCAN b"
+        ],
+        [
+          17,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          25,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          32,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    }
+  ],
+  "station_time": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          54,
+          "SEARCH bookings USING INDEX station_time (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          54,
+          "SEARCH bookings USING INDEX station_time (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          152,
+          "SEARCH bookings USING INDEX station_time (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          35,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          152,
+          "SEARCH bookings USING INDEX station_time (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          23,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          9,
+          0,
+          108,
+          "SCAN s"
+        ],
+        [
+          13,
+          0,
+          54,
+          "SEARCH b USING INDEX station_time (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          54,
+          "SEARCH bookings USING INDEX station_time (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          54,
+          "SEARCH bookings USING INDEX station_time (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          152,
+          "SEARCH bookings USING INDEX station_time (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          35,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          152,
+          "SEARCH bookings USING INDEX station_time (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          23,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          9,
+          0,
+          108,
+          "SCAN s"
+        ],
+        [
+          13,
+          0,
+          54,
+          "SEARCH b USING INDEX station_time (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    }
+  ],
+  "status_time": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          146,
+          "SEARCH bookings USING INDEX status_time (ANY(status) AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          121,
+          "SEARCH bookings USING INDEX status_time (status=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          121,
+          "SEARCH bookings USING INDEX status_time (status=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          146,
+          "SEARCH bookings USING INDEX status_time (ANY(status) AND slot>? AND slot<?)"
+        ],
+        [
+          23,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          9,
+          0,
+          121,
+          "SEARCH b USING INDEX status_time (status=? AND slot>? AND slot<?)"
+        ],
+        [
+          21,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          29,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          36,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          146,
+          "SEARCH bookings USING INDEX status_time (ANY(status) AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          121,
+          "SEARCH bookings USING INDEX status_time (status=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          121,
+          "SEARCH bookings USING INDEX status_time (status=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          146,
+          "SEARCH bookings USING INDEX status_time (ANY(status) AND slot>? AND slot<?)"
+        ],
+        [
+          23,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          9,
+          0,
+          121,
+          "SEARCH b USING INDEX status_time (status=? AND slot>? AND slot<?)"
+        ],
+        [
+          21,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          29,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          36,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    }
+  ],
+  "station_cover": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          50,
+          "SEARCH bookings USING COVERING INDEX station_cover (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          50,
+          "SEARCH bookings USING COVERING INDEX station_cover (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          148,
+          "SEARCH bookings USING COVERING INDEX station_cover (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          33,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          148,
+          "SEARCH bookings USING COVERING INDEX station_cover (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          21,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          108,
+          "SCAN s"
+        ],
+        [
+          12,
+          0,
+          50,
+          "SEARCH b USING COVERING INDEX station_cover (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          50,
+          "SEARCH bookings USING COVERING INDEX station_cover (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          50,
+          "SEARCH bookings USING COVERING INDEX station_cover (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          148,
+          "SEARCH bookings USING COVERING INDEX station_cover (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          33,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          148,
+          "SEARCH bookings USING COVERING INDEX station_cover (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          21,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          108,
+          "SCAN s"
+        ],
+        [
+          12,
+          0,
+          50,
+          "SEARCH b USING COVERING INDEX station_cover (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    }
+  ],
+  "time_cover": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          142,
+          "SEARCH bookings USING INDEX time_cover (slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          142,
+          "SEARCH bookings USING INDEX time_cover (slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          142,
+          "SEARCH bookings USING INDEX time_cover (slot>? AND slot<?)"
+        ],
+        [
+          37,
+          0,
+          0,
+          "USE TEMP B-TREE FOR LAST TERM OF ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          131,
+          "SEARCH bookings USING COVERING INDEX time_cover (slot>? AND slot<?)"
+        ],
+        [
+          16,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          9,
+          0,
+          142,
+          "SEARCH b USING INDEX time_cover (slot>? AND slot<?)"
+        ],
+        [
+          22,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          30,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          37,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          142,
+          "SEARCH bookings USING INDEX time_cover (slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          142,
+          "SEARCH bookings USING INDEX time_cover (slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          5,
+          0,
+          142,
+          "SEARCH bookings USING INDEX time_cover (slot>? AND slot<?)"
+        ],
+        [
+          37,
+          0,
+          0,
+          "USE TEMP B-TREE FOR LAST TERM OF ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          131,
+          "SEARCH bookings USING COVERING INDEX time_cover (slot>? AND slot<?)"
+        ],
+        [
+          16,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          9,
+          0,
+          142,
+          "SEARCH b USING INDEX time_cover (slot>? AND slot<?)"
+        ],
+        [
+          22,
+          0,
+          0,
+          "BLOOM FILTER ON s (id=?)"
+        ],
+        [
+          30,
+          0,
+          36,
+          "SEARCH s USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          37,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    }
+  ],
+  "confirmed_station": [
+    {
+      "case": "train_customer_0",
+      "kind": "customer",
+      "params": [
+        17
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_0",
+      "kind": "station",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_0",
+      "kind": "confirmed",
+      "params": [
+        17,
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          45,
+          "SEARCH bookings USING COVERING INDEX confirmed_station (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_0",
+      "kind": "status",
+      "params": [
+        "pending",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          24,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_0",
+      "kind": "daily",
+      "params": [
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          13,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_0",
+      "kind": "city",
+      "params": [
+        "City01",
+        4000,
+        4168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          108,
+          "SCAN s"
+        ],
+        [
+          12,
+          0,
+          45,
+          "SEARCH b USING COVERING INDEX confirmed_station (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_customer_1",
+      "kind": "customer",
+      "params": [
+        877
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          20,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_station_1",
+      "kind": "station",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          192,
+          "SCAN bookings"
+        ]
+      ]
+    },
+    {
+      "case": "train_confirmed_1",
+      "kind": "confirmed",
+      "params": [
+        53,
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          3,
+          0,
+          45,
+          "SEARCH bookings USING COVERING INDEX confirmed_station (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    },
+    {
+      "case": "train_status_1",
+      "kind": "status",
+      "params": [
+        "confirmed",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          4,
+          0,
+          142,
+          "SEARCH bookings USING COVERING INDEX confirmed_station (ANY(station_id) AND slot>? AND slot<?)"
+        ],
+        [
+          34,
+          0,
+          0,
+          "USE TEMP B-TREE FOR ORDER BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_daily_1",
+      "kind": "daily",
+      "params": [
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          7,
+          0,
+          192,
+          "SCAN bookings"
+        ],
+        [
+          13,
+          0,
+          0,
+          "USE TEMP B-TREE FOR GROUP BY"
+        ]
+      ]
+    },
+    {
+      "case": "train_city_1",
+      "kind": "city",
+      "params": [
+        "City03",
+        8000,
+        8168
+      ],
+      "plan": [
+        [
+          8,
+          0,
+          108,
+          "SCAN s"
+        ],
+        [
+          12,
+          0,
+          45,
+          "SEARCH b USING COVERING INDEX confirmed_station (station_id=? AND slot>? AND slot<?)"
+        ]
+      ]
+    }
+  ]
+}

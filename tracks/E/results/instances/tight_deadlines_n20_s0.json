@@ -1,0 +1,255 @@
+{
+  "name": "tight_deadlines_n20_s0",
+  "slot_minutes": 15,
+  "prices": [
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "capacity_kw": [
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0,
+    63.0
+  ],
+  "vehicles": [
+    {
+      "id": "EV001",
+      "arrival": 24,
+      "departure": 37,
+      "required_slots": 10,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV002",
+      "arrival": 8,
+      "departure": 15,
+      "required_slots": 4,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV003",
+      "arrival": 25,
+      "departure": 37,
+      "required_slots": 10,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV004",
+      "arrival": 11,
+      "departure": 23,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV005",
+      "arrival": 4,
+      "departure": 18,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV006",
+      "arrival": 24,
+      "departure": 30,
+      "required_slots": 6,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV007",
+      "arrival": 17,
+      "departure": 26,
+      "required_slots": 8,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV008",
+      "arrival": 3,
+      "departure": 11,
+      "required_slots": 8,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV009",
+      "arrival": 15,
+      "departure": 24,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV010",
+      "arrival": 13,
+      "departure": 24,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV011",
+      "arrival": 17,
+      "departure": 27,
+      "required_slots": 7,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV012",
+      "arrival": 27,
+      "departure": 40,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV013",
+      "arrival": 25,
+      "departure": 29,
+      "required_slots": 4,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV014",
+      "arrival": 23,
+      "departure": 31,
+      "required_slots": 5,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV015",
+      "arrival": 19,
+      "departure": 26,
+      "required_slots": 4,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV016",
+      "arrival": 7,
+      "departure": 18,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV017",
+      "arrival": 6,
+      "departure": 12,
+      "required_slots": 5,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV018",
+      "arrival": 25,
+      "departure": 33,
+      "required_slots": 7,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV019",
+      "arrival": 14,
+      "departure": 26,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV020",
+      "arrival": 10,
+      "departure": 18,
+      "required_slots": 5,
+      "power_kw": 7.0
+    }
+  ],
+  "metadata": {
+    "source": "synthetic",
+    "scenario": "tight_deadlines",
+    "seed": 0,
+    "clock_start": "08:00",
+    "generation_attempt": 1,
+    "plugs": 20,
+    "feasibility": "independently checked construction witness"
+  }
+}

@@ -1,0 +1,327 @@
+.......FFF............................................................ [ 17%]
+.................................................................. [ 34%]
+........................FFF............................................. [ 53%]
+............................FFF.........................FFF............. [ 71%]
+................................................FFF..... [ 85%]
+............................FFF........................                  [100%]
+=================================== FAILURES ===================================
+____________________ CacheTest.test_getsizeof_replace_grow _____________________
+
+self = <tests.test_cache.CacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+__________________ CacheTest.test_getsizeof_replace_same_size __________________
+
+self = <tests.test_cache.CacheTest testMethod=test_getsizeof_replace_same_size>
+
+    def test_getsizeof_replace_same_size(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 4
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:374: AssertionError
+___________________ CacheTest.test_getsizeof_replace_shrink ____________________
+
+self = <tests.test_cache.CacheTest testMethod=test_getsizeof_replace_shrink>
+
+    def test_getsizeof_replace_shrink(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 1
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:387: AssertionError
+__________________ FIFOCacheTest.test_getsizeof_replace_grow ___________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+________________ FIFOCacheTest.test_getsizeof_replace_same_size ________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_getsizeof_replace_same_size>
+
+    def test_getsizeof_replace_same_size(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 4
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:374: AssertionError
+_________________ FIFOCacheTest.test_getsizeof_replace_shrink __________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_getsizeof_replace_shrink>
+
+    def test_getsizeof_replace_shrink(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 1
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:387: AssertionError
+___________________ LFUCacheTest.test_getsizeof_replace_grow ___________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+________________ LFUCacheTest.test_getsizeof_replace_same_size _________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_getsizeof_replace_same_size>
+
+    def test_getsizeof_replace_same_size(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 4
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:374: AssertionError
+__________________ LFUCacheTest.test_getsizeof_replace_shrink __________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_getsizeof_replace_shrink>
+
+    def test_getsizeof_replace_shrink(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 1
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:387: AssertionError
+___________________ LRUCacheTest.test_getsizeof_replace_grow ___________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+________________ LRUCacheTest.test_getsizeof_replace_same_size _________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_getsizeof_replace_same_size>
+
+    def test_getsizeof_replace_same_size(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 4
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:374: AssertionError
+__________________ LRUCacheTest.test_getsizeof_replace_shrink __________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_getsizeof_replace_shrink>
+
+    def test_getsizeof_replace_shrink(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 1
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:387: AssertionError
+__________________ TLRUCacheTest.test_getsizeof_replace_grow ___________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+________________ TLRUCacheTest.test_getsizeof_replace_same_size ________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_getsizeof_replace_same_size>
+
+    def test_getsizeof_replace_same_size(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 4
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:374: AssertionError
+_________________ TLRUCacheTest.test_getsizeof_replace_shrink __________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_getsizeof_replace_shrink>
+
+    def test_getsizeof_replace_shrink(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 1
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:387: AssertionError
+___________________ TTLCacheTest.test_getsizeof_replace_grow ___________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+________________ TTLCacheTest.test_getsizeof_replace_same_size _________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_getsizeof_replace_same_size>
+
+    def test_getsizeof_replace_same_size(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 4
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:374: AssertionError
+__________________ TTLCacheTest.test_getsizeof_replace_shrink __________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_getsizeof_replace_shrink>
+
+    def test_getsizeof_replace_shrink(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(7, cache.currsize)
+    
+        cache[4] = 1
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:387: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_cache.py::CacheTest::test_getsizeof_replace_grow - Assertio...
+FAILED tests/test_cache.py::CacheTest::test_getsizeof_replace_same_size - Ass...
+FAILED tests/test_cache.py::CacheTest::test_getsizeof_replace_shrink - Assert...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_getsizeof_replace_grow - Asser...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_getsizeof_replace_same_size - ...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_getsizeof_replace_shrink - Ass...
+FAILED tests/test_lfu.py::LFUCacheTest::test_getsizeof_replace_grow - Asserti...
+FAILED tests/test_lfu.py::LFUCacheTest::test_getsizeof_replace_same_size - As...
+FAILED tests/test_lfu.py::LFUCacheTest::test_getsizeof_replace_shrink - Asser...
+FAILED tests/test_lru.py::LRUCacheTest::test_getsizeof_replace_grow - Asserti...
+FAILED tests/test_lru.py::LRUCacheTest::test_getsizeof_replace_same_size - As...
+FAILED tests/test_lru.py::LRUCacheTest::test_getsizeof_replace_shrink - Asser...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_getsizeof_replace_grow - Asser...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_getsizeof_replace_same_size - ...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_getsizeof_replace_shrink - Ass...
+FAILED tests/test_ttl.py::TTLCacheTest::test_getsizeof_replace_grow - Asserti...
+FAILED tests/test_ttl.py::TTLCacheTest::test_getsizeof_replace_same_size - As...
+FAILED tests/test_ttl.py::TTLCacheTest::test_getsizeof_replace_shrink - Asser...
+18 failed, 373 passed, 24 subtests passed in 1.51s

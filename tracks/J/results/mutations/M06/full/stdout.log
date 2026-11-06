@@ -1,0 +1,26 @@
+...................................................................... [ 17%]
+.................................................................. [ 34%]
+........................................................................ [ 53%]
+........................................................................ [ 71%]
+........................................................ [ 85%]
+.....................................................F.                  [100%]
+=================================== FAILURES ===================================
+_______________________ TTLCacheTest.test_ttl_tuple_key ________________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_ttl_tuple_key>
+
+    def test_ttl_tuple_key(self):
+        cache = TTLCache[tuple[int, ...], int, int](maxsize=1, ttl=1, timer=Timer())
+        self.assertEqual(1, cache.ttl)
+    
+        cache[(1, 2, 3)] = 42
+        self.assertEqual(42, cache[(1, 2, 3)])
+        cache.timer.tick()
+>       with self.assertRaises(KeyError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: KeyError not raised
+
+tests/test_ttl.py:212: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ttl.py::TTLCacheTest::test_ttl_tuple_key - AssertionError: ...
+1 failed, 390 passed, 24 subtests passed in 1.23s

@@ -1,0 +1,41 @@
+{
+  "technical_checks_passed": true,
+  "submission_ready": false,
+  "fresh_track_host_tests": 243,
+  "fresh_supplement_tests": 7,
+  "fresh_tests_per_ai_candidate": 9,
+  "imported_files_unchanged": 2013,
+  "pdf_pages": 27,
+  "demo_duration_s": 100.0,
+  "chapter_core_supporting_topics": 112,
+  "research_reference_entries": 22,
+  "inventory_omissions_corrected": 5,
+  "required_open_items": [
+    "Public GitHub repository",
+    "Sanitized platform exports or screenshots from both AI tools"
+  ],
+  "coverage_scope_unresolved": "Six detailed source policies unavailable; original mechanism controls are explicitly not exact paper implementations.",
+  "written_brief_sections": [
+    "8",
+    "9"
+  ],
+  "final_review": "docs/FINAL_REVIEW.md",
+  "research_mathematical_tests": 20,
+  "research_result_files": 14,
+  "native_spmv_timed_trials": 210,
+  "research_fidelity_counts": {
+    "source_port": 10,
+    "algorithm_variant": 4,
+    "survey_demonstration": 2,
+    "mechanism_only": 6
+  },
+  "strict_paper_method_coverage_complete": false,
+  "remaining_exact_method_gaps": [
+    "PANA SpMV",
+    "PackStealLB",
+    "GSHetero",
+    "Architecture-aware currying",
+    "OFLight",
+    "EAHP"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/bin/python",
+    "-m",
+    "selci.runner",
+    "--subject",
+    "/workspace/scratch/f3cd84c5991c/software_track_j/build/mutants-t2u41o77/M06",
+    "--out",
+    "/workspace/scratch/f3cd84c5991c/software_track_j/results/mutations/M06/full"
+  ],
+  "wall_ns": 2063103140,
+  "exit_code": 1,
+  "timed_out": false,
+  "timeout_s": 15,
+  "timing_scope": "Fresh interpreter, imports, collection, test phases and JSON output; no coverage or cProfile unless explicitly flagged.",
+  "trace": false,
+  "cprofile": false
+}

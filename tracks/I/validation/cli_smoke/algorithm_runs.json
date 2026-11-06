@@ -1,0 +1,1098 @@
+[
+  {
+    "name": "deutsch_0",
+    "algorithm": "Deutsch",
+    "output_bits": 1,
+    "probabilities": [
+      0.9999999999999996,
+      1.0573994819069698e-33
+    ],
+    "counts": {
+      "0": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0027599459999692044,
+    "truth": [
+      0,
+      0
+    ],
+    "oracle_queries": 1,
+    "circuit_file": "circuits/deutsch_0.qpy",
+    "circuit_sha256": "b885c1bcb336cbd6666c0825ef69d17ca4009c24f6c325cd4fcab9579612a17f",
+    "qubits": 2,
+    "logical_depth": 2,
+    "logical_operations": {
+      "h": 3,
+      "x": 1
+    }
+  },
+  {
+    "name": "deutsch_1",
+    "algorithm": "Deutsch",
+    "output_bits": 1,
+    "probabilities": [
+      0.9999999999999996,
+      1.0573994819069698e-33
+    ],
+    "counts": {
+      "0": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0011416509996706736,
+    "truth": [
+      1,
+      1
+    ],
+    "oracle_queries": 1,
+    "circuit_file": "circuits/deutsch_1.qpy",
+    "circuit_sha256": "bb85ff5296e94c0585a0a17cfb4bb96effe2e6d5612b82fd4377982fd7ec57bd",
+    "qubits": 2,
+    "logical_depth": 6,
+    "logical_operations": {
+      "x": 3,
+      "h": 3,
+      "cx": 2
+    }
+  },
+  {
+    "name": "deutsch_2",
+    "algorithm": "Deutsch",
+    "output_bits": 1,
+    "probabilities": [
+      1.0573994819069698e-33,
+      0.9999999999999996
+    ],
+    "counts": {
+      "1": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0003142610003123991,
+    "truth": [
+      0,
+      1
+    ],
+    "oracle_queries": 1,
+    "circuit_file": "circuits/deutsch_2.qpy",
+    "circuit_sha256": "590663bd06c9a505c608a729fa71ed71058436a9d4e7b22020f3078337ca9772",
+    "qubits": 2,
+    "logical_depth": 4,
+    "logical_operations": {
+      "h": 3,
+      "x": 1,
+      "cx": 1
+    }
+  },
+  {
+    "name": "deutsch_3",
+    "algorithm": "Deutsch",
+    "output_bits": 1,
+    "probabilities": [
+      1.0573994819069698e-33,
+      0.9999999999999996
+    ],
+    "counts": {
+      "1": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0008432969998466433,
+    "truth": [
+      1,
+      0
+    ],
+    "oracle_queries": 1,
+    "circuit_file": "circuits/deutsch_3.qpy",
+    "circuit_sha256": "c7ca9f771b3986c884fd7b2cf7524fa2673e5aa9eb36777b8d443411e6f42eb2",
+    "qubits": 2,
+    "logical_depth": 5,
+    "logical_operations": {
+      "x": 3,
+      "h": 3,
+      "cx": 1
+    }
+  },
+  {
+    "name": "dj_0",
+    "algorithm": "Deutsch-Jozsa",
+    "output_bits": 3,
+    "probabilities": [
+      0.9999999999999989,
+      9.071053470133363e-35,
+      5.577060207443596e-34,
+      1.595577062755017e-68,
+      1.8142106940266839e-34,
+      3.002618785089687e-68,
+      8.43737825240404e-67,
+      8.632586236046793e-102
+    ],
+    "counts": {
+      "000": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0004835299996557296,
+    "truth": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "promise_class": "constant",
+    "oracle_queries": 1,
+    "circuit_file": "circuits/dj_0.qpy",
+    "circuit_sha256": "ce05601be74a2bc1dd47baf71f9e24b47b88db4b7c8d3fb8003141add26e6c16",
+    "qubits": 4,
+    "logical_depth": 2,
+    "logical_operations": {
+      "h": 7,
+      "x": 1
+    }
+  },
+  {
+    "name": "dj_1",
+    "algorithm": "Deutsch-Jozsa",
+    "output_bits": 3,
+    "probabilities": [
+      0.9999999999999973,
+      4.6023549867441095e-33,
+      5.50322940494486e-33,
+      1.2589349659326844e-32,
+      6.137931189999321e-32,
+      1.6370425388766703e-32,
+      5.439571661522524e-32,
+      2.8011233934649415e-33
+    ],
+    "counts": {
+      "000": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.008976047999567527,
+    "truth": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "promise_class": "constant",
+    "oracle_queries": 1,
+    "circuit_file": "circuits/dj_1.qpy",
+    "circuit_sha256": "23dfbadcd40a7e35efedfa594caec230c924e5bb94d0f64770d93ce712f96d61",
+    "qubits": 4,
+    "logical_depth": 22,
+    "logical_operations": {
+      "x": 25,
+      "mcx": 8,
+      "h": 7
+    }
+  },
+  {
+    "name": "dj_2",
+    "algorithm": "Deutsch-Jozsa",
+    "output_bits": 3,
+    "probabilities": [
+      3.410169532312123e-32,
+      7.951136692661787e-34,
+      7.944461020597344e-34,
+      1.5648180798146288e-33,
+      2.2129091811668346e-33,
+      0.9999999999999979,
+      2.4074124304840432e-35,
+      1.4592644409917559e-33
+    ],
+    "counts": {
+      "101": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.005821334000756906,
+    "truth": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    "promise_class": "balanced",
+    "oracle_queries": 1,
+    "circuit_file": "circuits/dj_2.qpy",
+    "circuit_sha256": "512384c8152a19541f5ab9b128c824275736d7ca2db9007601a041f76f7a0024",
+    "qubits": 4,
+    "logical_depth": 13,
+    "logical_operations": {
+      "x": 13,
+      "h": 7,
+      "mcx": 4
+    }
+  },
+  {
+    "name": "dj_3",
+    "algorithm": "Deutsch-Jozsa",
+    "output_bits": 3,
+    "probabilities": [
+      7.631747742336843e-33,
+      0.24999999999999944,
+      2.8904582990119688e-33,
+      0.24999999999999933,
+      0.2499999999999994,
+      2.1881192222830787e-33,
+      0.24999999999999947,
+      9.988875895810052e-35
+    ],
+    "counts": {
+      "001": 70,
+      "011": 51,
+      "100": 65,
+      "110": 70
+    },
+    "shots": 256,
+    "statevector_s": 0.003860478000206058,
+    "truth": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "promise_class": "balanced",
+    "oracle_queries": 1,
+    "circuit_file": "circuits/dj_3.qpy",
+    "circuit_sha256": "7a2994f48f163fc26acf226725a3e2840bd72410d7bfbce93d63492759c74177",
+    "qubits": 4,
+    "logical_depth": 11,
+    "logical_operations": {
+      "x": 9,
+      "h": 7,
+      "mcx": 4
+    }
+  },
+  {
+    "name": "bv_0",
+    "algorithm": "Bernstein-Vazirani",
+    "output_bits": 3,
+    "probabilities": [
+      0.9999999999999989,
+      9.071053470133363e-35,
+      5.577060207443596e-34,
+      1.595577062755017e-68,
+      1.8142106940266839e-34,
+      3.002618785089687e-68,
+      8.43737825240404e-67,
+      8.632586236046793e-102
+    ],
+    "counts": {
+      "000": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0003158530007567606,
+    "secret": 0,
+    "oracle_queries": 1,
+    "classical_queries": 3,
+    "circuit_file": "circuits/bv_0.qpy",
+    "circuit_sha256": "43b0174d30db073f435be7f3e39e4a1236b688c0068959a3c419d64e7e0301bd",
+    "qubits": 4,
+    "logical_depth": 2,
+    "logical_operations": {
+      "h": 7,
+      "x": 1
+    }
+  },
+  {
+    "name": "bv_3",
+    "algorithm": "Bernstein-Vazirani",
+    "output_bits": 3,
+    "probabilities": [
+      1.595577062755017e-68,
+      5.577060207443596e-34,
+      9.071053470133363e-35,
+      0.9999999999999989,
+      8.632586236046793e-102,
+      8.43737825240404e-67,
+      3.002618785089687e-68,
+      1.8142106940266839e-34
+    ],
+    "counts": {
+      "011": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0004213579995848704,
+    "secret": 3,
+    "oracle_queries": 1,
+    "classical_queries": 3,
+    "circuit_file": "circuits/bv_3.qpy",
+    "circuit_sha256": "3dacef3b5ac396c048f018691ba6892b67082b80b13b6ba1e7ee17228eb68242",
+    "qubits": 4,
+    "logical_depth": 5,
+    "logical_operations": {
+      "h": 7,
+      "cx": 2,
+      "x": 1
+    }
+  },
+  {
+    "name": "bv_5",
+    "algorithm": "Bernstein-Vazirani",
+    "output_bits": 3,
+    "probabilities": [
+      3.002618785089687e-68,
+      1.8142106940266839e-34,
+      8.632586236046793e-102,
+      8.43737825240404e-67,
+      9.071053470133363e-35,
+      0.9999999999999989,
+      1.595577062755017e-68,
+      5.577060207443596e-34
+    ],
+    "counts": {
+      "101": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0005407549997471506,
+    "secret": 5,
+    "oracle_queries": 1,
+    "classical_queries": 3,
+    "circuit_file": "circuits/bv_5.qpy",
+    "circuit_sha256": "55f7206fd9449d6e5f5203373417e24a41eaf22fad8a3aa764eeb64708102c62",
+    "qubits": 4,
+    "logical_depth": 5,
+    "logical_operations": {
+      "h": 7,
+      "cx": 2,
+      "x": 1
+    }
+  },
+  {
+    "name": "bv_7",
+    "algorithm": "Bernstein-Vazirani",
+    "output_bits": 3,
+    "probabilities": [
+      8.632586236046793e-102,
+      8.43737825240404e-67,
+      3.002618785089687e-68,
+      1.8142106940266839e-34,
+      1.595577062755017e-68,
+      5.577060207443596e-34,
+      9.071053470133363e-35,
+      0.9999999999999989
+    ],
+    "counts": {
+      "111": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0005025860000387183,
+    "secret": 7,
+    "oracle_queries": 1,
+    "classical_queries": 3,
+    "circuit_file": "circuits/bv_7.qpy",
+    "circuit_sha256": "eae6d17e2214d14cc4f15c150b3cf6fb10f78dde8cd014ec713b51711dcf75ee",
+    "qubits": 4,
+    "logical_depth": 6,
+    "logical_operations": {
+      "h": 7,
+      "cx": 3,
+      "x": 1
+    }
+  },
+  {
+    "name": "qft_2",
+    "algorithm": "QFT",
+    "output_bits": 2,
+    "probabilities": [
+      0.2499999999999999,
+      0.2499999999999999,
+      0.2499999999999999,
+      0.2499999999999999
+    ],
+    "counts": {
+      "00": 57,
+      "01": 73,
+      "10": 59,
+      "11": 67
+    },
+    "shots": 256,
+    "statevector_s": 0.0002757929996732855,
+    "dense_unitary_max_error": 2.6891698152134724e-16,
+    "circuit_file": "circuits/qft_2.qpy",
+    "circuit_sha256": "a57c97ec9e875734f79dfce197317596dec9bea45f14833d8219a6d9aa70bf0d",
+    "qubits": 2,
+    "logical_depth": 4,
+    "logical_operations": {
+      "h": 2,
+      "cp": 1,
+      "swap": 1
+    }
+  },
+  {
+    "name": "qft_3",
+    "algorithm": "QFT",
+    "output_bits": 3,
+    "probabilities": [
+      0.12499999999999994,
+      0.12499999999999994,
+      0.12499999999999994,
+      0.12499999999999994,
+      0.12499999999999994,
+      0.12499999999999994,
+      0.12499999999999994,
+      0.12499999999999994
+    ],
+    "counts": {
+      "000": 32,
+      "001": 30,
+      "010": 29,
+      "011": 29,
+      "100": 39,
+      "101": 32,
+      "110": 31,
+      "111": 34
+    },
+    "shots": 256,
+    "statevector_s": 0.0006946840003365651,
+    "dense_unitary_max_error": 1.415262216750919e-15,
+    "circuit_file": "circuits/qft_3.qpy",
+    "circuit_sha256": "e36ee30165007984b41bbfb1596b0fbdb1a5c84e51853df299c2ce51e78dc62b",
+    "qubits": 3,
+    "logical_depth": 6,
+    "logical_operations": {
+      "h": 3,
+      "cp": 3,
+      "swap": 1
+    }
+  },
+  {
+    "name": "qft_4",
+    "algorithm": "QFT",
+    "output_bits": 4,
+    "probabilities": [
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996,
+      0.06249999999999996
+    ],
+    "counts": {
+      "0000": 18,
+      "0001": 12,
+      "0010": 15,
+      "0011": 18,
+      "0100": 17,
+      "0101": 17,
+      "0110": 15,
+      "0111": 16,
+      "1000": 21,
+      "1001": 11,
+      "1010": 12,
+      "1011": 9,
+      "1100": 19,
+      "1101": 15,
+      "1110": 19,
+      "1111": 22
+    },
+    "shots": 256,
+    "statevector_s": 0.0005167879999135039,
+    "dense_unitary_max_error": 2.222006751886933e-15,
+    "circuit_file": "circuits/qft_4.qpy",
+    "circuit_sha256": "07f05d63387b713c1d5f06ff18e55f6741c28f12f8a2561925024a3031a4151d",
+    "qubits": 4,
+    "logical_depth": 8,
+    "logical_operations": {
+      "cp": 6,
+      "h": 4,
+      "swap": 2
+    }
+  },
+  {
+    "name": "qpe_0",
+    "algorithm": "QPE",
+    "output_bits": 3,
+    "probabilities": [
+      0.9999999999999991,
+      1.6528754213149827e-37,
+      4.5355267350666824e-35,
+      2.8358858847136406e-38,
+      5.577060207443597e-34,
+      2.835885884713639e-38,
+      4.5355267350666824e-35,
+      1.6528754213149827e-37
+    ],
+    "counts": {
+      "000": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0008799289998933091,
+    "phase": 0,
+    "controlled_power_gates": 3,
+    "equivalent_base_unitary_queries": 7,
+    "circuit_file": "circuits/qpe_0.qpy",
+    "circuit_sha256": "3e4ea52a283fd601f43f7e71520bbcd2e6853e9d5bb6566ac8f8ec6625d11726",
+    "qubits": 4,
+    "logical_depth": 10,
+    "logical_operations": {
+      "h": 6,
+      "cp": 6,
+      "x": 1,
+      "swap": 1
+    }
+  },
+  {
+    "name": "qpe_1",
+    "algorithm": "QPE",
+    "output_bits": 3,
+    "probabilities": [
+      1.8334055442080858e-33,
+      5.1041751044896295e-33,
+      1.189858693813322e-32,
+      0.9999999999999991,
+      1.672911850224882e-32,
+      4.843807946460141e-33,
+      3.053749456350618e-33,
+      1.8054850264399216e-33
+    ],
+    "counts": {
+      "011": 256
+    },
+    "shots": 256,
+    "statevector_s": 0.0007092019995980081,
+    "phase": 0.375,
+    "controlled_power_gates": 3,
+    "equivalent_base_unitary_queries": 7,
+    "circuit_file": "circuits/qpe_1.qpy",
+    "circuit_sha256": "e04a93ea327c24d62efa99f02396ffb368a79a4a8c5c7c4ba1f7c2e47a4b1af8",
+    "qubits": 4,
+    "logical_depth": 10,
+    "logical_operations": {
+      "h": 6,
+      "cp": 6,
+      "x": 1,
+      "swap": 1
+    }
+  },
+  {
+    "name": "qpe_2",
+    "algorithm": "QPE",
+    "output_bits": 4,
+    "probabilities": [
+      0.003906249999999988,
+      0.005182874169853365,
+      0.007905458122315695,
+      0.014976475824339383,
+      0.043734970401197656,
+      0.6848953893117373,
+      0.17195941564740444,
+      0.02835455946037463,
+      0.011718749999999951,
+      0.006738989659689557,
+      0.0046546602728931435,
+      0.0036421652672331845,
+      0.00314002959880221,
+      0.0029422732778842083,
+      0.0029804659573857287,
+      0.003267273028888122
+    ],
+    "counts": {
+      "0000": 2,
+      "0010": 2,
+      "0011": 3,
+      "0100": 11,
+      "0101": 178,
+      "0110": 44,
+      "0111": 5,
+      "1000": 3,
+      "1001": 3,
+      "1010": 1,
+      "1100": 2,
+      "1101": 2
+    },
+    "shots": 256,
+    "statevector_s": 0.0010253260006720666,
+    "phase": 0.3333333333333333,
+    "controlled_power_gates": 4,
+    "equivalent_base_unitary_queries": 15,
+    "circuit_file": "circuits/qpe_2.qpy",
+    "circuit_sha256": "cca45bdd8ec47ef8d4598c8e92e8cad38b01a2e65ac952462935c38ea2d3b117",
+    "qubits": 5,
+    "logical_depth": 13,
+    "logical_operations": {
+      "cp": 10,
+      "h": 8,
+      "swap": 2,
+      "x": 1
+    }
+  },
+  {
+    "name": "shor_2",
+    "algorithm": "Shor order finding",
+    "output_bits": 4,
+    "probabilities": [
+      0.24999999999999634,
+      9.504972154321661e-35,
+      2.1577950807099685e-35,
+      9.504972154321648e-35,
+      0.24999999999999706,
+      9.504972154321854e-35,
+      2.1577950807100845e-35,
+      9.50497215432195e-35,
+      0.24999999999999412,
+      9.504972154321984e-35,
+      2.1577950807100802e-35,
+      9.504972154322033e-35,
+      0.24999999999999817,
+      9.504972154321797e-35,
+      2.1577950807099572e-35,
+      9.504972154321657e-35
+    ],
+    "counts": {
+      "0000": 76,
+      "0100": 54,
+      "1000": 56,
+      "1100": 70
+    },
+    "shots": 256,
+    "statevector_s": 0.047914280999975745,
+    "modulus": 15,
+    "multiplier": 2,
+    "postprocessing": [
+      {
+        "candidate_order": 1,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 2,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      }
+    ],
+    "warning": "Dense reversible modular multiplication for toy N=15; no scalable arithmetic or factoring runtime advantage is claimed.",
+    "circuit_file": "circuits/shor_2.qpy",
+    "circuit_sha256": "56580c762d53f7b76e83438d84379c162e2e8db548135e0f4e1b9920308032b8",
+    "qubits": 8,
+    "logical_depth": 13,
+    "logical_operations": {
+      "h": 8,
+      "cp": 6,
+      "c-unitary": 4,
+      "swap": 2,
+      "x": 1
+    }
+  },
+  {
+    "name": "shor_7",
+    "algorithm": "Shor order finding",
+    "output_bits": 4,
+    "probabilities": [
+      0.25000000000000044,
+      6.197981004533855e-35,
+      6.350628682524937e-35,
+      6.197981004533858e-35,
+      0.24999999999999029,
+      6.197981004533854e-35,
+      6.350628682524702e-35,
+      6.197981004533847e-35,
+      0.24999999999999273,
+      6.197981004533897e-35,
+      6.350628682524859e-35,
+      6.197981004533899e-35,
+      0.2499999999999996,
+      6.19798100453394e-35,
+      6.350628682524731e-35,
+      6.197981004533939e-35
+    ],
+    "counts": {
+      "0000": 77,
+      "0100": 54,
+      "1000": 56,
+      "1100": 69
+    },
+    "shots": 256,
+    "statevector_s": 0.04105825399983587,
+    "modulus": 15,
+    "multiplier": 7,
+    "postprocessing": [
+      {
+        "candidate_order": 1,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 2,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      }
+    ],
+    "warning": "Dense reversible modular multiplication for toy N=15; no scalable arithmetic or factoring runtime advantage is claimed.",
+    "circuit_file": "circuits/shor_7.qpy",
+    "circuit_sha256": "68e2bb139dc47d80f6d81bc7bf2b895ef4e8ca88b2ecf3e19f488b2902d312a3",
+    "qubits": 8,
+    "logical_depth": 13,
+    "logical_operations": {
+      "h": 8,
+      "cp": 6,
+      "c-unitary": 4,
+      "swap": 2,
+      "x": 1
+    }
+  },
+  {
+    "name": "shor_11",
+    "algorithm": "Shor order finding",
+    "output_bits": 4,
+    "probabilities": [
+      0.49999999999999145,
+      2.2791594525835122e-34,
+      6.78902741414235e-36,
+      3.9104194044165755e-35,
+      4.358163858140214e-35,
+      3.910419404416607e-35,
+      6.789027414142491e-36,
+      2.279159452583562e-34,
+      0.5000000000000004,
+      2.279159452583543e-34,
+      6.78902741414189e-36,
+      3.9104194044165317e-35,
+      4.3581638581403593e-35,
+      3.910419404416494e-35,
+      6.789027414141744e-36,
+      2.2791594525834934e-34
+    ],
+    "counts": {
+      "0000": 138,
+      "1000": 118
+    },
+    "shots": 256,
+    "statevector_s": 0.02145148399995378,
+    "modulus": 15,
+    "multiplier": 11,
+    "postprocessing": [
+      {
+        "candidate_order": 1,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": []
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 2,
+        "factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": []
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      }
+    ],
+    "warning": "Dense reversible modular multiplication for toy N=15; no scalable arithmetic or factoring runtime advantage is claimed.",
+    "circuit_file": "circuits/shor_11.qpy",
+    "circuit_sha256": "17f9f1e06cb8b4fe3a256b718e99158e5efc49ad39e6046209a4a235f91aa1a7",
+    "qubits": 8,
+    "logical_depth": 13,
+    "logical_operations": {
+      "h": 8,
+      "cp": 6,
+      "c-unitary": 4,
+      "swap": 2,
+      "x": 1
+    }
+  },
+  {
+    "name": "shor_14",
+    "algorithm": "Shor order finding",
+    "output_bits": 4,
+    "probabilities": [
+      0.49999999999999384,
+      8.400419356735391e-36,
+      1.3259691094347632e-34,
+      1.4412841023728488e-36,
+      3.0348761146310552e-34,
+      1.4412841023728503e-36,
+      1.3259691094347602e-34,
+      8.400419356735419e-36,
+      0.49999999999999606,
+      8.400419356735466e-36,
+      1.3259691094347506e-34,
+      1.4412841023728677e-36,
+      3.0348761146310685e-34,
+      1.4412841023728646e-36,
+      1.325969109434753e-34,
+      8.400419356735429e-36
+    ],
+    "counts": {
+      "0000": 117,
+      "1000": 139
+    },
+    "shots": 256,
+    "statevector_s": 0.024673815000824106,
+    "modulus": 15,
+    "multiplier": 14,
+    "postprocessing": [
+      {
+        "candidate_order": 1,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": []
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 2,
+        "factors": []
+      },
+      {
+        "candidate_order": 9,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 13,
+        "factors": []
+      },
+      {
+        "candidate_order": 4,
+        "factors": []
+      },
+      {
+        "candidate_order": 11,
+        "factors": []
+      },
+      {
+        "candidate_order": 8,
+        "factors": []
+      },
+      {
+        "candidate_order": 15,
+        "factors": []
+      }
+    ],
+    "warning": "Dense reversible modular multiplication for toy N=15; no scalable arithmetic or factoring runtime advantage is claimed.",
+    "circuit_file": "circuits/shor_14.qpy",
+    "circuit_sha256": "9c322b98793598ef1b076211edcc29880ff3bc7c469ff61b1b36d0dc68a4291a",
+    "qubits": 8,
+    "logical_depth": 13,
+    "logical_operations": {
+      "h": 8,
+      "cp": 6,
+      "c-unitary": 4,
+      "swap": 2,
+      "x": 1
+    }
+  }
+]

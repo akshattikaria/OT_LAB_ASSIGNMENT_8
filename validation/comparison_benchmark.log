@@ -1,0 +1,58 @@
+[
+  {
+    "case": "small",
+    "chatgpt": {
+      "median_ms": 0.082542,
+      "min_ms": 0.079988,
+      "max_ms": 0.132777
+    },
+    "gemini": {
+      "median_ms": 0.055312,
+      "min_ms": 0.054861,
+      "max_ms": 0.059528
+    },
+    "chatgpt_over_gemini_time_ratio": 1.4922982354642755
+  },
+  {
+    "case": "medium_tight",
+    "chatgpt": {
+      "median_ms": 1.824198,
+      "min_ms": 1.57479,
+      "max_ms": 1.939539
+    },
+    "gemini": {
+      "median_ms": 1.185343,
+      "min_ms": 1.029273,
+      "max_ms": 1.332431
+    },
+    "chatgpt_over_gemini_time_ratio": 1.538962140072536
+  },
+  {
+    "case": "large_tight",
+    "chatgpt": {
+      "median_ms": 47.869222,
+      "min_ms": 41.773612,
+      "max_ms": 64.901567
+    },
+    "gemini": {
+      "median_ms": 26.921525,
+      "min_ms": 25.282559,
+      "max_ms": 34.270201
+    },
+    "chatgpt_over_gemini_time_ratio": 1.7781021691750376
+  },
+  {
+    "case": "large_loose",
+    "chatgpt": {
+      "median_ms": 28.787809,
+      "min_ms": 26.787729,
+      "max_ms": 29.293674
+    },
+    "gemini": {
+      "median_ms": 9.502221,
+      "min_ms": 9.085928,
+      "max_ms": 10.607711
+    },
+    "chatgpt_over_gemini_time_ratio": 3.0295873985671347
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "method": "Fresh index checkout, standard-library restoration, original SHA-256 verification, git bundle verification, and integrated retained-result audit",
+  "path": "tracks/J/history.bundle",
+  "restored_bytes": 13963387,
+  "restored_sha256": "4f7c31da21bd336a26a6926a1c3607ae5e2a450f1c65e392cd1ebd432a725f47",
+  "parts": [
+    {
+      "path": "tracks/J/history.bundle.parts/part-01.bin",
+      "size_bytes": 8388608,
+      "sha256": "cb6a26c277eaf45d7769f99c98229eb8f714b232210211303416eda237f412fa"
+    },
+    {
+      "path": "tracks/J/history.bundle.parts/part-02.bin",
+      "size_bytes": 5574779,
+      "sha256": "a493a6d3b994441c50e139402bf7f308773fd2fde213df4cbfb82e07714b964c"
+    }
+  ],
+  "fresh_audit_passed": true,
+  "imported_files_verified": 2013,
+  "original_bytes_unchanged": true
+}

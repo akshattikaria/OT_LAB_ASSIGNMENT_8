@@ -1,0 +1,177 @@
+{
+  "compiler_command": [
+    "/usr/bin/cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/scratch/f3cd84c5991c/distributed_track_d/native/locality.c",
+    "-o",
+    "/workspace/scratch/f3cd84c5991c/distributed_track_d/build/locality.so"
+  ],
+  "rows": [
+    {
+      "n": 512,
+      "method": "blocked_sum",
+      "repeat": 0,
+      "seconds": 0.00022375900005044969,
+      "result": -182.34307859795578,
+      "reference": -182.3430785979581,
+      "abs_error": 2.3305801732931286e-12
+    },
+    {
+      "n": 512,
+      "method": "row_sum",
+      "repeat": 1,
+      "seconds": 0.00023528600002009625,
+      "result": -182.34307859795823,
+      "reference": -182.3430785979581,
+      "abs_error": 1.1368683772161603e-13
+    },
+    {
+      "n": 512,
+      "method": "column_sum",
+      "repeat": 0,
+      "seconds": 0.0007424809999747595,
+      "result": -182.34307859795663,
+      "reference": -182.3430785979581,
+      "abs_error": 1.4779288903810084e-12
+    },
+    {
+      "n": 512,
+      "method": "row_sum",
+      "repeat": 2,
+      "seconds": 0.00023279300000922376,
+      "result": -182.34307859795823,
+      "reference": -182.3430785979581,
+      "abs_error": 1.1368683772161603e-13
+    },
+    {
+      "n": 512,
+      "method": "blocked_sum",
+      "repeat": 1,
+      "seconds": 0.000218171000028633,
+      "result": -182.34307859795578,
+      "reference": -182.3430785979581,
+      "abs_error": 2.3305801732931286e-12
+    },
+    {
+      "n": 512,
+      "method": "column_sum",
+      "repeat": 1,
+      "seconds": 0.0008347670000148355,
+      "result": -182.34307859795663,
+      "reference": -182.3430785979581,
+      "abs_error": 1.4779288903810084e-12
+    },
+    {
+      "n": 512,
+      "method": "row_sum",
+      "repeat": 0,
+      "seconds": 0.00030379700001503807,
+      "result": -182.34307859795823,
+      "reference": -182.3430785979581,
+      "abs_error": 1.1368683772161603e-13
+    },
+    {
+      "n": 512,
+      "method": "column_sum",
+      "repeat": 2,
+      "seconds": 0.0008182430000260865,
+      "result": -182.34307859795663,
+      "reference": -182.3430785979581,
+      "abs_error": 1.4779288903810084e-12
+    },
+    {
+      "n": 512,
+      "method": "blocked_sum",
+      "repeat": 2,
+      "seconds": 0.00024263699992843613,
+      "result": -182.34307859795578,
+      "reference": -182.3430785979581,
+      "abs_error": 2.3305801732931286e-12
+    },
+    {
+      "n": 2048,
+      "method": "column_sum",
+      "repeat": 0,
+      "seconds": 0.026750103999916064,
+      "result": -773.8128443757525,
+      "reference": -773.8128443757718,
+      "abs_error": 1.921307557495311e-11
+    },
+    {
+      "n": 2048,
+      "method": "row_sum",
+      "repeat": 2,
+      "seconds": 0.00407986000004712,
+      "result": -773.8128443757136,
+      "reference": -773.8128443757718,
+      "abs_error": 5.820766091346741e-11
+    },
+    {
+      "n": 2048,
+      "method": "blocked_sum",
+      "repeat": 2,
+      "seconds": 0.0040098759999409594,
+      "result": -773.812844375716,
+      "reference": -773.8128443757718,
+      "abs_error": 5.5706550483591855e-11
+    },
+    {
+      "n": 2048,
+      "method": "blocked_sum",
+      "repeat": 0,
+      "seconds": 0.004114810000032776,
+      "result": -773.812844375716,
+      "reference": -773.8128443757718,
+      "abs_error": 5.5706550483591855e-11
+    },
+    {
+      "n": 2048,
+      "method": "column_sum",
+      "repeat": 2,
+      "seconds": 0.026093559999935678,
+      "result": -773.8128443757525,
+      "reference": -773.8128443757718,
+      "abs_error": 1.921307557495311e-11
+    },
+    {
+      "n": 2048,
+      "method": "row_sum",
+      "repeat": 0,
+      "seconds": 0.0040730489999987185,
+      "result": -773.8128443757136,
+      "reference": -773.8128443757718,
+      "abs_error": 5.820766091346741e-11
+    },
+    {
+      "n": 2048,
+      "method": "column_sum",
+      "repeat": 1,
+      "seconds": 0.02636983499996859,
+      "result": -773.8128443757525,
+      "reference": -773.8128443757718,
+      "abs_error": 1.921307557495311e-11
+    },
+    {
+      "n": 2048,
+      "method": "blocked_sum",
+      "repeat": 1,
+      "seconds": 0.004082513000071231,
+      "result": -773.812844375716,
+      "reference": -773.8128443757718,
+      "abs_error": 5.5706550483591855e-11
+    },
+    {
+      "n": 2048,
+      "method": "row_sum",
+      "repeat": 1,
+      "seconds": 0.004152175999934116,
+      "result": -773.8128443757136,
+      "reference": -773.8128443757718,
+      "abs_error": 5.820766091346741e-11
+    }
+  ],
+  "note": "Actual C loops over one C-order matrix; -O3 without fast-math. Loop order changes floating summation order. No measured cache-miss count or matrix-multiplication speedup is claimed."
+}

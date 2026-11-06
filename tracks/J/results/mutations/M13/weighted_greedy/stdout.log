@@ -1,0 +1,56 @@
+...........................................................F.... [ 81%]
+...............                                                          [100%]
+=================================== FAILURES ===================================
+________________________ RRCacheTest.test_rr_getsizeof _________________________
+
+self = RRCache({2: 2}, maxsize=3, currsize=2), key = 1
+
+    def __getitem__(self, key):
+        try:
+>           return self.__data[key]
+                   ^^^^^^^^^^^^^^^^
+E           KeyError: 1
+
+src/cachetools/__init__.py:33: KeyError
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_rr.RRCacheTest testMethod=test_rr_getsizeof>
+
+    def test_rr_getsizeof(self):
+        cache = RRCache[int, int](maxsize=3, choice=min, getsizeof=lambda x: x)
+    
+        cache[1] = 1
+        cache[2] = 2
+    
+        self.assertEqual(len(cache), 2)
+        self.assertEqual(cache[1], 1)
+        self.assertEqual(cache[2], 2)
+    
+>       cache[3] = 3
+        ^^^^^^^^
+
+tests/test_rr.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:316: in __setitem__
+    cache_setitem(self, key, value)
+src/cachetools/__init__.py:60: in __setitem__
+    self.popitem()
+src/cachetools/__init__.py:336: in popitem
+    value = Cache.__getitem__(self, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/__init__.py:35: in __getitem__
+    return self.__missing__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = RRCache({2: 2}, maxsize=3, currsize=2), key = 1
+
+    def __missing__(self, key):
+>       raise KeyError(key)
+E       KeyError: 1
+
+src/cachetools/__init__.py:85: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_rr.py::RRCacheTest::test_rr_getsizeof - KeyError: 1
+1 failed, 78 passed, 8 subtests passed in 0.40s

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/bin/python",
+    "-m",
+    "selci.runner",
+    "--subject",
+    "/workspace/scratch/f3cd84c5991c/software_track_j/vendor/cachetools-7.2.8",
+    "--out",
+    "/workspace/scratch/f3cd84c5991c/software_track_j/results/timings/round_00/count_greedy",
+    "--nodes",
+    "/workspace/scratch/f3cd84c5991c/software_track_j/results/timings/round_00/count_greedy/selected_nodes.json"
+  ],
+  "wall_ns": 826842929,
+  "exit_code": 0,
+  "timed_out": false,
+  "timeout_s": 40,
+  "timing_scope": "Fresh interpreter, imports, collection, test phases and JSON output; no coverage or cProfile unless explicitly flagged.",
+  "trace": false,
+  "cprofile": false
+}

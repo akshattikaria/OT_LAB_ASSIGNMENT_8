@@ -1,0 +1,7 @@
+fn demo(x,y,z) {
+    let dead = x * y;
+    let k = 2 * 4;
+    let a = x + y;
+    let b = y + x;
+    return a * k + b * 8 + 0;
+}

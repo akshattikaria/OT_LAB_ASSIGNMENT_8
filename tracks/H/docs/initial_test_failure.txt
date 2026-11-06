@@ -1,0 +1,35 @@
+test_all_64_real_index_portfolios_preserve_null_ties_and_boundaries (test_dbms.QueryTests.test_all_64_real_index_portfolios_preserve_null_ties_and_boundaries) ... FAIL
+test_case_split_and_bound_parameters (test_dbms.QueryTests.test_case_split_and_bound_parameters) ... ok
+test_fingerprint_preserves_null_order_and_duplicates (test_dbms.QueryTests.test_fingerprint_preserves_null_order_and_duplicates) ... ok
+test_generator_domain_and_input (test_dbms.QueryTests.test_generator_domain_and_input) ... ok
+test_generator_reproducibility (test_dbms.QueryTests.test_generator_reproducibility) ... ok
+test_real_constraints (test_dbms.QueryTests.test_real_constraints) ... ok
+test_sql_null_sum (test_dbms.QueryTests.test_sql_null_sum) ... ok
+test_tied_top_k_is_deterministic (test_dbms.QueryTests.test_tied_top_k_is_deterministic) ... ok
+test_empty_and_zero_benefits (test_dbms.SelectionTests.test_empty_and_zero_benefits) ... ok
+test_greedy_can_be_suboptimal (test_dbms.SelectionTests.test_greedy_can_be_suboptimal) ... ok
+test_greedy_is_deterministic_and_respects_budget (test_dbms.SelectionTests.test_greedy_is_deterministic_and_respects_budget) ... ok
+test_invalid_model_rejected (test_dbms.SelectionTests.test_invalid_model_rejected) ... ok
+test_overlap_not_double_counted (test_dbms.SelectionTests.test_overlap_not_double_counted) ... ok
+test_random_ilp_matches_every_portfolio (test_dbms.SelectionTests.test_random_ilp_matches_every_portfolio) ... ok
+
+======================================================================
+FAIL: test_all_64_real_index_portfolios_preserve_null_ties_and_boundaries (test_dbms.QueryTests.test_all_64_real_index_portfolios_preserve_null_ties_and_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/f3cd84c5991c/dbms_track_h/tests/test_dbms.py", line 50, in test_all_64_real_index_portfolios_preserve_null_ties_and_boundaries
+    for case in self.fixture_cases():self.assertEqual(c.execute(QUERIES[case['kind']],case['params']).fetchall(),reference(self.rows,case),(flags,case))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != [(4, 24, 600, 0)]
+
+Second list contains 1 additional elements.
+First extra element 0:
+(4, 24, 600, 0)
+
+- []
++ [(4, 24, 600, 0)] : ((0, 0, 0, 0, 0, 1), {'id': 'status1', 'kind': 'status', 'params': ('pending', 24, 25)})
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.170s
+
+FAILED (failures=1)

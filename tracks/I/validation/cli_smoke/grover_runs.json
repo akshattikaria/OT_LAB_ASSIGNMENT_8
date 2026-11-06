@@ -1,0 +1,80 @@
+[
+  {
+    "n": 2,
+    "size": 4,
+    "seed": 0,
+    "marked": 0,
+    "grover_rounds": 1,
+    "verification_queries": 1,
+    "success_probability": 0.9999999999999984,
+    "analytic_probability": 1.0,
+    "sample": 0,
+    "sample_verified": true,
+    "classical_checks": 1,
+    "classical_uniform_expected_checks": 2.5,
+    "classical_s": 1.9680001059896313e-06,
+    "build_s": 0.0006160259999887785,
+    "simulate_s": 0.001469777999773214,
+    "sample_verify_s": 0.0042228610000165645,
+    "simulator_end_to_end_s": 0.05480992799948581,
+    "basis": "u,cx",
+    "basis_operations": {
+      "u": 18,
+      "cx": 2
+    },
+    "basis_depth": 13,
+    "transpile_s": 0.04850126299970725
+  },
+  {
+    "n": 4,
+    "size": 16,
+    "seed": 0,
+    "marked": 13,
+    "grover_rounds": 3,
+    "verification_queries": 1,
+    "success_probability": 0.9613189697265523,
+    "analytic_probability": 0.9613189697265625,
+    "sample": 13,
+    "sample_verified": true,
+    "classical_checks": 14,
+    "classical_uniform_expected_checks": 8.5,
+    "classical_s": 1.770999915606808e-06,
+    "build_s": 0.000815862000308698,
+    "simulate_s": 0.010373459000220464,
+    "sample_verify_s": 0.00028158200075267814,
+    "simulator_end_to_end_s": 0.033462125001278764,
+    "basis": "u,cx",
+    "basis_operations": {
+      "u": 172,
+      "cx": 84
+    },
+    "basis_depth": 172,
+    "transpile_s": 0.021991221999996924
+  },
+  {
+    "n": 6,
+    "size": 64,
+    "seed": 0,
+    "marked": 49,
+    "grover_rounds": 6,
+    "verification_queries": 1,
+    "success_probability": 0.9965856807867713,
+    "analytic_probability": 0.9965856807867991,
+    "sample": 49,
+    "sample_verified": true,
+    "classical_checks": 50,
+    "classical_uniform_expected_checks": 32.5,
+    "classical_s": 1.6470003174617887e-06,
+    "build_s": 0.0026953050000884105,
+    "simulate_s": 0.029557547999502276,
+    "sample_verify_s": 0.00020187700010865228,
+    "simulator_end_to_end_s": 0.057241480999437044,
+    "basis": "u,cx",
+    "basis_operations": {
+      "u": 1710,
+      "cx": 984
+    },
+    "basis_depth": 1370,
+    "transpile_s": 0.024786750999737706
+  }
+]

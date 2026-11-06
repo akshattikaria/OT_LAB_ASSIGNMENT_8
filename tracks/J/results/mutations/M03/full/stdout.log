@@ -1,0 +1,207 @@
+...................................................................... [ 17%]
+.................................................................. [ 34%]
+........................................................................ [ 53%]
+..................................F..F....FF..F......................... [ 71%]
+........................................................ [ 85%]
+.......................................................                  [100%]
+=================================== FAILURES ===================================
+_________________________ LFUCacheTest.test_lfu_clear __________________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_lfu_clear>
+
+    def test_lfu_clear(self):
+        cache = LFUCache[int, int](maxsize=2)
+    
+        cache[1] = 1
+        cache[1]  # increment frequency
+        cache[1]  # increment frequency again
+        cache[2] = 2
+    
+        cache.clear()
+    
+        self.assertEqual(0, len(cache))
+        self.assertEqual(0, cache.currsize)
+    
+        # verify LFU frequency tracking is reset after clear
+        cache[3] = 3
+        cache[4] = 4
+        cache[3]  # access 3 to increment frequency
+        cache[5] = 5  # should evict 4 (least frequently used)
+    
+        self.assertEqual(2, len(cache))
+>       self.assertIn(3, cache)
+E       AssertionError: 3 not found in LFUCache({4: 4, 5: 5}, maxsize=2, currsize=2)
+
+tests/test_lfu.py:109: AssertionError
+____________________ LFUCacheTest.test_lfu_update_existing _____________________
+
+self = LFUCache({2: 2, 3: 3}, maxsize=2, currsize=2), key = 1
+
+    def __getitem__(self, key):
+        try:
+>           return self.__data[key]
+                   ^^^^^^^^^^^^^^^^
+E           KeyError: 1
+
+src/cachetools/__init__.py:33: KeyError
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_lfu_update_existing>
+
+    def test_lfu_update_existing(self):
+        cache = LFUCache[int, int | str](maxsize=2)
+    
+        cache[1] = 1
+        cache[2] = 2
+        cache[1] = "updated"
+        cache[3] = 3
+    
+>       self.assertEqual(cache[1], "updated")
+                         ^^^^^^^^
+
+tests/test_lfu.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:194: in __getitem__
+    value = cache_getitem(self, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/__init__.py:35: in __getitem__
+    return self.__missing__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({2: 2, 3: 3}, maxsize=2, currsize=2), key = 1
+
+    def __missing__(self, key):
+>       raise KeyError(key)
+E       KeyError: 1
+
+src/cachetools/__init__.py:85: KeyError
+_____________________ LFUCacheTest.test_missing_getsizeof ______________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+>       self.assertEqual(2, cache[2])
+                            ^^^^^^^^
+
+tests/__init__.py:283: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:194: in __getitem__
+    value = cache_getitem(self, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/__init__.py:35: in __getitem__
+    return self.__missing__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+tests/__init__.py:268: in __missing__
+    self[key] = key
+    ^^^^^^^^^
+src/cachetools/__init__.py:200: in __setitem__
+    cache_setitem(self, key, value)
+src/cachetools/__init__.py:60: in __setitem__
+    self.popitem()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = DefaultCache({1: 1}, maxsize=2, currsize=1)
+
+    def popitem(self):
+        """Remove and return the `(key, value)` pair least frequently used."""
+        root = self.__root
+        curr = root.next
+        if curr is root:
+>           raise KeyError('%s is empty' % type(self).__name__) from None
+E           KeyError: 'DefaultCache is empty'
+
+src/cachetools/__init__.py:226: KeyError
+___________________________ LFUCacheTest.test_pickle ___________________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_pickle>
+
+    def test_pickle(self):
+        import pickle
+    
+        source = self.Cache(maxsize=2)
+        source.update({1: 1, 2: 2})
+    
+        cache = pickle.loads(pickle.dumps(source))
+        self.assertEqual(source, cache)
+    
+        self.assertEqual(2, len(cache))
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+    
+>       cache[3] = 3
+        ^^^^^^^^
+
+tests/__init__.py:473: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:200: in __setitem__
+    cache_setitem(self, key, value)
+src/cachetools/__init__.py:48: in __setitem__
+    self.popitem()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({1: 1, 2: 2}, maxsize=2, currsize=2)
+
+    def popitem(self):
+        """Remove and return the `(key, value)` pair least frequently used."""
+        root = self.__root
+        curr = root.next
+        if curr is root:
+            raise KeyError('%s is empty' % type(self).__name__) from None
+>       key = next(iter(curr.keys))
+              ^^^^^^^^^^^^^^^^^^^^^
+E       StopIteration
+
+src/cachetools/__init__.py:227: StopIteration
+__________________________ LFUCacheTest.test_popitem ___________________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_popitem>
+
+    def test_popitem(self):
+        cache = self.Cache(maxsize=2)
+    
+        cache.update({1: 1, 2: 2})
+    
+>       key, _ = cache.popitem()
+                 ^^^^^^^^^^^^^^^
+
+tests/__init__.py:186: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({1: 1, 2: 2}, maxsize=2, currsize=2)
+
+    def popitem(self):
+        """Remove and return the `(key, value)` pair least frequently used."""
+        root = self.__root
+        curr = root.next
+        if curr is root:
+>           raise KeyError('%s is empty' % type(self).__name__) from None
+E           KeyError: 'LFUCache is empty'
+
+src/cachetools/__init__.py:226: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_lfu.py::LFUCacheTest::test_lfu_clear - AssertionError: 3 no...
+FAILED tests/test_lfu.py::LFUCacheTest::test_lfu_update_existing - KeyError: 1
+FAILED tests/test_lfu.py::LFUCacheTest::test_missing_getsizeof - KeyError: 'D...
+FAILED tests/test_lfu.py::LFUCacheTest::test_pickle - StopIteration
+FAILED tests/test_lfu.py::LFUCacheTest::test_popitem - KeyError: 'LFUCache is...
+5 failed, 386 passed, 24 subtests passed in 0.77s

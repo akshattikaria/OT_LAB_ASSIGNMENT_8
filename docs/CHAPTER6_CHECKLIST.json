@@ -1,0 +1,1479 @@
+{
+  "topics": [
+    {
+      "topic": "ML parameters and losses",
+      "lecture": "PPT1 2-9,20,27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "MSE/cross-entropy/hinge",
+      "lecture": "PPT1 2-9,20,27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "L0/L1/L2 regularization",
+      "lecture": "PPT1 2-9,20,27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Continuous/discrete variables",
+      "lecture": "PPT1 2-9,20,27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Convex/nonconvex landscapes",
+      "lecture": "PPT1 2-9,20,27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Local/global minima and saddle",
+      "lecture": "PPT1 2-9,20,27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "GD",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "SGD",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Mini-batch SGD",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Momentum",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Nesterov",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "AdaGrad",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "RMSProp",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Adam",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Newton",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Gauss-Newton",
+      "lecture": "Assignment 5 / PPT1 10-21",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/optimizers.py",
+        "tracks/A/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Backpropagation distinct from optimizer",
+      "lecture": "PPT1 11",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/tests/test_continuous.py"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Finite-difference gradient checks",
+      "lecture": "PPT1 11",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/problems.py",
+        "tracks/A/tests/test_continuous.py"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Convex/strongly-convex bounds",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Nonconvex stationarity",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Step-size tuning",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Noisy gradient objectives",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Expected versus empirical Fisher",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Diagonal curvature",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Low-rank curvature",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Matrix-free HVP/CG",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "L-BFGS library demo",
+      "lecture": "Assignment 5 / PPT1 20 / PPT4 4-6",
+      "status": "implemented",
+      "evidence": [
+        "tracks/A/contopt/supplement.py",
+        "tracks/A/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Density greedy",
+      "lecture": "Assignment 5 / PPT1 26",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/solvers.py",
+        "tracks/B/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Binary ILP",
+      "lecture": "Assignment 5 / PPT1 26",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/solvers.py",
+        "tracks/B/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Branch-and-Bound",
+      "lecture": "Assignment 5 / PPT1 26",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/solvers.py",
+        "tracks/B/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Dynamic programming",
+      "lecture": "Assignment 5 / PPT1 26",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/solvers.py",
+        "tracks/B/results/raw_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Forward feature selection",
+      "lecture": "PPT1 23-27 / Assignment 5",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/supplement.py",
+        "tracks/B/discopt/qubo.py",
+        "tracks/B/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Backward feature elimination",
+      "lecture": "PPT1 23-27 / Assignment 5",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/supplement.py",
+        "tracks/B/discopt/qubo.py",
+        "tracks/B/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Exhaustive feature reference",
+      "lecture": "PPT1 23-27 / Assignment 5",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/supplement.py",
+        "tracks/B/discopt/qubo.py",
+        "tracks/B/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "QUBO constraint penalties",
+      "lecture": "PPT1 23-27 / Assignment 5",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/supplement.py",
+        "tracks/B/discopt/qubo.py",
+        "tracks/B/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Binary-to-spin Ising conversion",
+      "lecture": "PPT1 23-27 / Assignment 5",
+      "status": "implemented",
+      "evidence": [
+        "tracks/B/discopt/supplement.py",
+        "tracks/B/discopt/qubo.py",
+        "tracks/B/results/supplementary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Submodularity and diminishing returns",
+      "lecture": "PPT1 29-34",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/coverage.py",
+        "tracks/D/results/coverage_controls.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Monotonicity/normalization",
+      "lecture": "PPT1 29-34",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/coverage.py",
+        "tracks/D/results/coverage_controls.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Greedy cardinality guarantee assumptions",
+      "lecture": "PPT1 29-34",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/coverage.py",
+        "tracks/D/results/coverage_controls.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Lazy greedy",
+      "lecture": "PPT1 29-34",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/coverage.py",
+        "tracks/D/results/coverage_controls.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Failed-assumption control",
+      "lecture": "PPT1 29-34",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/coverage.py",
+        "tracks/D/results/coverage_controls.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Static blocks",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "LPT scheduling",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "Dynamic task pool",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "Work stealing",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "Makespan",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "Strong/weak scaling",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "Amdahl and Gustafson interpretation",
+      "lecture": "PPT2 6-15",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/scheduling.py",
+        "tracks/D/results/summary.json"
+      ],
+      "scope": "Actual CPU processes; steady and total clocks are separate."
+    },
+    {
+      "topic": "Storage-order traversal",
+      "lecture": "PPT2 16-27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/locality.py",
+        "tracks/D/results/locality_runs.json",
+        "tracks/D/results/synchronization_runs.json"
+      ],
+      "scope": "No hardware cache counters or network-cluster claim."
+    },
+    {
+      "topic": "Tiled traversal",
+      "lecture": "PPT2 16-27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/locality.py",
+        "tracks/D/results/locality_runs.json",
+        "tracks/D/results/synchronization_runs.json"
+      ],
+      "scope": "No hardware cache counters or network-cluster claim."
+    },
+    {
+      "topic": "Locks versus reduction",
+      "lecture": "PPT2 16-27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/locality.py",
+        "tracks/D/results/locality_runs.json",
+        "tracks/D/results/synchronization_runs.json"
+      ],
+      "scope": "No hardware cache counters or network-cluster claim."
+    },
+    {
+      "topic": "Local IPC batching",
+      "lecture": "PPT2 16-27",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/locality.py",
+        "tracks/D/results/locality_runs.json",
+        "tracks/D/results/synchronization_runs.json"
+      ],
+      "scope": "No hardware cache counters or network-cluster claim."
+    },
+    {
+      "topic": "Data parallelism",
+      "lecture": "PPT4 8-14",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/parallel.py",
+        "tracks/D/results/parallel_runs.json"
+      ],
+      "scope": "Actual shared-memory CPU forward inference, not multi-GPU training."
+    },
+    {
+      "topic": "Model/tensor parallelism",
+      "lecture": "PPT4 8-14",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/parallel.py",
+        "tracks/D/results/parallel_runs.json"
+      ],
+      "scope": "Actual shared-memory CPU forward inference, not multi-GPU training."
+    },
+    {
+      "topic": "Pipeline microbatches",
+      "lecture": "PPT4 8-14",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/parallel.py",
+        "tracks/D/results/parallel_runs.json"
+      ],
+      "scope": "Actual shared-memory CPU forward inference, not multi-GPU training."
+    },
+    {
+      "topic": "FedAvg versus matched centralized GD",
+      "lecture": "Assignment 5/D",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/federated.py",
+        "tracks/D/distopt/multitask.py",
+        "tracks/D/results/multitask_runs.json"
+      ],
+      "scope": "Federated clients are serially emulated; no distributed wall-time claim."
+    },
+    {
+      "topic": "MGDA",
+      "lecture": "Assignment 5/D",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/federated.py",
+        "tracks/D/distopt/multitask.py",
+        "tracks/D/results/multitask_runs.json"
+      ],
+      "scope": "Federated clients are serially emulated; no distributed wall-time claim."
+    },
+    {
+      "topic": "GradNorm",
+      "lecture": "Assignment 5/D",
+      "status": "implemented",
+      "evidence": [
+        "tracks/D/distopt/federated.py",
+        "tracks/D/distopt/multitask.py",
+        "tracks/D/results/multitask_runs.json"
+      ],
+      "scope": "Federated clients are serially emulated; no distributed wall-time claim."
+    },
+    {
+      "topic": "Grid search",
+      "lecture": "PPT4 17-18,27",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/hpo.json"
+      ],
+      "scope": "Actual learning curves, policy replay; ASHA clock is offline event simulation."
+    },
+    {
+      "topic": "Random search",
+      "lecture": "PPT4 17-18,27",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/hpo.json"
+      ],
+      "scope": "Actual learning curves, policy replay; ASHA clock is offline event simulation."
+    },
+    {
+      "topic": "Bayesian expected-improvement search",
+      "lecture": "PPT4 17-18,27",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/hpo.json"
+      ],
+      "scope": "Actual learning curves, policy replay; ASHA clock is offline event simulation."
+    },
+    {
+      "topic": "Successive halving",
+      "lecture": "PPT4 17-18,27",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/hpo.json"
+      ],
+      "scope": "Actual learning curves, policy replay; ASHA clock is offline event simulation."
+    },
+    {
+      "topic": "ASHA promotion scheduling",
+      "lecture": "PPT4 17-18,27",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/hpo.json"
+      ],
+      "scope": "Actual learning curves, policy replay; ASHA clock is offline event simulation."
+    },
+    {
+      "topic": "Top-k sparsification",
+      "lecture": "PPT4 15 / PPT2 33",
+      "status": "implemented",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/compression.json"
+      ],
+      "scope": "Toy optimization; logical payload only. Not OFLight/Subspace Networks."
+    },
+    {
+      "topic": "Error feedback",
+      "lecture": "PPT4 15 / PPT2 33",
+      "status": "implemented",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/compression.json"
+      ],
+      "scope": "Toy optimization; logical payload only. Not OFLight/Subspace Networks."
+    },
+    {
+      "topic": "Int8 gradient compression",
+      "lecture": "PPT4 15 / PPT2 33",
+      "status": "implemented",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/compression.json"
+      ],
+      "scope": "Toy optimization; logical payload only. Not OFLight/Subspace Networks."
+    },
+    {
+      "topic": "Low-rank activation approximation",
+      "lecture": "PPT4 15 / PPT2 33",
+      "status": "implemented",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/compression.json"
+      ],
+      "scope": "Toy optimization; logical payload only. Not OFLight/Subspace Networks."
+    },
+    {
+      "topic": "Hybrid-layout enumeration",
+      "lecture": "PPT4 4-7,16",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/layouts.json"
+      ],
+      "scope": "Fictional layout model; separate bounded Rastrigin PSO. Not EAHP/Astra."
+    },
+    {
+      "topic": "Genetic layout search",
+      "lecture": "PPT4 4-7,16",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/layouts.json"
+      ],
+      "scope": "Fictional layout model; separate bounded Rastrigin PSO. Not EAHP/Astra."
+    },
+    {
+      "topic": "PSO black-box control",
+      "lecture": "PPT4 4-7,16",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/layouts.json"
+      ],
+      "scope": "Fictional layout model; separate bounded Rastrigin PSO. Not EAHP/Astra."
+    },
+    {
+      "topic": "Cyclic scheduling",
+      "lecture": "PPT2 12",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/scheduling.json"
+      ],
+      "scope": "Discrete-event scheduling, zero dispatch overhead."
+    },
+    {
+      "topic": "Guided scheduling",
+      "lecture": "PPT2 12",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/scheduling.json"
+      ],
+      "scope": "Discrete-event scheduling, zero dispatch overhead."
+    },
+    {
+      "topic": "False sharing and padding",
+      "lecture": "PPT2 20-24",
+      "status": "implemented",
+      "evidence": [
+        "chapter_supplement/false_sharing.c",
+        "chapter_supplement/results/false_sharing.json"
+      ],
+      "scope": "Two real OpenMP threads; no cache-coherence counters."
+    },
+    {
+      "topic": "Atomic increments",
+      "lecture": "PPT2 20-24",
+      "status": "implemented",
+      "evidence": [
+        "chapter_supplement/false_sharing.c",
+        "chapter_supplement/results/false_sharing.json"
+      ],
+      "scope": "Two real OpenMP threads; no cache-coherence counters."
+    },
+    {
+      "topic": "NUMA/local placement",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Race interleavings",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Deadlock and ordered locks",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Broadcast/scatter/gather/reduce/allreduce semantics",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Stale-gradient effects",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Overlap arithmetic",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Weight quantization",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Magnitude pruning",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "Discrete architecture choices",
+      "lecture": "PPT1 28 / PPT2 20-28 / PPT4 11-15",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/foundations.json"
+      ],
+      "scope": "Finite models/toy matrices; no actual MPI, NUMA hardware, trained NAS or asynchronous cluster timing."
+    },
+    {
+      "topic": "VQE",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "QAOA with B QUBO",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "PQC",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "QNN/VQC",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "Parameter-shift",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "SPSA",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "Quantum natural gradient",
+      "lecture": "Assignment 5/C / PPT3 18-30",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/qopt/models.py",
+        "tracks/C/qopt/optimizers.py",
+        "tracks/C/results/vqe_runs.json"
+      ],
+      "scope": "CPU simulator; QNG metric uses exact amplitudes."
+    },
+    {
+      "topic": "Finite-shot measurement cost",
+      "lecture": "PPT3 6-8,19,32",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/results/shot_study.json",
+        "tracks/C/results/noise_study.json",
+        "tracks/C/results/barren_plateaus.json"
+      ],
+      "scope": "Finite empirical diagnostics, not a universal asymptotic proof."
+    },
+    {
+      "topic": "Generic hardware-noise effects",
+      "lecture": "PPT3 6-8,19,32",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/results/shot_study.json",
+        "tracks/C/results/noise_study.json",
+        "tracks/C/results/barren_plateaus.json"
+      ],
+      "scope": "Finite empirical diagnostics, not a universal asymptotic proof."
+    },
+    {
+      "topic": "Barren-plateau diagnostics",
+      "lecture": "PPT3 6-8,19,32",
+      "status": "implemented",
+      "evidence": [
+        "tracks/C/results/shot_study.json",
+        "tracks/C/results/noise_study.json",
+        "tracks/C/results/barren_plateaus.json"
+      ],
+      "scope": "Finite empirical diagnostics, not a universal asymptotic proof."
+    },
+    {
+      "topic": "Deutsch",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Deutsch-Jozsa",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Bernstein-Vazirani",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Grover",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "QFT",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "QPE",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Shor toy order finding",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Qubits/gates/entanglement",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Quantum annealing",
+      "lecture": "Assignment 5/I / PPT3 3-18",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/circuits.py",
+        "tracks/I/results/algorithm_runs.json",
+        "tracks/I/results/annealing_runs.json"
+      ],
+      "scope": "Explicit small circuits; dense toy arithmetic and gate-based annealing, not scalable factoring or physical annealer."
+    },
+    {
+      "topic": "Quantum kernel versus matched RBF learner",
+      "lecture": "Assignment I",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/learning.py",
+        "tracks/I/results/qml_runs.json",
+        "tracks/I/results/noise_provenance.json",
+        "tracks/I/results/grover_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Hardware-calibrated noise",
+      "lecture": "Assignment I",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/learning.py",
+        "tracks/I/results/qml_runs.json",
+        "tracks/I/results/noise_provenance.json",
+        "tracks/I/results/grover_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Query/gate/wall-time accounting",
+      "lecture": "Assignment I",
+      "status": "implemented",
+      "evidence": [
+        "tracks/I/qstudy/learning.py",
+        "tracks/I/results/qml_runs.json",
+        "tracks/I/results/noise_provenance.json",
+        "tracks/I/results/grover_runs.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Minor embedding and chain penalties",
+      "lecture": "Assignment 5",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/embedding.json"
+      ],
+      "scope": "Exact 16-state classical enumeration, no annealer hardware."
+    },
+    {
+      "topic": "Coefficient rescaling and physical-qubit overhead",
+      "lecture": "Assignment 5",
+      "status": "numerical_demo",
+      "evidence": [
+        "chapter_supplement/study.py",
+        "chapter_supplement/results/embedding.json"
+      ],
+      "scope": "Exact 16-state classical enumeration, no annealer hardware."
+    },
+    {
+      "topic": "Main EV case: binary cost scheduling",
+      "lecture": "Assignment Track E",
+      "status": "implemented",
+      "evidence": [
+        "tracks/E/evcharge/solvers.py",
+        "tracks/E/results/summary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Compiler: frontend/IR/backend, four passes and DP ordering",
+      "lecture": "Assignment Track F",
+      "status": "implemented",
+      "evidence": [
+        "tracks/F/toycc/search.py",
+        "tracks/F/results/summary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Real xv6: page allocation and cache lookup",
+      "lecture": "Assignment Track G",
+      "status": "implemented",
+      "evidence": [
+        "tracks/G/patches/track_g.patch",
+        "tracks/G/results/summary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Real SQLite: budgeted index portfolios",
+      "lecture": "Assignment Track H",
+      "status": "implemented",
+      "evidence": [
+        "tracks/H/dblab/select.py",
+        "tracks/H/results/summary.json"
+      ],
+      "scope": ""
+    },
+    {
+      "topic": "Real software: test selection and fault trade-off",
+      "lecture": "Assignment Track J",
+      "status": "implemented",
+      "evidence": [
+        "tracks/J/selci/selection.py",
+        "tracks/J/results/summary.json"
+      ],
+      "scope": ""
+    }
+  ],
+  "research_references": [
+    {
+      "topic": "GRNG",
+      "lecture": "PPT1 35",
+      "url": "https://proceedings.mlr.press/v300/dash26a.html",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/curvature.py",
+        "research_supplement/results/curvature.json"
+      ],
+      "scope": "One-layer full-batch model, exact Fisher expectation, S=1 and explicit analytic gradient-norm derivative; no large-model reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "AdaFisher",
+      "lecture": "PPT1 35,38",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/f88bec15cc4cb56b432ee040bb63f94f-Abstract-Conference.html",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/curvature.py",
+        "research_supplement/results/curvature.json"
+      ],
+      "scope": "Three-class single layer. Follows printed Eq. 3 gamma weighting; author current running-factor code differs. Initial scalar-block port corrected and retained.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Dynamic nonmonotone submodular methods",
+      "lecture": "PPT1 36",
+      "url": "https://proceedings.mlr.press/v306/banihashem26c.html",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "algorithm_variant",
+      "evidence": [
+        "research_supplement/submodular.py",
+        "research_supplement/results/submodular.json"
+      ],
+      "scope": "Finite threshold grid, explicit disjoint candidates and exact offline solver on selected union. No polynomial update bound or 0.277 guarantee claimed.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Differentially private submodular methods",
+      "lecture": "PPT1 36",
+      "url": "https://arxiv.org/abs/2606.14951",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/submodular.py",
+        "research_supplement/results/submodular.json"
+      ],
+      "scope": "Monotone coverage knapsack, GRNM and exponential noisy max. Conservative pure basic composition replaces advanced composition; no DP-2GG optimal-ratio claim.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "OmniOpt taxonomy/benchmark",
+      "lecture": "PPT1 38",
+      "url": "https://arxiv.org/abs/2607.04033",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "survey_demonstration",
+      "evidence": [
+        "research_supplement/hpo.py",
+        "research_supplement/results/hpo.json"
+      ],
+      "scope": "L1/L2/Linf/spectral dual-norm certificates and small quadratic optimization. Survey is not invented as one algorithm; no cross-domain benchmark reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "ResQue Greedy",
+      "lecture": "PPT1 38",
+      "url": "https://arxiv.org/abs/2505.13670",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/submodular.py",
+        "research_supplement/results/submodular.json"
+      ],
+      "scope": "Curvature trigger and step-back, with explicit no-deterioration exchange and retained greedy incumbent. Raw and guarded paths are both saved.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "PANA SpMV",
+      "lecture": "PPT2 31",
+      "url": "https://craft.cs.tsinghua.edu.cn/publication/pana-a-fine-grained-runtime-adaptive-load-balancing-for-parallel-spmv-on-multicore-cpus/",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "mechanism_only",
+      "evidence": [
+        "research_supplement/spmv.py",
+        "research_supplement/results/spmv.json"
+      ],
+      "scope": "Native nonzero-tile/runtime-adaptive control; published SIMD micro-operation policy unavailable. Author repo had README and LICENSE only; publisher PDF returned 403.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": true
+    },
+    {
+      "topic": "PackStealLB",
+      "lecture": "PPT2 31-32",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0743731520304214",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "mechanism_only",
+      "evidence": [
+        "research_supplement/placement.py",
+        "research_supplement/results/placement.json"
+      ],
+      "scope": "Original finite task-pack transfer control; no Charm++/epsilon-Nash packing-policy fidelity claim. Open manuscript could not be retrieved.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": true
+    },
+    {
+      "topic": "GSHetero",
+      "lecture": "PPT2 31",
+      "url": "https://researchid.co/dhava2004",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "mechanism_only",
+      "evidence": [
+        "research_supplement/placement.py",
+        "research_supplement/results/placement.json"
+      ],
+      "scope": "MCL grouping plus an explicitly original speed-aware placement heuristic. Detailed GSHetero placement policy unavailable; no Hadoop reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": true
+    },
+    {
+      "topic": "Architecture-aware currying",
+      "lecture": "PPT2 33",
+      "url": "https://pure.psu.edu/en/publications/architecture-aware-currying/",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "mechanism_only",
+      "evidence": [
+        "research_supplement/placement.py",
+        "research_supplement/results/placement.json"
+      ],
+      "scope": "Finite mesh with partial application, near-data evaluation and postponed reduction. Does not implement the unavailable published compiler algorithm.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": true
+    },
+    {
+      "topic": "Subspace Networks",
+      "lecture": "PPT2 33",
+      "url": "https://arxiv.org/abs/2506.01260",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/communication.py",
+        "research_supplement/results/communication.json"
+      ],
+      "scope": "Two-block constrained residual network, fixed high-rank embeddings, shared subspace, dense/compressed trajectory check; separate Grassmann operator test. No billion-parameter training.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "OFLight",
+      "lecture": "PPT2 33",
+      "url": "https://doi.org/10.1109/SECON68281.2026.11579004",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "mechanism_only",
+      "evidence": [
+        "research_supplement/communication.py",
+        "research_supplement/results/communication.json"
+      ],
+      "scope": "Low-rank OTA/feedback controls with explicitly original SVD/refresh rules. Full projection-construction policy unavailable; exact OFLight algorithm NOT claimed.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": true
+    },
+    {
+      "topic": "TensorHyper-VQC",
+      "lecture": "PPT3 37",
+      "url": "https://arxiv.org/abs/2508.01116",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/quantum_studies.py",
+        "research_supplement/results/tensorhyper.json"
+      ],
+      "scope": "Rank-one TT-matrix and Gaussian input, explicit classical chain rule, 3-qubit circuit. No source performance theorem or hardware reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Negative learning-rate phases",
+      "lecture": "PPT3 37",
+      "url": "https://arxiv.org/abs/2511.22861",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/quantum_studies.py",
+        "research_supplement/results/negative_learning.json"
+      ],
+      "scope": "Loss-triggered negative step, 256-shot gradients and exact acceptance values; 3-qubit simulator. Every unfavorable outcome retained.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Quantum measurement temperature",
+      "lecture": "PPT3 38",
+      "url": "https://arxiv.org/abs/2606.22551",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/quantum_studies.py",
+        "research_supplement/results/qmt.json"
+      ],
+      "scope": "Joint positive-temperature/circuit training on synthetic six-class data. No microscopy/Fashion-MNIST reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Quantum-gradient nested optimization",
+      "lecture": "PPT3 38",
+      "url": "https://arxiv.org/abs/2409.20044",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/quantum_studies.py",
+        "research_supplement/results/nom.json"
+      ],
+      "scope": "Explicit dense unitary dilation/postselection and PQC fidelity fitting. Sparse-oracle construction and RL circuit-structure search are not reproduced.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "QML-Liver",
+      "lecture": "PPT3 39",
+      "url": "https://github.com/LauraMDonaire/QML-Liver",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/liver.py",
+        "research_supplement/results/liver.json"
+      ],
+      "scope": "NumPy port of two-qubit architecture on author ILPD CSV; new stratified splits, training-only preprocessing, 80-epoch cap, no clinical or published-score claim.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "EAHP",
+      "lecture": "PPT4 22,24-25",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-95-8402-4_7",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "mechanism_only",
+      "evidence": [
+        "research_supplement/strategies.py",
+        "research_supplement/results/strategies.json"
+      ],
+      "scope": "Explicit synthetic cost-model GA and one-hot LP control. Full EAHP cost equations/planner unavailable; no exact method or LLM training claim.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": true
+    },
+    {
+      "topic": "GAGS SVM",
+      "lecture": "PPT4 22,24",
+      "url": "https://link.springer.com/article/10.1007/s10732-026-09588-3",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "algorithm_variant",
+      "evidence": [
+        "research_supplement/svmplus.py",
+        "research_supplement/results/svmplus.json"
+      ],
+      "scope": "Exact SVM+ dual with primal certificate, two log-grid GA islands. Reduced search range/population and independent privileged SVC tiebreak are declared variants; no MNIST/CWRU reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Astra",
+      "lecture": "PPT4 22,24-25",
+      "url": "https://arxiv.org/abs/2502.13480",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "algorithm_variant",
+      "evidence": [
+        "research_supplement/strategies.py",
+        "research_supplement/results/strategies.json"
+      ],
+      "scope": "Finite synthetic heterogeneous GPipe cost model, exhaustive choices and financial trade-off; no calibrated Megatron kernels or heterogeneous GPU run.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "HPO tutorial/survey",
+      "lecture": "PPT4 22,24,26",
+      "url": "https://arxiv.org/abs/2410.22854",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "survey_demonstration",
+      "evidence": [
+        "research_supplement/hpo.py",
+        "research_supplement/results/hpo.json"
+      ],
+      "scope": "Exact ridge hypergradient, finite-difference check, grid/random/Sobol controls and live halving. Survey/tutorial are not a single algorithm.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "ASHA systems paper",
+      "lecture": "PPT4 27",
+      "url": "https://arxiv.org/abs/1810.05934",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "algorithm_variant",
+      "evidence": [
+        "research_supplement/hpo.py",
+        "research_supplement/results/hpo.json"
+      ],
+      "scope": "Real four-worker stopping variant, completed-only rung scores, checkpoint continuation and explicit three-observation warm start. No 500-worker systems reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
+    }
+  ],
+  "fidelity_counts": {
+    "source_port": 10,
+    "algorithm_variant": 4,
+    "survey_demonstration": 2,
+    "mechanism_only": 6
+  },
+  "strict_paper_method_coverage_complete": false,
+  "interpretation": "All 22 research entries have experiments or controls. Ten scoped source ports, four algorithm variants, two survey demonstrations and six mechanism-only controls are distinguished; no entire paper or source-scale performance is reproduced."
+}

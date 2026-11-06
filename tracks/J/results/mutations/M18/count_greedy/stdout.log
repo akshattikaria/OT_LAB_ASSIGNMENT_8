@@ -1,0 +1,37 @@
+............................................................................F...                                                         [100%]
+=================================== FAILURES ===================================
+____________________________ TTLCacheTest.test_ttl _____________________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_ttl>
+
+    def test_ttl(self):
+        cache = TTLCache[int, int, int](maxsize=2, ttl=2, timer=Timer())
+        self.assertEqual(0, cache.timer())
+        self.assertEqual(2, cache.ttl)
+    
+        cache[1] = 1
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache.timer.tick()
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache[2] = 2
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({1, 2}, set(cache))
+    
+        cache.timer.tick()
+        self.assertNotIn(1, cache)
+        self.assertEqual(2, cache[2])
+>       self.assertEqual(1, len(cache))
+E       AssertionError: 1 != 2
+
+tests/test_ttl.py:55: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ttl.py::TTLCacheTest::test_ttl - AssertionError: 1 != 2
+1 failed, 79 passed, 8 subtests passed in 0.29s

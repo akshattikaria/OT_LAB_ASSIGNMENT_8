@@ -1,0 +1,49 @@
+{
+  "original_commit": "1546c0f6c477e69b394cb08d421205b4e5a249b2",
+  "steady_s": 0.05912092399995572,
+  "end_to_end_s": 0.09513336100002334,
+  "first_job_start_offset_s": 0.058199989000002006,
+  "total_kernel_s": 0.0002552039999841327,
+  "jobs": [
+    {
+      "job": 2,
+      "units": 1,
+      "worker": 1,
+      "donor": 1,
+      "stolen": false,
+      "start": 0.058199989000002006,
+      "finish": 0.05837167099997487,
+      "digest": "a61d03b9ea183777795852d56cea794caa0d3e56d4b0f377c54f325544546f12"
+    },
+    {
+      "job": 3,
+      "units": 1,
+      "worker": 1,
+      "donor": 1,
+      "stolen": false,
+      "start": 0.05837418499999103,
+      "finish": 0.058379812999987735,
+      "digest": "b8aca3a34f6597ba11c8cc44971dd0a80e8083777b701f3d40be6b1a11752d59"
+    },
+    {
+      "job": 0,
+      "units": 1,
+      "worker": 0,
+      "donor": 0,
+      "stolen": false,
+      "start": 0.05833678999999847,
+      "finish": 0.05841034799999534,
+      "digest": "aa2aad48c3a436d2cdbf26f20809ba071de4e5c3695fec6761d7a9412af64820"
+    },
+    {
+      "job": 1,
+      "units": 1,
+      "worker": 0,
+      "donor": 0,
+      "stolen": false,
+      "start": 0.058412310999983674,
+      "finish": 0.058416647000001376,
+      "digest": "25ffe4625cd4b31038839088dceb2e52f17b9b01c230845a8af9b61e7862d808"
+    }
+  ]
+}

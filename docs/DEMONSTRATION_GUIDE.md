@@ -1,0 +1,17 @@
+# Short demonstration and viva guide
+
+The captioned video shows actual EV command output and project evidence. It is an edited guided demonstration, not a claim of a live unscripted recording or a physical charging station. You can present it, add your own narration, or demonstrate the same commands live as required by sir.
+
+1. Explain the process: EVs have arrival/departure windows and need a fixed number of charging slots. Shared station capacity and prices vary by slot.
+2. Explain x_it, the cost objective, exact energy equality and the station limit. Undercharging is infeasible, even if the bill is lower.
+3. Run `cd tracks/E` then `python -m evcharge demo`. Show all methods feasible with fictional costs 406, 182 and 182.
+4. Show the 75-case table. Flexible-case savings are 49.44% on 15 certified matched pairs; baseline/greedy/ILP main feasibility is 64/70/75 out of 75. Flat prices save zero.
+5. Show a trade-off: xv6 loses elapsed speed despite less spinning, or compiler O2 erases gains. Explain why the internal objective and actual runtime differ.
+6. Show J: 391 to 74 tests and 41.5% lower median wall time, but three of 16 full-suite-detected faults missed. Line coverage is a surrogate.
+7. Explain one real AI bug/fix from A, B or D, then distinguish quantum query advantage from CPU simulation speed.
+
+Practice changing a tariff or capacity in a copied tiny EV input and predicting the effect before running it. Be able to explain code and modify it without AI during the viva. The second-tool comparison is recorded in ai_tool_comparison/COMPARISON.md: both original answers pass; Gemini’s approximate generation time is student-estimated and ChatGPT’s is unknown. Explain that function timing is separate from response generation. Do not claim physical QPU access, real station savings or a general model ranking.
+
+## Research extension walkthrough
+
+Run `python -m research_supplement.audit`, then show `research_supplement/METHOD_COVERAGE.md`. Explain the four evidence levels and identify the six mechanism-only rows. Show measurement-temperature paired outcomes and the actual author-data liver results, including losses against logistic; show 210 native two-thread SpMV timings and the actual four-thread halving search. Distinguish modeled GPU strategies and logical communication counts from hardware measurements. Run `python -m unittest research_supplement.test_methods -v` to demonstrate independent numerical checks. All 22 entries have experiments/controls, but the six unavailable detailed policies are not exact paper implementations.

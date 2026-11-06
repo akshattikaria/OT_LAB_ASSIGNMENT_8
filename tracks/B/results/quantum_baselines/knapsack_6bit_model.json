@@ -1,0 +1,152 @@
+{
+  "schema": "track-b-qubo-v1",
+  "variables": [
+    "item_0",
+    "item_1",
+    "item_2",
+    "item_3",
+    "slack_0",
+    "slack_1"
+  ],
+  "Q_upper": [
+    [
+      -140.0,
+      180.0,
+      180.0,
+      90.0,
+      90.0,
+      180.0
+    ],
+    [
+      0.0,
+      -124.0,
+      120.0,
+      60.0,
+      60.0,
+      120.0
+    ],
+    [
+      0.0,
+      0.0,
+      -123.0,
+      60.0,
+      60.0,
+      120.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -77.0,
+      30.0,
+      60.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -75.0,
+      60.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -120.0
+    ]
+  ],
+  "offset": 135.0,
+  "energy": "offset + sum_i Q_ii*x_i + sum_(i<j) Q_ij*x_i*x_j",
+  "statevector_index": "sum_i x_i * 2**i; variable 0 is least significant",
+  "display_bits": "variable_order_bits lists x_0 first; statevector_label lists most significant bit first",
+  "ising": {
+    "h": [
+      -110.0,
+      -73.0,
+      -73.5,
+      -36.5,
+      -37.5,
+      -75.0
+    ],
+    "J_upper": [
+      [
+        0.0,
+        45.0,
+        45.0,
+        22.5,
+        22.5,
+        45.0
+      ],
+      [
+        0.0,
+        0.0,
+        30.0,
+        15.0,
+        15.0,
+        30.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        15.0,
+        15.0,
+        30.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.5,
+        15.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        15.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "offset": 173.0,
+    "spin_mapping": "s_i = 1 - 2*x_i"
+  },
+  "metadata": {
+    "problem": "knapsack",
+    "name": "teaching",
+    "values": [
+      5,
+      4,
+      3,
+      2
+    ],
+    "weights": [
+      3,
+      2,
+      2,
+      1
+    ],
+    "capacity": 3,
+    "item_count": 4,
+    "slack_weights": [
+      1,
+      2
+    ],
+    "penalty": 15.0,
+    "sufficient_penalty_condition": "P > sum(values)",
+    "direct_energy": "-value(items) + P*(weight(items)+slack-capacity)**2"
+  }
+}

@@ -1,0 +1,1013 @@
+......F...F.....F..................................................... [ 17%]
+..............................F................................... [ 34%]
+....................F..F...F.....F...................................... [ 53%]
+...........................F...F...F......F............F...F...F.....F.. [ 71%]
+..........F...F.....F........F.................F...F.... [ 85%]
+.F.........................F...F.....F.................                  [100%]
+=================================== FAILURES ===================================
+________________________ CacheTest.test_getsizeof_param ________________________
+
+self = <tests.test_cache.CacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+______________________ CacheTest.test_getsizeof_subclass _______________________
+
+self = <tests.test_cache.CacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_______________________ CacheTest.test_missing_getsizeof _______________________
+
+self = <tests.test_cache.CacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+_____________________ CacheMethodTest.test_value_too_large _____________________
+
+self = <tests.test_cachedmethod.CacheMethodTest testMethod=test_value_too_large>
+
+    def test_value_too_large(self):
+        cache = self.cache(1, getsizeof=lambda x: x)
+        cached = Cached(cache)
+        self.assertEqual(cached.get(0), 0)
+        self.assertIn(0, cache.values())
+        self.assertEqual(cached.get(1), 1)
+>       self.assertIn(1, cache.values())
+E       AssertionError: 1 not found in ValuesView(Cache({(0,): 0}, maxsize=1, currsize=0))
+
+tests/test_cachedmethod.py:843: AssertionError
+______________________ FIFOCacheTest.test_fifo_getsizeof _______________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_fifo_getsizeof>
+
+    def test_fifo_getsizeof(self):
+        cache = FIFOCache[int, int](maxsize=3, getsizeof=lambda x: x)
+    
+        cache[1] = 1
+        cache[2] = 2
+    
+        self.assertEqual(len(cache), 2)
+        self.assertEqual(cache[1], 1)
+        self.assertEqual(cache[2], 2)
+    
+>       cache[3] = 3
+        ^^^^^^^^
+
+tests/test_fifo.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:146: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = FIFOCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+______________________ FIFOCacheTest.test_getsizeof_param ______________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:146: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = FIFOCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+____________________ FIFOCacheTest.test_getsizeof_subclass _____________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:146: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ FIFOCacheTest.test_missing_getsizeof _____________________
+
+self = <tests.test_fifo.FIFOCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+______________________ LFUCacheTest.test_getsizeof_param _______________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:200: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ LFUCacheTest.test_getsizeof_subclass _____________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:200: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_______________________ LFUCacheTest.test_lfu_getsizeof ________________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_lfu_getsizeof>
+
+    def test_lfu_getsizeof(self):
+        cache = LFUCache[int, int](maxsize=3, getsizeof=lambda x: x)
+    
+        cache[1] = 1
+        cache[2] = 2
+    
+        self.assertEqual(len(cache), 2)
+        self.assertEqual(cache[1], 1)
+        self.assertEqual(cache[2], 2)
+    
+>       cache[3] = 3
+        ^^^^^^^^
+
+tests/test_lfu.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:200: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ LFUCacheTest.test_missing_getsizeof ______________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+______________________ LRUCacheTest.test_getsizeof_param _______________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:272: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LRUCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ LRUCacheTest.test_getsizeof_subclass _____________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:272: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_______________________ LRUCacheTest.test_lru_getsizeof ________________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_lru_getsizeof>
+
+    def test_lru_getsizeof(self):
+        cache = LRUCache[int, int](maxsize=3, getsizeof=lambda x: x)
+    
+        cache[1] = 1
+        cache[2] = 2
+    
+        self.assertEqual(len(cache), 2)
+        self.assertEqual(cache[1], 1)
+        self.assertEqual(cache[2], 2)
+    
+>       cache[3] = 3
+        ^^^^^^^^
+
+tests/test_lru.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:272: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LRUCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ LRUCacheTest.test_missing_getsizeof ______________________
+
+self = <tests.test_lru.LRUCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+_______________________ RRCacheTest.test_getsizeof_param _______________________
+
+self = <tests.test_rr.RRCacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:316: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = RRCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ RRCacheTest.test_getsizeof_subclass ______________________
+
+self = <tests.test_rr.RRCacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:316: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+______________________ RRCacheTest.test_missing_getsizeof ______________________
+
+self = <tests.test_rr.RRCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+________________________ RRCacheTest.test_rr_getsizeof _________________________
+
+self = <tests.test_rr.RRCacheTest testMethod=test_rr_getsizeof>
+
+    def test_rr_getsizeof(self):
+        cache = RRCache[int, int](maxsize=3, choice=min, getsizeof=lambda x: x)
+    
+        cache[1] = 1
+        cache[2] = 2
+    
+        self.assertEqual(len(cache), 2)
+        self.assertEqual(cache[1], 1)
+        self.assertEqual(cache[2], 2)
+    
+>       cache[3] = 3
+        ^^^^^^^^
+
+tests/test_rr.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:316: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = RRCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+______________________ TLRUCacheTest.test_getsizeof_param ______________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:608: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TLRUTestCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+____________________ TLRUCacheTest.test_getsizeof_subclass _____________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:608: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ TLRUCacheTest.test_missing_getsizeof _____________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+______________________ TTLCacheTest.test_getsizeof_param _______________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_getsizeof_param>
+
+    def test_getsizeof_param(self):
+>       self._test_getsizeof(self.Cache(maxsize=3, getsizeof=lambda x: x))
+
+tests/__init__.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:470: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TTLTestCache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ TTLCacheTest.test_getsizeof_subclass _____________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_getsizeof_subclass>
+
+    def test_getsizeof_subclass(self):
+        class Cache(self.Cache):
+            @staticmethod
+            def getsizeof(value):
+                return value
+    
+>       self._test_getsizeof(Cache(maxsize=3))
+
+tests/__init__.py:407: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/__init__.py:322: in _test_getsizeof
+    cache[3] = 3
+    ^^^^^^^^
+src/cachetools/__init__.py:470: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Cache({1: 1, 2: 2}, maxsize=3, currsize=3), key = 3, value = 3
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize < 1:
+                raise ValueError('value too large')
+            elif key in data:
+                data[key] = value
+            else:
+                while self.__currsize + 1 > maxsize:
+                    self.popitem()
+                data[key] = value
+                self.__currsize += 1
+        else:
+            itemsize = self.getsizeof(value)
+            if itemsize >= maxsize:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:54: ValueError
+_____________________ TTLCacheTest.test_missing_getsizeof ______________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_missing_getsizeof>
+
+    def test_missing_getsizeof(self):
+        class DefaultCache(self.Cache):
+            def __missing__(self, key):
+                try:
+                    self[key] = key
+                except ValueError:
+                    pass  # not stored
+                return key
+    
+        cache = DefaultCache(maxsize=2, getsizeof=lambda x: x)
+    
+        self.assertEqual(0, cache.currsize)
+        self.assertEqual(2, cache.maxsize)
+    
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual(1, cache.currsize)
+        self.assertIn(1, cache)
+    
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+>       self.assertEqual(2, cache.currsize)
+E       AssertionError: 2 != 1
+
+tests/__init__.py:285: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_cache.py::CacheTest::test_getsizeof_param - ValueError: val...
+FAILED tests/test_cache.py::CacheTest::test_getsizeof_subclass - ValueError: ...
+FAILED tests/test_cache.py::CacheTest::test_missing_getsizeof - AssertionErro...
+FAILED tests/test_cachedmethod.py::CacheMethodTest::test_value_too_large - As...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_fifo_getsizeof - ValueError: v...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_getsizeof_param - ValueError: ...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_getsizeof_subclass - ValueErro...
+FAILED tests/test_fifo.py::FIFOCacheTest::test_missing_getsizeof - AssertionE...
+FAILED tests/test_lfu.py::LFUCacheTest::test_getsizeof_param - ValueError: va...
+FAILED tests/test_lfu.py::LFUCacheTest::test_getsizeof_subclass - ValueError:...
+FAILED tests/test_lfu.py::LFUCacheTest::test_lfu_getsizeof - ValueError: valu...
+FAILED tests/test_lfu.py::LFUCacheTest::test_missing_getsizeof - AssertionErr...
+FAILED tests/test_lru.py::LRUCacheTest::test_getsizeof_param - ValueError: va...
+FAILED tests/test_lru.py::LRUCacheTest::test_getsizeof_subclass - ValueError:...
+FAILED tests/test_lru.py::LRUCacheTest::test_lru_getsizeof - ValueError: valu...
+FAILED tests/test_lru.py::LRUCacheTest::test_missing_getsizeof - AssertionErr...
+FAILED tests/test_rr.py::RRCacheTest::test_getsizeof_param - ValueError: valu...
+FAILED tests/test_rr.py::RRCacheTest::test_getsizeof_subclass - ValueError: v...
+FAILED tests/test_rr.py::RRCacheTest::test_missing_getsizeof - AssertionError...
+FAILED tests/test_rr.py::RRCacheTest::test_rr_getsizeof - ValueError: value t...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_getsizeof_param - ValueError: ...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_getsizeof_subclass - ValueErro...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_missing_getsizeof - AssertionE...
+FAILED tests/test_ttl.py::TTLCacheTest::test_getsizeof_param - ValueError: va...
+FAILED tests/test_ttl.py::TTLCacheTest::test_getsizeof_subclass - ValueError:...
+FAILED tests/test_ttl.py::TTLCacheTest::test_missing_getsizeof - AssertionErr...
+26 failed, 365 passed, 24 subtests passed in 1.30s

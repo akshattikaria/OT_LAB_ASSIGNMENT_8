@@ -1,0 +1,35 @@
+{
+  "updated": "2026-11-06",
+  "timezone": "Asia/Calcutta",
+  "base_archive_sha256": "b2f0f8e0c30dcdca756f996e684a809f4927b9135001107ddf9e02d0d666943b",
+  "base_integration_commit": "50da8f425c439397c54a27eb240134a1ba3bc16d",
+  "imported_files_verified_unchanged": 2013,
+  "new_tests": 20,
+  "research_result_files": 14,
+  "source_entries": 22,
+  "fidelity_counts": {
+    "source_port": 10,
+    "algorithm_variant": 4,
+    "survey_demonstration": 2,
+    "mechanism_only": 6
+  },
+  "strict_paper_method_coverage_complete": false,
+  "remaining_exact_method_gaps": [
+    "PANA SpMV",
+    "PackStealLB",
+    "GSHetero",
+    "Architecture-aware currying",
+    "OFLight",
+    "EAHP"
+  ],
+  "source_registry": "research_supplement/SOURCE_REGISTRY.json",
+  "source_access_record": "provenance/research_source_documents.json",
+  "diagnostic_changes": "research_supplement/README.md",
+  "publication": "Pending new assignment repository; none selected or published during this extension.",
+  "ai_platform_exports": "Pending authentic student-provided exports/screenshots; not fabricated.",
+  "historical_performance_replaced": false,
+  "implementation_commits": [
+    "95100a4a7125d684286a43dd281aa11e4dab8a1b",
+    "63fa5d8044fc845d4c888cb1d6a9e63c5f7c386e"
+  ]
+}

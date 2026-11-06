@@ -1,0 +1,34 @@
+test_all_passes_are_pure (test_compiler.CompilerTests.test_all_passes_are_pure) ... ok
+test_bindings_immutable_and_defined (test_compiler.CompilerTests.test_bindings_immutable_and_defined) ... ok
+test_canonical_preserves_nonmonotone_ids (test_compiler.CompilerTests.test_canonical_preserves_nonmonotone_ids) ... ok
+test_constant_chain_propagation (test_compiler.CompilerTests.test_constant_chain_propagation) ... ok
+test_cse_chained_aliases (test_compiler.CompilerTests.test_cse_chained_aliases) ... ok
+test_cse_commutative_only (test_compiler.CompilerTests.test_cse_commutative_only) ... ok
+test_dead_code_transitive (test_compiler.CompilerTests.test_dead_code_transitive) ... ok
+test_dp_matches_exhaustive_all_families (test_compiler.CompilerTests.test_dp_matches_exhaustive_all_families) ... ok
+test_dp_never_worse_than_greedy_or_fixed (test_compiler.CompilerTests.test_dp_never_worse_than_greedy_or_fixed) ... ok
+test_dp_retains_ir_in_state (test_compiler.CompilerTests.test_dp_retains_ir_in_state) ... ok
+test_fold_valid_identities (test_compiler.CompilerTests.test_fold_valid_identities) ... ok
+test_greedy_applies_each_candidate_once (test_compiler.CompilerTests.test_greedy_applies_each_candidate_once) ... ok
+test_input_arity_and_range (test_compiler.CompilerTests.test_input_arity_and_range) ... ok
+test_lex_comments_offsets (test_compiler.CompilerTests.test_lex_comments_offsets) ... ok
+test_lexer_rejects_unknown (test_compiler.CompilerTests.test_lexer_rejects_unknown) ... ok
+test_literal_range_and_trailing_tokens (test_compiler.CompilerTests.test_literal_range_and_trailing_tokens) ... ok
+test_lowering_reference (test_compiler.CompilerTests.test_lowering_reference) ... ok
+test_masked_shift_amounts (test_compiler.CompilerTests.test_masked_shift_amounts) ... ok
+test_native_checksum_and_machine_inspection (test_compiler.CompilerTests.test_native_checksum_and_machine_inspection) ... ok
+test_native_matches_ast_and_all_pass_orders (test_compiler.CompilerTests.test_native_matches_ast_and_all_pass_orders) ... ok
+test_native_wrapper_rejects_bad_inputs (test_compiler.CompilerTests.test_native_wrapper_rejects_bad_inputs) ... ok
+test_no_argument_constant_function (test_compiler.CompilerTests.test_no_argument_constant_function) ... ok
+test_order_can_change_cost (test_compiler.CompilerTests.test_order_can_change_cost) ... ok
+test_precedence_and_parentheses (test_compiler.CompilerTests.test_precedence_and_parentheses) ... ok
+test_random_all_orders_against_ast (test_compiler.CompilerTests.test_random_all_orders_against_ast) ... ok
+test_ssa_validation_and_roundtrip (test_compiler.CompilerTests.test_ssa_validation_and_roundtrip) ... ok
+test_strength_every_power_of_two (test_compiler.CompilerTests.test_strength_every_power_of_two) ... ok
+test_strength_zero_and_nonpower_not_changed (test_compiler.CompilerTests.test_strength_zero_and_nonpower_not_changed) ... ok
+test_unsigned_wrap_and_unary (test_compiler.CompilerTests.test_unsigned_wrap_and_unary) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 1.025s
+
+OK

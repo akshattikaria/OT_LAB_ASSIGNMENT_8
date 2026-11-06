@@ -1,0 +1,69 @@
+...................................................................... [ 17%]
+.................................................................. [ 34%]
+........................................................................ [ 53%]
+........................................................................ [ 71%]
+........................................................ [ 85%]
+................F.F....................................                  [100%]
+=================================== FAILURES ===================================
+_____________________ TLRUCacheTest.test_ttu_iter_expired ______________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu_iter_expired>
+
+    def test_ttu_iter_expired(self):
+        cache = TLRUCache[int, int, int](
+            maxsize=2, ttu=lambda _k, _v, t: t + 2, timer=Timer()
+        )
+        cache[1] = 1
+        cache.timer.tick()
+        cache[2] = 2
+        cache.timer.tick()
+        # a bare for loop skips expired items without removing them
+>       self.assertEqual([2], [key for key in cache])
+E       AssertionError: Lists differ: [2] != [1, 2]
+E       
+E       First differing element 0:
+E       2
+E       1
+E       
+E       Second list contains 1 additional elements.
+E       First extra element 1:
+E       2
+E       
+E       - [2]
+E       + [1, 2]
+
+tests/test_tlru.py:229: AssertionError
+____________________ TLRUCacheTest.test_ttu_reverse_insert _____________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu_reverse_insert>
+
+    def test_ttu_reverse_insert(self):
+        def ttu(_k, v, t):
+            return t + v
+    
+        cache = TLRUCache[int, int, int](maxsize=4, ttu=ttu, timer=Timer())
+        self.assertEqual(0, cache.timer())
+    
+        cache[3] = 3
+        cache[2] = 2
+        cache[1] = 1
+        cache[0] = 0
+    
+        self.assertEqual({1, 2, 3}, set(cache))
+        self.assertEqual(3, len(cache))
+        self.assertNotIn(0, cache)
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(3, cache[3])
+    
+        cache.timer.tick()
+    
+>       self.assertEqual({2, 3}, set(cache))
+E       AssertionError: Items in the second set but not the first:
+E       1
+
+tests/test_tlru.py:299: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu_iter_expired - AssertionEr...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu_reverse_insert - Assertion...
+2 failed, 389 passed, 24 subtests passed in 0.72s

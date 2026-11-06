@@ -1,0 +1,1 @@
+Functional CLI smoke only: 24 tiny measurements, 4 fresh boots, scale 0.0025 and one repetition. These timings do not enter the main report or performance conclusions. The complete raw logs and audit are retained here. Main data are in results/.

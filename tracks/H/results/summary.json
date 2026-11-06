@@ -1,0 +1,294 @@
+[
+  {
+    "portfolio": "none",
+    "label": "Default planner",
+    "selected": [],
+    "index_mib": 0.0,
+    "file_mib": 6.49609375,
+    "families_ms": {
+      "train": {
+        "customer": 10.1992495,
+        "station": 10.496139,
+        "confirmed": 9.089293999999999,
+        "status": 12.363048500000001,
+        "daily": 11.3371345,
+        "city": 9.766023
+      },
+      "heldout": {
+        "customer": 8.032942666666667,
+        "station": 8.705870333333333,
+        "confirmed": 8.436771666666667,
+        "status": 10.953618333333333,
+        "daily": 12.804983333333334,
+        "city": 9.931000333333333
+      }
+    },
+    "weighted_heldout_ms": 9.153533566666667,
+    "weighted_train_ms": 10.36413535,
+    "predicted_train_ms": 14.931336575000001,
+    "median_qps": 99.33955497562182,
+    "min_qps": 85.54897925058185,
+    "max_qps": 106.93846477670633,
+    "median_insert_rows_per_s": 103370.50381594799,
+    "min_insert_rows_per_s": 83128.7534710411,
+    "max_insert_rows_per_s": 141733.61040364386,
+    "index_build_s": 0.0062000980001357675,
+    "analyze_s": 0.005067937000148959,
+    "batch_qps_ratio": 1.0,
+    "insert_ratio": 1.0
+  },
+  {
+    "portfolio": "p_1_5",
+    "label": "20% GREEDY",
+    "selected": [
+      "station_time",
+      "confirmed_station"
+    ],
+    "index_mib": 4.234375,
+    "file_mib": 10.73046875,
+    "families_ms": {
+      "train": {
+        "customer": 9.8150175,
+        "station": 0.055733000000000005,
+        "confirmed": 0.019854,
+        "status": 2.29681,
+        "daily": 8.3914805,
+        "city": 0.19155699999999998
+      },
+      "heldout": {
+        "customer": 9.086615,
+        "station": 0.023271,
+        "confirmed": 0.026415333333333332,
+        "status": 6.233553,
+        "daily": 8.867248666666667,
+        "city": 0.24882500000000002
+      }
+    },
+    "weighted_heldout_ms": 5.177061616666667,
+    "weighted_train_ms": 5.025329800000001,
+    "predicted_train_ms": 5.4253357,
+    "median_qps": 173.3635275272746,
+    "min_qps": 164.6146102910506,
+    "max_qps": 201.22744596754816,
+    "median_insert_rows_per_s": 62087.122575098176,
+    "min_insert_rows_per_s": 55926.395718006694,
+    "max_insert_rows_per_s": 67279.79868538637,
+    "index_build_s": 0.29699724900001456,
+    "analyze_s": 0.025016180999955395,
+    "batch_qps_ratio": 1.7451611049578233,
+    "insert_ratio": 0.6006270675205839
+  },
+  {
+    "portfolio": "p_2",
+    "label": "20% ILP",
+    "selected": [
+      "status_time"
+    ],
+    "index_mib": 3.90234375,
+    "file_mib": 10.3984375,
+    "families_ms": {
+      "train": {
+        "customer": 8.239223,
+        "station": 2.6302844999999997,
+        "confirmed": 1.7117779999999998,
+        "status": 0.1368285,
+        "daily": 4.285016,
+        "city": 1.8443485
+      },
+      "heldout": {
+        "customer": 7.460725666666667,
+        "station": 4.417329,
+        "confirmed": 2.5870553333333333,
+        "status": 0.14921299999999998,
+        "daily": 6.582452666666667,
+        "city": 3.2141973333333334
+      }
+    },
+    "weighted_heldout_ms": 5.029534216666667,
+    "weighted_train_ms": 4.573617875,
+    "predicted_train_ms": 4.546977875,
+    "median_qps": 189.9989868494025,
+    "min_qps": 181.36004951608143,
+    "max_qps": 205.36235570550357,
+    "median_insert_rows_per_s": 71579.33028016472,
+    "min_insert_rows_per_s": 55663.80929489873,
+    "max_insert_rows_per_s": 77650.17825957297,
+    "index_build_s": 0.3254812159998437,
+    "analyze_s": 0.029297324000026492,
+    "batch_qps_ratio": 1.9126216832361362,
+    "insert_ratio": 0.6924541105808316
+  },
+  {
+    "portfolio": "p_0_1_5",
+    "label": "40% G = ILP",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "confirmed_station"
+    ],
+    "index_mib": 7.61328125,
+    "file_mib": 14.109375,
+    "families_ms": {
+      "train": {
+        "customer": 0.0537455,
+        "station": 0.0524885,
+        "confirmed": 0.012907499999999999,
+        "status": 1.8181194999999999,
+        "daily": 6.527074,
+        "city": 0.1773545
+      },
+      "heldout": {
+        "customer": 0.03917,
+        "station": 0.022220666666666666,
+        "confirmed": 0.01993366666666667,
+        "status": 7.281057666666666,
+        "daily": 8.949913333333333,
+        "city": 0.15069366666666667
+      }
+    },
+    "weighted_heldout_ms": 1.6601576166666667,
+    "weighted_train_ms": 0.8835624000000001,
+    "predicted_train_ms": 1.4073116999999993,
+    "median_qps": 529.7650254247744,
+    "min_qps": 447.95818865777034,
+    "max_qps": 580.8011622342361,
+    "median_insert_rows_per_s": 33026.07360623405,
+    "min_insert_rows_per_s": 32552.945371779297,
+    "max_insert_rows_per_s": 36790.72652947098,
+    "index_build_s": 0.6218348919999244,
+    "analyze_s": 0.0531217560001096,
+    "batch_qps_ratio": 5.332870934994425,
+    "insert_ratio": 0.319492237989255
+  },
+  {
+    "portfolio": "p_0_1_2_5",
+    "label": "60% GREEDY",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "status_time",
+      "confirmed_station"
+    ],
+    "index_mib": 11.515625,
+    "file_mib": 18.01171875,
+    "families_ms": {
+      "train": {
+        "customer": 0.039774500000000004,
+        "station": 0.057751500000000004,
+        "confirmed": 0.012914499999999999,
+        "status": 0.232515,
+        "daily": 4.8007285,
+        "city": 0.165749
+      },
+      "heldout": {
+        "customer": 0.028715,
+        "station": 0.021963666666666666,
+        "confirmed": 0.014486333333333334,
+        "status": 0.19392800000000002,
+        "daily": 7.195806666666666,
+        "city": 0.14030833333333334
+      }
+    },
+    "weighted_heldout_ms": 0.7699578,
+    "weighted_train_ms": 0.54640895,
+    "predicted_train_ms": 0.5499165500000007,
+    "median_qps": 1250.6111424000123,
+    "min_qps": 923.770879658326,
+    "max_qps": 1457.9432788333725,
+    "median_insert_rows_per_s": 19847.21337284596,
+    "min_insert_rows_per_s": 17518.58816366576,
+    "max_insert_rows_per_s": 19902.487563159426,
+    "index_build_s": 0.8563009360000251,
+    "analyze_s": 0.06287085500002831,
+    "batch_qps_ratio": 12.589256542440879,
+    "insert_ratio": 0.19200074141250276
+  },
+  {
+    "portfolio": "p_0_1_4_5",
+    "label": "60% ILP",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "time_cover",
+      "confirmed_station"
+    ],
+    "index_mib": 12.77734375,
+    "file_mib": 19.2734375,
+    "families_ms": {
+      "train": {
+        "customer": 0.043272500000000005,
+        "station": 0.0585095,
+        "confirmed": 0.0096305,
+        "status": 0.3551995,
+        "daily": 1.3318085,
+        "city": 0.1096705
+      },
+      "heldout": {
+        "customer": 0.024116,
+        "station": 0.020345,
+        "confirmed": 0.00885,
+        "status": 0.227013,
+        "daily": 1.8591456666666666,
+        "city": 0.142649
+      }
+    },
+    "weighted_heldout_ms": 0.23690641666666667,
+    "weighted_train_ms": 0.20719785,
+    "predicted_train_ms": 0.3477933000000011,
+    "median_qps": 3288.959784244238,
+    "min_qps": 2657.9940220119647,
+    "max_qps": 4051.919842166377,
+    "median_insert_rows_per_s": 18727.004525923727,
+    "min_insert_rows_per_s": 2912.3969180410036,
+    "max_insert_rows_per_s": 20275.140139741132,
+    "index_build_s": 0.8240315010000359,
+    "analyze_s": 0.07536361400002534,
+    "batch_qps_ratio": 33.10825969626457,
+    "insert_ratio": 0.18116390880001232
+  },
+  {
+    "portfolio": "p_0_1_2_3_4_5",
+    "label": "All six indexes",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "status_time",
+      "station_cover",
+      "time_cover",
+      "confirmed_station"
+    ],
+    "index_mib": 22.2890625,
+    "file_mib": 28.78515625,
+    "families_ms": {
+      "train": {
+        "customer": 0.039078,
+        "station": 0.021092,
+        "confirmed": 0.009274000000000001,
+        "status": 0.24222,
+        "daily": 1.4122204999999999,
+        "city": 0.1114555
+      },
+      "heldout": {
+        "customer": 0.028157666666666664,
+        "station": 0.010181666666666667,
+        "confirmed": 0.012347666666666667,
+        "status": 0.24765333333333334,
+        "daily": 2.0138146666666668,
+        "city": 0.10641633333333333
+      }
+    },
+    "weighted_heldout_ms": 0.2514309,
+    "weighted_train_ms": 0.1967757,
+    "predicted_train_ms": 0.32155500000000004,
+    "median_qps": 3389.609436998075,
+    "min_qps": 2838.1982084668502,
+    "max_qps": 4312.297815221747,
+    "median_insert_rows_per_s": 10133.27506294841,
+    "min_insert_rows_per_s": 7010.931542614286,
+    "max_insert_rows_per_s": 11995.170360567385,
+    "index_build_s": 1.5835934239999006,
+    "analyze_s": 0.12389918000008038,
+    "batch_qps_ratio": 34.12144777405027,
+    "insert_ratio": 0.09802868989582161
+  }
+]

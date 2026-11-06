@@ -1,0 +1,23 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "vqe_steps": 80,
+  "qaoa_maxfev": 600,
+  "barren_samples": 64,
+  "simulator": "Authored NumPy exact statevector and density-matrix simulator; dense-matrix independent tests",
+  "hardware": "No physical quantum hardware; generic local depolarizing/readout model only",
+  "vqe": "Two-qubit synthetic Pauli Hamiltonian, two Ry/Rz-CNOT layers, 8 distinct gate parameters",
+  "vqe_comparison": "Same initial parameters and updates per seed, unequal objective/state/metric costs explicitly recorded. No best-run selection for main tables.",
+  "qaoa": "Raw Track B Hamiltonian, min-energy convention, gamma in [0,2pi], beta in [0,pi]. Powell local search, all trials retained; no global certificate.",
+  "canonical_noise_and_shots": "Seed 0 fixed before inspecting quality. No retraining in the channel-noise post-analysis.",
+  "qng": "Full Fubini-Study metric from exact simulator amplitudes with 1e-3 damping and maximum update norm 1. Not a hardware-scalable metric measurement demonstration.",
+  "gradients": "Parameter-shift only for distinct single Pauli-rotation parameters; QAOA shared angles use Powell, QNN nonlinear loss uses a classical chain rule.",
+  "shots": "Sampled via Born probabilities, not physical device runs. Exact expectations consume zero measurement shots. Cached distributions accelerate repeated sampling.",
+  "timing": "CPU simulation timings, not quantum runtime/speedup; no hardware queue/coherence or physical gate times.",
+  "qubit_limits": "Statevectors at most 10 in experiments; density matrices at most 6; exponential simulator memory."
+}

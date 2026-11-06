@@ -1,0 +1,287 @@
+[
+  {
+    "id": "train_customer_0",
+    "split": "train",
+    "kind": "customer",
+    "params": [
+      17
+    ]
+  },
+  {
+    "id": "train_station_0",
+    "split": "train",
+    "kind": "station",
+    "params": [
+      17,
+      4000,
+      4168
+    ]
+  },
+  {
+    "id": "train_confirmed_0",
+    "split": "train",
+    "kind": "confirmed",
+    "params": [
+      17,
+      4000,
+      4168
+    ]
+  },
+  {
+    "id": "train_status_0",
+    "split": "train",
+    "kind": "status",
+    "params": [
+      "pending",
+      4000,
+      4168
+    ]
+  },
+  {
+    "id": "train_daily_0",
+    "split": "train",
+    "kind": "daily",
+    "params": [
+      4000,
+      4168
+    ]
+  },
+  {
+    "id": "train_city_0",
+    "split": "train",
+    "kind": "city",
+    "params": [
+      "City01",
+      4000,
+      4168
+    ]
+  },
+  {
+    "id": "train_customer_1",
+    "split": "train",
+    "kind": "customer",
+    "params": [
+      877
+    ]
+  },
+  {
+    "id": "train_station_1",
+    "split": "train",
+    "kind": "station",
+    "params": [
+      53,
+      8000,
+      8168
+    ]
+  },
+  {
+    "id": "train_confirmed_1",
+    "split": "train",
+    "kind": "confirmed",
+    "params": [
+      53,
+      8000,
+      8168
+    ]
+  },
+  {
+    "id": "train_status_1",
+    "split": "train",
+    "kind": "status",
+    "params": [
+      "confirmed",
+      8000,
+      8168
+    ]
+  },
+  {
+    "id": "train_daily_1",
+    "split": "train",
+    "kind": "daily",
+    "params": [
+      8000,
+      8168
+    ]
+  },
+  {
+    "id": "train_city_1",
+    "split": "train",
+    "kind": "city",
+    "params": [
+      "City03",
+      8000,
+      8168
+    ]
+  },
+  {
+    "id": "heldout_customer_0",
+    "split": "heldout",
+    "kind": "customer",
+    "params": [
+      37
+    ]
+  },
+  {
+    "id": "heldout_station_0",
+    "split": "heldout",
+    "kind": "station",
+    "params": [
+      3,
+      6000,
+      6024
+    ]
+  },
+  {
+    "id": "heldout_confirmed_0",
+    "split": "heldout",
+    "kind": "confirmed",
+    "params": [
+      3,
+      6000,
+      6024
+    ]
+  },
+  {
+    "id": "heldout_status_0",
+    "split": "heldout",
+    "kind": "status",
+    "params": [
+      "cancelled",
+      6000,
+      6024
+    ]
+  },
+  {
+    "id": "heldout_daily_0",
+    "split": "heldout",
+    "kind": "daily",
+    "params": [
+      6000,
+      6024
+    ]
+  },
+  {
+    "id": "heldout_city_0",
+    "split": "heldout",
+    "kind": "city",
+    "params": [
+      "City00",
+      6000,
+      6024
+    ]
+  },
+  {
+    "id": "heldout_customer_1",
+    "split": "heldout",
+    "kind": "customer",
+    "params": [
+      5791
+    ]
+  },
+  {
+    "id": "heldout_station_1",
+    "split": "heldout",
+    "kind": "station",
+    "params": [
+      200,
+      8200,
+      8536
+    ]
+  },
+  {
+    "id": "heldout_confirmed_1",
+    "split": "heldout",
+    "kind": "confirmed",
+    "params": [
+      200,
+      8200,
+      8536
+    ]
+  },
+  {
+    "id": "heldout_status_1",
+    "split": "heldout",
+    "kind": "status",
+    "params": [
+      "pending",
+      8200,
+      8536
+    ]
+  },
+  {
+    "id": "heldout_daily_1",
+    "split": "heldout",
+    "kind": "daily",
+    "params": [
+      8200,
+      8536
+    ]
+  },
+  {
+    "id": "heldout_city_1",
+    "split": "heldout",
+    "kind": "city",
+    "params": [
+      "City06",
+      8200,
+      8536
+    ]
+  },
+  {
+    "id": "heldout_customer_2",
+    "split": "heldout",
+    "kind": "customer",
+    "params": [
+      19997
+    ]
+  },
+  {
+    "id": "heldout_station_2",
+    "split": "heldout",
+    "kind": "station",
+    "params": [
+      580,
+      1000,
+      1720
+    ]
+  },
+  {
+    "id": "heldout_confirmed_2",
+    "split": "heldout",
+    "kind": "confirmed",
+    "params": [
+      580,
+      1000,
+      1720
+    ]
+  },
+  {
+    "id": "heldout_status_2",
+    "split": "heldout",
+    "kind": "status",
+    "params": [
+      "expired",
+      1000,
+      1720
+    ]
+  },
+  {
+    "id": "heldout_daily_2",
+    "split": "heldout",
+    "kind": "daily",
+    "params": [
+      1000,
+      1720
+    ]
+  },
+  {
+    "id": "heldout_city_2",
+    "split": "heldout",
+    "kind": "city",
+    "params": [
+      "City09",
+      1000,
+      1720
+    ]
+  }
+]

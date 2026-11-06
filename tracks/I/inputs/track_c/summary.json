@@ -1,0 +1,210 @@
+{
+  "vqe": {
+    "ShiftGD": {
+      "mean_gap": 0.0004330977168171657,
+      "max_gap": 0.0014904684137402313,
+      "objective_calls": 1297,
+      "state_preparations": 1297,
+      "metric_preparations": 0,
+      "mean_runtime_s": 0.22247556080001232
+    },
+    "ShiftAdam": {
+      "mean_gap": 0.0004158251762896192,
+      "max_gap": 0.0014462501549490359,
+      "objective_calls": 1297,
+      "state_preparations": 1297,
+      "metric_preparations": 0,
+      "mean_runtime_s": 0.22815183460006666
+    },
+    "SPSA": {
+      "mean_gap": 0.14547226256799553,
+      "max_gap": 0.29655719915155165,
+      "objective_calls": 177,
+      "state_preparations": 177,
+      "metric_preparations": 0,
+      "mean_runtime_s": 0.03502462100004777
+    },
+    "QNG": {
+      "mean_gap": 5.905123945382229e-10,
+      "max_gap": 1.7946406583035923e-09,
+      "objective_calls": 1297,
+      "state_preparations": 2657,
+      "metric_preparations": 1360,
+      "mean_runtime_s": 0.4041079958001319
+    }
+  },
+  "qaoa": [
+    {
+      "model": "maxcut_4bit",
+      "p": 1,
+      "seeds": 5,
+      "mean_energy": -2.9855360998370157,
+      "mean_ground_probability": 0.38964655856253194,
+      "mean_original_feasibility": 1.0,
+      "mean_encoded_feasibility": 1.0,
+      "local_success": 5,
+      "mean_calls": 80.6,
+      "mean_runtime_s": 0.010859728000104952,
+      "classical_minimum": -4.0,
+      "uniform_energy": -2.5
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 2,
+      "seeds": 5,
+      "mean_energy": -3.8179207841500564,
+      "mean_ground_probability": 0.8641806613151204,
+      "mean_original_feasibility": 1.0,
+      "mean_encoded_feasibility": 1.0,
+      "local_success": 5,
+      "mean_calls": 426.4,
+      "mean_runtime_s": 0.07504864880011156,
+      "classical_minimum": -4.0,
+      "uniform_energy": -2.5
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 1,
+      "seeds": 5,
+      "mean_energy": 105.92373670667621,
+      "mean_ground_probability": 0.12256215350114137,
+      "mean_original_feasibility": 0.5353894188636932,
+      "mean_encoded_feasibility": 0.1666844869745373,
+      "local_success": 5,
+      "mean_calls": 106.6,
+      "mean_runtime_s": 0.01668283339995469,
+      "classical_minimum": -6.0,
+      "uniform_energy": 173.0
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 2,
+      "seeds": 5,
+      "mean_energy": 101.97741085766611,
+      "mean_ground_probability": 0.03131119405708392,
+      "mean_original_feasibility": 0.6317477648461407,
+      "mean_encoded_feasibility": 0.13995326669830818,
+      "local_success": 5,
+      "mean_calls": 366.0,
+      "mean_runtime_s": 0.08867142860008244,
+      "classical_minimum": -6.0,
+      "uniform_energy": 173.0
+    }
+  ],
+  "shots": [
+    {
+      "model": "maxcut_4bit",
+      "p": 1,
+      "shots": 64,
+      "repetitions": 100,
+      "energy_rmse": 0.13812223644700153
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 1,
+      "shots": 256,
+      "repetitions": 100,
+      "energy_rmse": 0.06680950724743766
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 1,
+      "shots": 1024,
+      "repetitions": 100,
+      "energy_rmse": 0.036958490187956224
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 1,
+      "shots": 4096,
+      "repetitions": 100,
+      "energy_rmse": 0.01666794264368961
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 2,
+      "shots": 64,
+      "repetitions": 100,
+      "energy_rmse": 0.09196885189917037
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 2,
+      "shots": 256,
+      "repetitions": 100,
+      "energy_rmse": 0.04298453755564976
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 2,
+      "shots": 1024,
+      "repetitions": 100,
+      "energy_rmse": 0.021903073242389146
+    },
+    {
+      "model": "maxcut_4bit",
+      "p": 2,
+      "shots": 4096,
+      "repetitions": 100,
+      "energy_rmse": 0.007838768320528152
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 1,
+      "shots": 64,
+      "repetitions": 100,
+      "energy_rmse": 19.30299026355027
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 1,
+      "shots": 256,
+      "repetitions": 100,
+      "energy_rmse": 7.868337577778528
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 1,
+      "shots": 1024,
+      "repetitions": 100,
+      "energy_rmse": 4.480149500271404
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 1,
+      "shots": 4096,
+      "repetitions": 100,
+      "energy_rmse": 1.701316687274883
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 2,
+      "shots": 64,
+      "repetitions": 100,
+      "energy_rmse": 21.178296605872106
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 2,
+      "shots": 256,
+      "repetitions": 100,
+      "energy_rmse": 10.780783136768605
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 2,
+      "shots": 1024,
+      "repetitions": 100,
+      "energy_rmse": 5.210371973477407
+    },
+    {
+      "model": "knapsack_6bit",
+      "p": 2,
+      "shots": 4096,
+      "repetitions": 100,
+      "energy_rmse": 2.4501582171802934
+    }
+  ],
+  "qnn_mean_test_accuracy": 0.875,
+  "logistic_mean_test_accuracy": 0.90625
+}

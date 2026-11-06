@@ -1,0 +1,22 @@
+{
+  "seeds": [
+    0
+  ],
+  "shots": 256,
+  "qml_train": 12,
+  "qml_test": 12,
+  "vqe_steps": 10,
+  "qaoa_maxfev": 60,
+  "grover_qubits": [
+    2,
+    4,
+    6
+  ],
+  "quick": true,
+  "endianness": "Qubit 0 is least significant; output-register integers match q[n-1]...q[0].",
+  "oracle_accounting": "Logical oracle query counts differ from decomposed gate count, circuit construction, transpilation and simulator CPU time. Grover charges r search calls plus one verification call; sample success is retained.",
+  "qml": "Same transformed features, train/test split, C=1 and precomputed-kernel SVC. Quantum kernel uses explicit compute-uncompute Statevector circuits, upper-triangle train Gram and full test Gram. No amplitude-cache shortcut in measured kernel construction.",
+  "noise": "Historical 2024-05-27 FakeManila calibration, Aer density-matrix shots, paired ideal control on identical transpiled circuits. No physical QPU execution or current calibration claim.",
+  "sampling": "Algorithm-suite counts are classical Born draws from SDK statevectors. Only the calibrated/paired noise study uses actual Aer shot execution. Kernel-shot sensitivity is synthetic binomial test-kernel noise with ideal-trained SVC, not noisy training.",
+  "reuse": "Unchanged earlier C/D summaries/protocols/audit are included with hashes; they are earlier measurements, not fresh Track I executions."
+}

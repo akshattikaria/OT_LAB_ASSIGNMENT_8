@@ -1,0 +1,22 @@
+...................................................................... [ 17%]
+..............................F................................... [ 34%]
+........................................................................ [ 53%]
+........................................................................ [ 71%]
+........................................................ [ 85%]
+.......................................................                  [100%]
+=================================== FAILURES ===================================
+_____________________ CacheMethodTest.test_value_too_large _____________________
+
+self = <tests.test_cachedmethod.CacheMethodTest testMethod=test_value_too_large>
+
+    def test_value_too_large(self):
+        cache = self.cache(1, getsizeof=lambda x: x)
+        cached = Cached(cache)
+        self.assertEqual(cached.get(0), 0)
+>       self.assertIn(0, cache.values())
+E       AssertionError: 0 not found in ValuesView(Cache({}, maxsize=1, currsize=0))
+
+tests/test_cachedmethod.py:841: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_cachedmethod.py::CacheMethodTest::test_value_too_large - As...
+1 failed, 390 passed, 24 subtests passed in 1.49s

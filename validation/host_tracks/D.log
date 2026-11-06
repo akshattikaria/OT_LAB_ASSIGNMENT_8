@@ -1,0 +1,34 @@
+test_all_schedulers_exact_once (test_track_d.TrackDTests.test_all_schedulers_exact_once) ... ok
+test_client_duplicates_rejected (test_track_d.TrackDTests.test_client_duplicates_rejected) ... ok
+test_client_weighted_average (test_track_d.TrackDTests.test_client_weighted_average) ... ok
+test_coverage_union_and_empty (test_track_d.TrackDTests.test_coverage_union_and_empty) ... ok
+test_coverage_validation (test_track_d.TrackDTests.test_coverage_validation) ... ok
+test_data_parallel_matches_serial (test_track_d.TrackDTests.test_data_parallel_matches_serial) ... ok
+test_exhaustive_submodular_assumptions (test_track_d.TrackDTests.test_exhaustive_submodular_assumptions) ... ok
+test_fedavg_compute_and_communication_counts (test_track_d.TrackDTests.test_fedavg_compute_and_communication_counts) ... ok
+test_fedavg_e1_equals_centralized (test_track_d.TrackDTests.test_fedavg_e1_equals_centralized) ... ok
+test_federated_test_data_unchanged_by_partition (test_track_d.TrackDTests.test_federated_test_data_unchanged_by_partition) ... ok
+test_gradnorm_frozen_target_gradient (test_track_d.TrackDTests.test_gradnorm_frozen_target_gradient) ... ok
+test_greedy_guarantee_against_exhaustive (test_track_d.TrackDTests.test_greedy_guarantee_against_exhaustive) ... ok
+test_greedy_suboptimal_counterexample (test_track_d.TrackDTests.test_greedy_suboptimal_counterexample) ... ok
+test_lazy_matches_greedy (test_track_d.TrackDTests.test_lazy_matches_greedy) ... ok
+test_logistic_gradient_finite_difference (test_track_d.TrackDTests.test_logistic_gradient_finite_difference) ... ok
+test_lpt_assignment_conserves_work (test_track_d.TrackDTests.test_lpt_assignment_conserves_work) ... ok
+test_mgda_conflicting_and_equal_gradients (test_track_d.TrackDTests.test_mgda_conflicting_and_equal_gradients) ... ok
+test_mgda_matches_dense_simplex_search (test_track_d.TrackDTests.test_mgda_matches_dense_simplex_search) ... ok
+test_model_parallel_matches_serial (test_track_d.TrackDTests.test_model_parallel_matches_serial) ... ok
+test_multitask_analytic_gradients (test_track_d.TrackDTests.test_multitask_analytic_gradients) ... ok
+test_multitask_same_initialization_and_finite (test_track_d.TrackDTests.test_multitask_same_initialization_and_finite) ... ok
+test_native_locality_partial_tile (test_track_d.TrackDTests.test_native_locality_partial_tile) ... ok
+test_partition_exhaustive_and_unequal (test_track_d.TrackDTests.test_partition_exhaustive_and_unequal) ... ok
+test_pipe_integrity_and_bytes (test_track_d.TrackDTests.test_pipe_integrity_and_bytes) ... ok
+test_pipeline_ideal_formula_and_invalid (test_track_d.TrackDTests.test_pipeline_ideal_formula_and_invalid) ... ok
+test_pipeline_preserves_microbatch_order (test_track_d.TrackDTests.test_pipeline_preserves_microbatch_order) ... ok
+test_steady_timer_starts_after_all_workers_ready (test_track_d.TrackDTests.test_steady_timer_starts_after_all_workers_ready) ... ok
+test_synchronization_preserves_count (test_track_d.TrackDTests.test_synchronization_preserves_count) ... ok
+test_tie_break_and_zero_coverage (test_track_d.TrackDTests.test_tie_break_and_zero_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 1.194s
+
+OK

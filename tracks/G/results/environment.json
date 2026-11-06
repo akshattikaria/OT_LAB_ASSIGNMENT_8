@@ -1,0 +1,26 @@
+{
+  "utc": "2026-11-04T09:16:51.639374+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "versions": {
+    "qemu-system-riscv64": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)",
+    "riscv64-linux-gnu-gcc": "riscv64-linux-gnu-gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "timebase_frequency_hz": 10000000,
+  "guest_cpus": 3,
+  "guest_ram": "128 MiB",
+  "acceleration": "QEMU TCG full-system RISC-V emulation",
+  "source_sha256": "ec069d60d2808f53d2c17f2ee9fc04e9c9a2a87d8491162ba4e93cd2055847e4",
+  "host_logical_cpus": 9,
+  "host_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "host_cpu_max": "800000 100000"
+}

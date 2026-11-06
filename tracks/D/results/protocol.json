@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "workers": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "repeats": 3,
+  "iterations_per_unit": 30000,
+  "mtl_steps": 400,
+  "coverage": "Three weighted-coverage families; n=10,16,80; exact enumeration only n<=20. Cardinality budget, nonnegative weights, f(empty)=0.",
+  "scheduling": "32 fixed jobs/family; PBKDF2 CPU kernel; actual spawned processes; predeclared shuffled trial order. Ready handshake excludes startup from steady timers; end-to-end retains setup and cleanup.",
+  "work_stealing": "Each worker owns a shared-array deque protected by a lock; idle workers take unstarted jobs from another deque. Lock/scan overhead is included. Dynamic central task pool is separately named.",
+  "parallel_inference": "Data and hidden-unit tensor parallelism via shared-memory threads; native BLAS one thread/kernel; identical weights/inputs/output. Two-stage pipeline is inference, not backpropagation.",
+  "federated": "Serial client emulation: four unequal clients, full participation, full-batch local GD, E=1/5/20, R=6/24/120. Train/test data retained. No real network or privacy guarantee.",
+  "federated_fairness": "Compute-matched E*R=120 comparisons and fixed-round comparisons shown separately. Centralized runs match every distinct E*R. Logical model bytes exclude protocol/security overhead.",
+  "multitask": "Two regression tasks sharing all seven coefficients with fixed identity readouts. Equal, exact two-task shared-gradient MGDA, GradNorm; same initialization and steps. Raw losses and unscaled per-task test MSE reported.",
+  "multitask_settings": "Model learning rate 0.03; weights sum 2 for all methods. GradNorm alpha=1.5, weight rate=0.01, positive projection 1e-6; targets stop-gradient. No test-based tuning.",
+  "timing": "Cloud CPU wall times only. Fixed-size strong scaling and fixed-work-per-worker weak scaling are distinct. No GPU/multi-node results or simulated timing claims.",
+  "fairness_limits": "Few repeats on shared cloud hardware; scheduling methods have different control structures and setup costs. Pipeline partitioning changes BLAS sizes; interpret all overheads, not only compute.",
+  "execution_note": "Learning results completed on first attempt. Socket-based Manager was unavailable; shared-array backend substituted, 29 tests passed, then resource experiments resumed. No prior parallel timing results were retained."
+}

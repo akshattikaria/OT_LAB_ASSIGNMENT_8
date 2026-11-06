@@ -1,0 +1,4058 @@
+[
+  {
+    "method": "ShiftGD",
+    "seed": 0,
+    "shots_per_term": 128,
+    "initial": [
+      0.06718527731405333,
+      0.3262287836902802,
+      -0.09128903605893024,
+      -0.9322740836392932,
+      0.09034914361235802,
+      -0.9706381527239685,
+      -0.6862947424511149,
+      0.7969641007163677
+    ],
+    "theta": [
+      -0.00535378518594664,
+      0.4458772211902802,
+      0.021210963941069805,
+      -0.9090709586392931,
+      -2.5842211688876406,
+      -0.044388152723968545,
+      -0.04996661745111499,
+      0.8052844132163678
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.8828124999999999,
+        "exact_energy": 0.7965581627343226,
+        "theta": [
+          0.06718527731405333,
+          0.3262287836902802,
+          -0.09128903605893024,
+          -0.9322740836392932,
+          0.09034914361235802,
+          -0.9706381527239685,
+          -0.6862947424511149,
+          0.7969641007163677
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 512
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": 0.6890624999999999,
+        "exact_energy": 0.6852459109528288,
+        "theta": [
+          0.13585715231405332,
+          0.3391194086902802,
+          -0.15597653605893022,
+          -0.9169225211392932,
+          -0.17871335638764196,
+          -0.9831772152239685,
+          -0.7458259924511149,
+          0.7906359757163677
+        ],
+        "work": {
+          "objective_calls": 82,
+          "state_preparations": 82,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 328,
+          "shots": 41984
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": 0.4234375,
+        "exact_energy": 0.33608897180116304,
+        "theta": [
+          0.20312277731405334,
+          0.3493147211902801,
+          -0.24960934855893022,
+          -0.8861022086392932,
+          -0.648166481387642,
+          -0.8576694027239685,
+          -0.8034822424511149,
+          0.7758703507163677
+        ],
+        "work": {
+          "objective_calls": 163,
+          "state_preparations": 163,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 652,
+          "shots": 83456
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -0.278125,
+        "exact_energy": -0.33323536229369444,
+        "theta": [
+          0.23640402731405333,
+          0.3527131586902801,
+          -0.3529687235589302,
+          -0.8623131461392932,
+          -1.2774633563876419,
+          -0.5768881527239687,
+          -0.7639900549511149,
+          0.7970812882163678
+        ],
+        "work": {
+          "objective_calls": 244,
+          "state_preparations": 244,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 976,
+          "shots": 124928
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -0.803125,
+        "exact_energy": -0.9156664285961633,
+        "theta": [
+          0.11136496481405334,
+          0.36747878369028014,
+          -0.3341015360589302,
+          -0.8016100211392931,
+          -1.8741821063876418,
+          -0.4096615902239687,
+          -0.6055525549511149,
+          0.7616906632163678
+        ],
+        "work": {
+          "objective_calls": 325,
+          "state_preparations": 325,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 1300,
+          "shots": 166400
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.1859374999999999,
+        "exact_energy": -1.220191009574899,
+        "theta": [
+          0.06073996481405335,
+          0.38810378369028015,
+          -0.22476559855893025,
+          -0.8372350211392933,
+          -2.2829321063876424,
+          -0.27056002772396864,
+          -0.41441974245111496,
+          0.7577062882163678
+        ],
+        "work": {
+          "objective_calls": 406,
+          "state_preparations": 406,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 1624,
+          "shots": 207872
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.3171875,
+        "exact_energy": -1.321061351586042,
+        "theta": [
+          0.015271214814053344,
+          0.4005256586902801,
+          -0.12749997355893022,
+          -0.8545787711392933,
+          -2.4807446063876424,
+          -0.19684909022396863,
+          -0.269341617451115,
+          0.7821984757163678
+        ],
+        "work": {
+          "objective_calls": 487,
+          "state_preparations": 487,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 1948,
+          "shots": 249344
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.3296875,
+        "exact_energy": -1.3526907334377156,
+        "theta": [
+          -0.014728785185946655,
+          0.37462722119028014,
+          -0.03351559855893022,
+          -0.8578600211392933,
+          -2.5535180438876424,
+          -0.1361459652239686,
+          -0.18121661745111498,
+          0.8013000382163679
+        ],
+        "work": {
+          "objective_calls": 568,
+          "state_preparations": 568,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 2272,
+          "shots": 290816
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.3953125,
+        "exact_energy": -1.3599755718919704,
+        "theta": [
+          -0.02457253518594665,
+          0.3789631586902802,
+          0.0077344014410697815,
+          -0.8816490836392932,
+          -2.568986793887642,
+          -0.10919284022396858,
+          -0.135161929951115,
+          0.8144250382163679
+        ],
+        "work": {
+          "objective_calls": 649,
+          "state_preparations": 649,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 2596,
+          "shots": 332288
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.40625,
+        "exact_energy": -1.362461449645631,
+        "theta": [
+          -0.002424097685946645,
+          0.40415847119028026,
+          0.013593776441069792,
+          -0.8959459586392932,
+          -2.5831664813876416,
+          -0.09407565272396856,
+          -0.10563067995111497,
+          0.7920422257163678
+        ],
+        "work": {
+          "objective_calls": 730,
+          "state_preparations": 730,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 2920,
+          "shots": 373760
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.3890624999999999,
+        "exact_energy": -1.3630923860799222,
+        "theta": [
+          -0.01144753518594664,
+          0.40802565869028024,
+          0.022265651441069775,
+          -0.8948912711392931,
+          -2.5884399188876412,
+          -0.08516940272396857,
+          -0.10504474245111498,
+          0.7952062882163679
+        ],
+        "work": {
+          "objective_calls": 811,
+          "state_preparations": 811,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 3244,
+          "shots": 415232
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.3765625,
+        "exact_energy": -1.3648231573773761,
+        "theta": [
+          -0.01461159768594664,
+          0.42478347119028026,
+          0.03398440144106979,
+          -0.889500646139293,
+          -2.594064918887641,
+          -0.06372409022396856,
+          -0.07106036745111496,
+          0.8032922257163678
+        ],
+        "work": {
+          "objective_calls": 892,
+          "state_preparations": 892,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 3568,
+          "shots": 456704
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.371875,
+        "exact_energy": -1.3653571918043976,
+        "theta": [
+          -0.00535378518594664,
+          0.4458772211902802,
+          0.021210963941069805,
+          -0.9090709586392931,
+          -2.5842211688876406,
+          -0.044388152723968545,
+          -0.04996661745111499,
+          0.8052844132163678
+        ],
+        "work": {
+          "objective_calls": 973,
+          "state_preparations": 973,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 3892,
+          "shots": 498176
+        }
+      }
+    ],
+    "final_exact_energy": -1.3653571918043976,
+    "final_estimated_energy": -1.371875,
+    "work": {
+      "objective_calls": 973,
+      "state_preparations": 973,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 3892,
+      "shots": 498176
+    },
+    "runtime_s": 0.2688417189997381,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "SPSA",
+    "seed": 0,
+    "shots_per_term": 128,
+    "initial": [
+      0.06718527731405333,
+      0.3262287836902802,
+      -0.09128903605893024,
+      -0.9322740836392932,
+      0.09034914361235802,
+      -0.9706381527239685,
+      -0.6862947424511149,
+      0.7969641007163677
+    ],
+    "theta": [
+      -0.05708556927001192,
+      0.1694419513134916,
+      -0.19902518380522005,
+      0.030027741675454488,
+      -2.0705533115967545,
+      -0.3995545543242785,
+      -1.0846297531309639,
+      0.9442979427873412
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.8828124999999999,
+        "exact_energy": 0.7965581627343226,
+        "theta": [
+          0.06718527731405333,
+          0.3262287836902802,
+          -0.09128903605893024,
+          -0.9322740836392932,
+          0.09034914361235802,
+          -0.9706381527239685,
+          -0.6862947424511149,
+          0.7969641007163677
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 512
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": 0.5484375,
+        "exact_energy": 0.5921403261180477,
+        "theta": [
+          0.39224807589816946,
+          0.19491740480163655,
+          -0.18751396003954848,
+          -0.702911762730904,
+          -0.23471365497175806,
+          -0.9688121346848414,
+          -1.0318586835255092,
+          1.0298917873532696
+        ],
+        "work": {
+          "objective_calls": 12,
+          "state_preparations": 12,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 48,
+          "shots": 6144
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": 0.33593749999999994,
+        "exact_energy": 0.38897325817619255,
+        "theta": [
+          0.25989413732273126,
+          0.2830657490925098,
+          -0.5380995712211073,
+          -0.6956012023462447,
+          -0.5256422734614686,
+          -0.9637721845603731,
+          -0.9017753552102621,
+          1.034931737477738
+        ],
+        "work": {
+          "objective_calls": 23,
+          "state_preparations": 23,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 92,
+          "shots": 11776
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": 0.271875,
+        "exact_energy": 0.311593754908126,
+        "theta": [
+          0.3020418446996836,
+          0.11246619901754781,
+          -0.3785279917926712,
+          -0.5562393399205793,
+          -0.6962418235364306,
+          -1.0169478625838513,
+          -1.0411372176359277,
+          1.0129937471035564
+        ],
+        "work": {
+          "objective_calls": 34,
+          "state_preparations": 34,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 136,
+          "shots": 17408
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": 0.07656250000000002,
+        "exact_energy": 0.021989344607511806,
+        "theta": [
+          0.2242023377579333,
+          0.2230148155332699,
+          -0.26048278388910184,
+          -0.2810378628398288,
+          -1.0116490015790003,
+          -0.8075209199354849,
+          -1.2505641602842938,
+          0.80356680445519
+        ],
+        "work": {
+          "objective_calls": 45,
+          "state_preparations": 45,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 180,
+          "shots": 23040
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -0.18750000000000006,
+        "exact_energy": -0.09440248287282652,
+        "theta": [
+          0.17846769244990546,
+          0.26874946084129775,
+          -0.214748138581074,
+          -0.26391394017365544,
+          -1.1412792494977313,
+          -0.7583435240525418,
+          -1.299741556167237,
+          0.8620204509700256
+        ],
+        "work": {
+          "objective_calls": 56,
+          "state_preparations": 56,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 224,
+          "shots": 28672
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -0.19687499999999997,
+        "exact_energy": -0.3149238381945847,
+        "theta": [
+          0.2719948994607604,
+          0.1690239860203223,
+          -0.34472705962766337,
+          -0.1428908927596956,
+          -1.364242465167712,
+          -0.6070670304129682,
+          -1.2940862007445797,
+          1.118677774853232
+        ],
+        "work": {
+          "objective_calls": 67,
+          "state_preparations": 67,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 268,
+          "shots": 34304
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -0.59375,
+        "exact_energy": -0.6479037375072823,
+        "theta": [
+          0.005325594868634237,
+          0.1240533275191808,
+          -0.1827642101600335,
+          -0.1718374644614875,
+          -1.7479039607263267,
+          -0.6360136021147601,
+          -1.1903581450302239,
+          1.1196561742633724
+        ],
+        "work": {
+          "objective_calls": 78,
+          "state_preparations": 78,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 312,
+          "shots": 39936
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -0.8062499999999999,
+        "exact_energy": -0.7276078857554313,
+        "theta": [
+          -0.15122007067648932,
+          0.062453233034431316,
+          -0.22199951061454654,
+          -0.32838313000661107,
+          -1.8737733430502936,
+          -0.5437372244088539,
+          -1.318379556468625,
+          1.0580560797786227
+        ],
+        "work": {
+          "objective_calls": 89,
+          "state_preparations": 89,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 356,
+          "shots": 45568
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -0.703125,
+        "exact_energy": -0.7222367951680211,
+        "theta": [
+          -0.21326207145021747,
+          0.10966070158532815,
+          -0.29118434136188276,
+          -0.2663411292328829,
+          -1.8784278434421893,
+          -0.52641436260431,
+          -1.2649486701182577,
+          1.010848611227726
+        ],
+        "work": {
+          "objective_calls": 100,
+          "state_preparations": 100,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 400,
+          "shots": 51200
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -0.8578125,
+        "exact_energy": -0.788288461550913,
+        "theta": [
+          -0.23681038101163074,
+          0.17231297330688003,
+          -0.2366124287704842,
+          -0.1915600948728096,
+          -1.9432674921068003,
+          -0.4929246673474345,
+          -1.2435877374999036,
+          0.9360675768676527
+        ],
+        "work": {
+          "objective_calls": 111,
+          "state_preparations": 111,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 444,
+          "shots": 56832
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -0.859375,
+        "exact_energy": -0.9106322946741106,
+        "theta": [
+          -0.08498407935298397,
+          0.17657363402378487,
+          -0.18359761326194665,
+          -0.02075700036072698,
+          -2.032194362121738,
+          -0.41530910356719464,
+          -1.0917614358412568,
+          0.8830527613591151
+        ],
+        "work": {
+          "objective_calls": 122,
+          "state_preparations": 122,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 488,
+          "shots": 62464
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.0062499999999999,
+        "exact_energy": -0.925299442646683,
+        "theta": [
+          -0.05708556927001192,
+          0.1694419513134916,
+          -0.19902518380522005,
+          0.030027741675454488,
+          -2.0705533115967545,
+          -0.3995545543242785,
+          -1.0846297531309639,
+          0.9442979427873412
+        ],
+        "work": {
+          "objective_calls": 133,
+          "state_preparations": 133,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 532,
+          "shots": 68096
+        }
+      }
+    ],
+    "final_exact_energy": -0.925299442646683,
+    "final_estimated_energy": -1.0062499999999999,
+    "work": {
+      "objective_calls": 133,
+      "state_preparations": 133,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 532,
+      "shots": 68096
+    },
+    "runtime_s": 0.039388865000091755,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "ShiftGD",
+    "seed": 1,
+    "shots_per_term": 128,
+    "initial": [
+      0.35372740042682516,
+      -1.52147185243262,
+      -0.9811521309072496,
+      1.124344797555175,
+      -1.3314112571655559,
+      -0.9390526921365765,
+      0.4087243438551167,
+      -1.2611542522032675
+    ],
+    "theta": [
+      0.007907087926825226,
+      -1.4029952899326206,
+      -0.19365213090724992,
+      0.8194229225551747,
+      -2.5891846946655552,
+      -0.04315425463657668,
+      0.17165403135511678,
+      -1.1690448772032676
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": -0.1171875,
+        "exact_energy": -0.2615739304263851,
+        "theta": [
+          0.35372740042682516,
+          -1.52147185243262,
+          -0.9811521309072496,
+          1.124344797555175,
+          -1.3314112571655559,
+          -0.9390526921365765,
+          0.4087243438551167,
+          -1.2611542522032675
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 512
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -0.95,
+        "exact_energy": -0.9320247569422297,
+        "theta": [
+          0.27204771292682517,
+          -1.45092497743262,
+          -0.8960740059072496,
+          1.1862197975551751,
+          -1.957075319665556,
+          -0.6160839421365766,
+          0.4278259063551167,
+          -1.2492011272032675
+        ],
+        "work": {
+          "objective_calls": 82,
+          "state_preparations": 82,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 328,
+          "shots": 41984
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -1.153125,
+        "exact_energy": -1.1796706969893527,
+        "theta": [
+          0.17653990042682519,
+          -1.4472921649326203,
+          -0.7931833809072497,
+          1.1307901100551752,
+          -2.3065284446655565,
+          -0.4196776921365766,
+          0.41294309385511674,
+          -1.2494355022032675
+        ],
+        "work": {
+          "objective_calls": 163,
+          "state_preparations": 163,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 652,
+          "shots": 83456
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -1.2546875,
+        "exact_energy": -1.2663525304717669,
+        "theta": [
+          0.08993833792682523,
+          -1.4385031024326203,
+          -0.6675583809072498,
+          1.0639932350551748,
+          -2.4470362571655566,
+          -0.30342769213657655,
+          0.4023962188551168,
+          -1.2632636272032676
+        ],
+        "work": {
+          "objective_calls": 244,
+          "state_preparations": 244,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 976,
+          "shots": 124928
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -1.375,
+        "exact_energy": -1.305269162433876,
+        "theta": [
+          0.05466490042682523,
+          -1.4488156024326204,
+          -0.5631443184072499,
+          1.037040110055175,
+          -2.5177003196655563,
+          -0.20252925463657662,
+          0.3834118438551168,
+          -1.2590448772032674
+        ],
+        "work": {
+          "objective_calls": 325,
+          "state_preparations": 325,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 1300,
+          "shots": 166400
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.2921874999999998,
+        "exact_energy": -1.3283551892833763,
+        "theta": [
+          0.03403990042682523,
+          -1.4291281024326203,
+          -0.4569724434072499,
+          0.9889932350551748,
+          -2.554497194665556,
+          -0.15049800463657664,
+          0.35798215635511677,
+          -1.2368964397032676
+        ],
+        "work": {
+          "objective_calls": 406,
+          "state_preparations": 406,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 1624,
+          "shots": 207872
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.4203125,
+        "exact_energy": -1.3389904477247074,
+        "theta": [
+          0.030289900426825236,
+          -1.4066281024326204,
+          -0.40154275590724986,
+          0.9384854225551749,
+          -2.5897706321655565,
+          -0.13186519213657663,
+          0.3322009063551168,
+          -1.2367792522032675
+        ],
+        "work": {
+          "objective_calls": 487,
+          "state_preparations": 487,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 1948,
+          "shots": 249344
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.409375,
+        "exact_energy": -1.3482543492047627,
+        "theta": [
+          0.04306333792682523,
+          -1.3924484149326206,
+          -0.32853494340724987,
+          0.8966494850551749,
+          -2.586723757165556,
+          -0.10596675463657666,
+          0.29317746885511675,
+          -1.2163886272032676
+        ],
+        "work": {
+          "objective_calls": 568,
+          "state_preparations": 568,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 2272,
+          "shots": 290816
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.4046875,
+        "exact_energy": -1.3519761094296796,
+        "theta": [
+          0.04528990042682522,
+          -1.3841281024326204,
+          -0.29490213090724987,
+          0.8809463600551749,
+          -2.5958643821655563,
+          -0.08077144213657668,
+          0.27723996885511676,
+          -1.2057245647032675
+        ],
+        "work": {
+          "objective_calls": 649,
+          "state_preparations": 649,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 2596,
+          "shots": 332288
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.3265624999999999,
+        "exact_energy": -1.354125796795249,
+        "theta": [
+          -0.003694474573174778,
+          -1.3865890399326206,
+          -0.25892556840724984,
+          0.8638369850551748,
+          -2.5862550071655557,
+          -0.07901362963657668,
+          0.2684509063551168,
+          -1.2078339397032674
+        ],
+        "work": {
+          "objective_calls": 730,
+          "state_preparations": 730,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 2920,
+          "shots": 373760
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.3203125,
+        "exact_energy": -1.3577775933003997,
+        "theta": [
+          0.008610212926825225,
+          -1.3940890399326205,
+          -0.23197244340724987,
+          0.8265713600551748,
+          -2.6054737571655555,
+          -0.06858394213657669,
+          0.2322399688551168,
+          -1.1940058147032673
+        ],
+        "work": {
+          "objective_calls": 811,
+          "state_preparations": 811,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 3244,
+          "shots": 415232
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.359375,
+        "exact_energy": -1.359793371433994,
+        "theta": [
+          0.03357115042682523,
+          -1.4115499774326203,
+          -0.2061911934072499,
+          0.8013760475551749,
+          -2.6164893821655553,
+          -0.03647456713657668,
+          0.21395871885511678,
+          -1.1784198772032675
+        ],
+        "work": {
+          "objective_calls": 892,
+          "state_preparations": 892,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 3568,
+          "shots": 456704
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.35,
+        "exact_energy": -1.361072282380116,
+        "theta": [
+          0.007907087926825226,
+          -1.4029952899326206,
+          -0.19365213090724992,
+          0.8194229225551747,
+          -2.5891846946655552,
+          -0.04315425463657668,
+          0.17165403135511678,
+          -1.1690448772032676
+        ],
+        "work": {
+          "objective_calls": 973,
+          "state_preparations": 973,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 3892,
+          "shots": 498176
+        }
+      }
+    ],
+    "final_exact_energy": -1.361072282380116,
+    "final_estimated_energy": -1.35,
+    "work": {
+      "objective_calls": 973,
+      "state_preparations": 973,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 3892,
+      "shots": 498176
+    },
+    "runtime_s": 0.2456132739998793,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "SPSA",
+    "seed": 1,
+    "shots_per_term": 128,
+    "initial": [
+      0.35372740042682516,
+      -1.52147185243262,
+      -0.9811521309072496,
+      1.124344797555175,
+      -1.3314112571655559,
+      -0.9390526921365765,
+      0.4087243438551167,
+      -1.2611542522032675
+    ],
+    "theta": [
+      -0.10412737902665997,
+      -1.2766470765756468,
+      0.06209926682820002,
+      1.8811082569287918,
+      -2.5763798800547106,
+      -0.17965788170260982,
+      0.14488296069733791,
+      -2.0397112849842847
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": -0.1171875,
+        "exact_energy": -0.2615739304263851,
+        "theta": [
+          0.35372740042682516,
+          -1.52147185243262,
+          -0.9811521309072496,
+          1.124344797555175,
+          -1.3314112571655559,
+          -0.9390526921365765,
+          0.4087243438551167,
+          -1.2611542522032675
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 512
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -0.428125,
+        "exact_energy": -0.477052760414474,
+        "theta": [
+          -0.05428393847298925,
+          -1.4811094610285906,
+          -0.9125998885465326,
+          1.3624974005172856,
+          -1.541374009170979,
+          -0.8705004497758596,
+          0.34017210149439986,
+          -1.4289126899668114
+        ],
+        "work": {
+          "objective_calls": 12,
+          "state_preparations": 12,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 48,
+          "shots": 6144
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -1.021875,
+        "exact_energy": -0.9495207552004313,
+        "theta": [
+          -0.3096622007965309,
+          -1.6477563523640448,
+          -0.5691198107471915,
+          1.7059774783166266,
+          -2.146308423187403,
+          -0.7756930048942308,
+          0.09179597006709328,
+          -1.9457452885074358
+        ],
+        "work": {
+          "objective_calls": 23,
+          "state_preparations": 23,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 92,
+          "shots": 11776
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -1.1156249999999999,
+        "exact_energy": -1.1586029411953214,
+        "theta": [
+          -0.32864911934710106,
+          -1.706301686500213,
+          -0.40173247988992344,
+          1.5036500968447069,
+          -2.4261680573460604,
+          -0.6478640896225608,
+          0.09358553264662817,
+          -1.7783579576501678
+        ],
+        "work": {
+          "objective_calls": 34,
+          "state_preparations": 34,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 136,
+          "shots": 17408
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -1.134375,
+        "exact_energy": -1.2181777677495584,
+        "theta": [
+          -0.2608765855313724,
+          -1.793193370764691,
+          -0.27722383702176145,
+          1.5386751189371846,
+          -2.543379754228111,
+          -0.7156366234382895,
+          -0.030923110221533885,
+          -1.74333293555769
+        ],
+        "work": {
+          "objective_calls": 45,
+          "state_preparations": 45,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 180,
+          "shots": 23040
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.2578125,
+        "exact_energy": -1.2663615605884342,
+        "theta": [
+          -0.18394090630354967,
+          -1.7162576915368681,
+          -0.14686835272534607,
+          1.6009046788521946,
+          -2.6052737359598215,
+          -0.7001024152015942,
+          -0.061456056625447966,
+          -1.8586467223579934
+        ],
+        "work": {
+          "objective_calls": 56,
+          "state_preparations": 56,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 224,
+          "shots": 28672
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.2015625,
+        "exact_energy": -1.3213996945308826,
+        "theta": [
+          -0.090985910650996,
+          -1.6763549533707787,
+          -0.01195933169420721,
+          1.7850992260397596,
+          -2.5854583004666907,
+          -0.49205383401103264,
+          -0.10135879479153752,
+          -1.9697017093861358
+        ],
+        "work": {
+          "objective_calls": 67,
+          "state_preparations": 67,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 268,
+          "shots": 34304
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.2296875,
+        "exact_energy": -1.3404529809593329,
+        "theta": [
+          -0.07088875755555973,
+          -1.6107775774052553,
+          0.008137821401229046,
+          1.8308974166252594,
+          -2.6179469759568437,
+          -0.3936698148399435,
+          -0.002402466274282873,
+          -2.0429570004133266
+        ],
+        "work": {
+          "objective_calls": 78,
+          "state_preparations": 78,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 312,
+          "shots": 39936
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.29375,
+        "exact_energy": -1.3360027415987996,
+        "theta": [
+          -0.0645815739712059,
+          -1.5213950824496931,
+          -0.0760696884082126,
+          1.7466899068158177,
+          -2.5122684900612566,
+          -0.28799132894435653,
+          0.157504025587615,
+          -2.143460501162793
+        ],
+        "work": {
+          "objective_calls": 89,
+          "state_preparations": 89,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 356,
+          "shots": 45568
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.259375,
+        "exact_energy": -1.3379684264467242,
+        "theta": [
+          -0.17406394561063349,
+          -1.3983076770696126,
+          -0.06710947555210961,
+          1.8525969744779596,
+          -2.579224173404304,
+          -0.20743061186065642,
+          0.04802165394818743,
+          -2.109894025722516
+        ],
+        "work": {
+          "objective_calls": 100,
+          "state_preparations": 100,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 400,
+          "shots": 51200
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.3171875,
+        "exact_energy": -1.3321345228488926,
+        "theta": [
+          -0.2081108013205784,
+          -1.3983981397668719,
+          -0.04439640966578706,
+          1.8526874371752189,
+          -2.557680867021025,
+          -0.11421530533791709,
+          0.12219264600143456,
+          -2.0693064048697445
+        ],
+        "work": {
+          "objective_calls": 111,
+          "state_preparations": 111,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 444,
+          "shots": 56832
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.2046875,
+        "exact_energy": -1.3302027692220793,
+        "theta": [
+          -0.22502664270811112,
+          -1.299267343602554,
+          -0.05056735125073745,
+          1.9325532393402085,
+          -2.5436832730677494,
+          -0.12821289929119306,
+          0.02306184983711667,
+          -2.1606105486657365
+        ],
+        "work": {
+          "objective_calls": 122,
+          "state_preparations": 122,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 488,
+          "shots": 62464
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.353125,
+        "exact_energy": -1.3508058911247987,
+        "theta": [
+          -0.10412737902665997,
+          -1.2766470765756468,
+          0.06209926682820002,
+          1.8811082569287918,
+          -2.5763798800547106,
+          -0.17965788170260982,
+          0.14488296069733791,
+          -2.0397112849842847
+        ],
+        "work": {
+          "objective_calls": 133,
+          "state_preparations": 133,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 532,
+          "shots": 68096
+        }
+      }
+    ],
+    "final_exact_energy": -1.3508058911247987,
+    "final_estimated_energy": -1.353125,
+    "work": {
+      "objective_calls": 133,
+      "state_preparations": 133,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 532,
+      "shots": 68096
+    },
+    "runtime_s": 0.04001006299995424,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "ShiftGD",
+    "seed": 2,
+    "shots_per_term": 128,
+    "initial": [
+      -0.3744113698311926,
+      -0.44865292762724573,
+      0.7778970362397755,
+      -0.34717137510231644,
+      -0.5116674670494639,
+      0.1724562506925349,
+      -0.9826323715086264,
+      -1.1948972918280973
+    ],
+    "theta": [
+      -0.9166379323311925,
+      -0.1370513651272458,
+      1.584381411239775,
+      -0.014241687602316516,
+      -1.6848315295494636,
+      0.22905781319253476,
+      -1.6014995590086263,
+      -1.217162916828097
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.07031249999999997,
+        "exact_energy": 0.11779719244865436,
+        "theta": [
+          -0.3744113698311926,
+          -0.44865292762724573,
+          0.7778970362397755,
+          -0.34717137510231644,
+          -0.5116674670494639,
+          0.1724562506925349,
+          -0.9826323715086264,
+          -1.1948972918280973
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 512
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -1.0953125,
+        "exact_energy": -0.9911122956854493,
+        "theta": [
+          -0.8255832448311925,
+          -0.3400201151272457,
+          0.9911782862397753,
+          -0.2608041876023165,
+          -1.2411596545494639,
+          0.16577656319253492,
+          -1.0467339340086264,
+          -1.1982957293280974
+        ],
+        "work": {
+          "objective_calls": 82,
+          "state_preparations": 82,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 328,
+          "shots": 41984
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -1.2921875,
+        "exact_energy": -1.2810539135815873,
+        "theta": [
+          -0.9798019948311926,
+          -0.2338482401272457,
+          1.2200454737397752,
+          -0.09603856260231648,
+          -1.5419799670494638,
+          0.18792500069253493,
+          -1.1690776840086263,
+          -1.2018113543280973
+        ],
+        "work": {
+          "objective_calls": 163,
+          "state_preparations": 163,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 652,
+          "shots": 83456
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -1.421875,
+        "exact_energy": -1.337267298469846,
+        "theta": [
+          -1.0175363698311926,
+          -0.1852154276272457,
+          1.3777798487397752,
+          -0.013890125102316481,
+          -1.6160424670494637,
+          0.2174562506925349,
+          -1.2789995590086263,
+          -1.2348582293280972
+        ],
+        "work": {
+          "objective_calls": 244,
+          "state_preparations": 244,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 976,
+          "shots": 124928
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -1.35,
+        "exact_energy": -1.3505289404932772,
+        "theta": [
+          -0.9814426198311925,
+          -0.1821685526272457,
+          1.446803286239775,
+          -0.002054187602316497,
+          -1.6296362170494636,
+          0.2448781256925349,
+          -1.3305620590086262,
+          -1.2465769793280974
+        ],
+        "work": {
+          "objective_calls": 325,
+          "state_preparations": 325,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 1300,
+          "shots": 166400
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.328125,
+        "exact_energy": -1.35872522496739,
+        "theta": [
+          -0.9775754323311926,
+          -0.16294980262724573,
+          1.509029848739775,
+          0.009547374897683503,
+          -1.6313940295494636,
+          0.2510890631925349,
+          -1.3907964340086263,
+          -1.2287644793280974
+        ],
+        "work": {
+          "objective_calls": 406,
+          "state_preparations": 406,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 1624,
+          "shots": 207872
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.3796875,
+        "exact_energy": -1.3616242570722688,
+        "theta": [
+          -0.9719504323311925,
+          -0.15814511512724574,
+          1.518053286239775,
+          0.0229067498976835,
+          -1.6392455920494635,
+          0.2584718756925349,
+          -1.4329839340086263,
+          -1.2116551043280972
+        ],
+        "work": {
+          "objective_calls": 487,
+          "state_preparations": 487,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 1948,
+          "shots": 249344
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.303125,
+        "exact_energy": -1.363942794628254,
+        "theta": [
+          -0.9807394948311926,
+          -0.16646542762724573,
+          1.5520376612397753,
+          0.010836437397683505,
+          -1.6467455920494638,
+          0.2626906256925349,
+          -1.4695464340086262,
+          -1.1930222918280973
+        ],
+        "work": {
+          "objective_calls": 568,
+          "state_preparations": 568,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 2272,
+          "shots": 290816
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.3625,
+        "exact_energy": -1.3648080625945973,
+        "theta": [
+          -0.9574191823311926,
+          -0.17841855262724574,
+          1.551334536239775,
+          -0.021858875102316495,
+          -1.6785034045494638,
+          0.2623390631925349,
+          -1.5038823715086265,
+          -1.1774363543280975
+        ],
+        "work": {
+          "objective_calls": 649,
+          "state_preparations": 649,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 2596,
+          "shots": 332288
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.35,
+        "exact_energy": -1.3654165900362292,
+        "theta": [
+          -0.9433566823311926,
+          -0.1623638651272457,
+          1.5566079737397749,
+          -0.020569812602316506,
+          -1.676159654549464,
+          0.27276875069253487,
+          -1.5213433090086264,
+          -1.1837644793280973
+        ],
+        "work": {
+          "objective_calls": 730,
+          "state_preparations": 730,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 2920,
+          "shots": 373760
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.2703125,
+        "exact_energy": -1.3649620520941443,
+        "theta": [
+          -0.9452316823311926,
+          -0.14209042762724577,
+          1.6061782862397749,
+          0.0016958123976834765,
+          -1.702292467049464,
+          0.2475734381925348,
+          -1.5481792465086262,
+          -1.217162916828097
+        ],
+        "work": {
+          "objective_calls": 811,
+          "state_preparations": 811,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 3244,
+          "shots": 415232
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.3265624999999999,
+        "exact_energy": -1.3652533669793445,
+        "theta": [
+          -0.9274191823311926,
+          -0.1344732401272458,
+          1.613678286239775,
+          -0.011429187602316518,
+          -1.7024096545494638,
+          0.2459328131925348,
+          -1.5781792465086262,
+          -1.2095457293280971
+        ],
+        "work": {
+          "objective_calls": 892,
+          "state_preparations": 892,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 3568,
+          "shots": 456704
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.4578125,
+        "exact_energy": -1.3657271193302045,
+        "theta": [
+          -0.9166379323311925,
+          -0.1370513651272458,
+          1.584381411239775,
+          -0.014241687602316516,
+          -1.6848315295494636,
+          0.22905781319253476,
+          -1.6014995590086263,
+          -1.217162916828097
+        ],
+        "work": {
+          "objective_calls": 973,
+          "state_preparations": 973,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 3892,
+          "shots": 498176
+        }
+      }
+    ],
+    "final_exact_energy": -1.3657271193302045,
+    "final_estimated_energy": -1.4578125,
+    "work": {
+      "objective_calls": 973,
+      "state_preparations": 973,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 3892,
+      "shots": 498176
+    },
+    "runtime_s": 0.28081185299970457,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "SPSA",
+    "seed": 2,
+    "shots_per_term": 128,
+    "initial": [
+      -0.3744113698311926,
+      -0.44865292762724573,
+      0.7778970362397755,
+      -0.34717137510231644,
+      -0.5116674670494639,
+      0.1724562506925349,
+      -0.9826323715086264,
+      -1.1948972918280973
+    ],
+    "theta": [
+      -1.214408854183081,
+      -0.4063598120896142,
+      1.5055296440321995,
+      0.03916539205973538,
+      -1.3642966611134464,
+      0.37264078367192216,
+      -0.9648682684997443,
+      -1.7677035594430002
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.07031249999999997,
+        "exact_energy": 0.11779719244865436,
+        "theta": [
+          -0.3744113698311926,
+          -0.44865292762724573,
+          0.7778970362397755,
+          -0.34717137510231644,
+          -0.5116674670494639,
+          0.1724562506925349,
+          -0.9826323715086264,
+          -1.1948972918280973
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 512
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -0.4921875,
+        "exact_energy": -0.5395068917733081,
+        "theta": [
+          -0.5083566392029377,
+          -0.8322752276687659,
+          0.6439517668680304,
+          0.036450924939203794,
+          -1.208051263953898,
+          -0.21116604934898534,
+          -0.5990100714671063,
+          -1.6117200547741908
+        ],
+        "work": {
+          "objective_calls": 12,
+          "state_preparations": 12,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 48,
+          "shots": 6144
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -0.6296875,
+        "exact_energy": -0.6733090910612873,
+        "theta": [
+          -0.9416566286760962,
+          -0.7911146913918127,
+          0.7047946921028975,
+          -0.25454513701724113,
+          -1.283619296745335,
+          -0.05658094541884441,
+          -0.7001534627068665,
+          -1.7128634460139511
+        ],
+        "work": {
+          "objective_calls": 23,
+          "state_preparations": 23,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 92,
+          "shots": 11776
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -0.9374999999999999,
+        "exact_energy": -0.7880162381056836,
+        "theta": [
+          -1.047442364057982,
+          -0.6027698272115461,
+          0.9261311779374298,
+          -0.06620027283697476,
+          -1.1874256111304937,
+          0.11357077567529769,
+          -0.43785056304729925,
+          -1.6070777106320655
+        ],
+        "work": {
+          "objective_calls": 34,
+          "state_preparations": 34,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 136,
+          "shots": 17408
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -0.9375,
+        "exact_energy": -0.9909707639085004,
+        "theta": [
+          -1.3302909703907684,
+          -0.42225719501391973,
+          1.1066438101350564,
+          0.05614863810615504,
+          -1.3289854691472232,
+          0.32605491168114914,
+          -0.46899114949266524,
+          -1.6463015945136346
+        ],
+        "work": {
+          "objective_calls": 45,
+          "state_preparations": 45,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 180,
+          "shots": 23040
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -0.9296875,
+        "exact_energy": -0.9525420196923553,
+        "theta": [
+          -1.198578041727331,
+          -0.4547619142642566,
+          1.0956497848758986,
+          -0.07556429055728231,
+          -1.3253301014056234,
+          0.3297102794227489,
+          -0.3734383078211644,
+          -1.7590817587872214
+        ],
+        "work": {
+          "objective_calls": 56,
+          "state_preparations": 56,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 224,
+          "shots": 28672
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.2093749999999999,
+        "exact_energy": -1.1251380869661163,
+        "theta": [
+          -1.351636506707123,
+          -0.33968766085294544,
+          1.289353389341819,
+          0.2227166857698326,
+          -1.4783885663854153,
+          0.3488057762337698,
+          -0.6864120823020674,
+          -1.7142407026974213
+        ],
+        "work": {
+          "objective_calls": 67,
+          "state_preparations": 67,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 268,
+          "shots": 34304
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.1796875,
+        "exact_energy": -1.1906659832209383,
+        "theta": [
+          -1.1374041466857046,
+          -0.2989256075781673,
+          1.519421366941165,
+          0.0357532636799726,
+          -1.437626513110637,
+          0.5788737538331159,
+          -0.6614856466052168,
+          -1.500008342676003
+        ],
+        "work": {
+          "objective_calls": 78,
+          "state_preparations": 78,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 312,
+          "shots": 39936
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.2843749999999998,
+        "exact_energy": -1.2159309313085724,
+        "theta": [
+          -1.1599937792270845,
+          -0.28504958856558404,
+          1.4779941845158764,
+          0.05253636441546898,
+          -1.4476346371233018,
+          0.461158677027678,
+          -0.7297040537786667,
+          -1.477418710134623
+        ],
+        "work": {
+          "objective_calls": 89,
+          "state_preparations": 89,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 356,
+          "shots": 45568
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.16875,
+        "exact_energy": -1.2246963177710875,
+        "theta": [
+          -1.0514290409945437,
+          -0.2900863772234759,
+          1.4180099515586828,
+          0.1091899500948622,
+          -1.4040909205058465,
+          0.3394840697331993,
+          -0.8178893472499996,
+          -1.5524941345440177
+        ],
+        "work": {
+          "objective_calls": 100,
+          "state_preparations": 100,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 400,
+          "shots": 51200
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.2421875,
+        "exact_energy": -1.2473758626186413,
+        "theta": [
+          -1.1203315599147694,
+          -0.25193780165711566,
+          1.3809836015875736,
+          0.14621630006597156,
+          -1.5026662573602296,
+          0.32168084164860555,
+          -0.8680551900795072,
+          -1.5478303993178222
+        ],
+        "work": {
+          "objective_calls": 111,
+          "state_preparations": 111,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 444,
+          "shots": 56832
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.184375,
+        "exact_energy": -1.249740430653537,
+        "theta": [
+          -1.2516866058363814,
+          -0.38329284757872784,
+          1.3922943993191672,
+          -0.008618702960617144,
+          -1.4120807561337987,
+          0.36008016252808817,
+          -0.9472240556541711,
+          -1.6791854452394341
+        ],
+        "work": {
+          "objective_calls": 122,
+          "state_preparations": 122,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 488,
+          "shots": 62464
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.325,
+        "exact_energy": -1.264693042731629,
+        "theta": [
+          -1.214408854183081,
+          -0.4063598120896142,
+          1.5055296440321995,
+          0.03916539205973538,
+          -1.3642966611134464,
+          0.37264078367192216,
+          -0.9648682684997443,
+          -1.7677035594430002
+        ],
+        "work": {
+          "objective_calls": 133,
+          "state_preparations": 133,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 532,
+          "shots": 68096
+        }
+      }
+    ],
+    "final_exact_energy": -1.264693042731629,
+    "final_estimated_energy": -1.325,
+    "work": {
+      "objective_calls": 133,
+      "state_preparations": 133,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 532,
+      "shots": 68096
+    },
+    "runtime_s": 0.04088315000035436,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "ShiftGD",
+    "seed": 0,
+    "shots_per_term": 1024,
+    "initial": [
+      0.06718527731405333,
+      0.3262287836902802,
+      -0.09128903605893024,
+      -0.9322740836392932,
+      0.09034914361235802,
+      -0.9706381527239685,
+      -0.6862947424511149,
+      0.7969641007163677
+    ],
+    "theta": [
+      -0.0071408945609466494,
+      0.35154128369028026,
+      0.04394533894106975,
+      -0.9212145133267936,
+      -2.610075661075141,
+      -0.03606784022396844,
+      -0.06087970338861471,
+      0.8079943741538679
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.8306640624999999,
+        "exact_energy": 0.7965581627343226,
+        "theta": [
+          0.06718527731405333,
+          0.3262287836902802,
+          -0.09128903605893024,
+          -0.9322740836392932,
+          0.09034914361235802,
+          -0.9706381527239685,
+          -0.6862947424511149,
+          0.7969641007163677
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 4096
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": 0.697265625,
+        "exact_energy": 0.7023560275099764,
+        "theta": [
+          0.13218039450155333,
+          0.3222737055652802,
+          -0.1443017313714302,
+          -0.9223131461392932,
+          -0.14409909857514197,
+          -0.9687924495989684,
+          -0.7323347815136148,
+          0.7965978897788678
+        ],
+        "work": {
+          "objective_calls": 82,
+          "state_preparations": 82,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 328,
+          "shots": 335872
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": 0.3763671875,
+        "exact_energy": 0.4040701474688789,
+        "theta": [
+          0.2009108632515533,
+          0.3270783930652802,
+          -0.2271239969964302,
+          -0.9005162711392932,
+          -0.5696508563876419,
+          -0.8651108089739684,
+          -0.7755330237011148,
+          0.7971105850913678
+        ],
+        "work": {
+          "objective_calls": 163,
+          "state_preparations": 163,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 652,
+          "shots": 667648
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -0.2759765625,
+        "exact_energy": -0.2573528444078786,
+        "theta": [
+          0.21791769918905332,
+          0.3364826899402802,
+          -0.32003903605893025,
+          -0.8750865836392933,
+          -1.2200414813876417,
+          -0.6443588558489685,
+          -0.7616609533886147,
+          0.8023986710288677
+        ],
+        "work": {
+          "objective_calls": 244,
+          "state_preparations": 244,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 976,
+          "shots": 999424
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -0.871875,
+        "exact_energy": -0.9029881652613645,
+        "theta": [
+          0.14074973043905334,
+          0.3590852290027802,
+          -0.32119626262143025,
+          -0.8760387320767934,
+          -1.8641332782626416,
+          -0.42133639491146846,
+          -0.6183845862011147,
+          0.8041857804038678
+        ],
+        "work": {
+          "objective_calls": 325,
+          "state_preparations": 325,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 1300,
+          "shots": 1331200
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.1875,
+        "exact_energy": -1.2149300432808698,
+        "theta": [
+          0.04355734762655335,
+          0.3612385493152802,
+          -0.21155270793393025,
+          -0.8983775992642935,
+          -2.2731615985751414,
+          -0.27952487147396843,
+          -0.44299884401361467,
+          0.8073205460288678
+        ],
+        "work": {
+          "objective_calls": 406,
+          "state_preparations": 406,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 1624,
+          "shots": 1662976
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.291796875,
+        "exact_energy": -1.32063693072242,
+        "theta": [
+          -0.014142847685946648,
+          0.36816726025278024,
+          -0.09162595012143022,
+          -0.9157359977017935,
+          -2.4721899188876413,
+          -0.20864108241146848,
+          -0.2998103674511147,
+          0.8123303116538678
+        ],
+        "work": {
+          "objective_calls": 487,
+          "state_preparations": 487,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 1948,
+          "shots": 1994752
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.3605468749999998,
+        "exact_energy": -1.350803365493663,
+        "theta": [
+          -0.03040261331094666,
+          0.3580598383777802,
+          -0.01832516887143023,
+          -0.9208043570767935,
+          -2.5501782001376414,
+          -0.14930026209896846,
+          -0.20623614870111473,
+          0.8102941788413679
+        ],
+        "work": {
+          "objective_calls": 568,
+          "state_preparations": 568,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 2272,
+          "shots": 2326528
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.3732421874999998,
+        "exact_energy": -1.360074374617461,
+        "theta": [
+          -0.021760035185946658,
+          0.36163405712778024,
+          0.015322292066069759,
+          -0.9170836539517937,
+          -2.577204567325141,
+          -0.10676119959896846,
+          -0.14425860963861473,
+          0.8077307022788678
+        ],
+        "work": {
+          "objective_calls": 649,
+          "state_preparations": 649,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 2596,
+          "shots": 2658304
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.419921875,
+        "exact_energy": -1.3631201570632123,
+        "theta": [
+          -0.01707253518594666,
+          0.3606233149402802,
+          0.032797878003569786,
+          -0.9166002555142937,
+          -2.5923657001376412,
+          -0.07932467616146847,
+          -0.11348224245111473,
+          0.8039953507163677
+        ],
+        "work": {
+          "objective_calls": 730,
+          "state_preparations": 730,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 2920,
+          "shots": 2990080
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.389453125,
+        "exact_energy": -1.3643444269564036,
+        "theta": [
+          -0.021056910185946662,
+          0.3509699946277803,
+          0.04618654987856978,
+          -0.9253746695767937,
+          -2.603527809512641,
+          -0.06990573084896846,
+          -0.08538653932611472,
+          0.8001135147788677
+        ],
+        "work": {
+          "objective_calls": 811,
+          "state_preparations": 811,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 3244,
+          "shots": 3321856
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.383984375,
+        "exact_energy": -1.365135691188134,
+        "theta": [
+          -0.009660425810946657,
+          0.34930007275278024,
+          0.04596682331606977,
+          -0.9252281852017936,
+          -2.6053295673251413,
+          -0.05446627772396844,
+          -0.06392657838861471,
+          0.8074230850913678
+        ],
+        "work": {
+          "objective_calls": 892,
+          "state_preparations": 892,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 3568,
+          "shots": 3653632
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.3761718749999998,
+        "exact_energy": -1.3654156385521012,
+        "theta": [
+          -0.0071408945609466494,
+          0.35154128369028026,
+          0.04394533894106975,
+          -0.9212145133267936,
+          -2.610075661075141,
+          -0.03606784022396844,
+          -0.06087970338861471,
+          0.8079943741538679
+        ],
+        "work": {
+          "objective_calls": 973,
+          "state_preparations": 973,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 3892,
+          "shots": 3985408
+        }
+      }
+    ],
+    "final_exact_energy": -1.3654156385521012,
+    "final_estimated_energy": -1.3761718749999998,
+    "work": {
+      "objective_calls": 973,
+      "state_preparations": 973,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 3892,
+      "shots": 3985408
+    },
+    "runtime_s": 0.2576857779999955,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "SPSA",
+    "seed": 0,
+    "shots_per_term": 1024,
+    "initial": [
+      0.06718527731405333,
+      0.3262287836902802,
+      -0.09128903605893024,
+      -0.9322740836392932,
+      0.09034914361235802,
+      -0.9706381527239685,
+      -0.6862947424511149,
+      0.7969641007163677
+    ],
+    "theta": [
+      0.09422182644128926,
+      0.04314095826789924,
+      -0.4229754573451248,
+      -0.10984546618496689,
+      -1.9137104126120374,
+      -0.47686798824491095,
+      -1.1075703822098801,
+      0.5736243156150752
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.8306640624999999,
+        "exact_energy": 0.7965581627343226,
+        "theta": [
+          0.06718527731405333,
+          0.3262287836902802,
+          -0.09128903605893024,
+          -0.9322740836392932,
+          0.09034914361235802,
+          -0.9706381527239685,
+          -0.6862947424511149,
+          0.7969641007163677
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 4096
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": 0.6236328124999999,
+        "exact_energy": 0.6556559313079728,
+        "theta": [
+          0.32206051531742474,
+          0.3071499488627415,
+          -0.1596006562648478,
+          -0.8403536315082113,
+          -0.16452609439101337,
+          -0.966108155626343,
+          -0.8568357352103869,
+          0.8595620163063761
+        ],
+        "work": {
+          "objective_calls": 12,
+          "state_preparations": 12,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 48,
+          "shots": 49152
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": 0.5107421875,
+        "exact_energy": 0.5241164412517703,
+        "theta": [
+          0.2812501840029798,
+          0.38364683203317423,
+          -0.31417904946116576,
+          -0.800558262679081,
+          -0.36944007517107846,
+          -0.9298519394002174,
+          -0.8195645564989464,
+          0.8958182325325017
+        ],
+        "work": {
+          "objective_calls": 23,
+          "state_preparations": 23,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 92,
+          "shots": 94208
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": 0.48027343749999996,
+        "exact_energy": 0.4689544471511157,
+        "theta": [
+          0.26639665261649237,
+          0.26450286519066746,
+          -0.28895039375315634,
+          -0.6915665443225959,
+          -0.48858404201358524,
+          -1.0089137191482271,
+          -0.9285562748554316,
+          0.8269087012705133
+        ],
+        "work": {
+          "objective_calls": 34,
+          "state_preparations": 34,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 136,
+          "shots": 139264
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": 0.28828125,
+        "exact_energy": 0.2784805780203147,
+        "theta": [
+          0.3425523144589958,
+          0.34805713465913457,
+          -0.27240827646832755,
+          -0.5818015096573455,
+          -0.6910468558061678,
+          -0.8686498214566258,
+          -1.0688201725470328,
+          0.6866448035789119
+        ],
+        "work": {
+          "objective_calls": 45,
+          "state_preparations": 45,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 180,
+          "shots": 184320
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": 0.15468749999999998,
+        "exact_energy": 0.16912086546365515,
+        "theta": [
+          0.373817114285423,
+          0.31679233483270736,
+          -0.30367307629475476,
+          -0.47100673567838386,
+          -0.8498049275799954,
+          -0.933298607019046,
+          -1.0041713869846123,
+          0.6060938740761047
+        ],
+        "work": {
+          "objective_calls": 56,
+          "state_preparations": 56,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 224,
+          "shots": 229376
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -0.022656250000000027,
+        "exact_energy": -0.05657261431904626,
+        "theta": [
+          0.4128217332701395,
+          0.3272189016337026,
+          -0.4356637065600316,
+          -0.46203833365575475,
+          -1.031854481367905,
+          -0.7819130079301448,
+          -1.0425482682324079,
+          0.7086760251162152
+        ],
+        "work": {
+          "objective_calls": 67,
+          "state_preparations": 67,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 268,
+          "shots": 274432
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -0.248046875,
+        "exact_energy": -0.23701726859361408,
+        "theta": [
+          0.2651780732087347,
+          0.2751545048105029,
+          -0.30368418939229885,
+          -0.3939334506667133,
+          -1.2594132617738427,
+          -0.7138081249411035,
+          -1.0243331179178847,
+          0.706125017695364
+        ],
+        "work": {
+          "objective_calls": 78,
+          "state_preparations": 78,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 312,
+          "shots": 319488
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -0.3818359375,
+        "exact_energy": -0.36077027738654954,
+        "theta": [
+          0.22052664296580893,
+          0.1330015023191472,
+          -0.33862252001602877,
+          -0.4385848809096391,
+          -1.4141708013198726,
+          -0.6817612317528517,
+          -1.1013486057049766,
+          0.5639720152040083
+        ],
+        "work": {
+          "objective_calls": 89,
+          "state_preparations": 89,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 356,
+          "shots": 364544
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -0.4462890625,
+        "exact_energy": -0.43307733127329257,
+        "theta": [
+          0.11693628576234459,
+          0.08801164149789875,
+          -0.4033886525448558,
+          -0.3349945237061748,
+          -1.518320969978207,
+          -0.6761554070611108,
+          -1.1598225384250773,
+          0.6089618760252568
+        ],
+        "work": {
+          "objective_calls": 100,
+          "state_preparations": 100,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 400,
+          "shots": 409600
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -0.5462890625,
+        "exact_energy": -0.5642533573044788,
+        "theta": [
+          -0.017326628041670844,
+          0.10046512403451151,
+          -0.4093438379075985,
+          -0.23915579802972703,
+          -1.666724772519412,
+          -0.5944575701218523,
+          -1.161509944625654,
+          0.5131231503488091
+        ],
+        "work": {
+          "objective_calls": 111,
+          "state_preparations": 111,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 444,
+          "shots": 454656
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -0.684765625,
+        "exact_energy": -0.7057233199771457,
+        "theta": [
+          0.08212586052290495,
+          -0.002371967880902607,
+          -0.39280494786997083,
+          -0.09997064942827012,
+          -1.8146995746330623,
+          -0.5004101317186317,
+          -1.0620574560610783,
+          0.49658426031118136
+        ],
+        "work": {
+          "objective_calls": 122,
+          "state_preparations": 122,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 488,
+          "shots": 499712
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -0.744921875,
+        "exact_energy": -0.7418229589895169,
+        "theta": [
+          0.09422182644128926,
+          0.04314095826789924,
+          -0.4229754573451248,
+          -0.10984546618496689,
+          -1.9137104126120374,
+          -0.47686798824491095,
+          -1.1075703822098801,
+          0.5736243156150752
+        ],
+        "work": {
+          "objective_calls": 133,
+          "state_preparations": 133,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 532,
+          "shots": 544768
+        }
+      }
+    ],
+    "final_exact_energy": -0.7418229589895169,
+    "final_estimated_energy": -0.744921875,
+    "work": {
+      "objective_calls": 133,
+      "state_preparations": 133,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 532,
+      "shots": 544768
+    },
+    "runtime_s": 0.04062530999999581,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "ShiftGD",
+    "seed": 1,
+    "shots_per_term": 1024,
+    "initial": [
+      0.35372740042682516,
+      -1.52147185243262,
+      -0.9811521309072496,
+      1.124344797555175,
+      -1.3314112571655559,
+      -0.9390526921365765,
+      0.4087243438551167,
+      -1.2611542522032675
+    ],
+    "theta": [
+      0.014410994176825207,
+      -1.4212765399326202,
+      -0.1542478340322495,
+      0.9120889381801751,
+      -2.6039210227905576,
+      -0.03952144213657634,
+      0.1507653594801167,
+      -1.2478974162657672
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": -0.22910156249999997,
+        "exact_energy": -0.2615739304263851,
+        "theta": [
+          0.35372740042682516,
+          -1.52147185243262,
+          -0.9811521309072496,
+          1.124344797555175,
+          -1.3314112571655559,
+          -0.9390526921365765,
+          0.4087243438551167,
+          -1.2611542522032675
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 4096
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -0.8888671875,
+        "exact_energy": -0.9338800861202672,
+        "theta": [
+          0.29153013480182516,
+          -1.44286833680762,
+          -0.8986228340322496,
+          1.172743235055175,
+          -1.953222780603056,
+          -0.5979052311990765,
+          0.4025134063551167,
+          -1.2664862834532677
+        ],
+        "work": {
+          "objective_calls": 82,
+          "state_preparations": 82,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 328,
+          "shots": 335872
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -1.225390625,
+        "exact_energy": -1.1911270718378497,
+        "theta": [
+          0.19238950980182518,
+          -1.40160368837012,
+          -0.7629490059072496,
+          1.1380557350551752,
+          -2.309663210290556,
+          -0.39048335619907637,
+          0.41086301573011663,
+          -1.269474564703268
+        ],
+        "work": {
+          "objective_calls": 163,
+          "state_preparations": 163,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 652,
+          "shots": 667648
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -1.2607421875,
+        "exact_energy": -1.2766344090175976,
+        "theta": [
+          0.11955747855182519,
+          -1.3927413836826201,
+          -0.6315232246572495,
+          1.096761789742675,
+          -2.475615358728056,
+          -0.2717577702615763,
+          0.39246457823011666,
+          -1.2535077678282678
+        ],
+        "work": {
+          "objective_calls": 244,
+          "state_preparations": 244,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 976,
+          "shots": 999424
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -1.2919921875,
+        "exact_energy": -1.3148211522197877,
+        "theta": [
+          0.07701841605182519,
+          -1.3990988055576201,
+          -0.5017966621572496,
+          1.049681711617675,
+          -2.543071413415556,
+          -0.19571773119907632,
+          0.3719128204176167,
+          -1.2482489787657678
+        ],
+        "work": {
+          "objective_calls": 325,
+          "state_preparations": 325,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 1300,
+          "shots": 1331200
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.3203125,
+        "exact_energy": -1.331985979137222,
+        "theta": [
+          0.04405943167682519,
+          -1.40306853212012,
+          -0.42919900590724963,
+          1.004051828805175,
+          -2.571709108728056,
+          -0.1449315983865763,
+          0.34075559385511667,
+          -1.248307572515768
+        ],
+        "work": {
+          "objective_calls": 406,
+          "state_preparations": 406,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 1624,
+          "shots": 1662976
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.32578125,
+        "exact_energy": -1.3427833808530996,
+        "theta": [
+          0.039489119176825196,
+          -1.40469450868262,
+          -0.35813943559474953,
+          0.9799258522426751,
+          -2.575327272790556,
+          -0.1039599186990763,
+          0.3066247344801167,
+          -1.2502704631407677
+        ],
+        "work": {
+          "objective_calls": 487,
+          "state_preparations": 487,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 1948,
+          "shots": 1994752
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.3671875,
+        "exact_energy": -1.3500795381335395,
+        "theta": [
+          0.0282684160518252,
+          -1.4057345477451202,
+          -0.3009519355947495,
+          0.9496914772426752,
+          -2.5894337181030562,
+          -0.08291011401157629,
+          0.27240598448011666,
+          -1.2536103068907676
+        ],
+        "work": {
+          "objective_calls": 568,
+          "state_preparations": 568,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 2272,
+          "shots": 2326528
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.346484375,
+        "exact_energy": -1.3540280237541626,
+        "theta": [
+          0.03179868948932521,
+          -1.40114958680762,
+          -0.26041970903224954,
+          0.9397891334926752,
+          -2.590854616540556,
+          -0.0683788640115763,
+          0.24419309385511667,
+          -1.2521308147032673
+        ],
+        "work": {
+          "objective_calls": 649,
+          "state_preparations": 649,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 2596,
+          "shots": 2658304
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.3419921874999998,
+        "exact_energy": -1.3568253682625886,
+        "theta": [
+          0.02796079886432521,
+          -1.4015304461826201,
+          -0.23179666215724953,
+          0.9234561256801752,
+          -2.5994532493530564,
+          -0.05926753588657632,
+          0.21851438291761668,
+          -1.2549726115782671
+        ],
+        "work": {
+          "objective_calls": 730,
+          "state_preparations": 730,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 2920,
+          "shots": 2990080
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.3675781249999999,
+        "exact_energy": -1.3592511218438936,
+        "theta": [
+          0.02136900198932521,
+          -1.40339079774512,
+          -0.20028787309474952,
+          0.9140225319301751,
+          -2.601137819665557,
+          -0.04555659838657634,
+          0.1939928985426167,
+          -1.2530829631407672
+        ],
+        "work": {
+          "objective_calls": 811,
+          "state_preparations": 811,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 3244,
+          "shots": 3321856
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.3779296874999998,
+        "exact_energy": -1.3609397536099908,
+        "theta": [
+          0.02122251761432521,
+          -1.4082101336826203,
+          -0.17856424028224951,
+          0.9083389381801752,
+          -2.6016944602905574,
+          -0.03468745776157632,
+          0.1676257110426167,
+          -1.2502118693907673
+        ],
+        "work": {
+          "objective_calls": 892,
+          "state_preparations": 892,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 3568,
+          "shots": 3653632
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.3888671874999998,
+        "exact_energy": -1.3619807823786947,
+        "theta": [
+          0.014410994176825207,
+          -1.4212765399326202,
+          -0.1542478340322495,
+          0.9120889381801751,
+          -2.6039210227905576,
+          -0.03952144213657634,
+          0.1507653594801167,
+          -1.2478974162657672
+        ],
+        "work": {
+          "objective_calls": 973,
+          "state_preparations": 973,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 3892,
+          "shots": 3985408
+        }
+      }
+    ],
+    "final_exact_energy": -1.3619807823786947,
+    "final_estimated_energy": -1.3888671874999998,
+    "work": {
+      "objective_calls": 973,
+      "state_preparations": 973,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 3892,
+      "shots": 3985408
+    },
+    "runtime_s": 0.2685608349997892,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "SPSA",
+    "seed": 1,
+    "shots_per_term": 1024,
+    "initial": [
+      0.35372740042682516,
+      -1.52147185243262,
+      -0.9811521309072496,
+      1.124344797555175,
+      -1.3314112571655559,
+      -0.9390526921365765,
+      0.4087243438551167,
+      -1.2611542522032675
+    ],
+    "theta": [
+      0.05834213937637866,
+      -1.027459154926976,
+      -0.26420421899617236,
+      1.488943215635299,
+      -2.6012380029635023,
+      -0.08283511789786273,
+      -0.02918293525124863,
+      -1.780638319888877
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": -0.22910156249999997,
+        "exact_energy": -0.2615739304263851,
+        "theta": [
+          0.35372740042682516,
+          -1.52147185243262,
+          -0.9811521309072496,
+          1.124344797555175,
+          -1.3314112571655559,
+          -0.9390526921365765,
+          0.4087243438551167,
+          -1.2611542522032675
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 4096
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -0.5939453125,
+        "exact_energy": -0.6299238356251217,
+        "theta": [
+          0.1482663409040605,
+          -1.1973548201408284,
+          -0.875192750296308,
+          1.2221503146756647,
+          -1.6473744259668957,
+          -0.8330933115256349,
+          0.30276496324417523,
+          -1.5748237082740704
+        ],
+        "work": {
+          "objective_calls": 12,
+          "state_preparations": 12,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 48,
+          "shots": 49152
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -1.0779296875,
+        "exact_energy": -1.0831596679828963,
+        "theta": [
+          0.2019176804023537,
+          -1.050233543760175,
+          -0.6107706236282959,
+          1.4865724413436767,
+          -2.0739875577882065,
+          -0.5237810299916827,
+          0.21141811145522305,
+          -1.6833633739290763
+        ],
+        "work": {
+          "objective_calls": 23,
+          "state_preparations": 23,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 92,
+          "shots": 94208
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -1.2367187499999999,
+        "exact_energy": -1.2087940719656038,
+        "theta": [
+          0.12578630742743768,
+          -1.1270545287745624,
+          -0.5510041064099965,
+          1.4231882348979403,
+          -2.2903241222232458,
+          -0.46470412481285456,
+          0.1885739238167896,
+          -1.623596856710777
+        ],
+        "work": {
+          "objective_calls": 34,
+          "state_preparations": 34,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 136,
+          "shots": 139264
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -1.2669921875,
+        "exact_energy": -1.26020711877112,
+        "theta": [
+          0.07771166466274143,
+          -1.1852524042007344,
+          -0.45197810548870454,
+          1.3689734336851347,
+          -2.3638480092062313,
+          -0.41662948204815836,
+          0.08954792289549765,
+          -1.6778116579235827
+        ],
+        "work": {
+          "objective_calls": 45,
+          "state_preparations": 45,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 180,
+          "shots": 184320
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.264453125,
+        "exact_energy": -1.2860658733585648,
+        "theta": [
+          0.11535677965545506,
+          -1.1476072892080207,
+          -0.40002411413833217,
+          1.4254673286913229,
+          -2.4084053597095023,
+          -0.3637384398909905,
+          0.10313915872918335,
+          -1.7366778847845126
+        ],
+        "work": {
+          "objective_calls": 56,
+          "state_preparations": 56,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 224,
+          "shots": 229376
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.2876953125,
+        "exact_energy": -1.3067238528375045,
+        "theta": [
+          0.11840737336773426,
+          -1.0494733125673406,
+          -0.3611601931746252,
+          1.4509859909546385,
+          -2.4426993295531996,
+          -0.28752995537130716,
+          0.005005182088503244,
+          -1.7248519834918516
+        ],
+        "work": {
+          "objective_calls": 67,
+          "state_preparations": 67,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 268,
+          "shots": 274432
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.335546875,
+        "exact_energy": -1.3126966749213111,
+        "theta": [
+          0.12443221730489597,
+          -1.041321153291953,
+          -0.3551353492374635,
+          1.461587289444009,
+          -2.4586805117089203,
+          -0.25492263078905436,
+          -0.010828136926232676,
+          -1.704442209924907
+        ],
+        "work": {
+          "objective_calls": 78,
+          "state_preparations": 78,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 312,
+          "shots": 319488
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.3158203125,
+        "exact_energy": -1.312153609370748,
+        "theta": [
+          0.11950033387721097,
+          -1.0612735086064498,
+          -0.3571663266214467,
+          1.4595563120600257,
+          -2.453102481217378,
+          -0.24934460029751168,
+          -0.021825064062146772,
+          -1.7320035731149297
+        ],
+        "work": {
+          "objective_calls": 89,
+          "state_preparations": 89,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 356,
+          "shots": 364544
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.328515625,
+        "exact_energy": -1.3278228390550244,
+        "theta": [
+          0.08169186586032749,
+          -1.0315757337811091,
+          -0.3419914940880087,
+          1.4597209908519608,
+          -2.5178790930319654,
+          -0.19267868167446667,
+          -0.05963353207903024,
+          -1.7741465494460722
+        ],
+        "work": {
+          "objective_calls": 100,
+          "state_preparations": 100,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 400,
+          "shots": 409600
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.3380859375,
+        "exact_energy": -1.3343314633401124,
+        "theta": [
+          0.048238393312288325,
+          -1.036308428348487,
+          -0.3349604799849647,
+          1.4644536854193386,
+          -2.5280857705228383,
+          -0.15071974432208832,
+          -0.03471424451514506,
+          -1.767313577148452
+        ],
+        "work": {
+          "objective_calls": 111,
+          "state_preparations": 111,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 444,
+          "shots": 454656
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.3669921875,
+        "exact_energy": -1.3466042384689414,
+        "theta": [
+          0.05624860497060603,
+          -1.032140963981757,
+          -0.27962455061510116,
+          1.487645331360405,
+          -2.59467251267217,
+          -0.08413300217275696,
+          -0.03888170888187493,
+          -1.7827318542946498
+        ],
+        "work": {
+          "objective_calls": 122,
+          "state_preparations": 122,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 488,
+          "shots": 499712
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.346875,
+        "exact_energy": -1.3486369635495774,
+        "theta": [
+          0.05834213937637866,
+          -1.027459154926976,
+          -0.26420421899617236,
+          1.488943215635299,
+          -2.6012380029635023,
+          -0.08283511789786273,
+          -0.02918293525124863,
+          -1.780638319888877
+        ],
+        "work": {
+          "objective_calls": 133,
+          "state_preparations": 133,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 532,
+          "shots": 544768
+        }
+      }
+    ],
+    "final_exact_energy": -1.3486369635495774,
+    "final_estimated_energy": -1.346875,
+    "work": {
+      "objective_calls": 133,
+      "state_preparations": 133,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 532,
+      "shots": 544768
+    },
+    "runtime_s": 0.040736035000009,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "ShiftGD",
+    "seed": 2,
+    "shots_per_term": 1024,
+    "initial": [
+      -0.3744113698311926,
+      -0.44865292762724573,
+      0.7778970362397755,
+      -0.34717137510231644,
+      -0.5116674670494639,
+      0.1724562506925349,
+      -0.9826323715086264,
+      -1.1948972918280973
+    ],
+    "theta": [
+      -0.9712033620186928,
+      -0.15528866981474587,
+      1.5636685206147745,
+      -0.004397937602316477,
+      -1.645295396736964,
+      0.249536328817535,
+      -1.5579497543211265,
+      -1.2001853777655984
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.12363281249999994,
+        "exact_energy": 0.11779719244865436,
+        "theta": [
+          -0.3744113698311926,
+          -0.44865292762724573,
+          0.7778970362397755,
+          -0.34717137510231644,
+          -0.5116674670494639,
+          0.1724562506925349,
+          -0.9826323715086264,
+          -1.1948972918280973
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 4096
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -1.01796875,
+        "exact_energy": -1.0233604831185528,
+        "theta": [
+          -0.8618674245186927,
+          -0.33085019325224574,
+          1.0139859034272756,
+          -0.23934422666481645,
+          -1.245935045174464,
+          0.1695412116300349,
+          -1.0581304183836264,
+          -1.1990135027655975
+        ],
+        "work": {
+          "objective_calls": 82,
+          "state_preparations": 82,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 328,
+          "shots": 335872
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -1.347265625,
+        "exact_energy": -1.2851723063369245,
+        "theta": [
+          -0.9974533620186927,
+          -0.21045468543974577,
+          1.2357193018647756,
+          -0.12542332822731644,
+          -1.5372045764244637,
+          0.20160664131753486,
+          -1.1763872543211267,
+          -1.1936082293280976
+        ],
+        "work": {
+          "objective_calls": 163,
+          "state_preparations": 163,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 652,
+          "shots": 667648
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -1.3375,
+        "exact_energy": -1.333835984793165,
+        "theta": [
+          -0.9971603932686928,
+          -0.17216366981474582,
+          1.3648745753022753,
+          -0.05828953916481644,
+          -1.6029760607994636,
+          0.22262714913003487,
+          -1.2705181136961268,
+          -1.2033054949530975
+        ],
+        "work": {
+          "objective_calls": 244,
+          "state_preparations": 244,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 976,
+          "shots": 999424
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -1.3890625,
+        "exact_energy": -1.3512065617509936,
+        "theta": [
+          -0.9862326588936929,
+          -0.1599029276272458,
+          1.443727114364775,
+          -0.016307117289816438,
+          -1.6280688342369636,
+          0.2356789069425349,
+          -1.3397905746336265,
+          -1.1979002215155976
+        ],
+        "work": {
+          "objective_calls": 325,
+          "state_preparations": 325,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 1300,
+          "shots": 1331200
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -1.3634765624999998,
+        "exact_energy": -1.3590561420417782,
+        "theta": [
+          -0.982175041706193,
+          -0.14830136512724584,
+          1.4927847315522749,
+          -0.004148914164816448,
+          -1.6320825061119635,
+          0.2436916022550349,
+          -1.4027642074461266,
+          -1.1980027605780978
+        ],
+        "work": {
+          "objective_calls": 406,
+          "state_preparations": 406,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 1624,
+          "shots": 1662976
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -1.3509765625,
+        "exact_energy": -1.3624558548788825,
+        "theta": [
+          -0.9793039479561929,
+          -0.15761777137724584,
+          1.529845278427275,
+          -0.006990711039816437,
+          -1.6375170764244635,
+          0.24824726631753485,
+          -1.4433403793211266,
+          -1.194252760578098
+        ],
+        "work": {
+          "objective_calls": 487,
+          "state_preparations": 487,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 1948,
+          "shots": 1994752
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.366015625,
+        "exact_energy": -1.3644192231177694,
+        "theta": [
+          -0.9846506276436929,
+          -0.15552304481474583,
+          1.5417105128022748,
+          -0.006141101664816442,
+          -1.6346606311119636,
+          0.25013691475503486,
+          -1.4836382308836265,
+          -1.1945310808905978
+        ],
+        "work": {
+          "objective_calls": 568,
+          "state_preparations": 568,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 2272,
+          "shots": 2326528
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.36796875,
+        "exact_energy": -1.365290289377515,
+        "theta": [
+          -0.988019768268693,
+          -0.15462949012724586,
+          1.5489614893647745,
+          -0.004163562602316442,
+          -1.6314672717369634,
+          0.2528322272550349,
+          -1.5090825668211265,
+          -1.2055027605780981
+        ],
+        "work": {
+          "objective_calls": 649,
+          "state_preparations": 649,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 2596,
+          "shots": 2658304
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.37265625,
+        "exact_energy": -1.365569256498997,
+        "theta": [
+          -0.9917697682686929,
+          -0.13608456825224588,
+          1.5631118799897745,
+          0.003717296772683551,
+          -1.6391430529869633,
+          0.24972675850503492,
+          -1.5262798324461264,
+          -1.208461744953098
+        ],
+        "work": {
+          "objective_calls": 730,
+          "state_preparations": 730,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 2920,
+          "shots": 2990080
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.3341796875,
+        "exact_energy": -1.3658949293646452,
+        "theta": [
+          -0.9797580495186928,
+          -0.1449175760647459,
+          1.5631411768647745,
+          -0.008001453227316447,
+          -1.6445483264244636,
+          0.24590351631753496,
+          -1.5383061996336262,
+          -1.2060008074530983
+        ],
+        "work": {
+          "objective_calls": 811,
+          "state_preparations": 811,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 3244,
+          "shots": 3321856
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.3388671875,
+        "exact_energy": -1.3659107829928776,
+        "theta": [
+          -0.9794650807686929,
+          -0.15049863075224587,
+          1.5628335596772744,
+          -0.010462390727316456,
+          -1.6488842639244639,
+          0.243676953817535,
+          -1.5421001449461265,
+          -1.2037449480780984
+        ],
+        "work": {
+          "objective_calls": 892,
+          "state_preparations": 892,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 3568,
+          "shots": 3653632
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.3763671874999999,
+        "exact_energy": -1.3661261783824443,
+        "theta": [
+          -0.9712033620186928,
+          -0.15528866981474587,
+          1.5636685206147745,
+          -0.004397937602316477,
+          -1.645295396736964,
+          0.249536328817535,
+          -1.5579497543211265,
+          -1.2001853777655984
+        ],
+        "work": {
+          "objective_calls": 973,
+          "state_preparations": 973,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 3892,
+          "shots": 3985408
+        }
+      }
+    ],
+    "final_exact_energy": -1.3661261783824443,
+    "final_estimated_energy": -1.3763671874999999,
+    "work": {
+      "objective_calls": 973,
+      "state_preparations": 973,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 3892,
+      "shots": 3985408
+    },
+    "runtime_s": 0.2509805790000428,
+    "qng_limited_steps": 0
+  },
+  {
+    "method": "SPSA",
+    "seed": 2,
+    "shots_per_term": 1024,
+    "initial": [
+      -0.3744113698311926,
+      -0.44865292762724573,
+      0.7778970362397755,
+      -0.34717137510231644,
+      -0.5116674670494639,
+      0.1724562506925349,
+      -0.9826323715086264,
+      -1.1948972918280973
+    ],
+    "theta": [
+      -0.39551845856363793,
+      -0.43977706207945827,
+      0.9080822016242701,
+      -0.11322926038108448,
+      -2.1672585868260907,
+      0.05902669738843737,
+      -0.7939607746934819,
+      -1.4736706905944619
+    ],
+    "trace": [
+      {
+        "step": 0,
+        "estimated_energy": 0.12363281249999994,
+        "exact_energy": 0.11779719244865436,
+        "theta": [
+          -0.3744113698311926,
+          -0.44865292762724573,
+          0.7778970362397755,
+          -0.34717137510231644,
+          -0.5116674670494639,
+          0.1724562506925349,
+          -0.9826323715086264,
+          -1.1948972918280973
+        ],
+        "work": {
+          "objective_calls": 1,
+          "state_preparations": 1,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 1,
+          "measurement_circuits": 4,
+          "shots": 4096
+        }
+      },
+      {
+        "step": 5,
+        "estimated_energy": -0.35,
+        "exact_energy": -0.3735964849577861,
+        "theta": [
+          -0.48320775365302066,
+          -0.7151400676615634,
+          0.6691006524179474,
+          -0.08068423506799886,
+          -0.9898137396369192,
+          -0.09403088934178268,
+          -0.7161452314743088,
+          -1.6278478639256209
+        ],
+        "work": {
+          "objective_calls": 12,
+          "state_preparations": 12,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 2,
+          "measurement_circuits": 48,
+          "shots": 49152
+        }
+      },
+      {
+        "step": 10,
+        "estimated_energy": -0.58828125,
+        "exact_energy": -0.5997987600916516,
+        "theta": [
+          -0.5516774255276092,
+          -0.8122931714485879,
+          0.5377396175416881,
+          -0.2799083645988782,
+          -1.2669233874043784,
+          -0.04055537270210328,
+          -0.6825438776050424,
+          -1.5942465100563548
+        ],
+        "work": {
+          "objective_calls": 23,
+          "state_preparations": 23,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 3,
+          "measurement_circuits": 92,
+          "shots": 94208
+        }
+      },
+      {
+        "step": 15,
+        "estimated_energy": -0.7751953125,
+        "exact_energy": -0.7693137312374924,
+        "theta": [
+          -0.6232705637476514,
+          -0.9626125834275773,
+          0.548890957878977,
+          -0.4302277765778677,
+          -1.5664027579087592,
+          -0.1675276254510148,
+          -0.6603561718285624,
+          -1.5226533718363127
+        ],
+        "work": {
+          "objective_calls": 34,
+          "state_preparations": 34,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 4,
+          "measurement_circuits": 136,
+          "shots": 139264
+        }
+      },
+      {
+        "step": 20,
+        "estimated_energy": -0.9048828125,
+        "exact_energy": -0.8762880901689806,
+        "theta": [
+          -0.7014071536324207,
+          -0.9037492686715964,
+          0.6077542726349577,
+          -0.27957483921713433,
+          -1.704810730970773,
+          -0.1829757811010693,
+          -0.6348062194301614,
+          -1.6417880697695377
+        ],
+        "work": {
+          "objective_calls": 45,
+          "state_preparations": 45,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 5,
+          "measurement_circuits": 180,
+          "shots": 184320
+        }
+      },
+      {
+        "step": 25,
+        "estimated_energy": -0.8810546875,
+        "exact_energy": -0.8962414703769161,
+        "theta": [
+          -0.7368865454327113,
+          -0.8081725961691392,
+          0.6510666808307228,
+          -0.24409544741684383,
+          -1.7126858781335754,
+          -0.19085092826387184,
+          -0.5668337915651921,
+          -1.69385835369412
+        ],
+        "work": {
+          "objective_calls": 56,
+          "state_preparations": 56,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 6,
+          "measurement_circuits": 224,
+          "shots": 229376
+        }
+      },
+      {
+        "step": 30,
+        "estimated_energy": -0.9671875,
+        "exact_energy": -0.9985127694095836,
+        "theta": [
+          -0.8348765612678952,
+          -0.7411053945456125,
+          0.8093136876194983,
+          -0.1565124620254954,
+          -1.810675893968759,
+          -0.11770007903088475,
+          -0.7021683709563524,
+          -1.7235809917616705
+        ],
+        "work": {
+          "objective_calls": 67,
+          "state_preparations": 67,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 7,
+          "measurement_circuits": 268,
+          "shots": 274432
+        }
+      },
+      {
+        "step": 35,
+        "estimated_energy": -1.065234375,
+        "exact_energy": -1.101919665770408,
+        "theta": [
+          -0.6954566768773138,
+          -0.776832955288824,
+          0.9529752552898817,
+          -0.16580134975705055,
+          -1.8464034547119705,
+          0.025961488639498605,
+          -0.7421376149793659,
+          -1.584161107371089
+        ],
+        "work": {
+          "objective_calls": 78,
+          "state_preparations": 78,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 8,
+          "measurement_circuits": 312,
+          "shots": 319488
+        }
+      },
+      {
+        "step": 40,
+        "estimated_energy": -1.1705078125,
+        "exact_energy": -1.15502126988206,
+        "theta": [
+          -0.6870418105124523,
+          -0.7244176424322772,
+          1.0210885334191886,
+          -0.1714304255357576,
+          -1.9748779071477196,
+          -0.01585843520163105,
+          -0.7968697135071012,
+          -1.5925759737359504
+        ],
+        "work": {
+          "objective_calls": 89,
+          "state_preparations": 89,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 9,
+          "measurement_circuits": 356,
+          "shots": 364544
+        }
+      },
+      {
+        "step": 45,
+        "estimated_energy": -1.1318359375,
+        "exact_energy": -1.1669115366625942,
+        "theta": [
+          -0.6337745704175438,
+          -0.6928469572541948,
+          0.9558081792480394,
+          -0.14075939165009396,
+          -1.9553203360458777,
+          -0.08023913808036143,
+          -0.840842865774852,
+          -1.6254356632198794
+        ],
+        "work": {
+          "objective_calls": 100,
+          "state_preparations": 100,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 10,
+          "measurement_circuits": 400,
+          "shots": 409600
+        }
+      },
+      {
+        "step": 50,
+        "estimated_energy": -1.216796875,
+        "exact_energy": -1.2056702819890652,
+        "theta": [
+          -0.6062444556917741,
+          -0.6494586314278297,
+          0.9439429348043644,
+          -0.12889414720641895,
+          -2.0252308106439814,
+          -0.0066867113184250065,
+          -0.7889057650888047,
+          -1.6351857448520937
+        ],
+        "work": {
+          "objective_calls": 111,
+          "state_preparations": 111,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 11,
+          "measurement_circuits": 444,
+          "shots": 454656
+        }
+      },
+      {
+        "step": 55,
+        "estimated_energy": -1.2388671875,
+        "exact_energy": -1.2655266121334845,
+        "theta": [
+          -0.49301634682142437,
+          -0.5362305225574799,
+          0.9152883606555411,
+          -0.05785658625907366,
+          -2.1118859127040794,
+          0.0026095954866618074,
+          -0.7716290650836395,
+          -1.5219576359817437
+        ],
+        "work": {
+          "objective_calls": 122,
+          "state_preparations": 122,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 12,
+          "measurement_circuits": 488,
+          "shots": 499712
+        }
+      },
+      {
+        "step": 60,
+        "estimated_energy": -1.2623046875,
+        "exact_energy": -1.3009696780771607,
+        "theta": [
+          -0.39551845856363793,
+          -0.43977706207945827,
+          0.9080822016242701,
+          -0.11322926038108448,
+          -2.1672585868260907,
+          0.05902669738843737,
+          -0.7939607746934819,
+          -1.4736706905944619
+        ],
+        "work": {
+          "objective_calls": 133,
+          "state_preparations": 133,
+          "metric_preparations": 0,
+          "diagnostic_preparations": 13,
+          "measurement_circuits": 532,
+          "shots": 544768
+        }
+      }
+    ],
+    "final_exact_energy": -1.3009696780771607,
+    "final_estimated_energy": -1.2623046875,
+    "work": {
+      "objective_calls": 133,
+      "state_preparations": 133,
+      "metric_preparations": 0,
+      "diagnostic_preparations": 13,
+      "measurement_circuits": 532,
+      "shots": 544768
+    },
+    "runtime_s": 0.04302209900015441,
+    "qng_limited_steps": 0
+  }
+]

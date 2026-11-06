@@ -1,0 +1,152 @@
+[
+  {
+    "repeat": 0,
+    "messages": 100,
+    "bytes_per_message": 1024,
+    "one_way_payload_bytes": 102400,
+    "round_trip_s": 0.0029584559999875637,
+    "mean_round_trip_s": 2.9584559999875637e-05,
+    "end_to_end_s": 0.5322128789999852,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 1,
+    "messages": 100,
+    "bytes_per_message": 1024,
+    "one_way_payload_bytes": 102400,
+    "round_trip_s": 0.001751294999962738,
+    "mean_round_trip_s": 1.751294999962738e-05,
+    "end_to_end_s": 0.4308625429999893,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 2,
+    "messages": 100,
+    "bytes_per_message": 1024,
+    "one_way_payload_bytes": 102400,
+    "round_trip_s": 0.0027374349999718106,
+    "mean_round_trip_s": 2.7374349999718107e-05,
+    "end_to_end_s": 0.4746580549999635,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 0,
+    "messages": 100,
+    "bytes_per_message": 65536,
+    "one_way_payload_bytes": 6553600,
+    "round_trip_s": 0.005503153000063321,
+    "mean_round_trip_s": 5.503153000063321e-05,
+    "end_to_end_s": 0.45750034900004266,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 1,
+    "messages": 100,
+    "bytes_per_message": 65536,
+    "one_way_payload_bytes": 6553600,
+    "round_trip_s": 0.005121380999980829,
+    "mean_round_trip_s": 5.121380999980829e-05,
+    "end_to_end_s": 0.5145850210000162,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 2,
+    "messages": 100,
+    "bytes_per_message": 65536,
+    "one_way_payload_bytes": 6553600,
+    "round_trip_s": 0.005927176000000145,
+    "mean_round_trip_s": 5.927176000000145e-05,
+    "end_to_end_s": 0.4671177860000171,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 0,
+    "messages": 100,
+    "bytes_per_message": 1048576,
+    "one_way_payload_bytes": 104857600,
+    "round_trip_s": 0.07211108799992871,
+    "mean_round_trip_s": 0.0007211108799992872,
+    "end_to_end_s": 0.6066583909999963,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 1,
+    "messages": 100,
+    "bytes_per_message": 1048576,
+    "one_way_payload_bytes": 104857600,
+    "round_trip_s": 0.08861071800004083,
+    "mean_round_trip_s": 0.0008861071800004084,
+    "end_to_end_s": 0.8080030170000327,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 2,
+    "messages": 100,
+    "bytes_per_message": 1048576,
+    "one_way_payload_bytes": 104857600,
+    "round_trip_s": 0.06623083699992094,
+    "mean_round_trip_s": 0.0006623083699992093,
+    "end_to_end_s": 0.6426696950001087,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 0,
+    "messages": 1000,
+    "bytes_per_message": 100,
+    "one_way_payload_bytes": 100000,
+    "round_trip_s": 0.03305671800001164,
+    "mean_round_trip_s": 3.305671800001164e-05,
+    "end_to_end_s": 0.5629943819999426,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 1,
+    "messages": 1000,
+    "bytes_per_message": 100,
+    "one_way_payload_bytes": 100000,
+    "round_trip_s": 0.026880626999968626,
+    "mean_round_trip_s": 2.6880626999968628e-05,
+    "end_to_end_s": 0.49795463300006304,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 2,
+    "messages": 1000,
+    "bytes_per_message": 100,
+    "one_way_payload_bytes": 100000,
+    "round_trip_s": 0.0251527249999981,
+    "mean_round_trip_s": 2.5152724999998098e-05,
+    "end_to_end_s": 0.46427955000001475,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 0,
+    "messages": 10,
+    "bytes_per_message": 10000,
+    "one_way_payload_bytes": 100000,
+    "round_trip_s": 0.00045593999993798207,
+    "mean_round_trip_s": 4.5593999993798205e-05,
+    "end_to_end_s": 0.4456816740000704,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 1,
+    "messages": 10,
+    "bytes_per_message": 10000,
+    "one_way_payload_bytes": 100000,
+    "round_trip_s": 0.00035052600003382395,
+    "mean_round_trip_s": 3.5052600003382396e-05,
+    "end_to_end_s": 0.42405079599996043,
+    "transport": "local multiprocessing Pipe, not a network"
+  },
+  {
+    "repeat": 2,
+    "messages": 10,
+    "bytes_per_message": 10000,
+    "one_way_payload_bytes": 100000,
+    "round_trip_s": 0.0004994839999881151,
+    "mean_round_trip_s": 4.994839999881151e-05,
+    "end_to_end_s": 0.4036407700000382,
+    "transport": "local multiprocessing Pipe, not a network"
+  }
+]

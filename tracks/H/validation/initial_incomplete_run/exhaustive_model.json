@@ -1,0 +1,1967 @@
+[
+  {
+    "fraction": 0.2,
+    "budget_kib": 4564,
+    "best": {
+      "selected": [
+        1,
+        5
+      ],
+      "cost_kib": 4336.0,
+      "utility_ms": 5.257017375,
+      "feasible": true
+    },
+    "portfolios": [
+      {
+        "selected": [],
+        "cost_kib": 0.0,
+        "utility_ms": 0.0,
+        "feasible": true
+      },
+      {
+        "selected": [
+          5
+        ],
+        "cost_kib": 1752.0,
+        "utility_ms": 3.1920525249999994,
+        "feasible": true
+      },
+      {
+        "selected": [
+          4
+        ],
+        "cost_kib": 5288.0,
+        "utility_ms": 4.795114425,
+        "feasible": false
+      },
+      {
+        "selected": [
+          4,
+          5
+        ],
+        "cost_kib": 7040.0,
+        "utility_ms": 5.656376975,
+        "feasible": false
+      },
+      {
+        "selected": [
+          3
+        ],
+        "cost_kib": 5744.0,
+        "utility_ms": 5.396234000000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          3,
+          5
+        ],
+        "cost_kib": 7496.0,
+        "utility_ms": 5.79676345,
+        "feasible": false
+      },
+      {
+        "selected": [
+          3,
+          4
+        ],
+        "cost_kib": 11032.0,
+        "utility_ms": 5.6485842,
+        "feasible": false
+      },
+      {
+        "selected": [
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 12784.0,
+        "utility_ms": 6.04911365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2
+        ],
+        "cost_kib": 3996.0,
+        "utility_ms": 5.134492725,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          5
+        ],
+        "cost_kib": 5748.0,
+        "utility_ms": 5.51190205,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          4
+        ],
+        "cost_kib": 9284.0,
+        "utility_ms": 5.368907175,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 11036.0,
+        "utility_ms": 5.7463165,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3
+        ],
+        "cost_kib": 9740.0,
+        "utility_ms": 6.0045608,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 11492.0,
+        "utility_ms": 6.00612605,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 15028.0,
+        "utility_ms": 6.12283705,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 16780.0,
+        "utility_ms": 6.1244023,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1
+        ],
+        "cost_kib": 2584.0,
+        "utility_ms": 4.825976000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          5
+        ],
+        "cost_kib": 4336.0,
+        "utility_ms": 5.257017375,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          4
+        ],
+        "cost_kib": 7872.0,
+        "utility_ms": 5.612669500000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          4,
+          5
+        ],
+        "cost_kib": 9624.0,
+        "utility_ms": 6.0437108749999995,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3
+        ],
+        "cost_kib": 8328.0,
+        "utility_ms": 5.396234000000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3,
+          5
+        ],
+        "cost_kib": 10080.0,
+        "utility_ms": 5.79676345,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3,
+          4
+        ],
+        "cost_kib": 13616.0,
+        "utility_ms": 5.6485842,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 15368.0,
+        "utility_ms": 6.04911365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2
+        ],
+        "cost_kib": 6580.0,
+        "utility_ms": 5.852507900000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          5
+        ],
+        "cost_kib": 8332.0,
+        "utility_ms": 5.884585075,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          4
+        ],
+        "cost_kib": 11868.0,
+        "utility_ms": 6.086922350000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 13620.0,
+        "utility_ms": 6.118999525,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "cost_kib": 12324.0,
+        "utility_ms": 6.0045608,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 14076.0,
+        "utility_ms": 6.00612605,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 17612.0,
+        "utility_ms": 6.12283705,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 19364.0,
+        "utility_ms": 6.1244023,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0
+        ],
+        "cost_kib": 3460.0,
+        "utility_ms": 3.581988925,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          5
+        ],
+        "cost_kib": 5212.0,
+        "utility_ms": 6.2465055750000005,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          4
+        ],
+        "cost_kib": 8748.0,
+        "utility_ms": 8.216388625,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          4,
+          5
+        ],
+        "cost_kib": 10500.0,
+        "utility_ms": 8.678686975000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3
+        ],
+        "cost_kib": 9204.0,
+        "utility_ms": 8.8175082,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          5
+        ],
+        "cost_kib": 10956.0,
+        "utility_ms": 8.819073450000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          4
+        ],
+        "cost_kib": 14492.0,
+        "utility_ms": 9.0698584,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 16244.0,
+        "utility_ms": 9.07142365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2
+        ],
+        "cost_kib": 7456.0,
+        "utility_ms": 8.093032125,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          5
+        ],
+        "cost_kib": 9208.0,
+        "utility_ms": 8.470441450000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          4
+        ],
+        "cost_kib": 12744.0,
+        "utility_ms": 8.327446575,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 14496.0,
+        "utility_ms": 8.7048559,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3
+        ],
+        "cost_kib": 13200.0,
+        "utility_ms": 8.963100200000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 14952.0,
+        "utility_ms": 8.964665450000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 18488.0,
+        "utility_ms": 9.08137645,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 20240.0,
+        "utility_ms": 9.082941700000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1
+        ],
+        "cost_kib": 6044.0,
+        "utility_ms": 8.247250200000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          5
+        ],
+        "cost_kib": 7796.0,
+        "utility_ms": 8.279327375000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          4
+        ],
+        "cost_kib": 11332.0,
+        "utility_ms": 9.0339437,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "cost_kib": 13084.0,
+        "utility_ms": 9.066020875,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3
+        ],
+        "cost_kib": 11788.0,
+        "utility_ms": 8.8175082,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "cost_kib": 13540.0,
+        "utility_ms": 8.819073450000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "cost_kib": 17076.0,
+        "utility_ms": 9.0698584,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 18828.0,
+        "utility_ms": 9.07142365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2
+        ],
+        "cost_kib": 10040.0,
+        "utility_ms": 8.8110473,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "cost_kib": 11792.0,
+        "utility_ms": 8.843124475000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "cost_kib": 15328.0,
+        "utility_ms": 9.045461750000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 17080.0,
+        "utility_ms": 9.077538925,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cost_kib": 15784.0,
+        "utility_ms": 8.963100200000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 17536.0,
+        "utility_ms": 8.964665450000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 21072.0,
+        "utility_ms": 9.08137645,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 22824.0,
+        "utility_ms": 9.082941700000001,
+        "feasible": false
+      }
+    ]
+  },
+  {
+    "fraction": 0.4,
+    "budget_kib": 9128,
+    "best": {
+      "selected": [
+        0,
+        1,
+        5
+      ],
+      "cost_kib": 7796.0,
+      "utility_ms": 8.279327375000001,
+      "feasible": true
+    },
+    "portfolios": [
+      {
+        "selected": [],
+        "cost_kib": 0.0,
+        "utility_ms": 0.0,
+        "feasible": true
+      },
+      {
+        "selected": [
+          5
+        ],
+        "cost_kib": 1752.0,
+        "utility_ms": 3.1920525249999994,
+        "feasible": true
+      },
+      {
+        "selected": [
+          4
+        ],
+        "cost_kib": 5288.0,
+        "utility_ms": 4.795114425,
+        "feasible": true
+      },
+      {
+        "selected": [
+          4,
+          5
+        ],
+        "cost_kib": 7040.0,
+        "utility_ms": 5.656376975,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3
+        ],
+        "cost_kib": 5744.0,
+        "utility_ms": 5.396234000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3,
+          5
+        ],
+        "cost_kib": 7496.0,
+        "utility_ms": 5.79676345,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3,
+          4
+        ],
+        "cost_kib": 11032.0,
+        "utility_ms": 5.6485842,
+        "feasible": false
+      },
+      {
+        "selected": [
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 12784.0,
+        "utility_ms": 6.04911365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2
+        ],
+        "cost_kib": 3996.0,
+        "utility_ms": 5.134492725,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          5
+        ],
+        "cost_kib": 5748.0,
+        "utility_ms": 5.51190205,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          4
+        ],
+        "cost_kib": 9284.0,
+        "utility_ms": 5.368907175,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 11036.0,
+        "utility_ms": 5.7463165,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3
+        ],
+        "cost_kib": 9740.0,
+        "utility_ms": 6.0045608,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 11492.0,
+        "utility_ms": 6.00612605,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 15028.0,
+        "utility_ms": 6.12283705,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 16780.0,
+        "utility_ms": 6.1244023,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1
+        ],
+        "cost_kib": 2584.0,
+        "utility_ms": 4.825976000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          5
+        ],
+        "cost_kib": 4336.0,
+        "utility_ms": 5.257017375,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          4
+        ],
+        "cost_kib": 7872.0,
+        "utility_ms": 5.612669500000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          4,
+          5
+        ],
+        "cost_kib": 9624.0,
+        "utility_ms": 6.0437108749999995,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3
+        ],
+        "cost_kib": 8328.0,
+        "utility_ms": 5.396234000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          3,
+          5
+        ],
+        "cost_kib": 10080.0,
+        "utility_ms": 5.79676345,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3,
+          4
+        ],
+        "cost_kib": 13616.0,
+        "utility_ms": 5.6485842,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 15368.0,
+        "utility_ms": 6.04911365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2
+        ],
+        "cost_kib": 6580.0,
+        "utility_ms": 5.852507900000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          5
+        ],
+        "cost_kib": 8332.0,
+        "utility_ms": 5.884585075,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          4
+        ],
+        "cost_kib": 11868.0,
+        "utility_ms": 6.086922350000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 13620.0,
+        "utility_ms": 6.118999525,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "cost_kib": 12324.0,
+        "utility_ms": 6.0045608,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 14076.0,
+        "utility_ms": 6.00612605,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 17612.0,
+        "utility_ms": 6.12283705,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 19364.0,
+        "utility_ms": 6.1244023,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0
+        ],
+        "cost_kib": 3460.0,
+        "utility_ms": 3.581988925,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          5
+        ],
+        "cost_kib": 5212.0,
+        "utility_ms": 6.2465055750000005,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          4
+        ],
+        "cost_kib": 8748.0,
+        "utility_ms": 8.216388625,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          4,
+          5
+        ],
+        "cost_kib": 10500.0,
+        "utility_ms": 8.678686975000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3
+        ],
+        "cost_kib": 9204.0,
+        "utility_ms": 8.8175082,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          5
+        ],
+        "cost_kib": 10956.0,
+        "utility_ms": 8.819073450000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          4
+        ],
+        "cost_kib": 14492.0,
+        "utility_ms": 9.0698584,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 16244.0,
+        "utility_ms": 9.07142365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2
+        ],
+        "cost_kib": 7456.0,
+        "utility_ms": 8.093032125,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          2,
+          5
+        ],
+        "cost_kib": 9208.0,
+        "utility_ms": 8.470441450000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          4
+        ],
+        "cost_kib": 12744.0,
+        "utility_ms": 8.327446575,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 14496.0,
+        "utility_ms": 8.7048559,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3
+        ],
+        "cost_kib": 13200.0,
+        "utility_ms": 8.963100200000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 14952.0,
+        "utility_ms": 8.964665450000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 18488.0,
+        "utility_ms": 9.08137645,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 20240.0,
+        "utility_ms": 9.082941700000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1
+        ],
+        "cost_kib": 6044.0,
+        "utility_ms": 8.247250200000002,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          5
+        ],
+        "cost_kib": 7796.0,
+        "utility_ms": 8.279327375000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          4
+        ],
+        "cost_kib": 11332.0,
+        "utility_ms": 9.0339437,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "cost_kib": 13084.0,
+        "utility_ms": 9.066020875,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3
+        ],
+        "cost_kib": 11788.0,
+        "utility_ms": 8.8175082,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "cost_kib": 13540.0,
+        "utility_ms": 8.819073450000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "cost_kib": 17076.0,
+        "utility_ms": 9.0698584,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 18828.0,
+        "utility_ms": 9.07142365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2
+        ],
+        "cost_kib": 10040.0,
+        "utility_ms": 8.8110473,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "cost_kib": 11792.0,
+        "utility_ms": 8.843124475000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "cost_kib": 15328.0,
+        "utility_ms": 9.045461750000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 17080.0,
+        "utility_ms": 9.077538925,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cost_kib": 15784.0,
+        "utility_ms": 8.963100200000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 17536.0,
+        "utility_ms": 8.964665450000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 21072.0,
+        "utility_ms": 9.08137645,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 22824.0,
+        "utility_ms": 9.082941700000001,
+        "feasible": false
+      }
+    ]
+  },
+  {
+    "fraction": 0.6,
+    "budget_kib": 13692,
+    "best": {
+      "selected": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "cost_kib": 13084.0,
+      "utility_ms": 9.066020875,
+      "feasible": true
+    },
+    "portfolios": [
+      {
+        "selected": [],
+        "cost_kib": 0.0,
+        "utility_ms": 0.0,
+        "feasible": true
+      },
+      {
+        "selected": [
+          5
+        ],
+        "cost_kib": 1752.0,
+        "utility_ms": 3.1920525249999994,
+        "feasible": true
+      },
+      {
+        "selected": [
+          4
+        ],
+        "cost_kib": 5288.0,
+        "utility_ms": 4.795114425,
+        "feasible": true
+      },
+      {
+        "selected": [
+          4,
+          5
+        ],
+        "cost_kib": 7040.0,
+        "utility_ms": 5.656376975,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3
+        ],
+        "cost_kib": 5744.0,
+        "utility_ms": 5.396234000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3,
+          5
+        ],
+        "cost_kib": 7496.0,
+        "utility_ms": 5.79676345,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3,
+          4
+        ],
+        "cost_kib": 11032.0,
+        "utility_ms": 5.6485842,
+        "feasible": true
+      },
+      {
+        "selected": [
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 12784.0,
+        "utility_ms": 6.04911365,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2
+        ],
+        "cost_kib": 3996.0,
+        "utility_ms": 5.134492725,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          5
+        ],
+        "cost_kib": 5748.0,
+        "utility_ms": 5.51190205,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          4
+        ],
+        "cost_kib": 9284.0,
+        "utility_ms": 5.368907175,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 11036.0,
+        "utility_ms": 5.7463165,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          3
+        ],
+        "cost_kib": 9740.0,
+        "utility_ms": 6.0045608,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 11492.0,
+        "utility_ms": 6.00612605,
+        "feasible": true
+      },
+      {
+        "selected": [
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 15028.0,
+        "utility_ms": 6.12283705,
+        "feasible": false
+      },
+      {
+        "selected": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 16780.0,
+        "utility_ms": 6.1244023,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1
+        ],
+        "cost_kib": 2584.0,
+        "utility_ms": 4.825976000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          5
+        ],
+        "cost_kib": 4336.0,
+        "utility_ms": 5.257017375,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          4
+        ],
+        "cost_kib": 7872.0,
+        "utility_ms": 5.612669500000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          4,
+          5
+        ],
+        "cost_kib": 9624.0,
+        "utility_ms": 6.0437108749999995,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          3
+        ],
+        "cost_kib": 8328.0,
+        "utility_ms": 5.396234000000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          3,
+          5
+        ],
+        "cost_kib": 10080.0,
+        "utility_ms": 5.79676345,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          3,
+          4
+        ],
+        "cost_kib": 13616.0,
+        "utility_ms": 5.6485842,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 15368.0,
+        "utility_ms": 6.04911365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2
+        ],
+        "cost_kib": 6580.0,
+        "utility_ms": 5.852507900000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          5
+        ],
+        "cost_kib": 8332.0,
+        "utility_ms": 5.884585075,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          4
+        ],
+        "cost_kib": 11868.0,
+        "utility_ms": 6.086922350000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 13620.0,
+        "utility_ms": 6.118999525,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3
+        ],
+        "cost_kib": 12324.0,
+        "utility_ms": 6.0045608,
+        "feasible": true
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 14076.0,
+        "utility_ms": 6.00612605,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 17612.0,
+        "utility_ms": 6.12283705,
+        "feasible": false
+      },
+      {
+        "selected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 19364.0,
+        "utility_ms": 6.1244023,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0
+        ],
+        "cost_kib": 3460.0,
+        "utility_ms": 3.581988925,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          5
+        ],
+        "cost_kib": 5212.0,
+        "utility_ms": 6.2465055750000005,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          4
+        ],
+        "cost_kib": 8748.0,
+        "utility_ms": 8.216388625,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          4,
+          5
+        ],
+        "cost_kib": 10500.0,
+        "utility_ms": 8.678686975000002,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          3
+        ],
+        "cost_kib": 9204.0,
+        "utility_ms": 8.8175082,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          3,
+          5
+        ],
+        "cost_kib": 10956.0,
+        "utility_ms": 8.819073450000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          3,
+          4
+        ],
+        "cost_kib": 14492.0,
+        "utility_ms": 9.0698584,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 16244.0,
+        "utility_ms": 9.07142365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2
+        ],
+        "cost_kib": 7456.0,
+        "utility_ms": 8.093032125,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          2,
+          5
+        ],
+        "cost_kib": 9208.0,
+        "utility_ms": 8.470441450000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          2,
+          4
+        ],
+        "cost_kib": 12744.0,
+        "utility_ms": 8.327446575,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 14496.0,
+        "utility_ms": 8.7048559,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3
+        ],
+        "cost_kib": 13200.0,
+        "utility_ms": 8.963100200000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 14952.0,
+        "utility_ms": 8.964665450000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 18488.0,
+        "utility_ms": 9.08137645,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 20240.0,
+        "utility_ms": 9.082941700000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1
+        ],
+        "cost_kib": 6044.0,
+        "utility_ms": 8.247250200000002,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          5
+        ],
+        "cost_kib": 7796.0,
+        "utility_ms": 8.279327375000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          4
+        ],
+        "cost_kib": 11332.0,
+        "utility_ms": 9.0339437,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "cost_kib": 13084.0,
+        "utility_ms": 9.066020875,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3
+        ],
+        "cost_kib": 11788.0,
+        "utility_ms": 8.8175082,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "cost_kib": 13540.0,
+        "utility_ms": 8.819073450000001,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "cost_kib": 17076.0,
+        "utility_ms": 9.0698584,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 18828.0,
+        "utility_ms": 9.07142365,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2
+        ],
+        "cost_kib": 10040.0,
+        "utility_ms": 8.8110473,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "cost_kib": 11792.0,
+        "utility_ms": 8.843124475000002,
+        "feasible": true
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "cost_kib": 15328.0,
+        "utility_ms": 9.045461750000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "cost_kib": 17080.0,
+        "utility_ms": 9.077538925,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cost_kib": 15784.0,
+        "utility_ms": 8.963100200000001,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        "cost_kib": 17536.0,
+        "utility_ms": 8.964665450000002,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "cost_kib": 21072.0,
+        "utility_ms": 9.08137645,
+        "feasible": false
+      },
+      {
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cost_kib": 22824.0,
+        "utility_ms": 9.082941700000001,
+        "feasible": false
+      }
+    ]
+  }
+]

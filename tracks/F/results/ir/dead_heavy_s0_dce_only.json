@@ -1,0 +1,145 @@
+{
+  "params": [
+    "x",
+    "y",
+    "z"
+  ],
+  "code": [
+    {
+      "dest": 0,
+      "op": "arg",
+      "args": [],
+      "value": 0
+    },
+    {
+      "dest": 1,
+      "op": "arg",
+      "args": [],
+      "value": 1
+    },
+    {
+      "dest": 2,
+      "op": "arg",
+      "args": [],
+      "value": 2
+    },
+    {
+      "dest": 3,
+      "op": "xor",
+      "args": [
+        0,
+        1
+      ],
+      "value": null
+    },
+    {
+      "dest": 4,
+      "op": "add",
+      "args": [
+        3,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 5,
+      "op": "add",
+      "args": [
+        4,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 6,
+      "op": "add",
+      "args": [
+        5,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 7,
+      "op": "add",
+      "args": [
+        6,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 8,
+      "op": "add",
+      "args": [
+        7,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 9,
+      "op": "add",
+      "args": [
+        8,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 10,
+      "op": "add",
+      "args": [
+        9,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 11,
+      "op": "add",
+      "args": [
+        10,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 12,
+      "op": "add",
+      "args": [
+        11,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 13,
+      "op": "add",
+      "args": [
+        12,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 14,
+      "op": "add",
+      "args": [
+        13,
+        2
+      ],
+      "value": null
+    },
+    {
+      "dest": 15,
+      "op": "add",
+      "args": [
+        14,
+        2
+      ],
+      "value": null
+    }
+  ],
+  "result": 15
+}

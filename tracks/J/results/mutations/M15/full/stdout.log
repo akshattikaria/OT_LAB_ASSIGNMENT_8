@@ -1,0 +1,83 @@
+...................................................................... [ 17%]
+.................................................................. [ 34%]
+........................................................................ [ 53%]
+..................................F..F.................................. [ 71%]
+........................................................ [ 85%]
+.......................................................                  [100%]
+=================================== FAILURES ===================================
+_________________________ LFUCacheTest.test_lfu_clear __________________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_lfu_clear>
+
+    def test_lfu_clear(self):
+        cache = LFUCache[int, int](maxsize=2)
+    
+        cache[1] = 1
+        cache[1]  # increment frequency
+        cache[1]  # increment frequency again
+        cache[2] = 2
+    
+        cache.clear()
+    
+        self.assertEqual(0, len(cache))
+        self.assertEqual(0, cache.currsize)
+    
+        # verify LFU frequency tracking is reset after clear
+        cache[3] = 3
+        cache[4] = 4
+        cache[3]  # access 3 to increment frequency
+        cache[5] = 5  # should evict 4 (least frequently used)
+    
+        self.assertEqual(2, len(cache))
+>       self.assertIn(3, cache)
+E       AssertionError: 3 not found in LFUCache({4: 4, 5: 5}, maxsize=2, currsize=2)
+
+tests/test_lfu.py:109: AssertionError
+____________________ LFUCacheTest.test_lfu_update_existing _____________________
+
+self = LFUCache({2: 2, 3: 3}, maxsize=2, currsize=2), key = 1
+
+    def __getitem__(self, key):
+        try:
+>           return self.__data[key]
+                   ^^^^^^^^^^^^^^^^
+E           KeyError: 1
+
+src/cachetools/__init__.py:33: KeyError
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_lfu_update_existing>
+
+    def test_lfu_update_existing(self):
+        cache = LFUCache[int, int | str](maxsize=2)
+    
+        cache[1] = 1
+        cache[2] = 2
+        cache[1] = "updated"
+        cache[3] = 3
+    
+>       self.assertEqual(cache[1], "updated")
+                         ^^^^^^^^
+
+tests/test_lfu.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:194: in __getitem__
+    value = cache_getitem(self, key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/__init__.py:35: in __getitem__
+    return self.__missing__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({2: 2, 3: 3}, maxsize=2, currsize=2), key = 1
+
+    def __missing__(self, key):
+>       raise KeyError(key)
+E       KeyError: 1
+
+src/cachetools/__init__.py:85: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_lfu.py::LFUCacheTest::test_lfu_clear - AssertionError: 3 no...
+FAILED tests/test_lfu.py::LFUCacheTest::test_lfu_update_existing - KeyError: 1
+2 failed, 389 passed, 24 subtests passed in 0.74s

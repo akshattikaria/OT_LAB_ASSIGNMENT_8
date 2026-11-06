@@ -1,0 +1,682 @@
+[
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O0.so"
+    ],
+    "native_compile_s": 0.044326005000016266,
+    "library_bytes": 24216,
+    "optimization": "O0"
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so"
+    ],
+    "native_compile_s": 0.07196905699993295,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s1_O2.so"
+    ],
+    "native_compile_s": 0.07988773300007779,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s1_O0.so"
+    ],
+    "native_compile_s": 0.048786811999889323,
+    "library_bytes": 28312,
+    "optimization": "O0"
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s2_O0.so"
+    ],
+    "native_compile_s": 0.05678075599996646,
+    "library_bytes": 28312,
+    "optimization": "O0"
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s2_O2.so"
+    ],
+    "native_compile_s": 0.06572986000003311,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s3_O2.so"
+    ],
+    "native_compile_s": 0.06625639999992927,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s3_O0.so"
+    ],
+    "native_compile_s": 0.041961270000001605,
+    "library_bytes": 24216,
+    "optimization": "O0"
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s4_O0.so"
+    ],
+    "native_compile_s": 0.0453337480000755,
+    "library_bytes": 28312,
+    "optimization": "O0"
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/constant_chain_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s4_O2.so"
+    ],
+    "native_compile_s": 0.0751394110000092,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s0_O0.so"
+    ],
+    "native_compile_s": 0.05068052900003295,
+    "library_bytes": 24208,
+    "optimization": "O0"
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s0_O2.so"
+    ],
+    "native_compile_s": 0.06945172900009311,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s1_O2.so"
+    ],
+    "native_compile_s": 0.07755961899999875,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s1_O0.so"
+    ],
+    "native_compile_s": 0.0602855610000006,
+    "library_bytes": 28304,
+    "optimization": "O0"
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s2_O0.so"
+    ],
+    "native_compile_s": 0.0907594440000139,
+    "library_bytes": 32400,
+    "optimization": "O0"
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s2_O2.so"
+    ],
+    "native_compile_s": 0.06802854299996852,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s3_O2.so"
+    ],
+    "native_compile_s": 0.06103089900000214,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s3_O0.so"
+    ],
+    "native_compile_s": 0.04938317599999209,
+    "library_bytes": 24208,
+    "optimization": "O0"
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s4_O0.so"
+    ],
+    "native_compile_s": 0.05283164200000101,
+    "library_bytes": 28304,
+    "optimization": "O0"
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/redundant_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/redundant_s4_O2.so"
+    ],
+    "native_compile_s": 0.06089422499996999,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s0_O0.so"
+    ],
+    "native_compile_s": 0.04645486499998697,
+    "library_bytes": 24208,
+    "optimization": "O0"
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s0_O2.so"
+    ],
+    "native_compile_s": 0.06713298400006806,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s1_O2.so"
+    ],
+    "native_compile_s": 0.06471003199999359,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s1_O0.so"
+    ],
+    "native_compile_s": 0.05623737899998105,
+    "library_bytes": 28304,
+    "optimization": "O0"
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s2_O0.so"
+    ],
+    "native_compile_s": 0.05081344799998533,
+    "library_bytes": 28304,
+    "optimization": "O0"
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s2_O2.so"
+    ],
+    "native_compile_s": 0.0688786450000407,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s3_O2.so"
+    ],
+    "native_compile_s": 0.06338959000004252,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s3_O0.so"
+    ],
+    "native_compile_s": 0.05414437799993266,
+    "library_bytes": 24208,
+    "optimization": "O0"
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s4_O0.so"
+    ],
+    "native_compile_s": 0.06239483699994253,
+    "library_bytes": 28304,
+    "optimization": "O0"
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/dead_heavy_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/dead_heavy_s4_O2.so"
+    ],
+    "native_compile_s": 0.061500093999939054,
+    "library_bytes": 15984,
+    "optimization": "O2"
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O0.so"
+    ],
+    "native_compile_s": 0.053114316999995026,
+    "library_bytes": 28296,
+    "optimization": "O0"
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s0.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so"
+    ],
+    "native_compile_s": 0.06405203500003154,
+    "library_bytes": 15976,
+    "optimization": "O2"
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s1_O2.so"
+    ],
+    "native_compile_s": 0.07669165700008307,
+    "library_bytes": 15976,
+    "optimization": "O2"
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s1.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s1_O0.so"
+    ],
+    "native_compile_s": 0.06788519899998846,
+    "library_bytes": 32392,
+    "optimization": "O0"
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s2_O0.so"
+    ],
+    "native_compile_s": 0.058193891000087206,
+    "library_bytes": 40584,
+    "optimization": "O0"
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s2.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s2_O2.so"
+    ],
+    "native_compile_s": 0.06910295199998018,
+    "library_bytes": 15976,
+    "optimization": "O2"
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s3_O2.so"
+    ],
+    "native_compile_s": 0.07456643699993037,
+    "library_bytes": 15976,
+    "optimization": "O2"
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s3.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s3_O0.so"
+    ],
+    "native_compile_s": 0.05048728399992797,
+    "library_bytes": 28296,
+    "optimization": "O0"
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O0",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s4_O0.so"
+    ],
+    "native_compile_s": 0.06197305299997424,
+    "library_bytes": 32392,
+    "optimization": "O0"
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "command": [
+      "/usr/bin/cc",
+      "-O2",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/results/generated/mixed_s4.c",
+      "-o",
+      "/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s4_O2.so"
+    ],
+    "native_compile_s": 0.08935185499990439,
+    "library_bytes": 15976,
+    "optimization": "O2"
+  }
+]

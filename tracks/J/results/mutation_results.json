@@ -1,0 +1,802 @@
+[
+  {
+    "mutant": "M01",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1234941563,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M01/full",
+    "mutated_source_sha256": "64b56e9a33b3f09fd31b2b261d362e07f47a881e6863f8ce2021baed92c3ca93"
+  },
+  {
+    "mutant": "M01",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 782504499,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M01/count_greedy",
+    "mutated_source_sha256": "64b56e9a33b3f09fd31b2b261d362e07f47a881e6863f8ce2021baed92c3ca93"
+  },
+  {
+    "mutant": "M01",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 1502839823,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M01/weighted_greedy",
+    "mutated_source_sha256": "64b56e9a33b3f09fd31b2b261d362e07f47a881e6863f8ce2021baed92c3ca93"
+  },
+  {
+    "mutant": "M01",
+    "method": "ilp",
+    "classification": "survived",
+    "wall_ns": 1315837948,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M01/ilp",
+    "mutated_source_sha256": "64b56e9a33b3f09fd31b2b261d362e07f47a881e6863f8ce2021baed92c3ca93"
+  },
+  {
+    "mutant": "M02",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1363709751,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M02/full",
+    "mutated_source_sha256": "dbb37761e0d1c976204de62505b786ea65a444fd0d6f15efc93215fe9354e64b"
+  },
+  {
+    "mutant": "M02",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 832831708,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M02/count_greedy",
+    "mutated_source_sha256": "dbb37761e0d1c976204de62505b786ea65a444fd0d6f15efc93215fe9354e64b"
+  },
+  {
+    "mutant": "M02",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 793642002,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M02/weighted_greedy",
+    "mutated_source_sha256": "dbb37761e0d1c976204de62505b786ea65a444fd0d6f15efc93215fe9354e64b"
+  },
+  {
+    "mutant": "M02",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 815056909,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M02/ilp",
+    "mutated_source_sha256": "dbb37761e0d1c976204de62505b786ea65a444fd0d6f15efc93215fe9354e64b"
+  },
+  {
+    "mutant": "M03",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1300067430,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M03/full",
+    "mutated_source_sha256": "4bba0e11331ee97add60b1ddef69a7c1e92382c1dffab562ce9ab1365c9bb068"
+  },
+  {
+    "mutant": "M03",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 760155494,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M03/count_greedy",
+    "mutated_source_sha256": "4bba0e11331ee97add60b1ddef69a7c1e92382c1dffab562ce9ab1365c9bb068"
+  },
+  {
+    "mutant": "M03",
+    "method": "weighted_greedy",
+    "classification": "survived",
+    "wall_ns": 632225522,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M03/weighted_greedy",
+    "mutated_source_sha256": "4bba0e11331ee97add60b1ddef69a7c1e92382c1dffab562ce9ab1365c9bb068"
+  },
+  {
+    "mutant": "M03",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 782287163,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M03/ilp",
+    "mutated_source_sha256": "4bba0e11331ee97add60b1ddef69a7c1e92382c1dffab562ce9ab1365c9bb068"
+  },
+  {
+    "mutant": "M04",
+    "method": "full",
+    "classification": "survived",
+    "wall_ns": 1216321782,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M04/full",
+    "mutated_source_sha256": "1640621c56f1dd88048ad8313988a821b392f702556423f0383062ae973a8104"
+  },
+  {
+    "mutant": "M04",
+    "method": "count_greedy",
+    "classification": "survived",
+    "wall_ns": 758795731,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M04/count_greedy",
+    "mutated_source_sha256": "1640621c56f1dd88048ad8313988a821b392f702556423f0383062ae973a8104"
+  },
+  {
+    "mutant": "M04",
+    "method": "weighted_greedy",
+    "classification": "survived",
+    "wall_ns": 550719589,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M04/weighted_greedy",
+    "mutated_source_sha256": "1640621c56f1dd88048ad8313988a821b392f702556423f0383062ae973a8104"
+  },
+  {
+    "mutant": "M04",
+    "method": "ilp",
+    "classification": "survived",
+    "wall_ns": 534788852,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M04/ilp",
+    "mutated_source_sha256": "1640621c56f1dd88048ad8313988a821b392f702556423f0383062ae973a8104"
+  },
+  {
+    "mutant": "M05",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1535420533,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M05/full",
+    "mutated_source_sha256": "f13cb85443ae2548bc34a7f7b54ec5e47c9b244f3ddac455940fbf68472ecd78"
+  },
+  {
+    "mutant": "M05",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 825773649,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M05/count_greedy",
+    "mutated_source_sha256": "f13cb85443ae2548bc34a7f7b54ec5e47c9b244f3ddac455940fbf68472ecd78"
+  },
+  {
+    "mutant": "M05",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 881411506,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M05/weighted_greedy",
+    "mutated_source_sha256": "f13cb85443ae2548bc34a7f7b54ec5e47c9b244f3ddac455940fbf68472ecd78"
+  },
+  {
+    "mutant": "M05",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 863541073,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M05/ilp",
+    "mutated_source_sha256": "f13cb85443ae2548bc34a7f7b54ec5e47c9b244f3ddac455940fbf68472ecd78"
+  },
+  {
+    "mutant": "M06",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 2063103140,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M06/full",
+    "mutated_source_sha256": "d7645b786214bba081b9bfe64e789f804e8e9a25ff756ebb909b2f2d1b07aca0"
+  },
+  {
+    "mutant": "M06",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 1057549000,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M06/count_greedy",
+    "mutated_source_sha256": "d7645b786214bba081b9bfe64e789f804e8e9a25ff756ebb909b2f2d1b07aca0"
+  },
+  {
+    "mutant": "M06",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 589365524,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M06/weighted_greedy",
+    "mutated_source_sha256": "d7645b786214bba081b9bfe64e789f804e8e9a25ff756ebb909b2f2d1b07aca0"
+  },
+  {
+    "mutant": "M06",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 812844154,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M06/ilp",
+    "mutated_source_sha256": "d7645b786214bba081b9bfe64e789f804e8e9a25ff756ebb909b2f2d1b07aca0"
+  },
+  {
+    "mutant": "M07",
+    "method": "full",
+    "classification": "survived",
+    "wall_ns": 1038957492,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M07/full",
+    "mutated_source_sha256": "b97dfd70a9b8309db46ef6d8c7ab20f09d49fe712c18239fa3b706857f463215"
+  },
+  {
+    "mutant": "M07",
+    "method": "count_greedy",
+    "classification": "survived",
+    "wall_ns": 958228155,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M07/count_greedy",
+    "mutated_source_sha256": "b97dfd70a9b8309db46ef6d8c7ab20f09d49fe712c18239fa3b706857f463215"
+  },
+  {
+    "mutant": "M07",
+    "method": "weighted_greedy",
+    "classification": "survived",
+    "wall_ns": 1165636835,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M07/weighted_greedy",
+    "mutated_source_sha256": "b97dfd70a9b8309db46ef6d8c7ab20f09d49fe712c18239fa3b706857f463215"
+  },
+  {
+    "mutant": "M07",
+    "method": "ilp",
+    "classification": "survived",
+    "wall_ns": 1004638627,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M07/ilp",
+    "mutated_source_sha256": "b97dfd70a9b8309db46ef6d8c7ab20f09d49fe712c18239fa3b706857f463215"
+  },
+  {
+    "mutant": "M08",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 2305808684,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M08/full",
+    "mutated_source_sha256": "8a17387c2dad5a4af73e85df4eefecc2732ffbc20b7283911aee0fb0ea789f47"
+  },
+  {
+    "mutant": "M08",
+    "method": "count_greedy",
+    "classification": "survived",
+    "wall_ns": 870602681,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M08/count_greedy",
+    "mutated_source_sha256": "8a17387c2dad5a4af73e85df4eefecc2732ffbc20b7283911aee0fb0ea789f47"
+  },
+  {
+    "mutant": "M08",
+    "method": "weighted_greedy",
+    "classification": "survived",
+    "wall_ns": 2397603539,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M08/weighted_greedy",
+    "mutated_source_sha256": "8a17387c2dad5a4af73e85df4eefecc2732ffbc20b7283911aee0fb0ea789f47"
+  },
+  {
+    "mutant": "M08",
+    "method": "ilp",
+    "classification": "survived",
+    "wall_ns": 1492098966,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M08/ilp",
+    "mutated_source_sha256": "8a17387c2dad5a4af73e85df4eefecc2732ffbc20b7283911aee0fb0ea789f47"
+  },
+  {
+    "mutant": "M09",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 2098284657,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M09/full",
+    "mutated_source_sha256": "84ebcad017729d9cd4c41b4c11746fd209a198ee36c8e50bd4e1ecbc3d0c51cd"
+  },
+  {
+    "mutant": "M09",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 776999664,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M09/count_greedy",
+    "mutated_source_sha256": "84ebcad017729d9cd4c41b4c11746fd209a198ee36c8e50bd4e1ecbc3d0c51cd"
+  },
+  {
+    "mutant": "M09",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 784670650,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M09/weighted_greedy",
+    "mutated_source_sha256": "84ebcad017729d9cd4c41b4c11746fd209a198ee36c8e50bd4e1ecbc3d0c51cd"
+  },
+  {
+    "mutant": "M09",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 856414744,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M09/ilp",
+    "mutated_source_sha256": "84ebcad017729d9cd4c41b4c11746fd209a198ee36c8e50bd4e1ecbc3d0c51cd"
+  },
+  {
+    "mutant": "M10",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1762580774,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M10/full",
+    "mutated_source_sha256": "1f58c97706e4aaf2b9a3eaab8386697a41af977bb051f92cf1310c695be3e671"
+  },
+  {
+    "mutant": "M10",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 756218816,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M10/count_greedy",
+    "mutated_source_sha256": "1f58c97706e4aaf2b9a3eaab8386697a41af977bb051f92cf1310c695be3e671"
+  },
+  {
+    "mutant": "M10",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 777929106,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M10/weighted_greedy",
+    "mutated_source_sha256": "1f58c97706e4aaf2b9a3eaab8386697a41af977bb051f92cf1310c695be3e671"
+  },
+  {
+    "mutant": "M10",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 757683055,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M10/ilp",
+    "mutated_source_sha256": "1f58c97706e4aaf2b9a3eaab8386697a41af977bb051f92cf1310c695be3e671"
+  },
+  {
+    "mutant": "M11",
+    "method": "full",
+    "classification": "survived",
+    "wall_ns": 1176105190,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M11/full",
+    "mutated_source_sha256": "9ecd1662c178d7e9b2b33b5fd5b8700bdecf51377e5e3cdf2089045fc3346da9"
+  },
+  {
+    "mutant": "M11",
+    "method": "count_greedy",
+    "classification": "survived",
+    "wall_ns": 771049034,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M11/count_greedy",
+    "mutated_source_sha256": "9ecd1662c178d7e9b2b33b5fd5b8700bdecf51377e5e3cdf2089045fc3346da9"
+  },
+  {
+    "mutant": "M11",
+    "method": "weighted_greedy",
+    "classification": "survived",
+    "wall_ns": 791332319,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M11/weighted_greedy",
+    "mutated_source_sha256": "9ecd1662c178d7e9b2b33b5fd5b8700bdecf51377e5e3cdf2089045fc3346da9"
+  },
+  {
+    "mutant": "M11",
+    "method": "ilp",
+    "classification": "survived",
+    "wall_ns": 849952554,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M11/ilp",
+    "mutated_source_sha256": "9ecd1662c178d7e9b2b33b5fd5b8700bdecf51377e5e3cdf2089045fc3346da9"
+  },
+  {
+    "mutant": "M12",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1192284763,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M12/full",
+    "mutated_source_sha256": "a47f5e895ad8558267e8b77d09af1bc55ff386c39ef89a2c8fba257293823da5"
+  },
+  {
+    "mutant": "M12",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 847066692,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M12/count_greedy",
+    "mutated_source_sha256": "a47f5e895ad8558267e8b77d09af1bc55ff386c39ef89a2c8fba257293823da5"
+  },
+  {
+    "mutant": "M12",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 902870568,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M12/weighted_greedy",
+    "mutated_source_sha256": "a47f5e895ad8558267e8b77d09af1bc55ff386c39ef89a2c8fba257293823da5"
+  },
+  {
+    "mutant": "M12",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 717471552,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M12/ilp",
+    "mutated_source_sha256": "a47f5e895ad8558267e8b77d09af1bc55ff386c39ef89a2c8fba257293823da5"
+  },
+  {
+    "mutant": "M13",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1431913547,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M13/full",
+    "mutated_source_sha256": "93dbae84a8be4fb9e687178f05bb79d1712d91a256145f89432cd6d15e09c8ce"
+  },
+  {
+    "mutant": "M13",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 623116147,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M13/count_greedy",
+    "mutated_source_sha256": "93dbae84a8be4fb9e687178f05bb79d1712d91a256145f89432cd6d15e09c8ce"
+  },
+  {
+    "mutant": "M13",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 894787394,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M13/weighted_greedy",
+    "mutated_source_sha256": "93dbae84a8be4fb9e687178f05bb79d1712d91a256145f89432cd6d15e09c8ce"
+  },
+  {
+    "mutant": "M13",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 618826285,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M13/ilp",
+    "mutated_source_sha256": "93dbae84a8be4fb9e687178f05bb79d1712d91a256145f89432cd6d15e09c8ce"
+  },
+  {
+    "mutant": "M14",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 3645382140,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M14/full",
+    "mutated_source_sha256": "1a0417f0ffb7409a42445893fb4d11dee5ef60230436baf39a16ae9d3ed03348"
+  },
+  {
+    "mutant": "M14",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 715473503,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M14/count_greedy",
+    "mutated_source_sha256": "1a0417f0ffb7409a42445893fb4d11dee5ef60230436baf39a16ae9d3ed03348"
+  },
+  {
+    "mutant": "M14",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 897345863,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M14/weighted_greedy",
+    "mutated_source_sha256": "1a0417f0ffb7409a42445893fb4d11dee5ef60230436baf39a16ae9d3ed03348"
+  },
+  {
+    "mutant": "M14",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 740415163,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M14/ilp",
+    "mutated_source_sha256": "1a0417f0ffb7409a42445893fb4d11dee5ef60230436baf39a16ae9d3ed03348"
+  },
+  {
+    "mutant": "M15",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1217212234,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M15/full",
+    "mutated_source_sha256": "34f12aa5c556ce989992ce2013b4c02d977bd90fe4f28ec775e0331466a02924"
+  },
+  {
+    "mutant": "M15",
+    "method": "count_greedy",
+    "classification": "survived",
+    "wall_ns": 717505588,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M15/count_greedy",
+    "mutated_source_sha256": "34f12aa5c556ce989992ce2013b4c02d977bd90fe4f28ec775e0331466a02924"
+  },
+  {
+    "mutant": "M15",
+    "method": "weighted_greedy",
+    "classification": "survived",
+    "wall_ns": 714786053,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M15/weighted_greedy",
+    "mutated_source_sha256": "34f12aa5c556ce989992ce2013b4c02d977bd90fe4f28ec775e0331466a02924"
+  },
+  {
+    "mutant": "M15",
+    "method": "ilp",
+    "classification": "survived",
+    "wall_ns": 845505168,
+    "exit_code": 0,
+    "timed_out": false,
+    "path": "mutations/M15/ilp",
+    "mutated_source_sha256": "34f12aa5c556ce989992ce2013b4c02d977bd90fe4f28ec775e0331466a02924"
+  },
+  {
+    "mutant": "M16",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1801746290,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M16/full",
+    "mutated_source_sha256": "a661f06c0de6c03b52af7363a02f1682201a99599bb6f43e4e0df99392c242ed"
+  },
+  {
+    "mutant": "M16",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 955829049,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M16/count_greedy",
+    "mutated_source_sha256": "a661f06c0de6c03b52af7363a02f1682201a99599bb6f43e4e0df99392c242ed"
+  },
+  {
+    "mutant": "M16",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 781381140,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M16/weighted_greedy",
+    "mutated_source_sha256": "a661f06c0de6c03b52af7363a02f1682201a99599bb6f43e4e0df99392c242ed"
+  },
+  {
+    "mutant": "M16",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 635235192,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M16/ilp",
+    "mutated_source_sha256": "a661f06c0de6c03b52af7363a02f1682201a99599bb6f43e4e0df99392c242ed"
+  },
+  {
+    "mutant": "M17",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1250781446,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M17/full",
+    "mutated_source_sha256": "6a7490c9f6ff243e425a42c4d304c779ba2b00ece1f4546cea54bba65ae9f1eb"
+  },
+  {
+    "mutant": "M17",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 889356998,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M17/count_greedy",
+    "mutated_source_sha256": "6a7490c9f6ff243e425a42c4d304c779ba2b00ece1f4546cea54bba65ae9f1eb"
+  },
+  {
+    "mutant": "M17",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 1141411491,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M17/weighted_greedy",
+    "mutated_source_sha256": "6a7490c9f6ff243e425a42c4d304c779ba2b00ece1f4546cea54bba65ae9f1eb"
+  },
+  {
+    "mutant": "M17",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 610231907,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M17/ilp",
+    "mutated_source_sha256": "6a7490c9f6ff243e425a42c4d304c779ba2b00ece1f4546cea54bba65ae9f1eb"
+  },
+  {
+    "mutant": "M18",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1550289284,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M18/full",
+    "mutated_source_sha256": "d248062a17272b469c79ffdb0fd1c243b2b293f0b2b435fa29df7977b110b11c"
+  },
+  {
+    "mutant": "M18",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 640332821,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M18/count_greedy",
+    "mutated_source_sha256": "d248062a17272b469c79ffdb0fd1c243b2b293f0b2b435fa29df7977b110b11c"
+  },
+  {
+    "mutant": "M18",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 1196861313,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M18/weighted_greedy",
+    "mutated_source_sha256": "d248062a17272b469c79ffdb0fd1c243b2b293f0b2b435fa29df7977b110b11c"
+  },
+  {
+    "mutant": "M18",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 1503531532,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M18/ilp",
+    "mutated_source_sha256": "d248062a17272b469c79ffdb0fd1c243b2b293f0b2b435fa29df7977b110b11c"
+  },
+  {
+    "mutant": "M19",
+    "method": "full",
+    "classification": "killed",
+    "wall_ns": 1359608224,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M19/full",
+    "mutated_source_sha256": "56d530eb4ee5782af207c8d45b33de417995d2e2d7c28835a83cf7e089bea1c6"
+  },
+  {
+    "mutant": "M19",
+    "method": "count_greedy",
+    "classification": "killed",
+    "wall_ns": 1306715072,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M19/count_greedy",
+    "mutated_source_sha256": "56d530eb4ee5782af207c8d45b33de417995d2e2d7c28835a83cf7e089bea1c6"
+  },
+  {
+    "mutant": "M19",
+    "method": "weighted_greedy",
+    "classification": "killed",
+    "wall_ns": 684693269,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M19/weighted_greedy",
+    "mutated_source_sha256": "56d530eb4ee5782af207c8d45b33de417995d2e2d7c28835a83cf7e089bea1c6"
+  },
+  {
+    "mutant": "M19",
+    "method": "ilp",
+    "classification": "killed",
+    "wall_ns": 605429297,
+    "exit_code": 1,
+    "timed_out": false,
+    "path": "mutations/M19/ilp",
+    "mutated_source_sha256": "56d530eb4ee5782af207c8d45b33de417995d2e2d7c28835a83cf7e089bea1c6"
+  },
+  {
+    "mutant": "M20",
+    "method": "full",
+    "classification": "timeout",
+    "wall_ns": 15015536057,
+    "exit_code": -9,
+    "timed_out": true,
+    "path": "mutations/M20/full",
+    "mutated_source_sha256": "0f32ec6c58734cb08cf1c636cee84c15d561b2077600de9ee1d7fcb26fcb1dd5"
+  },
+  {
+    "mutant": "M20",
+    "method": "count_greedy",
+    "classification": "timeout",
+    "wall_ns": 15005464306,
+    "exit_code": -9,
+    "timed_out": true,
+    "path": "mutations/M20/count_greedy",
+    "mutated_source_sha256": "0f32ec6c58734cb08cf1c636cee84c15d561b2077600de9ee1d7fcb26fcb1dd5"
+  },
+  {
+    "mutant": "M20",
+    "method": "weighted_greedy",
+    "classification": "timeout",
+    "wall_ns": 15011554477,
+    "exit_code": -9,
+    "timed_out": true,
+    "path": "mutations/M20/weighted_greedy",
+    "mutated_source_sha256": "0f32ec6c58734cb08cf1c636cee84c15d561b2077600de9ee1d7fcb26fcb1dd5"
+  },
+  {
+    "mutant": "M20",
+    "method": "ilp",
+    "classification": "timeout",
+    "wall_ns": 15017254900,
+    "exit_code": -9,
+    "timed_out": true,
+    "path": "mutations/M20/ilp",
+    "mutated_source_sha256": "0f32ec6c58734cb08cf1c636cee84c15d561b2077600de9ee1d7fcb26fcb1dd5"
+  }
+]

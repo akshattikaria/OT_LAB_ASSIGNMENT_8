@@ -1,0 +1,32 @@
+.................................................F.............. [ 86%]
+..........                                                               [100%]
+=================================== FAILURES ===================================
+__________________________ LFUCacheTest.test_popitem ___________________________
+
+self = <tests.test_lfu.LFUCacheTest testMethod=test_popitem>
+
+    def test_popitem(self):
+        cache = self.Cache(maxsize=2)
+    
+        cache.update({1: 1, 2: 2})
+    
+>       key, _ = cache.popitem()
+                 ^^^^^^^^^^^^^^^
+
+tests/__init__.py:186: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = LFUCache({1: 1, 2: 2}, maxsize=2, currsize=2)
+
+    def popitem(self):
+        """Remove and return the `(key, value)` pair least frequently used."""
+        root = self.__root
+        curr = root.next
+        if curr is root:
+>           raise KeyError('%s is empty' % type(self).__name__) from None
+E           KeyError: 'LFUCache is empty'
+
+src/cachetools/__init__.py:226: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_lfu.py::LFUCacheTest::test_popitem - KeyError: 'LFUCache is...
+1 failed, 73 passed, 8 subtests passed in 0.33s

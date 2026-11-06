@@ -1,0 +1,50 @@
+[
+  {
+    "family": "moons",
+    "seed": 0,
+    "shots_per_overlap": 128,
+    "synthetic_binary_samples": 18432,
+    "accuracy": 0.5833333333333334,
+    "note": "Independent binomial shot model for test-kernel entries at fixed ideal-trained SVC; no calibrated device model or QPU training is implied."
+  },
+  {
+    "family": "moons",
+    "seed": 0,
+    "shots_per_overlap": 512,
+    "synthetic_binary_samples": 73728,
+    "accuracy": 0.5833333333333334,
+    "note": "Independent binomial shot model for test-kernel entries at fixed ideal-trained SVC; no calibrated device model or QPU training is implied."
+  },
+  {
+    "family": "moons",
+    "seed": 0,
+    "shots_per_overlap": 2048,
+    "synthetic_binary_samples": 294912,
+    "accuracy": 0.5833333333333334,
+    "note": "Independent binomial shot model for test-kernel entries at fixed ideal-trained SVC; no calibrated device model or QPU training is implied."
+  },
+  {
+    "family": "circles",
+    "seed": 0,
+    "shots_per_overlap": 128,
+    "synthetic_binary_samples": 18432,
+    "accuracy": 0.5,
+    "note": "Independent binomial shot model for test-kernel entries at fixed ideal-trained SVC; no calibrated device model or QPU training is implied."
+  },
+  {
+    "family": "circles",
+    "seed": 0,
+    "shots_per_overlap": 512,
+    "synthetic_binary_samples": 73728,
+    "accuracy": 0.5833333333333334,
+    "note": "Independent binomial shot model for test-kernel entries at fixed ideal-trained SVC; no calibrated device model or QPU training is implied."
+  },
+  {
+    "family": "circles",
+    "seed": 0,
+    "shots_per_overlap": 2048,
+    "synthetic_binary_samples": 294912,
+    "accuracy": 0.5,
+    "note": "Independent binomial shot model for test-kernel entries at fixed ideal-trained SVC; no calibrated device model or QPU training is implied."
+  }
+]

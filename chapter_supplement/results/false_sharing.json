@@ -1,0 +1,90 @@
+{
+  "executed": true,
+  "rows": [
+    {
+      "repeat": 0,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.006192752
+    },
+    {
+      "repeat": 0,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002800453
+    },
+    {
+      "repeat": 1,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002098382
+    },
+    {
+      "repeat": 1,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.006703274
+    },
+    {
+      "repeat": 2,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002891811
+    },
+    {
+      "repeat": 2,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.007287636
+    },
+    {
+      "repeat": 3,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.007161706
+    },
+    {
+      "repeat": 3,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002344614
+    },
+    {
+      "repeat": 4,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002288159
+    },
+    {
+      "repeat": 4,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.007367708
+    },
+    {
+      "repeat": 5,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.014204182
+    },
+    {
+      "repeat": 5,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002291174
+    },
+    {
+      "repeat": 6,
+      "stride": 1,
+      "increments": 2000000,
+      "seconds": 0.014139505
+    },
+    {
+      "repeat": 6,
+      "stride": 8,
+      "increments": 2000000,
+      "seconds": 0.002828406
+    }
+  ],
+  "scope": "Two real OpenMP CPU threads, adjacent versus 64-byte-spaced relaxed atomic counters. Seven seeded paired trial orders. No hardware coherence counters; not a universal padding speedup."
+}

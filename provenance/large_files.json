@@ -1,0 +1,23 @@
+{
+  "format": "concatenate_in_list_order",
+  "reason": "Per-request transfer limit; original bytes are preserved losslessly.",
+  "files": [
+    {
+      "path": "tracks/J/history.bundle",
+      "size_bytes": 13963387,
+      "sha256": "4f7c31da21bd336a26a6926a1c3607ae5e2a450f1c65e392cd1ebd432a725f47",
+      "parts": [
+        {
+          "path": "tracks/J/history.bundle.parts/part-01.bin",
+          "size_bytes": 8388608,
+          "sha256": "cb6a26c277eaf45d7769f99c98229eb8f714b232210211303416eda237f412fa"
+        },
+        {
+          "path": "tracks/J/history.bundle.parts/part-02.bin",
+          "size_bytes": 5574779,
+          "sha256": "a493a6d3b994441c50e139402bf7f308773fd2fde213df4cbfb82e07714b964c"
+        }
+      ]
+    }
+  ]
+}

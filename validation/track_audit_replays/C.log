@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "numeric_comparisons": 15607,
+  "retained_vqe_iterates": 496,
+  "qaoa_objective_calls": 4898,
+  "sample_distributions": 1600,
+  "retained_gradients": 1280,
+  "resimulated_barren_points": 60,
+  "note": "Every retained VQE iterate and QAOA objective recomputed; all shot counts/metrics checked; all gradient arithmetic/summary recomputed, with first/middle/last circuit points per summary additionally resimulated and finite-differenced. Noise channels independently covered by unit tests."
+}

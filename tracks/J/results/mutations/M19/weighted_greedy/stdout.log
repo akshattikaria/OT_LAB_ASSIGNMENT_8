@@ -1,0 +1,88 @@
+................................................................ [ 81%]
+...F...........                                                          [100%]
+=================================== FAILURES ===================================
+____________________________ TLRUCacheTest.test_ttu ____________________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu>
+
+    def test_ttu(self):
+        cache = TLRUCache[int, int, int](
+            maxsize=6, ttu=lambda _, v, t: t + v + 1, timer=Timer()
+        )
+        self.assertEqual(0, cache.timer())
+        self.assertEqual(3, cache.ttu(0, 1, 1))
+    
+        cache[1] = 1
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache.timer.tick()
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache[2] = 2
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({1, 2}, set(cache))
+    
+        cache.timer.tick()
+        self.assertNotIn(1, cache)
+        self.assertEqual(2, cache[2])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({2}, set(cache))
+    
+        cache[3] = 3
+        self.assertNotIn(1, cache)
+        self.assertEqual(2, cache[2])
+        self.assertEqual(3, cache[3])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({2, 3}, set(cache))
+    
+        cache.timer.tick()
+        self.assertNotIn(1, cache)
+        self.assertEqual(2, cache[2])
+        self.assertEqual(3, cache[3])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({2, 3}, set(cache))
+    
+        cache[1] = 1
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(3, cache[3])
+        self.assertEqual(3, len(cache))
+        self.assertEqual({1, 2, 3}, set(cache))
+    
+        cache.timer.tick()
+        self.assertEqual(1, cache[1])
+        self.assertNotIn(2, cache)
+        self.assertEqual(3, cache[3])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({1, 3}, set(cache))
+    
+        cache.timer.tick()
+        self.assertNotIn(1, cache)
+        self.assertNotIn(2, cache)
+        self.assertEqual(3, cache[3])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({3}, set(cache))
+    
+        cache.timer.tick()
+        self.assertNotIn(1, cache)
+        self.assertNotIn(2, cache)
+        self.assertNotIn(3, cache)
+    
+        with self.assertRaises(KeyError):
+            del cache[1]
+        with self.assertRaises(KeyError):
+            cache.pop(2)
+>       with self.assertRaises(KeyError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: KeyError not raised
+
+tests/test_tlru.py:108: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu - AssertionError: KeyError...
+1 failed, 78 passed, 8 subtests passed in 0.33s

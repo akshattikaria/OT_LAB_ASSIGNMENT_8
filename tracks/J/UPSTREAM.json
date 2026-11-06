@@ -1,0 +1,89 @@
+{
+  "project": "cachetools",
+  "version": "7.2.8",
+  "repository": "https://github.com/tkem/cachetools",
+  "release_url": "https://pypi.org/project/cachetools/7.2.8/",
+  "archive_url": "https://files.pythonhosted.org/packages/93/6f/faa5e0606769105e70e0478031a8f9a6b729e329f42ce2462585c6d9aa52/cachetools-7.2.8.tar.gz",
+  "archive_sha256": "3f9b146b2160975da273e7c23ec882f3996b65df608150d52083c07de0682075",
+  "published_utc": "2026-10-31T21:37:51.986937Z",
+  "license": "MIT",
+  "distribution_files_sha256": {
+    "CHANGELOG.rst": "0bcdf4207c10599e848c77cb0d8ece62fc5ae9cc724239f4a1bd3b09f6812738",
+    "LICENSE": "28c000b52b0ee27138a68ef778227e4057046e86b65f62f1cacb99b0cc49e0d2",
+    "MANIFEST.in": "112a66627a754e7be3084a4abec44998dfbe3c4e9515fca8fa38661e11800568",
+    "PKG-INFO": "a228570f25624c3b645b9fe0c0acdc94ec758c9daf9904d220b9abce0c298a63",
+    "README.rst": "b44071bcf42e41215188219203da345d48358acba735ef272b2bba8b7f2a3652",
+    "docs/conf.py": "f68affa8dfcf4a20d5fe872cfb0e19f9b284f8feda563dd8e8e23eafe75cd4eb",
+    "docs/index.rst": "aba7aa17c84f45c270eecb6e333fad11808f5eda2bd0f0dbc4f7b81b355e6c40",
+    "pyproject.toml": "184b810289d47b8849192a67933a4a9e8147c5ed999afe9038e485923b6466c2",
+    "setup.cfg": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+    "src/cachetools/__init__.py": "1d8b8fcd461afec6a755171990e173f6080f09706e5d2e85249165057227f448",
+    "src/cachetools/__init__.pyi": "5de208de9608cc320a59e589532907eb04203f7e2062cfcda703c53c90cd2840",
+    "src/cachetools/_cached.py": "90e2df70e55683f4d6f95fe04daa0e4f36d1e4ce50ea3a79b37e77c3dba1034b",
+    "src/cachetools/_cachedmethod.py": "c0623918a651fa7b4b58101471315ab91f460b77e53b8da9f1e636ec2a106140",
+    "src/cachetools/_descriptor.py": "b6032929c9cd495efda610275533f86f48d00a7c042ebcc2180be7a2d099bd41",
+    "src/cachetools/func.py": "87724e4fc82303fd5172cc9fd03c7aaf6a767c6c477f3cb74a245fc45ebf7816",
+    "src/cachetools/func.pyi": "52237fae3e6e3f4c7103087eca0a9f49ebdc1297c459e2267639a6b9f50e1258",
+    "src/cachetools/keys.py": "a4abf97ebc7523245d67c616d9f42886a40d09a52dd0582ae8435815a4f08224",
+    "src/cachetools/keys.pyi": "594a1166a9c399a375b6095ee1b38408f44b7d7c8b7b57685caab85b4598a24c",
+    "src/cachetools/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/cachetools.egg-info/PKG-INFO": "a228570f25624c3b645b9fe0c0acdc94ec758c9daf9904d220b9abce0c298a63",
+    "src/cachetools.egg-info/SOURCES.txt": "18a10ad31fffe547165bbfcfd2857aee0fd3d74d000c28c63ebc44fcac330a57",
+    "src/cachetools.egg-info/dependency_links.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/cachetools.egg-info/top_level.txt": "6a2d851fbf131b0a017028157e8a9bce4e48402b670ee91d4ace332ae54fbc3b",
+    "tests/__init__.py": "01504c124b96d9d677db220bd1346437051fdf547731191c5f8905e35b5cf5c1",
+    "tests/test_cache.py": "dbdf81b02f344a0e62a5dcf2364be7e135e2511e765e93b43864aeb7aa3b115c",
+    "tests/test_cached.py": "11f9dfb7064d9e6b800cb272bb8ed9d8af71dcc7435147e062d4fa06730c872d",
+    "tests/test_cachedmethod.py": "95479e86583639438e299fbf957c63bd6a2f05a816a06bec0e04d0bdb3d9d26b",
+    "tests/test_classmethod.py": "8049063055be3fc23ea7e68f799847ad015ec03a5d9a6186aa17dd86686d86c1",
+    "tests/test_fifo.py": "c6134627b4d9daab20e67b27fe2ff8d7e225116ae46d6a0e79b2c9b620d25941",
+    "tests/test_func.py": "f9dc6bc1aaffa713ee17ce7d307ea56e483f782d61fda795d1d3c8689e8afe51",
+    "tests/test_keys.py": "0ee4070bcc3cefebe59ccc8dd3006c8b1530a8f7b81a1024e385e6502f6f0353",
+    "tests/test_lfu.py": "11981704035d965ae733140734efb7cd30615ef492cfeeb464f63992db59b404",
+    "tests/test_lru.py": "dbfd53eb372f24571f70d739faeb6c4963f79c80ef18228f44b38b1112bf1a6c",
+    "tests/test_rr.py": "995ee7555ebe96c8b4f988c23a8923de980b5f0c42ca073906988e28dd773ec2",
+    "tests/test_threading.py": "8d2e53ee065976ce9caf2964a64dd4b3d47bbe3337bb84eb763103f7710ec032",
+    "tests/test_tlru.py": "a2a433a7928f72d0b3e226be099c64878d3b901ead91688696224217c403b4be",
+    "tests/test_ttl.py": "a5c61f7e1a767c2104a274679d0415e80533670a59e218bfacd7be2b74278ab2",
+    "tox.ini": "d0aa60b16ebf88ce28d15123d4825eb1de2f4ffb19761cc62a2e40107aa62bf5"
+  },
+  "source_counts": [
+    {
+      "path": "src/cachetools/__init__.py",
+      "physical_lines": 803,
+      "nonblank_noncomment_lines": 642,
+      "ast_nodes": 4331
+    },
+    {
+      "path": "src/cachetools/_cached.py",
+      "physical_lines": 284,
+      "nonblank_noncomment_lines": 221,
+      "ast_nodes": 1248
+    },
+    {
+      "path": "src/cachetools/_cachedmethod.py",
+      "physical_lines": 344,
+      "nonblank_noncomment_lines": 256,
+      "ast_nodes": 1754
+    },
+    {
+      "path": "src/cachetools/_descriptor.py",
+      "physical_lines": 188,
+      "nonblank_noncomment_lines": 140,
+      "ast_nodes": 773
+    },
+    {
+      "path": "src/cachetools/func.py",
+      "physical_lines": 102,
+      "nonblank_noncomment_lines": 75,
+      "ast_nodes": 428
+    },
+    {
+      "path": "src/cachetools/keys.py",
+      "physical_lines": 77,
+      "nonblank_noncomment_lines": 37,
+      "ast_nodes": 233
+    }
+  ],
+  "note": "Exact official PyPI source distribution; no Git commit identity is claimed. Complete source/tests/license retained unmodified."
+}

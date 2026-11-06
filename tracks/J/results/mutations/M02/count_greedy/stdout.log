@@ -1,0 +1,133 @@
+.................................F..............................................                                                         [100%]
+=================================== FAILURES ===================================
+____________ CacheMethodTest.test_cond_pending_keyword (info=False) ____________
+
+self = <tests.test_cachedmethod.CacheMethodTest testMethod=test_cond_pending_keyword>
+
+    def test_cond_pending_keyword(self):
+        # Up until cachetools v7.2.4, @cachedmethod with condition and
+        # info=False raised a TypeError when the wrapped method
+        # received a valid "pending" keyword argument.
+        for info in (False, True):
+            with self.subTest(info=info):
+    
+                class Pending(Cached):
+                    @cachedmethod(
+                        lambda obj: obj.cache,
+                        condition=lambda obj: obj.cond,
+                        info=info,
+                    )
+                    def get_pending(self, pending):
+                        return self.get(pending)
+    
+                cached = Pending(self.cache(2))
+>               self.assertEqual(cached.get_pending(pending=0), 0)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cachedmethod.py:927: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/_cachedmethod.py:234: in __call__
+    return wrapper(self._obj, self.__pending, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/_cachedmethod.py:196: in wrapper
+    k = key(self, *args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/keys.py:32: in methodkey
+    return hashkey(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (), kwargs = {'pending': 0}
+
+    def hashkey(*args, **kwargs):
+        """Return a cache key for the specified hashable arguments."""
+        if kwargs:
+>           return _HashedTuple(args - _kwmark + tuple(sorted(kwargs.items())))
+                                ^^^^^^^^^^^^^^
+E           TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+
+src/cachetools/keys.py:26: TypeError
+____________ CacheMethodTest.test_cond_pending_keyword (info=True) _____________
+
+self = <tests.test_cachedmethod.CacheMethodTest testMethod=test_cond_pending_keyword>
+
+    def test_cond_pending_keyword(self):
+        # Up until cachetools v7.2.4, @cachedmethod with condition and
+        # info=False raised a TypeError when the wrapped method
+        # received a valid "pending" keyword argument.
+        for info in (False, True):
+            with self.subTest(info=info):
+    
+                class Pending(Cached):
+                    @cachedmethod(
+                        lambda obj: obj.cache,
+                        condition=lambda obj: obj.cond,
+                        info=info,
+                    )
+                    def get_pending(self, pending):
+                        return self.get(pending)
+    
+                cached = Pending(self.cache(2))
+>               self.assertEqual(cached.get_pending(pending=0), 0)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cachedmethod.py:927: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/_cachedmethod.py:79: in __call__
+    key = self.cache_key(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/keys.py:32: in methodkey
+    return hashkey(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (), kwargs = {'pending': 0}
+
+    def hashkey(*args, **kwargs):
+        """Return a cache key for the specified hashable arguments."""
+        if kwargs:
+>           return _HashedTuple(args - _kwmark + tuple(sorted(kwargs.items())))
+                                ^^^^^^^^^^^^^^
+E           TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+
+src/cachetools/keys.py:26: TypeError
+______________ UnboundMethodTest.test_class_call_keyword_receiver ______________
+
+self = <tests.test_cachedmethod.UnboundMethodTest testMethod=test_class_call_keyword_receiver>
+
+    def test_class_call_keyword_receiver(self):
+        cached = Cached(Cache(2))
+>       self.assertEqual(Cached.get(self=cached, value=1), 0)  # type: ignore
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_cachedmethod.py:1019: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/_descriptor.py:150: in __call__
+    return self.__descriptor.__get__(obj)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/_cachedmethod.py:307: in __call__
+    return wrapper(self._obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/_cachedmethod.py:285: in wrapper
+    k = key(self, *args, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/cachetools/keys.py:32: in methodkey
+    return hashkey(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = (), kwargs = {'value': 1}
+
+    def hashkey(*args, **kwargs):
+        """Return a cache key for the specified hashable arguments."""
+        if kwargs:
+>           return _HashedTuple(args - _kwmark + tuple(sorted(kwargs.items())))
+                                ^^^^^^^^^^^^^^
+E           TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+
+src/cachetools/keys.py:26: TypeError
+=========================== short test summary info ============================
+SUBFAILED(info=False) tests/test_cachedmethod.py::CacheMethodTest::test_cond_pending_keyword
+SUBFAILED(info=True) tests/test_cachedmethod.py::CacheMethodTest::test_cond_pending_keyword
+FAILED tests/test_cachedmethod.py::UnboundMethodTest::test_class_call_keyword_receiver
+3 failed, 79 passed, 6 subtests passed in 0.40s

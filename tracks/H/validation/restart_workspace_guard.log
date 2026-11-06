@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/scratch/f3cd84c5991c/dbms_track_h/dblab/__main__.py", line 21, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/f3cd84c5991c/dbms_track_h/dblab/__main__.py", line 10, in main
+    run(args.out,args.rows,args.repeats,args.profile_repeats,args.stream_size,args.write_rows,args.write_repeats)
+  File "/workspace/scratch/f3cd84c5991c/dbms_track_h/dblab/experiment.py", line 69, in run
+    if work.exists():raise FileExistsError('Build workspace already exists; choose a fresh output path')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: Build workspace already exists; choose a fresh output path

@@ -1,0 +1,46 @@
+{
+  "source_file": "PPT3_Quantum_Basics_and_Optimization.pptx",
+  "source_sha256": "ecbe9773a315972c27ae43fad2f7ab5755208cca419a6723fb357cd6612e646a",
+  "slides": 41,
+  "lecture_mapping": {
+    "Deutsch": [
+      13
+    ],
+    "Grover": [
+      14
+    ],
+    "parameterized_circuits": [
+      18
+    ],
+    "variational_family": [
+      20,
+      21
+    ],
+    "VQE": [
+      22,
+      24,
+      29
+    ],
+    "QNN": [
+      25
+    ],
+    "QAOA_MaxCut": [
+      27,
+      28,
+      30
+    ],
+    "barren_plateaus": [
+      32
+    ]
+  },
+  "assignment_section_5_additional_names": [
+    "Deutsch-Jozsa",
+    "Bernstein-Vazirani",
+    "QFT",
+    "QPE",
+    "Shor",
+    "quantum annealing",
+    "quantum kernels"
+  ],
+  "note": "Course source acknowledged, not redistributed. All additional assignment algorithm names are implemented in this package; C supplies its separately documented optimizer/trainability studies."
+}

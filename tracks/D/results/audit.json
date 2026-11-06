@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "numeric_comparisons": 25253,
+  "coverage_candidates": 210,
+  "exhaustive_coverage_cases": 30,
+  "federated_and_central_iterates": 5325,
+  "one_step_FedAvg_equalities": 30,
+  "multitask_iterates": 1845,
+  "strong_schedule_runs": 96,
+  "weak_schedule_runs": 12,
+  "distinct_kernel_inputs_recomputed": 192,
+  "note": "Every candidate and retained learning prediction recomputed; all task digests and timing boundaries checked. Parallel outputs were compared in full with serial results during measurement; small independent equivalence tests cover data/model/pipeline code. No wall times reconstructed or invented."
+}

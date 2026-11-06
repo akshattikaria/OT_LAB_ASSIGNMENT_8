@@ -1,0 +1,23 @@
+
+xv6 kernel is booting
+
+hart 2 starting
+hart 1 starting
+init: starting sh
+$ gcheck
+GCHECK PASS percpu=0 hash=1 free=32529
+$ gbench hotrand 8000
+GRESULT kind=hotrand ops=8000 dt=20455999 percpu=0 hash=1 alloc=0 frees=0 alocks=1 aspins=0 steals=0 stolen=0 lookups=36468 hits=36468 misses=0 probes=94914 recycle=0 clocks=72937 cspins=0
+$ gbench pages 800
+GRESULT kind=pages ops=38400 dt=3935650 percpu=0 hash=1 alloc=38400 frees=38433 alocks=76834 aspins=116336 steals=0 stolen=0 lookups=0 hits=0 misses=0 probes=0 recycle=0 clocks=1 cspins=0
+$ gbench pipes 8000
+GRESULT kind=pipes ops=24000 dt=43532188 percpu=0 hash=1 alloc=24000 frees=24033 alocks=48034 aspins=29079 steals=0 stolen=0 lookups=0 hits=0 misses=0 probes=0 recycle=0 clocks=1 cspins=0
+$ gbench hotseq 8000
+GRESULT kind=hotseq ops=8000 dt=14887917 percpu=0 hash=1 alloc=0 frees=0 alocks=1 aspins=0 steals=0 stolen=0 lookups=23972 hits=23972 misses=0 probes=55415 recycle=0 clocks=47945 cspins=0
+$ gbench scan 8000
+GRESULT kind=scan ops=8000 dt=40719982 percpu=0 hash=1 alloc=0 frees=0 alocks=1 aspins=0 steals=0 stolen=0 lookups=17316 hits=9150 misses=8166 probes=37776 recycle=8166 clocks=34633 cspins=0
+$ gbench fork 200
+GRESULT kind=fork ops=600 dt=5763229 percpu=0 hash=1 alloc=6600 frees=6633 alocks=13234 aspins=9019 steals=0 stolen=0 lookups=0 hits=0 misses=0 probes=0 recycle=0 clocks=1 cspins=0
+$ gcheck
+GCHECK PASS percpu=0 hash=1 free=32529
+$ 

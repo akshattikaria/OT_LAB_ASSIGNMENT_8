@@ -1,0 +1,216 @@
+{
+  "qml": [
+    {
+      "family": "moons",
+      "model": "quantum",
+      "mean_accuracy": 0.5833333333333334,
+      "min_accuracy": 0.5833333333333334,
+      "max_accuracy": 0.5833333333333334,
+      "mean_training_s": 0.07996557899969048,
+      "mean_inference_s": 0.13202914799967402,
+      "mean_classifier_scalars": 13,
+      "trainable_circuit_parameters": 0,
+      "circuits_per_model": 210
+    },
+    {
+      "family": "moons",
+      "model": "rbf",
+      "mean_accuracy": 0.75,
+      "min_accuracy": 0.75,
+      "max_accuracy": 0.75,
+      "mean_training_s": 0.0017830789993240614,
+      "mean_inference_s": 0.0004759359990202938,
+      "mean_classifier_scalars": 10,
+      "trainable_circuit_parameters": 0,
+      "circuits_per_model": 0
+    },
+    {
+      "family": "circles",
+      "model": "quantum",
+      "mean_accuracy": 0.5833333333333334,
+      "min_accuracy": 0.5833333333333334,
+      "max_accuracy": 0.5833333333333334,
+      "mean_training_s": 0.07534212100017612,
+      "mean_inference_s": 0.12038554999980988,
+      "mean_classifier_scalars": 13,
+      "trainable_circuit_parameters": 0,
+      "circuits_per_model": 210
+    },
+    {
+      "family": "circles",
+      "model": "rbf",
+      "mean_accuracy": 0.6666666666666666,
+      "min_accuracy": 0.6666666666666666,
+      "max_accuracy": 0.6666666666666666,
+      "mean_training_s": 0.0007576009993499611,
+      "mean_inference_s": 0.0002854310005204752,
+      "mean_classifier_scalars": 13,
+      "trainable_circuit_parameters": 0,
+      "circuits_per_model": 0
+    }
+  ],
+  "noise": [
+    {
+      "program": "bv",
+      "condition": "ideal",
+      "success_probability": 1.0,
+      "wilson_low": 0.9852156082782743,
+      "wilson_high": 1.0,
+      "total_shots": 256,
+      "native_depth": 12,
+      "native_operations": {
+        "rz": 10,
+        "cx": 8,
+        "sx": 5,
+        "measure": 3
+      }
+    },
+    {
+      "program": "bv",
+      "condition": "calibrated",
+      "success_probability": 0.87109375,
+      "wilson_low": 0.8244949303034488,
+      "wilson_high": 0.906719778965583,
+      "total_shots": 256,
+      "native_depth": 12,
+      "native_operations": {
+        "rz": 10,
+        "cx": 8,
+        "sx": 5,
+        "measure": 3
+      }
+    },
+    {
+      "program": "dj",
+      "condition": "ideal",
+      "success_probability": 1.0,
+      "wilson_low": 0.9852156082782743,
+      "wilson_high": 1.0,
+      "total_shots": 256,
+      "native_depth": 174,
+      "native_operations": {
+        "cx": 125,
+        "rz": 71,
+        "sx": 7,
+        "x": 6,
+        "measure": 3
+      }
+    },
+    {
+      "program": "dj",
+      "condition": "calibrated",
+      "success_probability": 0.8984375,
+      "wilson_low": 0.855348195037774,
+      "wilson_high": 0.9297454928089758,
+      "total_shots": 256,
+      "native_depth": 174,
+      "native_operations": {
+        "cx": 125,
+        "rz": 71,
+        "sx": 7,
+        "x": 6,
+        "measure": 3
+      }
+    },
+    {
+      "program": "grover",
+      "condition": "ideal",
+      "success_probability": 0.953125,
+      "wilson_low": 0.9198662271464744,
+      "wilson_high": 0.9729854178557116,
+      "total_shots": 256,
+      "native_depth": 92,
+      "native_operations": {
+        "rz": 54,
+        "cx": 48,
+        "sx": 15,
+        "measure": 3
+      }
+    },
+    {
+      "program": "grover",
+      "condition": "calibrated",
+      "success_probability": 0.5,
+      "wilson_low": 0.43920445797238533,
+      "wilson_high": 0.5607955420276147,
+      "total_shots": 256,
+      "native_depth": 92,
+      "native_operations": {
+        "rz": 54,
+        "cx": 48,
+        "sx": 15,
+        "measure": 3
+      }
+    },
+    {
+      "program": "qpe",
+      "condition": "ideal",
+      "success_probability": 1.0,
+      "wilson_low": 0.9852156082782743,
+      "wilson_high": 1.0,
+      "total_shots": 256,
+      "native_depth": 55,
+      "native_operations": {
+        "cx": 33,
+        "rz": 29,
+        "sx": 6,
+        "measure": 3,
+        "x": 1
+      }
+    },
+    {
+      "program": "qpe",
+      "condition": "calibrated",
+      "success_probability": 0.6015625,
+      "wilson_low": 0.5405138996853006,
+      "wilson_high": 0.6596080207462239,
+      "total_shots": 256,
+      "native_depth": 55,
+      "native_operations": {
+        "cx": 33,
+        "rz": 29,
+        "sx": 6,
+        "measure": 3,
+        "x": 1
+      }
+    }
+  ],
+  "grover": [
+    {
+      "n": 2,
+      "size": 4,
+      "oracle_calls": 1,
+      "verification_calls": 1,
+      "classical_expected_checks": 2.5,
+      "mean_observed_classical_checks": 1,
+      "success_probability": 0.9999999999999984,
+      "classical_median_s": 1.9680001059896313e-06,
+      "simulator_median_s": 0.05480992799948581,
+      "cx_gates": 2
+    },
+    {
+      "n": 4,
+      "size": 16,
+      "oracle_calls": 3,
+      "verification_calls": 1,
+      "classical_expected_checks": 8.5,
+      "mean_observed_classical_checks": 14,
+      "success_probability": 0.9613189697265523,
+      "classical_median_s": 1.770999915606808e-06,
+      "simulator_median_s": 0.033462125001278764,
+      "cx_gates": 84
+    },
+    {
+      "n": 6,
+      "size": 64,
+      "oracle_calls": 6,
+      "verification_calls": 1,
+      "classical_expected_checks": 32.5,
+      "mean_observed_classical_checks": 50,
+      "success_probability": 0.9965856807867713,
+      "classical_median_s": 1.6470003174617887e-06,
+      "simulator_median_s": 0.057241480999437044,
+      "cx_gates": 984
+    }
+  ]
+}

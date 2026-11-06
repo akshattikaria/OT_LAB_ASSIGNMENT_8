@@ -1,0 +1,297 @@
+{
+  "minimum_energy": -4.0,
+  "states": [
+    {
+      "index": 0,
+      "bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "variable_order_bits": "0000",
+      "statevector_label": "0000",
+      "energy": 0.0,
+      "ising_energy": 0.0,
+      "cut": 0,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 1,
+      "bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "variable_order_bits": "1000",
+      "statevector_label": "0001",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 2,
+      "bits": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "variable_order_bits": "0100",
+      "statevector_label": "0010",
+      "energy": -2.0,
+      "ising_energy": -2.0,
+      "cut": 2,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 3,
+      "bits": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "variable_order_bits": "1100",
+      "statevector_label": "0011",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 4,
+      "bits": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "variable_order_bits": "0010",
+      "statevector_label": "0100",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 5,
+      "bits": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "variable_order_bits": "1010",
+      "statevector_label": "0101",
+      "energy": -4.0,
+      "ising_energy": -4.0,
+      "cut": 4,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 6,
+      "bits": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "variable_order_bits": "0110",
+      "statevector_label": "0110",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 7,
+      "bits": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "variable_order_bits": "1110",
+      "statevector_label": "0111",
+      "energy": -2.0,
+      "ising_energy": -2.0,
+      "cut": 2,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 8,
+      "bits": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "variable_order_bits": "0001",
+      "statevector_label": "1000",
+      "energy": -2.0,
+      "ising_energy": -2.0,
+      "cut": 2,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 9,
+      "bits": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "variable_order_bits": "1001",
+      "statevector_label": "1001",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 10,
+      "bits": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "variable_order_bits": "0101",
+      "statevector_label": "1010",
+      "energy": -4.0,
+      "ising_energy": -4.0,
+      "cut": 4,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 11,
+      "bits": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "variable_order_bits": "1101",
+      "statevector_label": "1011",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 12,
+      "bits": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "variable_order_bits": "0011",
+      "statevector_label": "1100",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 13,
+      "bits": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "variable_order_bits": "1011",
+      "statevector_label": "1101",
+      "energy": -2.0,
+      "ising_energy": -2.0,
+      "cut": 2,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 14,
+      "bits": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "variable_order_bits": "0111",
+      "statevector_label": "1110",
+      "energy": -3.0,
+      "ising_energy": -3.0,
+      "cut": 3,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 15,
+      "bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "variable_order_bits": "1111",
+      "statevector_label": "1111",
+      "energy": 0.0,
+      "ising_energy": 0.0,
+      "cut": 0,
+      "original_feasible": true,
+      "encoded_feasible": true
+    }
+  ],
+  "ground_states": [
+    {
+      "index": 5,
+      "bits": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "variable_order_bits": "1010",
+      "statevector_label": "0101",
+      "energy": -4.0,
+      "ising_energy": -4.0,
+      "cut": 4,
+      "original_feasible": true,
+      "encoded_feasible": true
+    },
+    {
+      "index": 10,
+      "bits": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "variable_order_bits": "0101",
+      "statevector_label": "1010",
+      "energy": -4.0,
+      "ising_energy": -4.0,
+      "cut": 4,
+      "original_feasible": true,
+      "encoded_feasible": true
+    }
+  ],
+  "max_energy_identity_error": 0.0,
+  "all_ground_states_encoded_feasible": true
+}

@@ -1,0 +1,33 @@
+{
+  "sizes": [
+    10,
+    20,
+    40,
+    80
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "families": [
+    "uncorrelated",
+    "weakly_correlated",
+    "strongly_correlated",
+    "subset_sum"
+  ],
+  "repeats": 3,
+  "search_time_limit_s": 2.0,
+  "branch_bound_node_limit": 100000,
+  "ilp_relative_gap_target": 0.0,
+  "canonical_quality_repeat": 0,
+  "dp_max_cells": 10000000,
+  "timing": "perf_counter includes input validation/model construction/solver execution; excludes generation, independent audit, references, plotting and imports",
+  "quality": "Relative value gap = 100*(DP_optimum-candidate_value)/DP_optimum, or zero if optimum=0. Only feasible candidates enter quality means.",
+  "repeat_note": "Algorithms/input fixed; method order deterministically shuffled. Quality uses repeat 0; runtime aggregates all repeats. No best-run selection.",
+  "reference": "An untimed exact DP solution on each instance supplies a reference, verified independently on 100 small random cases and cross-checked against other exact solvers.",
+  "warmup": "One untimed tiny ILP call before main measurements.",
+  "inputs": "All synthetic, positive integer costs and nonnegative integer values."
+}

@@ -1,0 +1,78 @@
+..............................................................F. [ 86%]
+F.........                                                               [100%]
+=================================== FAILURES ===================================
+____________________________ TLRUCacheTest.test_ttu ____________________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu>
+
+    def test_ttu(self):
+        cache = TLRUCache[int, int, int](
+            maxsize=6, ttu=lambda _, v, t: t + v + 1, timer=Timer()
+        )
+        self.assertEqual(0, cache.timer())
+        self.assertEqual(3, cache.ttu(0, 1, 1))
+    
+        cache[1] = 1
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache.timer.tick()
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache[2] = 2
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({1, 2}, set(cache))
+    
+        cache.timer.tick()
+        self.assertNotIn(1, cache)
+        self.assertEqual(2, cache[2])
+>       self.assertEqual(1, len(cache))
+E       AssertionError: 1 != 2
+
+tests/test_tlru.py:61: AssertionError
+_____________________ TLRUCacheTest.test_ttu_heap_cleanup ______________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu_heap_cleanup>
+
+    def test_ttu_heap_cleanup(self):
+        def ttu(_k, _v, t):
+            return t + 1
+    
+        cache = TLRUCache[int, int, int](maxsize=4, ttu=ttu, timer=Timer())
+        self.assertEqual(0, cache.timer())
+    
+        cache[1] = 1
+        cache[2] = 2
+    
+        # replace items to accumulate removed entries in the internal heap
+        for i in range(5):
+            cache[1] = 10 + i
+            cache[2] = 20 + i
+    
+        # this should compact the internal heap
+        expired = cache.expire()
+        self.assertEqual([], expired)
+    
+        # verify cache is functional after cleanup
+        self.assertEqual(2, len(cache))
+        self.assertEqual(14, cache[1])
+        self.assertEqual(24, cache[2])
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(4, len(cache))
+    
+        cache.timer.tick()
+        expired = cache.expire()
+>       self.assertEqual(4, len(expired))
+E       AssertionError: 4 != 0
+
+tests/test_tlru.py:353: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu - AssertionError: 1 != 2
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu_heap_cleanup - AssertionEr...
+2 failed, 72 passed, 8 subtests passed in 0.25s

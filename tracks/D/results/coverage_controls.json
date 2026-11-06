@@ -1,0 +1,105 @@
+{
+  "greedy_counterexample": {
+    "input": {
+      "sets": [
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "k": 2
+    },
+    "runs": [
+      {
+        "method": "greedy",
+        "selected": [
+          0,
+          1
+        ],
+        "value": 5.0,
+        "oracle_evaluations": 5,
+        "trace": [
+          {
+            "selected": 0,
+            "marginal_gain": 4.0,
+            "value": 4.0
+          },
+          {
+            "selected": 1,
+            "marginal_gain": 1.0,
+            "value": 5.0
+          }
+        ]
+      },
+      {
+        "method": "lazy_greedy",
+        "selected": [
+          0,
+          1
+        ],
+        "value": 5.0,
+        "oracle_evaluations": 7,
+        "trace": [
+          {
+            "selected": 0,
+            "marginal_gain": 4.0,
+            "value": 4.0
+          },
+          {
+            "selected": 1,
+            "marginal_gain": 1.0,
+            "value": 5.0
+          }
+        ]
+      },
+      {
+        "method": "exact",
+        "selected": [
+          1,
+          2
+        ],
+        "value": 6.0,
+        "oracle_evaluations": 3,
+        "trace": []
+      }
+    ]
+  },
+  "exhaustive_assumptions": {
+    "normalized": true,
+    "monotone": true,
+    "submodular": true,
+    "comparisons": 17496
+  },
+  "non_submodular_control": {
+    "function": "|S|^2",
+    "A": [],
+    "B": [
+      0
+    ],
+    "e": 1,
+    "gain_A": 1,
+    "gain_B": 3,
+    "diminishing_returns": false,
+    "note": "The cardinality-greedy theorem is not claimed for arbitrary non-submodular objectives."
+  }
+}

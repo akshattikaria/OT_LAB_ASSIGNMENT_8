@@ -1,0 +1,824 @@
+diff --git a/Makefile b/Makefile
+index a26f3db..3424301 100644
+--- a/Makefile
++++ b/Makefile
+@@ -65,6 +65,9 @@ DETFLAGS = -ffile-prefix-map=$(CURDIR)=.
+ 
+ CFLAGS = -Wall -Werror -Wno-unknown-attributes -O -fno-omit-frame-pointer -ggdb -gdwarf-2
+ CFLAGS += $(DETFLAGS)
++KMEM_PERCPU ?= 0
++HASHBCACHE ?= 0
++CFLAGS += -DKMEM_PERCPU=$(KMEM_PERCPU) -DHASHBCACHE=$(HASHBCACHE)
+ CFLAGS += -march=rv64gc
+ CFLAGS += -std=gnu99
+ CFLAGS += -MD
+@@ -131,6 +134,8 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
+ .PRECIOUS: %.o
+ 
+ UPROGS=\
++	$U/_gbench\
++	$U/_gcheck\
+ 	$U/_cat\
+ 	$U/_echo\
+ 	$U/_forktest\
+diff --git a/kernel/bio.c b/kernel/bio.c
+index 9738804..9599451 100644
+--- a/kernel/bio.c
++++ b/kernel/bio.c
+@@ -21,6 +21,7 @@
+ #include "defs.h"
+ #include "fs.h"
+ #include "buf.h"
++#include "labstats.h"
+ 
+ struct {
+   struct spinlock lock;
+@@ -30,8 +31,33 @@ struct {
+   // Sorted by how recently the buffer was used.
+   // head.next is most recent, head.prev is least.
+   struct buf head;
++  struct buf *buckets[LAB_NHASH];
++  uint64 lookups, hits, misses, probes, recycle;
+ } bcache;
+ 
++#if HASHBCACHE
++static uint
++hashkey(uint dev, uint blockno)
++{
++  return (dev ^ blockno) % LAB_NHASH;
++}
++
++// Caller holds bcache.lock: assignment and hash membership change atomically.
++static void
++hashremove(struct buf *b)
++{
++  if (!b->assigned)
++    return;
++  struct buf **link = &bcache.buckets[hashkey(b->dev, b->blockno)];
++  while (*link && *link != b)
++    link = &(*link)->hash_next;
++  if (*link != b)
++    panic("hashremove");
++  *link = b->hash_next;
++  b->hash_next = 0;
++}
++#endif
++
+ void
+ binit(void)
+ {
+@@ -60,10 +86,17 @@ bget(uint dev, uint blockno)
+   struct buf *b;
+ 
+   acquire(&bcache.lock);
++  bcache.lookups++;
+ 
+   // Is the block already cached?
++#if HASHBCACHE
++  for (b = bcache.buckets[hashkey(dev, blockno)]; b; b = b->hash_next) {
++#else
+   for (b = bcache.head.next; b != &bcache.head; b = b->next) {
++#endif
++    bcache.probes++;
+     if (b->dev == dev && b->blockno == blockno) {
++      bcache.hits++;
+       b->refcnt++;
+       release(&bcache.lock);
+       acquiresleep(&b->lock);
+@@ -72,11 +105,22 @@ bget(uint dev, uint blockno)
+   }
+ 
+   // Not cached.
++  bcache.misses++;
+   // Recycle the least recently used (LRU) unused buffer.
+   for (b = bcache.head.prev; b != &bcache.head; b = b->prev) {
++    bcache.recycle++;
+     if (b->refcnt == 0) {
++#if HASHBCACHE
++      hashremove(b);
++#endif
+       b->dev = dev;
+       b->blockno = blockno;
++      b->assigned = 1;
++#if HASHBCACHE
++      uint key = hashkey(dev, blockno);
++      b->hash_next = bcache.buckets[key];
++      bcache.buckets[key] = b;
++#endif
+       b->valid = 0;
+       b->refcnt = 1;
+       release(&bcache.lock);
+@@ -151,3 +195,56 @@ bunpin(struct buf *b)
+   b->refcnt--;
+   release(&bcache.lock);
+ }
++
++void
++bcachestats(struct labstats *s)
++{
++  acquire(&bcache.lock);
++  s->cache_lookups = bcache.lookups;
++  s->cache_hits = bcache.hits;
++  s->cache_misses = bcache.misses;
++  s->lookup_probes = bcache.probes;
++  s->recycle_probes = bcache.recycle;
++  s->cache_acquires = bcache.lock.acquisitions;
++  s->cache_spins = bcache.lock.failed;
++  release(&bcache.lock);
++}
++
++int
++bcachecheck(void)
++{
++  int ok = 1, count = 0;
++  acquire(&bcache.lock);
++  for (struct buf *b = bcache.head.next; b != &bcache.head; b = b->next) {
++    if (++count > NBUF || b->next->prev != b || b->prev->next != b) {
++      ok = 0;
++      break;
++    }
++  }
++  if (count != NBUF)
++    ok = 0;
++  for (int i = 0; i < NBUF; i++) {
++    struct buf *b = &bcache.buf[i];
++    for (int j = i + 1; j < NBUF; j++)
++      if (b->assigned && bcache.buf[j].assigned &&
++          b->dev == bcache.buf[j].dev && b->blockno == bcache.buf[j].blockno)
++        ok = 0;
++#if HASHBCACHE
++    int occurrences = 0;
++    for (int key = 0; key < LAB_NHASH; key++) {
++      int steps = 0;
++      for (struct buf *p = bcache.buckets[key]; p; p = p->hash_next) {
++        if (++steps > NBUF) { ok = 0; break; }
++        if (!p->assigned || hashkey(p->dev, p->blockno) != key)
++          ok = 0;
++        if (p == b)
++          occurrences++;
++      }
++    }
++    if (occurrences != (b->assigned ? 1 : 0))
++      ok = 0;
++#endif
++  }
++  release(&bcache.lock);
++  return ok;
++}
+diff --git a/kernel/buf.h b/kernel/buf.h
+index 75a6003..d3aaf7e 100644
+--- a/kernel/buf.h
++++ b/kernel/buf.h
+@@ -7,5 +7,7 @@ struct buf {
+   uint refcnt;
+   struct buf *prev; // LRU cache list
+   struct buf *next;
++  struct buf *hash_next;
++  int assigned;
+   uchar data[BSIZE];
+ };
+diff --git a/kernel/defs.h b/kernel/defs.h
+index 0ae6896..7dcf476 100644
+--- a/kernel/defs.h
++++ b/kernel/defs.h
+@@ -9,6 +9,11 @@ struct spinlock;
+ struct sleeplock;
+ struct stat;
+ struct superblock;
++struct labstats;
++void kallocstats(struct labstats*);
++int kalloccheck(void);
++void bcachestats(struct labstats*);
++int bcachecheck(void);
+ 
+ // bio.c
+ void            binit(void);
+diff --git a/kernel/kalloc.c b/kernel/kalloc.c
+index 2fcec38..a80d4b6 100644
+--- a/kernel/kalloc.c
++++ b/kernel/kalloc.c
+@@ -1,82 +1,164 @@
+-// Physical memory allocator, for user processes,
+-// kernel stacks, page-table pages,
+-// and pipe buffers. Allocates whole 4096-byte pages.
+-
++// Physical page allocator: baseline global list or per-CPU lists with batch stealing.
+ #include "types.h"
+ #include "param.h"
+ #include "memlayout.h"
+ #include "spinlock.h"
+ #include "riscv.h"
+ #include "defs.h"
++#include "labstats.h"
+ 
+-void freerange(void *pa_start, void *pa_end);
+-
+-extern char end[]; // first address after kernel.
+-                   // defined by kernel.ld.
+-
+-struct run {
+-  struct run *next;
+-};
++#if KMEM_PERCPU
++#define NKMEM NCPU
++#else
++#define NKMEM 1
++#endif
++#define STEAL_BATCH 32
++#define MAXPAGES ((PHYSTOP - KERNBASE) / PGSIZE)
+ 
++extern char end[];
++struct run { struct run *next; };
+ struct {
+   struct spinlock lock;
+   struct run *freelist;
+-} kmem;
++  uint64 nfree, allocations, frees, steals, stolen;
++} kmem[NKMEM];
++static struct spinlock checklock;
++static uchar seen[MAXPAGES / 8];
+ 
+ void
+-kinit()
++kinit(void)
+ {
+-  initlock(&kmem.lock, "kmem");
+-  freerange(end, (void *)PHYSTOP);
+-}
+-
+-void
+-freerange(void *pa_start, void *pa_end)
+-{
+-  char *p;
+-  p = (char *)PGROUNDUP((uint64)pa_start);
+-  for (; p + PGSIZE <= (char *)pa_end; p += PGSIZE)
++  for (int i = 0; i < NKMEM; i++)
++    initlock(&kmem[i].lock, "kmem");
++  initlock(&checklock, "kmemcheck");
++  for (char *p = (char *)PGROUNDUP((uint64)end);
++       p + PGSIZE <= (char *)PHYSTOP; p += PGSIZE)
+     kfree(p);
+ }
+ 
+-// Free the page of physical memory pointed at by pa,
+-// which normally should have been returned by a
+-// call to kalloc().  (The exception is when
+-// initializing the allocator; see kinit above.)
+ void
+ kfree(void *pa)
+ {
+-  struct run *r;
+-
+-  if (((uint64)pa % PGSIZE) != 0 || (char *)pa < end || (uint64)pa >= PHYSTOP)
++  if (((uint64)pa % PGSIZE) != 0 || (char *)pa < end ||
++      (uint64)pa >= PHYSTOP)
+     panic("kfree");
+-
+-  // Fill with junk to catch dangling refs.
+   memset(pa, 1, PGSIZE);
+-
+-  r = (struct run *)pa;
+-
+-  acquire(&kmem.lock);
+-  r->next = kmem.freelist;
+-  kmem.freelist = r;
+-  release(&kmem.lock);
++  push_off();
++  int id = KMEM_PERCPU ? cpuid() : 0;
++  struct run *r = (struct run *)pa;
++  acquire(&kmem[id].lock);
++  r->next = kmem[id].freelist;
++  kmem[id].freelist = r;
++  kmem[id].nfree++;
++  kmem[id].frees++;
++  release(&kmem[id].lock);
++  pop_off();
+ }
+ 
+-// Allocate one 4096-byte page of physical memory.
+-// Returns a pointer that the kernel can use.
+-// Returns 0 if the memory cannot be allocated.
+ void *
+ kalloc(void)
+ {
++  push_off(); // Pin cpuid while choosing and updating the local list.
++  int id = KMEM_PERCPU ? cpuid() : 0;
+   struct run *r;
+-
+-  acquire(&kmem.lock);
+-  r = kmem.freelist;
+-  if (r)
+-    kmem.freelist = r->next;
+-  release(&kmem.lock);
+-
++  acquire(&kmem[id].lock);
++  kmem[id].allocations++;
++  r = kmem[id].freelist;
++  if (r) {
++    kmem[id].freelist = r->next;
++    kmem[id].nfree--;
++  }
++  release(&kmem[id].lock);
++#if KMEM_PERCPU
++  if (r == 0) {
++    for (int offset = 1; offset < NKMEM; offset++) {
++      int victim = (id + offset) % NKMEM;
++      acquire(&kmem[victim].lock);
++      struct run *head = kmem[victim].freelist;
++      if (head == 0) {
++        release(&kmem[victim].lock);
++        continue;
++      }
++      struct run *tail = head;
++      int count = 1;
++      while (count < STEAL_BATCH && tail->next) {
++        tail = tail->next;
++        count++;
++      }
++      kmem[victim].freelist = tail->next;
++      tail->next = 0;
++      kmem[victim].nfree -= count;
++      release(&kmem[victim].lock);
++      // No two allocator locks are held at once on the allocation path.
++      r = head;
++      struct run *extra = head->next;
++      acquire(&kmem[id].lock);
++      if (extra) {
++        tail->next = kmem[id].freelist;
++        kmem[id].freelist = extra;
++        kmem[id].nfree += count - 1;
++      }
++      kmem[id].steals++;
++      kmem[id].stolen += count;
++      release(&kmem[id].lock);
++      break;
++    }
++  }
++#endif
++  pop_off();
+   if (r)
+-    memset((char *)r, 5, PGSIZE); // fill with junk
++    memset((char *)r, 5, PGSIZE);
+   return (void *)r;
+ }
++
++void
++kallocstats(struct labstats *s)
++{
++  for (int i = 0; i < NKMEM; i++) {
++    acquire(&kmem[i].lock);
++    s->alloc_acquires += kmem[i].lock.acquisitions;
++    s->alloc_spins += kmem[i].lock.failed;
++    s->free_pages += kmem[i].nfree;
++    s->alloc_calls += kmem[i].allocations;
++    s->free_calls += kmem[i].frees;
++    s->steals += kmem[i].steals;
++    s->stolen_pages += kmem[i].stolen;
++    release(&kmem[i].lock);
++  }
++}
++
++// Full validation is outside timed workloads. The normal allocator never
++// holds multiple list locks; this read-only check takes them in fixed order.
++int
++kalloccheck(void)
++{
++  int ok = 1;
++  acquire(&checklock);
++  memset(seen, 0, sizeof(seen));
++  for (int i = 0; i < NKMEM; i++)
++    acquire(&kmem[i].lock);
++  for (int i = 0; i < NKMEM; i++) {
++    uint64 count = 0;
++    for (struct run *r = kmem[i].freelist; r; r = r->next) {
++      uint64 address = (uint64)r;
++      if (address < (uint64)end || address >= PHYSTOP ||
++          address % PGSIZE || count >= MAXPAGES) {
++        ok = 0;
++        break;
++      }
++      uint64 bit = (address - KERNBASE) / PGSIZE;
++      if (seen[bit / 8] & (1 << (bit % 8))) {
++        ok = 0;
++        break;
++      }
++      seen[bit / 8] |= 1 << (bit % 8);
++      count++;
++    }
++    if (count != kmem[i].nfree)
++      ok = 0;
++  }
++  for (int i = NKMEM - 1; i >= 0; i--)
++    release(&kmem[i].lock);
++  release(&checklock);
++  return ok;
++}
+diff --git a/kernel/labstats.h b/kernel/labstats.h
+new file mode 100644
+index 0000000..21db446
+--- /dev/null
++++ b/kernel/labstats.h
+@@ -0,0 +1,17 @@
++#ifndef XV6_LABSTATS_H
++#define XV6_LABSTATS_H
++#ifndef KMEM_PERCPU
++#define KMEM_PERCPU 0
++#endif
++#ifndef HASHBCACHE
++#define HASHBCACHE 0
++#endif
++#define LAB_NHASH 13
++struct labstats {
++  uint64 version, percpu, hash, timestamp;
++  uint64 alloc_acquires, alloc_spins, free_pages, alloc_calls, free_calls;
++  uint64 steals, stolen_pages;
++  uint64 cache_lookups, cache_hits, cache_misses;
++  uint64 lookup_probes, recycle_probes, cache_acquires, cache_spins;
++};
++#endif
+diff --git a/kernel/spinlock.c b/kernel/spinlock.c
+index 9a6aab1..a9e165c 100644
+--- a/kernel/spinlock.c
++++ b/kernel/spinlock.c
+@@ -14,6 +14,8 @@ initlock(struct spinlock *lk, char *name)
+   lk->name = name;
+   lk->locked = 0;
+   lk->cpu = 0;
++  lk->acquisitions = 0;
++  lk->failed = 0;
+ }
+ 
+ // Acquire the lock.
+@@ -34,8 +36,12 @@ acquire(struct spinlock *lk)
+   // the C compiler and the processor to not move loads or stores
+   // past this point, to ensure that the critical section's memory
+   // references happen strictly after the lock is acquired.
++  uint64 failed = 0;
+   while (__atomic_exchange_n(&lk->locked, 1, __ATOMIC_ACQUIRE) != 0)
+-    ;
++    failed++;
++  // Updated only by the owner; snapshot readers acquire the same lock.
++  lk->acquisitions++;
++  lk->failed += failed;
+ 
+   // Record info about lock acquisition for holding() and debugging.
+   lk->cpu = mycpu();
+diff --git a/kernel/spinlock.h b/kernel/spinlock.h
+index 9c93b42..dffcb21 100644
+--- a/kernel/spinlock.h
++++ b/kernel/spinlock.h
+@@ -1,6 +1,8 @@
+ // Mutual exclusion lock.
+ struct spinlock {
+   uint locked; // Is the lock held?
++  uint64 acquisitions;
++  uint64 failed;
+ 
+   // For debugging:
+   char *name;      // Name of lock.
+diff --git a/kernel/syscall.c b/kernel/syscall.c
+index 1800f20..d8f2882 100644
+--- a/kernel/syscall.c
++++ b/kernel/syscall.c
+@@ -103,6 +103,8 @@ extern uint64 sys_link(void);
+ extern uint64 sys_mkdir(void);
+ extern uint64 sys_close(void);
+ extern uint64 sys_sync(void);
++extern uint64 sys_labstats(void);
++extern uint64 sys_labcheck(void);
+ 
+ // An array mapping syscall numbers from syscall.h
+ // to the function that handles the system call.
+@@ -130,6 +132,8 @@ static uint64 (*syscalls[])(void) = {
+   [SYS_mkdir]   = sys_mkdir,
+   [SYS_close]   = sys_close,
+   [SYS_sync]    = sys_sync,
++  [SYS_labstats] = sys_labstats,
++  [SYS_labcheck] = sys_labcheck,
+   // clang-format on
+ };
+ 
+diff --git a/kernel/syscall.h b/kernel/syscall.h
+index 5a4a39f..46e5c16 100644
+--- a/kernel/syscall.h
++++ b/kernel/syscall.h
+@@ -21,3 +21,5 @@
+ #define SYS_mkdir  20
+ #define SYS_close  21
+ #define SYS_sync   22
++#define SYS_labstats 23
++#define SYS_labcheck 24
+diff --git a/kernel/sysproc.c b/kernel/sysproc.c
+index cd25557..6eb123f 100644
+--- a/kernel/sysproc.c
++++ b/kernel/sysproc.c
+@@ -6,6 +6,30 @@
+ #include "spinlock.h"
+ #include "proc.h"
+ #include "vm.h"
++#include "labstats.h"
++
++uint64
++sys_labstats(void)
++{
++  uint64 address;
++  argaddr(0, &address);
++  struct labstats s;
++  memset(&s, 0, sizeof(s));
++  s.version = 1;
++  s.percpu = KMEM_PERCPU;
++  s.hash = HASHBCACHE;
++  kallocstats(&s);
++  bcachestats(&s);
++  s.timestamp = r_time();
++  struct proc *p = myproc();
++  return copyout(p->pagetable, p->sz, address, (char *)&s, sizeof(s));
++}
++
++uint64
++sys_labcheck(void)
++{
++  return kalloccheck() && bcachecheck() ? 0 : -1;
++}
+ 
+ uint64
+ sys_exit(void)
+diff --git a/user/gbench.c b/user/gbench.c
+new file mode 100644
+index 0000000..706edac
+--- /dev/null
++++ b/user/gbench.c
+@@ -0,0 +1,197 @@
++#include "kernel/types.h"
++#include "kernel/riscv.h"
++#include "kernel/fcntl.h"
++#include "kernel/labstats.h"
++#include "user/user.h"
++
++#define WORKERS 3
++#define PAGE_BATCH 16
++static char block[1024];
++
++static void
++fail(char *message)
++{
++  printf("GBENCH FAIL %s\n", message);
++  exit(1);
++}
++
++static void
++worker(char *kind, int iterations, int rank)
++{
++  for (int round = 0; round < iterations; round++) {
++    if (strcmp(kind, "pages") == 0) {
++      char *base = sbrk(PAGE_BATCH * PGSIZE);
++      if (base == SBRK_ERROR)
++        fail("sbrk");
++      for (int page = 0; page < PAGE_BATCH; page++) {
++        base[page * PGSIZE] = round + rank + page;
++        base[page * PGSIZE + PGSIZE - 1] = round ^ rank ^ page;
++      }
++      for (int page = 0; page < PAGE_BATCH; page++)
++        if ((uchar)base[page * PGSIZE] != (uchar)(round + rank + page) ||
++            (uchar)base[page * PGSIZE + PGSIZE - 1] != (uchar)(round ^ rank ^ page))
++          fail("page corruption");
++      if (sbrk(-PAGE_BATCH * PGSIZE) == SBRK_ERROR)
++        fail("shrink");
++    } else if (strcmp(kind, "fork") == 0) {
++      int pid = fork(), status = -1;
++      if (pid < 0)
++        fail("fork");
++      if (pid == 0)
++        exit(17);
++      if (wait(&status) != pid || status != 17)
++        fail("grandchild status");
++    } else {
++      int pipefd[2];
++      char input[128], output[128];
++      for (int j = 0; j < sizeof(input); j++)
++        input[j] = round + rank + j;
++      if (pipe(pipefd) < 0 || write(pipefd[1], input, sizeof(input)) != sizeof(input) ||
++          read(pipefd[0], output, sizeof(output)) != sizeof(output) ||
++          memcmp(input, output, sizeof(input)) != 0)
++        fail("pipe data");
++      close(pipefd[0]);
++      close(pipefd[1]);
++    }
++  }
++}
++
++static void
++name(int index, char *result)
++{
++  result[0] = 'g'; result[1] = 's';
++  result[2] = '0' + index / 10; result[3] = '0' + index % 10;
++  result[4] = 0;
++}
++
++static void
++readblock(int fd, int file, int offset)
++{
++  if (fd < 0 || read(fd, block, sizeof(block)) != sizeof(block))
++    fail("file read");
++  for (int j = 0; j < sizeof(block); j++)
++    if ((uchar)block[j] != (uchar)(file * 17 + offset * 31 + j))
++      fail("file bytes");
++}
++
++static void
++prepare(int files, int blocks)
++{
++  for (int i = 0; i < files; i++) {
++    char path[5]; name(i, path); unlink(path);
++    int fd = open(path, O_CREATE | O_TRUNC | O_WRONLY);
++    if (fd < 0)
++      fail("file create");
++    for (int offset = 0; offset < blocks; offset++) {
++      for (int j = 0; j < sizeof(block); j++)
++        block[j] = i * 17 + offset * 31 + j;
++      if (write(fd, block, sizeof(block)) != sizeof(block))
++        fail("file write");
++    }
++    close(fd);
++  }
++  sync();
++  for (int i = 0; i < files; i++) {
++    char path[5]; name(i, path); int fd = open(path, O_RDONLY);
++    for (int offset = 0; offset < blocks; offset++)
++      readblock(fd, i, offset);
++    close(fd);
++  }
++}
++
++static void
++report(char *kind, uint64 operations, struct labstats *a, struct labstats *b)
++{
++  printf("GRESULT kind=%s ops=%lu dt=%lu percpu=%lu hash=%lu",
++         kind, operations, b->timestamp - a->timestamp, b->percpu, b->hash);
++  printf(" alloc=%lu frees=%lu alocks=%lu aspins=%lu steals=%lu stolen=%lu",
++         b->alloc_calls-a->alloc_calls, b->free_calls-a->free_calls,
++         b->alloc_acquires-a->alloc_acquires, b->alloc_spins-a->alloc_spins,
++         b->steals-a->steals, b->stolen_pages-a->stolen_pages);
++  printf(" lookups=%lu hits=%lu misses=%lu probes=%lu recycle=%lu clocks=%lu cspins=%lu\n",
++         b->cache_lookups-a->cache_lookups, b->cache_hits-a->cache_hits,
++         b->cache_misses-a->cache_misses, b->lookup_probes-a->lookup_probes,
++         b->recycle_probes-a->recycle_probes, b->cache_acquires-a->cache_acquires,
++         b->cache_spins-a->cache_spins);
++}
++
++int
++main(int argc, char **argv)
++{
++  if (argc != 3)
++    fail("usage: gbench pages|fork|pipes|hotseq|hotrand|scan iterations");
++  char *kind = argv[1]; int iterations = atoi(argv[2]);
++  if (iterations < 1 || iterations > 100000)
++    fail("iteration range");
++  struct labstats a, b;
++  if (labcheck() != 0)
++    fail("initial invariants");
++  uint64 operations;
++  if (!strcmp(kind, "pages") || !strcmp(kind, "fork") || !strcmp(kind, "pipes")) {
++    int ready[2], go[2];
++    if (pipe(ready) < 0 || pipe(go) < 0)
++      fail("barrier pipes");
++    for (int rank = 0; rank < WORKERS; rank++) {
++      int pid = fork();
++      if (pid < 0)
++        fail("worker fork");
++      if (pid == 0) {
++        close(ready[0]); close(go[1]); char token = 1;
++        if (write(ready[1], &token, 1) != 1 || read(go[0], &token, 1) != 1)
++          fail("barrier child");
++        close(ready[1]); close(go[0]);
++        worker(kind, iterations, rank); exit(0);
++      }
++    }
++    close(ready[1]); close(go[0]);
++    char token;
++    for (int rank = 0; rank < WORKERS; rank++)
++      if (read(ready[0], &token, 1) != 1)
++        fail("barrier parent");
++    if (labstats(&a) < 0)
++      fail("stats before");
++    for (int rank = 0; rank < WORKERS; rank++)
++      if (write(go[1], "x", 1) != 1)
++        fail("release workers");
++    for (int rank = 0; rank < WORKERS; rank++) {
++      int status = -1;
++      if (wait(&status) < 0 || status != 0)
++        fail("worker status");
++    }
++    if (labstats(&b) < 0)
++      fail("stats after");
++    close(ready[0]); close(go[1]);
++    operations = (uint64)WORKERS * iterations * (!strcmp(kind,"pages") ? PAGE_BATCH : 1);
++  } else if (!strcmp(kind, "hotseq") || !strcmp(kind, "hotrand") || !strcmp(kind, "scan")) {
++    // One 16-block hot stream, two interleaved eight-block hot streams,
++    // or one 96-block scan exceeding the 30-buffer cache.
++    int files = !strcmp(kind, "hotrand") ? 2 : 1;
++    int blocks = !strcmp(kind, "scan") ? 96 : (!strcmp(kind,"hotrand") ? 8 : 16);
++    prepare(files, blocks);
++    int descriptors[2], offsets[2] = {0, 0};
++    for (int i = 0; i < files; i++) { char path[5]; name(i,path); descriptors[i]=open(path,O_RDONLY); }
++    if (labcheck() < 0 || labstats(&a) < 0)
++      fail("prepared invariants");
++    uint random = 12345;
++    for (int round = 0; round < iterations; round++) {
++      int index;
++      if (!strcmp(kind, "hotrand")) { random=random*1664525+1013904223; index=(random>>16)%files; }
++      else index = 0;
++      if (offsets[index] == blocks) {
++        close(descriptors[index]); char path[5]; name(index,path);
++        descriptors[index] = open(path,O_RDONLY); offsets[index] = 0;
++      }
++      readblock(descriptors[index], index, offsets[index]++);
++    }
++    if (labstats(&b) < 0)
++      fail("stats after cache");
++    operations = iterations;
++    for (int i = 0; i < files; i++) close(descriptors[i]);
++    for (int i = 0; i < files; i++) { char path[5]; name(i, path); unlink(path); }
++    sync();
++  } else fail("unknown workload");
++  if (b.cache_hits + b.cache_misses != b.cache_lookups || labcheck() != 0)
++    fail("final invariants");
++  report(kind, operations, &a, &b);
++  exit(0);
++}
+diff --git a/user/gcheck.c b/user/gcheck.c
+new file mode 100644
+index 0000000..5042d57
+--- /dev/null
++++ b/user/gcheck.c
+@@ -0,0 +1,46 @@
++#include "kernel/types.h"
++#include "kernel/riscv.h"
++#include "kernel/labstats.h"
++#include "user/user.h"
++
++static void
++fail(char *message)
++{
++  printf("GCHECK FAIL %s\n", message);
++  exit(1);
++}
++
++int
++main(void)
++{
++  struct labstats before, after;
++  if (labstats(&before) < 0 || before.version != 1 || before.free_pages == 0)
++    fail("statistics ABI");
++  if (labstats((struct labstats *)~(uint64)0) != -1)
++    fail("invalid destination accepted");
++  if (labcheck() != 0)
++    fail("initial invariants");
++  for (int round = 0; round < 8; round++) {
++    char *base = sbrk(64 * PGSIZE);
++    if (base == SBRK_ERROR)
++      fail("allocation");
++    for (int page = 0; page < 64; page++) {
++      base[page * PGSIZE] = page + round;
++      base[page * PGSIZE + PGSIZE - 1] = page ^ round;
++    }
++    for (int page = 0; page < 64; page++)
++      if ((uchar)base[page * PGSIZE] != (uchar)(page + round) ||
++          (uchar)base[page * PGSIZE + PGSIZE - 1] != (uchar)(page ^ round))
++        fail("page isolation");
++    if (sbrk(-64 * PGSIZE) == SBRK_ERROR || labcheck() != 0)
++      fail("free-list consistency");
++  }
++  if (labstats(&after) < 0 || after.alloc_calls < before.alloc_calls + 512 ||
++      after.free_calls < before.free_calls + 512)
++    fail("allocation accounting");
++  if (after.cache_hits + after.cache_misses != after.cache_lookups)
++    fail("cache accounting");
++  printf("GCHECK PASS percpu=%lu hash=%lu free=%lu\n",
++         after.percpu, after.hash, after.free_pages);
++  exit(0);
++}
+diff --git a/user/user.h b/user/user.h
+index 29aad59..f36b76a 100644
+--- a/user/user.h
++++ b/user/user.h
+@@ -1,6 +1,9 @@
+ #define SBRK_ERROR ((char *)-1)
+ 
+ struct stat;
++struct labstats;
++int labstats(struct labstats *);
++int labcheck(void);
+ 
+ // system calls
+ int fork(void);
+diff --git a/user/usys.pl b/user/usys.pl
+index 4d054e8..2d89dfb 100755
+--- a/user/usys.pl
++++ b/user/usys.pl
+@@ -43,3 +43,5 @@ entry("sbrk");
+ entry("pause");
+ entry("uptime");
+ entry("sync");
++entry("labstats");
++entry("labcheck");

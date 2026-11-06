@@ -1,0 +1,70 @@
+{
+  "gate_based_adiabatic_simulation": [
+    {
+      "total_time": 0.2,
+      "steps": 128,
+      "ground_probability": 0.1274554778578574,
+      "expected_cut": 2.516235637892019,
+      "dense_ground_probability": 0.12749435544034646,
+      "dense_state_fidelity": 0.9999999866906726,
+      "runtime_s": 0.13567602900002385,
+      "logical_operations": {
+        "rzz": 640,
+        "rx": 512,
+        "h": 4
+      }
+    },
+    {
+      "total_time": 1,
+      "steps": 128,
+      "ground_probability": 0.1819323299510479,
+      "expected_cut": 2.817577565934142,
+      "dense_ground_probability": 0.1827496303534134,
+      "dense_state_fidelity": 0.9999946247104946,
+      "runtime_s": 0.04930544700073369,
+      "logical_operations": {
+        "rzz": 640,
+        "rx": 512,
+        "h": 4
+      }
+    },
+    {
+      "total_time": 5,
+      "steps": 128,
+      "ground_probability": 0.4524938296270813,
+      "expected_cut": 3.4118178630313265,
+      "dense_ground_probability": 0.45442836355142424,
+      "dense_state_fidelity": 0.9999272197124757,
+      "runtime_s": 0.03407822699955432,
+      "logical_operations": {
+        "rzz": 640,
+        "rx": 512,
+        "h": 4
+      }
+    },
+    {
+      "total_time": 20,
+      "steps": 128,
+      "ground_probability": 0.9148544316669587,
+      "expected_cut": 3.914781569820926,
+      "dense_ground_probability": 0.9172576904346931,
+      "dense_state_fidelity": 0.9997022871013619,
+      "runtime_s": 0.03759779499978322,
+      "logical_operations": {
+        "rzz": 640,
+        "rx": 512,
+        "h": 4
+      }
+    }
+  ],
+  "classical_simulated_annealing": [
+    {
+      "seed": 0,
+      "best_cut": 4.0,
+      "objective_evaluations": 513,
+      "runtime_s": 0.0013776420000795042
+    }
+  ],
+  "exact_cut": 4.0,
+  "interpretation": "Gate-based Trotter approximation to a closed-system annealing schedule, not an execution on annealing hardware or evidence of tunneling advantage."
+}

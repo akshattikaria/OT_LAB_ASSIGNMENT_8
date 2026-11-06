@@ -1,0 +1,118 @@
+{
+  "none": {
+    "selected": [],
+    "index_bytes": 0,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384
+    },
+    "file_bytes": 6811648,
+    "index_build_s": 0.015448665000121764,
+    "analyze_s": 0.01422489200012933
+  },
+  "customer_time": {
+    "selected": [
+      "customer_time"
+    ],
+    "index_bytes": 3543040,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customer_time": 3543040,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384
+    },
+    "file_bytes": 10354688,
+    "index_build_s": 0.22422973500010812,
+    "analyze_s": 0.01916670799982967
+  },
+  "station_time": {
+    "selected": [
+      "station_time"
+    ],
+    "index_bytes": 2646016,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_time": 2646016,
+      "stations": 16384
+    },
+    "file_bytes": 9457664,
+    "index_build_s": 0.2506233980000161,
+    "analyze_s": 0.01872761399999945
+  },
+  "status_time": {
+    "selected": [
+      "status_time"
+    ],
+    "index_bytes": 4091904,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384,
+      "status_time": 4091904
+    },
+    "file_bytes": 10903552,
+    "index_build_s": 0.5419780989998344,
+    "analyze_s": 0.047647204999975656
+  },
+  "station_cover": {
+    "selected": [
+      "station_cover"
+    ],
+    "index_bytes": 5881856,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_cover": 5881856,
+      "stations": 16384
+    },
+    "file_bytes": 12693504,
+    "index_build_s": 0.3890961969998443,
+    "analyze_s": 0.03650137100021311
+  },
+  "time_cover": {
+    "selected": [
+      "time_cover"
+    ],
+    "index_bytes": 5414912,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384,
+      "time_cover": 5414912
+    },
+    "file_bytes": 12226560,
+    "index_build_s": 0.25511002300004293,
+    "analyze_s": 0.02125050400013606
+  },
+  "confirmed_station": {
+    "selected": [
+      "confirmed_station"
+    ],
+    "index_bytes": 1794048,
+    "object_bytes": {
+      "bookings": 6496256,
+      "confirmed_station": 1794048,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384
+    },
+    "file_bytes": 8605696,
+    "index_build_s": 0.15847572200004834,
+    "analyze_s": 0.019810899000049176
+  }
+}

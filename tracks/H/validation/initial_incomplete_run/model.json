@@ -1,0 +1,143 @@
+{
+  "indexes": [
+    "customer_time",
+    "station_time",
+    "status_time",
+    "station_cover",
+    "time_cover",
+    "confirmed_station"
+  ],
+  "kinds": [
+    "customer",
+    "station",
+    "confirmed",
+    "status",
+    "daily",
+    "city"
+  ],
+  "weights": {
+    "customer": 40,
+    "station": 15,
+    "confirmed": 15,
+    "status": 10,
+    "daily": 10,
+    "city": 10
+  },
+  "training_median_mean_ms": {
+    "customer": {
+      "none": 8.617231499999999,
+      "customer_time": 0.064046,
+      "station_time": 8.367085,
+      "status_time": 7.4603945,
+      "station_cover": 9.537601,
+      "time_cover": 8.530907000000001,
+      "confirmed_station": 7.619821
+    },
+    "station": {
+      "none": 9.5500255,
+      "customer_time": 8.478594000000001,
+      "station_time": 0.051319000000000004,
+      "status_time": 2.5358725,
+      "station_cover": 0.0225755,
+      "time_cover": 2.6335450000000002,
+      "confirmed_station": 8.692881
+    },
+    "confirmed": {
+      "none": 8.8201485,
+      "customer_time": 9.720161999999998,
+      "station_time": 0.044174000000000005,
+      "status_time": 1.410806,
+      "station_cover": 0.012465500000000001,
+      "time_cover": 1.7775604999999999,
+      "confirmed_station": 0.0197405
+    },
+    "status": {
+      "none": 11.4775045,
+      "customer_time": 13.37868,
+      "station_time": 3.8660685000000004,
+      "status_time": 0.12001400000000001,
+      "station_cover": 1.575934,
+      "time_cover": 0.2351945,
+      "confirmed_station": 7.166239
+    },
+    "daily": {
+      "none": 9.8316415,
+      "customer_time": 9.554647,
+      "station_time": 5.4445065,
+      "status_time": 3.55259,
+      "station_cover": 2.391208,
+      "time_cover": 1.2084455,
+      "confirmed_station": 10.3169585
+    },
+    "city": {
+      "none": 9.273603,
+      "customer_time": 9.969128,
+      "station_time": 0.42443549999999997,
+      "status_time": 1.8278089999999998,
+      "station_cover": 0.1559665,
+      "time_cover": 2.1265675,
+      "confirmed_station": 0.140314
+    }
+  },
+  "baseline_weighted_ms": 9.2606936,
+  "weighted_gains_ms": [
+    [
+      3.4212742,
+      0,
+      0.4627347999999998,
+      0,
+      0,
+      0.39896419999999966
+    ],
+    [
+      0.16071472499999986,
+      1.4248059750000002,
+      1.05212295,
+      1.4291175,
+      1.037472075,
+      0.12857167500000005
+    ],
+    [
+      0,
+      1.316396175,
+      1.111401375,
+      1.32115245,
+      1.0563882,
+      1.3200612
+    ],
+    [
+      0,
+      0.7611436,
+      1.13574905,
+      0.9901570500000001,
+      1.124231,
+      0.43112655000000005
+    ],
+    [
+      0,
+      0.4387135,
+      0.62790515,
+      0.7440433500000001,
+      0.8623196000000001,
+      0
+    ],
+    [
+      0,
+      0.88491675,
+      0.7445794,
+      0.91176365,
+      0.71470355,
+      0.9133289
+    ]
+  ],
+  "costs_kib": [
+    3460.0,
+    2584.0,
+    3996.0,
+    5744.0,
+    5288.0,
+    1752.0
+  ],
+  "benefit_noise_threshold": 0.05,
+  "note": "Per-family mean of two parameter-case median latencies. Benefit below 5% of baseline latency is set to zero. Portfolio gain is the sum across query families of their best selected single-index weighted gain; overlaps are not additive. Joint-index complementarity and planner regressions are not modeled."
+}

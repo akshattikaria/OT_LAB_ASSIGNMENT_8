@@ -1,0 +1,266 @@
+[
+  {
+    "args_hex": [
+      "0x0",
+      "0x1",
+      "0x2"
+    ],
+    "expected_hex": "0x21"
+  },
+  {
+    "args_hex": [
+      "0x1",
+      "0x2",
+      "0x3"
+    ],
+    "expected_hex": "0x33"
+  },
+  {
+    "args_hex": [
+      "0x2",
+      "0x3",
+      "0x4"
+    ],
+    "expected_hex": "0x41"
+  },
+  {
+    "args_hex": [
+      "0x3f",
+      "0x40",
+      "0x41"
+    ],
+    "expected_hex": "0x48f"
+  },
+  {
+    "args_hex": [
+      "0x40",
+      "0x41",
+      "0x42"
+    ],
+    "expected_hex": "0x421"
+  },
+  {
+    "args_hex": [
+      "0x41",
+      "0x42",
+      "0x43"
+    ],
+    "expected_hex": "0x433"
+  },
+  {
+    "args_hex": [
+      "0x8000000000000000",
+      "0x8000000000000001",
+      "0x8000000000000002"
+    ],
+    "expected_hex": "0x21"
+  },
+  {
+    "args_hex": [
+      "0xffffffffffffffff",
+      "0x0",
+      "0x1"
+    ],
+    "expected_hex": "0xf"
+  },
+  {
+    "args_hex": [
+      "0xfffffffffffffffe",
+      "0xffffffffffffffff",
+      "0x0"
+    ],
+    "expected_hex": "0x1"
+  },
+  {
+    "args_hex": [
+      "0x99227d9d2670eaf9",
+      "0x3c9b85ed1cfb2d9a",
+      "0x31a150e4d14b4ee4"
+    ],
+    "expected_hex": "0xbfcf06bd4f40b5a3"
+  },
+  {
+    "args_hex": [
+      "0xccaa567736a2e5ad",
+      "0x595757bbcee2ead5",
+      "0xf5617c2113bd7429"
+    ],
+    "expected_hex": "0xec14c3de34175208"
+  },
+  {
+    "args_hex": [
+      "0xaf9221f5d7c2efc1",
+      "0xffa6b88cef8e5e0c",
+      "0xbc40e8c4b065225"
+    ],
+    "expected_hex": "0xc75823de8b1d41d"
+  },
+  {
+    "args_hex": [
+      "0x9cd48041a8fca1f9",
+      "0xbfc508483fe051fa",
+      "0x61ff11a6f75922a9"
+    ],
+    "expected_hex": "0x4302a2790caf1a93"
+  },
+  {
+    "args_hex": [
+      "0xfa9ae96708c084d",
+      "0xecf9fe29abfab8a7",
+      "0x1b50e6c63de62f41"
+    ],
+    "expected_hex": "0x985ebd23b9d9a4fa"
+  },
+  {
+    "args_hex": [
+      "0x8ed74b3bb82181ff",
+      "0xfb05c542f62e2c4f",
+      "0xf6d212a8506cd9b4"
+    ],
+    "expected_hex": "0xe2f3b8fe54dd48f0"
+  },
+  {
+    "args_hex": [
+      "0x22146b8662443957",
+      "0xae557e9f5683d250",
+      "0xcf7bd72b1b4037f8"
+    ],
+    "expected_hex": "0x83fe87cae8cb6a87"
+  },
+  {
+    "args_hex": [
+      "0x3188dada42effc3f",
+      "0xdc6d27a9d4e306c3",
+      "0xa65f348b063c317b"
+    ],
+    "expected_hex": "0x53d94623f9d012ac"
+  },
+  {
+    "args_hex": [
+      "0x79e67b28e44f7797",
+      "0xc9350f079bf37de2",
+      "0x2638882ab9068a01"
+    ],
+    "expected_hex": "0x145bf6db1024aa85"
+  },
+  {
+    "args_hex": [
+      "0xc8c35f33f24af07c",
+      "0xd462313939fbdda8",
+      "0x49f15b1d633686fb"
+    ],
+    "expected_hex": "0xbbb71fe0ff199d84"
+  },
+  {
+    "args_hex": [
+      "0xd563e1d776949bb",
+      "0xda9cfb75885e4faa",
+      "0x1569d842db80277a"
+    ],
+    "expected_hex": "0x2e684996b7397db1"
+  },
+  {
+    "args_hex": [
+      "0xd2a0009d9d9b338",
+      "0x885e1f4e992f354",
+      "0xe15df5a209612ecf"
+    ],
+    "expected_hex": "0x1b8f3c1dc65e2d5c"
+  },
+  {
+    "args_hex": [
+      "0xfded6a2aefb296c3",
+      "0x87b3f86b97450dfe",
+      "0xdb67c57cf585c025"
+    ],
+    "expected_hex": "0x30daea10d1539d8d"
+  },
+  {
+    "args_hex": [
+      "0x871478b4ad8296f9",
+      "0x26fb68e0db904c11",
+      "0xa432f1777ce3a173"
+    ],
+    "expected_hex": "0xe51e27cc444cf218"
+  },
+  {
+    "args_hex": [
+      "0xbf24c137e3ccd2e1",
+      "0x406832c58e38c9dc",
+      "0x6664848027addef4"
+    ],
+    "expected_hex": "0x65953bf4e8d20a7d"
+  },
+  {
+    "args_hex": [
+      "0xbac62591be412c0d",
+      "0xce9bf23bc080fa6",
+      "0x3febe03b6c9a3090"
+    ],
+    "expected_hex": "0xb4ed9e68cbec2cab"
+  },
+  {
+    "args_hex": [
+      "0x5c4f888a2359306e",
+      "0x63690df485c90ffa",
+      "0xb4e416f0e6f19170"
+    ],
+    "expected_hex": "0x8d67f48d15a95694"
+  },
+  {
+    "args_hex": [
+      "0xd86fb1f1aa4d6eca",
+      "0x64a1f0f1b090411d",
+      "0xa03fd0a2e075b447"
+    ],
+    "expected_hex": "0xc0cb4b2e22387447"
+  },
+  {
+    "args_hex": [
+      "0xe6c1cdf3aae93985",
+      "0x680aa94bbe3f3e13",
+      "0xb408fe5392c6ba65"
+    ],
+    "expected_hex": "0xcf5b49f14141ade6"
+  },
+  {
+    "args_hex": [
+      "0x1cd539b3d616f37e",
+      "0xf7f37f11e039cdda",
+      "0x70fe90f4359b145d"
+    ],
+    "expected_hex": "0xfb0f55e58fe08474"
+  },
+  {
+    "args_hex": [
+      "0x7ce5d85e39d9e058",
+      "0x7b3e22c8d5039524",
+      "0x8bbd507f25c98eef"
+    ],
+    "expected_hex": "0xc3b102894973646c"
+  },
+  {
+    "args_hex": [
+      "0xc85db3e42205e0fa",
+      "0xcbc53610193f50cf",
+      "0x8e3e4924c0f2a53f"
+    ],
+    "expected_hex": "0xe77d18404a650425"
+  },
+  {
+    "args_hex": [
+      "0x43a6ef4de20f0583",
+      "0x582371667a18f5d8",
+      "0xfaf3e43b2ce78b8a"
+    ],
+    "expected_hex": "0xcac3e1de6690a8fb"
+  },
+  {
+    "args_hex": [
+      "0xca3c57e8fe72c4cb",
+      "0x822d33ba517c7efe",
+      "0x6e92125086001d5"
+    ],
+    "expected_hex": "0xb6a376a3350ed785"
+  }
+]

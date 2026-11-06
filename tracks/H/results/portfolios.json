@@ -1,0 +1,179 @@
+{
+  "none": {
+    "positions": [],
+    "selected": [],
+    "index_bytes": 0,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384
+    },
+    "file_bytes": 6811648,
+    "index_build_s": 0.0062000980001357675,
+    "analyze_s": 0.005067937000148959
+  },
+  "p_0_1_2_3_4_5": {
+    "positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "selected": [
+      "customer_time",
+      "station_time",
+      "status_time",
+      "station_cover",
+      "time_cover",
+      "confirmed_station"
+    ],
+    "index_bytes": 23371776,
+    "object_bytes": {
+      "bookings": 6496256,
+      "confirmed_station": 1794048,
+      "customer_time": 3543040,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_cover": 5881856,
+      "station_time": 2646016,
+      "stations": 16384,
+      "status_time": 4091904,
+      "time_cover": 5414912
+    },
+    "file_bytes": 30183424,
+    "index_build_s": 1.5835934239999006,
+    "analyze_s": 0.12389918000008038
+  },
+  "p_1_5": {
+    "positions": [
+      1,
+      5
+    ],
+    "selected": [
+      "station_time",
+      "confirmed_station"
+    ],
+    "index_bytes": 4440064,
+    "object_bytes": {
+      "bookings": 6496256,
+      "confirmed_station": 1794048,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_time": 2646016,
+      "stations": 16384
+    },
+    "file_bytes": 11251712,
+    "index_build_s": 0.29699724900001456,
+    "analyze_s": 0.025016180999955395
+  },
+  "p_2": {
+    "positions": [
+      2
+    ],
+    "selected": [
+      "status_time"
+    ],
+    "index_bytes": 4091904,
+    "object_bytes": {
+      "bookings": 6496256,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "stations": 16384,
+      "status_time": 4091904
+    },
+    "file_bytes": 10903552,
+    "index_build_s": 0.3254812159998437,
+    "analyze_s": 0.029297324000026492
+  },
+  "p_0_1_5": {
+    "positions": [
+      0,
+      1,
+      5
+    ],
+    "selected": [
+      "customer_time",
+      "station_time",
+      "confirmed_station"
+    ],
+    "index_bytes": 7983104,
+    "object_bytes": {
+      "bookings": 6496256,
+      "confirmed_station": 1794048,
+      "customer_time": 3543040,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_time": 2646016,
+      "stations": 16384
+    },
+    "file_bytes": 14794752,
+    "index_build_s": 0.6218348919999244,
+    "analyze_s": 0.0531217560001096
+  },
+  "p_0_1_2_5": {
+    "positions": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "selected": [
+      "customer_time",
+      "station_time",
+      "status_time",
+      "confirmed_station"
+    ],
+    "index_bytes": 12075008,
+    "object_bytes": {
+      "bookings": 6496256,
+      "confirmed_station": 1794048,
+      "customer_time": 3543040,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_time": 2646016,
+      "stations": 16384,
+      "status_time": 4091904
+    },
+    "file_bytes": 18886656,
+    "index_build_s": 0.8563009360000251,
+    "analyze_s": 0.06287085500002831
+  },
+  "p_0_1_4_5": {
+    "positions": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "selected": [
+      "customer_time",
+      "station_time",
+      "time_cover",
+      "confirmed_station"
+    ],
+    "index_bytes": 13398016,
+    "object_bytes": {
+      "bookings": 6496256,
+      "confirmed_station": 1794048,
+      "customer_time": 3543040,
+      "customers": 290816,
+      "sqlite_schema": 4096,
+      "sqlite_stat1": 4096,
+      "station_time": 2646016,
+      "stations": 16384,
+      "time_cover": 5414912
+    },
+    "file_bytes": 20209664,
+    "index_build_s": 0.8240315010000359,
+    "analyze_s": 0.07536361400002534
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "physical_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "chains": [
+    [
+      0,
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  "logical_ground_energy": -1,
+  "rows": [
+    {
+      "strength": 0,
+      "ground_energy": -3,
+      "ground_states": [
+        [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ],
+      "broken": 2,
+      "rescaled_logical_coupling": 1.0
+    },
+    {
+      "strength": 0.25,
+      "ground_energy": -2.75,
+      "ground_states": [
+        [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ]
+      ],
+      "broken": 2,
+      "rescaled_logical_coupling": 1.0
+    },
+    {
+      "strength": 1,
+      "ground_energy": -2,
+      "ground_states": [
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ]
+      ],
+      "broken": 2,
+      "rescaled_logical_coupling": 1.0
+    },
+    {
+      "strength": 2,
+      "ground_energy": -3,
+      "ground_states": [
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ]
+      ],
+      "broken": 0,
+      "rescaled_logical_coupling": 0.5
+    },
+    {
+      "strength": 4,
+      "ground_energy": -5,
+      "ground_states": [
+        [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ]
+      ],
+      "broken": 0,
+      "rescaled_logical_coupling": 0.25
+    }
+  ],
+  "scope": "Exact classical enumeration of triangle minor embedding; 4 physical spins for 3 logical variables. No hardware annealer or dynamics."
+}

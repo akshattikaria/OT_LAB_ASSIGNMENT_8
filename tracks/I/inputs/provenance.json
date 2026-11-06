@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "source": "quantum_track_c/results/summary.json",
+      "delivered": "inputs/track_c/summary.json",
+      "sha256": "3024a59949a375bcb3d90fbf6ceb445c7ef1ecd0ae818d94da8515908d56681c"
+    },
+    {
+      "source": "quantum_track_c/results/audit.json",
+      "delivered": "inputs/track_c/audit.json",
+      "sha256": "f07d51997ae5ba8dd0642d4882691b4f9e0147d332ad2fd548d663f7623e7878"
+    },
+    {
+      "source": "quantum_track_c/results/protocol.json",
+      "delivered": "inputs/track_c/protocol.json",
+      "sha256": "aaa5bc3631c813908627c19c78d41a5fac91b4b8c36fdb60a9e202ab17d99879"
+    },
+    {
+      "source": "quantum_track_c/docs/COVERAGE.md",
+      "delivered": "inputs/track_c/COVERAGE.md",
+      "sha256": "cba63bd45756ef7e530400b678dddad23eb8b05b3f380af13e6b8035c3cf69b9"
+    },
+    {
+      "source": "distributed_track_d/results/summary.json",
+      "delivered": "inputs/track_d/summary.json",
+      "sha256": "f5acd2dc71ffa2aa08abba16bf199dd68a6c1b175b5a15b544ae1bea2c72c076"
+    },
+    {
+      "source": "distributed_track_d/results/environment.json",
+      "delivered": "inputs/track_d/environment.json",
+      "sha256": "156d0c27f51ae0b91f3a5087c62fee70bb900047f0d5eb6ebb385f124bcbd52a"
+    },
+    {
+      "source": "distributed_track_d/results/protocol.json",
+      "delivered": "inputs/track_d/protocol.json",
+      "sha256": "5ef54caaeece3ab2d794226ea1e46ba9bd83cefeac19cc66c01f478b99e8dc43"
+    },
+    {
+      "source_package": "qiskit-ibm-runtime==0.51.0",
+      "package_relative_path": "conf_manila.json",
+      "delivered": "inputs/fake_manila/conf_manila.json",
+      "sha256": "f73e604ae003fb189cfdb35f7bafa818707cb8b80ff590fb07aa0ae032b636d9"
+    },
+    {
+      "source_package": "qiskit-ibm-runtime==0.51.0",
+      "package_relative_path": "props_manila.json",
+      "delivered": "inputs/fake_manila/props_manila.json",
+      "sha256": "5c1e0fe721a8e2fc00584007740db1b3d14cdf0c03cd033369187d4d4e2b1c24"
+    }
+  ],
+  "calibration_date": "2024-05-27T15:27:23-03:00",
+  "notice": "Previous C/D evidence is preserved unchanged and labeled as earlier measurements. FakeManila is a packaged historical calibration snapshot, not a current device or live hardware execution."
+}

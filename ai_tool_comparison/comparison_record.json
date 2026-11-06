@@ -1,0 +1,68 @@
+{
+  "status": "comparison_recorded_from_supplied_response",
+  "task": "TASK_PROMPT.txt",
+  "chatgpt": {
+    "tool": "ChatGPT/Codex",
+    "model": "GPT-6 family; exact serving revision unavailable",
+    "date": "2026-11-04",
+    "candidate": "chatgpt_candidate.py",
+    "result": "chatgpt_result_20261106.json",
+    "candidate_versions_to_first_pass": 1,
+    "ai_generation_latency_s": null,
+    "original_result": "chatgpt_result_01.json",
+    "validation_date": "2026-11-06",
+    "repair_rounds_recorded": 0,
+    "unsupported_external_claims_observed": false
+  },
+  "second_tool": {
+    "tool": "Google Gemini",
+    "exact_model_label": "Argon High",
+    "underlying_model_revision": null,
+    "received_date": "2026-11-06",
+    "generation_date": null,
+    "candidate": "gemini_candidate_01.py",
+    "result": "gemini_result_01.json",
+    "candidate_sha256": "6e93b3033c03fff753de327cb46b753ee3602cb1023710f8d56a35648caacb1a",
+    "response_source": "Student-pasted original answer; screenshot corroborates visible beginning and selector label",
+    "evidence": "gemini_evidence.md",
+    "chat_export": null,
+    "ai_generation_latency_s": null,
+    "user_reported_generation_latency": {
+      "estimate_s": 60,
+      "approximate_uncertainty_s": 3,
+      "source": "Student: roughly 1 minute, give or take 2 or 3 seconds",
+      "instrumented": false,
+      "confidence_interval": false
+    },
+    "candidate_versions_to_first_pass": 1,
+    "repair_rounds_reported": 0,
+    "no_repair_needed_for_shared_tests": true,
+    "total_prompt_history_independently_verified": false,
+    "unsupported_external_claims_observed": false,
+    "screenshot": {
+      "filename": "image(20261105-185811).png",
+      "sha256": "2b06dbee5e4aaccc3bb9c78af76954a6bcc093d77c38e96f25f4a3066499cb6f",
+      "included_in_project": false
+    }
+  },
+  "conclusion": "Both original candidates passed the common tests without repair. Gemini had lower median function runtime on all four retained cases (ChatGPT/Gemini median ratios 1.49\u20133.03). This supports a local implementation-runtime finding only. ChatGPT generation latency is unavailable, so there is no AI generation-speed winner.",
+  "updated_date": "2026-11-06",
+  "date_timezone": "Asia/Calcutta",
+  "benchmark": "benchmark_results.json",
+  "generation_latency_comparable": false,
+  "validation": {
+    "shared_test_methods_per_candidate": 9,
+    "exhaustive_small_cases_per_candidate": 100,
+    "both_passed": true,
+    "runtime_cases": 4,
+    "paired_repetitions_per_case": 7,
+    "timed_function_calls": 56,
+    "host": "Shared cloud Python host, not student laptop"
+  },
+  "limitations": [
+    "Full platform prompt/chat export pending; screenshot covers only visible beginning.",
+    "Underlying Gemini model revision and ChatGPT serving revision are not independently established.",
+    "Gemini generation latency is student-estimated; ChatGPT latency unavailable.",
+    "Small single-task study; no general AI quality, hallucination, repair or generation-speed ranking."
+  ]
+}

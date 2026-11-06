@@ -1,0 +1,56 @@
+......................................................................F..F......                                                         [100%]
+=================================== FAILURES ===================================
+____________________________ TLRUCacheTest.test_ttu ____________________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu>
+
+    def test_ttu(self):
+        cache = TLRUCache[int, int, int](
+            maxsize=6, ttu=lambda _, v, t: t + v + 1, timer=Timer()
+        )
+        self.assertEqual(0, cache.timer())
+        self.assertEqual(3, cache.ttu(0, 1, 1))
+    
+        cache[1] = 1
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache.timer.tick()
+        self.assertEqual(1, cache[1])
+        self.assertEqual(1, len(cache))
+        self.assertEqual({1}, set(cache))
+    
+        cache[2] = 2
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(2, len(cache))
+        self.assertEqual({1, 2}, set(cache))
+    
+        cache.timer.tick()
+>       self.assertNotIn(1, cache)
+E       AssertionError: 1 unexpectedly found in TLRUCache({2: 2}, maxsize=6, currsize=1)
+
+tests/test_tlru.py:59: AssertionError
+_______________________ TLRUCacheTest.test_ttu_tuple_key _______________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu_tuple_key>
+
+    def test_ttu_tuple_key(self):
+        cache = TLRUCache[tuple[int, ...], int, int](
+            maxsize=1, ttu=lambda k, v, t: t + 1, timer=Timer()
+        )
+    
+        cache[(1, 2, 3)] = 42
+        self.assertEqual(42, cache[(1, 2, 3)])
+        cache.timer.tick()
+        with self.assertRaises(KeyError):
+            cache[(1, 2, 3)]
+>       self.assertNotIn((1, 2, 3), cache)
+E       AssertionError: (1, 2, 3) unexpectedly found in TLRUCache({}, maxsize=1, currsize=0)
+
+tests/test_tlru.py:276: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu - AssertionError: 1 unexpe...
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu_tuple_key - AssertionError...
+2 failed, 78 passed, 8 subtests passed in 0.33s

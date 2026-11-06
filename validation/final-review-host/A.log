@@ -1,0 +1,35 @@
+test_bounds_and_saddles (test_continuous.Controls.test_bounds_and_saddles) ... ok
+test_conjugate_gradient (test_continuous.Controls.test_conjugate_gradient) ... ok
+test_corrected_slide_derivative (test_continuous.Controls.test_corrected_slide_derivative) ... ok
+test_fisher_and_hvp (test_continuous.Controls.test_fisher_and_hvp) ... ok
+test_gd_learning_rate_limits (test_continuous.Controls.test_gd_learning_rate_limits) ... ok
+test_nonlinear_gn_reference (test_continuous.Controls.test_nonlinear_gn_reference) ... ok
+test_small_positive_convex_loss_is_not_cancelled (test_continuous.Controls.test_small_positive_convex_loss_is_not_cancelled) ... ok
+test_backprop_all_parameters_full_and_batch (test_continuous.Derivatives.test_backprop_all_parameters_full_and_batch) ... ok
+test_exponential_derivatives (test_continuous.Derivatives.test_exponential_derivatives) ... ok
+test_logistic_curvature (test_continuous.Derivatives.test_logistic_curvature) ... ok
+test_regularized_gn_matches_exact_ridge_hessian (test_continuous.Derivatives.test_regularized_gn_matches_exact_ridge_hessian) ... ok
+test_ridge_gradient_hessian (test_continuous.Derivatives.test_ridge_gradient_hessian) ... ok
+test_stable_large_logits (test_continuous.Derivatives.test_stable_large_logits) ... ok
+test_audit_rejects_false_objective (test_continuous.Training.test_audit_rejects_false_objective) ... ok
+test_divergence_is_recorded (test_continuous.Training.test_divergence_is_recorded) ... ok
+test_equal_epoch_gradient_example_budget (test_continuous.Training.test_equal_epoch_gradient_example_budget) ... ok
+test_gd_and_mini_identical_with_full_batch (test_continuous.Training.test_gd_and_mini_identical_with_full_batch) ... ok
+test_invalid_data (test_continuous.Training.test_invalid_data) ... ok
+test_invalid_initial_and_budget (test_continuous.Training.test_invalid_initial_and_budget) ... ok
+test_minibatch_average_is_full_gradient (test_continuous.Training.test_minibatch_average_is_full_gradient) ... ok
+test_newton_and_gn_reach_known_ridge_optimum (test_continuous.Training.test_newton_and_gn_reach_known_ridge_optimum) ... ok
+test_seeded_training_reproducibility (test_continuous.Training.test_seeded_training_reproducibility) ... ok
+test_adagrad (test_continuous.Updates.test_adagrad) ... ok
+test_adam_bias_correction (test_continuous.Updates.test_adam_bias_correction) ... ok
+test_gradient_descent (test_continuous.Updates.test_gradient_descent) ... ok
+test_invalid_learning_rate (test_continuous.Updates.test_invalid_learning_rate) ... ok
+test_momentum (test_continuous.Updates.test_momentum) ... ok
+test_nesterov (test_continuous.Updates.test_nesterov) ... ok
+test_rmsprop (test_continuous.Updates.test_rmsprop) ... ok
+test_sgd_matches_gd_on_one_sample (test_continuous.Updates.test_sgd_matches_gd_on_one_sample) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.313s
+
+OK

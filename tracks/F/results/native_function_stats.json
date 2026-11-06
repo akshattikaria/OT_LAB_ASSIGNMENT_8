@@ -1,0 +1,3202 @@
+[
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 1465,
+    "static_disassembly_instructions": 225
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1327,
+    "static_disassembly_instructions": 196
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1065,
+    "static_disassembly_instructions": 178
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 1465,
+    "static_disassembly_instructions": 225
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 1570,
+    "static_disassembly_instructions": 250
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 769,
+    "static_disassembly_instructions": 139
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 780,
+    "static_disassembly_instructions": 140
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 758,
+    "static_disassembly_instructions": 138
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 1921,
+    "static_disassembly_instructions": 289
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1739,
+    "static_disassembly_instructions": 252
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1389,
+    "static_disassembly_instructions": 226
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 1921,
+    "static_disassembly_instructions": 289
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2050,
+    "static_disassembly_instructions": 319
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 1005,
+    "static_disassembly_instructions": 175
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1016,
+    "static_disassembly_instructions": 176
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 994,
+    "static_disassembly_instructions": 174
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2377,
+    "static_disassembly_instructions": 353
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2151,
+    "static_disassembly_instructions": 308
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1713,
+    "static_disassembly_instructions": 274
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 2377,
+    "static_disassembly_instructions": 353
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2503,
+    "static_disassembly_instructions": 383
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 1241,
+    "static_disassembly_instructions": 211
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1252,
+    "static_disassembly_instructions": 212
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 1230,
+    "static_disassembly_instructions": 210
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 32,
+    "static_disassembly_instructions": 8
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 35,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 1465,
+    "static_disassembly_instructions": 225
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1327,
+    "static_disassembly_instructions": 196
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1065,
+    "static_disassembly_instructions": 178
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 1465,
+    "static_disassembly_instructions": 225
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 1570,
+    "static_disassembly_instructions": 250
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 769,
+    "static_disassembly_instructions": 139
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 780,
+    "static_disassembly_instructions": 140
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 758,
+    "static_disassembly_instructions": 138
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 1921,
+    "static_disassembly_instructions": 289
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1739,
+    "static_disassembly_instructions": 252
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1389,
+    "static_disassembly_instructions": 226
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 1921,
+    "static_disassembly_instructions": 289
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2050,
+    "static_disassembly_instructions": 319
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 1005,
+    "static_disassembly_instructions": 175
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1016,
+    "static_disassembly_instructions": 176
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 994,
+    "static_disassembly_instructions": 174
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 28,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 1938,
+    "static_disassembly_instructions": 307
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1938,
+    "static_disassembly_instructions": 307
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 624,
+    "static_disassembly_instructions": 123
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 1938,
+    "static_disassembly_instructions": 307
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2451,
+    "static_disassembly_instructions": 427
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 634,
+    "static_disassembly_instructions": 127
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 634,
+    "static_disassembly_instructions": 127
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 634,
+    "static_disassembly_instructions": 127
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2586,
+    "static_disassembly_instructions": 403
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2586,
+    "static_disassembly_instructions": 403
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 819,
+    "static_disassembly_instructions": 155
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 2586,
+    "static_disassembly_instructions": 403
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3267,
+    "static_disassembly_instructions": 563
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 829,
+    "static_disassembly_instructions": 159
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 829,
+    "static_disassembly_instructions": 159
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 829,
+    "static_disassembly_instructions": 159
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 3234,
+    "static_disassembly_instructions": 499
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 3234,
+    "static_disassembly_instructions": 499
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1011,
+    "static_disassembly_instructions": 187
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 3234,
+    "static_disassembly_instructions": 499
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 4083,
+    "static_disassembly_instructions": 699
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 1021,
+    "static_disassembly_instructions": 191
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1021,
+    "static_disassembly_instructions": 191
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 1021,
+    "static_disassembly_instructions": 191
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 1938,
+    "static_disassembly_instructions": 307
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1938,
+    "static_disassembly_instructions": 307
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 624,
+    "static_disassembly_instructions": 123
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 1938,
+    "static_disassembly_instructions": 307
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2451,
+    "static_disassembly_instructions": 427
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 634,
+    "static_disassembly_instructions": 127
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 634,
+    "static_disassembly_instructions": 127
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 634,
+    "static_disassembly_instructions": 127
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2586,
+    "static_disassembly_instructions": 403
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2586,
+    "static_disassembly_instructions": 403
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 819,
+    "static_disassembly_instructions": 155
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 2586,
+    "static_disassembly_instructions": 403
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3267,
+    "static_disassembly_instructions": 563
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 829,
+    "static_disassembly_instructions": 159
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 829,
+    "static_disassembly_instructions": 159
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 829,
+    "static_disassembly_instructions": 159
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 20,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2097,
+    "static_disassembly_instructions": 322
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1977,
+    "static_disassembly_instructions": 298
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1562,
+    "static_disassembly_instructions": 254
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2355,
+    "static_disassembly_instructions": 382
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2789,
+    "static_disassembly_instructions": 422
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2625,
+    "static_disassembly_instructions": 390
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 2070,
+    "static_disassembly_instructions": 330
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3131,
+    "static_disassembly_instructions": 502
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 3481,
+    "static_disassembly_instructions": 522
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 3273,
+    "static_disassembly_instructions": 482
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 2578,
+    "static_disassembly_instructions": 406
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 492,
+    "static_disassembly_instructions": 102
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3907,
+    "static_disassembly_instructions": 622
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 492,
+    "static_disassembly_instructions": 102
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 492,
+    "static_disassembly_instructions": 102
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 492,
+    "static_disassembly_instructions": 102
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 24,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2097,
+    "static_disassembly_instructions": 322
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 1977,
+    "static_disassembly_instructions": 298
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1562,
+    "static_disassembly_instructions": 254
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 2355,
+    "static_disassembly_instructions": 382
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 267,
+    "static_disassembly_instructions": 70
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2789,
+    "static_disassembly_instructions": 422
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2625,
+    "static_disassembly_instructions": 390
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 2070,
+    "static_disassembly_instructions": 330
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3131,
+    "static_disassembly_instructions": 502
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 396,
+    "static_disassembly_instructions": 86
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 7
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2918,
+    "static_disassembly_instructions": 444
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2603,
+    "static_disassembly_instructions": 391
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1690,
+    "static_disassembly_instructions": 270
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 2270,
+    "static_disassembly_instructions": 360
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3236,
+    "static_disassembly_instructions": 519
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 766,
+    "static_disassembly_instructions": 151
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 892,
+    "static_disassembly_instructions": 166
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 766,
+    "static_disassembly_instructions": 151
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 31,
+    "static_disassembly_instructions": 9
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 55,
+    "static_disassembly_instructions": 15
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 33,
+    "static_disassembly_instructions": 10
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 33,
+    "static_disassembly_instructions": 10
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 33,
+    "static_disassembly_instructions": 10
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 33,
+    "static_disassembly_instructions": 10
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 58,
+    "static_disassembly_instructions": 17
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 68,
+    "static_disassembly_instructions": 19
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 68,
+    "static_disassembly_instructions": 19
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 68,
+    "static_disassembly_instructions": 19
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 3878,
+    "static_disassembly_instructions": 584
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 3467,
+    "static_disassembly_instructions": 515
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 2164,
+    "static_disassembly_instructions": 342
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 3014,
+    "static_disassembly_instructions": 472
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 4301,
+    "static_disassembly_instructions": 684
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 958,
+    "static_disassembly_instructions": 183
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1078,
+    "static_disassembly_instructions": 198
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 958,
+    "static_disassembly_instructions": 183
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 4838,
+    "static_disassembly_instructions": 724
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 4265,
+    "static_disassembly_instructions": 630
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 2668,
+    "static_disassembly_instructions": 418
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 3758,
+    "static_disassembly_instructions": 584
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 5345,
+    "static_disassembly_instructions": 844
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 1150,
+    "static_disassembly_instructions": 215
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1270,
+    "static_disassembly_instructions": 230
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 1150,
+    "static_disassembly_instructions": 215
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 60,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 77,
+    "static_disassembly_instructions": 20
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 77,
+    "static_disassembly_instructions": 20
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 77,
+    "static_disassembly_instructions": 20
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 2918,
+    "static_disassembly_instructions": 444
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 2562,
+    "static_disassembly_instructions": 385
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 1693,
+    "static_disassembly_instructions": 270
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 2270,
+    "static_disassembly_instructions": 360
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 3236,
+    "static_disassembly_instructions": 519
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 763,
+    "static_disassembly_instructions": 151
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 889,
+    "static_disassembly_instructions": 166
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 763,
+    "static_disassembly_instructions": 151
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 3878,
+    "static_disassembly_instructions": 584
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 3445,
+    "static_disassembly_instructions": 512
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 2158,
+    "static_disassembly_instructions": 342
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 3014,
+    "static_disassembly_instructions": 472
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 4301,
+    "static_disassembly_instructions": 684
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 955,
+    "static_disassembly_instructions": 183
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 1075,
+    "static_disassembly_instructions": 198
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O0",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 955,
+    "static_disassembly_instructions": 183
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "baseline",
+    "variant_index": 0,
+    "symbol": "toy_v0",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fold_only",
+    "variant_index": 1,
+    "symbol": "toy_v1",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "cse_only",
+    "variant_index": 2,
+    "symbol": "toy_v2",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dce_only",
+    "variant_index": 3,
+    "symbol": "toy_v3",
+    "machine_code_bytes": 23,
+    "static_disassembly_instructions": 6
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "strength_only",
+    "variant_index": 4,
+    "symbol": "toy_v4",
+    "machine_code_bytes": 59,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "fixed",
+    "variant_index": 5,
+    "symbol": "toy_v5",
+    "machine_code_bytes": 55,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "greedy_order",
+    "variant_index": 6,
+    "symbol": "toy_v6",
+    "machine_code_bytes": 55,
+    "static_disassembly_instructions": 16
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "level": "O2",
+    "variant": "dp_order",
+    "variant_index": 7,
+    "symbol": "toy_v7",
+    "machine_code_bytes": 55,
+    "static_disassembly_instructions": 16
+  }
+]

@@ -1,0 +1,24 @@
+................................................................ [ 86%]
+...F......                                                               [100%]
+=================================== FAILURES ===================================
+___________________ TTLCacheTest.test_getsizeof_replace_grow ___________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_getsizeof_replace_grow>
+
+    def test_getsizeof_replace_grow(self):
+        cache = self.Cache(maxsize=10, getsizeof=lambda x: x)
+    
+        cache[3] = 3
+        cache[4] = 4
+        self.assertEqual(2, len(cache))
+        self.assertEqual(7, cache.currsize)
+    
+        # growing an existing entry must only reserve the additional size
+        cache[4] = 7
+>       self.assertEqual(2, len(cache))
+E       AssertionError: 2 != 1
+
+tests/__init__.py:354: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ttl.py::TTLCacheTest::test_getsizeof_replace_grow - Asserti...
+1 failed, 73 passed, 8 subtests passed in 0.30s

@@ -1,0 +1,163 @@
+1. Baseline per-test coverage
+   391 tests, 1005 per-test source lines
+2. Uninstrumented cost profiles and independent cProfile
+3. Count greedy, weighted greedy and binary ILP
+   full: 391 tests, 425695 us model cost
+   count_greedy: 80 tests, 74171 us model cost
+   weighted_greedy: 79 tests, 66322 us model cost
+   ilp: 74 tests, 65158 us model cost
+4. Interleaved fresh-process timings (no tracing)
+5. Seeded mutation challenge (selection is already frozen)
+   M01: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=survived
+   M02: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M03: full=killed, count_greedy=killed, weighted_greedy=survived, ilp=killed
+   M04: full=survived, count_greedy=survived, weighted_greedy=survived, ilp=survived
+   M05: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M06: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M07: full=survived, count_greedy=survived, weighted_greedy=survived, ilp=survived
+   M08: full=killed, count_greedy=survived, weighted_greedy=survived, ilp=survived
+   M09: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M10: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M11: full=survived, count_greedy=survived, weighted_greedy=survived, ilp=survived
+   M12: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M13: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M14: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M15: full=killed, count_greedy=survived, weighted_greedy=survived, ilp=survived
+   M16: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M17: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M18: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M19: full=killed, count_greedy=killed, weighted_greedy=killed, ilp=killed
+   M20: full=timeout, count_greedy=timeout, weighted_greedy=timeout, ilp=timeout
+{
+  "full": {
+    "tests": 391,
+    "modeled_cost_us": 425695,
+    "wall_median_s": 1.195511599,
+    "wall_min_s": 1.006227912,
+    "wall_max_s": 1.61350234,
+    "pytest_median_s": 0.794205934,
+    "wall_speedup": 1.0,
+    "wall_reduction_pct": 0.0,
+    "line_universe": 1005,
+    "line_universe_preserved": true,
+    "statement_covered": 1179,
+    "statement_total": 1185,
+    "branch_covered": 214,
+    "branch_total": 214,
+    "branches_lost_vs_full": 0,
+    "mutants_killed": 16,
+    "full_killed_retained": 16,
+    "full_killed_total": 16,
+    "paired_valid_full_killed": 16,
+    "missed_full_killed": [],
+    "timeouts": 1,
+    "invalid": 0,
+    "selection_s": 0.0,
+    "selection_only_break_even_runs": null,
+    "profiling_plus_selection_s": 8.263183605,
+    "profiling_plus_selection_break_even_runs": null,
+    "validated_setup_s": 8.263183605,
+    "validated_setup_break_even_runs": null
+  },
+  "count_greedy": {
+    "tests": 80,
+    "modeled_cost_us": 74171,
+    "wall_median_s": 0.673399905,
+    "wall_min_s": 0.562989086,
+    "wall_max_s": 1.24616416,
+    "pytest_median_s": 0.331224837,
+    "wall_speedup": 1.7753367503073822,
+    "wall_reduction_pct": 43.67265816883137,
+    "line_universe": 1005,
+    "line_universe_preserved": true,
+    "statement_covered": 1179,
+    "statement_total": 1185,
+    "branch_covered": 210,
+    "branch_total": 214,
+    "branches_lost_vs_full": 4,
+    "mutants_killed": 14,
+    "full_killed_retained": 14,
+    "full_killed_total": 16,
+    "paired_valid_full_killed": 16,
+    "missed_full_killed": [
+      "M08",
+      "M15"
+    ],
+    "timeouts": 1,
+    "invalid": 0,
+    "selection_s": 0.1176812189996781,
+    "selection_only_break_even_runs": 1,
+    "profiling_plus_selection_s": 8.380864823999678,
+    "profiling_plus_selection_break_even_runs": 17,
+    "validated_setup_s": 10.490540932999679,
+    "validated_setup_break_even_runs": 21
+  },
+  "weighted_greedy": {
+    "tests": 79,
+    "modeled_cost_us": 66322,
+    "wall_median_s": 0.663623186,
+    "wall_min_s": 0.575393596,
+    "wall_max_s": 0.737081715,
+    "pytest_median_s": 0.379140564,
+    "wall_speedup": 1.8014916058101682,
+    "wall_reduction_pct": 44.490443542739726,
+    "line_universe": 1005,
+    "line_universe_preserved": true,
+    "statement_covered": 1179,
+    "statement_total": 1185,
+    "branch_covered": 209,
+    "branch_total": 214,
+    "branches_lost_vs_full": 5,
+    "mutants_killed": 13,
+    "full_killed_retained": 13,
+    "full_killed_total": 16,
+    "paired_valid_full_killed": 16,
+    "missed_full_killed": [
+      "M03",
+      "M08",
+      "M15"
+    ],
+    "timeouts": 1,
+    "invalid": 0,
+    "selection_s": 0.1689861180002481,
+    "selection_only_break_even_runs": 1,
+    "profiling_plus_selection_s": 8.432169723000248,
+    "profiling_plus_selection_break_even_runs": 16,
+    "validated_setup_s": 9.713586998000249,
+    "validated_setup_break_even_runs": 19
+  },
+  "ilp": {
+    "tests": 74,
+    "modeled_cost_us": 65158,
+    "wall_median_s": 0.699448642,
+    "wall_min_s": 0.58412248,
+    "wall_max_s": 0.780834191,
+    "pytest_median_s": 0.359230311,
+    "wall_speedup": 1.7092199873053724,
+    "wall_reduction_pct": 41.493780354363594,
+    "line_universe": 1005,
+    "line_universe_preserved": true,
+    "statement_covered": 1179,
+    "statement_total": 1185,
+    "branch_covered": 208,
+    "branch_total": 214,
+    "branches_lost_vs_full": 6,
+    "mutants_killed": 13,
+    "full_killed_retained": 13,
+    "full_killed_total": 16,
+    "paired_valid_full_killed": 16,
+    "missed_full_killed": [
+      "M01",
+      "M08",
+      "M15"
+    ],
+    "timeouts": 1,
+    "invalid": 0,
+    "selection_s": 0.03218538700002682,
+    "selection_only_break_even_runs": 1,
+    "profiling_plus_selection_s": 8.295368992000027,
+    "profiling_plus_selection_break_even_runs": 17,
+    "validated_setup_s": 9.660434955000026,
+    "validated_setup_break_even_runs": 20
+  }
+}

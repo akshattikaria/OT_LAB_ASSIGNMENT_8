@@ -1,0 +1,598 @@
+{
+  "params": [
+    "x",
+    "y",
+    "z"
+  ],
+  "code": [
+    {
+      "dest": 0,
+      "op": "arg",
+      "args": [],
+      "value": 0
+    },
+    {
+      "dest": 1,
+      "op": "arg",
+      "args": [],
+      "value": 1
+    },
+    {
+      "dest": 2,
+      "op": "arg",
+      "args": [],
+      "value": 2
+    },
+    {
+      "dest": 3,
+      "op": "const",
+      "args": [],
+      "value": 2
+    },
+    {
+      "dest": 4,
+      "op": "const",
+      "args": [],
+      "value": 4
+    },
+    {
+      "dest": 5,
+      "op": "mul",
+      "args": [
+        3,
+        4
+      ],
+      "value": null
+    },
+    {
+      "dest": 6,
+      "op": "const",
+      "args": [],
+      "value": 0
+    },
+    {
+      "dest": 7,
+      "op": "add",
+      "args": [
+        5,
+        6
+      ],
+      "value": null
+    },
+    {
+      "dest": 8,
+      "op": "add",
+      "args": [
+        0,
+        1
+      ],
+      "value": null
+    },
+    {
+      "dest": 9,
+      "op": "mul",
+      "args": [
+        2,
+        7
+      ],
+      "value": null
+    },
+    {
+      "dest": 10,
+      "op": "add",
+      "args": [
+        8,
+        9
+      ],
+      "value": null
+    },
+    {
+      "dest": 11,
+      "op": "const",
+      "args": [],
+      "value": 1
+    },
+    {
+      "dest": 12,
+      "op": "const",
+      "args": [],
+      "value": 3
+    },
+    {
+      "dest": 13,
+      "op": "mul",
+      "args": [
+        11,
+        12
+      ],
+      "value": null
+    },
+    {
+      "dest": 14,
+      "op": "add",
+      "args": [
+        10,
+        13
+      ],
+      "value": null
+    },
+    {
+      "dest": 15,
+      "op": "add",
+      "args": [
+        9,
+        14
+      ],
+      "value": null
+    },
+    {
+      "dest": 16,
+      "op": "mul",
+      "args": [
+        3,
+        12
+      ],
+      "value": null
+    },
+    {
+      "dest": 17,
+      "op": "add",
+      "args": [
+        15,
+        16
+      ],
+      "value": null
+    },
+    {
+      "dest": 18,
+      "op": "add",
+      "args": [
+        9,
+        17
+      ],
+      "value": null
+    },
+    {
+      "dest": 19,
+      "op": "mul",
+      "args": [
+        12,
+        12
+      ],
+      "value": null
+    },
+    {
+      "dest": 20,
+      "op": "add",
+      "args": [
+        18,
+        19
+      ],
+      "value": null
+    },
+    {
+      "dest": 21,
+      "op": "add",
+      "args": [
+        9,
+        20
+      ],
+      "value": null
+    },
+    {
+      "dest": 22,
+      "op": "mul",
+      "args": [
+        4,
+        12
+      ],
+      "value": null
+    },
+    {
+      "dest": 23,
+      "op": "add",
+      "args": [
+        21,
+        22
+      ],
+      "value": null
+    },
+    {
+      "dest": 24,
+      "op": "add",
+      "args": [
+        9,
+        23
+      ],
+      "value": null
+    },
+    {
+      "dest": 25,
+      "op": "const",
+      "args": [],
+      "value": 5
+    },
+    {
+      "dest": 26,
+      "op": "mul",
+      "args": [
+        12,
+        25
+      ],
+      "value": null
+    },
+    {
+      "dest": 27,
+      "op": "add",
+      "args": [
+        24,
+        26
+      ],
+      "value": null
+    },
+    {
+      "dest": 28,
+      "op": "add",
+      "args": [
+        9,
+        27
+      ],
+      "value": null
+    },
+    {
+      "dest": 29,
+      "op": "const",
+      "args": [],
+      "value": 6
+    },
+    {
+      "dest": 30,
+      "op": "mul",
+      "args": [
+        12,
+        29
+      ],
+      "value": null
+    },
+    {
+      "dest": 31,
+      "op": "add",
+      "args": [
+        28,
+        30
+      ],
+      "value": null
+    },
+    {
+      "dest": 32,
+      "op": "add",
+      "args": [
+        9,
+        31
+      ],
+      "value": null
+    },
+    {
+      "dest": 33,
+      "op": "const",
+      "args": [],
+      "value": 7
+    },
+    {
+      "dest": 34,
+      "op": "mul",
+      "args": [
+        12,
+        33
+      ],
+      "value": null
+    },
+    {
+      "dest": 35,
+      "op": "add",
+      "args": [
+        32,
+        34
+      ],
+      "value": null
+    },
+    {
+      "dest": 36,
+      "op": "add",
+      "args": [
+        9,
+        35
+      ],
+      "value": null
+    },
+    {
+      "dest": 37,
+      "op": "const",
+      "args": [],
+      "value": 8
+    },
+    {
+      "dest": 38,
+      "op": "mul",
+      "args": [
+        12,
+        37
+      ],
+      "value": null
+    },
+    {
+      "dest": 39,
+      "op": "add",
+      "args": [
+        36,
+        38
+      ],
+      "value": null
+    },
+    {
+      "dest": 40,
+      "op": "add",
+      "args": [
+        9,
+        39
+      ],
+      "value": null
+    },
+    {
+      "dest": 41,
+      "op": "const",
+      "args": [],
+      "value": 9
+    },
+    {
+      "dest": 42,
+      "op": "mul",
+      "args": [
+        12,
+        41
+      ],
+      "value": null
+    },
+    {
+      "dest": 43,
+      "op": "add",
+      "args": [
+        40,
+        42
+      ],
+      "value": null
+    },
+    {
+      "dest": 44,
+      "op": "add",
+      "args": [
+        9,
+        43
+      ],
+      "value": null
+    },
+    {
+      "dest": 45,
+      "op": "const",
+      "args": [],
+      "value": 10
+    },
+    {
+      "dest": 46,
+      "op": "mul",
+      "args": [
+        12,
+        45
+      ],
+      "value": null
+    },
+    {
+      "dest": 47,
+      "op": "add",
+      "args": [
+        44,
+        46
+      ],
+      "value": null
+    },
+    {
+      "dest": 48,
+      "op": "add",
+      "args": [
+        9,
+        47
+      ],
+      "value": null
+    },
+    {
+      "dest": 49,
+      "op": "const",
+      "args": [],
+      "value": 11
+    },
+    {
+      "dest": 50,
+      "op": "mul",
+      "args": [
+        12,
+        49
+      ],
+      "value": null
+    },
+    {
+      "dest": 51,
+      "op": "add",
+      "args": [
+        48,
+        50
+      ],
+      "value": null
+    },
+    {
+      "dest": 52,
+      "op": "add",
+      "args": [
+        9,
+        51
+      ],
+      "value": null
+    },
+    {
+      "dest": 53,
+      "op": "const",
+      "args": [],
+      "value": 12
+    },
+    {
+      "dest": 54,
+      "op": "mul",
+      "args": [
+        12,
+        53
+      ],
+      "value": null
+    },
+    {
+      "dest": 55,
+      "op": "add",
+      "args": [
+        52,
+        54
+      ],
+      "value": null
+    },
+    {
+      "dest": 56,
+      "op": "add",
+      "args": [
+        9,
+        55
+      ],
+      "value": null
+    },
+    {
+      "dest": 57,
+      "op": "const",
+      "args": [],
+      "value": 13
+    },
+    {
+      "dest": 58,
+      "op": "mul",
+      "args": [
+        12,
+        57
+      ],
+      "value": null
+    },
+    {
+      "dest": 59,
+      "op": "add",
+      "args": [
+        56,
+        58
+      ],
+      "value": null
+    },
+    {
+      "dest": 60,
+      "op": "add",
+      "args": [
+        9,
+        59
+      ],
+      "value": null
+    },
+    {
+      "dest": 61,
+      "op": "const",
+      "args": [],
+      "value": 14
+    },
+    {
+      "dest": 62,
+      "op": "mul",
+      "args": [
+        12,
+        61
+      ],
+      "value": null
+    },
+    {
+      "dest": 63,
+      "op": "add",
+      "args": [
+        60,
+        62
+      ],
+      "value": null
+    },
+    {
+      "dest": 64,
+      "op": "add",
+      "args": [
+        9,
+        63
+      ],
+      "value": null
+    },
+    {
+      "dest": 65,
+      "op": "const",
+      "args": [],
+      "value": 15
+    },
+    {
+      "dest": 66,
+      "op": "mul",
+      "args": [
+        12,
+        65
+      ],
+      "value": null
+    },
+    {
+      "dest": 67,
+      "op": "add",
+      "args": [
+        64,
+        66
+      ],
+      "value": null
+    },
+    {
+      "dest": 68,
+      "op": "add",
+      "args": [
+        9,
+        67
+      ],
+      "value": null
+    },
+    {
+      "dest": 69,
+      "op": "const",
+      "args": [],
+      "value": 16
+    },
+    {
+      "dest": 70,
+      "op": "mul",
+      "args": [
+        12,
+        69
+      ],
+      "value": null
+    },
+    {
+      "dest": 71,
+      "op": "add",
+      "args": [
+        68,
+        70
+      ],
+      "value": null
+    }
+  ],
+  "result": 71
+}

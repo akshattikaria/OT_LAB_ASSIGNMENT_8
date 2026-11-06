@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "upstream_files_verified": 38,
+  "baseline_tests": 391,
+  "baseline_test_lines": 1005,
+  "coverage_sqlite_matrices_verified": 4,
+  "timing_trials": 28,
+  "mutation_trials": 80,
+  "ilp_optimal_for_static_model": true,
+  "fresh_replay": {
+    "full": {
+      "tests": 391,
+      "passed": 391
+    },
+    "count_greedy": {
+      "tests": 80,
+      "passed": 80
+    },
+    "weighted_greedy": {
+      "tests": 79,
+      "passed": 79
+    },
+    "ilp": {
+      "tests": 74,
+      "passed": 74
+    }
+  },
+  "scope": "Saved evidence consistency and optional pristine-suite replay. No claim of universal correctness or independent reproduction of historical timings."
+}

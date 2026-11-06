@@ -1,0 +1,7 @@
+Write a self-contained Python 3.12 function solve_knapsack(weights, values, capacity), using dynamic programming without third-party libraries.
+
+Return a dictionary with keys value, weight and indices. Indices must be a sorted zero-based list. Each item may be used at most once; total weight must not exceed capacity. Maximize total value, then minimize total weight, then choose lexicographically smallest indices among remaining ties.
+
+Inputs weights and values are lists or tuples of equal length. Weights are positive Python integers; values are nonnegative Python integers. Capacity is a nonnegative Python integer. Booleans, floats, negative capacity, nonpositive weights, negative values and mismatched lengths must raise ValueError. Handle empty inputs, zero capacity and no item fitting. Do not modify inputs. Valid benchmark calls have at most 50 items and capacity <= 10000.
+
+Return only one Python code block containing the implementation and required standard-library imports. No unseen-benchmark claims or external services.

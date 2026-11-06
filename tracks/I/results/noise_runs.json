@@ -1,0 +1,935 @@
+[
+  {
+    "program": "bv",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.0066436470006010495,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "9c899cbb8865798e7e2a8666470d2b4b4c1fe438f24440cdd9ff8c38c00a32fd",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "bv",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "110": 22,
+      "010": 5,
+      "000": 61,
+      "011": 7,
+      "111": 157,
+      "001": 158,
+      "100": 160,
+      "101": 3526
+    },
+    "success_count": 3526,
+    "success_probability": 0.86083984375,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.09302587700040021,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "9c899cbb8865798e7e2a8666470d2b4b4c1fe438f24440cdd9ff8c38c00a32fd",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "bv",
+    "seed": 1,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.005289219000587764,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "9c899cbb8865798e7e2a8666470d2b4b4c1fe438f24440cdd9ff8c38c00a32fd",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "bv",
+    "seed": 1,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "010": 4,
+      "000": 72,
+      "100": 189,
+      "110": 26,
+      "011": 10,
+      "111": 162,
+      "101": 3492,
+      "001": 141
+    },
+    "success_count": 3492,
+    "success_probability": 0.8525390625,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.09306838500015147,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "9c899cbb8865798e7e2a8666470d2b4b4c1fe438f24440cdd9ff8c38c00a32fd",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "bv",
+    "seed": 2,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.006338242000310856,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "9c899cbb8865798e7e2a8666470d2b4b4c1fe438f24440cdd9ff8c38c00a32fd",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "bv",
+    "seed": 2,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "010": 7,
+      "000": 84,
+      "011": 8,
+      "111": 172,
+      "100": 133,
+      "110": 36,
+      "001": 148,
+      "101": 3508
+    },
+    "success_count": 3508,
+    "success_probability": 0.8564453125,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.08195103799971548,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "9c899cbb8865798e7e2a8666470d2b4b4c1fe438f24440cdd9ff8c38c00a32fd",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.00700471500022104,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "110": 379,
+      "000": 421,
+      "010": 379,
+      "101": 1031,
+      "011": 432,
+      "111": 560,
+      "100": 410,
+      "001": 484
+    },
+    "success_count": 3675,
+    "success_probability": 0.897216796875,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.10883066800033703,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 1,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.007811248000507476,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 1,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "001": 540,
+      "110": 372,
+      "100": 410,
+      "011": 432,
+      "111": 551,
+      "101": 1055,
+      "010": 370,
+      "000": 366
+    },
+    "success_count": 3730,
+    "success_probability": 0.91064453125,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.22776269699988916,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 2,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.007243208999170747,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 2,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "110": 318,
+      "100": 429,
+      "010": 387,
+      "000": 407,
+      "101": 1059,
+      "011": 454,
+      "111": 518,
+      "001": 524
+    },
+    "success_count": 3689,
+    "success_probability": 0.900634765625,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.08722358999966673,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 25,
+      "100": 33,
+      "001": 26,
+      "000": 33,
+      "010": 26,
+      "110": 36,
+      "111": 39,
+      "011": 3878
+    },
+    "success_count": 3878,
+    "success_probability": 0.94677734375,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.008287869999549002,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "9f943152bcf937d5d3046223e1bd9d9bf2d3309a85f2c32dc0aac1a558d4e83a",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "101": 263,
+      "100": 242,
+      "001": 521,
+      "111": 362,
+      "011": 1947,
+      "010": 286,
+      "000": 238,
+      "110": 237
+    },
+    "success_count": 1947,
+    "success_probability": 0.475341796875,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.08907701699990866,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "9f943152bcf937d5d3046223e1bd9d9bf2d3309a85f2c32dc0aac1a558d4e83a",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 1,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "101": 31,
+      "110": 27,
+      "100": 30,
+      "001": 26,
+      "111": 44,
+      "011": 3873,
+      "000": 35,
+      "010": 30
+    },
+    "success_count": 3873,
+    "success_probability": 0.945556640625,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.006317260000287206,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "9f943152bcf937d5d3046223e1bd9d9bf2d3309a85f2c32dc0aac1a558d4e83a",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 1,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "110": 234,
+      "101": 247,
+      "001": 475,
+      "100": 234,
+      "111": 379,
+      "011": 1943,
+      "010": 338,
+      "000": 246
+    },
+    "success_count": 1943,
+    "success_probability": 0.474365234375,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.08992585099986172,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "9f943152bcf937d5d3046223e1bd9d9bf2d3309a85f2c32dc0aac1a558d4e83a",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 2,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "100": 26,
+      "001": 38,
+      "000": 40,
+      "010": 23,
+      "101": 40,
+      "110": 29,
+      "111": 21,
+      "011": 3879
+    },
+    "success_count": 3879,
+    "success_probability": 0.947021484375,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.005407044999628852,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "9f943152bcf937d5d3046223e1bd9d9bf2d3309a85f2c32dc0aac1a558d4e83a",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 2,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "100": 193,
+      "110": 261,
+      "101": 289,
+      "001": 528,
+      "011": 1845,
+      "111": 395,
+      "000": 254,
+      "010": 331
+    },
+    "success_count": 1845,
+    "success_probability": 0.450439453125,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.08470129099987389,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "9f943152bcf937d5d3046223e1bd9d9bf2d3309a85f2c32dc0aac1a558d4e83a",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "011": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.00532231800025329,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "913691bd299b381d1a534685a2baa96ef92ea3e0b8293eade62cd5d4bfd5ba4f",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "100": 175,
+      "110": 152,
+      "000": 144,
+      "010": 272,
+      "101": 162,
+      "001": 196,
+      "111": 548,
+      "011": 2447
+    },
+    "success_count": 2447,
+    "success_probability": 0.597412109375,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.11352052500024001,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "913691bd299b381d1a534685a2baa96ef92ea3e0b8293eade62cd5d4bfd5ba4f",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 1,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "011": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.00818583500040404,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "913691bd299b381d1a534685a2baa96ef92ea3e0b8293eade62cd5d4bfd5ba4f",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 1,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "100": 184,
+      "110": 143,
+      "101": 138,
+      "001": 190,
+      "111": 580,
+      "011": 2490,
+      "010": 221,
+      "000": 150
+    },
+    "success_count": 2490,
+    "success_probability": 0.60791015625,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.12457742100014002,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "913691bd299b381d1a534685a2baa96ef92ea3e0b8293eade62cd5d4bfd5ba4f",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 2,
+    "condition": "ideal",
+    "shots": 4096,
+    "counts": {
+      "011": 4096
+    },
+    "success_count": 4096,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.006109363999712514,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "913691bd299b381d1a534685a2baa96ef92ea3e0b8293eade62cd5d4bfd5ba4f",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 2,
+    "condition": "calibrated",
+    "shots": 4096,
+    "counts": {
+      "101": 132,
+      "110": 144,
+      "001": 184,
+      "100": 168,
+      "000": 159,
+      "010": 252,
+      "111": 588,
+      "011": 2469
+    },
+    "success_count": 2469,
+    "success_probability": 0.602783203125,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.11002327899950615,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "913691bd299b381d1a534685a2baa96ef92ea3e0b8293eade62cd5d4bfd5ba4f",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  }
+]

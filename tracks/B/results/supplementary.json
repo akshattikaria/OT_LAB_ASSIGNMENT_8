@@ -1,0 +1,5770 @@
+{
+  "quantum_exports": [
+    {
+      "name": "knapsack_6bit",
+      "variables": 6,
+      "minimum_energy": -6.0,
+      "ground_state_count": 1,
+      "state_count": 64,
+      "energy_identity_error": 0.0
+    },
+    {
+      "name": "maxcut_4bit",
+      "variables": 4,
+      "minimum_energy": -4.0,
+      "ground_state_count": 2,
+      "state_count": 16,
+      "energy_identity_error": 0.0
+    }
+  ],
+  "penalty_sweep": [
+    {
+      "penalty": 0,
+      "minimum_energy": -14.0,
+      "ground_state_count": 4,
+      "encoded_feasible_ground_states": 0,
+      "original_feasible_ground_states": 0,
+      "all_encoded_feasible": false,
+      "ground_states": [
+        {
+          "index": 15,
+          "bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "111100",
+          "statevector_label": "001111",
+          "energy": -14.0,
+          "ising_energy": -14.0,
+          "value": 14,
+          "weight": 8,
+          "slack": 0,
+          "constraint_residual": 5,
+          "original_feasible": false,
+          "encoded_feasible": false
+        },
+        {
+          "index": 31,
+          "bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "variable_order_bits": "111110",
+          "statevector_label": "011111",
+          "energy": -14.0,
+          "ising_energy": -14.0,
+          "value": 14,
+          "weight": 8,
+          "slack": 1,
+          "constraint_residual": 6,
+          "original_feasible": false,
+          "encoded_feasible": false
+        },
+        {
+          "index": 47,
+          "bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "variable_order_bits": "111101",
+          "statevector_label": "101111",
+          "energy": -14.0,
+          "ising_energy": -14.0,
+          "value": 14,
+          "weight": 8,
+          "slack": 2,
+          "constraint_residual": 7,
+          "original_feasible": false,
+          "encoded_feasible": false
+        },
+        {
+          "index": 63,
+          "bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "variable_order_bits": "111111",
+          "statevector_label": "111111",
+          "energy": -14.0,
+          "ising_energy": -14.0,
+          "value": 14,
+          "weight": 8,
+          "slack": 3,
+          "constraint_residual": 8,
+          "original_feasible": false,
+          "encoded_feasible": false
+        }
+      ]
+    },
+    {
+      "penalty": 0.1,
+      "minimum_energy": -11.5,
+      "ground_state_count": 1,
+      "encoded_feasible_ground_states": 0,
+      "original_feasible_ground_states": 0,
+      "all_encoded_feasible": false,
+      "ground_states": [
+        {
+          "index": 15,
+          "bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "111100",
+          "statevector_label": "001111",
+          "energy": -11.5,
+          "ising_energy": -11.5,
+          "value": 14,
+          "weight": 8,
+          "slack": 0,
+          "constraint_residual": 5,
+          "original_feasible": false,
+          "encoded_feasible": false
+        }
+      ]
+    },
+    {
+      "penalty": 0.5,
+      "minimum_energy": -7.0,
+      "ground_state_count": 2,
+      "encoded_feasible_ground_states": 0,
+      "original_feasible_ground_states": 0,
+      "all_encoded_feasible": false,
+      "ground_states": [
+        {
+          "index": 3,
+          "bits": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "variable_order_bits": "110000",
+          "statevector_label": "000011",
+          "energy": -7.0,
+          "ising_energy": -7.0,
+          "value": 9,
+          "weight": 5,
+          "slack": 0,
+          "constraint_residual": 2,
+          "original_feasible": false,
+          "encoded_feasible": false
+        },
+        {
+          "index": 14,
+          "bits": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "011100",
+          "statevector_label": "001110",
+          "energy": -7.0,
+          "ising_energy": -7.0,
+          "value": 9,
+          "weight": 5,
+          "slack": 0,
+          "constraint_residual": 2,
+          "original_feasible": false,
+          "encoded_feasible": false
+        }
+      ]
+    },
+    {
+      "penalty": 1,
+      "minimum_energy": -6.0,
+      "ground_state_count": 3,
+      "encoded_feasible_ground_states": 1,
+      "original_feasible_ground_states": 1,
+      "all_encoded_feasible": false,
+      "ground_states": [
+        {
+          "index": 6,
+          "bits": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "variable_order_bits": "011000",
+          "statevector_label": "000110",
+          "energy": -6.0,
+          "ising_energy": -6.0,
+          "value": 7,
+          "weight": 4,
+          "slack": 0,
+          "constraint_residual": 1,
+          "original_feasible": false,
+          "encoded_feasible": false
+        },
+        {
+          "index": 9,
+          "bits": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "100100",
+          "statevector_label": "001001",
+          "energy": -6.0,
+          "ising_energy": -6.0,
+          "value": 7,
+          "weight": 4,
+          "slack": 0,
+          "constraint_residual": 1,
+          "original_feasible": false,
+          "encoded_feasible": false
+        },
+        {
+          "index": 10,
+          "bits": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "010100",
+          "statevector_label": "001010",
+          "energy": -6.0,
+          "ising_energy": -6.0,
+          "value": 6,
+          "weight": 3,
+          "slack": 0,
+          "constraint_residual": 0,
+          "original_feasible": true,
+          "encoded_feasible": true
+        }
+      ]
+    },
+    {
+      "penalty": 3,
+      "minimum_energy": -6.0,
+      "ground_state_count": 1,
+      "encoded_feasible_ground_states": 1,
+      "original_feasible_ground_states": 1,
+      "all_encoded_feasible": true,
+      "ground_states": [
+        {
+          "index": 10,
+          "bits": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "010100",
+          "statevector_label": "001010",
+          "energy": -6.0,
+          "ising_energy": -6.0,
+          "value": 6,
+          "weight": 3,
+          "slack": 0,
+          "constraint_residual": 0,
+          "original_feasible": true,
+          "encoded_feasible": true
+        }
+      ]
+    },
+    {
+      "penalty": 15,
+      "minimum_energy": -6.0,
+      "ground_state_count": 1,
+      "encoded_feasible_ground_states": 1,
+      "original_feasible_ground_states": 1,
+      "all_encoded_feasible": true,
+      "ground_states": [
+        {
+          "index": 10,
+          "bits": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "variable_order_bits": "010100",
+          "statevector_label": "001010",
+          "energy": -6.0,
+          "ising_energy": -6.0,
+          "value": 6,
+          "weight": 3,
+          "slack": 0,
+          "constraint_residual": 0,
+          "original_feasible": true,
+          "encoded_feasible": true
+        }
+      ]
+    }
+  ],
+  "feature_selection": [
+    {
+      "method": "baseline",
+      "selected": [
+        0,
+        1,
+        2
+      ],
+      "theta": [
+        0.09047328401412115,
+        1.9142687707014923,
+        -1.5713442778444722,
+        0.1670269107969465
+      ],
+      "validation_mse": 0.617538189695098,
+      "test_mse": 0.7936913889554487,
+      "model_fits": 1,
+      "path": [],
+      "runtime_s": 0.0016982930000040142,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.617538189695098
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "method": "forward",
+      "selected": [
+        1,
+        3,
+        6
+      ],
+      "theta": [
+        -0.0496078191624005,
+        -1.5136984182453193,
+        2.3548185216319775,
+        0.6661498169323934
+      ],
+      "validation_mse": 0.28346082982598114,
+      "test_mse": 0.27207822599636267,
+      "model_fits": 21,
+      "path": [
+        [
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3,
+          6
+        ]
+      ],
+      "runtime_s": 0.0008933279999610022,
+      "candidate_scores": [
+        {
+          "subset": [
+            0
+          ],
+          "validation_mse": 2.61421817769304
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6103329075653494
+        },
+        {
+          "subset": [
+            0,
+            3
+          ],
+          "validation_mse": 2.5076168303523545
+        },
+        {
+          "subset": [
+            1
+          ],
+          "validation_mse": 4.718814082326059
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 0.7942280183796161
+        },
+        {
+          "subset": [
+            1,
+            3
+          ],
+          "validation_mse": 0.7760895712095133
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 0.7666632502439221
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.7809081940470013
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.28346082982598114
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.2892785737896569
+        },
+        {
+          "subset": [
+            2
+          ],
+          "validation_mse": 5.725993623805381
+        },
+        {
+          "subset": [
+            2,
+            3
+          ],
+          "validation_mse": 2.4520132208555863
+        },
+        {
+          "subset": [
+            3
+          ],
+          "validation_mse": 2.5135301670140513
+        },
+        {
+          "subset": [
+            3,
+            4
+          ],
+          "validation_mse": 0.831113529444383
+        },
+        {
+          "subset": [
+            3,
+            5
+          ],
+          "validation_mse": 2.5272424919308785
+        },
+        {
+          "subset": [
+            3,
+            6
+          ],
+          "validation_mse": 2.347773785741924
+        },
+        {
+          "subset": [
+            3,
+            7
+          ],
+          "validation_mse": 2.368976263317779
+        },
+        {
+          "subset": [
+            4
+          ],
+          "validation_mse": 4.7712697899772305
+        },
+        {
+          "subset": [
+            5
+          ],
+          "validation_mse": 5.750509458693169
+        },
+        {
+          "subset": [
+            6
+          ],
+          "validation_mse": 5.75942082220727
+        },
+        {
+          "subset": [
+            7
+          ],
+          "validation_mse": 5.755703759941963
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "method": "backward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.005863225791570487,
+        2.015347523244817,
+        -1.5031612324177992,
+        0.7902692771058275
+      ],
+      "validation_mse": 0.04359290732853647,
+      "test_mse": 0.03592927374260703,
+      "model_fits": 31,
+      "path": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.0015591130000984776,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 0.6311332894736568
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "validation_mse": 0.6275695057588684
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 0.6276367456571992
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.04334479462140947
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.044123786417304155
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 0.053780623481451045
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.04315841789644233
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.044051790033681364
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.04327055891627545
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.044114064051375586
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 0.04311184317138164
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.04364317480926341
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.04445984302403838
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 0.04346804505218542
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "validation_mse": 0.043404501874499166
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6103329075653494
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.0435085394308536
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.04412899934408386
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.04340026881680641
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.04335088939028868
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.04359290732853647
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.19920951362540434
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.20568673848062433
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.19971218159255597
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 2.4638163170791927
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 2.465072957678993
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.28330120040133255
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.28327844136188324
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.2822994170549218
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 0.28236375730066166
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.28346082982598114
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "method": "exhaustive",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.005863225791570487,
+        2.015347523244817,
+        -1.5031612324177992,
+        0.7902692771058275
+      ],
+      "validation_mse": 0.04359290732853647,
+      "test_mse": 0.03592927374260703,
+      "model_fits": 56,
+      "path": [],
+      "runtime_s": 0.0018705830000271817,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.617538189695098
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6103329075653494
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.5844555227735182
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.5957596560089
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.04359290732853647
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.053564003233152496
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3
+          ],
+          "validation_mse": 2.449152448313873
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4
+          ],
+          "validation_mse": 0.6508877974723859
+        },
+        {
+          "subset": [
+            0,
+            2,
+            5
+          ],
+          "validation_mse": 2.5645993936963922
+        },
+        {
+          "subset": [
+            0,
+            2,
+            6
+          ],
+          "validation_mse": 2.5003107304749648
+        },
+        {
+          "subset": [
+            0,
+            2,
+            7
+          ],
+          "validation_mse": 2.53966074994334
+        },
+        {
+          "subset": [
+            0,
+            3,
+            4
+          ],
+          "validation_mse": 0.6711354067343518
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5
+          ],
+          "validation_mse": 2.5180141156833686
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 2.465072957678993
+        },
+        {
+          "subset": [
+            0,
+            3,
+            7
+          ],
+          "validation_mse": 2.496781786941078
+        },
+        {
+          "subset": [
+            0,
+            4,
+            5
+          ],
+          "validation_mse": 0.646372588979434
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6
+          ],
+          "validation_mse": 0.1855043625877817
+        },
+        {
+          "subset": [
+            0,
+            4,
+            7
+          ],
+          "validation_mse": 0.19066006680576075
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6
+          ],
+          "validation_mse": 2.4991084708329483
+        },
+        {
+          "subset": [
+            0,
+            5,
+            7
+          ],
+          "validation_mse": 2.5257141532012364
+        },
+        {
+          "subset": [
+            0,
+            6,
+            7
+          ],
+          "validation_mse": 2.544443642503266
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 0.7942280183796161
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4
+          ],
+          "validation_mse": 4.722871734960837
+        },
+        {
+          "subset": [
+            1,
+            2,
+            5
+          ],
+          "validation_mse": 4.6888506657540425
+        },
+        {
+          "subset": [
+            1,
+            2,
+            6
+          ],
+          "validation_mse": 4.3741641043218165
+        },
+        {
+          "subset": [
+            1,
+            2,
+            7
+          ],
+          "validation_mse": 4.341381917824858
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 0.7666632502439221
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.7809081940470013
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.28346082982598114
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.2892785737896569
+        },
+        {
+          "subset": [
+            1,
+            4,
+            5
+          ],
+          "validation_mse": 4.648098300333909
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 4.375504959290612
+        },
+        {
+          "subset": [
+            1,
+            4,
+            7
+          ],
+          "validation_mse": 4.344085492437828
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 4.319080728517998
+        },
+        {
+          "subset": [
+            1,
+            5,
+            7
+          ],
+          "validation_mse": 4.28522147489073
+        },
+        {
+          "subset": [
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 4.314899140470262
+        },
+        {
+          "subset": [
+            2,
+            3,
+            4
+          ],
+          "validation_mse": 0.8301802973887565
+        },
+        {
+          "subset": [
+            2,
+            3,
+            5
+          ],
+          "validation_mse": 2.4638590433884464
+        },
+        {
+          "subset": [
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 2.3325920712050134
+        },
+        {
+          "subset": [
+            2,
+            3,
+            7
+          ],
+          "validation_mse": 2.3617966726700796
+        },
+        {
+          "subset": [
+            2,
+            4,
+            5
+          ],
+          "validation_mse": 4.692391790638191
+        },
+        {
+          "subset": [
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 4.490069781167721
+        },
+        {
+          "subset": [
+            2,
+            4,
+            7
+          ],
+          "validation_mse": 4.457770174638636
+        },
+        {
+          "subset": [
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 5.704673082960262
+        },
+        {
+          "subset": [
+            2,
+            5,
+            7
+          ],
+          "validation_mse": 5.707589371232963
+        },
+        {
+          "subset": [
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 5.750154740942229
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 0.8302269935173553
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.41151415151501336
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "validation_mse": 0.41290977184652405
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 2.350495906325406
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 2.368839966410786
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 2.38560732789084
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 4.40894077481372
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 4.374954120105379
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 4.408940289181645
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 5.689071541292559
+        }
+      ],
+      "seed": 0
+    },
+    {
+      "method": "baseline",
+      "selected": [
+        0,
+        1,
+        2
+      ],
+      "theta": [
+        0.048398311734339935,
+        2.0030959245078312,
+        -1.5282004967340468,
+        0.13225259842074344
+      ],
+      "validation_mse": 0.7549656746845357,
+      "test_mse": 0.6470366839652439,
+      "model_fits": 1,
+      "path": [],
+      "runtime_s": 0.00011300999995000893,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.7549656746845357
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "method": "forward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.02950469258542946,
+        2.0060181557288597,
+        -1.4889343719853425,
+        0.7994198528820073
+      ],
+      "validation_mse": 0.03855988539302796,
+      "test_mse": 0.0449783551731269,
+      "model_fits": 21,
+      "path": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.000928572000020722,
+      "candidate_scores": [
+        {
+          "subset": [
+            0
+          ],
+          "validation_mse": 3.466760717868058
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "validation_mse": 0.7093480231154843
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.7549656746845357
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.7105182660624116
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.7063213737888205
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.7070670125984035
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.03855988539302796
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.04081893496524678
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "validation_mse": 3.496513605078391
+        },
+        {
+          "subset": [
+            0,
+            3
+          ],
+          "validation_mse": 3.484579633099257
+        },
+        {
+          "subset": [
+            0,
+            4
+          ],
+          "validation_mse": 0.7722799826754736
+        },
+        {
+          "subset": [
+            0,
+            5
+          ],
+          "validation_mse": 3.4697847249342146
+        },
+        {
+          "subset": [
+            0,
+            6
+          ],
+          "validation_mse": 2.875634486500688
+        },
+        {
+          "subset": [
+            0,
+            7
+          ],
+          "validation_mse": 2.8578205099818614
+        },
+        {
+          "subset": [
+            1
+          ],
+          "validation_mse": 4.50625532487612
+        },
+        {
+          "subset": [
+            2
+          ],
+          "validation_mse": 6.459251985291939
+        },
+        {
+          "subset": [
+            3
+          ],
+          "validation_mse": 3.8026099034868377
+        },
+        {
+          "subset": [
+            4
+          ],
+          "validation_mse": 4.370465302483151
+        },
+        {
+          "subset": [
+            5
+          ],
+          "validation_mse": 6.47243825226997
+        },
+        {
+          "subset": [
+            6
+          ],
+          "validation_mse": 5.767885554591667
+        },
+        {
+          "subset": [
+            7
+          ],
+          "validation_mse": 5.7289268212596145
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "method": "backward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.02950469258542946,
+        2.0060181557288597,
+        -1.4889343719853425,
+        0.7994198528820073
+      ],
+      "validation_mse": 0.03855988539302796,
+      "test_mse": 0.0449783551731269,
+      "model_fits": 31,
+      "path": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.001371949999906974,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.03830781052880794
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03832220258827594
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 0.04127750654631974
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.03831311976593425
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.037928367554798295
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03802176597710479
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 0.040726752525776774
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 0.03800857882611829
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03918678538759876
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.038899215095958964
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.7105182660624116
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03848926991909245
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.7080422364852529
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.03765948819117054
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03780716219891693
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 0.040018226739340634
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.03756301458652918
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 0.03767916351737311
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 0.03867146061062115
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.038870413620901975
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.03855988539302796
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.1348790216433404
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 2.8339816520800936
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 2.869626989904748
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 2.853519835860659
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 2.8726848501460704
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.28037145123502794
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.28082524792284236
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.2815110877749596
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.2820789729000027
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.28149729328761447
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "method": "exhaustive",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.02950469258542946,
+        2.0060181557288597,
+        -1.4889343719853425,
+        0.7994198528820073
+      ],
+      "validation_mse": 0.03855988539302796,
+      "test_mse": 0.0449783551731269,
+      "model_fits": 56,
+      "path": [],
+      "runtime_s": 0.0032827490000499893,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.7549656746845357
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.7105182660624116
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.7063213737888205
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.7070670125984035
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.03855988539302796
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.04081893496524678
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3
+          ],
+          "validation_mse": 3.512909006150541
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4
+          ],
+          "validation_mse": 0.7885331936703734
+        },
+        {
+          "subset": [
+            0,
+            2,
+            5
+          ],
+          "validation_mse": 3.504674232865938
+        },
+        {
+          "subset": [
+            0,
+            2,
+            6
+          ],
+          "validation_mse": 2.856052025792196
+        },
+        {
+          "subset": [
+            0,
+            2,
+            7
+          ],
+          "validation_mse": 2.83875133226718
+        },
+        {
+          "subset": [
+            0,
+            3,
+            4
+          ],
+          "validation_mse": 0.7741715264501798
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5
+          ],
+          "validation_mse": 3.486717282005075
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 2.8726848501460704
+        },
+        {
+          "subset": [
+            0,
+            3,
+            7
+          ],
+          "validation_mse": 2.854355292468739
+        },
+        {
+          "subset": [
+            0,
+            4,
+            5
+          ],
+          "validation_mse": 0.7742424781982047
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6
+          ],
+          "validation_mse": 0.1336787650866336
+        },
+        {
+          "subset": [
+            0,
+            4,
+            7
+          ],
+          "validation_mse": 0.13590998277594363
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6
+          ],
+          "validation_mse": 2.8719294386881296
+        },
+        {
+          "subset": [
+            0,
+            5,
+            7
+          ],
+          "validation_mse": 2.8544340795858245
+        },
+        {
+          "subset": [
+            0,
+            6,
+            7
+          ],
+          "validation_mse": 2.8593017175043878
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 0.9758564585672915
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4
+          ],
+          "validation_mse": 4.34763374492946
+        },
+        {
+          "subset": [
+            1,
+            2,
+            5
+          ],
+          "validation_mse": 4.502285642139356
+        },
+        {
+          "subset": [
+            1,
+            2,
+            6
+          ],
+          "validation_mse": 3.7333693221910185
+        },
+        {
+          "subset": [
+            1,
+            2,
+            7
+          ],
+          "validation_mse": 3.707593832127495
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 0.9423811207277708
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.9500802721883421
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.28149729328761447
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.2795448105589221
+        },
+        {
+          "subset": [
+            1,
+            4,
+            5
+          ],
+          "validation_mse": 4.344096949856083
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 3.605681364806048
+        },
+        {
+          "subset": [
+            1,
+            4,
+            7
+          ],
+          "validation_mse": 3.583166467881247
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 3.7201840412165548
+        },
+        {
+          "subset": [
+            1,
+            5,
+            7
+          ],
+          "validation_mse": 3.694124858299808
+        },
+        {
+          "subset": [
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 3.6837558081294377
+        },
+        {
+          "subset": [
+            2,
+            3,
+            4
+          ],
+          "validation_mse": 1.0024017544741644
+        },
+        {
+          "subset": [
+            2,
+            3,
+            5
+          ],
+          "validation_mse": 3.8217539687981525
+        },
+        {
+          "subset": [
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 3.1827351544073057
+        },
+        {
+          "subset": [
+            2,
+            3,
+            7
+          ],
+          "validation_mse": 3.1599275048404456
+        },
+        {
+          "subset": [
+            2,
+            4,
+            5
+          ],
+          "validation_mse": 4.364074325798552
+        },
+        {
+          "subset": [
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 3.654739190120478
+        },
+        {
+          "subset": [
+            2,
+            4,
+            7
+          ],
+          "validation_mse": 3.631712743726994
+        },
+        {
+          "subset": [
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 5.768794588647285
+        },
+        {
+          "subset": [
+            2,
+            5,
+            7
+          ],
+          "validation_mse": 5.729960898613825
+        },
+        {
+          "subset": [
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 5.684969019510603
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 0.9969958241892223
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.3557259673402351
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "validation_mse": 0.3537292554534299
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 3.1905181829563203
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 3.16776864444674
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 3.1750180122592737
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 3.6154609978219794
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 3.592487119530831
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 3.582737014156291
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 5.686470868334929
+        }
+      ],
+      "seed": 1
+    },
+    {
+      "method": "baseline",
+      "selected": [
+        0,
+        1,
+        2
+      ],
+      "theta": [
+        -0.09085845444836141,
+        2.02574733270741,
+        -1.4003314576930823,
+        0.1148383751128623
+      ],
+      "validation_mse": 0.9279729458386439,
+      "test_mse": 0.5591133783566511,
+      "model_fits": 1,
+      "path": [],
+      "runtime_s": 0.00018710300003021985,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.9279729458386439
+        }
+      ],
+      "seed": 2
+    },
+    {
+      "method": "forward",
+      "selected": [
+        1,
+        3,
+        6
+      ],
+      "theta": [
+        0.054322247732054144,
+        -1.540361729549996,
+        2.433288157979913,
+        0.8055128175617539
+      ],
+      "validation_mse": 0.30147434941702445,
+      "test_mse": 0.30739915388948574,
+      "model_fits": 21,
+      "path": [
+        [
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3,
+          6
+        ]
+      ],
+      "runtime_s": 0.0009179650000987749,
+      "candidate_scores": [
+        {
+          "subset": [
+            0
+          ],
+          "validation_mse": 3.6810339908576104
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.9179050704799596
+        },
+        {
+          "subset": [
+            0,
+            3
+          ],
+          "validation_mse": 3.77831740646126
+        },
+        {
+          "subset": [
+            1
+          ],
+          "validation_mse": 5.5857062871066985
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 1.1358756173672782
+        },
+        {
+          "subset": [
+            1,
+            3
+          ],
+          "validation_mse": 1.1204213167437298
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 1.1325997215849635
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 1.104295704332565
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.30147434941702445
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.3030271475872216
+        },
+        {
+          "subset": [
+            2
+          ],
+          "validation_mse": 8.222771922169471
+        },
+        {
+          "subset": [
+            2,
+            3
+          ],
+          "validation_mse": 3.6709914927252276
+        },
+        {
+          "subset": [
+            3
+          ],
+          "validation_mse": 3.6721094712506144
+        },
+        {
+          "subset": [
+            3,
+            4
+          ],
+          "validation_mse": 1.1781666802978432
+        },
+        {
+          "subset": [
+            3,
+            5
+          ],
+          "validation_mse": 3.7587811927874837
+        },
+        {
+          "subset": [
+            3,
+            6
+          ],
+          "validation_mse": 2.5663912982070998
+        },
+        {
+          "subset": [
+            3,
+            7
+          ],
+          "validation_mse": 2.571328468830381
+        },
+        {
+          "subset": [
+            4
+          ],
+          "validation_mse": 5.781543489922786
+        },
+        {
+          "subset": [
+            5
+          ],
+          "validation_mse": 8.17937943774815
+        },
+        {
+          "subset": [
+            6
+          ],
+          "validation_mse": 6.950220628995574
+        },
+        {
+          "subset": [
+            7
+          ],
+          "validation_mse": 6.983834660030767
+        }
+      ],
+      "seed": 2
+    },
+    {
+      "method": "backward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.014886449970488979,
+        2.01764673454627,
+        -1.4956279230941183,
+        0.8077027559257989
+      ],
+      "validation_mse": 0.04123845034183106,
+      "test_mse": 0.041003801825949954,
+      "model_fits": 31,
+      "path": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.002185809000025074,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.044693567605718104
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.04448464146796418
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 0.05484082107960281
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.041625605316681746
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.041393668776570275
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "validation_mse": 0.0513393233464403
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.04469168031354973
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 0.04174181156466139
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.044441503389082815
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 0.04088172912072357
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.040607540153138985
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "validation_mse": 0.050942724580804025
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 0.04106341328554119
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.04447750992477949
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.04133468714678912
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.9388243759051845
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 0.040821788477318474
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.040563465744214926
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4,
+            7
+          ],
+          "validation_mse": 0.05061372368903598
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.04123845034183106
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 0.04098064037116744
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.15353233948940095
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.14493495371645393
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.14357870186729538
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6
+          ],
+          "validation_mse": 0.14191061474009858
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.14165797887755305
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.3047500748798395
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.3035804625134453
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 4.766315699306475
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 4.590537581231907
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 4.615631734157624
+        }
+      ],
+      "seed": 2
+    },
+    {
+      "method": "exhaustive",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.014886449970488979,
+        2.01764673454627,
+        -1.4956279230941183,
+        0.8077027559257989
+      ],
+      "validation_mse": 0.04123845034183106,
+      "test_mse": 0.041003801825949954,
+      "model_fits": 56,
+      "path": [],
+      "runtime_s": 0.002491049000013845,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.9279729458386439
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.9179050704799596
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.9388243759051845
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.9215491536242412
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.04123845034183106
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.051099144149326176
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3
+          ],
+          "validation_mse": 3.778460693910107
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4
+          ],
+          "validation_mse": 0.959730812000231
+        },
+        {
+          "subset": [
+            0,
+            2,
+            5
+          ],
+          "validation_mse": 3.818720088305656
+        },
+        {
+          "subset": [
+            0,
+            2,
+            6
+          ],
+          "validation_mse": 2.5548768346542787
+        },
+        {
+          "subset": [
+            0,
+            2,
+            7
+          ],
+          "validation_mse": 2.5675732707938117
+        },
+        {
+          "subset": [
+            0,
+            3,
+            4
+          ],
+          "validation_mse": 0.9547934109290341
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5
+          ],
+          "validation_mse": 3.9543942484388666
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 2.6535062460748673
+        },
+        {
+          "subset": [
+            0,
+            3,
+            7
+          ],
+          "validation_mse": 2.6649480742305176
+        },
+        {
+          "subset": [
+            0,
+            4,
+            5
+          ],
+          "validation_mse": 0.9615058786715945
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6
+          ],
+          "validation_mse": 0.14191061474009858
+        },
+        {
+          "subset": [
+            0,
+            4,
+            7
+          ],
+          "validation_mse": 0.15038779005392028
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6
+          ],
+          "validation_mse": 2.666785792679579
+        },
+        {
+          "subset": [
+            0,
+            5,
+            7
+          ],
+          "validation_mse": 2.679666639281256
+        },
+        {
+          "subset": [
+            0,
+            6,
+            7
+          ],
+          "validation_mse": 2.556767563913162
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 1.1358756173672782
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4
+          ],
+          "validation_mse": 5.854016245923918
+        },
+        {
+          "subset": [
+            1,
+            2,
+            5
+          ],
+          "validation_mse": 5.778768969758209
+        },
+        {
+          "subset": [
+            1,
+            2,
+            6
+          ],
+          "validation_mse": 4.744573708774095
+        },
+        {
+          "subset": [
+            1,
+            2,
+            7
+          ],
+          "validation_mse": 4.79356738668197
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 1.1325997215849635
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 1.104295704332565
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.30147434941702445
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.3030271475872216
+        },
+        {
+          "subset": [
+            1,
+            4,
+            5
+          ],
+          "validation_mse": 5.6167373909683915
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 4.590537581231907
+        },
+        {
+          "subset": [
+            1,
+            4,
+            7
+          ],
+          "validation_mse": 4.6347337572308
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 4.604954849652557
+        },
+        {
+          "subset": [
+            1,
+            5,
+            7
+          ],
+          "validation_mse": 4.645397706843797
+        },
+        {
+          "subset": [
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 4.652780368844937
+        },
+        {
+          "subset": [
+            2,
+            3,
+            4
+          ],
+          "validation_mse": 1.1856224201116081
+        },
+        {
+          "subset": [
+            2,
+            3,
+            5
+          ],
+          "validation_mse": 3.7572386115119554
+        },
+        {
+          "subset": [
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 2.5664568057952484
+        },
+        {
+          "subset": [
+            2,
+            3,
+            7
+          ],
+          "validation_mse": 2.5719868236789973
+        },
+        {
+          "subset": [
+            2,
+            4,
+            5
+          ],
+          "validation_mse": 5.948205849089977
+        },
+        {
+          "subset": [
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 4.947333110935097
+        },
+        {
+          "subset": [
+            2,
+            4,
+            7
+          ],
+          "validation_mse": 4.996999393615386
+        },
+        {
+          "subset": [
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 7.002779544108338
+        },
+        {
+          "subset": [
+            2,
+            5,
+            7
+          ],
+          "validation_mse": 7.034374393691975
+        },
+        {
+          "subset": [
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 7.064897744383751
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 1.1583735839604867
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.4334708533996291
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "validation_mse": 0.43351497891197055
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 2.6413700630940298
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 2.6469978309894504
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 2.574848258315802
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 4.842690268142232
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 4.884569923140059
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 4.887191723926968
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 7.024074481922904
+        }
+      ],
+      "seed": 2
+    },
+    {
+      "method": "baseline",
+      "selected": [
+        0,
+        1,
+        2
+      ],
+      "theta": [
+        0.09567498549399438,
+        1.8365529635690023,
+        -1.5380141156234302,
+        -0.1277466152902189
+      ],
+      "validation_mse": 0.6321929562737573,
+      "test_mse": 0.5981014376194262,
+      "model_fits": 1,
+      "path": [],
+      "runtime_s": 0.00037654800007658196,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.6321929562737573
+        }
+      ],
+      "seed": 3
+    },
+    {
+      "method": "forward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.008212476166495267,
+        1.997823442449042,
+        -1.4881957479619368,
+        0.833015278441892
+      ],
+      "validation_mse": 0.031429839350188456,
+      "test_mse": 0.03981391110918733,
+      "model_fits": 21,
+      "path": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.0021084720000317247,
+      "candidate_scores": [
+        {
+          "subset": [
+            0
+          ],
+          "validation_mse": 3.040408281094828
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "validation_mse": 0.6124060318485821
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.6321929562737573
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6452484401803233
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.612267968091025
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.6231519333391253
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.031429839350188456
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.03678458183788978
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "validation_mse": 3.016696655776939
+        },
+        {
+          "subset": [
+            0,
+            3
+          ],
+          "validation_mse": 3.1625351949452885
+        },
+        {
+          "subset": [
+            0,
+            4
+          ],
+          "validation_mse": 0.7513192997945216
+        },
+        {
+          "subset": [
+            0,
+            5
+          ],
+          "validation_mse": 3.071770497488144
+        },
+        {
+          "subset": [
+            0,
+            6
+          ],
+          "validation_mse": 2.4554628835616903
+        },
+        {
+          "subset": [
+            0,
+            7
+          ],
+          "validation_mse": 2.5048637473736353
+        },
+        {
+          "subset": [
+            1
+          ],
+          "validation_mse": 3.876236035339121
+        },
+        {
+          "subset": [
+            2
+          ],
+          "validation_mse": 5.992688698419949
+        },
+        {
+          "subset": [
+            3
+          ],
+          "validation_mse": 3.4035144290419654
+        },
+        {
+          "subset": [
+            4
+          ],
+          "validation_mse": 4.092603262852616
+        },
+        {
+          "subset": [
+            5
+          ],
+          "validation_mse": 5.944297155272991
+        },
+        {
+          "subset": [
+            6
+          ],
+          "validation_mse": 5.556760768730556
+        },
+        {
+          "subset": [
+            7
+          ],
+          "validation_mse": 5.625263492925476
+        }
+      ],
+      "seed": 3
+    },
+    {
+      "method": "backward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.008212476166495267,
+        1.997823442449042,
+        -1.4881957479619368,
+        0.833015278441892
+      ],
+      "validation_mse": 0.031429839350188456,
+      "test_mse": 0.03981391110918733,
+      "model_fits": 31,
+      "path": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.002346521999925244,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.03539279821317974
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03526674606799969
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 0.038185996761790124
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.03565129046739915
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03396976620257541
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.03419529093842681
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.0338407234069346
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 0.03770475348240177
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.03413298741715475
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 0.03238546637355301
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.0321638551666192
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            5,
+            7
+          ],
+          "validation_mse": 0.03725391948383521
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 0.03221225497948187
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03510334478849571
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03336375564896453
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 0.03155530731438092
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03136821053475124
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5,
+            7
+          ],
+          "validation_mse": 0.03665756542611988
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.031429839350188456
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 0.03132044997337076
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.03678458183788978
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.16978479053616707
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.1644484073681611
+        },
+        {
+          "subset": [
+            0,
+            2,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 2.5918013931163753
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 2.5862711517346373
+        },
+        {
+          "subset": [
+            0,
+            6,
+            7
+          ],
+          "validation_mse": 2.5877526716792647
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.25628117078454943
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 3.838761750161532
+        },
+        {
+          "subset": [
+            1,
+            2,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 3.7981804334434157
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 3.8096600566423366
+        },
+        {
+          "subset": [
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 3.728682192233998
+        }
+      ],
+      "seed": 3
+    },
+    {
+      "method": "exhaustive",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        0.008212476166495267,
+        1.997823442449042,
+        -1.4881957479619368,
+        0.833015278441892
+      ],
+      "validation_mse": 0.031429839350188456,
+      "test_mse": 0.03981391110918733,
+      "model_fits": 56,
+      "path": [],
+      "runtime_s": 0.0023779179999792177,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.6321929562737573
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6452484401803233
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.612267968091025
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.6231519333391253
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.031429839350188456
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.03678458183788978
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3
+          ],
+          "validation_mse": 3.1350826684810107
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4
+          ],
+          "validation_mse": 0.7759677505995477
+        },
+        {
+          "subset": [
+            0,
+            2,
+            5
+          ],
+          "validation_mse": 3.048504927227932
+        },
+        {
+          "subset": [
+            0,
+            2,
+            6
+          ],
+          "validation_mse": 2.467710681175839
+        },
+        {
+          "subset": [
+            0,
+            2,
+            7
+          ],
+          "validation_mse": 2.5156704932236824
+        },
+        {
+          "subset": [
+            0,
+            3,
+            4
+          ],
+          "validation_mse": 0.8024808371658307
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5
+          ],
+          "validation_mse": 3.1841962129832018
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 2.4915569016835546
+        },
+        {
+          "subset": [
+            0,
+            3,
+            7
+          ],
+          "validation_mse": 2.5325692491393013
+        },
+        {
+          "subset": [
+            0,
+            4,
+            5
+          ],
+          "validation_mse": 0.7542801566074513
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6
+          ],
+          "validation_mse": 0.15540670044626845
+        },
+        {
+          "subset": [
+            0,
+            4,
+            7
+          ],
+          "validation_mse": 0.17552491079596177
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6
+          ],
+          "validation_mse": 2.4543466295391667
+        },
+        {
+          "subset": [
+            0,
+            5,
+            7
+          ],
+          "validation_mse": 2.5040836587080424
+        },
+        {
+          "subset": [
+            0,
+            6,
+            7
+          ],
+          "validation_mse": 2.5877526716792647
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 0.880658957948304
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4
+          ],
+          "validation_mse": 3.90022749237599
+        },
+        {
+          "subset": [
+            1,
+            2,
+            5
+          ],
+          "validation_mse": 3.8755198754009603
+        },
+        {
+          "subset": [
+            1,
+            2,
+            6
+          ],
+          "validation_mse": 3.542294308089759
+        },
+        {
+          "subset": [
+            1,
+            2,
+            7
+          ],
+          "validation_mse": 3.5665094104204194
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 0.88096659269861
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.8755303569362446
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.25542353687283054
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.2648474797860677
+        },
+        {
+          "subset": [
+            1,
+            4,
+            5
+          ],
+          "validation_mse": 3.925891832069374
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 3.586356386556938
+        },
+        {
+          "subset": [
+            1,
+            4,
+            7
+          ],
+          "validation_mse": 3.607267033802219
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 3.5999429913958174
+        },
+        {
+          "subset": [
+            1,
+            5,
+            7
+          ],
+          "validation_mse": 3.6229011745654813
+        },
+        {
+          "subset": [
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 3.728682192233998
+        },
+        {
+          "subset": [
+            2,
+            3,
+            4
+          ],
+          "validation_mse": 1.039489223966478
+        },
+        {
+          "subset": [
+            2,
+            3,
+            5
+          ],
+          "validation_mse": 3.4102635317131877
+        },
+        {
+          "subset": [
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 2.788451400284999
+        },
+        {
+          "subset": [
+            2,
+            3,
+            7
+          ],
+          "validation_mse": 2.829273441588704
+        },
+        {
+          "subset": [
+            2,
+            4,
+            5
+          ],
+          "validation_mse": 4.121364600123558
+        },
+        {
+          "subset": [
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 3.7542374950344506
+        },
+        {
+          "subset": [
+            2,
+            4,
+            7
+          ],
+          "validation_mse": 3.7855590097333875
+        },
+        {
+          "subset": [
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 5.733322292419986
+        },
+        {
+          "subset": [
+            2,
+            5,
+            7
+          ],
+          "validation_mse": 5.824878221577881
+        },
+        {
+          "subset": [
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 6.616275768523889
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 1.0296327149574778
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.4029894032362099
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "validation_mse": 0.4251230888305876
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 2.735888171240366
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 2.776226103571414
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 2.8052232585848484
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 3.844238835124905
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 3.876819221658452
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 3.979412264689633
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 6.7078855524757
+        }
+      ],
+      "seed": 3
+    },
+    {
+      "method": "baseline",
+      "selected": [
+        0,
+        1,
+        2
+      ],
+      "theta": [
+        0.07837765479065463,
+        2.0246827420915285,
+        -1.5504628541902725,
+        0.023702901626558397
+      ],
+      "validation_mse": 0.6739806292574765,
+      "test_mse": 0.662123310166921,
+      "model_fits": 1,
+      "path": [],
+      "runtime_s": 0.00011463300006653299,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.6739806292574765
+        }
+      ],
+      "seed": 4
+    },
+    {
+      "method": "forward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        -0.018107942493143736,
+        1.9798515573520388,
+        -1.5395834969120117,
+        0.7742050614530006
+      ],
+      "validation_mse": 0.03800699166799859,
+      "test_mse": 0.04037479215774955,
+      "model_fits": 21,
+      "path": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.0007886309999776131,
+      "candidate_scores": [
+        {
+          "subset": [
+            0
+          ],
+          "validation_mse": 2.0169789310666486
+        },
+        {
+          "subset": [
+            0,
+            1
+          ],
+          "validation_mse": 0.672575823648444
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.6739806292574765
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6726358831690351
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.6769716798730434
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.6852275691179782
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.03800699166799859
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.04862350860392382
+        },
+        {
+          "subset": [
+            0,
+            2
+          ],
+          "validation_mse": 2.028026519537446
+        },
+        {
+          "subset": [
+            0,
+            3
+          ],
+          "validation_mse": 2.0432716105469404
+        },
+        {
+          "subset": [
+            0,
+            4
+          ],
+          "validation_mse": 0.7693138235236064
+        },
+        {
+          "subset": [
+            0,
+            5
+          ],
+          "validation_mse": 2.017458507193296
+        },
+        {
+          "subset": [
+            0,
+            6
+          ],
+          "validation_mse": 1.765134447232493
+        },
+        {
+          "subset": [
+            0,
+            7
+          ],
+          "validation_mse": 1.732146775430893
+        },
+        {
+          "subset": [
+            1
+          ],
+          "validation_mse": 3.954462329255149
+        },
+        {
+          "subset": [
+            2
+          ],
+          "validation_mse": 6.028334605709059
+        },
+        {
+          "subset": [
+            3
+          ],
+          "validation_mse": 2.1321957382723715
+        },
+        {
+          "subset": [
+            4
+          ],
+          "validation_mse": 3.9478464992096605
+        },
+        {
+          "subset": [
+            5
+          ],
+          "validation_mse": 6.206059288945008
+        },
+        {
+          "subset": [
+            6
+          ],
+          "validation_mse": 6.478263591739804
+        },
+        {
+          "subset": [
+            7
+          ],
+          "validation_mse": 6.435482816617067
+        }
+      ],
+      "seed": 4
+    },
+    {
+      "method": "backward",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        -0.018107942493143736,
+        1.9798515573520388,
+        -1.5395834969120117,
+        0.7742050614530006
+      ],
+      "validation_mse": 0.03800699166799859,
+      "test_mse": 0.04037479215774955,
+      "model_fits": 31,
+      "path": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      "runtime_s": 0.0015600850000510036,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 0.6929256400445778
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.03825096487269748
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03973575101082298
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 0.048736590913678046
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.038384066494199356
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 0.039841489056162
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "validation_mse": 0.6878843778997861
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.03793315085420529
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03929038869059483
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 0.03807713885007069
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.0382615497517594
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03941775518456704
+        },
+        {
+          "subset": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 0.038074253239757286
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.03800089778029127
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.03963210970210897
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.6866858014692765
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.037754147585094856
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.037898446459538195
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.6852275691179782
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 0.03788732019236274
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.03800699166799859
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.17795904423109404
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.17542967646421942
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 1.8396538509149165
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 1.824155184036229
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6
+          ],
+          "validation_mse": 1.7772910824114039
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 0.2612345333024467
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 0.26265451229470793
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.2599767183947339
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 0.2647900833529687
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 3.798801164098195
+        }
+      ],
+      "seed": 4
+    },
+    {
+      "method": "exhaustive",
+      "selected": [
+        0,
+        1,
+        6
+      ],
+      "theta": [
+        -0.018107942493143736,
+        1.9798515573520388,
+        -1.5395834969120117,
+        0.7742050614530006
+      ],
+      "validation_mse": 0.03800699166799859,
+      "test_mse": 0.04037479215774955,
+      "model_fits": 56,
+      "path": [],
+      "runtime_s": 0.001999919000013506,
+      "candidate_scores": [
+        {
+          "subset": [
+            0,
+            1,
+            2
+          ],
+          "validation_mse": 0.6739806292574765
+        },
+        {
+          "subset": [
+            0,
+            1,
+            3
+          ],
+          "validation_mse": 0.6726358831690351
+        },
+        {
+          "subset": [
+            0,
+            1,
+            4
+          ],
+          "validation_mse": 0.6769716798730434
+        },
+        {
+          "subset": [
+            0,
+            1,
+            5
+          ],
+          "validation_mse": 0.6852275691179782
+        },
+        {
+          "subset": [
+            0,
+            1,
+            6
+          ],
+          "validation_mse": 0.03800699166799859
+        },
+        {
+          "subset": [
+            0,
+            1,
+            7
+          ],
+          "validation_mse": 0.04862350860392382
+        },
+        {
+          "subset": [
+            0,
+            2,
+            3
+          ],
+          "validation_mse": 2.053050940975605
+        },
+        {
+          "subset": [
+            0,
+            2,
+            4
+          ],
+          "validation_mse": 0.7693289546118236
+        },
+        {
+          "subset": [
+            0,
+            2,
+            5
+          ],
+          "validation_mse": 2.028601238131651
+        },
+        {
+          "subset": [
+            0,
+            2,
+            6
+          ],
+          "validation_mse": 1.782929435467111
+        },
+        {
+          "subset": [
+            0,
+            2,
+            7
+          ],
+          "validation_mse": 1.7532465939125805
+        },
+        {
+          "subset": [
+            0,
+            3,
+            4
+          ],
+          "validation_mse": 0.7723369522331505
+        },
+        {
+          "subset": [
+            0,
+            3,
+            5
+          ],
+          "validation_mse": 2.0428285094206533
+        },
+        {
+          "subset": [
+            0,
+            3,
+            6
+          ],
+          "validation_mse": 1.7990020549712962
+        },
+        {
+          "subset": [
+            0,
+            3,
+            7
+          ],
+          "validation_mse": 1.7702980336632532
+        },
+        {
+          "subset": [
+            0,
+            4,
+            5
+          ],
+          "validation_mse": 0.7801249567548703
+        },
+        {
+          "subset": [
+            0,
+            4,
+            6
+          ],
+          "validation_mse": 0.17552093813617414
+        },
+        {
+          "subset": [
+            0,
+            4,
+            7
+          ],
+          "validation_mse": 0.19391880911939713
+        },
+        {
+          "subset": [
+            0,
+            5,
+            6
+          ],
+          "validation_mse": 1.7772910824114039
+        },
+        {
+          "subset": [
+            0,
+            5,
+            7
+          ],
+          "validation_mse": 1.744124948179787
+        },
+        {
+          "subset": [
+            0,
+            6,
+            7
+          ],
+          "validation_mse": 1.7454818866537771
+        },
+        {
+          "subset": [
+            1,
+            2,
+            3
+          ],
+          "validation_mse": 0.8493897080844919
+        },
+        {
+          "subset": [
+            1,
+            2,
+            4
+          ],
+          "validation_mse": 4.017599146345598
+        },
+        {
+          "subset": [
+            1,
+            2,
+            5
+          ],
+          "validation_mse": 3.9431779712719037
+        },
+        {
+          "subset": [
+            1,
+            2,
+            6
+          ],
+          "validation_mse": 3.662768375763891
+        },
+        {
+          "subset": [
+            1,
+            2,
+            7
+          ],
+          "validation_mse": 3.6724881415361628
+        },
+        {
+          "subset": [
+            1,
+            3,
+            4
+          ],
+          "validation_mse": 0.8662791919186943
+        },
+        {
+          "subset": [
+            1,
+            3,
+            5
+          ],
+          "validation_mse": 0.9090955402246191
+        },
+        {
+          "subset": [
+            1,
+            3,
+            6
+          ],
+          "validation_mse": 0.24824047697937432
+        },
+        {
+          "subset": [
+            1,
+            3,
+            7
+          ],
+          "validation_mse": 0.2582194459626111
+        },
+        {
+          "subset": [
+            1,
+            4,
+            5
+          ],
+          "validation_mse": 4.213751044632249
+        },
+        {
+          "subset": [
+            1,
+            4,
+            6
+          ],
+          "validation_mse": 4.096221962962915
+        },
+        {
+          "subset": [
+            1,
+            4,
+            7
+          ],
+          "validation_mse": 4.110416700711959
+        },
+        {
+          "subset": [
+            1,
+            5,
+            6
+          ],
+          "validation_mse": 3.798801164098195
+        },
+        {
+          "subset": [
+            1,
+            5,
+            7
+          ],
+          "validation_mse": 3.814318363978095
+        },
+        {
+          "subset": [
+            1,
+            6,
+            7
+          ],
+          "validation_mse": 3.7688603258789155
+        },
+        {
+          "subset": [
+            2,
+            3,
+            4
+          ],
+          "validation_mse": 0.9552600937919462
+        },
+        {
+          "subset": [
+            2,
+            3,
+            5
+          ],
+          "validation_mse": 2.162541015483483
+        },
+        {
+          "subset": [
+            2,
+            3,
+            6
+          ],
+          "validation_mse": 1.9420390462249286
+        },
+        {
+          "subset": [
+            2,
+            3,
+            7
+          ],
+          "validation_mse": 1.9074644930695073
+        },
+        {
+          "subset": [
+            2,
+            4,
+            5
+          ],
+          "validation_mse": 3.916500929371532
+        },
+        {
+          "subset": [
+            2,
+            4,
+            6
+          ],
+          "validation_mse": 3.7036289128642865
+        },
+        {
+          "subset": [
+            2,
+            4,
+            7
+          ],
+          "validation_mse": 3.7189545851060037
+        },
+        {
+          "subset": [
+            2,
+            5,
+            6
+          ],
+          "validation_mse": 6.347293137793269
+        },
+        {
+          "subset": [
+            2,
+            5,
+            7
+          ],
+          "validation_mse": 6.30444380121842
+        },
+        {
+          "subset": [
+            2,
+            6,
+            7
+          ],
+          "validation_mse": 6.38302306648411
+        },
+        {
+          "subset": [
+            3,
+            4,
+            5
+          ],
+          "validation_mse": 1.0163966456901004
+        },
+        {
+          "subset": [
+            3,
+            4,
+            6
+          ],
+          "validation_mse": 0.39063057259363887
+        },
+        {
+          "subset": [
+            3,
+            4,
+            7
+          ],
+          "validation_mse": 0.4086773510107413
+        },
+        {
+          "subset": [
+            3,
+            5,
+            6
+          ],
+          "validation_mse": 1.9299919602678681
+        },
+        {
+          "subset": [
+            3,
+            5,
+            7
+          ],
+          "validation_mse": 1.8930145823534958
+        },
+        {
+          "subset": [
+            3,
+            6,
+            7
+          ],
+          "validation_mse": 1.9433987368098173
+        },
+        {
+          "subset": [
+            4,
+            5,
+            6
+          ],
+          "validation_mse": 3.854108145245034
+        },
+        {
+          "subset": [
+            4,
+            5,
+            7
+          ],
+          "validation_mse": 3.873519472730976
+        },
+        {
+          "subset": [
+            4,
+            6,
+            7
+          ],
+          "validation_mse": 3.810109705718171
+        },
+        {
+          "subset": [
+            5,
+            6,
+            7
+          ],
+          "validation_mse": 6.523734858997464
+        }
+      ],
+      "seed": 4
+    }
+  ],
+  "feature_protocol": {
+    "d": 8,
+    "k": 3,
+    "train": 128,
+    "validation": 128,
+    "test": 256,
+    "objective": "minimize validation MSE of training-only least-squares fits",
+    "test_note": "Test MSE is reported after selection; exhaustive is optimal for the validation objective, not guaranteed best on test data."
+  },
+  "dp_scaling": [
+    {
+      "factor": 1,
+      "repeat": 0,
+      "capacity": 251,
+      "runtime_s": 7.860899995648651e-05,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 5292,
+      "table_bytes": 42336,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 1,
+      "repeat": 1,
+      "capacity": 251,
+      "runtime_s": 6.225399999948422e-05,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 5292,
+      "table_bytes": 42336,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 1,
+      "repeat": 2,
+      "capacity": 251,
+      "runtime_s": 5.550400010179146e-05,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 5292,
+      "table_bytes": 42336,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 10,
+      "repeat": 0,
+      "capacity": 2510,
+      "runtime_s": 0.00012075300003289158,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 52731,
+      "table_bytes": 421848,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 10,
+      "repeat": 1,
+      "capacity": 2510,
+      "runtime_s": 0.00010800300003666052,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 52731,
+      "table_bytes": 421848,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 10,
+      "repeat": 2,
+      "capacity": 2510,
+      "runtime_s": 9.715700002743688e-05,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 52731,
+      "table_bytes": 421848,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 100,
+      "repeat": 0,
+      "capacity": 25100,
+      "runtime_s": 0.014552843000046778,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 527121,
+      "table_bytes": 4216968,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 100,
+      "repeat": 1,
+      "capacity": 25100,
+      "runtime_s": 0.000796411999999691,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 527121,
+      "table_bytes": 4216968,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    },
+    {
+      "factor": 100,
+      "repeat": 2,
+      "capacity": 25100,
+      "runtime_s": 0.0005751680000685155,
+      "value": 522,
+      "feasible": true,
+      "status": "optimal",
+      "objective": 522,
+      "table_cells": 527121,
+      "table_bytes": 4216968,
+      "complexity": "O(n*C) pseudo-polynomial; full table retained for reconstruction"
+    }
+  ],
+  "dp_scale_note": "Integer units are multiplied for identical feasible subsets; GCD preprocessing is deliberately not applied."
+}

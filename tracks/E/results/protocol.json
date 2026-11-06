@@ -1,0 +1,31 @@
+{
+  "sizes": [
+    10,
+    20,
+    30
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "repeats": 3,
+  "scenarios": [
+    "flexible",
+    "flat_prices",
+    "tight_deadlines",
+    "limited_power",
+    "mixed_power"
+  ],
+  "ilp_time_limit_s": 3,
+  "ilp_relative_gap_target": 0.0,
+  "canonical_quality_repeat": 0,
+  "timing": "perf_counter around method incl. validation of inputs and model construction; independent audit excluded",
+  "warmup": "One untimed tiny MILP solve before benchmarking",
+  "comparisons": "Savings only on the same instance when both schedules pass the full audit. Optimum gaps require an optimal solver status.",
+  "all_information": "All methods have the same complete arrival/departure/demand/tariff input; FCFS ignores price by design.",
+  "generated_inputs": "All inputs synthetic; constructive feasibility witness is NOT passed to solvers.",
+  "representative_plot": "First flexible instance with 20 vehicles, otherwise the first flexible instance; chosen before viewing savings."
+}

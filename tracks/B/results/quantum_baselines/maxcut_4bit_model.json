@@ -1,0 +1,107 @@
+{
+  "schema": "track-b-qubo-v1",
+  "variables": [
+    "node_0",
+    "node_1",
+    "node_2",
+    "node_3"
+  ],
+  "Q_upper": [
+    [
+      -3.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    [
+      0.0,
+      -2.0,
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -3.0,
+      2.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -2.0
+    ]
+  ],
+  "offset": 0.0,
+  "energy": "offset + sum_i Q_ii*x_i + sum_(i<j) Q_ij*x_i*x_j",
+  "statevector_index": "sum_i x_i * 2**i; variable 0 is least significant",
+  "display_bits": "variable_order_bits lists x_0 first; statevector_label lists most significant bit first",
+  "ising": {
+    "h": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "J_upper": [
+      [
+        0.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.5,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "offset": -2.5,
+    "spin_mapping": "s_i = 1 - 2*x_i"
+  },
+  "metadata": {
+    "problem": "maxcut",
+    "edges": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ],
+    "direct_energy": "-sum_edges weight*(x_u+x_v-2*x_u*x_v)",
+    "note": "Max-Cut itself is unconstrained; knapsack provides the explicit penalty demonstration."
+  }
+}

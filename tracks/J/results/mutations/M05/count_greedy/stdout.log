@@ -1,0 +1,263 @@
+.........................................................................F....F.                                                         [100%]
+=================================== FAILURES ===================================
+_______________ ThreadingTest.test_cached_lock_cond (info=False) _______________
+
+self = <tests.test_threading.ThreadingTest testMethod=test_cached_lock_cond>
+
+    def test_cached_lock_cond(self):
+        for info in (False, True):
+            with self.subTest(info=info):
+                cache = LRUCache(1)
+                lock = Lock()
+                cond = WaitCondition(lock)
+                started = Event()
+                release = Event()
+                calls = []
+    
+                @cached(cache, lock=lock, condition=cond, info=info)
+                def func(calls=calls, started=started, release=release):
+                    calls.append(None)
+                    started.set()
+                    release.wait(self.TIMEOUT)
+                    return object()
+    
+>               self.run_cond_wait_test(func, cond, started, release, calls)
+
+tests/test_threading.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_threading.py:197: in run_cond_wait_test
+    self.assertEqual(len(calls), 1)
+E   AssertionError: 2 != 1
+_______________ ThreadingTest.test_cached_lock_cond (info=True) ________________
+
+self = <tests.test_threading.ThreadingTest testMethod=test_cached_lock_cond>
+
+    def test_cached_lock_cond(self):
+        for info in (False, True):
+            with self.subTest(info=info):
+                cache = LRUCache(1)
+                lock = Lock()
+                cond = WaitCondition(lock)
+                started = Event()
+                release = Event()
+                calls = []
+    
+                @cached(cache, lock=lock, condition=cond, info=info)
+                def func(calls=calls, started=started, release=release):
+                    calls.append(None)
+                    started.set()
+                    release.wait(self.TIMEOUT)
+                    return object()
+    
+>               self.run_cond_wait_test(func, cond, started, release, calls)
+
+tests/test_threading.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_threading.py:197: in run_cond_wait_test
+    self.assertEqual(len(calls), 1)
+E   AssertionError: 2 != 1
+______________ ThreadingTest.test_cachedmethod_lock (info=False) _______________
+
+self = <tests.test_threading.ThreadingTest testMethod=test_cachedmethod_lock>
+
+    def test_cachedmethod_lock(self):
+        for info in (False, True):
+            with self.subTest(info=info):
+                barrier = Barrier(self.NTHREADS, timeout=self.TIMEOUT)
+                cache = LRUCache(1)
+                lock = Lock()
+    
+                class Cached:
+                    @cachedmethod(lambda _: cache, lock=lambda _: lock, info=info)
+                    def method(self, barrier=barrier):
+                        result = object()
+                        barrier.wait()
+                        return result
+    
+>               self.run_lock_test(Cached().method, cache, info)
+
+tests/test_threading.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_threading.py:202: in run_lock_test
+    self.run_threading_test(func, cache)
+tests/test_threading.py:221: in run_threading_test
+    self.assertEqual(len(cache), 1)
+E   AssertionError: 0 != 1
+_______________ ThreadingTest.test_cachedmethod_lock (info=True) _______________
+
+self = <tests.test_threading.ThreadingTest testMethod=test_cachedmethod_lock>
+
+    def test_cachedmethod_lock(self):
+        for info in (False, True):
+            with self.subTest(info=info):
+                barrier = Barrier(self.NTHREADS, timeout=self.TIMEOUT)
+                cache = LRUCache(1)
+                lock = Lock()
+    
+                class Cached:
+                    @cachedmethod(lambda _: cache, lock=lambda _: lock, info=info)
+                    def method(self, barrier=barrier):
+                        result = object()
+                        barrier.wait()
+                        return result
+    
+>               self.run_lock_test(Cached().method, cache, info)
+
+tests/test_threading.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_threading.py:202: in run_lock_test
+    self.run_threading_test(func, cache)
+tests/test_threading.py:221: in run_threading_test
+    self.assertEqual(len(cache), 1)
+E   AssertionError: 0 != 1
+____________ ThreadingTest.test_cachedmethod_lock_cond (info=False) ____________
+
+self = <tests.test_threading.ThreadingTest testMethod=test_cachedmethod_lock_cond>
+
+    def test_cachedmethod_lock_cond(self):
+        for info in (False, True):
+            with self.subTest(info=info):
+                cache = LRUCache(1)
+                lock = Lock()
+                cond = WaitCondition(lock)
+                started = Event()
+                release = Event()
+                calls = []
+    
+                class Cached:
+                    @cachedmethod(
+                        lambda _: cache,
+                        lock=lambda _: lock,
+                        condition=lambda _: cond,
+                        info=info,
+                    )
+                    def method(
+                        self,
+                        calls=calls,
+                        started=started,
+                        release=release,
+                        timeout=self.TIMEOUT,
+                    ):
+                        calls.append(None)
+                        started.set()
+                        release.wait(timeout)
+                        return object()
+    
+                func = Cached().method
+>               self.run_cond_wait_test(func, cond, started, release, calls)
+
+tests/test_threading.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_threading.py:197: in run_cond_wait_test
+    self.assertEqual(len(calls), 1)
+E   AssertionError: 2 != 1
+____________ ThreadingTest.test_cachedmethod_lock_cond (info=True) _____________
+
+self = <tests.test_threading.ThreadingTest testMethod=test_cachedmethod_lock_cond>
+
+    def test_cachedmethod_lock_cond(self):
+        for info in (False, True):
+            with self.subTest(info=info):
+                cache = LRUCache(1)
+                lock = Lock()
+                cond = WaitCondition(lock)
+                started = Event()
+                release = Event()
+                calls = []
+    
+                class Cached:
+                    @cachedmethod(
+                        lambda _: cache,
+                        lock=lambda _: lock,
+                        condition=lambda _: cond,
+                        info=info,
+                    )
+                    def method(
+                        self,
+                        calls=calls,
+                        started=started,
+                        release=release,
+                        timeout=self.TIMEOUT,
+                    ):
+                        calls.append(None)
+                        started.set()
+                        release.wait(timeout)
+                        return object()
+    
+                func = Cached().method
+>               self.run_cond_wait_test(func, cond, started, release, calls)
+
+tests/test_threading.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_threading.py:197: in run_cond_wait_test
+    self.assertEqual(len(calls), 1)
+E   AssertionError: 2 != 1
+_______________________ TLRUCacheTest.test_ttu_tuple_key _______________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu_tuple_key>
+
+    def test_ttu_tuple_key(self):
+        cache = TLRUCache[tuple[int, ...], int, int](
+            maxsize=1, ttu=lambda k, v, t: t + 1, timer=Timer()
+        )
+    
+>       cache[(1, 2, 3)] = 42
+        ^^^^^^^^^^^^^^^^
+
+tests/test_tlru.py:271: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:608: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TLRUCache({}, maxsize=1, currsize=0), key = (1, 2, 3), value = 42
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize <= 1:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:43: ValueError
+_______________________ TTLCacheTest.test_ttl_tuple_key ________________________
+
+self = <tests.test_ttl.TTLCacheTest testMethod=test_ttl_tuple_key>
+
+    def test_ttl_tuple_key(self):
+        cache = TTLCache[tuple[int, ...], int, int](maxsize=1, ttl=1, timer=Timer())
+        self.assertEqual(1, cache.ttl)
+    
+>       cache[(1, 2, 3)] = 42
+        ^^^^^^^^^^^^^^^^
+
+tests/test_ttl.py:209: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/cachetools/__init__.py:470: in __setitem__
+    cache_setitem(self, key, value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TTLCache({}, maxsize=1, currsize=0), key = (1, 2, 3), value = 42
+
+    def __setitem__(self, key, value):
+        data = self.__data
+        size = self.__size
+        maxsize = self.__maxsize
+        if size is None:
+            if maxsize <= 1:
+>               raise ValueError('value too large')
+E               ValueError: value too large
+
+src/cachetools/__init__.py:43: ValueError
+=========================== short test summary info ============================
+SUBFAILED(info=False) tests/test_threading.py::ThreadingTest::test_cached_lock_cond
+SUBFAILED(info=True) tests/test_threading.py::ThreadingTest::test_cached_lock_cond
+SUBFAILED(info=False) tests/test_threading.py::ThreadingTest::test_cachedmethod_lock
+SUBFAILED(info=True) tests/test_threading.py::ThreadingTest::test_cachedmethod_lock
+SUBFAILED(info=False) tests/test_threading.py::ThreadingTest::test_cachedmethod_lock_cond
+SUBFAILED(info=True) tests/test_threading.py::ThreadingTest::test_cachedmethod_lock_cond
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu_tuple_key - ValueError: va...
+FAILED tests/test_ttl.py::TTLCacheTest::test_ttl_tuple_key - ValueError: valu...
+8 failed, 78 passed, 2 subtests passed in 0.35s

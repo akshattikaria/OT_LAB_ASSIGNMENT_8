@@ -1,0 +1,82 @@
+{
+  "method": "static_block",
+  "workers": 2,
+  "steady_s": 0.0006432569999788029,
+  "jobs": [
+    {
+      "job": 2,
+      "units": 1,
+      "worker": 1,
+      "donor": 1,
+      "stolen": false,
+      "start": 0.00013610600001356943,
+      "finish": 0.000211005999972258,
+      "digest": "a61d03b9ea183777795852d56cea794caa0d3e56d4b0f377c54f325544546f12"
+    },
+    {
+      "job": 3,
+      "units": 1,
+      "worker": 1,
+      "donor": 1,
+      "stolen": false,
+      "start": 0.0002130189999434151,
+      "finish": 0.00021734500001002743,
+      "digest": "b8aca3a34f6597ba11c8cc44971dd0a80e8083777b701f3d40be6b1a11752d59"
+    },
+    {
+      "job": 0,
+      "units": 1,
+      "worker": 0,
+      "donor": 0,
+      "stolen": false,
+      "start": 0.00016126799994253815,
+      "finish": 0.0002936820000059015,
+      "digest": "aa2aad48c3a436d2cdbf26f20809ba071de4e5c3695fec6761d7a9412af64820"
+    },
+    {
+      "job": 1,
+      "units": 1,
+      "worker": 0,
+      "donor": 0,
+      "stolen": false,
+      "start": 0.00029644599999301136,
+      "finish": 0.00030157399999097834,
+      "digest": "25ffe4625cd4b31038839088dceb2e52f17b9b01c230845a8af9b61e7862d808"
+    }
+  ],
+  "worker_records": [
+    {
+      "worker": 1,
+      "pid": 7,
+      "cpu_s": 0.0007124270000000016
+    },
+    {
+      "worker": 0,
+      "pid": 6,
+      "cpu_s": 0.0008128510000000033
+    }
+  ],
+  "active_compute_s": [
+    0.00013754200006133033,
+    7.922600002530089e-05
+  ],
+  "observed_utilization": 0.1684925310519546,
+  "stolen_jobs": 0,
+  "predicted_total_units": 4,
+  "iterations_per_unit": 1,
+  "start_method": "spawn",
+  "worker_readiness": [
+    {
+      "worker": 0,
+      "ready_s": 0.0875711080000201
+    },
+    {
+      "worker": 1,
+      "ready_s": 0.09641642299993691
+    }
+  ],
+  "steady_start_s": 0.09702443200001198,
+  "steady_finish_s": 0.09766768899999079,
+  "end_to_end_s": 0.11022497900000872,
+  "setup_cleanup_s": 0.10958172200002991
+}

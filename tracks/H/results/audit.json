@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tracked_checks": 1991,
+  "training_measurements": 252,
+  "latency_measurements": 1050,
+  "throughput_batches": 35,
+  "throughput_requests": 3500,
+  "write_trials": 21,
+  "unique_portfolios": 7,
+  "fresh_sql_replays": 210,
+  "query_cases": 30,
+  "exhaustive_model_portfolios_per_budget": 64,
+  "budgets": 3,
+  "baseline_database_sha256": "7e707a8de42c7b3c12ff9de9470ad38a2d86ab6d921c46b2bf14621ccfb730b8",
+  "note": "Retained timing data are not replaced. Query/reference results, raw timing arithmetic, exhaustive model certificates, storage accounting and source/data checksums passed; physical portfolios rebuilt for fresh SQL replay. Cross-version storage equality is checked only for the recorded SQLite version."
+}

@@ -1,0 +1,325 @@
+{
+  "name": "limited_power_n30_s2",
+  "slot_minutes": 15,
+  "prices": [
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    12.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "capacity_kw": [
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0,
+    49.0
+  ],
+  "vehicles": [
+    {
+      "id": "EV001",
+      "arrival": 1,
+      "departure": 34,
+      "required_slots": 4,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV002",
+      "arrival": 2,
+      "departure": 41,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV003",
+      "arrival": 9,
+      "departure": 38,
+      "required_slots": 8,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV004",
+      "arrival": 9,
+      "departure": 37,
+      "required_slots": 4,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV005",
+      "arrival": 10,
+      "departure": 44,
+      "required_slots": 10,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV006",
+      "arrival": 5,
+      "departure": 46,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV007",
+      "arrival": 4,
+      "departure": 33,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV008",
+      "arrival": 5,
+      "departure": 46,
+      "required_slots": 4,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV009",
+      "arrival": 6,
+      "departure": 45,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV010",
+      "arrival": 2,
+      "departure": 37,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV011",
+      "arrival": 3,
+      "departure": 32,
+      "required_slots": 7,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV012",
+      "arrival": 5,
+      "departure": 37,
+      "required_slots": 6,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV013",
+      "arrival": 8,
+      "departure": 48,
+      "required_slots": 6,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV014",
+      "arrival": 8,
+      "departure": 37,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV015",
+      "arrival": 12,
+      "departure": 45,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV016",
+      "arrival": 12,
+      "departure": 43,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV017",
+      "arrival": 5,
+      "departure": 46,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV018",
+      "arrival": 12,
+      "departure": 44,
+      "required_slots": 6,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV019",
+      "arrival": 10,
+      "departure": 48,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV020",
+      "arrival": 7,
+      "departure": 40,
+      "required_slots": 7,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV021",
+      "arrival": 8,
+      "departure": 48,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV022",
+      "arrival": 10,
+      "departure": 46,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV023",
+      "arrival": 5,
+      "departure": 46,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV024",
+      "arrival": 10,
+      "departure": 39,
+      "required_slots": 11,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV025",
+      "arrival": 11,
+      "departure": 37,
+      "required_slots": 9,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV026",
+      "arrival": 12,
+      "departure": 47,
+      "required_slots": 8,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV027",
+      "arrival": 4,
+      "departure": 48,
+      "required_slots": 8,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV028",
+      "arrival": 8,
+      "departure": 48,
+      "required_slots": 12,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV029",
+      "arrival": 4,
+      "departure": 38,
+      "required_slots": 10,
+      "power_kw": 7.0
+    },
+    {
+      "id": "EV030",
+      "arrival": 8,
+      "departure": 43,
+      "required_slots": 11,
+      "power_kw": 7.0
+    }
+  ],
+  "metadata": {
+    "source": "synthetic",
+    "scenario": "limited_power",
+    "seed": 2,
+    "clock_start": "08:00",
+    "generation_attempt": 1,
+    "plugs": 30,
+    "feasibility": "independently checked construction witness"
+  }
+}

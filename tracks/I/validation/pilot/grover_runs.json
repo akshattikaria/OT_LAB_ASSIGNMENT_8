@@ -1,0 +1,80 @@
+[
+  {
+    "n": 2,
+    "size": 4,
+    "seed": 0,
+    "marked": 0,
+    "grover_rounds": 1,
+    "verification_queries": 1,
+    "success_probability": 0.9999999999999984,
+    "analytic_probability": 1.0,
+    "sample": 0,
+    "sample_verified": true,
+    "classical_checks": 1,
+    "classical_uniform_expected_checks": 2.5,
+    "classical_s": 1.136000264523318e-06,
+    "build_s": 0.000511313000060909,
+    "simulate_s": 0.0012074409996785107,
+    "sample_verify_s": 0.00041809100002865307,
+    "simulator_end_to_end_s": 0.029757277999578946,
+    "basis": "u,cx",
+    "basis_operations": {
+      "u": 18,
+      "cx": 2
+    },
+    "basis_depth": 13,
+    "transpile_s": 0.027620432999810873
+  },
+  {
+    "n": 4,
+    "size": 16,
+    "seed": 0,
+    "marked": 13,
+    "grover_rounds": 3,
+    "verification_queries": 1,
+    "success_probability": 0.9613189697265523,
+    "analytic_probability": 0.9613189697265625,
+    "sample": 13,
+    "sample_verified": true,
+    "classical_checks": 14,
+    "classical_uniform_expected_checks": 8.5,
+    "classical_s": 1.6280000636470504e-06,
+    "build_s": 0.001160816999799863,
+    "simulate_s": 0.007972150000114198,
+    "sample_verify_s": 0.00018513899976824177,
+    "simulator_end_to_end_s": 0.025286593999680917,
+    "basis": "u,cx",
+    "basis_operations": {
+      "u": 172,
+      "cx": 84
+    },
+    "basis_depth": 172,
+    "transpile_s": 0.015968487999998615
+  },
+  {
+    "n": 6,
+    "size": 64,
+    "seed": 0,
+    "marked": 49,
+    "grover_rounds": 6,
+    "verification_queries": 1,
+    "success_probability": 0.9965856807867713,
+    "analytic_probability": 0.9965856807867991,
+    "sample": 49,
+    "sample_verified": true,
+    "classical_checks": 50,
+    "classical_uniform_expected_checks": 32.5,
+    "classical_s": 5.84710001021449e-05,
+    "build_s": 0.002819659000124375,
+    "simulate_s": 0.03011642199999187,
+    "sample_verify_s": 0.00026170899991484475,
+    "simulator_end_to_end_s": 0.056952060000185156,
+    "basis": "u,cx",
+    "basis_operations": {
+      "u": 1710,
+      "cx": 984
+    },
+    "basis_depth": 1370,
+    "transpile_s": 0.023754270000154065
+  }
+]

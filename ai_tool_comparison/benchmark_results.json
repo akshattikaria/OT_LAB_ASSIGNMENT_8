@@ -1,0 +1,743 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "seed": 241070005,
+  "repetitions": 7,
+  "cases": [
+    {
+      "name": "small",
+      "weights": [
+        22,
+        17,
+        4,
+        8,
+        14,
+        23,
+        15,
+        13,
+        14,
+        7,
+        23,
+        1
+      ],
+      "values": [
+        133,
+        54,
+        146,
+        95,
+        89,
+        17,
+        135,
+        129,
+        167,
+        3,
+        98,
+        7
+      ],
+      "capacity": 80,
+      "reference_value": 812,
+      "reference_min_weight": 77
+    },
+    {
+      "name": "medium_tight",
+      "weights": [
+        86,
+        23,
+        122,
+        35,
+        54,
+        128,
+        140,
+        107,
+        107,
+        110,
+        95,
+        102,
+        121,
+        102,
+        30,
+        59,
+        143,
+        114,
+        142,
+        91,
+        11,
+        59,
+        93,
+        4,
+        25,
+        107,
+        87,
+        96,
+        101,
+        87,
+        74,
+        28,
+        100,
+        68,
+        90
+      ],
+      "values": [
+        197,
+        78,
+        9,
+        53,
+        26,
+        166,
+        177,
+        62,
+        63,
+        27,
+        66,
+        65,
+        48,
+        184,
+        27,
+        181,
+        153,
+        51,
+        140,
+        85,
+        114,
+        163,
+        17,
+        28,
+        200,
+        104,
+        153,
+        86,
+        58,
+        13,
+        49,
+        154,
+        100,
+        58,
+        108
+      ],
+      "capacity": 500,
+      "reference_value": 1452,
+      "reference_min_weight": 484
+    },
+    {
+      "name": "large_tight",
+      "weights": [
+        236,
+        364,
+        319,
+        136,
+        87,
+        295,
+        312,
+        122,
+        484,
+        436,
+        41,
+        166,
+        63,
+        2,
+        305,
+        68,
+        335,
+        210,
+        314,
+        91,
+        205,
+        184,
+        478,
+        378,
+        263,
+        265,
+        204,
+        135,
+        66,
+        168,
+        379,
+        43,
+        410,
+        71,
+        40,
+        97,
+        307,
+        40,
+        198,
+        494,
+        419,
+        369,
+        99,
+        120,
+        101,
+        326,
+        427,
+        459,
+        400,
+        301
+      ],
+      "values": [
+        76,
+        49,
+        114,
+        95,
+        49,
+        171,
+        175,
+        7,
+        173,
+        169,
+        196,
+        171,
+        161,
+        96,
+        58,
+        163,
+        99,
+        157,
+        174,
+        165,
+        195,
+        46,
+        97,
+        33,
+        130,
+        156,
+        28,
+        10,
+        125,
+        43,
+        38,
+        70,
+        67,
+        113,
+        94,
+        173,
+        165,
+        119,
+        3,
+        140,
+        43,
+        68,
+        102,
+        106,
+        102,
+        143,
+        93,
+        11,
+        104,
+        144
+      ],
+      "capacity": 5000,
+      "reference_value": 4003,
+      "reference_min_weight": 4962
+    },
+    {
+      "name": "large_loose",
+      "weights": [
+        12,
+        81,
+        22,
+        46,
+        15,
+        63,
+        21,
+        66,
+        84,
+        30,
+        1,
+        36,
+        18,
+        16,
+        87,
+        48,
+        84,
+        67,
+        71,
+        70,
+        93,
+        66,
+        75,
+        23,
+        23,
+        27,
+        70,
+        22,
+        66,
+        8,
+        61,
+        3,
+        50,
+        86,
+        90,
+        46,
+        22,
+        74,
+        62,
+        64,
+        14,
+        32,
+        81,
+        4,
+        61,
+        42,
+        93,
+        6,
+        54,
+        93
+      ],
+      "values": [
+        31,
+        158,
+        139,
+        66,
+        50,
+        145,
+        30,
+        62,
+        118,
+        174,
+        117,
+        80,
+        94,
+        148,
+        118,
+        97,
+        186,
+        36,
+        45,
+        101,
+        26,
+        135,
+        97,
+        61,
+        101,
+        30,
+        106,
+        135,
+        107,
+        22,
+        89,
+        168,
+        85,
+        165,
+        139,
+        161,
+        164,
+        84,
+        55,
+        130,
+        4,
+        106,
+        120,
+        162,
+        140,
+        121,
+        130,
+        169,
+        144,
+        168
+      ],
+      "capacity": 10000,
+      "reference_value": 5319,
+      "reference_min_weight": 2449
+    }
+  ],
+  "rows": [
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 0,
+      "elapsed_ns": 59528
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 0,
+      "elapsed_ns": 86127
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 1,
+      "elapsed_ns": 132777
+    },
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 1,
+      "elapsed_ns": 58586
+    },
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 2,
+      "elapsed_ns": 55311
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 2,
+      "elapsed_ns": 81691
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 3,
+      "elapsed_ns": 85567
+    },
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 3,
+      "elapsed_ns": 55312
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 4,
+      "elapsed_ns": 82542
+    },
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 4,
+      "elapsed_ns": 54861
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 5,
+      "elapsed_ns": 82081
+    },
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 5,
+      "elapsed_ns": 56434
+    },
+    {
+      "case": "small",
+      "method": "gemini",
+      "repetition": 6,
+      "elapsed_ns": 54942
+    },
+    {
+      "case": "small",
+      "method": "chatgpt",
+      "repetition": 6,
+      "elapsed_ns": 79988
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 0,
+      "elapsed_ns": 1029273
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 0,
+      "elapsed_ns": 1574790
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 1,
+      "elapsed_ns": 1939539
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 1,
+      "elapsed_ns": 1151223
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 2,
+      "elapsed_ns": 1286323
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 2,
+      "elapsed_ns": 1889595
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 3,
+      "elapsed_ns": 1185343
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 3,
+      "elapsed_ns": 1844188
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 4,
+      "elapsed_ns": 1668047
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 4,
+      "elapsed_ns": 1332431
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 5,
+      "elapsed_ns": 1174086
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 5,
+      "elapsed_ns": 1654848
+    },
+    {
+      "case": "medium_tight",
+      "method": "chatgpt",
+      "repetition": 6,
+      "elapsed_ns": 1824198
+    },
+    {
+      "case": "medium_tight",
+      "method": "gemini",
+      "repetition": 6,
+      "elapsed_ns": 1224702
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 0,
+      "elapsed_ns": 29235071
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 0,
+      "elapsed_ns": 41773612
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 1,
+      "elapsed_ns": 43353969
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 1,
+      "elapsed_ns": 26867248
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 2,
+      "elapsed_ns": 26477091
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 2,
+      "elapsed_ns": 64901567
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 3,
+      "elapsed_ns": 29934606
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 3,
+      "elapsed_ns": 53431759
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 4,
+      "elapsed_ns": 34270201
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 4,
+      "elapsed_ns": 55040879
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 5,
+      "elapsed_ns": 25282559
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 5,
+      "elapsed_ns": 47869222
+    },
+    {
+      "case": "large_tight",
+      "method": "chatgpt",
+      "repetition": 6,
+      "elapsed_ns": 46016501
+    },
+    {
+      "case": "large_tight",
+      "method": "gemini",
+      "repetition": 6,
+      "elapsed_ns": 26921525
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 0,
+      "elapsed_ns": 9295186
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 0,
+      "elapsed_ns": 29293674
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 1,
+      "elapsed_ns": 9502221
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 1,
+      "elapsed_ns": 26787729
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 2,
+      "elapsed_ns": 27528041
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 2,
+      "elapsed_ns": 10607711
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 3,
+      "elapsed_ns": 28931360
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 3,
+      "elapsed_ns": 9934278
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 4,
+      "elapsed_ns": 28787809
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 4,
+      "elapsed_ns": 9085928
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 5,
+      "elapsed_ns": 9129061
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 5,
+      "elapsed_ns": 28352106
+    },
+    {
+      "case": "large_loose",
+      "method": "gemini",
+      "repetition": 6,
+      "elapsed_ns": 10532360
+    },
+    {
+      "case": "large_loose",
+      "method": "chatgpt",
+      "repetition": 6,
+      "elapsed_ns": 28973673
+    }
+  ],
+  "summary": [
+    {
+      "case": "small",
+      "chatgpt": {
+        "median_ms": 0.082542,
+        "min_ms": 0.079988,
+        "max_ms": 0.132777
+      },
+      "gemini": {
+        "median_ms": 0.055312,
+        "min_ms": 0.054861,
+        "max_ms": 0.059528
+      },
+      "chatgpt_over_gemini_time_ratio": 1.4922982354642755
+    },
+    {
+      "case": "medium_tight",
+      "chatgpt": {
+        "median_ms": 1.824198,
+        "min_ms": 1.57479,
+        "max_ms": 1.939539
+      },
+      "gemini": {
+        "median_ms": 1.185343,
+        "min_ms": 1.029273,
+        "max_ms": 1.332431
+      },
+      "chatgpt_over_gemini_time_ratio": 1.538962140072536
+    },
+    {
+      "case": "large_tight",
+      "chatgpt": {
+        "median_ms": 47.869222,
+        "min_ms": 41.773612,
+        "max_ms": 64.901567
+      },
+      "gemini": {
+        "median_ms": 26.921525,
+        "min_ms": 25.282559,
+        "max_ms": 34.270201
+      },
+      "chatgpt_over_gemini_time_ratio": 1.7781021691750376
+    },
+    {
+      "case": "large_loose",
+      "chatgpt": {
+        "median_ms": 28.787809,
+        "min_ms": 26.787729,
+        "max_ms": 29.293674
+      },
+      "gemini": {
+        "median_ms": 9.502221,
+        "min_ms": 9.085928,
+        "max_ms": 10.607711
+      },
+      "chatgpt_over_gemini_time_ratio": 3.0295873985671347
+    }
+  ],
+  "source_sha256": {
+    "chatgpt": "2e481db0c2517d020d20db5aaa3cd6625389dc8b00547e957517a4ee8b634382",
+    "gemini": "6e93b3033c03fff753de327cb46b753ee3602cb1023710f8d56a35648caacb1a"
+  },
+  "scope": "Seven paired, seeded-order trials per function/case; one warmup each; function call only. Shared cloud Python host, not student laptop. Validation/import/oracle/data generation excluded. AI generation latency is separate. Large cases use independent value/min-weight reference plus pair agreement; lexicographic ties are independently checked by the common tiny exhaustive tests. No universal speed ranking."
+}

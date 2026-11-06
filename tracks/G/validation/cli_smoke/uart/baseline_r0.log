@@ -1,0 +1,23 @@
+
+xv6 kernel is booting
+
+hart 1 starting
+hart 2 starting
+init: starting sh
+$ gcheck
+GCHECK PASS percpu=0 hash=0 free=32530
+$ gbench scan 20
+GRESULT kind=scan ops=20 dt=154392 percpu=0 hash=0 alloc=0 frees=0 alocks=1 aspins=0 steals=0 stolen=0 lookups=28 hits=8 misses=20 probes=630 recycle=20 clocks=57 cspins=0
+$ gbench fork 1
+GRESULT kind=fork ops=3 dt=89036 percpu=0 hash=0 alloc=33 frees=66 alocks=100 aspins=0 steals=0 stolen=0 lookups=0 hits=0 misses=0 probes=0 recycle=0 clocks=1 cspins=0
+$ gbench pipes 20
+GRESULT kind=pipes ops=60 dt=309478 percpu=0 hash=0 alloc=60 frees=93 alocks=154 aspins=0 steals=0 stolen=0 lookups=0 hits=0 misses=0 probes=0 recycle=0 clocks=1 cspins=0
+$ gbench hotseq 20
+GRESULT kind=hotseq ops=20 dt=46295 percpu=0 hash=0 alloc=0 frees=0 alocks=1 aspins=0 steals=0 stolen=0 lookups=52 hits=52 misses=0 probes=466 recycle=0 clocks=105 cspins=0
+$ gbench hotrand 20
+GRESULT kind=hotrand ops=20 dt=38452 percpu=0 hash=0 alloc=0 frees=0 alocks=1 aspins=0 steals=0 stolen=0 lookups=49 hits=49 misses=0 probes=381 recycle=0 clocks=99 cspins=0
+$ gbench pages 2
+GRESULT kind=pages ops=96 dt=93029 percpu=0 hash=0 alloc=96 frees=129 alocks=226 aspins=0 steals=0 stolen=0 lookups=0 hits=0 misses=0 probes=0 recycle=0 clocks=1 cspins=0
+$ gcheck
+GCHECK PASS percpu=0 hash=0 free=32530
+$ 

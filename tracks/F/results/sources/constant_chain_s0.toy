@@ -1,0 +1,18 @@
+fn constant_chain_0(x,y,z) {
+let k0 = 2 * 4;
+let k1 = k0 + 0;
+let value0 = x + y;
+let value1 = value0 + (z * k1) + (1 * 3);
+let value2 = value1 + (z * k1) + (2 * 3);
+let value3 = value2 + (z * k1) + (3 * 3);
+let value4 = value3 + (z * k1) + (4 * 3);
+let value5 = value4 + (z * k1) + (5 * 3);
+let value6 = value5 + (z * k1) + (6 * 3);
+let value7 = value6 + (z * k1) + (7 * 3);
+let value8 = value7 + (z * k1) + (8 * 3);
+let value9 = value8 + (z * k1) + (9 * 3);
+let value10 = value9 + (z * k1) + (10 * 3);
+let value11 = value10 + (z * k1) + (11 * 3);
+let value12 = value11 + (z * k1) + (12 * 3);
+return value12;
+}

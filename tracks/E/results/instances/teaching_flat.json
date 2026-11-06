@@ -1,0 +1,55 @@
+{
+  "name": "teaching_flat",
+  "slot_minutes": 60,
+  "prices": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "capacity_kw": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "vehicles": [
+    {
+      "id": "A",
+      "arrival": 0,
+      "departure": 3,
+      "required_slots": 1,
+      "power_kw": 7.0
+    },
+    {
+      "id": "B",
+      "arrival": 0,
+      "departure": 6,
+      "required_slots": 2,
+      "power_kw": 7.0
+    },
+    {
+      "id": "C",
+      "arrival": 1,
+      "departure": 6,
+      "required_slots": 1,
+      "power_kw": 7.0
+    },
+    {
+      "id": "D",
+      "arrival": 2,
+      "departure": 6,
+      "required_slots": 1,
+      "power_kw": 7.0
+    }
+  ],
+  "metadata": {
+    "source": "synthetic",
+    "scenario": "teaching",
+    "clock_start": "09:00"
+  }
+}

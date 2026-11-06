@@ -1,0 +1,211 @@
+[
+  {
+    "portfolio": "none",
+    "label": "Default planner",
+    "selected": [],
+    "index_mib": 0.0,
+    "file_mib": 6.49609375,
+    "families_ms": {
+      "train": {
+        "customer": 7.936647499999999,
+        "station": 8.7338935,
+        "confirmed": 9.724859,
+        "status": 11.9686985,
+        "daily": 10.294314,
+        "city": 9.2651845
+      },
+      "heldout": {
+        "customer": 7.648189666666667,
+        "station": 8.135394,
+        "confirmed": 9.044701,
+        "status": 11.057815666666666,
+        "daily": 11.957831,
+        "city": 9.410261666666667
+      }
+    },
+    "weighted_heldout_ms": 8.878880950000001,
+    "weighted_train_ms": 9.096291575,
+    "predicted_train_ms": 9.2606936,
+    "median_qps": 113.16516254605433,
+    "min_qps": 99.50347348814826,
+    "max_qps": 117.15743900291372,
+    "median_insert_rows_per_s": 167666.01198677853,
+    "min_insert_rows_per_s": 116245.42617840023,
+    "max_insert_rows_per_s": 172588.3751719196,
+    "index_build_s": 0.005655005999983587,
+    "analyze_s": 0.003963115000033213,
+    "batch_qps_ratio": 1.0,
+    "insert_ratio": 1.0
+  },
+  {
+    "portfolio": "p_1_5",
+    "label": "20% budget",
+    "selected": [
+      "station_time",
+      "confirmed_station"
+    ],
+    "index_mib": 4.234375,
+    "file_mib": 10.73046875,
+    "families_ms": {
+      "train": {
+        "customer": 7.67179875,
+        "station": 0.0513515,
+        "confirmed": 0.01998175,
+        "status": 1.725967,
+        "daily": 6.19362825,
+        "city": 0.17050125
+      },
+      "heldout": {
+        "customer": 7.349857833333334,
+        "station": 0.023420166666666666,
+        "confirmed": 0.026526499999999998,
+        "status": 5.745515666666667,
+        "daily": 8.133973333333333,
+        "city": 0.18460266666666666
+      }
+    },
+    "weighted_heldout_ms": 4.3538443000000004,
+    "weighted_train_ms": 3.8884291375,
+    "predicted_train_ms": 4.0036762249999995,
+    "median_qps": 188.2011120077536,
+    "min_qps": 92.8254623688959,
+    "max_qps": 220.52956226899735,
+    "median_insert_rows_per_s": 53640.3650613053,
+    "min_insert_rows_per_s": 39404.30851831899,
+    "max_insert_rows_per_s": 62220.96231686971,
+    "index_build_s": 0.2861095319999549,
+    "analyze_s": 0.02420511399998304,
+    "batch_qps_ratio": 1.663065803764142,
+    "insert_ratio": 0.31992390363250944
+  },
+  {
+    "portfolio": "p_0_1_5",
+    "label": "40% budget",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "confirmed_station"
+    ],
+    "index_mib": 7.61328125,
+    "file_mib": 14.109375,
+    "families_ms": {
+      "train": {
+        "customer": 0.051136,
+        "station": 0.049509,
+        "confirmed": 0.0120085,
+        "status": 1.8703285,
+        "daily": 5.7914745,
+        "city": 0.165525
+      },
+      "heldout": {
+        "customer": 0.026225000000000002,
+        "station": 0.020569666666666667,
+        "confirmed": 0.019548666666666666,
+        "status": 6.881122,
+        "daily": 9.271408,
+        "city": 0.12971366666666667
+      }
+    },
+    "weighted_heldout_ms": 1.6447321166666666,
+    "weighted_train_ms": 0.8124148250000001,
+    "predicted_train_ms": 0.9813662249999986,
+    "median_qps": 542.2819544589988,
+    "min_qps": 335.09937517739115,
+    "max_qps": 679.0466790336006,
+    "median_insert_rows_per_s": 37853.06141839017,
+    "min_insert_rows_per_s": 29346.57345079769,
+    "max_insert_rows_per_s": 38571.39126738302,
+    "index_build_s": 0.3910344859999668,
+    "analyze_s": 0.04361587799996869,
+    "batch_qps_ratio": 4.7919513590439875,
+    "insert_ratio": 0.22576466732789657
+  },
+  {
+    "portfolio": "p_0_1_4_5",
+    "label": "60% budget",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "time_cover",
+      "confirmed_station"
+    ],
+    "index_mib": 12.77734375,
+    "file_mib": 19.2734375,
+    "families_ms": {
+      "train": {
+        "customer": 0.0319115,
+        "station": 0.0408545,
+        "confirmed": 0.0088635,
+        "status": 0.2281785,
+        "daily": 1.2295695,
+        "city": 0.0955665
+      },
+      "heldout": {
+        "customer": 0.020562333333333332,
+        "station": 0.016436,
+        "confirmed": 0.008620333333333334,
+        "status": 0.19952666666666666,
+        "daily": 2.0567426666666666,
+        "city": 0.09694466666666668
+      }
+    },
+    "weighted_heldout_ms": 0.24730478333333333,
+    "weighted_train_ms": 0.17555375,
+    "predicted_train_ms": 0.1946727250000002,
+    "median_qps": 4176.982595390691,
+    "min_qps": 3066.2095520583666,
+    "max_qps": 4830.910873076029,
+    "median_insert_rows_per_s": 12336.44738985076,
+    "min_insert_rows_per_s": 12307.390416872606,
+    "max_insert_rows_per_s": 14762.602769397849,
+    "index_build_s": 0.5890538639999932,
+    "analyze_s": 0.06216209700005493,
+    "batch_qps_ratio": 36.91049879145274,
+    "insert_ratio": 0.07357750830754872
+  },
+  {
+    "portfolio": "p_0_1_2_3_4_5",
+    "label": "All six indexes",
+    "selected": [
+      "customer_time",
+      "station_time",
+      "status_time",
+      "station_cover",
+      "time_cover",
+      "confirmed_station"
+    ],
+    "index_mib": 22.2890625,
+    "file_mib": 28.78515625,
+    "families_ms": {
+      "train": {
+        "customer": 0.0404865,
+        "station": 0.013571,
+        "confirmed": 0.011319,
+        "status": 0.20634249999999998,
+        "daily": 1.2086255,
+        "city": 0.1023605
+      },
+      "heldout": {
+        "customer": 0.019584333333333332,
+        "station": 0.008878333333333334,
+        "confirmed": 0.008472333333333333,
+        "status": 0.238922,
+        "daily": 2.010391333333333,
+        "city": 0.09525833333333333
+      }
+    },
+    "weighted_heldout_ms": 0.24489350000000001,
+    "weighted_train_ms": 0.17166095,
+    "predicted_train_ms": 0.17775189999999874,
+    "median_qps": 4317.7562934860125,
+    "min_qps": 3845.368355717799,
+    "max_qps": 5218.373538379233,
+    "median_insert_rows_per_s": 10378.19082146992,
+    "min_insert_rows_per_s": 3001.059028715348,
+    "max_insert_rows_per_s": 11398.026735997975,
+    "index_build_s": 1.0200753849999273,
+    "analyze_s": 0.08701649299996461,
+    "batch_qps_ratio": 38.15446552934375,
+    "insert_ratio": 0.06189800006866211
+  }
+]

@@ -1,0 +1,7337 @@
+[
+  {
+    "instance": "independent_n10_s0",
+    "family": "independent",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 1.6735000031076197e-05,
+    "cardinality_upper_bound": 31.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 13.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s0",
+    "family": "independent",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 2.3704000000179803e-05,
+    "cardinality_upper_bound": 31.0,
+    "method": "singleton",
+    "selected": [
+      6,
+      1,
+      3
+    ],
+    "value": 24.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s0",
+    "family": "independent",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 6.940200000826735e-05,
+    "cardinality_upper_bound": 31.0,
+    "method": "greedy",
+    "selected": [
+      6,
+      1,
+      2
+    ],
+    "value": 26.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 6,
+        "marginal_gain": 15.0,
+        "value": 15.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 8.0,
+        "value": 23.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 3.0,
+        "value": 26.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s0",
+    "family": "independent",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 3.886700005750754e-05,
+    "cardinality_upper_bound": 31.0,
+    "method": "lazy_greedy",
+    "selected": [
+      6,
+      1,
+      2
+    ],
+    "value": 26.0,
+    "oracle_evaluations": 16,
+    "trace": [
+      {
+        "selected": 6,
+        "marginal_gain": 15.0,
+        "value": 15.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 8.0,
+        "value": 23.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 3.0,
+        "value": 26.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s0",
+    "family": "independent",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 0.00024061399994934618,
+    "cardinality_upper_bound": 31.0,
+    "method": "exact",
+    "selected": [
+      1,
+      2,
+      6
+    ],
+    "value": 26.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s1",
+    "family": "independent",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 9.134000038102386e-06,
+    "cardinality_upper_bound": 36.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 21.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s1",
+    "family": "independent",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 2.2652999973615806e-05,
+    "cardinality_upper_bound": 36.0,
+    "method": "singleton",
+    "selected": [
+      5,
+      0,
+      3
+    ],
+    "value": 25.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s1",
+    "family": "independent",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 7.199600008789275e-05,
+    "cardinality_upper_bound": 36.0,
+    "method": "greedy",
+    "selected": [
+      5,
+      1,
+      7
+    ],
+    "value": 28.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 5,
+        "marginal_gain": 15.0,
+        "value": 15.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 7.0,
+        "value": 22.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 6.0,
+        "value": 28.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s1",
+    "family": "independent",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 4.412499993122765e-05,
+    "cardinality_upper_bound": 36.0,
+    "method": "lazy_greedy",
+    "selected": [
+      5,
+      1,
+      7
+    ],
+    "value": 28.0,
+    "oracle_evaluations": 18,
+    "trace": [
+      {
+        "selected": 5,
+        "marginal_gain": 15.0,
+        "value": 15.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 7.0,
+        "value": 22.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 6.0,
+        "value": 28.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s1",
+    "family": "independent",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 0.00030809299994416506,
+    "cardinality_upper_bound": 36.0,
+    "method": "exact",
+    "selected": [
+      1,
+      5,
+      7
+    ],
+    "value": 28.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s2",
+    "family": "independent",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 8.50300000365678e-06,
+    "cardinality_upper_bound": 57.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 35.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s2",
+    "family": "independent",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 2.2381999997378443e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "singleton",
+    "selected": [
+      5,
+      1,
+      6
+    ],
+    "value": 41.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s2",
+    "family": "independent",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 6.864099998438178e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "greedy",
+    "selected": [
+      5,
+      2,
+      8
+    ],
+    "value": 43.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 5,
+        "marginal_gain": 23.0,
+        "value": 23.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 10.0,
+        "value": 33.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 10.0,
+        "value": 43.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s2",
+    "family": "independent",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 3.984899990427948e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "lazy_greedy",
+    "selected": [
+      5,
+      2,
+      8
+    ],
+    "value": 43.0,
+    "oracle_evaluations": 17,
+    "trace": [
+      {
+        "selected": 5,
+        "marginal_gain": 23.0,
+        "value": 23.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 10.0,
+        "value": 33.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 10.0,
+        "value": 43.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s2",
+    "family": "independent",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 0.00028300600001784915,
+    "cardinality_upper_bound": 57.0,
+    "method": "exact",
+    "selected": [
+      2,
+      5,
+      8
+    ],
+    "value": 43.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s3",
+    "family": "independent",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 1.0105000001203734e-05,
+    "cardinality_upper_bound": 37.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 18.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s3",
+    "family": "independent",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 2.1070999991934514e-05,
+    "cardinality_upper_bound": 37.0,
+    "method": "singleton",
+    "selected": [
+      2,
+      5,
+      8
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s3",
+    "family": "independent",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 6.125000004431058e-05,
+    "cardinality_upper_bound": 37.0,
+    "method": "greedy",
+    "selected": [
+      2,
+      5,
+      8
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 2,
+        "marginal_gain": 13.0,
+        "value": 13.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 12.0,
+        "value": 25.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 9.0,
+        "value": 34.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s3",
+    "family": "independent",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 3.274800008057355e-05,
+    "cardinality_upper_bound": 37.0,
+    "method": "lazy_greedy",
+    "selected": [
+      2,
+      5,
+      8
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 15,
+    "trace": [
+      {
+        "selected": 2,
+        "marginal_gain": 13.0,
+        "value": 13.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 12.0,
+        "value": 25.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 9.0,
+        "value": 34.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s3",
+    "family": "independent",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 0.0005585709999422761,
+    "cardinality_upper_bound": 37.0,
+    "method": "exact",
+    "selected": [
+      5,
+      8,
+      9
+    ],
+    "value": 36.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s4",
+    "family": "independent",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 9.193999972012534e-06,
+    "cardinality_upper_bound": 40.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 26.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s4",
+    "family": "independent",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 2.136099999461294e-05,
+    "cardinality_upper_bound": 40.0,
+    "method": "singleton",
+    "selected": [
+      0,
+      7,
+      1
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "independent_n10_s4",
+    "family": "independent",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 6.366399998114503e-05,
+    "cardinality_upper_bound": 40.0,
+    "method": "greedy",
+    "selected": [
+      0,
+      1,
+      6
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 0,
+        "marginal_gain": 15.0,
+        "value": 15.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 11.0,
+        "value": 26.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 8.0,
+        "value": 34.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s4",
+    "family": "independent",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 3.583200009416032e-05,
+    "cardinality_upper_bound": 40.0,
+    "method": "lazy_greedy",
+    "selected": [
+      0,
+      1,
+      6
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 16,
+    "trace": [
+      {
+        "selected": 0,
+        "marginal_gain": 15.0,
+        "value": 15.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 11.0,
+        "value": 26.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 8.0,
+        "value": 34.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n10_s4",
+    "family": "independent",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 0.00025206099996921694,
+    "cardinality_upper_bound": 40.0,
+    "method": "exact",
+    "selected": [
+      0,
+      1,
+      6
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s0",
+    "family": "clustered",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 1.015500004086789e-05,
+    "cardinality_upper_bound": 54.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 32.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s0",
+    "family": "clustered",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 2.2652999973615806e-05,
+    "cardinality_upper_bound": 54.0,
+    "method": "singleton",
+    "selected": [
+      9,
+      2,
+      3
+    ],
+    "value": 54.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s0",
+    "family": "clustered",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 7.85260000384369e-05,
+    "cardinality_upper_bound": 54.0,
+    "method": "greedy",
+    "selected": [
+      9,
+      2,
+      3
+    ],
+    "value": 54.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 9,
+        "marginal_gain": 20.0,
+        "value": 20.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 17.0,
+        "value": 37.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 17.0,
+        "value": 54.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s0",
+    "family": "clustered",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 3.35589999167496e-05,
+    "cardinality_upper_bound": 54.0,
+    "method": "lazy_greedy",
+    "selected": [
+      9,
+      2,
+      3
+    ],
+    "value": 54.0,
+    "oracle_evaluations": 13,
+    "trace": [
+      {
+        "selected": 9,
+        "marginal_gain": 20.0,
+        "value": 20.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 17.0,
+        "value": 37.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 17.0,
+        "value": 54.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s0",
+    "family": "clustered",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 0.000325227999951494,
+    "cardinality_upper_bound": 54.0,
+    "method": "exact",
+    "selected": [
+      2,
+      3,
+      9
+    ],
+    "value": 54.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s1",
+    "family": "clustered",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 9.0730000010808e-06,
+    "cardinality_upper_bound": 57.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 29.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s1",
+    "family": "clustered",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 2.2392999994735874e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "singleton",
+    "selected": [
+      8,
+      7,
+      0
+    ],
+    "value": 41.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s1",
+    "family": "clustered",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 7.102500001110457e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "greedy",
+    "selected": [
+      8,
+      7,
+      2
+    ],
+    "value": 48.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 25.0,
+        "value": 25.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 16.0,
+        "value": 41.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 7.0,
+        "value": 48.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s1",
+    "family": "clustered",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 4.763000004004425e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "lazy_greedy",
+    "selected": [
+      8,
+      7,
+      2
+    ],
+    "value": 48.0,
+    "oracle_evaluations": 19,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 25.0,
+        "value": 25.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 16.0,
+        "value": 41.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 7.0,
+        "value": 48.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s1",
+    "family": "clustered",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 0.00034845300001506985,
+    "cardinality_upper_bound": 57.0,
+    "method": "exact",
+    "selected": [
+      2,
+      3,
+      8
+    ],
+    "value": 48.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s2",
+    "family": "clustered",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 9.643999987929419e-06,
+    "cardinality_upper_bound": 50.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 40.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s2",
+    "family": "clustered",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 2.211200001056568e-05,
+    "cardinality_upper_bound": 50.0,
+    "method": "singleton",
+    "selected": [
+      4,
+      0,
+      6
+    ],
+    "value": 38.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s2",
+    "family": "clustered",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 0.00013141399995220127,
+    "cardinality_upper_bound": 50.0,
+    "method": "greedy",
+    "selected": [
+      4,
+      6,
+      5
+    ],
+    "value": 47.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 18.0,
+        "value": 18.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 16.0,
+        "value": 34.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 13.0,
+        "value": 47.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s2",
+    "family": "clustered",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 4.108999996788043e-05,
+    "cardinality_upper_bound": 50.0,
+    "method": "lazy_greedy",
+    "selected": [
+      4,
+      6,
+      5
+    ],
+    "value": 47.0,
+    "oracle_evaluations": 17,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 18.0,
+        "value": 18.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 16.0,
+        "value": 34.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 13.0,
+        "value": 47.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s2",
+    "family": "clustered",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 0.0003664789999220375,
+    "cardinality_upper_bound": 50.0,
+    "method": "exact",
+    "selected": [
+      4,
+      5,
+      6
+    ],
+    "value": 47.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s3",
+    "family": "clustered",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 8.472999979858287e-06,
+    "cardinality_upper_bound": 47.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 26.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s3",
+    "family": "clustered",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 2.3004000013315817e-05,
+    "cardinality_upper_bound": 47.0,
+    "method": "singleton",
+    "selected": [
+      8,
+      9,
+      4
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s3",
+    "family": "clustered",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 6.930100005320128e-05,
+    "cardinality_upper_bound": 47.0,
+    "method": "greedy",
+    "selected": [
+      8,
+      9,
+      2
+    ],
+    "value": 42.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 18.0,
+        "value": 18.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 16.0,
+        "value": 34.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 8.0,
+        "value": 42.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s3",
+    "family": "clustered",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 4.4425999931263505e-05,
+    "cardinality_upper_bound": 47.0,
+    "method": "lazy_greedy",
+    "selected": [
+      8,
+      9,
+      2
+    ],
+    "value": 42.0,
+    "oracle_evaluations": 18,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 18.0,
+        "value": 18.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 16.0,
+        "value": 34.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 8.0,
+        "value": 42.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s3",
+    "family": "clustered",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 0.000380018999976528,
+    "cardinality_upper_bound": 47.0,
+    "method": "exact",
+    "selected": [
+      2,
+      5,
+      8
+    ],
+    "value": 42.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s4",
+    "family": "clustered",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 1.1997000001429114e-05,
+    "cardinality_upper_bound": 44.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s4",
+    "family": "clustered",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 2.251299997624301e-05,
+    "cardinality_upper_bound": 44.0,
+    "method": "singleton",
+    "selected": [
+      0,
+      2,
+      4
+    ],
+    "value": 31.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n10_s4",
+    "family": "clustered",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 6.852100000287464e-05,
+    "cardinality_upper_bound": 44.0,
+    "method": "greedy",
+    "selected": [
+      0,
+      2,
+      7
+    ],
+    "value": 41.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 0,
+        "marginal_gain": 17.0,
+        "value": 17.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 14.0,
+        "value": 31.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 10.0,
+        "value": 41.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s4",
+    "family": "clustered",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 0.00021936299992830754,
+    "cardinality_upper_bound": 44.0,
+    "method": "lazy_greedy",
+    "selected": [
+      0,
+      2,
+      7
+    ],
+    "value": 41.0,
+    "oracle_evaluations": 16,
+    "trace": [
+      {
+        "selected": 0,
+        "marginal_gain": 17.0,
+        "value": 17.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 14.0,
+        "value": 31.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 10.0,
+        "value": 41.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n10_s4",
+    "family": "clustered",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 0.0004981330000646267,
+    "cardinality_upper_bound": 44.0,
+    "method": "exact",
+    "selected": [
+      0,
+      2,
+      7
+    ],
+    "value": 41.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s0",
+    "family": "redundant",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 8.222000019486586e-06,
+    "cardinality_upper_bound": 53.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 22.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s0",
+    "family": "redundant",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 2.3915000042507017e-05,
+    "cardinality_upper_bound": 53.0,
+    "method": "singleton",
+    "selected": [
+      1,
+      3,
+      4
+    ],
+    "value": 22.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s0",
+    "family": "redundant",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 6.813000004513015e-05,
+    "cardinality_upper_bound": 53.0,
+    "method": "greedy",
+    "selected": [
+      1,
+      7,
+      8
+    ],
+    "value": 30.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 1,
+        "marginal_gain": 21.0,
+        "value": 21.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 6.0,
+        "value": 27.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 3.0,
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s0",
+    "family": "redundant",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 0.000149739999983467,
+    "cardinality_upper_bound": 53.0,
+    "method": "lazy_greedy",
+    "selected": [
+      1,
+      7,
+      8
+    ],
+    "value": 30.0,
+    "oracle_evaluations": 22,
+    "trace": [
+      {
+        "selected": 1,
+        "marginal_gain": 21.0,
+        "value": 21.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 6.0,
+        "value": 27.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 3.0,
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s0",
+    "family": "redundant",
+    "n": 10,
+    "seed": 0,
+    "k": 3,
+    "runtime_s": 0.00035893799997666065,
+    "cardinality_upper_bound": 53.0,
+    "method": "exact",
+    "selected": [
+      1,
+      7,
+      8
+    ],
+    "value": 30.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s1",
+    "family": "redundant",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 8.09100004062202e-06,
+    "cardinality_upper_bound": 57.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 19.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s1",
+    "family": "redundant",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 2.402500001608132e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "singleton",
+    "selected": [
+      7,
+      6,
+      3
+    ],
+    "value": 23.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s1",
+    "family": "redundant",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 6.805999998960033e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "greedy",
+    "selected": [
+      7,
+      5,
+      0
+    ],
+    "value": 24.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 7,
+        "marginal_gain": 23.0,
+        "value": 23.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 1.0,
+        "value": 24.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 0.0,
+        "value": 24.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s1",
+    "family": "redundant",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 5.2948000075048185e-05,
+    "cardinality_upper_bound": 57.0,
+    "method": "lazy_greedy",
+    "selected": [
+      7,
+      5,
+      0
+    ],
+    "value": 24.0,
+    "oracle_evaluations": 22,
+    "trace": [
+      {
+        "selected": 7,
+        "marginal_gain": 23.0,
+        "value": 23.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 1.0,
+        "value": 24.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 0.0,
+        "value": 24.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s1",
+    "family": "redundant",
+    "n": 10,
+    "seed": 1,
+    "k": 3,
+    "runtime_s": 0.000647001999936947,
+    "cardinality_upper_bound": 57.0,
+    "method": "exact",
+    "selected": [
+      0,
+      5,
+      7
+    ],
+    "value": 24.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s2",
+    "family": "redundant",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 8.001000082913379e-06,
+    "cardinality_upper_bound": 63.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 24.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s2",
+    "family": "redundant",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 2.408499994999147e-05,
+    "cardinality_upper_bound": 63.0,
+    "method": "singleton",
+    "selected": [
+      4,
+      2,
+      0
+    ],
+    "value": 31.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s2",
+    "family": "redundant",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 6.772899996576598e-05,
+    "cardinality_upper_bound": 63.0,
+    "method": "greedy",
+    "selected": [
+      4,
+      2,
+      0
+    ],
+    "value": 31.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 25.0,
+        "value": 25.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 4.0,
+        "value": 29.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 2.0,
+        "value": 31.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s2",
+    "family": "redundant",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 0.0002404030000207058,
+    "cardinality_upper_bound": 63.0,
+    "method": "lazy_greedy",
+    "selected": [
+      4,
+      2,
+      0
+    ],
+    "value": 31.0,
+    "oracle_evaluations": 22,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 25.0,
+        "value": 25.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 4.0,
+        "value": 29.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 2.0,
+        "value": 31.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s2",
+    "family": "redundant",
+    "n": 10,
+    "seed": 2,
+    "k": 3,
+    "runtime_s": 0.0002835569999888321,
+    "cardinality_upper_bound": 63.0,
+    "method": "exact",
+    "selected": [
+      0,
+      2,
+      4
+    ],
+    "value": 31.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s3",
+    "family": "redundant",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 9.623999972063757e-06,
+    "cardinality_upper_bound": 61.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 24.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s3",
+    "family": "redundant",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 2.3845000100664038e-05,
+    "cardinality_upper_bound": 61.0,
+    "method": "singleton",
+    "selected": [
+      9,
+      8,
+      2
+    ],
+    "value": 30.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s3",
+    "family": "redundant",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 6.855100002667314e-05,
+    "cardinality_upper_bound": 61.0,
+    "method": "greedy",
+    "selected": [
+      9,
+      5,
+      0
+    ],
+    "value": 32.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 9,
+        "marginal_gain": 30.0,
+        "value": 30.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 2.0,
+        "value": 32.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 0.0,
+        "value": 32.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s3",
+    "family": "redundant",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 5.305800004862249e-05,
+    "cardinality_upper_bound": 61.0,
+    "method": "lazy_greedy",
+    "selected": [
+      9,
+      5,
+      0
+    ],
+    "value": 32.0,
+    "oracle_evaluations": 22,
+    "trace": [
+      {
+        "selected": 9,
+        "marginal_gain": 30.0,
+        "value": 30.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 2.0,
+        "value": 32.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 0.0,
+        "value": 32.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s3",
+    "family": "redundant",
+    "n": 10,
+    "seed": 3,
+    "k": 3,
+    "runtime_s": 0.0002529930000036984,
+    "cardinality_upper_bound": 61.0,
+    "method": "exact",
+    "selected": [
+      0,
+      5,
+      9
+    ],
+    "value": 32.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s4",
+    "family": "redundant",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 7.680999942749622e-06,
+    "cardinality_upper_bound": 48.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 20.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s4",
+    "family": "redundant",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 2.1881999941797403e-05,
+    "cardinality_upper_bound": 48.0,
+    "method": "singleton",
+    "selected": [
+      0,
+      1,
+      8
+    ],
+    "value": 16.0,
+    "oracle_evaluations": 10,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n10_s4",
+    "family": "redundant",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 6.357299992032495e-05,
+    "cardinality_upper_bound": 48.0,
+    "method": "greedy",
+    "selected": [
+      0,
+      2,
+      1
+    ],
+    "value": 20.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 0,
+        "marginal_gain": 16.0,
+        "value": 16.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 4.0,
+        "value": 20.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 0.0,
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s4",
+    "family": "redundant",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 4.969300005086552e-05,
+    "cardinality_upper_bound": 48.0,
+    "method": "lazy_greedy",
+    "selected": [
+      0,
+      2,
+      1
+    ],
+    "value": 20.0,
+    "oracle_evaluations": 22,
+    "trace": [
+      {
+        "selected": 0,
+        "marginal_gain": 16.0,
+        "value": 16.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 4.0,
+        "value": 20.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 0.0,
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n10_s4",
+    "family": "redundant",
+    "n": 10,
+    "seed": 4,
+    "k": 3,
+    "runtime_s": 0.000268264999931489,
+    "cardinality_upper_bound": 48.0,
+    "method": "exact",
+    "selected": [
+      0,
+      1,
+      2
+    ],
+    "value": 20.0,
+    "oracle_evaluations": 120,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s0",
+    "family": "independent",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 9.503999990556622e-06,
+    "cardinality_upper_bound": 97.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 44.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s0",
+    "family": "independent",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 3.562199992757087e-05,
+    "cardinality_upper_bound": 97.0,
+    "method": "singleton",
+    "selected": [
+      6,
+      7,
+      0,
+      4
+    ],
+    "value": 74.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s0",
+    "family": "independent",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.00017883300006360514,
+    "cardinality_upper_bound": 97.0,
+    "method": "greedy",
+    "selected": [
+      6,
+      7,
+      0,
+      8
+    ],
+    "value": 80.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 6,
+        "marginal_gain": 31.0,
+        "value": 31.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 23.0,
+        "value": 54.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 17.0,
+        "value": 71.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 9.0,
+        "value": 80.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s0",
+    "family": "independent",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.00011807300006694277,
+    "cardinality_upper_bound": 97.0,
+    "method": "lazy_greedy",
+    "selected": [
+      6,
+      7,
+      0,
+      8
+    ],
+    "value": 80.0,
+    "oracle_evaluations": 28,
+    "trace": [
+      {
+        "selected": 6,
+        "marginal_gain": 31.0,
+        "value": 31.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 23.0,
+        "value": 54.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 17.0,
+        "value": 71.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 9.0,
+        "value": 80.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s0",
+    "family": "independent",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.006132761000003484,
+    "cardinality_upper_bound": 97.0,
+    "method": "exact",
+    "selected": [
+      0,
+      6,
+      7,
+      8
+    ],
+    "value": 80.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s1",
+    "family": "independent",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 9.113000032812124e-06,
+    "cardinality_upper_bound": 82.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 28.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s1",
+    "family": "independent",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 3.640400007043354e-05,
+    "cardinality_upper_bound": 82.0,
+    "method": "singleton",
+    "selected": [
+      4,
+      7,
+      15,
+      9
+    ],
+    "value": 57.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s1",
+    "family": "independent",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.00017785199997888412,
+    "cardinality_upper_bound": 82.0,
+    "method": "greedy",
+    "selected": [
+      4,
+      10,
+      0,
+      5
+    ],
+    "value": 65.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 27.0,
+        "value": 27.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 15.0,
+        "value": 42.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 12.0,
+        "value": 54.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 11.0,
+        "value": 65.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s1",
+    "family": "independent",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 7.586200001696852e-05,
+    "cardinality_upper_bound": 82.0,
+    "method": "lazy_greedy",
+    "selected": [
+      4,
+      10,
+      0,
+      5
+    ],
+    "value": 65.0,
+    "oracle_evaluations": 29,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 27.0,
+        "value": 27.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 15.0,
+        "value": 42.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 12.0,
+        "value": 54.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 11.0,
+        "value": 65.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s1",
+    "family": "independent",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.007806282999922587,
+    "cardinality_upper_bound": 82.0,
+    "method": "exact",
+    "selected": [
+      7,
+      9,
+      10,
+      15
+    ],
+    "value": 66.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s2",
+    "family": "independent",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 1.0706000011850847e-05,
+    "cardinality_upper_bound": 100.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 50.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s2",
+    "family": "independent",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 3.681399994093226e-05,
+    "cardinality_upper_bound": 100.0,
+    "method": "singleton",
+    "selected": [
+      8,
+      6,
+      12,
+      2
+    ],
+    "value": 63.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s2",
+    "family": "independent",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.00018468199994003953,
+    "cardinality_upper_bound": 100.0,
+    "method": "greedy",
+    "selected": [
+      8,
+      10,
+      12,
+      0
+    ],
+    "value": 73.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 34.0,
+        "value": 34.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 16.0,
+        "value": 50.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 12.0,
+        "value": 62.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 11.0,
+        "value": 73.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s2",
+    "family": "independent",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 8.379299993066525e-05,
+    "cardinality_upper_bound": 100.0,
+    "method": "lazy_greedy",
+    "selected": [
+      8,
+      10,
+      12,
+      0
+    ],
+    "value": 73.0,
+    "oracle_evaluations": 30,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 34.0,
+        "value": 34.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 16.0,
+        "value": 50.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 12.0,
+        "value": 62.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 11.0,
+        "value": 73.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s2",
+    "family": "independent",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.007148926000013489,
+    "cardinality_upper_bound": 100.0,
+    "method": "exact",
+    "selected": [
+      0,
+      8,
+      10,
+      12
+    ],
+    "value": 73.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s3",
+    "family": "independent",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 1.642400002310751e-05,
+    "cardinality_upper_bound": 72.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 53.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s3",
+    "family": "independent",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 3.702399999383488e-05,
+    "cardinality_upper_bound": 72.0,
+    "method": "singleton",
+    "selected": [
+      2,
+      3,
+      14,
+      5
+    ],
+    "value": 50.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s3",
+    "family": "independent",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.00022666300003493234,
+    "cardinality_upper_bound": 72.0,
+    "method": "greedy",
+    "selected": [
+      2,
+      3,
+      0,
+      7
+    ],
+    "value": 58.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 2,
+        "marginal_gain": 19.0,
+        "value": 19.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 18.0,
+        "value": 37.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 12.0,
+        "value": 49.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 9.0,
+        "value": 58.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s3",
+    "family": "independent",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 8.001799994872272e-05,
+    "cardinality_upper_bound": 72.0,
+    "method": "lazy_greedy",
+    "selected": [
+      2,
+      3,
+      0,
+      7
+    ],
+    "value": 58.0,
+    "oracle_evaluations": 29,
+    "trace": [
+      {
+        "selected": 2,
+        "marginal_gain": 19.0,
+        "value": 19.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 18.0,
+        "value": 37.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 12.0,
+        "value": 49.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 9.0,
+        "value": 58.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s3",
+    "family": "independent",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.009931578000077934,
+    "cardinality_upper_bound": 72.0,
+    "method": "exact",
+    "selected": [
+      2,
+      5,
+      7,
+      11
+    ],
+    "value": 63.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s4",
+    "family": "independent",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 1.4011000075697666e-05,
+    "cardinality_upper_bound": 72.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 48.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s4",
+    "family": "independent",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 3.887699995175353e-05,
+    "cardinality_upper_bound": 72.0,
+    "method": "singleton",
+    "selected": [
+      1,
+      13,
+      15,
+      5
+    ],
+    "value": 51.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "independent_n16_s4",
+    "family": "independent",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.00017868299994461267,
+    "cardinality_upper_bound": 72.0,
+    "method": "greedy",
+    "selected": [
+      1,
+      5,
+      8,
+      2
+    ],
+    "value": 62.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 1,
+        "marginal_gain": 19.0,
+        "value": 19.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 17.0,
+        "value": 36.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 14.0,
+        "value": 50.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 12.0,
+        "value": 62.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s4",
+    "family": "independent",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 7.904599999619677e-05,
+    "cardinality_upper_bound": 72.0,
+    "method": "lazy_greedy",
+    "selected": [
+      1,
+      5,
+      8,
+      2
+    ],
+    "value": 62.0,
+    "oracle_evaluations": 27,
+    "trace": [
+      {
+        "selected": 1,
+        "marginal_gain": 19.0,
+        "value": 19.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 17.0,
+        "value": 36.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 14.0,
+        "value": 50.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 12.0,
+        "value": 62.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n16_s4",
+    "family": "independent",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.008695800999930725,
+    "cardinality_upper_bound": 72.0,
+    "method": "exact",
+    "selected": [
+      1,
+      2,
+      5,
+      8
+    ],
+    "value": 62.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s0",
+    "family": "clustered",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 1.551299999391631e-05,
+    "cardinality_upper_bound": 87.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 63.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s0",
+    "family": "clustered",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 4.8811999931785977e-05,
+    "cardinality_upper_bound": 87.0,
+    "method": "singleton",
+    "selected": [
+      15,
+      4,
+      7,
+      14
+    ],
+    "value": 68.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s0",
+    "family": "clustered",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.0002031989999977668,
+    "cardinality_upper_bound": 87.0,
+    "method": "greedy",
+    "selected": [
+      15,
+      14,
+      1,
+      4
+    ],
+    "value": 80.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 15,
+        "marginal_gain": 24.0,
+        "value": 24.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 21.0,
+        "value": 45.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 19.0,
+        "value": 64.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 16.0,
+        "value": 80.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s0",
+    "family": "clustered",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.00014680599997518584,
+    "cardinality_upper_bound": 87.0,
+    "method": "lazy_greedy",
+    "selected": [
+      15,
+      14,
+      1,
+      4
+    ],
+    "value": 80.0,
+    "oracle_evaluations": 28,
+    "trace": [
+      {
+        "selected": 15,
+        "marginal_gain": 24.0,
+        "value": 24.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 21.0,
+        "value": 45.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 19.0,
+        "value": 64.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 16.0,
+        "value": 80.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s0",
+    "family": "clustered",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.010357795999993868,
+    "cardinality_upper_bound": 87.0,
+    "method": "exact",
+    "selected": [
+      1,
+      4,
+      7,
+      14
+    ],
+    "value": 80.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s1",
+    "family": "clustered",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 1.2618000027941889e-05,
+    "cardinality_upper_bound": 95.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 67.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s1",
+    "family": "clustered",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 8.170099999915692e-05,
+    "cardinality_upper_bound": 95.0,
+    "method": "singleton",
+    "selected": [
+      8,
+      6,
+      10,
+      13
+    ],
+    "value": 76.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s1",
+    "family": "clustered",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.00019045999999889318,
+    "cardinality_upper_bound": 95.0,
+    "method": "greedy",
+    "selected": [
+      8,
+      10,
+      13,
+      3
+    ],
+    "value": 86.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 29.0,
+        "value": 29.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 22.0,
+        "value": 51.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 21.0,
+        "value": 72.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 14.0,
+        "value": 86.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s1",
+    "family": "clustered",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 9.865499998795713e-05,
+    "cardinality_upper_bound": 95.0,
+    "method": "lazy_greedy",
+    "selected": [
+      8,
+      10,
+      13,
+      3
+    ],
+    "value": 86.0,
+    "oracle_evaluations": 31,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 29.0,
+        "value": 29.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 22.0,
+        "value": 51.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 21.0,
+        "value": 72.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 14.0,
+        "value": 86.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s1",
+    "family": "clustered",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.007610974999920472,
+    "cardinality_upper_bound": 95.0,
+    "method": "exact",
+    "selected": [
+      3,
+      8,
+      10,
+      13
+    ],
+    "value": 86.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s2",
+    "family": "clustered",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 1.049600007263507e-05,
+    "cardinality_upper_bound": 81.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 50.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s2",
+    "family": "clustered",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 3.9749000052324845e-05,
+    "cardinality_upper_bound": 81.0,
+    "method": "singleton",
+    "selected": [
+      4,
+      11,
+      12,
+      3
+    ],
+    "value": 50.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s2",
+    "family": "clustered",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.000189127999988159,
+    "cardinality_upper_bound": 81.0,
+    "method": "greedy",
+    "selected": [
+      4,
+      11,
+      6,
+      9
+    ],
+    "value": 71.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 27.0,
+        "value": 27.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 22.0,
+        "value": 49.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 14.0,
+        "value": 63.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 8.0,
+        "value": 71.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s2",
+    "family": "clustered",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.00017481699990185007,
+    "cardinality_upper_bound": 81.0,
+    "method": "lazy_greedy",
+    "selected": [
+      4,
+      11,
+      6,
+      9
+    ],
+    "value": 71.0,
+    "oracle_evaluations": 34,
+    "trace": [
+      {
+        "selected": 4,
+        "marginal_gain": 27.0,
+        "value": 27.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 22.0,
+        "value": 49.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 14.0,
+        "value": 63.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 8.0,
+        "value": 71.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s2",
+    "family": "clustered",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.008139943000060157,
+    "cardinality_upper_bound": 81.0,
+    "method": "exact",
+    "selected": [
+      2,
+      4,
+      9,
+      11
+    ],
+    "value": 73.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s3",
+    "family": "clustered",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 1.2106999975003419e-05,
+    "cardinality_upper_bound": 84.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 55.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s3",
+    "family": "clustered",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 3.769500006001181e-05,
+    "cardinality_upper_bound": 84.0,
+    "method": "singleton",
+    "selected": [
+      6,
+      2,
+      8,
+      5
+    ],
+    "value": 62.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s3",
+    "family": "clustered",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.0002274240000588179,
+    "cardinality_upper_bound": 84.0,
+    "method": "greedy",
+    "selected": [
+      6,
+      8,
+      5,
+      15
+    ],
+    "value": 78.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 6,
+        "marginal_gain": 25.0,
+        "value": 25.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 19.0,
+        "value": 44.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 17.0,
+        "value": 61.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 17.0,
+        "value": 78.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s3",
+    "family": "clustered",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.00010579599995708122,
+    "cardinality_upper_bound": 84.0,
+    "method": "lazy_greedy",
+    "selected": [
+      6,
+      8,
+      5,
+      15
+    ],
+    "value": 78.0,
+    "oracle_evaluations": 21,
+    "trace": [
+      {
+        "selected": 6,
+        "marginal_gain": 25.0,
+        "value": 25.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 19.0,
+        "value": 44.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 17.0,
+        "value": 61.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 17.0,
+        "value": 78.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s3",
+    "family": "clustered",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.006945817000087118,
+    "cardinality_upper_bound": 84.0,
+    "method": "exact",
+    "selected": [
+      5,
+      6,
+      8,
+      15
+    ],
+    "value": 78.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s4",
+    "family": "clustered",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 1.1646999951153703e-05,
+    "cardinality_upper_bound": 104.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 76.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s4",
+    "family": "clustered",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 3.962799996770627e-05,
+    "cardinality_upper_bound": 104.0,
+    "method": "singleton",
+    "selected": [
+      14,
+      0,
+      12,
+      4
+    ],
+    "value": 61.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n16_s4",
+    "family": "clustered",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.00019079100002272753,
+    "cardinality_upper_bound": 104.0,
+    "method": "greedy",
+    "selected": [
+      14,
+      0,
+      5,
+      11
+    ],
+    "value": 89.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 14,
+        "marginal_gain": 30.0,
+        "value": 30.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 26.0,
+        "value": 56.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 20.0,
+        "value": 76.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 13.0,
+        "value": 89.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s4",
+    "family": "clustered",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.00010808899992298393,
+    "cardinality_upper_bound": 104.0,
+    "method": "lazy_greedy",
+    "selected": [
+      14,
+      0,
+      5,
+      11
+    ],
+    "value": 89.0,
+    "oracle_evaluations": 34,
+    "trace": [
+      {
+        "selected": 14,
+        "marginal_gain": 30.0,
+        "value": 30.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 26.0,
+        "value": 56.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 20.0,
+        "value": 76.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 13.0,
+        "value": 89.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n16_s4",
+    "family": "clustered",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.008252068000047075,
+    "cardinality_upper_bound": 104.0,
+    "method": "exact",
+    "selected": [
+      0,
+      6,
+      9,
+      15
+    ],
+    "value": 92.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s0",
+    "family": "redundant",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 1.0034999945673917e-05,
+    "cardinality_upper_bound": 104.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s0",
+    "family": "redundant",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 4.1301000010207645e-05,
+    "cardinality_upper_bound": 104.0,
+    "method": "singleton",
+    "selected": [
+      7,
+      6,
+      8,
+      4
+    ],
+    "value": 51.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s0",
+    "family": "redundant",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.0001674960000173087,
+    "cardinality_upper_bound": 104.0,
+    "method": "greedy",
+    "selected": [
+      7,
+      8,
+      14,
+      4
+    ],
+    "value": 55.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 7,
+        "marginal_gain": 35.0,
+        "value": 35.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 11.0,
+        "value": 46.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 6.0,
+        "value": 52.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 3.0,
+        "value": 55.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s0",
+    "family": "redundant",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.00017125199997281015,
+    "cardinality_upper_bound": 104.0,
+    "method": "lazy_greedy",
+    "selected": [
+      7,
+      8,
+      14,
+      4
+    ],
+    "value": 55.0,
+    "oracle_evaluations": 49,
+    "trace": [
+      {
+        "selected": 7,
+        "marginal_gain": 35.0,
+        "value": 35.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 11.0,
+        "value": 46.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 6.0,
+        "value": 52.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 3.0,
+        "value": 55.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s0",
+    "family": "redundant",
+    "n": 16,
+    "seed": 0,
+    "k": 4,
+    "runtime_s": 0.005859799000063504,
+    "cardinality_upper_bound": 104.0,
+    "method": "exact",
+    "selected": [
+      4,
+      7,
+      8,
+      14
+    ],
+    "value": 55.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s1",
+    "family": "redundant",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 1.3099999932819628e-05,
+    "cardinality_upper_bound": 102.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 38.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s1",
+    "family": "redundant",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 4.1540999973221915e-05,
+    "cardinality_upper_bound": 102.0,
+    "method": "singleton",
+    "selected": [
+      1,
+      3,
+      15,
+      10
+    ],
+    "value": 46.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s1",
+    "family": "redundant",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.0004836009999280577,
+    "cardinality_upper_bound": 102.0,
+    "method": "greedy",
+    "selected": [
+      1,
+      5,
+      3,
+      6
+    ],
+    "value": 51.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 1,
+        "marginal_gain": 34.0,
+        "value": 34.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 10.0,
+        "value": 44.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 4.0,
+        "value": 48.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 3.0,
+        "value": 51.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s1",
+    "family": "redundant",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.0001084599999785496,
+    "cardinality_upper_bound": 102.0,
+    "method": "lazy_greedy",
+    "selected": [
+      1,
+      5,
+      3,
+      6
+    ],
+    "value": 51.0,
+    "oracle_evaluations": 37,
+    "trace": [
+      {
+        "selected": 1,
+        "marginal_gain": 34.0,
+        "value": 34.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 10.0,
+        "value": 44.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 4.0,
+        "value": 48.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 3.0,
+        "value": 51.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s1",
+    "family": "redundant",
+    "n": 16,
+    "seed": 1,
+    "k": 4,
+    "runtime_s": 0.006570295000074111,
+    "cardinality_upper_bound": 102.0,
+    "method": "exact",
+    "selected": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "value": 51.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s2",
+    "family": "redundant",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 1.0846000009223644e-05,
+    "cardinality_upper_bound": 95.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 34.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s2",
+    "family": "redundant",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 4.309400003421615e-05,
+    "cardinality_upper_bound": 95.0,
+    "method": "singleton",
+    "selected": [
+      13,
+      6,
+      9,
+      3
+    ],
+    "value": 49.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s2",
+    "family": "redundant",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.0002615739999782818,
+    "cardinality_upper_bound": 95.0,
+    "method": "greedy",
+    "selected": [
+      13,
+      9,
+      6,
+      3
+    ],
+    "value": 49.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 13,
+        "marginal_gain": 34.0,
+        "value": 34.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 6.0,
+        "value": 40.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 5.0,
+        "value": 45.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 4.0,
+        "value": 49.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s2",
+    "family": "redundant",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.00013742199996613635,
+    "cardinality_upper_bound": 95.0,
+    "method": "lazy_greedy",
+    "selected": [
+      13,
+      9,
+      6,
+      3
+    ],
+    "value": 49.0,
+    "oracle_evaluations": 35,
+    "trace": [
+      {
+        "selected": 13,
+        "marginal_gain": 34.0,
+        "value": 34.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 6.0,
+        "value": 40.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 5.0,
+        "value": 45.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 4.0,
+        "value": 49.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s2",
+    "family": "redundant",
+    "n": 16,
+    "seed": 2,
+    "k": 4,
+    "runtime_s": 0.006019044000026952,
+    "cardinality_upper_bound": 95.0,
+    "method": "exact",
+    "selected": [
+      3,
+      6,
+      9,
+      13
+    ],
+    "value": 49.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s3",
+    "family": "redundant",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 1.088599992726813e-05,
+    "cardinality_upper_bound": 94.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 36.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s3",
+    "family": "redundant",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 9.270700002161902e-05,
+    "cardinality_upper_bound": 94.0,
+    "method": "singleton",
+    "selected": [
+      11,
+      3,
+      6,
+      8
+    ],
+    "value": 39.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s3",
+    "family": "redundant",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.00021690899995974178,
+    "cardinality_upper_bound": 94.0,
+    "method": "greedy",
+    "selected": [
+      11,
+      1,
+      12,
+      0
+    ],
+    "value": 46.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 11,
+        "marginal_gain": 37.0,
+        "value": 37.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 7.0,
+        "value": 44.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 2.0,
+        "value": 46.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 0.0,
+        "value": 46.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s3",
+    "family": "redundant",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.0002843280000206505,
+    "cardinality_upper_bound": 94.0,
+    "method": "lazy_greedy",
+    "selected": [
+      11,
+      1,
+      12,
+      0
+    ],
+    "value": 46.0,
+    "oracle_evaluations": 49,
+    "trace": [
+      {
+        "selected": 11,
+        "marginal_gain": 37.0,
+        "value": 37.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 7.0,
+        "value": 44.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 2.0,
+        "value": 46.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 0.0,
+        "value": 46.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s3",
+    "family": "redundant",
+    "n": 16,
+    "seed": 3,
+    "k": 4,
+    "runtime_s": 0.0058771149999756744,
+    "cardinality_upper_bound": 94.0,
+    "method": "exact",
+    "selected": [
+      0,
+      1,
+      11,
+      12
+    ],
+    "value": 46.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s4",
+    "family": "redundant",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 1.0214999974778038e-05,
+    "cardinality_upper_bound": 112.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "value": 46.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s4",
+    "family": "redundant",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 4.1951999946832075e-05,
+    "cardinality_upper_bound": 112.0,
+    "method": "singleton",
+    "selected": [
+      14,
+      13,
+      12,
+      6
+    ],
+    "value": 53.0,
+    "oracle_evaluations": 16,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n16_s4",
+    "family": "redundant",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.0002380810000204292,
+    "cardinality_upper_bound": 112.0,
+    "method": "greedy",
+    "selected": [
+      14,
+      12,
+      2,
+      13
+    ],
+    "value": 58.0,
+    "oracle_evaluations": 58,
+    "trace": [
+      {
+        "selected": 14,
+        "marginal_gain": 40.0,
+        "value": 40.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 10.0,
+        "value": 50.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 5.0,
+        "value": 55.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 3.0,
+        "value": 58.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s4",
+    "family": "redundant",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.00018189699994763942,
+    "cardinality_upper_bound": 112.0,
+    "method": "lazy_greedy",
+    "selected": [
+      14,
+      12,
+      2,
+      13
+    ],
+    "value": 58.0,
+    "oracle_evaluations": 50,
+    "trace": [
+      {
+        "selected": 14,
+        "marginal_gain": 40.0,
+        "value": 40.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 10.0,
+        "value": 50.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 5.0,
+        "value": 55.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 3.0,
+        "value": 58.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n16_s4",
+    "family": "redundant",
+    "n": 16,
+    "seed": 4,
+    "k": 4,
+    "runtime_s": 0.007033004999925652,
+    "cardinality_upper_bound": 112.0,
+    "method": "exact",
+    "selected": [
+      2,
+      12,
+      13,
+      14
+    ],
+    "value": 58.0,
+    "oracle_evaluations": 1820,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s0",
+    "family": "independent",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 3.5362000062377774e-05,
+    "cardinality_upper_bound": 500.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 438.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s0",
+    "family": "independent",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.00034952399994381267,
+    "cardinality_upper_bound": 500.0,
+    "method": "singleton",
+    "selected": [
+      43,
+      72,
+      4,
+      32,
+      35,
+      18,
+      47,
+      33,
+      37,
+      5,
+      7,
+      58
+    ],
+    "value": 462.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s0",
+    "family": "independent",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.016942771999993056,
+    "cardinality_upper_bound": 500.0,
+    "method": "greedy",
+    "selected": [
+      43,
+      72,
+      17,
+      4,
+      53,
+      58,
+      69,
+      23,
+      26,
+      79,
+      71,
+      12
+    ],
+    "value": 497.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 43,
+        "marginal_gain": 103.0,
+        "value": 103.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 91.0,
+        "value": 194.0
+      },
+      {
+        "selected": 17,
+        "marginal_gain": 70.0,
+        "value": 264.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 53.0,
+        "value": 317.0
+      },
+      {
+        "selected": 53,
+        "marginal_gain": 44.0,
+        "value": 361.0
+      },
+      {
+        "selected": 58,
+        "marginal_gain": 38.0,
+        "value": 399.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 31.0,
+        "value": 430.0
+      },
+      {
+        "selected": 23,
+        "marginal_gain": 21.0,
+        "value": 451.0
+      },
+      {
+        "selected": 26,
+        "marginal_gain": 18.0,
+        "value": 469.0
+      },
+      {
+        "selected": 79,
+        "marginal_gain": 13.0,
+        "value": 482.0
+      },
+      {
+        "selected": 71,
+        "marginal_gain": 10.0,
+        "value": 492.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 5.0,
+        "value": 497.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s0",
+    "family": "independent",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.005516213999953834,
+    "cardinality_upper_bound": 500.0,
+    "method": "lazy_greedy",
+    "selected": [
+      43,
+      72,
+      17,
+      4,
+      53,
+      58,
+      69,
+      23,
+      26,
+      79,
+      71,
+      12
+    ],
+    "value": 497.0,
+    "oracle_evaluations": 380,
+    "trace": [
+      {
+        "selected": 43,
+        "marginal_gain": 103.0,
+        "value": 103.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 91.0,
+        "value": 194.0
+      },
+      {
+        "selected": 17,
+        "marginal_gain": 70.0,
+        "value": 264.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 53.0,
+        "value": 317.0
+      },
+      {
+        "selected": 53,
+        "marginal_gain": 44.0,
+        "value": 361.0
+      },
+      {
+        "selected": 58,
+        "marginal_gain": 38.0,
+        "value": 399.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 31.0,
+        "value": 430.0
+      },
+      {
+        "selected": 23,
+        "marginal_gain": 21.0,
+        "value": 451.0
+      },
+      {
+        "selected": 26,
+        "marginal_gain": 18.0,
+        "value": 469.0
+      },
+      {
+        "selected": 79,
+        "marginal_gain": 13.0,
+        "value": 482.0
+      },
+      {
+        "selected": 71,
+        "marginal_gain": 10.0,
+        "value": 492.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 5.0,
+        "value": 497.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s1",
+    "family": "independent",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 3.285900004357245e-05,
+    "cardinality_upper_bound": 469.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 398.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s1",
+    "family": "independent",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.0004034739999951853,
+    "cardinality_upper_bound": 469.0,
+    "method": "singleton",
+    "selected": [
+      45,
+      40,
+      46,
+      62,
+      0,
+      77,
+      20,
+      30,
+      70,
+      52,
+      11,
+      14
+    ],
+    "value": 416.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s1",
+    "family": "independent",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.014126287999943088,
+    "cardinality_upper_bound": 469.0,
+    "method": "greedy",
+    "selected": [
+      45,
+      46,
+      68,
+      1,
+      52,
+      11,
+      72,
+      47,
+      26,
+      14,
+      33,
+      6
+    ],
+    "value": 453.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 45,
+        "marginal_gain": 111.0,
+        "value": 111.0
+      },
+      {
+        "selected": 46,
+        "marginal_gain": 65.0,
+        "value": 176.0
+      },
+      {
+        "selected": 68,
+        "marginal_gain": 57.0,
+        "value": 233.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 53.0,
+        "value": 286.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 39.0,
+        "value": 325.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 33.0,
+        "value": 358.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 27.0,
+        "value": 385.0
+      },
+      {
+        "selected": 47,
+        "marginal_gain": 22.0,
+        "value": 407.0
+      },
+      {
+        "selected": 26,
+        "marginal_gain": 18.0,
+        "value": 425.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 14.0,
+        "value": 439.0
+      },
+      {
+        "selected": 33,
+        "marginal_gain": 8.0,
+        "value": 447.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 6.0,
+        "value": 453.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s1",
+    "family": "independent",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.00550193300000501,
+    "cardinality_upper_bound": 469.0,
+    "method": "lazy_greedy",
+    "selected": [
+      45,
+      46,
+      68,
+      1,
+      52,
+      11,
+      72,
+      47,
+      26,
+      14,
+      33,
+      6
+    ],
+    "value": 453.0,
+    "oracle_evaluations": 391,
+    "trace": [
+      {
+        "selected": 45,
+        "marginal_gain": 111.0,
+        "value": 111.0
+      },
+      {
+        "selected": 46,
+        "marginal_gain": 65.0,
+        "value": 176.0
+      },
+      {
+        "selected": 68,
+        "marginal_gain": 57.0,
+        "value": 233.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 53.0,
+        "value": 286.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 39.0,
+        "value": 325.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 33.0,
+        "value": 358.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 27.0,
+        "value": 385.0
+      },
+      {
+        "selected": 47,
+        "marginal_gain": 22.0,
+        "value": 407.0
+      },
+      {
+        "selected": 26,
+        "marginal_gain": 18.0,
+        "value": 425.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 14.0,
+        "value": 439.0
+      },
+      {
+        "selected": 33,
+        "marginal_gain": 8.0,
+        "value": 447.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 6.0,
+        "value": 453.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s2",
+    "family": "independent",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 3.4530999982962385e-05,
+    "cardinality_upper_bound": 469.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 397.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s2",
+    "family": "independent",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.0003439759999537273,
+    "cardinality_upper_bound": 469.0,
+    "method": "singleton",
+    "selected": [
+      12,
+      38,
+      2,
+      47,
+      51,
+      30,
+      6,
+      33,
+      68,
+      43,
+      72,
+      79
+    ],
+    "value": 439.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s2",
+    "family": "independent",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.01455692199999703,
+    "cardinality_upper_bound": 469.0,
+    "method": "greedy",
+    "selected": [
+      12,
+      38,
+      79,
+      51,
+      21,
+      55,
+      29,
+      22,
+      44,
+      6,
+      37,
+      69
+    ],
+    "value": 465.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 12,
+        "marginal_gain": 105.0,
+        "value": 105.0
+      },
+      {
+        "selected": 38,
+        "marginal_gain": 76.0,
+        "value": 181.0
+      },
+      {
+        "selected": 79,
+        "marginal_gain": 67.0,
+        "value": 248.0
+      },
+      {
+        "selected": 51,
+        "marginal_gain": 54.0,
+        "value": 302.0
+      },
+      {
+        "selected": 21,
+        "marginal_gain": 46.0,
+        "value": 348.0
+      },
+      {
+        "selected": 55,
+        "marginal_gain": 32.0,
+        "value": 380.0
+      },
+      {
+        "selected": 29,
+        "marginal_gain": 24.0,
+        "value": 404.0
+      },
+      {
+        "selected": 22,
+        "marginal_gain": 19.0,
+        "value": 423.0
+      },
+      {
+        "selected": 44,
+        "marginal_gain": 18.0,
+        "value": 441.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 10.0,
+        "value": 451.0
+      },
+      {
+        "selected": 37,
+        "marginal_gain": 10.0,
+        "value": 461.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 4.0,
+        "value": 465.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s2",
+    "family": "independent",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.005716709000012088,
+    "cardinality_upper_bound": 469.0,
+    "method": "lazy_greedy",
+    "selected": [
+      12,
+      38,
+      79,
+      51,
+      21,
+      55,
+      29,
+      22,
+      44,
+      6,
+      37,
+      69
+    ],
+    "value": 465.0,
+    "oracle_evaluations": 368,
+    "trace": [
+      {
+        "selected": 12,
+        "marginal_gain": 105.0,
+        "value": 105.0
+      },
+      {
+        "selected": 38,
+        "marginal_gain": 76.0,
+        "value": 181.0
+      },
+      {
+        "selected": 79,
+        "marginal_gain": 67.0,
+        "value": 248.0
+      },
+      {
+        "selected": 51,
+        "marginal_gain": 54.0,
+        "value": 302.0
+      },
+      {
+        "selected": 21,
+        "marginal_gain": 46.0,
+        "value": 348.0
+      },
+      {
+        "selected": 55,
+        "marginal_gain": 32.0,
+        "value": 380.0
+      },
+      {
+        "selected": 29,
+        "marginal_gain": 24.0,
+        "value": 404.0
+      },
+      {
+        "selected": 22,
+        "marginal_gain": 19.0,
+        "value": 423.0
+      },
+      {
+        "selected": 44,
+        "marginal_gain": 18.0,
+        "value": 441.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 10.0,
+        "value": 451.0
+      },
+      {
+        "selected": 37,
+        "marginal_gain": 10.0,
+        "value": 461.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 4.0,
+        "value": 465.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s3",
+    "family": "independent",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 3.268799991928972e-05,
+    "cardinality_upper_bound": 456.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 353.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s3",
+    "family": "independent",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.0003941190000205097,
+    "cardinality_upper_bound": 456.0,
+    "method": "singleton",
+    "selected": [
+      14,
+      9,
+      65,
+      52,
+      16,
+      50,
+      0,
+      11,
+      2,
+      10,
+      27,
+      70
+    ],
+    "value": 422.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s3",
+    "family": "independent",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.013836222000009002,
+    "cardinality_upper_bound": 456.0,
+    "method": "greedy",
+    "selected": [
+      14,
+      2,
+      36,
+      16,
+      65,
+      47,
+      52,
+      0,
+      10,
+      59,
+      15,
+      27
+    ],
+    "value": 448.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 14,
+        "marginal_gain": 101.0,
+        "value": 101.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 76.0,
+        "value": 177.0
+      },
+      {
+        "selected": 36,
+        "marginal_gain": 59.0,
+        "value": 236.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 42.0,
+        "value": 278.0
+      },
+      {
+        "selected": 65,
+        "marginal_gain": 40.0,
+        "value": 318.0
+      },
+      {
+        "selected": 47,
+        "marginal_gain": 31.0,
+        "value": 349.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 26.0,
+        "value": 375.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 21.0,
+        "value": 396.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 17.0,
+        "value": 413.0
+      },
+      {
+        "selected": 59,
+        "marginal_gain": 14.0,
+        "value": 427.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 11.0,
+        "value": 438.0
+      },
+      {
+        "selected": 27,
+        "marginal_gain": 10.0,
+        "value": 448.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s3",
+    "family": "independent",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.019949274000055084,
+    "cardinality_upper_bound": 456.0,
+    "method": "lazy_greedy",
+    "selected": [
+      14,
+      2,
+      36,
+      16,
+      65,
+      47,
+      52,
+      0,
+      10,
+      59,
+      15,
+      27
+    ],
+    "value": 448.0,
+    "oracle_evaluations": 362,
+    "trace": [
+      {
+        "selected": 14,
+        "marginal_gain": 101.0,
+        "value": 101.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 76.0,
+        "value": 177.0
+      },
+      {
+        "selected": 36,
+        "marginal_gain": 59.0,
+        "value": 236.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 42.0,
+        "value": 278.0
+      },
+      {
+        "selected": 65,
+        "marginal_gain": 40.0,
+        "value": 318.0
+      },
+      {
+        "selected": 47,
+        "marginal_gain": 31.0,
+        "value": 349.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 26.0,
+        "value": 375.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 21.0,
+        "value": 396.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 17.0,
+        "value": 413.0
+      },
+      {
+        "selected": 59,
+        "marginal_gain": 14.0,
+        "value": 427.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 11.0,
+        "value": 438.0
+      },
+      {
+        "selected": 27,
+        "marginal_gain": 10.0,
+        "value": 448.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s4",
+    "family": "independent",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 3.121500003544497e-05,
+    "cardinality_upper_bound": 481.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 381.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s4",
+    "family": "independent",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.000408701000083056,
+    "cardinality_upper_bound": 481.0,
+    "method": "singleton",
+    "selected": [
+      22,
+      40,
+      59,
+      45,
+      56,
+      68,
+      35,
+      72,
+      9,
+      71,
+      38,
+      49
+    ],
+    "value": 449.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "independent_n80_s4",
+    "family": "independent",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.015333594999901834,
+    "cardinality_upper_bound": 481.0,
+    "method": "greedy",
+    "selected": [
+      22,
+      40,
+      35,
+      7,
+      56,
+      3,
+      18,
+      72,
+      50,
+      64,
+      16,
+      25
+    ],
+    "value": 477.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 22,
+        "marginal_gain": 107.0,
+        "value": 107.0
+      },
+      {
+        "selected": 40,
+        "marginal_gain": 84.0,
+        "value": 191.0
+      },
+      {
+        "selected": 35,
+        "marginal_gain": 63.0,
+        "value": 254.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 58.0,
+        "value": 312.0
+      },
+      {
+        "selected": 56,
+        "marginal_gain": 43.0,
+        "value": 355.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 33.0,
+        "value": 388.0
+      },
+      {
+        "selected": 18,
+        "marginal_gain": 24.0,
+        "value": 412.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 23.0,
+        "value": 435.0
+      },
+      {
+        "selected": 50,
+        "marginal_gain": 20.0,
+        "value": 455.0
+      },
+      {
+        "selected": 64,
+        "marginal_gain": 10.0,
+        "value": 465.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 8.0,
+        "value": 473.0
+      },
+      {
+        "selected": 25,
+        "marginal_gain": 4.0,
+        "value": 477.0
+      }
+    ]
+  },
+  {
+    "instance": "independent_n80_s4",
+    "family": "independent",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.005172938999976395,
+    "cardinality_upper_bound": 481.0,
+    "method": "lazy_greedy",
+    "selected": [
+      22,
+      40,
+      35,
+      7,
+      56,
+      3,
+      18,
+      72,
+      50,
+      64,
+      16,
+      25
+    ],
+    "value": 477.0,
+    "oracle_evaluations": 348,
+    "trace": [
+      {
+        "selected": 22,
+        "marginal_gain": 107.0,
+        "value": 107.0
+      },
+      {
+        "selected": 40,
+        "marginal_gain": 84.0,
+        "value": 191.0
+      },
+      {
+        "selected": 35,
+        "marginal_gain": 63.0,
+        "value": 254.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 58.0,
+        "value": 312.0
+      },
+      {
+        "selected": 56,
+        "marginal_gain": 43.0,
+        "value": 355.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 33.0,
+        "value": 388.0
+      },
+      {
+        "selected": 18,
+        "marginal_gain": 24.0,
+        "value": 412.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 23.0,
+        "value": 435.0
+      },
+      {
+        "selected": 50,
+        "marginal_gain": 20.0,
+        "value": 455.0
+      },
+      {
+        "selected": 64,
+        "marginal_gain": 10.0,
+        "value": 465.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 8.0,
+        "value": 473.0
+      },
+      {
+        "selected": 25,
+        "marginal_gain": 4.0,
+        "value": 477.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s0",
+    "family": "clustered",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 3.414000002521789e-05,
+    "cardinality_upper_bound": 495.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 483.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s0",
+    "family": "clustered",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.0004693010000664799,
+    "cardinality_upper_bound": 495.0,
+    "method": "singleton",
+    "selected": [
+      8,
+      78,
+      46,
+      3,
+      24,
+      72,
+      6,
+      0,
+      12,
+      26,
+      32,
+      50
+    ],
+    "value": 397.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s0",
+    "family": "clustered",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.015813519999937853,
+    "cardinality_upper_bound": 495.0,
+    "method": "greedy",
+    "selected": [
+      8,
+      46,
+      63,
+      1,
+      19,
+      52,
+      70,
+      57,
+      5,
+      0,
+      7,
+      2
+    ],
+    "value": 495.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 114.0,
+        "value": 114.0
+      },
+      {
+        "selected": 46,
+        "marginal_gain": 104.0,
+        "value": 218.0
+      },
+      {
+        "selected": 63,
+        "marginal_gain": 97.0,
+        "value": 315.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 85.0,
+        "value": 400.0
+      },
+      {
+        "selected": 19,
+        "marginal_gain": 34.0,
+        "value": 434.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 26.0,
+        "value": 460.0
+      },
+      {
+        "selected": 70,
+        "marginal_gain": 23.0,
+        "value": 483.0
+      },
+      {
+        "selected": 57,
+        "marginal_gain": 8.0,
+        "value": 491.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 2.0,
+        "value": 493.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 1.0,
+        "value": 494.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 1.0,
+        "value": 495.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 495.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s0",
+    "family": "clustered",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.005644612999958554,
+    "cardinality_upper_bound": 495.0,
+    "method": "lazy_greedy",
+    "selected": [
+      8,
+      46,
+      63,
+      1,
+      19,
+      52,
+      70,
+      57,
+      5,
+      0,
+      7,
+      2
+    ],
+    "value": 495.0,
+    "oracle_evaluations": 359,
+    "trace": [
+      {
+        "selected": 8,
+        "marginal_gain": 114.0,
+        "value": 114.0
+      },
+      {
+        "selected": 46,
+        "marginal_gain": 104.0,
+        "value": 218.0
+      },
+      {
+        "selected": 63,
+        "marginal_gain": 97.0,
+        "value": 315.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 85.0,
+        "value": 400.0
+      },
+      {
+        "selected": 19,
+        "marginal_gain": 34.0,
+        "value": 434.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 26.0,
+        "value": 460.0
+      },
+      {
+        "selected": 70,
+        "marginal_gain": 23.0,
+        "value": 483.0
+      },
+      {
+        "selected": 57,
+        "marginal_gain": 8.0,
+        "value": 491.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 2.0,
+        "value": 493.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 1.0,
+        "value": 494.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 1.0,
+        "value": 495.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 495.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s1",
+    "family": "clustered",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 3.630300000168063e-05,
+    "cardinality_upper_bound": 494.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 486.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s1",
+    "family": "clustered",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.00044619699997383577,
+    "cardinality_upper_bound": 494.0,
+    "method": "singleton",
+    "selected": [
+      49,
+      0,
+      35,
+      1,
+      24,
+      55,
+      36,
+      25,
+      60,
+      68,
+      4,
+      65
+    ],
+    "value": 414.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s1",
+    "family": "clustered",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.017073162999963643,
+    "cardinality_upper_bound": 494.0,
+    "method": "greedy",
+    "selected": [
+      49,
+      0,
+      35,
+      30,
+      60,
+      1,
+      31,
+      6,
+      16,
+      5,
+      2,
+      3
+    ],
+    "value": 494.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 49,
+        "marginal_gain": 119.0,
+        "value": 119.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 112.0,
+        "value": 231.0
+      },
+      {
+        "selected": 35,
+        "marginal_gain": 97.0,
+        "value": 328.0
+      },
+      {
+        "selected": 30,
+        "marginal_gain": 93.0,
+        "value": 421.0
+      },
+      {
+        "selected": 60,
+        "marginal_gain": 35.0,
+        "value": 456.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 16.0,
+        "value": 472.0
+      },
+      {
+        "selected": 31,
+        "marginal_gain": 12.0,
+        "value": 484.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 7.0,
+        "value": 491.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 2.0,
+        "value": 493.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 1.0,
+        "value": 494.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 494.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 0.0,
+        "value": 494.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s1",
+    "family": "clustered",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.006507627000019056,
+    "cardinality_upper_bound": 494.0,
+    "method": "lazy_greedy",
+    "selected": [
+      49,
+      0,
+      35,
+      30,
+      60,
+      1,
+      31,
+      6,
+      16,
+      5,
+      2,
+      3
+    ],
+    "value": 494.0,
+    "oracle_evaluations": 314,
+    "trace": [
+      {
+        "selected": 49,
+        "marginal_gain": 119.0,
+        "value": 119.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 112.0,
+        "value": 231.0
+      },
+      {
+        "selected": 35,
+        "marginal_gain": 97.0,
+        "value": 328.0
+      },
+      {
+        "selected": 30,
+        "marginal_gain": 93.0,
+        "value": 421.0
+      },
+      {
+        "selected": 60,
+        "marginal_gain": 35.0,
+        "value": 456.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 16.0,
+        "value": 472.0
+      },
+      {
+        "selected": 31,
+        "marginal_gain": 12.0,
+        "value": 484.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 7.0,
+        "value": 491.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 2.0,
+        "value": 493.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 1.0,
+        "value": 494.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 494.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 0.0,
+        "value": 494.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s2",
+    "family": "clustered",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 3.9077999986147915e-05,
+    "cardinality_upper_bound": 474.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 463.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s2",
+    "family": "clustered",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.00040560599995842495,
+    "cardinality_upper_bound": 474.0,
+    "method": "singleton",
+    "selected": [
+      33,
+      17,
+      76,
+      69,
+      14,
+      77,
+      60,
+      52,
+      49,
+      61,
+      4,
+      12
+    ],
+    "value": 374.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s2",
+    "family": "clustered",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.017372634000025755,
+    "cardinality_upper_bound": 474.0,
+    "method": "greedy",
+    "selected": [
+      33,
+      76,
+      14,
+      3,
+      55,
+      78,
+      77,
+      0,
+      15,
+      1,
+      2,
+      4
+    ],
+    "value": 474.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 33,
+        "marginal_gain": 127.0,
+        "value": 127.0
+      },
+      {
+        "selected": 76,
+        "marginal_gain": 98.0,
+        "value": 225.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 96.0,
+        "value": 321.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 78.0,
+        "value": 399.0
+      },
+      {
+        "selected": 55,
+        "marginal_gain": 24.0,
+        "value": 423.0
+      },
+      {
+        "selected": 78,
+        "marginal_gain": 23.0,
+        "value": 446.0
+      },
+      {
+        "selected": 77,
+        "marginal_gain": 13.0,
+        "value": 459.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 9.0,
+        "value": 468.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 6.0,
+        "value": 474.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 0.0,
+        "value": 474.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 474.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 0.0,
+        "value": 474.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s2",
+    "family": "clustered",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.004923431999941386,
+    "cardinality_upper_bound": 474.0,
+    "method": "lazy_greedy",
+    "selected": [
+      33,
+      76,
+      14,
+      3,
+      55,
+      78,
+      77,
+      0,
+      15,
+      1,
+      2,
+      4
+    ],
+    "value": 474.0,
+    "oracle_evaluations": 327,
+    "trace": [
+      {
+        "selected": 33,
+        "marginal_gain": 127.0,
+        "value": 127.0
+      },
+      {
+        "selected": 76,
+        "marginal_gain": 98.0,
+        "value": 225.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 96.0,
+        "value": 321.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 78.0,
+        "value": 399.0
+      },
+      {
+        "selected": 55,
+        "marginal_gain": 24.0,
+        "value": 423.0
+      },
+      {
+        "selected": 78,
+        "marginal_gain": 23.0,
+        "value": 446.0
+      },
+      {
+        "selected": 77,
+        "marginal_gain": 13.0,
+        "value": 459.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 9.0,
+        "value": 468.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 6.0,
+        "value": 474.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 0.0,
+        "value": 474.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 474.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 0.0,
+        "value": 474.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s3",
+    "family": "clustered",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 3.490200003852806e-05,
+    "cardinality_upper_bound": 487.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 475.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s3",
+    "family": "clustered",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.000490601999899809,
+    "cardinality_upper_bound": 487.0,
+    "method": "singleton",
+    "selected": [
+      74,
+      40,
+      64,
+      15,
+      37,
+      56,
+      2,
+      75,
+      78,
+      52,
+      58,
+      68
+    ],
+    "value": 458.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s3",
+    "family": "clustered",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.020855787000073178,
+    "cardinality_upper_bound": 487.0,
+    "method": "greedy",
+    "selected": [
+      74,
+      56,
+      15,
+      1,
+      69,
+      0,
+      23,
+      6,
+      2,
+      5,
+      3,
+      4
+    ],
+    "value": 487.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 74,
+        "marginal_gain": 114.0,
+        "value": 114.0
+      },
+      {
+        "selected": 56,
+        "marginal_gain": 110.0,
+        "value": 224.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 95.0,
+        "value": 319.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 81.0,
+        "value": 400.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 33.0,
+        "value": 433.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 20.0,
+        "value": 453.0
+      },
+      {
+        "selected": 23,
+        "marginal_gain": 14.0,
+        "value": 467.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 12.0,
+        "value": 479.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 5.0,
+        "value": 484.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 3.0,
+        "value": 487.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 0.0,
+        "value": 487.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 0.0,
+        "value": 487.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s3",
+    "family": "clustered",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.005794713000000229,
+    "cardinality_upper_bound": 487.0,
+    "method": "lazy_greedy",
+    "selected": [
+      74,
+      56,
+      15,
+      1,
+      69,
+      0,
+      23,
+      6,
+      2,
+      5,
+      3,
+      4
+    ],
+    "value": 487.0,
+    "oracle_evaluations": 337,
+    "trace": [
+      {
+        "selected": 74,
+        "marginal_gain": 114.0,
+        "value": 114.0
+      },
+      {
+        "selected": 56,
+        "marginal_gain": 110.0,
+        "value": 224.0
+      },
+      {
+        "selected": 15,
+        "marginal_gain": 95.0,
+        "value": 319.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 81.0,
+        "value": 400.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 33.0,
+        "value": 433.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 20.0,
+        "value": 453.0
+      },
+      {
+        "selected": 23,
+        "marginal_gain": 14.0,
+        "value": 467.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 12.0,
+        "value": 479.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 5.0,
+        "value": 484.0
+      },
+      {
+        "selected": 5,
+        "marginal_gain": 3.0,
+        "value": 487.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 0.0,
+        "value": 487.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 0.0,
+        "value": 487.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s4",
+    "family": "clustered",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 3.703400000176771e-05,
+    "cardinality_upper_bound": 462.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 433.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s4",
+    "family": "clustered",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.0005125339999949574,
+    "cardinality_upper_bound": 462.0,
+    "method": "singleton",
+    "selected": [
+      34,
+      36,
+      69,
+      78,
+      26,
+      54,
+      6,
+      20,
+      2,
+      18,
+      22,
+      45
+    ],
+    "value": 370.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "clustered_n80_s4",
+    "family": "clustered",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.019945318000054613,
+    "cardinality_upper_bound": 462.0,
+    "method": "greedy",
+    "selected": [
+      34,
+      36,
+      67,
+      69,
+      4,
+      31,
+      13,
+      78,
+      11,
+      0,
+      1,
+      2
+    ],
+    "value": 462.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 34,
+        "marginal_gain": 118.0,
+        "value": 118.0
+      },
+      {
+        "selected": 36,
+        "marginal_gain": 99.0,
+        "value": 217.0
+      },
+      {
+        "selected": 67,
+        "marginal_gain": 88.0,
+        "value": 305.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 71.0,
+        "value": 376.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 31.0,
+        "value": 407.0
+      },
+      {
+        "selected": 31,
+        "marginal_gain": 20.0,
+        "value": 427.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 16.0,
+        "value": 443.0
+      },
+      {
+        "selected": 78,
+        "marginal_gain": 14.0,
+        "value": 457.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 3.0,
+        "value": 460.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 2.0,
+        "value": 462.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 0.0,
+        "value": 462.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 462.0
+      }
+    ]
+  },
+  {
+    "instance": "clustered_n80_s4",
+    "family": "clustered",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.00505004799993003,
+    "cardinality_upper_bound": 462.0,
+    "method": "lazy_greedy",
+    "selected": [
+      34,
+      36,
+      67,
+      69,
+      4,
+      31,
+      13,
+      78,
+      11,
+      0,
+      1,
+      2
+    ],
+    "value": 462.0,
+    "oracle_evaluations": 324,
+    "trace": [
+      {
+        "selected": 34,
+        "marginal_gain": 118.0,
+        "value": 118.0
+      },
+      {
+        "selected": 36,
+        "marginal_gain": 99.0,
+        "value": 217.0
+      },
+      {
+        "selected": 67,
+        "marginal_gain": 88.0,
+        "value": 305.0
+      },
+      {
+        "selected": 69,
+        "marginal_gain": 71.0,
+        "value": 376.0
+      },
+      {
+        "selected": 4,
+        "marginal_gain": 31.0,
+        "value": 407.0
+      },
+      {
+        "selected": 31,
+        "marginal_gain": 20.0,
+        "value": 427.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 16.0,
+        "value": 443.0
+      },
+      {
+        "selected": 78,
+        "marginal_gain": 14.0,
+        "value": 457.0
+      },
+      {
+        "selected": 11,
+        "marginal_gain": 3.0,
+        "value": 460.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 2.0,
+        "value": 462.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 0.0,
+        "value": 462.0
+      },
+      {
+        "selected": 2,
+        "marginal_gain": 0.0,
+        "value": 462.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s0",
+    "family": "redundant",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 2.70799999952942e-05,
+    "cardinality_upper_bound": 467.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 229.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s0",
+    "family": "redundant",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.0005791219999764508,
+    "cardinality_upper_bound": 467.0,
+    "method": "singleton",
+    "selected": [
+      24,
+      77,
+      13,
+      40,
+      43,
+      3,
+      59,
+      17,
+      51,
+      73,
+      54,
+      6
+    ],
+    "value": 269.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s0",
+    "family": "redundant",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.011795029000040813,
+    "cardinality_upper_bound": 467.0,
+    "method": "greedy",
+    "selected": [
+      24,
+      52,
+      72,
+      3,
+      10,
+      25,
+      54,
+      8,
+      43,
+      13,
+      22,
+      48
+    ],
+    "value": 311.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 24,
+        "marginal_gain": 155.0,
+        "value": 155.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 31.0,
+        "value": 186.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 17.0,
+        "value": 203.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 16.0,
+        "value": 219.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 16.0,
+        "value": 235.0
+      },
+      {
+        "selected": 25,
+        "marginal_gain": 13.0,
+        "value": 248.0
+      },
+      {
+        "selected": 54,
+        "marginal_gain": 13.0,
+        "value": 261.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 11.0,
+        "value": 272.0
+      },
+      {
+        "selected": 43,
+        "marginal_gain": 11.0,
+        "value": 283.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 10.0,
+        "value": 293.0
+      },
+      {
+        "selected": 22,
+        "marginal_gain": 9.0,
+        "value": 302.0
+      },
+      {
+        "selected": 48,
+        "marginal_gain": 9.0,
+        "value": 311.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s0",
+    "family": "redundant",
+    "n": 80,
+    "seed": 0,
+    "k": 12,
+    "runtime_s": 0.002502431000038996,
+    "cardinality_upper_bound": 467.0,
+    "method": "lazy_greedy",
+    "selected": [
+      24,
+      52,
+      72,
+      3,
+      10,
+      25,
+      54,
+      8,
+      43,
+      13,
+      22,
+      48
+    ],
+    "value": 311.0,
+    "oracle_evaluations": 249,
+    "trace": [
+      {
+        "selected": 24,
+        "marginal_gain": 155.0,
+        "value": 155.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 31.0,
+        "value": 186.0
+      },
+      {
+        "selected": 72,
+        "marginal_gain": 17.0,
+        "value": 203.0
+      },
+      {
+        "selected": 3,
+        "marginal_gain": 16.0,
+        "value": 219.0
+      },
+      {
+        "selected": 10,
+        "marginal_gain": 16.0,
+        "value": 235.0
+      },
+      {
+        "selected": 25,
+        "marginal_gain": 13.0,
+        "value": 248.0
+      },
+      {
+        "selected": 54,
+        "marginal_gain": 13.0,
+        "value": 261.0
+      },
+      {
+        "selected": 8,
+        "marginal_gain": 11.0,
+        "value": 272.0
+      },
+      {
+        "selected": 43,
+        "marginal_gain": 11.0,
+        "value": 283.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 10.0,
+        "value": 293.0
+      },
+      {
+        "selected": 22,
+        "marginal_gain": 9.0,
+        "value": 302.0
+      },
+      {
+        "selected": 48,
+        "marginal_gain": 9.0,
+        "value": 311.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s1",
+    "family": "redundant",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 2.77410000535383e-05,
+    "cardinality_upper_bound": 456.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 232.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s1",
+    "family": "redundant",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.0006000629999789453,
+    "cardinality_upper_bound": 456.0,
+    "method": "singleton",
+    "selected": [
+      65,
+      0,
+      36,
+      23,
+      7,
+      71,
+      5,
+      19,
+      51,
+      70,
+      33,
+      1
+    ],
+    "value": 265.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s1",
+    "family": "redundant",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.012582126999973298,
+    "cardinality_upper_bound": 456.0,
+    "method": "greedy",
+    "selected": [
+      65,
+      0,
+      14,
+      71,
+      34,
+      45,
+      52,
+      28,
+      33,
+      6,
+      37,
+      48
+    ],
+    "value": 303.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 65,
+        "marginal_gain": 171.0,
+        "value": 171.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 18.0,
+        "value": 189.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 16.0,
+        "value": 205.0
+      },
+      {
+        "selected": 71,
+        "marginal_gain": 13.0,
+        "value": 218.0
+      },
+      {
+        "selected": 34,
+        "marginal_gain": 12.0,
+        "value": 230.0
+      },
+      {
+        "selected": 45,
+        "marginal_gain": 12.0,
+        "value": 242.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 12.0,
+        "value": 254.0
+      },
+      {
+        "selected": 28,
+        "marginal_gain": 11.0,
+        "value": 265.0
+      },
+      {
+        "selected": 33,
+        "marginal_gain": 11.0,
+        "value": 276.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 9.0,
+        "value": 285.0
+      },
+      {
+        "selected": 37,
+        "marginal_gain": 9.0,
+        "value": 294.0
+      },
+      {
+        "selected": 48,
+        "marginal_gain": 9.0,
+        "value": 303.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s1",
+    "family": "redundant",
+    "n": 80,
+    "seed": 1,
+    "k": 12,
+    "runtime_s": 0.0019492170000603437,
+    "cardinality_upper_bound": 456.0,
+    "method": "lazy_greedy",
+    "selected": [
+      65,
+      0,
+      14,
+      71,
+      34,
+      45,
+      52,
+      28,
+      33,
+      6,
+      37,
+      48
+    ],
+    "value": 303.0,
+    "oracle_evaluations": 207,
+    "trace": [
+      {
+        "selected": 65,
+        "marginal_gain": 171.0,
+        "value": 171.0
+      },
+      {
+        "selected": 0,
+        "marginal_gain": 18.0,
+        "value": 189.0
+      },
+      {
+        "selected": 14,
+        "marginal_gain": 16.0,
+        "value": 205.0
+      },
+      {
+        "selected": 71,
+        "marginal_gain": 13.0,
+        "value": 218.0
+      },
+      {
+        "selected": 34,
+        "marginal_gain": 12.0,
+        "value": 230.0
+      },
+      {
+        "selected": 45,
+        "marginal_gain": 12.0,
+        "value": 242.0
+      },
+      {
+        "selected": 52,
+        "marginal_gain": 12.0,
+        "value": 254.0
+      },
+      {
+        "selected": 28,
+        "marginal_gain": 11.0,
+        "value": 265.0
+      },
+      {
+        "selected": 33,
+        "marginal_gain": 11.0,
+        "value": 276.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 9.0,
+        "value": 285.0
+      },
+      {
+        "selected": 37,
+        "marginal_gain": 9.0,
+        "value": 294.0
+      },
+      {
+        "selected": 48,
+        "marginal_gain": 9.0,
+        "value": 303.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s2",
+    "family": "redundant",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 2.8671999984908325e-05,
+    "cardinality_upper_bound": 483.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 241.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s2",
+    "family": "redundant",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.0005311410000103933,
+    "cardinality_upper_bound": 483.0,
+    "method": "singleton",
+    "selected": [
+      19,
+      7,
+      78,
+      57,
+      38,
+      76,
+      33,
+      24,
+      59,
+      11,
+      51,
+      46
+    ],
+    "value": 313.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s2",
+    "family": "redundant",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.011931059000062305,
+    "cardinality_upper_bound": 483.0,
+    "method": "greedy",
+    "selected": [
+      19,
+      57,
+      7,
+      44,
+      55,
+      75,
+      1,
+      78,
+      16,
+      59,
+      51,
+      61
+    ],
+    "value": 342.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 19,
+        "marginal_gain": 163.0,
+        "value": 163.0
+      },
+      {
+        "selected": 57,
+        "marginal_gain": 32.0,
+        "value": 195.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 20.0,
+        "value": 215.0
+      },
+      {
+        "selected": 44,
+        "marginal_gain": 20.0,
+        "value": 235.0
+      },
+      {
+        "selected": 55,
+        "marginal_gain": 15.0,
+        "value": 250.0
+      },
+      {
+        "selected": 75,
+        "marginal_gain": 15.0,
+        "value": 265.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 14.0,
+        "value": 279.0
+      },
+      {
+        "selected": 78,
+        "marginal_gain": 14.0,
+        "value": 293.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 13.0,
+        "value": 306.0
+      },
+      {
+        "selected": 59,
+        "marginal_gain": 13.0,
+        "value": 319.0
+      },
+      {
+        "selected": 51,
+        "marginal_gain": 12.0,
+        "value": 331.0
+      },
+      {
+        "selected": 61,
+        "marginal_gain": 11.0,
+        "value": 342.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s2",
+    "family": "redundant",
+    "n": 80,
+    "seed": 2,
+    "k": 12,
+    "runtime_s": 0.002272652999977254,
+    "cardinality_upper_bound": 483.0,
+    "method": "lazy_greedy",
+    "selected": [
+      19,
+      57,
+      7,
+      44,
+      55,
+      75,
+      1,
+      78,
+      16,
+      59,
+      51,
+      61
+    ],
+    "value": 342.0,
+    "oracle_evaluations": 215,
+    "trace": [
+      {
+        "selected": 19,
+        "marginal_gain": 163.0,
+        "value": 163.0
+      },
+      {
+        "selected": 57,
+        "marginal_gain": 32.0,
+        "value": 195.0
+      },
+      {
+        "selected": 7,
+        "marginal_gain": 20.0,
+        "value": 215.0
+      },
+      {
+        "selected": 44,
+        "marginal_gain": 20.0,
+        "value": 235.0
+      },
+      {
+        "selected": 55,
+        "marginal_gain": 15.0,
+        "value": 250.0
+      },
+      {
+        "selected": 75,
+        "marginal_gain": 15.0,
+        "value": 265.0
+      },
+      {
+        "selected": 1,
+        "marginal_gain": 14.0,
+        "value": 279.0
+      },
+      {
+        "selected": 78,
+        "marginal_gain": 14.0,
+        "value": 293.0
+      },
+      {
+        "selected": 16,
+        "marginal_gain": 13.0,
+        "value": 306.0
+      },
+      {
+        "selected": 59,
+        "marginal_gain": 13.0,
+        "value": 319.0
+      },
+      {
+        "selected": 51,
+        "marginal_gain": 12.0,
+        "value": 331.0
+      },
+      {
+        "selected": 61,
+        "marginal_gain": 11.0,
+        "value": 342.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s3",
+    "family": "redundant",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 2.97939999427399e-05,
+    "cardinality_upper_bound": 483.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 246.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s3",
+    "family": "redundant",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.0006548029999748906,
+    "cardinality_upper_bound": 483.0,
+    "method": "singleton",
+    "selected": [
+      37,
+      55,
+      70,
+      60,
+      20,
+      58,
+      21,
+      52,
+      73,
+      11,
+      48,
+      38
+    ],
+    "value": 272.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s3",
+    "family": "redundant",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.012742203000016161,
+    "cardinality_upper_bound": 483.0,
+    "method": "greedy",
+    "selected": [
+      37,
+      20,
+      79,
+      9,
+      26,
+      48,
+      38,
+      13,
+      19,
+      43,
+      61,
+      12
+    ],
+    "value": 329.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 37,
+        "marginal_gain": 178.0,
+        "value": 178.0
+      },
+      {
+        "selected": 20,
+        "marginal_gain": 24.0,
+        "value": 202.0
+      },
+      {
+        "selected": 79,
+        "marginal_gain": 17.0,
+        "value": 219.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 16.0,
+        "value": 235.0
+      },
+      {
+        "selected": 26,
+        "marginal_gain": 15.0,
+        "value": 250.0
+      },
+      {
+        "selected": 48,
+        "marginal_gain": 14.0,
+        "value": 264.0
+      },
+      {
+        "selected": 38,
+        "marginal_gain": 12.0,
+        "value": 276.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 11.0,
+        "value": 287.0
+      },
+      {
+        "selected": 19,
+        "marginal_gain": 11.0,
+        "value": 298.0
+      },
+      {
+        "selected": 43,
+        "marginal_gain": 11.0,
+        "value": 309.0
+      },
+      {
+        "selected": 61,
+        "marginal_gain": 11.0,
+        "value": 320.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 9.0,
+        "value": 329.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s3",
+    "family": "redundant",
+    "n": 80,
+    "seed": 3,
+    "k": 12,
+    "runtime_s": 0.0027124690000164264,
+    "cardinality_upper_bound": 483.0,
+    "method": "lazy_greedy",
+    "selected": [
+      37,
+      20,
+      79,
+      9,
+      26,
+      48,
+      38,
+      13,
+      19,
+      43,
+      61,
+      12
+    ],
+    "value": 329.0,
+    "oracle_evaluations": 246,
+    "trace": [
+      {
+        "selected": 37,
+        "marginal_gain": 178.0,
+        "value": 178.0
+      },
+      {
+        "selected": 20,
+        "marginal_gain": 24.0,
+        "value": 202.0
+      },
+      {
+        "selected": 79,
+        "marginal_gain": 17.0,
+        "value": 219.0
+      },
+      {
+        "selected": 9,
+        "marginal_gain": 16.0,
+        "value": 235.0
+      },
+      {
+        "selected": 26,
+        "marginal_gain": 15.0,
+        "value": 250.0
+      },
+      {
+        "selected": 48,
+        "marginal_gain": 14.0,
+        "value": 264.0
+      },
+      {
+        "selected": 38,
+        "marginal_gain": 12.0,
+        "value": 276.0
+      },
+      {
+        "selected": 13,
+        "marginal_gain": 11.0,
+        "value": 287.0
+      },
+      {
+        "selected": 19,
+        "marginal_gain": 11.0,
+        "value": 298.0
+      },
+      {
+        "selected": 43,
+        "marginal_gain": 11.0,
+        "value": 309.0
+      },
+      {
+        "selected": 61,
+        "marginal_gain": 11.0,
+        "value": 320.0
+      },
+      {
+        "selected": 12,
+        "marginal_gain": 9.0,
+        "value": 329.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s4",
+    "family": "redundant",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 7.693299994571134e-05,
+    "cardinality_upper_bound": 479.0,
+    "method": "input_order",
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "value": 242.0,
+    "oracle_evaluations": 0,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s4",
+    "family": "redundant",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.0005953860001000066,
+    "cardinality_upper_bound": 479.0,
+    "method": "singleton",
+    "selected": [
+      73,
+      57,
+      42,
+      47,
+      34,
+      31,
+      2,
+      64,
+      76,
+      32,
+      52,
+      58
+    ],
+    "value": 292.0,
+    "oracle_evaluations": 80,
+    "trace": []
+  },
+  {
+    "instance": "redundant_n80_s4",
+    "family": "redundant",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.012791876000051161,
+    "cardinality_upper_bound": 479.0,
+    "method": "greedy",
+    "selected": [
+      73,
+      42,
+      70,
+      6,
+      76,
+      29,
+      45,
+      32,
+      37,
+      64,
+      22,
+      44
+    ],
+    "value": 346.0,
+    "oracle_evaluations": 894,
+    "trace": [
+      {
+        "selected": 73,
+        "marginal_gain": 171.0,
+        "value": 171.0
+      },
+      {
+        "selected": 42,
+        "marginal_gain": 40.0,
+        "value": 211.0
+      },
+      {
+        "selected": 70,
+        "marginal_gain": 21.0,
+        "value": 232.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 15.0,
+        "value": 247.0
+      },
+      {
+        "selected": 76,
+        "marginal_gain": 15.0,
+        "value": 262.0
+      },
+      {
+        "selected": 29,
+        "marginal_gain": 14.0,
+        "value": 276.0
+      },
+      {
+        "selected": 45,
+        "marginal_gain": 14.0,
+        "value": 290.0
+      },
+      {
+        "selected": 32,
+        "marginal_gain": 13.0,
+        "value": 303.0
+      },
+      {
+        "selected": 37,
+        "marginal_gain": 13.0,
+        "value": 316.0
+      },
+      {
+        "selected": 64,
+        "marginal_gain": 12.0,
+        "value": 328.0
+      },
+      {
+        "selected": 22,
+        "marginal_gain": 10.0,
+        "value": 338.0
+      },
+      {
+        "selected": 44,
+        "marginal_gain": 8.0,
+        "value": 346.0
+      }
+    ]
+  },
+  {
+    "instance": "redundant_n80_s4",
+    "family": "redundant",
+    "n": 80,
+    "seed": 4,
+    "k": 12,
+    "runtime_s": 0.0028438429999368964,
+    "cardinality_upper_bound": 479.0,
+    "method": "lazy_greedy",
+    "selected": [
+      73,
+      42,
+      70,
+      6,
+      76,
+      29,
+      45,
+      32,
+      37,
+      64,
+      22,
+      44
+    ],
+    "value": 346.0,
+    "oracle_evaluations": 270,
+    "trace": [
+      {
+        "selected": 73,
+        "marginal_gain": 171.0,
+        "value": 171.0
+      },
+      {
+        "selected": 42,
+        "marginal_gain": 40.0,
+        "value": 211.0
+      },
+      {
+        "selected": 70,
+        "marginal_gain": 21.0,
+        "value": 232.0
+      },
+      {
+        "selected": 6,
+        "marginal_gain": 15.0,
+        "value": 247.0
+      },
+      {
+        "selected": 76,
+        "marginal_gain": 15.0,
+        "value": 262.0
+      },
+      {
+        "selected": 29,
+        "marginal_gain": 14.0,
+        "value": 276.0
+      },
+      {
+        "selected": 45,
+        "marginal_gain": 14.0,
+        "value": 290.0
+      },
+      {
+        "selected": 32,
+        "marginal_gain": 13.0,
+        "value": 303.0
+      },
+      {
+        "selected": 37,
+        "marginal_gain": 13.0,
+        "value": 316.0
+      },
+      {
+        "selected": 64,
+        "marginal_gain": 12.0,
+        "value": 328.0
+      },
+      {
+        "selected": 22,
+        "marginal_gain": 10.0,
+        "value": 338.0
+      },
+      {
+        "selected": 44,
+        "marginal_gain": 8.0,
+        "value": 346.0
+      }
+    ]
+  }
+]

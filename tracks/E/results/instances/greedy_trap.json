@@ -1,0 +1,37 @@
+{
+  "name": "greedy_trap",
+  "slot_minutes": 60,
+  "prices": [
+    2,
+    2,
+    1,
+    2
+  ],
+  "capacity_kw": [
+    7,
+    7,
+    7,
+    7
+  ],
+  "vehicles": [
+    {
+      "id": "A",
+      "arrival": 0,
+      "departure": 3,
+      "required_slots": 1,
+      "power_kw": 7.0
+    },
+    {
+      "id": "B",
+      "arrival": 2,
+      "departure": 4,
+      "required_slots": 2,
+      "power_kw": 7.0
+    }
+  ],
+  "metadata": {
+    "source": "synthetic",
+    "scenario": "greedy_trap",
+    "clock_start": "08:00"
+  }
+}

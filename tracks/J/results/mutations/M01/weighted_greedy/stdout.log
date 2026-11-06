@@ -1,0 +1,36 @@
+................................................................ [ 81%]
+.....F.........                                                          [100%]
+=================================== FAILURES ===================================
+____________________ TLRUCacheTest.test_ttu_reverse_insert _____________________
+
+self = <tests.test_tlru.TLRUCacheTest testMethod=test_ttu_reverse_insert>
+
+    def test_ttu_reverse_insert(self):
+        def ttu(_k, v, t):
+            return t + v
+    
+        cache = TLRUCache[int, int, int](maxsize=4, ttu=ttu, timer=Timer())
+        self.assertEqual(0, cache.timer())
+    
+        cache[3] = 3
+        cache[2] = 2
+        cache[1] = 1
+        cache[0] = 0
+    
+        self.assertEqual({1, 2, 3}, set(cache))
+        self.assertEqual(3, len(cache))
+        self.assertNotIn(0, cache)
+        self.assertEqual(1, cache[1])
+        self.assertEqual(2, cache[2])
+        self.assertEqual(3, cache[3])
+    
+        cache.timer.tick()
+    
+>       self.assertEqual({2, 3}, set(cache))
+E       AssertionError: Items in the second set but not the first:
+E       1
+
+tests/test_tlru.py:299: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_tlru.py::TLRUCacheTest::test_ttu_reverse_insert - Assertion...
+1 failed, 78 passed, 8 subtests passed in 0.56s

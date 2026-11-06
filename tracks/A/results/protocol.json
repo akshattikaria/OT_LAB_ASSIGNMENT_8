@@ -1,0 +1,128 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "repeats": 3,
+  "tuning_seed": 999,
+  "n_train": 256,
+  "n_test": 256,
+  "ridge_epochs": 35,
+  "mlp_epochs": 80,
+  "batch_size": 32,
+  "full_gradient_tolerance": 1e-07,
+  "rates": {
+    "ridge": {
+      "GD": [
+        0.005,
+        0.015,
+        0.04,
+        0.08
+      ],
+      "SGD": [
+        0.0003,
+        0.001,
+        0.003,
+        0.01
+      ],
+      "MiniBatchSGD": [
+        0.001,
+        0.003,
+        0.01,
+        0.03
+      ],
+      "Momentum": [
+        0.0005,
+        0.002,
+        0.008,
+        0.02
+      ],
+      "NAG": [
+        0.0005,
+        0.002,
+        0.008,
+        0.02
+      ],
+      "AdaGrad": [
+        0.01,
+        0.05,
+        0.2,
+        0.8
+      ],
+      "RMSProp": [
+        0.0005,
+        0.002,
+        0.008,
+        0.03
+      ],
+      "Adam": [
+        0.001,
+        0.005,
+        0.02,
+        0.08
+      ]
+    },
+    "mlp": {
+      "GD": [
+        0.03,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "SGD": [
+        0.001,
+        0.005,
+        0.02,
+        0.08
+      ],
+      "MiniBatchSGD": [
+        0.01,
+        0.03,
+        0.1,
+        0.3
+      ],
+      "Momentum": [
+        0.001,
+        0.005,
+        0.02,
+        0.08
+      ],
+      "NAG": [
+        0.001,
+        0.005,
+        0.02,
+        0.08
+      ],
+      "AdaGrad": [
+        0.01,
+        0.05,
+        0.2,
+        0.8
+      ],
+      "RMSProp": [
+        0.001,
+        0.005,
+        0.02,
+        0.08
+      ],
+      "Adam": [
+        0.001,
+        0.005,
+        0.02,
+        0.08
+      ]
+    }
+  },
+  "quality_repeat": 0,
+  "early_stop": "Full training gradient checked at epoch boundaries; stationary does not imply global optimum for non-convex problems",
+  "work": "Same maximum epochs for all methods within a problem. One epoch is n sampled-gradient examples for first-order methods. Hessian/Jacobian calls are extra and reported separately; not equal-FLOP budgets.",
+  "timing": "perf_counter includes updates, line search, counters and full epoch diagnostics; excludes data generation, tuning, independent audits, test metrics, plotting and imports",
+  "repetition": "Data, initial state, batch permutation seed and learning rate fixed across timing repeats; quality uses repeat 0, never best repeat",
+  "method_order": "Deterministically shuffled within each problem/seed/repeat",
+  "warmup": "One untimed small first-order update on each problem family",
+  "test_data": "Test metrics reported only after training; never used for candidate selection",
+  "reference": "Ridge: independently augmented least-squares solution. MLP: no known global optimum; objective and accuracy only."
+}

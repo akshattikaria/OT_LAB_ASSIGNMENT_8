@@ -1,0 +1,232 @@
+{
+  "jobs": [
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "workers": 4,
+  "rows": [
+    {
+      "method": "block",
+      "makespan": 15.0,
+      "events": [
+        {
+          "worker": 0,
+          "job": 0,
+          "start": 0.0,
+          "end": 8.0
+        },
+        {
+          "worker": 1,
+          "job": 2,
+          "start": 0.0,
+          "end": 6.0
+        },
+        {
+          "worker": 2,
+          "job": 4,
+          "start": 0.0,
+          "end": 4.0
+        },
+        {
+          "worker": 3,
+          "job": 6,
+          "start": 0.0,
+          "end": 2.0
+        },
+        {
+          "worker": 3,
+          "job": 7,
+          "start": 2.0,
+          "end": 3.0
+        },
+        {
+          "worker": 2,
+          "job": 5,
+          "start": 4.0,
+          "end": 7.0
+        },
+        {
+          "worker": 1,
+          "job": 3,
+          "start": 6.0,
+          "end": 11.0
+        },
+        {
+          "worker": 0,
+          "job": 1,
+          "start": 8.0,
+          "end": 15.0
+        }
+      ]
+    },
+    {
+      "method": "cyclic",
+      "makespan": 12.0,
+      "events": [
+        {
+          "worker": 0,
+          "job": 0,
+          "start": 0.0,
+          "end": 8.0
+        },
+        {
+          "worker": 1,
+          "job": 1,
+          "start": 0.0,
+          "end": 7.0
+        },
+        {
+          "worker": 2,
+          "job": 2,
+          "start": 0.0,
+          "end": 6.0
+        },
+        {
+          "worker": 3,
+          "job": 3,
+          "start": 0.0,
+          "end": 5.0
+        },
+        {
+          "worker": 3,
+          "job": 7,
+          "start": 5.0,
+          "end": 6.0
+        },
+        {
+          "worker": 2,
+          "job": 6,
+          "start": 6.0,
+          "end": 8.0
+        },
+        {
+          "worker": 1,
+          "job": 5,
+          "start": 7.0,
+          "end": 10.0
+        },
+        {
+          "worker": 0,
+          "job": 4,
+          "start": 8.0,
+          "end": 12.0
+        }
+      ]
+    },
+    {
+      "method": "dynamic",
+      "makespan": 9.0,
+      "events": [
+        {
+          "worker": 0,
+          "job": 0,
+          "start": 0.0,
+          "end": 8.0
+        },
+        {
+          "worker": 1,
+          "job": 1,
+          "start": 0.0,
+          "end": 7.0
+        },
+        {
+          "worker": 2,
+          "job": 2,
+          "start": 0.0,
+          "end": 6.0
+        },
+        {
+          "worker": 3,
+          "job": 3,
+          "start": 0.0,
+          "end": 5.0
+        },
+        {
+          "worker": 3,
+          "job": 4,
+          "start": 5.0,
+          "end": 9.0
+        },
+        {
+          "worker": 2,
+          "job": 5,
+          "start": 6.0,
+          "end": 9.0
+        },
+        {
+          "worker": 1,
+          "job": 6,
+          "start": 7.0,
+          "end": 9.0
+        },
+        {
+          "worker": 0,
+          "job": 7,
+          "start": 8.0,
+          "end": 9.0
+        }
+      ]
+    },
+    {
+      "method": "guided",
+      "makespan": 15.0,
+      "events": [
+        {
+          "worker": 0,
+          "job": 0,
+          "start": 0.0,
+          "end": 8.0
+        },
+        {
+          "worker": 0,
+          "job": 1,
+          "start": 8.0,
+          "end": 15.0
+        },
+        {
+          "worker": 1,
+          "job": 2,
+          "start": 0.0,
+          "end": 6.0
+        },
+        {
+          "worker": 1,
+          "job": 3,
+          "start": 6.0,
+          "end": 11.0
+        },
+        {
+          "worker": 2,
+          "job": 4,
+          "start": 0.0,
+          "end": 4.0
+        },
+        {
+          "worker": 3,
+          "job": 5,
+          "start": 0.0,
+          "end": 3.0
+        },
+        {
+          "worker": 3,
+          "job": 6,
+          "start": 3.0,
+          "end": 5.0
+        },
+        {
+          "worker": 2,
+          "job": 7,
+          "start": 4.0,
+          "end": 5.0
+        }
+      ]
+    }
+  ],
+  "scope": "Zero-overhead discrete-event scheduling, not measured runtime."
+}

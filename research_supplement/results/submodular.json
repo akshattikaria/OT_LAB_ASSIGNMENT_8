@@ -1,0 +1,11359 @@
+{
+  "resque": [
+    {
+      "seed": 0,
+      "coverage_sets": [
+        [
+          1,
+          2,
+          6,
+          7,
+          9,
+          10,
+          11,
+          17
+        ],
+        [
+          3,
+          5,
+          6,
+          7,
+          10,
+          11,
+          15,
+          17
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          12,
+          14
+        ],
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          13,
+          14,
+          15,
+          17
+        ],
+        [
+          8,
+          9,
+          14,
+          16
+        ],
+        [
+          1,
+          2,
+          6,
+          8,
+          13
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          8,
+          10,
+          12,
+          15,
+          16
+        ],
+        [
+          0,
+          2,
+          11,
+          12,
+          17
+        ],
+        [
+          10,
+          12,
+          15,
+          16,
+          17
+        ],
+        [
+          3,
+          8,
+          9,
+          11,
+          16,
+          17
+        ]
+      ],
+      "greedy": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "raw_resque": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "guarded_incumbent": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "optimum": [
+        0,
+        3,
+        7,
+        9
+      ],
+      "greedy_value": 17.0,
+      "resque_value": 17.0,
+      "raw_value": 17.0,
+      "optimum_value": 18.0,
+      "events": [
+        {
+          "step": 1,
+          "prefix_curvatures": [
+            0.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            3
+          ],
+          "value": 10.0
+        },
+        {
+          "step": 2,
+          "prefix_curvatures": [
+            0.0,
+            0.75
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            0,
+            3
+          ],
+          "value": 14.0
+        },
+        {
+          "step": 3,
+          "prefix_curvatures": [
+            0.0,
+            0.75,
+            1.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            0,
+            3,
+            6
+          ],
+          "value": 16.0
+        },
+        {
+          "step": 4,
+          "prefix_curvatures": [
+            0.0,
+            0.75,
+            1.0,
+            1.0
+          ],
+          "trigger": true,
+          "removed": 0,
+          "selected": [
+            0,
+            1,
+            3,
+            6
+          ],
+          "value": 17.0
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "coverage_sets": [
+        [
+          0,
+          2,
+          4,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        [
+          2,
+          3,
+          8,
+          12,
+          13
+        ],
+        [
+          0,
+          1,
+          4,
+          9,
+          14,
+          15
+        ],
+        [
+          1,
+          2,
+          5,
+          8,
+          10,
+          13,
+          14
+        ],
+        [
+          0,
+          1,
+          9,
+          12,
+          14,
+          15
+        ],
+        [
+          0,
+          2,
+          6,
+          7,
+          10
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          6,
+          10,
+          17
+        ],
+        [
+          2,
+          3,
+          4,
+          6,
+          9,
+          11,
+          12,
+          15
+        ],
+        [
+          1,
+          2,
+          3,
+          6,
+          12
+        ],
+        [
+          6,
+          12,
+          14,
+          16,
+          17
+        ]
+      ],
+      "greedy": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "raw_resque": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "guarded_incumbent": [
+        0,
+        3,
+        5,
+        7
+      ],
+      "optimum": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "greedy_value": 17.0,
+      "resque_value": 17.0,
+      "raw_value": 17.0,
+      "optimum_value": 18.0,
+      "events": [
+        {
+          "step": 1,
+          "prefix_curvatures": [
+            0.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            0
+          ],
+          "value": 10.0
+        },
+        {
+          "step": 2,
+          "prefix_curvatures": [
+            0.0,
+            0.8333333333333334
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            0,
+            3
+          ],
+          "value": 13.0
+        },
+        {
+          "step": 3,
+          "prefix_curvatures": [
+            0.0,
+            0.8333333333333334,
+            1.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            0,
+            3,
+            7
+          ],
+          "value": 16.0
+        },
+        {
+          "step": 4,
+          "prefix_curvatures": [
+            0.0,
+            0.8333333333333334,
+            1.0,
+            1.0
+          ],
+          "trigger": true,
+          "removed": 3,
+          "selected": [
+            0,
+            3,
+            5,
+            7
+          ],
+          "value": 17.0
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "coverage_sets": [
+        [
+          1,
+          2,
+          9,
+          13,
+          16
+        ],
+        [
+          0,
+          9,
+          12,
+          17
+        ],
+        [
+          0,
+          5,
+          10,
+          16,
+          17
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          8,
+          13,
+          15,
+          16
+        ],
+        [
+          2,
+          3,
+          4,
+          6,
+          10
+        ],
+        [
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12
+        ],
+        [
+          2,
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          7,
+          9,
+          12,
+          14
+        ],
+        [
+          0,
+          5,
+          6,
+          7,
+          9,
+          13
+        ],
+        [
+          0,
+          7,
+          12,
+          14,
+          15,
+          16,
+          17
+        ]
+      ],
+      "greedy": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "raw_resque": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "guarded_incumbent": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "optimum": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "greedy_value": 17.0,
+      "resque_value": 17.0,
+      "raw_value": 17.0,
+      "optimum_value": 17.0,
+      "events": [
+        {
+          "step": 1,
+          "prefix_curvatures": [
+            0.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            3
+          ],
+          "value": 9.0
+        },
+        {
+          "step": 2,
+          "prefix_curvatures": [
+            0.0,
+            0.8
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            3,
+            5
+          ],
+          "value": 14.0
+        },
+        {
+          "step": 3,
+          "prefix_curvatures": [
+            0.0,
+            0.8,
+            1.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            2,
+            3,
+            5
+          ],
+          "value": 16.0
+        },
+        {
+          "step": 4,
+          "prefix_curvatures": [
+            0.0,
+            0.8,
+            1.0,
+            1.0
+          ],
+          "trigger": true,
+          "removed": 5,
+          "selected": [
+            2,
+            3,
+            4,
+            7
+          ],
+          "value": 17.0
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "coverage_sets": [
+        [
+          2,
+          6,
+          13,
+          15,
+          16,
+          17
+        ],
+        [
+          0,
+          2,
+          5,
+          8,
+          11,
+          14,
+          15,
+          17
+        ],
+        [
+          0,
+          1,
+          4,
+          8,
+          9,
+          11,
+          13,
+          15,
+          16,
+          17
+        ],
+        [
+          0,
+          2,
+          6,
+          7,
+          8,
+          12,
+          13,
+          15,
+          17
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          4,
+          5,
+          8,
+          9,
+          17
+        ],
+        [
+          0,
+          5,
+          6,
+          7,
+          10,
+          16
+        ],
+        [
+          1,
+          5,
+          7,
+          13,
+          14,
+          15
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          8,
+          11,
+          14
+        ],
+        [
+          0,
+          8,
+          13,
+          15,
+          17
+        ]
+      ],
+      "greedy": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "raw_resque": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "guarded_incumbent": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "optimum": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "greedy_value": 18.0,
+      "resque_value": 18.0,
+      "raw_value": 18.0,
+      "optimum_value": 18.0,
+      "events": [
+        {
+          "step": 1,
+          "prefix_curvatures": [
+            0.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            2
+          ],
+          "value": 10.0
+        },
+        {
+          "step": 2,
+          "prefix_curvatures": [
+            0.0,
+            1.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            2,
+            3
+          ],
+          "value": 14.0
+        },
+        {
+          "step": 3,
+          "prefix_curvatures": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "trigger": true,
+          "removed": 2,
+          "selected": [
+            2,
+            3,
+            8
+          ],
+          "value": 17.0
+        },
+        {
+          "step": 4,
+          "prefix_curvatures": [
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "trigger": true,
+          "removed": 3,
+          "selected": [
+            2,
+            3,
+            6,
+            8
+          ],
+          "value": 18.0
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "coverage_sets": [
+        [
+          1,
+          4,
+          5,
+          7,
+          11,
+          13,
+          14,
+          16
+        ],
+        [
+          1,
+          5,
+          7,
+          8,
+          10,
+          11,
+          14,
+          15
+        ],
+        [
+          2,
+          3,
+          4,
+          10,
+          11,
+          14
+        ],
+        [
+          3,
+          4,
+          6,
+          12,
+          13,
+          14,
+          15,
+          17
+        ],
+        [
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          14
+        ],
+        [
+          0,
+          1,
+          5,
+          10,
+          12,
+          14
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14
+        ],
+        [
+          0,
+          1,
+          9,
+          10,
+          11
+        ],
+        [
+          1,
+          2,
+          3,
+          7,
+          10
+        ],
+        [
+          2,
+          6,
+          7,
+          9,
+          10,
+          12
+        ]
+      ],
+      "greedy": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "raw_resque": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "guarded_incumbent": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "optimum": [
+        0,
+        2,
+        3,
+        6
+      ],
+      "greedy_value": 18.0,
+      "resque_value": 18.0,
+      "raw_value": 18.0,
+      "optimum_value": 18.0,
+      "events": [
+        {
+          "step": 1,
+          "prefix_curvatures": [
+            0.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            6
+          ],
+          "value": 11.0
+        },
+        {
+          "step": 2,
+          "prefix_curvatures": [
+            0.0,
+            1.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            3,
+            6
+          ],
+          "value": 15.0
+        },
+        {
+          "step": 3,
+          "prefix_curvatures": [
+            0.0,
+            1.0,
+            1.0
+          ],
+          "trigger": true,
+          "removed": 6,
+          "selected": [
+            0,
+            3,
+            6
+          ],
+          "value": 17.0
+        },
+        {
+          "step": 4,
+          "prefix_curvatures": [
+            0.0,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "trigger": false,
+          "removed": null,
+          "selected": [
+            0,
+            2,
+            3,
+            6
+          ],
+          "value": 18.0
+        }
+      ]
+    }
+  ],
+  "dynamic": [
+    {
+      "seed": 0,
+      "cut_weights": [
+        [
+          0,
+          6,
+          0,
+          6,
+          7,
+          4,
+          2,
+          6,
+          5,
+          2
+        ],
+        [
+          6,
+          0,
+          1,
+          4,
+          7,
+          0,
+          0,
+          1,
+          5,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          4,
+          7,
+          7,
+          0,
+          6,
+          3,
+          7
+        ],
+        [
+          6,
+          4,
+          4,
+          0,
+          3,
+          5,
+          7,
+          5,
+          5,
+          0
+        ],
+        [
+          7,
+          7,
+          7,
+          3,
+          0,
+          6,
+          1,
+          3,
+          5,
+          1
+        ],
+        [
+          4,
+          0,
+          7,
+          5,
+          6,
+          0,
+          3,
+          5,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          7,
+          1,
+          3,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          6,
+          1,
+          6,
+          5,
+          3,
+          5,
+          5,
+          0,
+          7,
+          5
+        ],
+        [
+          5,
+          5,
+          3,
+          5,
+          5,
+          1,
+          0,
+          7,
+          0,
+          6
+        ],
+        [
+          2,
+          3,
+          7,
+          0,
+          1,
+          0,
+          0,
+          5,
+          6,
+          0
+        ]
+      ],
+      "thresholds": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "trace": [
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0
+          ],
+          "selected": [
+            0
+          ],
+          "value": 38.0,
+          "optimum": 38.0,
+          "levels": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "reconstructions": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 1,
+          "active": [
+            0,
+            1
+          ],
+          "selected": [
+            0,
+            1
+          ],
+          "value": 53.0,
+          "optimum": 53.0,
+          "levels": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "reconstructions": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            2
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "value": 86.0,
+          "optimum": 86.0,
+          "levels": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "reconstructions": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 3,
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "selected": [
+            0,
+            2,
+            3
+          ],
+          "value": 92.0,
+          "optimum": 92.0,
+          "levels": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "reconstructions": [
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "selected": [
+            0,
+            2,
+            3
+          ],
+          "value": 92.0,
+          "optimum": 92.0,
+          "levels": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "reconstructions": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "selected": [
+            0,
+            2,
+            3
+          ],
+          "value": 92.0,
+          "optimum": 92.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "selected": [
+            0,
+            2,
+            3
+          ],
+          "value": 92.0,
+          "optimum": 92.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 7,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 8,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            9,
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            10,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            11,
+            11,
+            11,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            12,
+            12,
+            12,
+            11
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 0,
+          "active": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            13,
+            13,
+            13,
+            12
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            14,
+            14,
+            14,
+            13
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            15,
+            15,
+            15,
+            14
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            3,
+            4,
+            7
+          ],
+          "value": 100.0,
+          "optimum": 100.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            16,
+            16,
+            16,
+            15
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            3,
+            7
+          ],
+          "value": 89.0,
+          "optimum": 89.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            17,
+            17,
+            17,
+            16
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            3,
+            7
+          ],
+          "value": 89.0,
+          "optimum": 89.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            18,
+            18,
+            18,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "cut_weights": [
+        [
+          0,
+          4,
+          4,
+          7,
+          4,
+          6,
+          0,
+          7,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          3,
+          7,
+          7,
+          0,
+          5,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          3,
+          0,
+          3,
+          0,
+          7,
+          4,
+          4,
+          1,
+          4
+        ],
+        [
+          7,
+          7,
+          3,
+          0,
+          5,
+          6,
+          3,
+          4,
+          0,
+          2
+        ],
+        [
+          4,
+          7,
+          0,
+          5,
+          0,
+          5,
+          1,
+          7,
+          0,
+          6
+        ],
+        [
+          6,
+          0,
+          7,
+          6,
+          5,
+          0,
+          7,
+          1,
+          5,
+          0
+        ],
+        [
+          0,
+          5,
+          4,
+          3,
+          1,
+          7,
+          0,
+          5,
+          6,
+          5
+        ],
+        [
+          7,
+          4,
+          4,
+          4,
+          7,
+          1,
+          5,
+          0,
+          6,
+          2
+        ],
+        [
+          2,
+          4,
+          1,
+          0,
+          0,
+          5,
+          6,
+          6,
+          0,
+          3
+        ],
+        [
+          3,
+          4,
+          4,
+          2,
+          6,
+          0,
+          5,
+          2,
+          3,
+          0
+        ]
+      ],
+      "thresholds": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "trace": [
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0
+          ],
+          "selected": [
+            0
+          ],
+          "value": 37.0,
+          "optimum": 37.0,
+          "levels": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "reconstructions": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 1,
+          "active": [
+            0,
+            1
+          ],
+          "selected": [
+            0,
+            1
+          ],
+          "value": 67.0,
+          "optimum": 67.0,
+          "levels": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "reconstructions": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            2
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "value": 83.0,
+          "optimum": 83.0,
+          "levels": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "reconstructions": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 3,
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "value": 83.0,
+          "optimum": 83.0,
+          "levels": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "reconstructions": [
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "selected": [
+            0,
+            2,
+            4
+          ],
+          "value": 86.0,
+          "optimum": 86.0,
+          "levels": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "reconstructions": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "selected": [
+            0,
+            1,
+            5
+          ],
+          "value": 92.0,
+          "optimum": 92.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "selected": [
+            0,
+            4,
+            6
+          ],
+          "value": 98.0,
+          "optimum": 98.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 7,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 8,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            9,
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            10,
+            10,
+            9,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            11,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            0,
+            4,
+            6
+          ],
+          "value": 98.0,
+          "optimum": 98.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            12,
+            11,
+            11,
+            11
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 0,
+          "active": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            4,
+            6
+          ],
+          "value": 90.0,
+          "optimum": 90.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            13,
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            14,
+            13,
+            13,
+            13
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            9,
+            9,
+            8,
+            9
+          ],
+          "reconstructions": [
+            15,
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            16,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            17,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            7
+          ],
+          "value": 105.0,
+          "optimum": 105.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            18,
+            17,
+            17,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "cut_weights": [
+        [
+          0,
+          0,
+          3,
+          2,
+          0,
+          0,
+          0,
+          3,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          2,
+          0,
+          7,
+          6
+        ],
+        [
+          3,
+          0,
+          0,
+          5,
+          7,
+          0,
+          2,
+          4,
+          3,
+          6
+        ],
+        [
+          2,
+          0,
+          5,
+          0,
+          7,
+          5,
+          5,
+          2,
+          6,
+          2
+        ],
+        [
+          0,
+          1,
+          7,
+          7,
+          0,
+          3,
+          1,
+          6,
+          4,
+          5
+        ],
+        [
+          0,
+          5,
+          0,
+          5,
+          3,
+          0,
+          6,
+          5,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          2,
+          5,
+          1,
+          6,
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          3,
+          0,
+          4,
+          2,
+          6,
+          5,
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          1,
+          7,
+          3,
+          6,
+          4,
+          4,
+          4,
+          4,
+          0,
+          7
+        ],
+        [
+          2,
+          6,
+          6,
+          2,
+          5,
+          5,
+          1,
+          0,
+          7,
+          0
+        ]
+      ],
+      "thresholds": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "trace": [
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0
+          ],
+          "selected": [
+            0
+          ],
+          "value": 11.0,
+          "optimum": 11.0,
+          "levels": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "reconstructions": [
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 1,
+          "active": [
+            0,
+            1
+          ],
+          "selected": [
+            0,
+            1
+          ],
+          "value": 32.0,
+          "optimum": 32.0,
+          "levels": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "reconstructions": [
+            2,
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            2
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "value": 56.0,
+          "optimum": 56.0,
+          "levels": [
+            3,
+            3,
+            3,
+            2
+          ],
+          "reconstructions": [
+            3,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 3,
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "selected": [
+            1,
+            2,
+            3
+          ],
+          "value": 75.0,
+          "optimum": 75.0,
+          "levels": [
+            4,
+            4,
+            4,
+            3
+          ],
+          "reconstructions": [
+            4,
+            4,
+            4,
+            3
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "selected": [
+            1,
+            2,
+            3
+          ],
+          "value": 75.0,
+          "optimum": 75.0,
+          "levels": [
+            5,
+            5,
+            5,
+            4
+          ],
+          "reconstructions": [
+            5,
+            5,
+            5,
+            4
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "selected": [
+            2,
+            3,
+            5
+          ],
+          "value": 77.0,
+          "optimum": 77.0,
+          "levels": [
+            6,
+            6,
+            6,
+            5
+          ],
+          "reconstructions": [
+            6,
+            6,
+            6,
+            5
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "selected": [
+            2,
+            4,
+            5
+          ],
+          "value": 77.0,
+          "optimum": 77.0,
+          "levels": [
+            7,
+            7,
+            7,
+            6
+          ],
+          "reconstructions": [
+            7,
+            7,
+            7,
+            6
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 7,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": [
+            2,
+            3,
+            5
+          ],
+          "value": 77.0,
+          "optimum": 77.0,
+          "levels": [
+            8,
+            8,
+            8,
+            7
+          ],
+          "reconstructions": [
+            8,
+            8,
+            8,
+            7
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 8,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            2,
+            5,
+            8
+          ],
+          "value": 89.0,
+          "optimum": 89.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            9,
+            9,
+            9,
+            8
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            2,
+            5,
+            8
+          ],
+          "value": 89.0,
+          "optimum": 89.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            10,
+            10,
+            10,
+            9
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            4,
+            5,
+            8
+          ],
+          "value": 85.0,
+          "optimum": 85.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            10,
+            11,
+            11,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            7,
+            9
+          ],
+          "value": 84.0,
+          "optimum": 84.0,
+          "levels": [
+            8,
+            8,
+            8,
+            7
+          ],
+          "reconstructions": [
+            11,
+            12,
+            12,
+            11
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 0,
+          "active": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            3,
+            7,
+            9
+          ],
+          "value": 84.0,
+          "optimum": 84.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            12,
+            13,
+            13,
+            11
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            4,
+            5,
+            8
+          ],
+          "value": 85.0,
+          "optimum": 85.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            13,
+            14,
+            14,
+            12
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            4,
+            5,
+            8
+          ],
+          "value": 85.0,
+          "optimum": 85.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            14,
+            15,
+            15,
+            12
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            4,
+            5,
+            8
+          ],
+          "value": 85.0,
+          "optimum": 85.0,
+          "levels": [
+            8,
+            8,
+            8,
+            7
+          ],
+          "reconstructions": [
+            15,
+            16,
+            16,
+            13
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            3,
+            5,
+            8
+          ],
+          "value": 77.0,
+          "optimum": 77.0,
+          "levels": [
+            7,
+            7,
+            7,
+            6
+          ],
+          "reconstructions": [
+            16,
+            17,
+            17,
+            14
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "selected": [
+            3,
+            5,
+            8
+          ],
+          "value": 77.0,
+          "optimum": 77.0,
+          "levels": [
+            6,
+            6,
+            6,
+            5
+          ],
+          "reconstructions": [
+            17,
+            18,
+            18,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "cut_weights": [
+        [
+          0,
+          5,
+          1,
+          0,
+          5,
+          4,
+          7,
+          2,
+          7,
+          3
+        ],
+        [
+          5,
+          0,
+          6,
+          2,
+          6,
+          4,
+          5,
+          6,
+          6,
+          2
+        ],
+        [
+          1,
+          6,
+          0,
+          1,
+          2,
+          4,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          2,
+          7,
+          1,
+          6,
+          7,
+          0
+        ],
+        [
+          5,
+          6,
+          2,
+          2,
+          0,
+          7,
+          4,
+          3,
+          6,
+          6
+        ],
+        [
+          4,
+          4,
+          4,
+          7,
+          7,
+          0,
+          1,
+          7,
+          5,
+          5
+        ],
+        [
+          7,
+          5,
+          0,
+          1,
+          4,
+          1,
+          0,
+          0,
+          3,
+          4
+        ],
+        [
+          2,
+          6,
+          1,
+          6,
+          3,
+          7,
+          0,
+          0,
+          7,
+          1
+        ],
+        [
+          7,
+          6,
+          1,
+          7,
+          6,
+          5,
+          3,
+          7,
+          0,
+          6
+        ],
+        [
+          3,
+          2,
+          0,
+          0,
+          6,
+          5,
+          4,
+          1,
+          6,
+          0
+        ]
+      ],
+      "thresholds": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "trace": [
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0
+          ],
+          "selected": [
+            0
+          ],
+          "value": 34.0,
+          "optimum": 34.0,
+          "levels": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "reconstructions": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 1,
+          "active": [
+            0,
+            1
+          ],
+          "selected": [
+            0,
+            1
+          ],
+          "value": 66.0,
+          "optimum": 66.0,
+          "levels": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "reconstructions": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            2
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "value": 68.0,
+          "optimum": 68.0,
+          "levels": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "reconstructions": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 3,
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "selected": [
+            0,
+            1,
+            3
+          ],
+          "value": 88.0,
+          "optimum": 88.0,
+          "levels": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "reconstructions": [
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "selected": [
+            1,
+            3,
+            4
+          ],
+          "value": 89.0,
+          "optimum": 89.0,
+          "levels": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "reconstructions": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "selected": [
+            0,
+            1,
+            5
+          ],
+          "value": 94.0,
+          "optimum": 94.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "selected": [
+            0,
+            1,
+            5
+          ],
+          "value": 94.0,
+          "optimum": 94.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 7,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": [
+            0,
+            1,
+            5
+          ],
+          "value": 94.0,
+          "optimum": 94.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 8,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            9,
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            10,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            11,
+            11,
+            11,
+            11
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            4,
+            8
+          ],
+          "value": 95.0,
+          "optimum": 95.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            12,
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 0,
+          "active": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            4,
+            8
+          ],
+          "value": 95.0,
+          "optimum": 95.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            13,
+            13,
+            13,
+            13
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            14,
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            9,
+            9,
+            9,
+            8
+          ],
+          "reconstructions": [
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            17,
+            17,
+            17,
+            17
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 104.0,
+          "optimum": 104.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            18,
+            18,
+            18,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "cut_weights": [
+        [
+          0,
+          6,
+          6,
+          1,
+          0,
+          4,
+          3,
+          4,
+          2,
+          2
+        ],
+        [
+          6,
+          0,
+          5,
+          4,
+          7,
+          5,
+          4,
+          4,
+          3,
+          0
+        ],
+        [
+          6,
+          5,
+          0,
+          0,
+          7,
+          7,
+          1,
+          4,
+          1,
+          6
+        ],
+        [
+          1,
+          4,
+          0,
+          0,
+          0,
+          3,
+          7,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          7,
+          7,
+          0,
+          0,
+          1,
+          4,
+          1,
+          2,
+          5
+        ],
+        [
+          4,
+          5,
+          7,
+          3,
+          1,
+          0,
+          7,
+          2,
+          6,
+          6
+        ],
+        [
+          3,
+          4,
+          1,
+          7,
+          4,
+          7,
+          0,
+          2,
+          6,
+          6
+        ],
+        [
+          4,
+          4,
+          4,
+          0,
+          1,
+          2,
+          2,
+          0,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          1,
+          2,
+          2,
+          6,
+          6,
+          3,
+          0,
+          6
+        ],
+        [
+          2,
+          0,
+          6,
+          4,
+          5,
+          6,
+          6,
+          4,
+          6,
+          0
+        ]
+      ],
+      "thresholds": [
+        1,
+        4,
+        8,
+        16
+      ],
+      "trace": [
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0
+          ],
+          "selected": [
+            0
+          ],
+          "value": 28.0,
+          "optimum": 28.0,
+          "levels": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "reconstructions": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 1,
+          "active": [
+            0,
+            1
+          ],
+          "selected": [
+            0,
+            1
+          ],
+          "value": 54.0,
+          "optimum": 54.0,
+          "levels": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "reconstructions": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            2
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "value": 69.0,
+          "optimum": 69.0,
+          "levels": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "reconstructions": [
+            3,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 3,
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "selected": [
+            1,
+            2,
+            3
+          ],
+          "value": 78.0,
+          "optimum": 78.0,
+          "levels": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "reconstructions": [
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "selected": [
+            1,
+            2,
+            3
+          ],
+          "value": 78.0,
+          "optimum": 78.0,
+          "levels": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "reconstructions": [
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "selected": [
+            0,
+            4,
+            5
+          ],
+          "value": 86.0,
+          "optimum": 86.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "selected": [
+            1,
+            2,
+            6
+          ],
+          "value": 95.0,
+          "optimum": 95.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            7,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 7,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "selected": [
+            1,
+            2,
+            6
+          ],
+          "value": 95.0,
+          "optimum": 95.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            8,
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 8,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            2,
+            6
+          ],
+          "value": 95.0,
+          "optimum": 95.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            9,
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            6,
+            9
+          ],
+          "value": 97.0,
+          "optimum": 97.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            10,
+            10,
+            10,
+            9
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 2,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            6,
+            9
+          ],
+          "value": 97.0,
+          "optimum": 97.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            11,
+            11,
+            11,
+            10
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 5,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            6,
+            9
+          ],
+          "value": 97.0,
+          "optimum": 97.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            12,
+            12,
+            12,
+            11
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 0,
+          "active": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            6,
+            9
+          ],
+          "value": 97.0,
+          "optimum": 97.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            13,
+            13,
+            13,
+            12
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 5,
+          "active": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            6,
+            9
+          ],
+          "value": 97.0,
+          "optimum": 97.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            14,
+            14,
+            14,
+            13
+          ]
+        },
+        {
+          "operation": "insert",
+          "element": 0,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "selected": [
+            1,
+            6,
+            9
+          ],
+          "value": 97.0,
+          "optimum": 97.0,
+          "levels": [
+            9,
+            9,
+            9,
+            9
+          ],
+          "reconstructions": [
+            15,
+            15,
+            15,
+            14
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 9,
+          "active": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            6
+          ],
+          "value": 87.0,
+          "optimum": 87.0,
+          "levels": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "reconstructions": [
+            16,
+            16,
+            16,
+            15
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 4,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            6
+          ],
+          "value": 87.0,
+          "optimum": 87.0,
+          "levels": [
+            7,
+            7,
+            7,
+            7
+          ],
+          "reconstructions": [
+            17,
+            17,
+            17,
+            16
+          ]
+        },
+        {
+          "operation": "delete",
+          "element": 6,
+          "active": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8
+          ],
+          "selected": [
+            1,
+            5,
+            8
+          ],
+          "value": 82.0,
+          "optimum": 82.0,
+          "levels": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "reconstructions": [
+            18,
+            18,
+            18,
+            17
+          ]
+        }
+      ]
+    }
+  ],
+  "private_reference": [
+    {
+      "seed": 0,
+      "epsilon": 0.2,
+      "coverage_sets": [
+        [
+          0,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "dataset": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5,
+          6
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        15.0,
+        9.0,
+        13.0,
+        16.0,
+        17.0,
+        17.0,
+        17.0,
+        19.0,
+        19.0,
+        20.0,
+        19.0,
+        16.0,
+        18.0,
+        17.0,
+        18.0,
+        17.0,
+        18.0,
+        17.0,
+        18.0,
+        19.0,
+        19.0,
+        20.0,
+        20.0,
+        20.0,
+        18.0,
+        18.0
+      ],
+      "probabilities": [
+        0.006508555650185552,
+        0.029169322721123644,
+        0.016008463726334528,
+        0.02388182155824025,
+        0.032237087171349064,
+        0.035627491225244536,
+        0.035627491225244536,
+        0.035627491225244536,
+        0.04351551604884093,
+        0.04351551604884093,
+        0.048092082822233095,
+        0.04351551604884093,
+        0.032237087171349064,
+        0.03937446718613558,
+        0.035627491225244536,
+        0.03937446718613558,
+        0.035627491225244536,
+        0.03937446718613558,
+        0.035627491225244536,
+        0.03937446718613558,
+        0.04351551604884093,
+        0.04351551604884093,
+        0.048092082822233095,
+        0.048092082822233095,
+        0.048092082822233095,
+        0.03937446718613558,
+        0.03937446718613558
+      ],
+      "neighbor_probabilities": [
+        0.0059811858204533415,
+        0.029625007305037702,
+        0.014711343252394869,
+        0.02425490454079423,
+        0.029625007305037702,
+        0.03618406563288823,
+        0.03274069652130628,
+        0.03618406563288823,
+        0.04419531756545829,
+        0.04419531756545829,
+        0.048843379688462335,
+        0.04419531756545829,
+        0.03274069652130628,
+        0.03998957703520858,
+        0.03274069652130628,
+        0.03998957703520858,
+        0.03618406563288823,
+        0.03998957703520858,
+        0.03274069652130628,
+        0.03998957703520858,
+        0.04419531756545829,
+        0.04419531756545829,
+        0.048843379688462335,
+        0.048843379688462335,
+        0.048843379688462335,
+        0.03998957703520858,
+        0.03998957703520858
+      ],
+      "max_abs_log_likelihood_ratio": 0.08449871923474249,
+      "expected_utility": 17.791453695590278,
+      "optimum": 20.0,
+      "sampled_utility_mean": 18.075
+    },
+    {
+      "seed": 0,
+      "epsilon": 1.0,
+      "coverage_sets": [
+        [
+          0,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "dataset": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5,
+          6
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        15.0,
+        9.0,
+        13.0,
+        16.0,
+        17.0,
+        17.0,
+        17.0,
+        19.0,
+        19.0,
+        20.0,
+        19.0,
+        16.0,
+        18.0,
+        17.0,
+        18.0,
+        17.0,
+        18.0,
+        17.0,
+        18.0,
+        19.0,
+        19.0,
+        20.0,
+        20.0,
+        20.0,
+        18.0,
+        18.0
+      ],
+      "probabilities": [
+        4.140139908977795e-06,
+        0.0074855485572141185,
+        0.00037268351778898455,
+        0.002753779420089626,
+        0.012341583129137572,
+        0.02034783061912296,
+        0.02034783061912296,
+        0.02034783061912296,
+        0.055311138220524504,
+        0.055311138220524504,
+        0.09119265009081359,
+        0.055311138220524504,
+        0.012341583129137572,
+        0.033547901154351384,
+        0.02034783061912296,
+        0.033547901154351384,
+        0.02034783061912296,
+        0.033547901154351384,
+        0.02034783061912296,
+        0.033547901154351384,
+        0.055311138220524504,
+        0.055311138220524504,
+        0.09119265009081359,
+        0.09119265009081359,
+        0.09119265009081359,
+        0.033547901154351384,
+        0.033547901154351384
+      ],
+      "neighbor_probabilities": [
+        2.586180628603206e-06,
+        0.0077092958007673245,
+        0.00023280056121184083,
+        0.0028360914310116303,
+        0.0077092958007673245,
+        0.02095603868544144,
+        0.012710479968844265,
+        0.02095603868544144,
+        0.05696441915512025,
+        0.05696441915512025,
+        0.09391844953412458,
+        0.05696441915512025,
+        0.012710479968844265,
+        0.034550666730302056,
+        0.012710479968844265,
+        0.034550666730302056,
+        0.02095603868544144,
+        0.034550666730302056,
+        0.012710479968844265,
+        0.034550666730302056,
+        0.05696441915512025,
+        0.05696441915512025,
+        0.09391844953412458,
+        0.09391844953412458,
+        0.09391844953412458,
+        0.034550666730302056,
+        0.034550666730302056
+      ],
+      "max_abs_log_likelihood_ratio": 0.4705474551471242,
+      "expected_utility": 18.794989358647282,
+      "optimum": 20.0,
+      "sampled_utility_mean": 18.85
+    },
+    {
+      "seed": 0,
+      "epsilon": 4.0,
+      "coverage_sets": [
+        [
+          0,
+          6
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "dataset": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          4,
+          5
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          5,
+          6
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        15.0,
+        9.0,
+        13.0,
+        16.0,
+        17.0,
+        17.0,
+        17.0,
+        19.0,
+        19.0,
+        20.0,
+        19.0,
+        16.0,
+        18.0,
+        17.0,
+        18.0,
+        17.0,
+        18.0,
+        17.0,
+        18.0,
+        19.0,
+        19.0,
+        20.0,
+        20.0,
+        20.0,
+        18.0,
+        18.0
+      ],
+      "probabilities": [
+        8.846757139385623e-19,
+        9.454064529896454e-06,
+        5.808778007375184e-11,
+        1.731572319603739e-07,
+        6.985661317431532e-05,
+        0.0005161744336263139,
+        0.0005161744336263139,
+        0.0005161744336263139,
+        0.028182169170402737,
+        0.028182169170402737,
+        0.20823962898965967,
+        0.028182169170402737,
+        6.985661317431532e-05,
+        0.003814041846898588,
+        0.0005161744336263139,
+        0.003814041846898588,
+        0.0005161744336263139,
+        0.003814041846898588,
+        0.0005161744336263139,
+        0.003814041846898588,
+        0.028182169170402737,
+        0.028182169170402737,
+        0.20823962898965967,
+        0.20823962898965967,
+        0.20823962898965967,
+        0.003814041846898588,
+        0.003814041846898588
+      ],
+      "neighbor_probabilities": [
+        1.1989561497383614e-19,
+        9.467312671257039e-06,
+        7.872342378883343e-12,
+        1.733998801334813e-07,
+        9.467312671257039e-06,
+        0.0005168977576359794,
+        6.995450443403525e-05,
+        0.0005168977576359794,
+        0.028221661323205034,
+        0.028221661323205034,
+        0.20853143872218338,
+        0.028221661323205034,
+        6.995450443403525e-05,
+        0.0038193865285837104,
+        6.995450443403525e-05,
+        0.0038193865285837104,
+        0.0005168977576359794,
+        0.0038193865285837104,
+        6.995450443403525e-05,
+        0.0038193865285837104,
+        0.028221661323205034,
+        0.028221661323205034,
+        0.20853143872218338,
+        0.20853143872218338,
+        0.20853143872218338,
+        0.0038193865285837104,
+        0.0038193865285837104
+      ],
+      "max_abs_log_likelihood_ratio": 1.998599663926717,
+      "expected_utility": 19.803422176212298,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.725
+    },
+    {
+      "seed": 1,
+      "epsilon": 0.2,
+      "coverage_sets": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0
+        ]
+      ],
+      "dataset": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        16.0,
+        12.0,
+        8.0,
+        14.0,
+        15.0,
+        11.0,
+        20.0,
+        18.0,
+        16.0,
+        18.0,
+        16.0,
+        12.0,
+        17.0,
+        17.0,
+        17.0,
+        15.0,
+        15.0,
+        16.0,
+        16.0,
+        20.0,
+        20.0,
+        18.0,
+        18.0,
+        18.0,
+        17.0,
+        16.0
+      ],
+      "probabilities": [
+        0.00744049846170907,
+        0.03685303013450699,
+        0.024703324856315535,
+        0.01655913385491878,
+        0.030172709115230473,
+        0.03334600063370872,
+        0.02235249267989209,
+        0.05497826053757552,
+        0.0450123926528467,
+        0.03685303013450699,
+        0.0450123926528467,
+        0.03685303013450699,
+        0.024703324856315535,
+        0.04072889714762261,
+        0.04072889714762261,
+        0.04072889714762261,
+        0.03334600063370872,
+        0.03334600063370872,
+        0.03685303013450699,
+        0.03685303013450699,
+        0.05497826053757552,
+        0.05497826053757552,
+        0.0450123926528467,
+        0.0450123926528467,
+        0.0450123926528467,
+        0.04072889714762261,
+        0.03685303013450699
+      ],
+      "neighbor_probabilities": [
+        0.0068503216239477124,
+        0.037498300185901015,
+        0.02274386874985691,
+        0.01524567114743262,
+        0.030701011550346963,
+        0.030701011550346963,
+        0.02274386874985691,
+        0.055940890336893374,
+        0.045800527273377516,
+        0.037498300185901015,
+        0.045800527273377516,
+        0.037498300185901015,
+        0.02274386874985691,
+        0.037498300185901015,
+        0.041442030842728454,
+        0.041442030842728454,
+        0.030701011550346963,
+        0.03392986512094802,
+        0.037498300185901015,
+        0.037498300185901015,
+        0.055940890336893374,
+        0.055940890336893374,
+        0.045800527273377516,
+        0.045800527273377516,
+        0.045800527273377516,
+        0.041442030842728454,
+        0.037498300185901015
+      ],
+      "max_abs_log_likelihood_ratio": 0.0826422405692769,
+      "expected_utility": 16.551485112961597,
+      "optimum": 20.0,
+      "sampled_utility_mean": 16.53
+    },
+    {
+      "seed": 1,
+      "epsilon": 1.0,
+      "coverage_sets": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0
+        ]
+      ],
+      "dataset": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        16.0,
+        12.0,
+        8.0,
+        14.0,
+        15.0,
+        11.0,
+        20.0,
+        18.0,
+        16.0,
+        18.0,
+        16.0,
+        12.0,
+        17.0,
+        17.0,
+        17.0,
+        15.0,
+        15.0,
+        16.0,
+        16.0,
+        20.0,
+        20.0,
+        18.0,
+        18.0,
+        18.0,
+        17.0,
+        16.0
+      ],
+      "probabilities": [
+        6.589023876943056e-06,
+        0.019641603352782058,
+        0.0026582019529699605,
+        0.00035974851420530666,
+        0.007225742065132591,
+        0.011913234639376772,
+        0.001612280984184281,
+        0.14513290904665094,
+        0.05339141347566772,
+        0.019641603352782058,
+        0.05339141347566772,
+        0.019641603352782058,
+        0.0026582019529699605,
+        0.03238352923838673,
+        0.03238352923838673,
+        0.03238352923838673,
+        0.011913234639376772,
+        0.011913234639376772,
+        0.019641603352782058,
+        0.019641603352782058,
+        0.14513290904665094,
+        0.14513290904665094,
+        0.05339141347566772,
+        0.05339141347566772,
+        0.05339141347566772,
+        0.03238352923838673,
+        0.019641603352782058
+      ],
+      "neighbor_probabilities": [
+        4.096199313011774e-06,
+        0.020131872747244987,
+        0.0016525247467541102,
+        0.00022364490465747917,
+        0.007406102095991075,
+        0.007406102095991075,
+        0.0016525247467541102,
+        0.14875553710592632,
+        0.05472410386168593,
+        0.020131872747244987,
+        0.05472410386168593,
+        0.020131872747244987,
+        0.0016525247467541102,
+        0.020131872747244987,
+        0.03319184681741103,
+        0.03319184681741103,
+        0.007406102095991075,
+        0.012210598058637287,
+        0.020131872747244987,
+        0.020131872747244987,
+        0.14875553710592632,
+        0.14875553710592632,
+        0.05472410386168593,
+        0.05472410386168593,
+        0.05472410386168593,
+        0.03319184681741103,
+        0.020131872747244987
+      ],
+      "max_abs_log_likelihood_ratio": 0.4753456687267662,
+      "expected_utility": 18.322541539181284,
+      "optimum": 20.0,
+      "sampled_utility_mean": 18.415
+    },
+    {
+      "seed": 1,
+      "epsilon": 4.0,
+      "coverage_sets": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          0
+        ]
+      ],
+      "dataset": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        16.0,
+        12.0,
+        8.0,
+        14.0,
+        15.0,
+        11.0,
+        20.0,
+        18.0,
+        16.0,
+        18.0,
+        16.0,
+        12.0,
+        17.0,
+        17.0,
+        17.0,
+        15.0,
+        15.0,
+        16.0,
+        16.0,
+        20.0,
+        20.0,
+        18.0,
+        18.0,
+        18.0,
+        17.0,
+        16.0
+      ],
+      "probabilities": [
+        1.3688258089481226e-18,
+        0.0001080865378489963,
+        3.625899402770861e-08,
+        1.2163537421636612e-11,
+        1.9796739959757155e-06,
+        1.4627922213858773e-05,
+        4.907121226614593e-09,
+        0.3222014282926536,
+        0.005901325010042623,
+        0.0001080865378489963,
+        0.005901325010042623,
+        0.0001080865378489963,
+        3.625899402770861e-08,
+        0.0007986574917054247,
+        0.0007986574917054247,
+        0.0007986574917054247,
+        1.4627922213858773e-05,
+        1.4627922213858773e-05,
+        0.0001080865378489963,
+        0.0001080865378489963,
+        0.3222014282926536,
+        0.3222014282926536,
+        0.005901325010042623,
+        0.005901325010042623,
+        0.005901325010042623,
+        0.0007986574917054247,
+        0.0001080865378489963
+      ],
+      "neighbor_probabilities": [
+        1.853831499446253e-19,
+        0.00010816397570191953,
+        4.9106368996982645e-09,
+        1.647335159047823e-12,
+        1.9810923197261763e-06,
+        1.9810923197261763e-06,
+        4.9106368996982645e-09,
+        0.32243226727882446,
+        0.0059055529735547695,
+        0.00010816397570191953,
+        0.0059055529735547695,
+        0.00010816397570191953,
+        4.9106368996982645e-09,
+        0.00010816397570191953,
+        0.0007992296843448551,
+        0.0007992296843448551,
+        1.9810923197261763e-06,
+        1.4638402287617373e-05,
+        0.00010816397570191953,
+        0.00010816397570191953,
+        0.32243226727882446,
+        0.32243226727882446,
+        0.0059055529735547695,
+        0.0059055529735547695,
+        0.0059055529735547695,
+        0.0007992296843448551,
+        0.00010816397570191953
+      ],
+      "max_abs_log_likelihood_ratio": 1.9992838134350608,
+      "expected_utility": 19.928576861759595,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.955
+    },
+    {
+      "seed": 2,
+      "epsilon": 0.2,
+      "coverage_sets": [
+        [
+          3
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          6
+        ]
+      ],
+      "dataset": [
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0
+        ],
+        [
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        8.0,
+        17.0,
+        16.0,
+        16.0,
+        14.0,
+        17.0,
+        18.0,
+        16.0,
+        18.0,
+        14.0,
+        17.0,
+        20.0,
+        20.0,
+        20.0,
+        18.0,
+        16.0,
+        17.0,
+        19.0,
+        17.0,
+        20.0,
+        20.0,
+        16.0,
+        17.0,
+        17.0,
+        20.0,
+        17.0
+      ],
+      "probabilities": [
+        0.006708624391732317,
+        0.014930318157683156,
+        0.03672265699120059,
+        0.033228034135338126,
+        0.033228034135338126,
+        0.027204813410926273,
+        0.03672265699120059,
+        0.04058481254114226,
+        0.033228034135338126,
+        0.04058481254114226,
+        0.027204813410926273,
+        0.03672265699120059,
+        0.049570401977164606,
+        0.049570401977164606,
+        0.049570401977164606,
+        0.04058481254114226,
+        0.033228034135338126,
+        0.03672265699120059,
+        0.044853154536022254,
+        0.03672265699120059,
+        0.049570401977164606,
+        0.049570401977164606,
+        0.033228034135338126,
+        0.03672265699120059,
+        0.03672265699120059,
+        0.049570401977164606,
+        0.03672265699120059
+      ],
+      "neighbor_probabilities": [
+        0.006095406890248411,
+        0.014992281751022496,
+        0.03336593664839129,
+        0.03336593664839129,
+        0.03336593664839129,
+        0.027317718439289634,
+        0.0368750628381565,
+        0.04075324705094262,
+        0.03336593664839129,
+        0.04075324705094262,
+        0.027317718439289634,
+        0.0368750628381565,
+        0.04977612835200412,
+        0.04977612835200412,
+        0.04977612835200412,
+        0.04075324705094262,
+        0.03336593664839129,
+        0.0368750628381565,
+        0.04503930345785393,
+        0.0368750628381565,
+        0.04977612835200412,
+        0.04977612835200412,
+        0.03336593664839129,
+        0.0368750628381565,
+        0.0368750628381565,
+        0.04977612835200412,
+        0.0368750628381565
+      ],
+      "max_abs_log_likelihood_ratio": 0.09585840253859759,
+      "expected_utility": 17.52593945306359,
+      "optimum": 20.0,
+      "sampled_utility_mean": 17.265
+    },
+    {
+      "seed": 2,
+      "epsilon": 1.0,
+      "coverage_sets": [
+        [
+          3
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          6
+        ]
+      ],
+      "dataset": [
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0
+        ],
+        [
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        8.0,
+        17.0,
+        16.0,
+        16.0,
+        14.0,
+        17.0,
+        18.0,
+        16.0,
+        18.0,
+        14.0,
+        17.0,
+        20.0,
+        20.0,
+        20.0,
+        18.0,
+        16.0,
+        17.0,
+        19.0,
+        17.0,
+        20.0,
+        20.0,
+        16.0,
+        17.0,
+        17.0,
+        20.0,
+        17.0
+      ],
+      "probabilities": [
+        4.4189211778612455e-06,
+        0.00024126492145350674,
+        0.021717976112690395,
+        0.013172618379253322,
+        0.013172618379253322,
+        0.004845935488124382,
+        0.021717976112690395,
+        0.03580688917354995,
+        0.013172618379253322,
+        0.03580688917354995,
+        0.004845935488124382,
+        0.021717976112690395,
+        0.09733321617410773,
+        0.09733321617410773,
+        0.09733321617410773,
+        0.03580688917354995,
+        0.013172618379253322,
+        0.021717976112690395,
+        0.05903557981803392,
+        0.021717976112690395,
+        0.09733321617410773,
+        0.09733321617410773,
+        0.013172618379253322,
+        0.021717976112690395,
+        0.021717976112690395,
+        0.09733321617410773,
+        0.021717976112690395
+      ],
+      "neighbor_probabilities": [
+        2.7033166856557626e-06,
+        0.00024334481303956625,
+        0.013286176612121673,
+        0.013286176612121673,
+        0.013286176612121673,
+        0.004887711227372408,
+        0.021905201986683567,
+        0.036115572454427904,
+        0.013286176612121673,
+        0.036115572454427904,
+        0.004887711227372408,
+        0.021905201986683567,
+        0.09817230432726741,
+        0.09817230432726741,
+        0.09817230432726741,
+        0.036115572454427904,
+        0.013286176612121673,
+        0.021905201986683567,
+        0.059544512509126915,
+        0.021905201986683567,
+        0.09817230432726741,
+        0.09817230432726741,
+        0.013286176612121673,
+        0.021905201986683567,
+        0.021905201986683567,
+        0.09817230432726741,
+        0.021905201986683567
+      ],
+      "max_abs_log_likelihood_ratio": 0.4914161676544476,
+      "expected_utility": 18.88030450751254,
+      "optimum": 20.0,
+      "sampled_utility_mean": 18.97
+    },
+    {
+      "seed": 2,
+      "epsilon": 4.0,
+      "coverage_sets": [
+        [
+          3
+        ],
+        [
+          1,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          6
+        ]
+      ],
+      "dataset": [
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          0
+        ],
+        [
+          5
+        ],
+        [
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        [
+          0
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          3
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        8.0,
+        17.0,
+        16.0,
+        16.0,
+        14.0,
+        17.0,
+        18.0,
+        16.0,
+        18.0,
+        14.0,
+        17.0,
+        20.0,
+        20.0,
+        20.0,
+        18.0,
+        16.0,
+        17.0,
+        19.0,
+        17.0,
+        20.0,
+        20.0,
+        16.0,
+        17.0,
+        17.0,
+        20.0,
+        17.0
+      ],
+      "probabilities": [
+        6.839165799451578e-19,
+        6.07735831620043e-12,
+        0.0003990391594782192,
+        5.400407767048466e-05,
+        5.400407767048466e-05,
+        9.891191851317498e-07,
+        0.0003990391594782192,
+        0.002948522735054696,
+        5.400407767048466e-05,
+        0.002948522735054696,
+        9.891191851317498e-07,
+        0.0003990391594782192,
+        0.16098388666465308,
+        0.16098388666465308,
+        0.16098388666465308,
+        0.002948522735054696,
+        5.400407767048466e-05,
+        0.0003990391594782192,
+        0.021786799898291583,
+        0.0003990391594782192,
+        0.16098388666465308,
+        0.16098388666465308,
+        5.400407767048466e-05,
+        0.0003990391594782192,
+        0.0003990391594782192,
+        0.16098388666465308,
+        0.0003990391594782192
+      ],
+      "neighbor_probabilities": [
+        9.258999085216165e-20,
+        6.079455941778649e-12,
+        5.402271740320335e-05,
+        5.402271740320335e-05,
+        5.402271740320335e-05,
+        9.89460583745208e-07,
+        0.0003991768895089467,
+        0.0029495404299782484,
+        5.402271740320335e-05,
+        0.0029495404299782484,
+        9.89460583745208e-07,
+        0.0003991768895089467,
+        0.1610394509247772,
+        0.1610394509247772,
+        0.1610394509247772,
+        0.0029495404299782484,
+        5.402271740320335e-05,
+        0.0003991768895089467,
+        0.02179431970317331,
+        0.0003991768895089467,
+        0.1610394509247772,
+        0.1610394509247772,
+        5.402271740320335e-05,
+        0.0003991768895089467,
+        0.0003991768895089467,
+        0.1610394509247772,
+        0.0003991768895089467
+      ],
+      "max_abs_log_likelihood_ratio": 1.9996549053798929,
+      "expected_utility": 19.949853172807337,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.965
+    },
+    {
+      "seed": 3,
+      "epsilon": 0.2,
+      "coverage_sets": [
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ]
+      ],
+      "dataset": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7
+        ],
+        [
+          0,
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        17.0,
+        16.0,
+        18.0,
+        15.0,
+        18.0,
+        19.0,
+        20.0,
+        20.0,
+        19.0,
+        19.0,
+        20.0,
+        19.0,
+        20.0,
+        19.0,
+        18.0,
+        20.0,
+        19.0,
+        19.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        19.0,
+        20.0
+      ],
+      "probabilities": [
+        0.005674936031956763,
+        0.031064301290348432,
+        0.028108142172649998,
+        0.034331362376432896,
+        0.02543329878928829,
+        0.034331362376432896,
+        0.037942023276350094,
+        0.04193242069797142,
+        0.04193242069797142,
+        0.037942023276350094,
+        0.037942023276350094,
+        0.04193242069797142,
+        0.037942023276350094,
+        0.04193242069797142,
+        0.037942023276350094,
+        0.034331362376432896,
+        0.04193242069797142,
+        0.037942023276350094,
+        0.037942023276350094,
+        0.04193242069797142,
+        0.04193242069797142,
+        0.04193242069797142,
+        0.04193242069797142,
+        0.04193242069797142,
+        0.04193242069797142,
+        0.037942023276350094,
+        0.04193242069797142
+      ],
+      "neighbor_probabilities": [
+        0.005184285988585027,
+        0.028378508765182876,
+        0.028378508765182876,
+        0.03466158887826692,
+        0.023234357852548283,
+        0.03466158887826692,
+        0.038306980002554905,
+        0.04233576025812908,
+        0.04233576025812908,
+        0.03466158887826692,
+        0.038306980002554905,
+        0.04233576025812908,
+        0.038306980002554905,
+        0.04233576025812908,
+        0.038306980002554905,
+        0.03466158887826692,
+        0.04233576025812908,
+        0.038306980002554905,
+        0.038306980002554905,
+        0.04233576025812908,
+        0.04233576025812908,
+        0.04233576025812908,
+        0.04233576025812908,
+        0.04233576025812908,
+        0.04233576025812908,
+        0.038306980002554905,
+        0.04233576025812908
+      ],
+      "max_abs_log_likelihood_ratio": 0.090427166322622,
+      "expected_utility": 19.04418495238338,
+      "optimum": 20.0,
+      "sampled_utility_mean": 18.95
+    },
+    {
+      "seed": 3,
+      "epsilon": 1.0,
+      "coverage_sets": [
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ]
+      ],
+      "dataset": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7
+        ],
+        [
+          0,
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        17.0,
+        16.0,
+        18.0,
+        15.0,
+        18.0,
+        19.0,
+        20.0,
+        20.0,
+        19.0,
+        19.0,
+        20.0,
+        19.0,
+        20.0,
+        19.0,
+        18.0,
+        20.0,
+        19.0,
+        19.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        19.0,
+        20.0
+      ],
+      "probabilities": [
+        2.467859674062777e-06,
+        0.012128959828314512,
+        0.007356586006295632,
+        0.019997274060409513,
+        0.004461994963631217,
+        0.019997274060409513,
+        0.03296993109941709,
+        0.05435822669712661,
+        0.05435822669712661,
+        0.03296993109941709,
+        0.03296993109941709,
+        0.05435822669712661,
+        0.03296993109941709,
+        0.05435822669712661,
+        0.03296993109941709,
+        0.019997274060409513,
+        0.05435822669712661,
+        0.03296993109941709,
+        0.03296993109941709,
+        0.05435822669712661,
+        0.05435822669712661,
+        0.05435822669712661,
+        0.05435822669712661,
+        0.05435822669712661,
+        0.05435822669712661,
+        0.03296993109941709,
+        0.05435822669712661
+      ],
+      "neighbor_probabilities": [
+        1.5266038658918197e-06,
+        0.007502905111565315,
+        0.007502905111565315,
+        0.02039501062542048,
+        0.002760164539605006,
+        0.02039501062542048,
+        0.033625687834285864,
+        0.05543938677430964,
+        0.05543938677430964,
+        0.02039501062542048,
+        0.033625687834285864,
+        0.05543938677430964,
+        0.033625687834285864,
+        0.05543938677430964,
+        0.033625687834285864,
+        0.02039501062542048,
+        0.05543938677430964,
+        0.033625687834285864,
+        0.033625687834285864,
+        0.05543938677430964,
+        0.05543938677430964,
+        0.05543938677430964,
+        0.05543938677430964,
+        0.05543938677430964,
+        0.05543938677430964,
+        0.033625687834285864,
+        0.05543938677430964
+      ],
+      "max_abs_log_likelihood_ratio": 0.4803056735341667,
+      "expected_utility": 19.52808435132044,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.57
+    },
+    {
+      "seed": 3,
+      "epsilon": 4.0,
+      "coverage_sets": [
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          5
+        ]
+      ],
+      "dataset": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          7
+        ],
+        [
+          0,
+          1,
+          6,
+          7
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        17.0,
+        16.0,
+        18.0,
+        15.0,
+        18.0,
+        19.0,
+        20.0,
+        20.0,
+        19.0,
+        19.0,
+        20.0,
+        19.0,
+        20.0,
+        19.0,
+        18.0,
+        20.0,
+        19.0,
+        19.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        19.0,
+        20.0
+      ],
+      "probabilities": [
+        3.2330260470726385e-19,
+        0.00018863470110616512,
+        2.5528930702456635e-05,
+        0.0013938323886784694,
+        3.4549650673448267e-06,
+        0.0013938323886784694,
+        0.010299105712451724,
+        0.0761006698781229,
+        0.0761006698781229,
+        0.010299105712451724,
+        0.010299105712451724,
+        0.0761006698781229,
+        0.010299105712451724,
+        0.0761006698781229,
+        0.010299105712451724,
+        0.0013938323886784694,
+        0.0761006698781229,
+        0.010299105712451724,
+        0.010299105712451724,
+        0.0761006698781229,
+        0.0761006698781229,
+        0.0761006698781229,
+        0.0761006698781229,
+        0.0761006698781229,
+        0.0761006698781229,
+        0.010299105712451724,
+        0.0761006698781229
+      ],
+      "neighbor_probabilities": [
+        4.4154793896501316e-20,
+        2.5762632987793286e-05,
+        2.5762632987793286e-05,
+        0.0014065921011163687,
+        4.7185908262741276e-07,
+        0.0014065921011163687,
+        0.010393387943461584,
+        0.0767973265721871,
+        0.0767973265721871,
+        0.0014065921011163687,
+        0.010393387943461584,
+        0.0767973265721871,
+        0.010393387943461584,
+        0.0767973265721871,
+        0.010393387943461584,
+        0.0014065921011163687,
+        0.0767973265721871,
+        0.010393387943461584,
+        0.010393387943461584,
+        0.0767973265721871,
+        0.0767973265721871,
+        0.0767973265721871,
+        0.0767973265721871,
+        0.0767973265721871,
+        0.0767973265721871,
+        0.010393387943461584,
+        0.0767973265721871
+      ],
+      "max_abs_log_likelihood_ratio": 1.9908872381425975,
+      "expected_utility": 19.908558865316852,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.87
+    },
+    {
+      "seed": 4,
+      "epsilon": 0.2,
+      "coverage_sets": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          2,
+          5
+        ]
+      ],
+      "dataset": [
+        [
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        20.0,
+        20.0,
+        15.0,
+        12.0,
+        17.0,
+        18.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        17.0,
+        17.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "probabilities": [
+        0.0055848943206246275,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.02502975983573652,
+        0.01854250214560106,
+        0.030571417699455233,
+        0.03378664176578104,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.030571417699455233,
+        0.030571417699455233,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455,
+        0.04126709744169455
+      ],
+      "neighbor_probabilities": [
+        0.0050798634707675434,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.025160728482211948,
+        0.016865740674486537,
+        0.027806905396138275,
+        0.0339634309467422,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.03073138316549282,
+        0.03073138316549282,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339,
+        0.04148302823493339
+      ],
+      "max_abs_log_likelihood_ratio": 0.09478112494511065,
+      "expected_utility": 19.272097254417357,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.415
+    },
+    {
+      "seed": 4,
+      "epsilon": 1.0,
+      "coverage_sets": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          2,
+          5
+        ]
+      ],
+      "dataset": [
+        [
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        20.0,
+        20.0,
+        15.0,
+        12.0,
+        17.0,
+        18.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        17.0,
+        17.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "probabilities": [
+        2.1478162470542382e-06,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.003883342873131905,
+        0.0008664909171931855,
+        0.010556020365710395,
+        0.017403935310890475,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.010556020365710395,
+        0.010556020365710395,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305,
+        0.047308801099270305
+      ],
+      "neighbor_probabilities": [
+        1.308598888449472e-06,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.0039008783083573813,
+        0.0005279264707331047,
+        0.006431461041401548,
+        0.017482523679284115,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.01060368662063793,
+        0.01060368662063793,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298,
+        0.04752242643300298
+      ],
+      "max_abs_log_likelihood_ratio": 0.49549461288969976,
+      "expected_utility": 19.843796348058675,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.9
+    },
+    {
+      "seed": 4,
+      "epsilon": 4.0,
+      "coverage_sets": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          0,
+          2,
+          5
+        ]
+      ],
+      "dataset": [
+        [
+          1,
+          3,
+          4,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          3,
+          7
+        ],
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          3,
+          4,
+          7
+        ],
+        [
+          0,
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          4,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          2,
+          3,
+          4,
+          7
+        ]
+      ],
+      "neighbor_added": [
+        0,
+        3
+      ],
+      "costs": [
+        1,
+        2,
+        1,
+        3,
+        2,
+        1
+      ],
+      "budget": 4,
+      "candidate_sets": [
+        [],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "scores": [
+        0.0,
+        20.0,
+        20.0,
+        15.0,
+        12.0,
+        17.0,
+        18.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        17.0,
+        17.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "probabilities": [
+        2.1214407440370462e-19,
+        0.04993558956140864,
+        0.04993558956140864,
+        2.267072258736224e-06,
+        5.619510296002332e-09,
+        0.00012377795131845955,
+        0.0009146022261028045,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.00012377795131845955,
+        0.00012377795131845955,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864,
+        0.04993558956140864
+      ],
+      "neighbor_probabilities": [
+        2.871365165546289e-20,
+        0.049940934803895255,
+        0.049940934803895255,
+        2.2673149323696797e-06,
+        7.605994254953387e-10,
+        1.675331722922272e-05,
+        0.0009147001276339622,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.00012379120084990807,
+        0.00012379120084990807,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255,
+        0.049940934803895255
+      ],
+      "max_abs_log_likelihood_ratio": 1.9998929629855324,
+      "expected_utility": 19.997045413668545,
+      "optimum": 20.0,
+      "sampled_utility_mean": 19.975
+    }
+  ],
+  "paper_private": [
+    {
+      "seed": 0,
+      "epsilon": 0.2,
+      "selected": [
+        0,
+        3
+      ],
+      "utility": 19.0,
+      "cost": 4,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            15.0,
+            4.5,
+            13.0,
+            5.333333333333333,
+            8.5,
+            17.0
+          ],
+          "auxiliary_scores": [
+            -211.97555693367968,
+            -88.69022277347189,
+            -213.47555693367968,
+            0.0,
+            -83.89022277347189,
+            -210.47555693367968
+          ],
+          "selected": 3
+        },
+        {
+          "candidates": [
+            0,
+            2,
+            5
+          ],
+          "density_scores": [
+            3.0,
+            2.0,
+            1.0
+          ],
+          "auxiliary_scores": [
+            0.0,
+            -0.5,
+            -1.0
+          ],
+          "selected": 5
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.025,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.1,
+        "total_pure_epsilon_upper_bound": 0.2,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 0,
+      "epsilon": 1.0,
+      "selected": [
+        4
+      ],
+      "utility": 17.0,
+      "cost": 2,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            15.0,
+            4.5,
+            13.0,
+            5.333333333333333,
+            8.5,
+            17.0
+          ],
+          "auxiliary_scores": [
+            -36.59511138673594,
+            -18.538044554694373,
+            -38.09511138673594,
+            0.0,
+            -13.738044554694374,
+            -35.09511138673594
+          ],
+          "selected": 4
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "density_scores": [
+            3.0,
+            0.5,
+            0.0,
+            1.0
+          ],
+          "auxiliary_scores": [
+            -25.400927014580407,
+            0.0,
+            -27.400927014580407,
+            -26.734260347913743
+          ],
+          "selected": 1
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.125,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.5,
+        "total_pure_epsilon_upper_bound": 1.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 0,
+      "epsilon": 4.0,
+      "selected": [
+        0,
+        1,
+        5
+      ],
+      "utility": 19.0,
+      "cost": 4,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            15.0,
+            4.5,
+            13.0,
+            5.333333333333333,
+            8.5,
+            17.0
+          ],
+          "auxiliary_scores": [
+            -3.711277846683983,
+            -5.384511138673594,
+            -5.211277846683983,
+            0.0,
+            -0.5845111386735934,
+            -2.211277846683983
+          ],
+          "selected": 0
+        },
+        {
+          "candidates": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            1.0,
+            4.0,
+            1.3333333333333333,
+            2.5,
+            4.0
+          ],
+          "auxiliary_scores": [
+            -4.638653893238429,
+            -8.596634733096073,
+            0.0,
+            -2.838653893238429,
+            -8.596634733096073
+          ],
+          "selected": 1
+        },
+        {
+          "candidates": [
+            2,
+            5
+          ],
+          "density_scores": [
+            2.0,
+            2.0
+          ],
+          "auxiliary_scores": [
+            0.0,
+            0.0
+          ],
+          "selected": 5
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.5,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 2.0,
+        "total_pure_epsilon_upper_bound": 4.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "epsilon": 0.2,
+      "selected": [
+        2
+      ],
+      "utility": 8.0,
+      "cost": 1,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            16.0,
+            6.0,
+            8.0,
+            4.666666666666667,
+            7.5,
+            11.0
+          ],
+          "auxiliary_scores": [
+            -210.72555693367966,
+            -86.09022277347187,
+            -216.72555693367966,
+            0.0,
+            -84.29022277347187,
+            -214.47555693367966
+          ],
+          "selected": 3
+        },
+        {
+          "candidates": [
+            0,
+            2,
+            5
+          ],
+          "density_scores": [
+            2.0,
+            3.0,
+            2.0
+          ],
+          "auxiliary_scores": [
+            -0.5,
+            0.0,
+            -0.5
+          ],
+          "selected": 5
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.025,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.1,
+        "total_pure_epsilon_upper_bound": 0.2,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "epsilon": 1.0,
+      "selected": [
+        3
+      ],
+      "utility": 14.0,
+      "cost": 3,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            16.0,
+            6.0,
+            8.0,
+            4.666666666666667,
+            7.5,
+            11.0
+          ],
+          "auxiliary_scores": [
+            -35.34511138673593,
+            -15.938044554694377,
+            -41.34511138673593,
+            0.0,
+            -14.138044554694378,
+            -39.09511138673593
+          ],
+          "selected": 4
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "density_scores": [
+            3.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          "auxiliary_scores": [
+            -25.734260347913743,
+            0.0,
+            -27.734260347913743,
+            -27.067593681247075
+          ],
+          "selected": 1
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.125,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.5,
+        "total_pure_epsilon_upper_bound": 1.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "epsilon": 4.0,
+      "selected": [
+        3,
+        5
+      ],
+      "utility": 16.0,
+      "cost": 4,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            16.0,
+            6.0,
+            8.0,
+            4.666666666666667,
+            7.5,
+            11.0
+          ],
+          "auxiliary_scores": [
+            -2.4612778466839833,
+            -2.784511138673594,
+            -8.461277846683982,
+            0.0,
+            -0.9845111386735941,
+            -6.211277846683982
+          ],
+          "selected": 3
+        },
+        {
+          "candidates": [
+            0,
+            2,
+            5
+          ],
+          "density_scores": [
+            2.0,
+            3.0,
+            2.0
+          ],
+          "auxiliary_scores": [
+            -0.5,
+            0.0,
+            -0.5
+          ],
+          "selected": 5
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.5,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 2.0,
+        "total_pure_epsilon_upper_bound": 4.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "epsilon": 0.2,
+      "selected": [
+        0,
+        3
+      ],
+      "utility": 18.0,
+      "cost": 4,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            8.0,
+            8.5,
+            16.0,
+            5.333333333333333,
+            7.0,
+            17.0
+          ],
+          "auxiliary_scores": [
+            -217.22555693367968,
+            -83.89022277347189,
+            -211.22555693367968,
+            0.0,
+            -85.69022277347189,
+            -210.47555693367968
+          ],
+          "selected": 3
+        },
+        {
+          "candidates": [
+            0,
+            2,
+            5
+          ],
+          "density_scores": [
+            2.0,
+            2.0,
+            3.0
+          ],
+          "auxiliary_scores": [
+            -0.5,
+            -0.5,
+            0.0
+          ],
+          "selected": 0
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.025,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.1,
+        "total_pure_epsilon_upper_bound": 0.2,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "epsilon": 1.0,
+      "selected": [
+        0,
+        3
+      ],
+      "utility": 18.0,
+      "cost": 4,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            8.0,
+            8.5,
+            16.0,
+            5.333333333333333,
+            7.0,
+            17.0
+          ],
+          "auxiliary_scores": [
+            -41.84511138673594,
+            -13.738044554694374,
+            -35.84511138673594,
+            0.0,
+            -15.538044554694375,
+            -35.09511138673594
+          ],
+          "selected": 3
+        },
+        {
+          "candidates": [
+            0,
+            2,
+            5
+          ],
+          "density_scores": [
+            2.0,
+            2.0,
+            3.0
+          ],
+          "auxiliary_scores": [
+            -0.5,
+            -0.5,
+            0.0
+          ],
+          "selected": 2
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.125,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.5,
+        "total_pure_epsilon_upper_bound": 1.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "epsilon": 4.0,
+      "selected": [
+        1,
+        5
+      ],
+      "utility": 20.0,
+      "cost": 3,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            8.0,
+            8.5,
+            16.0,
+            5.333333333333333,
+            7.0,
+            17.0
+          ],
+          "auxiliary_scores": [
+            -8.961277846683984,
+            -0.5845111386735934,
+            -2.961277846683983,
+            0.0,
+            -2.3845111386735933,
+            -2.211277846683983
+          ],
+          "selected": 5
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "density_scores": [
+            0.0,
+            1.5,
+            0.0,
+            0.6666666666666666,
+            0.0
+          ],
+          "auxiliary_scores": [
+            -11.096634733096074,
+            -3.2386538932384297,
+            -11.096634733096074,
+            0.0,
+            -5.03865389323843
+          ],
+          "selected": 1
+        },
+        {
+          "candidates": [
+            0,
+            2
+          ],
+          "density_scores": [
+            0.0,
+            0.0
+          ],
+          "auxiliary_scores": [
+            0.0,
+            0.0
+          ],
+          "selected": 0
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.5,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 2.0,
+        "total_pure_epsilon_upper_bound": 4.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "epsilon": 0.2,
+      "selected": [
+        2
+      ],
+      "utility": 18.0,
+      "cost": 1,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            17.0,
+            8.0,
+            18.0,
+            5.0,
+            9.0,
+            19.0
+          ],
+          "auxiliary_scores": [
+            -210.22555693367968,
+            -84.09022277347188,
+            -209.47555693367968,
+            0.0,
+            -82.89022277347188,
+            -208.72555693367968
+          ],
+          "selected": 4
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "density_scores": [
+            1.0,
+            1.0,
+            2.0,
+            2.0
+          ],
+          "auxiliary_scores": [
+            -135.33796840623538,
+            0.0,
+            -134.6713017395687,
+            -134.6713017395687
+          ],
+          "selected": 1
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.025,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.1,
+        "total_pure_epsilon_upper_bound": 0.2,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "epsilon": 1.0,
+      "selected": [
+        0
+      ],
+      "utility": 17.0,
+      "cost": 1,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            17.0,
+            8.0,
+            18.0,
+            5.0,
+            9.0,
+            19.0
+          ],
+          "auxiliary_scores": [
+            -34.84511138673594,
+            -13.938044554694375,
+            -34.09511138673594,
+            0.0,
+            -12.738044554694376,
+            -33.34511138673594
+          ],
+          "selected": 0
+        },
+        {
+          "candidates": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            1.5,
+            3.0,
+            0.6666666666666666,
+            1.0,
+            3.0
+          ],
+          "auxiliary_scores": [
+            -15.954615572953719,
+            -40.6365389323843,
+            0.0,
+            -16.55461557295372,
+            -40.6365389323843
+          ],
+          "selected": 3
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.125,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.5,
+        "total_pure_epsilon_upper_bound": 1.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "epsilon": 4.0,
+      "selected": [
+        4,
+        5
+      ],
+      "utility": 20.0,
+      "cost": 3,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            17.0,
+            8.0,
+            18.0,
+            5.0,
+            9.0,
+            19.0
+          ],
+          "auxiliary_scores": [
+            -1.9741852311226549,
+            -1.0,
+            -1.3075185644559884,
+            -0.41548886132640633,
+            0.0,
+            -0.6408518977893216
+          ],
+          "selected": 4
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "density_scores": [
+            1.0,
+            1.0,
+            2.0,
+            2.0
+          ],
+          "auxiliary_scores": [
+            -6.766898420311769,
+            0.0,
+            -6.100231753645102,
+            -6.100231753645102
+          ],
+          "selected": 1
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.5,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 2.0,
+        "total_pure_epsilon_upper_bound": 4.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 4,
+      "epsilon": 0.2,
+      "selected": [
+        2
+      ],
+      "utility": 15.0,
+      "cost": 1,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            20.0,
+            10.0,
+            15.0,
+            4.0,
+            8.5,
+            18.0
+          ],
+          "auxiliary_scores": [
+            -207.22555693367968,
+            -80.49022277347188,
+            -210.97555693367968,
+            0.0,
+            -82.29022277347188,
+            -208.72555693367968
+          ],
+          "selected": 5
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "density_scores": [
+            2.0,
+            1.0,
+            2.0,
+            0.6666666666666666,
+            1.0
+          ],
+          "auxiliary_scores": [
+            -210.9326946619215,
+            -84.3730778647686,
+            -210.9326946619215,
+            0.0,
+            -84.3730778647686
+          ],
+          "selected": 3
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.025,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.1,
+        "total_pure_epsilon_upper_bound": 0.2,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 4,
+      "epsilon": 1.0,
+      "selected": [
+        4
+      ],
+      "utility": 17.0,
+      "cost": 2,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            20.0,
+            10.0,
+            15.0,
+            4.0,
+            8.5,
+            18.0
+          ],
+          "auxiliary_scores": [
+            -31.845111386735933,
+            -10.338044554694376,
+            -35.59511138673594,
+            0.0,
+            -12.138044554694376,
+            -33.34511138673594
+          ],
+          "selected": 4
+        },
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "density_scores": [
+            3.0,
+            1.5,
+            0.0,
+            3.0
+          ],
+          "auxiliary_scores": [
+            -26.067593681247075,
+            0.0,
+            -28.067593681247075,
+            -26.067593681247075
+          ],
+          "selected": 1
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.125,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 0.5,
+        "total_pure_epsilon_upper_bound": 1.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 4,
+      "epsilon": 4.0,
+      "selected": [
+        0
+      ],
+      "utility": 20.0,
+      "cost": 1,
+      "optimum": 20.0,
+      "greedy_trace": [
+        {
+          "candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            20.0,
+            10.0,
+            15.0,
+            4.0,
+            8.5,
+            18.0
+          ],
+          "auxiliary_scores": [
+            -0.6408518977893216,
+            0.0,
+            -3.974185231122655,
+            -2.8154888613264064,
+            -1.5,
+            -1.9741852311226549
+          ],
+          "selected": 0
+        },
+        {
+          "candidates": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "density_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "auxiliary_scores": [
+            -4.238653893238429,
+            -10.596634733096073,
+            0.0,
+            -4.238653893238429,
+            -10.596634733096073
+          ],
+          "selected": 3
+        }
+      ],
+      "privacy_accounting": {
+        "per_step_epsilon": 0.5,
+        "maximum_greedy_steps": 4,
+        "final_selection_epsilon": 2.0,
+        "total_pure_epsilon_upper_bound": 4.0,
+        "delta": 0.0,
+        "final_candidates": [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "scope": "ResQue uses source curvature trigger and step-back with explicit incumbent safeguard. Dynamic experiment implements level reservoirs and partial rebuilds at fixed thresholds; exact offline solver, disjoint candidate sets and finite threshold grid replace asymptotic machinery. Private density greedy+ ports Algorithms 1/4/5/7 with stricter basic composition eps/(2k), rather than advanced composition, plus an independently enumerable exponential-mechanism reference. No claimed 0.277 or (1-1/e) DP theorem from these small controls.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "scope": "Shared cloud CPU; not student laptop; one BLAS thread."
+  }
+}

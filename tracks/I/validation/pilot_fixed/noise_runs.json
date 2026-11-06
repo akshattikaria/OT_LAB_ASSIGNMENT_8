@@ -1,0 +1,311 @@
+[
+  {
+    "program": "bv",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 256,
+    "counts": {
+      "101": 256
+    },
+    "success_count": 256,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.0021653200001310324,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "3c10c8201a42d769541950cc8917c38a17009e456cad71d3515d936540059c71",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "bv",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 256,
+    "counts": {
+      "100": 5,
+      "110": 2,
+      "000": 3,
+      "001": 7,
+      "011": 2,
+      "111": 14,
+      "101": 223
+    },
+    "success_count": 223,
+    "success_probability": 0.87109375,
+    "success_outcomes": [
+      5
+    ],
+    "runtime_s": 0.07571999300034804,
+    "native_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    },
+    "native_depth": 12,
+    "circuit_file": "circuits/device_bv.qpy",
+    "circuit_sha256": "3c10c8201a42d769541950cc8917c38a17009e456cad71d3515d936540059c71",
+    "qubits": 5,
+    "logical_depth": 12,
+    "logical_operations": {
+      "rz": 10,
+      "cx": 8,
+      "sx": 5,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 256,
+    "counts": {
+      "101": 256
+    },
+    "success_count": 256,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.004504661999817472,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "dj",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 256,
+    "counts": {
+      "100": 14,
+      "000": 26,
+      "010": 22,
+      "110": 26,
+      "111": 42,
+      "011": 26,
+      "101": 67,
+      "001": 33
+    },
+    "success_count": 230,
+    "success_probability": 0.8984375,
+    "success_outcomes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "runtime_s": 0.07918608299951302,
+    "native_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    },
+    "native_depth": 174,
+    "circuit_file": "circuits/device_dj.qpy",
+    "circuit_sha256": "9d0d87e713424796b0d3a12cd0c991b572ce44d9709415d21046b739efeff945",
+    "qubits": 5,
+    "logical_depth": 174,
+    "logical_operations": {
+      "cx": 125,
+      "rz": 71,
+      "sx": 7,
+      "x": 6,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 256,
+    "counts": {
+      "110": 1,
+      "001": 1,
+      "100": 2,
+      "000": 3,
+      "010": 2,
+      "111": 3,
+      "011": 244
+    },
+    "success_count": 244,
+    "success_probability": 0.953125,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.002887806000217097,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "a39c6df7008ee9dd866676d169887cf0d83d5f96dbff325a8d97060a366db178",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "grover",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 256,
+    "counts": {
+      "101": 14,
+      "001": 39,
+      "110": 12,
+      "111": 22,
+      "011": 128,
+      "100": 9,
+      "000": 14,
+      "010": 18
+    },
+    "success_count": 128,
+    "success_probability": 0.5,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.07165816900032951,
+    "native_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    },
+    "native_depth": 92,
+    "circuit_file": "circuits/device_grover.qpy",
+    "circuit_sha256": "a39c6df7008ee9dd866676d169887cf0d83d5f96dbff325a8d97060a366db178",
+    "qubits": 5,
+    "logical_depth": 92,
+    "logical_operations": {
+      "rz": 54,
+      "cx": 48,
+      "sx": 15,
+      "measure": 3
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 0,
+    "condition": "ideal",
+    "shots": 256,
+    "counts": {
+      "011": 256
+    },
+    "success_count": 256,
+    "success_probability": 1.0,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.0020587710005202098,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "e2ac89a149cf36991b989062e7f9040a837ba8018ac9bf19b16dd73620a2fb61",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  },
+  {
+    "program": "qpe",
+    "seed": 0,
+    "condition": "calibrated",
+    "shots": 256,
+    "counts": {
+      "100": 8,
+      "001": 15,
+      "010": 10,
+      "000": 9,
+      "101": 9,
+      "110": 10,
+      "111": 41,
+      "011": 154
+    },
+    "success_count": 154,
+    "success_probability": 0.6015625,
+    "success_outcomes": [
+      3
+    ],
+    "runtime_s": 0.075197567000032,
+    "native_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    },
+    "native_depth": 55,
+    "circuit_file": "circuits/device_qpe.qpy",
+    "circuit_sha256": "e2ac89a149cf36991b989062e7f9040a837ba8018ac9bf19b16dd73620a2fb61",
+    "qubits": 5,
+    "logical_depth": 55,
+    "logical_operations": {
+      "cx": 33,
+      "rz": 29,
+      "sx": 6,
+      "measure": 3,
+      "x": 1
+    }
+  }
+]

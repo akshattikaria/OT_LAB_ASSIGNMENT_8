@@ -1,0 +1,7 @@
+SQLite 3.53.1
+reuse_after_querying_old_schema
+confirmed actual= [(6, 0, 2, 200), (1, 24, 1, 100), (2, 24, 1, None), (7, 100, 2, None)] expected= [(6, 0, 2, 200), (1, 24, 1, 100), (2, 24, 1, None), (7, 100, 2, None)] equal= True
+pending actual= [] expected= [(4, 24, 600, 0)] equal= False
+fresh_schema_before_queries
+confirmed actual= [(6, 0, 2, 200), (1, 24, 1, 100), (2, 24, 1, None), (7, 100, 2, None)] expected= [(6, 0, 2, 200), (1, 24, 1, 100), (2, 24, 1, None), (7, 100, 2, None)] equal= True
+pending actual= [(4, 24, 600, 0)] expected= [(4, 24, 600, 0)] equal= True

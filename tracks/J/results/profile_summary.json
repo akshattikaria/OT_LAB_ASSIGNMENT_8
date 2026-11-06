@@ -1,0 +1,866 @@
+{
+  "total_s": 3.1312154150000002,
+  "total_calls": 1741061,
+  "top_cumulative": [
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.exec>",
+      "primitive_calls": 1,
+      "calls": 558,
+      "own_s": 0.030507415000000003,
+      "cumulative_s": 3.146402433
+    },
+    {
+      "file": "<string>",
+      "line": 1,
+      "function": "<module>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 3.565e-06,
+      "cumulative_s": 3.146348306
+    },
+    {
+      "file": "<frozen runpy>",
+      "line": 201,
+      "function": "run_module",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 9.548e-06,
+      "cumulative_s": 3.146344741
+    },
+    {
+      "file": "<frozen runpy>",
+      "line": 65,
+      "function": "_run_code",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 1.5214e-05,
+      "cumulative_s": 3.1403506730000004
+    },
+    {
+      "file": "selci/runner.py",
+      "line": 1,
+      "function": "<module>",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 4.9765e-05,
+      "cumulative_s": 3.1389589050000004
+    },
+    {
+      "file": "selci/runner.py",
+      "line": 58,
+      "function": "main",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 7.428500000000001e-05,
+      "cumulative_s": 2.705635188
+    },
+    {
+      "file": "selci/runner.py",
+      "line": 28,
+      "function": "execute",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 0.000580605,
+      "cumulative_s": 2.703856843
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/config/__init__.py",
+      "line": 214,
+      "function": "main",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 1.1126e-05,
+      "cumulative_s": 2.646727492
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/config/__init__.py",
+      "line": 234,
+      "function": "_main",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 2.6847000000000002e-05,
+      "cumulative_s": 2.646716366
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/pluggy/_manager.py",
+      "line": 174,
+      "function": "_hookexec",
+      "primitive_calls": 67,
+      "calls": 6832,
+      "own_s": 0.05818374900000001,
+      "cumulative_s": 2.591152956
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/pluggy/_execution.py",
+      "line": 89,
+      "function": "_multicall",
+      "primitive_calls": 67,
+      "calls": 6832,
+      "own_s": 0.099799724,
+      "cumulative_s": 2.5908257540000004
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/pluggy/_caller.py",
+      "line": 181,
+      "function": "__call__",
+      "primitive_calls": 2,
+      "calls": 6689,
+      "own_s": 0.36299285800000003,
+      "cumulative_s": 2.582990344
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/main.py",
+      "line": 379,
+      "function": "pytest_cmdline_main",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 8.737000000000001e-06,
+      "cumulative_s": 2.56734555
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/main.py",
+      "line": 320,
+      "function": "wrap_session",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 3.5021e-05,
+      "cumulative_s": 2.5673368130000003
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/main.py",
+      "line": 383,
+      "function": "_main",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 9.989e-06,
+      "cumulative_s": 2.4321605330000002
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/main.py",
+      "line": 400,
+      "function": "pytest_runtestloop",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 0.001788122,
+      "cumulative_s": 2.122350806
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 115,
+      "function": "pytest_runtest_protocol",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.005879525,
+      "cumulative_s": 2.044987985
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 123,
+      "function": "runtestprotocol",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.005598454,
+      "cumulative_s": 1.9198402890000001
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 236,
+      "function": "call_and_report",
+      "primitive_calls": 1173,
+      "calls": 1173,
+      "own_s": 0.014242261,
+      "cumulative_s": 1.9113319260000001
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 340,
+      "function": "from_call",
+      "primitive_calls": 1211,
+      "calls": 1212,
+      "own_s": 0.007748405000000001,
+      "cumulative_s": 1.842689207
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 250,
+      "function": "<lambda>",
+      "primitive_calls": 1173,
+      "calls": 1173,
+      "own_s": 0.003047091,
+      "cumulative_s": 1.527669468
+    },
+    {
+      "file": "<frozen importlib._bootstrap>",
+      "line": 1349,
+      "function": "_find_and_load",
+      "primitive_calls": 56,
+      "calls": 393,
+      "own_s": 0.008266273000000001,
+      "cumulative_s": 0.746375314
+    },
+    {
+      "file": "<frozen importlib._bootstrap>",
+      "line": 1304,
+      "function": "_find_and_load_unlocked",
+      "primitive_calls": 38,
+      "calls": 375,
+      "own_s": 0.002671178,
+      "cumulative_s": 0.7403137240000001
+    },
+    {
+      "file": "<frozen importlib._bootstrap>",
+      "line": 911,
+      "function": "_load_unlocked",
+      "primitive_calls": 39,
+      "calls": 365,
+      "own_s": 0.001799114,
+      "cumulative_s": 0.7297241710000001
+    },
+    {
+      "file": "<frozen importlib._bootstrap_external>",
+      "line": 993,
+      "function": "exec_module",
+      "primitive_calls": 26,
+      "calls": 315,
+      "own_s": 0.001051951,
+      "cumulative_s": 0.6244777
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 173,
+      "function": "pytest_runtest_call",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.00211903,
+      "cumulative_s": 0.6099661820000001
+    },
+    {
+      "file": "<frozen importlib._bootstrap>",
+      "line": 480,
+      "function": "_call_with_frames_removed",
+      "primitive_calls": 62,
+      "calls": 784,
+      "own_s": 0.004930149,
+      "cumulative_s": 0.6098807340000001
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/unittest.py",
+      "line": 379,
+      "function": "runtest",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.032744542,
+      "cumulative_s": 0.5985529700000001
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py",
+      "line": 689,
+      "function": "__call__",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.0016398640000000002,
+      "cumulative_s": 0.5354909840000001
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py",
+      "line": 599,
+      "function": "run",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.010745223,
+      "cumulative_s": 0.53385112
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py",
+      "line": 588,
+      "function": "_callTestMethod",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.004237081,
+      "cumulative_s": 0.499354024
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.next>",
+      "primitive_calls": 12751,
+      "calls": 16772,
+      "own_s": 0.033080250000000005,
+      "cumulative_s": 0.38856526900000005
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/main.py",
+      "line": 396,
+      "function": "pytest_collection",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 9.319e-06,
+      "cumulative_s": 0.309282965
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/main.py",
+      "line": 792,
+      "function": "perform_collect",
+      "primitive_calls": 1,
+      "calls": 1,
+      "own_s": 9.1889e-05,
+      "cumulative_s": 0.309273646
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'extend' of 'list' objects>",
+      "primitive_calls": 1779,
+      "calls": 2588,
+      "own_s": 0.001169281,
+      "cumulative_s": 0.299677594
+    }
+  ],
+  "top_self": [
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/pluggy/_caller.py",
+      "line": 181,
+      "function": "__call__",
+      "primitive_calls": 2,
+      "calls": 6689,
+      "own_s": 0.36299285800000003,
+      "cumulative_s": 2.582990344
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.compile>",
+      "primitive_calls": 86,
+      "calls": 86,
+      "own_s": 0.196281425,
+      "cumulative_s": 0.196281425
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/reports.py",
+      "line": 171,
+      "function": "failed",
+      "primitive_calls": 3276,
+      "calls": 3276,
+      "own_s": 0.152000667,
+      "cumulative_s": 0.152000667
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/pluggy/_execution.py",
+      "line": 89,
+      "function": "_multicall",
+      "primitive_calls": 67,
+      "calls": 6832,
+      "own_s": 0.099799724,
+      "cumulative_s": 2.5908257540000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method marshal.loads>",
+      "primitive_calls": 298,
+      "calls": 298,
+      "own_s": 0.092462866,
+      "cumulative_s": 0.092462866
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method gc.collect>",
+      "primitive_calls": 3,
+      "calls": 3,
+      "own_s": 0.078078698,
+      "cumulative_s": 0.078078698
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/capture.py",
+      "line": 903,
+      "function": "pytest_runtest_call",
+      "primitive_calls": 782,
+      "calls": 782,
+      "own_s": 0.061457005,
+      "cumulative_s": 0.09634216300000001
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/nodes.py",
+      "line": 360,
+      "function": "iter_markers_with_node",
+      "primitive_calls": 3128,
+      "calls": 3128,
+      "own_s": 0.060705653000000005,
+      "cumulative_s": 0.06821136500000001
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/pluggy/_manager.py",
+      "line": 174,
+      "function": "_hookexec",
+      "primitive_calls": 67,
+      "calls": 6832,
+      "own_s": 0.05818374900000001,
+      "cumulative_s": 2.591152956
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.isinstance>",
+      "primitive_calls": 157792,
+      "calls": 157792,
+      "own_s": 0.033462579,
+      "cumulative_s": 0.041180627000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.next>",
+      "primitive_calls": 12751,
+      "calls": 16772,
+      "own_s": 0.033080250000000005,
+      "cumulative_s": 0.38856526900000005
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/unittest.py",
+      "line": 379,
+      "function": "runtest",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.032744542,
+      "cumulative_s": 0.5985529700000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.exec>",
+      "primitive_calls": 1,
+      "calls": 558,
+      "own_s": 0.030507415000000003,
+      "cumulative_s": 3.146402433
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method posix.stat>",
+      "primitive_calls": 2099,
+      "calls": 2099,
+      "own_s": 0.030272628000000003,
+      "cumulative_s": 0.049000558
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'acquire' of '_thread.lock' objects>",
+      "primitive_calls": 76,
+      "calls": 631,
+      "own_s": 0.030130873000000002,
+      "cumulative_s": 0.07301111
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.__build_class__>",
+      "primitive_calls": 1081,
+      "calls": 1197,
+      "own_s": 0.028760728000000003,
+      "cumulative_s": 0.080335352
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py",
+      "line": 334,
+      "function": "_iterencode_dict",
+      "primitive_calls": 25473,
+      "calls": 82575,
+      "own_s": 0.024066662000000003,
+      "cumulative_s": 0.035358655
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'get' of 'dict' objects>",
+      "primitive_calls": 50348,
+      "calls": 50348,
+      "own_s": 0.019131676,
+      "cumulative_s": 0.026512312000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.getattr>",
+      "primitive_calls": 59162,
+      "calls": 59293,
+      "own_s": 0.018740025,
+      "cumulative_s": 0.019066826000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'append' of 'list' objects>",
+      "primitive_calls": 48827,
+      "calls": 48827,
+      "own_s": 0.017856722000000002,
+      "cumulative_s": 0.017856722000000002
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/tests/test_threading.py",
+      "line": 180,
+      "function": "run_cond_wait_test",
+      "primitive_calls": 8,
+      "calls": 8,
+      "own_s": 0.017448849000000002,
+      "cumulative_s": 0.057803531000000005
+    },
+    {
+      "file": "<frozen importlib._bootstrap_external>",
+      "line": 755,
+      "function": "_compile_bytecode",
+      "primitive_calls": 298,
+      "calls": 298,
+      "own_s": 0.016442655,
+      "cumulative_s": 0.11056436900000001
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 508,
+      "function": "__setitem__",
+      "primitive_calls": 2215,
+      "calls": 2215,
+      "own_s": 0.016377947,
+      "cumulative_s": 0.034800846
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/assertion/rewrite.py",
+      "line": 701,
+      "function": "run",
+      "primitive_calls": 13,
+      "calls": 13,
+      "own_s": 0.016326495,
+      "cumulative_s": 0.031181908
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/logging.py",
+      "line": 840,
+      "function": "_runtest_for",
+      "primitive_calls": 2346,
+      "calls": 2346,
+      "own_s": 0.01607404,
+      "cumulative_s": 0.064264744
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/mark/structures.py",
+      "line": 705,
+      "function": "__iter__",
+      "primitive_calls": 8379,
+      "calls": 32319,
+      "own_s": 0.014996179,
+      "cumulative_s": 0.014996179
+    },
+    {
+      "file": "<frozen _collections_abc>",
+      "line": 974,
+      "function": "update",
+      "primitive_calls": 119,
+      "calls": 119,
+      "own_s": 0.014425686,
+      "cumulative_s": 0.083957191
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/runner.py",
+      "line": 236,
+      "function": "call_and_report",
+      "primitive_calls": 1173,
+      "calls": 1173,
+      "own_s": 0.014242261,
+      "cumulative_s": 1.9113319260000001
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/inspect.py",
+      "line": 754,
+      "function": "unwrap",
+      "primitive_calls": 6566,
+      "calls": 6566,
+      "own_s": 0.013491973,
+      "cumulative_s": 0.022787162
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method _thread.start_new_thread>",
+      "primitive_calls": 56,
+      "calls": 56,
+      "own_s": 0.012117331,
+      "cumulative_s": 0.012117331
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 647,
+      "function": "__setitem__",
+      "primitive_calls": 2221,
+      "calls": 2221,
+      "own_s": 0.011560277,
+      "cumulative_s": 0.021524744000000002
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py",
+      "line": 104,
+      "function": "__init__",
+      "primitive_calls": 4360,
+      "calls": 4360,
+      "own_s": 0.011469401,
+      "cumulative_s": 0.012595198
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/config/__init__.py",
+      "line": 2203,
+      "function": "getvalue",
+      "primitive_calls": 393,
+      "calls": 393,
+      "own_s": 0.010829426000000001,
+      "cumulative_s": 0.011392673
+    },
+    {
+      "file": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/case.py",
+      "line": 599,
+      "function": "run",
+      "primitive_calls": 391,
+      "calls": 391,
+      "own_s": 0.010745223,
+      "cumulative_s": 0.53385112
+    },
+    {
+      "file": "/workspace/scratch/f3cd84c5991c/tmp/trackj-venv/lib/python3.12/site-packages/_pytest/terminal.py",
+      "line": 639,
+      "function": "pytest_runtest_logreport",
+      "primitive_calls": 1197,
+      "calls": 1197,
+      "own_s": 0.010682966,
+      "cumulative_s": 0.07017390300000001
+    }
+  ],
+  "package_top_cumulative": [
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 508,
+      "function": "__setitem__",
+      "primitive_calls": 2215,
+      "calls": 2215,
+      "own_s": 0.016377947,
+      "cumulative_s": 0.034800846
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 647,
+      "function": "__setitem__",
+      "primitive_calls": 2221,
+      "calls": 2221,
+      "own_s": 0.011560277,
+      "cumulative_s": 0.021524744000000002
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_descriptor.py",
+      "line": 44,
+      "function": "__get__",
+      "primitive_calls": 323,
+      "calls": 323,
+      "own_s": 0.004061746000000001,
+      "cumulative_s": 0.013224052
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 398,
+      "function": "__enter__",
+      "primitive_calls": 12962,
+      "calls": 12962,
+      "own_s": 0.009385535,
+      "cumulative_s": 0.011352785
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cachedmethod.py",
+      "line": 272,
+      "function": "__call__",
+      "primitive_calls": 23,
+      "calls": 32,
+      "own_s": 0.000121248,
+      "cumulative_s": 0.010793007
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cachedmethod.py",
+      "line": 244,
+      "function": "wrapper",
+      "primitive_calls": 23,
+      "calls": 32,
+      "own_s": 0.00043665100000000003,
+      "cumulative_s": 0.010700117
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 229,
+      "function": "__getitem__",
+      "primitive_calls": 4111,
+      "calls": 4114,
+      "own_s": 0.006036784000000001,
+      "cumulative_s": 0.010548274
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cached.py",
+      "line": 194,
+      "function": "wrapper",
+      "primitive_calls": 10,
+      "calls": 19,
+      "own_s": 0.00037870000000000004,
+      "cumulative_s": 0.010354242000000001
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cached.py",
+      "line": 160,
+      "function": "wrapper",
+      "primitive_calls": 22,
+      "calls": 24,
+      "own_s": 0.000290917,
+      "cumulative_s": 0.010302726
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cachedmethod.py",
+      "line": 124,
+      "function": "__call__",
+      "primitive_calls": 16,
+      "calls": 25,
+      "own_s": 0.000197474,
+      "cumulative_s": 0.009954339000000001
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 59,
+      "function": "__setitem__",
+      "primitive_calls": 15592,
+      "calls": 15592,
+      "own_s": 0.008064252000000001,
+      "cumulative_s": 0.009729587000000001
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cached.py",
+      "line": 70,
+      "function": "wrapper",
+      "primitive_calls": 5,
+      "calls": 14,
+      "own_s": 6.555700000000001e-05,
+      "cumulative_s": 0.008357822
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 406,
+      "function": "__exit__",
+      "primitive_calls": 12962,
+      "calls": 12962,
+      "own_s": 0.0075414440000000004,
+      "cumulative_s": 0.0075414440000000004
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 635,
+      "function": "__getitem__",
+      "primitive_calls": 4122,
+      "calls": 4122,
+      "own_s": 0.004285734,
+      "cumulative_s": 0.006948705
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cachedmethod.py",
+      "line": 20,
+      "function": "__init__",
+      "primitive_calls": 187,
+      "calls": 187,
+      "own_s": 0.00144023,
+      "cumulative_s": 0.006740663
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 757,
+      "function": "decorator",
+      "primitive_calls": 108,
+      "calls": 108,
+      "own_s": 0.00019174100000000002,
+      "cumulative_s": 0.006302409
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 532,
+      "function": "__iter__",
+      "primitive_calls": 4054,
+      "calls": 4054,
+      "own_s": 0.003029823,
+      "cumulative_s": 0.0062592640000000005
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 675,
+      "function": "__iter__",
+      "primitive_calls": 4074,
+      "calls": 4074,
+      "own_s": 0.0031775320000000003,
+      "cumulative_s": 0.006135509000000001
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cached.py",
+      "line": 24,
+      "function": "wrapper",
+      "primitive_calls": 153,
+      "calls": 170,
+      "own_s": 0.0017983650000000001,
+      "cumulative_s": 0.006114422
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 53,
+      "function": "__getitem__",
+      "primitive_calls": 29340,
+      "calls": 29373,
+      "own_s": 0.0050230480000000004,
+      "cumulative_s": 0.006042874
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 496,
+      "function": "__getitem__",
+      "primitive_calls": 4135,
+      "calls": 4138,
+      "own_s": 0.0038323660000000002,
+      "cumulative_s": 0.005964344000000001
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 781,
+      "function": "cachedmethod",
+      "primitive_calls": 49,
+      "calls": 49,
+      "own_s": 0.000166035,
+      "cumulative_s": 0.0059610850000000005
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/_cached.py",
+      "line": 248,
+      "function": "_wrapper",
+      "primitive_calls": 108,
+      "calls": 108,
+      "own_s": 0.000402705,
+      "cumulative_s": 0.00579697
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 300,
+      "function": "__getitem__",
+      "primitive_calls": 4242,
+      "calls": 4244,
+      "own_s": 0.002537568,
+      "cumulative_s": 0.005630154
+    },
+    {
+      "file": "vendor/cachetools-7.2.8/src/cachetools/__init__.py",
+      "line": 788,
+      "function": "decorator",
+      "primitive_calls": 49,
+      "calls": 49,
+      "own_s": 6.8942e-05,
+      "cumulative_s": 0.005455860000000001
+    }
+  ],
+  "caution": "Nested cumulative times overlap. Instrumented cProfile times are not CI speedup measurements."
+}

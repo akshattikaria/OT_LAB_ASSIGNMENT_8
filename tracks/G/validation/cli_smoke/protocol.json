@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "baseline": [
+      0,
+      0
+    ],
+    "percpu": [
+      1,
+      0
+    ],
+    "hash": [
+      0,
+      1
+    ],
+    "combined": [
+      1,
+      1
+    ]
+  },
+  "repeats": 1,
+  "guest_cpus": 3,
+  "scale": 0.0025,
+  "workload_iterations": {
+    "pages": 2,
+    "fork": 1,
+    "pipes": 20,
+    "hotseq": 20,
+    "hotrand": 20,
+    "scan": 20
+  },
+  "allocator": "Three real guest worker processes use pipe readiness/start barriers. Initial forks occur before the snapshot; work and worker exit/reaping occur inside it. 16 pages/batch, nested fork/wait and pipe churn are distinct workloads.",
+  "cache": "Sequential hot stream: 16 blocks; pseudo-random interleaving: two eight-block streams; scan: 96 blocks versus NBUF=30. Each read verifies all 1024 bytes. Setup, sync and warmup precede measurement; close/unlink cleanup follows it.",
+  "baseline": "Both features disabled, with identical stats/check syscalls and spin instrumentation. Pristine MIT kernel validated separately.",
+  "timing": "Elapsed guest r_time counter, frequency read from QEMU device tree. Snapshot/introspection overhead is included; counters include observation-lock acquisitions. Not native hardware cycles or host-laptop speedup.",
+  "isolation": "A fresh disk image and boot per variant/repeat, fixed workload budgets, deterministically shuffled boot/workload order; guests run sequentially. Algorithmic probes and failed lock exchanges accompany elapsed time.",
+  "correctness": "Full upstream usertests and gcheck per configuration recorded separately. Every benchmark verifies data/statuses and allocator/cache invariants. No simulated trace is substituted for QEMU execution.",
+  "limits": "Hash lookup retains the global cache lock and LRU/replacement policy. Per-CPU lists may retain free pages unevenly until steal-on-empty. Measurement instrumentation perturbs lock paths in every variant."
+}

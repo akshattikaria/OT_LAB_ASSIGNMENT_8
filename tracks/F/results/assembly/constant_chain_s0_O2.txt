@@ -1,0 +1,210 @@
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001120 <toy_v0>:
+    1120:	endbr64
+    1124:	mov    0x10(%rdi),%rax
+    1128:	mov    0x8(%rdi),%rdx
+    112c:	add    (%rdi),%rdx
+    112f:	lea    (%rax,%rax,2),%rax
+    1133:	shl    $0x5,%rax
+    1137:	lea    0xea(%rdx,%rax,1),%rax
+    113f:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001140 <toy_v1>:
+    1140:	endbr64
+    1144:	mov    0x10(%rdi),%rax
+    1148:	mov    0x8(%rdi),%rdx
+    114c:	add    (%rdi),%rdx
+    114f:	lea    (%rax,%rax,2),%rax
+    1153:	shl    $0x5,%rax
+    1157:	lea    0xea(%rdx,%rax,1),%rax
+    115f:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001160 <toy_v2>:
+    1160:	endbr64
+    1164:	mov    0x10(%rdi),%rax
+    1168:	mov    0x8(%rdi),%rdx
+    116c:	add    (%rdi),%rdx
+    116f:	lea    (%rax,%rax,2),%rax
+    1173:	shl    $0x5,%rax
+    1177:	lea    0xea(%rdx,%rax,1),%rax
+    117f:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001180 <toy_v3>:
+    1180:	endbr64
+    1184:	mov    0x10(%rdi),%rax
+    1188:	mov    0x8(%rdi),%rdx
+    118c:	add    (%rdi),%rdx
+    118f:	lea    (%rax,%rax,2),%rax
+    1193:	shl    $0x5,%rax
+    1197:	lea    0xea(%rdx,%rax,1),%rax
+    119f:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000000011a0 <toy_v4>:
+    11a0:	endbr64
+    11a4:	mov    0x10(%rdi),%rax
+    11a8:	mov    0x8(%rdi),%rdx
+    11ac:	add    (%rdi),%rdx
+    11af:	lea    (%rax,%rax,2),%rax
+    11b3:	shl    $0x5,%rax
+    11b7:	lea    0xea(%rdx,%rax,1),%rax
+    11bf:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000000011c0 <toy_v5>:
+    11c0:	endbr64
+    11c4:	mov    0x10(%rdi),%rdx
+    11c8:	mov    0x8(%rdi),%rax
+    11cc:	add    (%rdi),%rax
+    11cf:	mov    %rdx,%rcx
+    11d2:	shl    $0x4,%rcx
+    11d6:	lea    (%rcx,%rdx,8),%rdx
+    11da:	lea    0xea(%rax,%rdx,4),%rax
+    11e2:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000000011f0 <toy_v6>:
+    11f0:	endbr64
+    11f4:	mov    0x10(%rdi),%rdx
+    11f8:	mov    0x8(%rdi),%rax
+    11fc:	add    (%rdi),%rax
+    11ff:	mov    %rdx,%rcx
+    1202:	shl    $0x4,%rcx
+    1206:	lea    (%rcx,%rdx,8),%rdx
+    120a:	lea    0xea(%rax,%rdx,4),%rax
+    1212:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/constant_chain_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001220 <toy_v7>:
+    1220:	endbr64
+    1224:	mov    0x10(%rdi),%rdx
+    1228:	mov    0x8(%rdi),%rax
+    122c:	add    (%rdi),%rax
+    122f:	mov    %rdx,%rcx
+    1232:	shl    $0x4,%rcx
+    1236:	lea    (%rcx,%rdx,8),%rdx
+    123a:	lea    0xea(%rax,%rdx,4),%rax
+    1242:	ret
+
+Disassembly of section .fini:

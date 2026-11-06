@@ -1,0 +1,242 @@
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001120 <toy_v0>:
+    1120:	endbr64
+    1124:	mov    0x8(%rdi),%rax
+    1128:	mov    0x10(%rdi),%rdx
+    112c:	add    (%rdi),%rax
+    112f:	lea    (%rax,%rax,8),%rcx
+    1133:	add    %rax,%rdx
+    1136:	lea    (%rax,%rcx,2),%rax
+    113a:	lea    (%rdx,%rax,8),%rax
+    113e:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001140 <toy_v1>:
+    1140:	endbr64
+    1144:	mov    0x8(%rdi),%rax
+    1148:	mov    0x10(%rdi),%rdx
+    114c:	add    (%rdi),%rax
+    114f:	lea    (%rax,%rax,8),%rcx
+    1153:	add    %rax,%rdx
+    1156:	lea    (%rax,%rcx,2),%rax
+    115a:	lea    (%rdx,%rax,8),%rax
+    115e:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001160 <toy_v2>:
+    1160:	endbr64
+    1164:	mov    0x8(%rdi),%rax
+    1168:	mov    0x10(%rdi),%rdx
+    116c:	add    (%rdi),%rax
+    116f:	lea    (%rax,%rax,8),%rcx
+    1173:	add    %rax,%rdx
+    1176:	lea    (%rax,%rcx,2),%rax
+    117a:	lea    (%rdx,%rax,8),%rax
+    117e:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001180 <toy_v3>:
+    1180:	endbr64
+    1184:	mov    0x8(%rdi),%rax
+    1188:	mov    0x10(%rdi),%rdx
+    118c:	add    (%rdi),%rax
+    118f:	lea    (%rax,%rax,8),%rcx
+    1193:	add    %rax,%rdx
+    1196:	lea    (%rax,%rcx,2),%rax
+    119a:	lea    (%rdx,%rax,8),%rax
+    119e:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000000011a0 <toy_v4>:
+    11a0:	endbr64
+    11a4:	mov    0x8(%rdi),%rax
+    11a8:	mov    0x10(%rdi),%rdx
+    11ac:	add    (%rdi),%rax
+    11af:	mov    %rax,%rcx
+    11b2:	add    %rax,%rdx
+    11b5:	shl    $0x4,%rcx
+    11b9:	add    %rcx,%rdx
+    11bc:	lea    0x0(,%rax,8),%rcx
+    11c4:	sub    %rax,%rcx
+    11c7:	lea    (%rax,%rax,2),%rax
+    11cb:	shl    $0x4,%rcx
+    11cf:	add    %rcx,%rdx
+    11d2:	lea    (%rdx,%rax,8),%rax
+    11d6:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000000011e0 <toy_v5>:
+    11e0:	endbr64
+    11e4:	mov    0x8(%rdi),%rax
+    11e8:	mov    0x10(%rdi),%rdx
+    11ec:	add    (%rdi),%rax
+    11ef:	mov    %rax,%rcx
+    11f2:	add    %rax,%rdx
+    11f5:	lea    0x0(,%rax,8),%rsi
+    11fd:	shl    $0x4,%rcx
+    1201:	add    %rcx,%rdx
+    1204:	mov    %rax,%rcx
+    1207:	lea    (%rax,%rax,2),%rax
+    120b:	shl    $0x6,%rcx
+    120f:	sub    %rsi,%rcx
+    1212:	lea    (%rdx,%rcx,2),%rdx
+    1216:	lea    (%rdx,%rax,8),%rax
+    121a:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001220 <toy_v6>:
+    1220:	endbr64
+    1224:	mov    0x8(%rdi),%rax
+    1228:	mov    0x10(%rdi),%rdx
+    122c:	add    (%rdi),%rax
+    122f:	mov    %rax,%rcx
+    1232:	add    %rax,%rdx
+    1235:	lea    0x0(,%rax,8),%rsi
+    123d:	shl    $0x4,%rcx
+    1241:	add    %rcx,%rdx
+    1244:	mov    %rax,%rcx
+    1247:	lea    (%rax,%rax,2),%rax
+    124b:	shl    $0x6,%rcx
+    124f:	sub    %rsi,%rcx
+    1252:	lea    (%rdx,%rcx,2),%rdx
+    1256:	lea    (%rdx,%rax,8),%rax
+    125a:	ret
+
+Disassembly of section .fini:
+
+
+/workspace/scratch/f3cd84c5991c/compiler_track_f/build/results/mixed_s0_O2.so:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001260 <toy_v7>:
+    1260:	endbr64
+    1264:	mov    0x8(%rdi),%rax
+    1268:	mov    0x10(%rdi),%rdx
+    126c:	add    (%rdi),%rax
+    126f:	mov    %rax,%rcx
+    1272:	add    %rax,%rdx
+    1275:	lea    0x0(,%rax,8),%rsi
+    127d:	shl    $0x4,%rcx
+    1281:	add    %rcx,%rdx
+    1284:	mov    %rax,%rcx
+    1287:	lea    (%rax,%rax,2),%rax
+    128b:	shl    $0x6,%rcx
+    128f:	sub    %rsi,%rcx
+    1292:	lea    (%rdx,%rcx,2),%rdx
+    1296:	lea    (%rdx,%rax,8),%rax
+    129a:	ret
+
+Disassembly of section .fini:

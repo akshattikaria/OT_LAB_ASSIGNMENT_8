@@ -1,0 +1,54 @@
+{
+  "backend": "fake_manila",
+  "calibration_date": "2024-05-27T15:27:23-03:00",
+  "basis_gates": [
+    "cx",
+    "delay",
+    "for_loop",
+    "id",
+    "if_else",
+    "measure",
+    "reset",
+    "rz",
+    "switch_case",
+    "sx",
+    "x"
+  ],
+  "coupling_map": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "source": "Pinned qiskit-ibm-runtime FakeManila snapshot copied into inputs/fake_manila, loaded by FrozenManila",
+  "models": "Aer NoiseModel.from_backend with gate/depolarizing, thermal relaxation and readout errors; incomplete approximation, not all device effects.",
+  "physical_hardware_used": false
+}

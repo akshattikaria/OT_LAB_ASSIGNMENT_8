@@ -1,0 +1,5502 @@
+[
+  {
+    "program": "constant_chain_s0",
+    "family": "constant_chain",
+    "seed": 0,
+    "oracle": {
+      "minimum_score": 41,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 41
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 41,
+          "instructions": 41
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 57,
+          "instructions": 57
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 64,
+          "instructions": 61
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 61,
+          "instructions": 58
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 51,
+          "instructions": 51
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 50,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 57,
+          "instructions": 57
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 64,
+          "instructions": 61
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 53,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 59,
+          "instructions": 56
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 58,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 53,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 58,
+          "instructions": 55
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "strength",
+        "cse",
+        "dce"
+      ],
+      "optimal_score": 41,
+      "states": 51,
+      "cache_hits": 8,
+      "transition_evaluations": 58,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "fold",
+        "dce",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "constant_chain_s1",
+    "family": "constant_chain",
+    "seed": 1,
+    "oracle": {
+      "minimum_score": 53,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 73,
+          "instructions": 73
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 81,
+          "instructions": 78
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 77,
+          "instructions": 74
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 66,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 65,
+          "instructions": 65
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 73,
+          "instructions": 73
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 81,
+          "instructions": 78
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 68,
+          "instructions": 65
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 75,
+          "instructions": 72
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 73,
+          "instructions": 70
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 67,
+          "instructions": 64
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 73,
+          "instructions": 70
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "strength",
+        "cse",
+        "dce"
+      ],
+      "optimal_score": 53,
+      "states": 51,
+      "cache_hits": 8,
+      "transition_evaluations": 58,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "fold",
+        "dce",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "constant_chain_s2",
+    "family": "constant_chain",
+    "seed": 2,
+    "oracle": {
+      "minimum_score": 65,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 67,
+          "instructions": 67
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 66,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 67,
+          "instructions": 67
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 66,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 65,
+          "instructions": 65
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 65,
+          "instructions": 65
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 67,
+          "instructions": 67
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 66,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 89,
+          "instructions": 89
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 97,
+          "instructions": 94
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 69,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 93,
+          "instructions": 90
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 81,
+          "instructions": 81
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 80,
+          "instructions": 80
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 89,
+          "instructions": 89
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 97,
+          "instructions": 94
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 83,
+          "instructions": 80
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 91,
+          "instructions": 88
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 69,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 69,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 69,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 89,
+          "instructions": 86
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 82,
+          "instructions": 79
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 89,
+          "instructions": 86
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "strength",
+        "cse",
+        "dce"
+      ],
+      "optimal_score": 65,
+      "states": 51,
+      "cache_hits": 8,
+      "transition_evaluations": 58,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "fold",
+        "dce",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "constant_chain_s3",
+    "family": "constant_chain",
+    "seed": 3,
+    "oracle": {
+      "minimum_score": 41,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 41
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 41,
+          "instructions": 41
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 57,
+          "instructions": 57
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 64,
+          "instructions": 61
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 61,
+          "instructions": 58
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 51,
+          "instructions": 51
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 50,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 57,
+          "instructions": 57
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 64,
+          "instructions": 61
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 53,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 59,
+          "instructions": 56
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 58,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 53,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 58,
+          "instructions": 55
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "strength",
+        "cse",
+        "dce"
+      ],
+      "optimal_score": 41,
+      "states": 51,
+      "cache_hits": 8,
+      "transition_evaluations": 58,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "fold",
+        "dce",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "constant_chain_s4",
+    "family": "constant_chain",
+    "seed": 4,
+    "oracle": {
+      "minimum_score": 53,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 73,
+          "instructions": 73
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 81,
+          "instructions": 78
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 77,
+          "instructions": 74
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 66,
+          "instructions": 66
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 65,
+          "instructions": 65
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 73,
+          "instructions": 73
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 81,
+          "instructions": 78
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 68,
+          "instructions": 65
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 75,
+          "instructions": 72
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 73,
+          "instructions": 70
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 67,
+          "instructions": 64
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 73,
+          "instructions": 70
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "strength",
+        "cse",
+        "dce"
+      ],
+      "optimal_score": 53,
+      "states": 51,
+      "cache_hits": 8,
+      "transition_evaluations": 58,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "fold",
+        "dce",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "redundant_s0",
+    "family": "redundant",
+    "seed": 0,
+    "oracle": {
+      "minimum_score": 30,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 30,
+          "instructions": 30
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 30,
+      "states": 20,
+      "cache_hits": 17,
+      "transition_evaluations": 36,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "strength",
+        "dce",
+        "fold"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "redundant_s1",
+    "family": "redundant",
+    "seed": 1,
+    "oracle": {
+      "minimum_score": 38,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 38,
+          "instructions": 38
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 38,
+      "states": 20,
+      "cache_hits": 17,
+      "transition_evaluations": 36,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "strength",
+        "dce",
+        "fold"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "redundant_s2",
+    "family": "redundant",
+    "seed": 2,
+    "oracle": {
+      "minimum_score": 46,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 46,
+          "instructions": 46
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 46,
+      "states": 20,
+      "cache_hits": 17,
+      "transition_evaluations": 36,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "strength",
+        "dce",
+        "fold"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "redundant_s3",
+    "family": "redundant",
+    "seed": 3,
+    "oracle": {
+      "minimum_score": 30,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 31,
+          "instructions": 31
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 30,
+          "instructions": 30
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 30,
+          "instructions": 30
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 30,
+      "states": 20,
+      "cache_hits": 17,
+      "transition_evaluations": 36,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "strength",
+        "dce",
+        "fold"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "redundant_s4",
+    "family": "redundant",
+    "seed": 4,
+    "oracle": {
+      "minimum_score": 38,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 38,
+          "instructions": 38
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 38,
+      "states": 20,
+      "cache_hits": 17,
+      "transition_evaluations": 36,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "strength",
+        "dce",
+        "fold"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "dead_heavy_s0",
+    "family": "dead_heavy",
+    "seed": 0,
+    "oracle": {
+      "minimum_score": 16,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "dce",
+        "strength"
+      ],
+      "optimal_score": 16,
+      "states": 23,
+      "cache_hits": 20,
+      "transition_evaluations": 42,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "dce",
+        "fold",
+        "cse",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "dead_heavy_s1",
+    "family": "dead_heavy",
+    "seed": 1,
+    "oracle": {
+      "minimum_score": 20,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "dce",
+        "strength"
+      ],
+      "optimal_score": 20,
+      "states": 23,
+      "cache_hits": 20,
+      "transition_evaluations": 42,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "dce",
+        "fold",
+        "cse",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "dead_heavy_s2",
+    "family": "dead_heavy",
+    "seed": 2,
+    "oracle": {
+      "minimum_score": 24,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 24,
+          "instructions": 24
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 24,
+          "instructions": 24
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "dce",
+        "strength"
+      ],
+      "optimal_score": 24,
+      "states": 23,
+      "cache_hits": 20,
+      "transition_evaluations": 42,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "dce",
+        "fold",
+        "cse",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "dead_heavy_s3",
+    "family": "dead_heavy",
+    "seed": 3,
+    "oracle": {
+      "minimum_score": 16,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 16,
+          "instructions": 16
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 16,
+          "instructions": 16
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "dce",
+        "strength"
+      ],
+      "optimal_score": 16,
+      "states": 23,
+      "cache_hits": 20,
+      "transition_evaluations": 42,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "dce",
+        "fold",
+        "cse",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "dead_heavy_s4",
+    "family": "dead_heavy",
+    "seed": 4,
+    "oracle": {
+      "minimum_score": 20,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 20,
+          "instructions": 20
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 20,
+          "instructions": 20
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "dce",
+        "strength"
+      ],
+      "optimal_score": 20,
+      "states": 23,
+      "cache_hits": 20,
+      "transition_evaluations": 42,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "dce",
+        "fold",
+        "cse",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "mixed_s0",
+    "family": "mixed",
+    "seed": 0,
+    "oracle": {
+      "minimum_score": 36,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 40,
+          "instructions": 40
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 36,
+          "instructions": 36
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 40,
+          "instructions": 40
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 36,
+          "instructions": 36
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 36,
+          "instructions": 36
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 45,
+          "instructions": 45
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 45,
+          "instructions": 45
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 43,
+          "instructions": 40
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 44,
+          "instructions": 41
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 42,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 42,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 42,
+          "instructions": 39
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 36,
+      "states": 65,
+      "cache_hits": 0,
+      "transition_evaluations": 64,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "dce",
+        "fold",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "mixed_s1",
+    "family": "mixed",
+    "seed": 1,
+    "oracle": {
+      "minimum_score": 44,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 48,
+          "instructions": 48
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 44,
+          "instructions": 44
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 48,
+          "instructions": 48
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 44,
+          "instructions": 44
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 44,
+          "instructions": 44
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 51,
+          "instructions": 51
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 53,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 50,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 51,
+          "instructions": 48
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 52,
+          "instructions": 49
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 50,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 50,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 50,
+          "instructions": 47
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 44,
+      "states": 65,
+      "cache_hits": 0,
+      "transition_evaluations": 64,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "dce",
+        "fold",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "mixed_s2",
+    "family": "mixed",
+    "seed": 2,
+    "oracle": {
+      "minimum_score": 52,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 56,
+          "instructions": 56
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 52,
+          "instructions": 52
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 56,
+          "instructions": 56
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 52,
+          "instructions": 52
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 52,
+          "instructions": 52
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 59,
+          "instructions": 59
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 54,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 61,
+          "instructions": 61
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 65,
+          "instructions": 62
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 61,
+          "instructions": 58
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 58,
+          "instructions": 58
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 55,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 61,
+          "instructions": 61
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 65,
+          "instructions": 62
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 59,
+          "instructions": 56
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 60,
+          "instructions": 57
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 58,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 58,
+          "instructions": 55
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 58,
+          "instructions": 55
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 52,
+      "states": 65,
+      "cache_hits": 0,
+      "transition_evaluations": 64,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "dce",
+        "fold",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "mixed_s3",
+    "family": "mixed",
+    "seed": 3,
+    "oracle": {
+      "minimum_score": 36,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 40,
+          "instructions": 40
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 36,
+          "instructions": 36
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 40,
+          "instructions": 40
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 36,
+          "instructions": 36
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 36,
+          "instructions": 36
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 43,
+          "instructions": 43
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 38,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 45,
+          "instructions": 45
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 45,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 42,
+          "instructions": 42
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 39,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 45,
+          "instructions": 45
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 43,
+          "instructions": 40
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 44,
+          "instructions": 41
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 41,
+          "instructions": 38
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 42,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 42,
+          "instructions": 39
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 42,
+          "instructions": 39
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 36,
+      "states": 65,
+      "cache_hits": 0,
+      "transition_evaluations": 64,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "dce",
+        "fold",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  },
+  {
+    "program": "mixed_s4",
+    "family": "mixed",
+    "seed": 4,
+    "oracle": {
+      "minimum_score": 44,
+      "rows": [
+        {
+          "order": [
+            "fold",
+            "cse",
+            "dce",
+            "strength"
+          ],
+          "score": 48,
+          "instructions": 48
+        },
+        {
+          "order": [
+            "fold",
+            "cse",
+            "strength",
+            "dce"
+          ],
+          "score": 44,
+          "instructions": 44
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "cse",
+            "strength"
+          ],
+          "score": 48,
+          "instructions": 48
+        },
+        {
+          "order": [
+            "fold",
+            "dce",
+            "strength",
+            "cse"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "cse",
+            "dce"
+          ],
+          "score": 44,
+          "instructions": 44
+        },
+        {
+          "order": [
+            "fold",
+            "strength",
+            "dce",
+            "cse"
+          ],
+          "score": 44,
+          "instructions": 44
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "dce",
+            "strength"
+          ],
+          "score": 51,
+          "instructions": 51
+        },
+        {
+          "order": [
+            "cse",
+            "fold",
+            "strength",
+            "dce"
+          ],
+          "score": 46,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "fold",
+            "strength"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "cse",
+            "dce",
+            "strength",
+            "fold"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "fold",
+            "dce"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "cse",
+            "strength",
+            "dce",
+            "fold"
+          ],
+          "score": 53,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "cse",
+            "strength"
+          ],
+          "score": 50,
+          "instructions": 50
+        },
+        {
+          "order": [
+            "dce",
+            "fold",
+            "strength",
+            "cse"
+          ],
+          "score": 47,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "fold",
+            "strength"
+          ],
+          "score": 53,
+          "instructions": 53
+        },
+        {
+          "order": [
+            "dce",
+            "cse",
+            "strength",
+            "fold"
+          ],
+          "score": 57,
+          "instructions": 54
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "fold",
+            "cse"
+          ],
+          "score": 51,
+          "instructions": 48
+        },
+        {
+          "order": [
+            "dce",
+            "strength",
+            "cse",
+            "fold"
+          ],
+          "score": 52,
+          "instructions": 49
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "cse",
+            "dce"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "fold",
+            "dce",
+            "cse"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "fold",
+            "dce"
+          ],
+          "score": 49,
+          "instructions": 46
+        },
+        {
+          "order": [
+            "strength",
+            "cse",
+            "dce",
+            "fold"
+          ],
+          "score": 50,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "fold",
+            "cse"
+          ],
+          "score": 50,
+          "instructions": 47
+        },
+        {
+          "order": [
+            "strength",
+            "dce",
+            "cse",
+            "fold"
+          ],
+          "score": 50,
+          "instructions": 47
+        }
+      ],
+      "number_of_orders": 24
+    },
+    "dp": {
+      "order": [
+        "fold",
+        "cse",
+        "strength",
+        "dce"
+      ],
+      "optimal_score": 44,
+      "states": 65,
+      "cache_hits": 0,
+      "transition_evaluations": 64,
+      "method": "DP over (used-pass mask, canonical transformed IR)",
+      "certificate_scope": "Optimal weighted IR score among all 24 permutations of four passes used exactly once; no runtime-optimality claim."
+    },
+    "greedy": {
+      "order": [
+        "cse",
+        "dce",
+        "fold",
+        "strength"
+      ],
+      "transition_evaluations": 10,
+      "method": "immediate-score greedy"
+    }
+  }
+]

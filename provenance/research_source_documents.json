@@ -1,0 +1,157 @@
+{
+  "access_date": "2026-11-06",
+  "timezone": "Asia/Calcutta",
+  "documents": [
+    {
+      "name": "grng",
+      "url": "https://raw.githubusercontent.com/mlresearch/v300/main/assets/dash26a/dash26a.pdf",
+      "bytes": 3119841,
+      "sha256": "9d2104daf2bbb06562d6969c9022c69950a0051de7309fa242cead79e7ae9b89",
+      "ok": true
+    },
+    {
+      "name": "dynamic",
+      "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/banihashem26c/banihashem26c.pdf",
+      "bytes": 198145,
+      "sha256": "e47ea2d09a307ea44e1021f0299223d1d1acd5475796fa8f67f6974bbd39dc25",
+      "ok": true
+    },
+    {
+      "name": "dp_submodular",
+      "url": "https://arxiv.org/pdf/2606.14951",
+      "bytes": 815317,
+      "sha256": "dfe5404340ca220c8257d60b12dbff30f1cc52a5d01c32675379b9d12cdc185a",
+      "ok": true
+    },
+    {
+      "name": "omniopt",
+      "url": "https://arxiv.org/pdf/2607.04033",
+      "bytes": 5010419,
+      "sha256": "62afd6af2d5463057172ec575d129d257447803b16b0a7d39bbe872351318a00",
+      "ok": true
+    },
+    {
+      "name": "resque",
+      "url": "https://arxiv.org/pdf/2505.13670",
+      "bytes": 5179109,
+      "sha256": "b89460985397da57b4d43b76664bf5c0e8907b25c43bde3085336263c1791969",
+      "ok": true
+    },
+    {
+      "name": "subspace",
+      "url": "https://arxiv.org/pdf/2506.01260",
+      "bytes": 21789848,
+      "sha256": "5af0d5f21173583b0c997c4f9c6330f134acf888aa325eaeab42acb9749a2f3d",
+      "ok": true
+    },
+    {
+      "name": "tensorhyper",
+      "url": "https://arxiv.org/pdf/2508.01116",
+      "bytes": 1507946,
+      "sha256": "5fa32cfa02f360fa00debbdd1e556901f513a7d278fe1bbb6dc69f3809626753",
+      "ok": true
+    },
+    {
+      "name": "qmt",
+      "url": "https://arxiv.org/pdf/2606.22551",
+      "bytes": 5563478,
+      "sha256": "855f9ded3a3faef839c623bafdb664905e8951a71a45578075171b62ffe0365b",
+      "ok": true
+    },
+    {
+      "name": "nom",
+      "url": "https://arxiv.org/pdf/2409.20044",
+      "bytes": 3327094,
+      "sha256": "77bd2ef3e613ea451cd8177d5c54f179106d2e933051695fb0f41ec1b92e9424",
+      "ok": true
+    },
+    {
+      "name": "astra",
+      "url": "https://arxiv.org/pdf/2502.13480",
+      "bytes": 1773655,
+      "sha256": "81ae00bde2f88488b3764f2713c44932a648c148d19fb25e7857a41b790d14cf",
+      "ok": true
+    },
+    {
+      "name": "asha",
+      "url": "https://arxiv.org/pdf/1810.05934",
+      "bytes": 732478,
+      "sha256": "a15bb6e41316ce54e021bd45f926972dee7bb35fd6f619b9f0bee4e07609dd11",
+      "ok": true
+    },
+    {
+      "name": "adafisher",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/f88bec15cc4cb56b432ee040bb63f94f-Abstract-Conference.html",
+      "bytes": 14795822,
+      "sha256": "bb00a76cdc8cf0c9dfa591a4f3752bebd97295dede4c65b1f68d902d908e90a2",
+      "ok": true,
+      "note": "URL identifies source; private PDF is not redistributed."
+    },
+    {
+      "name": "negative_lr",
+      "url": "https://arxiv.org/pdf/2511.22861",
+      "bytes": 932633,
+      "sha256": "92c3357c22ad7368a2c6d784312f548c2a84cfc1144a2872c0b8f2088136d526",
+      "ok": true,
+      "note": "URL identifies source; private PDF is not redistributed."
+    },
+    {
+      "name": "gags",
+      "url": "https://link.springer.com/article/10.1007/s10732-026-09588-3",
+      "bytes": 2938843,
+      "sha256": "0ce880fd448ceaa63078cc2b2958f6cb2359f6d4464426ae774fafce21564b28",
+      "ok": true,
+      "note": "URL identifies source; private PDF is not redistributed."
+    },
+    {
+      "name": "hpo_survey",
+      "url": "https://arxiv.org/pdf/2410.22854",
+      "bytes": 5647649,
+      "sha256": "fde08e803653821a01fad31bf5653630733eddfa6755663ff7265c11714b27e2",
+      "ok": true,
+      "note": "URL identifies source; private PDF is not redistributed."
+    }
+  ],
+  "unavailable_public_fetches": [
+    {
+      "key": "pana_full",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3774934.3786459",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "currying_full",
+      "url": "https://dl.acm.org/doi/pdf/10.1109/PACT58117.2023.00029",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "gshetero_publisher",
+      "url": "https://ieeexplore.ieee.org/document/11073131",
+      "bytes": 0,
+      "type": ".html",
+      "ok": true
+    },
+    {
+      "key": "oflight_publisher",
+      "url": "https://ieeexplore.ieee.org/document/11579004",
+      "bytes": 0,
+      "type": ".html",
+      "ok": true
+    },
+    {
+      "key": "pack_publication",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0743731520304214",
+      "bytes": 195,
+      "type": ".html",
+      "ok": true
+    }
+  ],
+  "additional_limitations": {
+    "PANA": "Author GitHub repository checked: README.md and LICENSE only.",
+    "PackStealLB": "HAL open manuscript returned 403; author lab link returned 503.",
+    "EAHP": "Publisher offers subscription preview; full planning policy unavailable.",
+    "OFLight": "Author record checked; no detailed algorithm retrieved."
+  },
+  "policy": "Ordinary public retrieval only. No publisher-access bypass. Private source PDFs excluded from deliverables; original implementation and short attributed descriptions included."
+}

@@ -1,0 +1,1598 @@
+{
+  "exit_code": 0,
+  "pytest_elapsed_ns": 289766868,
+  "collected": [
+    "tests/test_cached.py::CacheWrapperTest::test_decorator",
+    "tests/test_cached.py::CacheWrapperTest::test_decorator_lock_info",
+    "tests/test_cached.py::CacheWrapperTest::test_decorator_method",
+    "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator",
+    "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_cond",
+    "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_info",
+    "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_lock",
+    "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_lock_info",
+    "tests/test_cached.py::DictWrapperTest::test_decorator_clear_cond",
+    "tests/test_cached.py::DictWrapperTest::test_decorator_clear_lock",
+    "tests/test_cached.py::NoneWrapperTest::test_decorator",
+    "tests/test_cached.py::NoneWrapperTest::test_decorator_info",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_cond_nospace",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_cond_pending_keyword",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_attributes",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_clear",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_pickle_info",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_slots",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_lock_nospace",
+    "tests/test_cachedmethod.py::CacheMethodTest::test_nospace",
+    "tests/test_cachedmethod.py::DictMethodTest::test_decorator_different_names",
+    "tests/test_cachedmethod.py::DictMethodTest::test_decorator_immutable_dict",
+    "tests/test_cachedmethod.py::DictMethodTest::test_decorator_info",
+    "tests/test_cachedmethod.py::DictMethodTest::test_decorator_lock_info",
+    "tests/test_cachedmethod.py::NoneMethodTest::test_none_info",
+    "tests/test_cachedmethod.py::UnboundMethodTest::test_class_access_alias",
+    "tests/test_cachedmethod.py::UnboundMethodTest::test_class_access_copy",
+    "tests/test_cachedmethod.py::UnboundMethodTest::test_class_call_keyword_receiver",
+    "tests/test_classmethod.py::CachedClassMethodTest::test_clear_locked",
+    "tests/test_classmethod.py::CachedClassMethodTest::test_info",
+    "tests/test_fifo.py::FIFOCacheTest::test_clear_getsizeof",
+    "tests/test_fifo.py::FIFOCacheTest::test_fifo_getsizeof",
+    "tests/test_fifo.py::FIFOCacheTest::test_getsizeof_replace_shrink",
+    "tests/test_fifo.py::FIFOCacheTest::test_popitem_exception_context",
+    "tests/test_func.py::FIFODecoratorTest::test_decorator_needs_rlock",
+    "tests/test_func.py::FIFODecoratorTest::test_decorator_typed",
+    "tests/test_func.py::FIFODecoratorTest::test_decorator_unbound",
+    "tests/test_func.py::LFUDecoratorTest::test_decorator_method",
+    "tests/test_func.py::LFUDecoratorTest::test_decorator_needs_rlock",
+    "tests/test_func.py::LFUDecoratorTest::test_decorator_unbound",
+    "tests/test_func.py::LRUDecoratorTest::test_decorator_nocache",
+    "tests/test_func.py::LRUDecoratorTest::test_decorator_unbound",
+    "tests/test_func.py::LRUDecoratorTest::test_decorator_user_function",
+    "tests/test_func.py::RRDecoratorTest::test_decorator_unbound",
+    "tests/test_func.py::RRDecoratorTest::test_decorator_user_function",
+    "tests/test_func.py::RRDecoratorTest::test_stacked_decorators",
+    "tests/test_func.py::TTLDecoratorTest::test_decorator_clear",
+    "tests/test_func.py::TTLDecoratorTest::test_decorator_needs_rlock",
+    "tests/test_func.py::TTLDecoratorTest::test_decorator_unbound",
+    "tests/test_keys.py::CacheKeysTest::test_addkeys",
+    "tests/test_keys.py::CacheKeysTest::test_typedkey",
+    "tests/test_lfu.py::LFUCacheTest::test_missing",
+    "tests/test_lfu.py::LFUCacheTest::test_popitem_exception_context",
+    "tests/test_lfu.py::LFUCacheTest::test_update",
+    "tests/test_lru.py::LRUCacheTest::test_getsizeof_param",
+    "tests/test_lru.py::LRUCacheTest::test_missing_getsizeof",
+    "tests/test_lru.py::LRUCacheTest::test_popitem_exception_context",
+    "tests/test_rr.py::RRCacheTest::test_popitem_exception_context",
+    "tests/test_rr.py::RRCacheTest::test_rr_default_choice",
+    "tests/test_rr.py::RRCacheTest::test_rr_getsizeof",
+    "tests/test_threading.py::ThreadingTest::test_cached_lock_cond",
+    "tests/test_threading.py::ThreadingTest::test_cachedmethod_lock",
+    "tests/test_threading.py::ThreadingTest::test_cachedmethod_lock_cond",
+    "tests/test_tlru.py::TLRUCacheTest::test_getsizeof_negative",
+    "tests/test_tlru.py::TLRUCacheTest::test_missing",
+    "tests/test_tlru.py::TLRUCacheTest::test_overwrite_existing_with_expired",
+    "tests/test_tlru.py::TLRUCacheTest::test_popitem_exception_context",
+    "tests/test_tlru.py::TLRUCacheTest::test_ttu",
+    "tests/test_tlru.py::TLRUCacheTest::test_ttu_heap_cleanup",
+    "tests/test_tlru.py::TLRUCacheTest::test_ttu_reverse_insert",
+    "tests/test_tlru.py::TLRUCacheTest::test_ttu_tuple_key",
+    "tests/test_ttl.py::TTLCacheTest::test_defaults",
+    "tests/test_ttl.py::TTLCacheTest::test_getsizeof_replace_grow",
+    "tests/test_ttl.py::TTLCacheTest::test_maxsize_negative",
+    "tests/test_ttl.py::TTLCacheTest::test_pickle",
+    "tests/test_ttl.py::TTLCacheTest::test_popitem",
+    "tests/test_ttl.py::TTLCacheTest::test_ttl",
+    "tests/test_ttl.py::TTLCacheTest::test_ttl_expire",
+    "tests/test_ttl.py::TTLCacheTest::test_ttl_tuple_key"
+  ],
+  "tests": [
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_decorator",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0005291030001899344
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.002329098000700469
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.00015024100048321998
+        }
+      },
+      "duration_s": 0.0030084420013736235,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_decorator_lock_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00014559900046151597
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00014833599925623275
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 8.608900043327594e-05
+        }
+      },
+      "duration_s": 0.00038002400015102467,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_decorator_method",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.776900060387561e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00023203499949886464
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.649299989978317e-05
+        }
+      },
+      "duration_s": 0.0003762970000025234,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00022579899996344466
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.875099931377918e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.614700057776645e-05
+        }
+      },
+      "duration_s": 0.0003806969998549903,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_cond",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00010162400030822027
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0002545400002418319
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.721299956145231e-05
+        }
+      },
+      "duration_s": 0.00040337700011150446,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00010424100037198514
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00018490399997972418
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.987800002709264e-05
+        }
+      },
+      "duration_s": 0.00033902300037880195,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_lock",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00010476999977981905
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.196700011671055e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 3.92420006392058e-05
+        }
+      },
+      "duration_s": 0.0002359790005357354,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::CacheWrapperTest::test_zero_size_cache_decorator_lock_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.376199977850774e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.572500039212173e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.695000047329813e-05
+        }
+      },
+      "duration_s": 0.0002564370006439276,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::DictWrapperTest::test_decorator_clear_cond",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00019373000031919219
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0002828050000971416
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.412799989950145e-05
+        }
+      },
+      "duration_s": 0.0005206630003158352,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::DictWrapperTest::test_decorator_clear_lock",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011268399975961074
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00017071399997803383
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.00021619299968733685
+        }
+      },
+      "duration_s": 0.0004995909994249814,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::NoneWrapperTest::test_decorator",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00014306799948826665
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00011185899984411662
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.00015403400084323948
+        }
+      },
+      "duration_s": 0.00040896100017562276,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cached.py::NoneWrapperTest::test_decorator_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00017204800042236457
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00018389999968349002
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.313100038823904e-05
+        }
+      },
+      "duration_s": 0.00041907900049409363,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_cond_nospace",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00014079999982641311
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00021436800034280168
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 7.547299992438639e-05
+        }
+      },
+      "duration_s": 0.0004306410000936012,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_cond_pending_keyword",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0001773429994500475
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0008884180006134557
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.8464000176172704e-05
+        }
+      },
+      "duration_s": 0.0011242250002396759,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_attributes",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011073300083808135
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001311350006290013
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.772200009028893e-05
+        }
+      },
+      "duration_s": 0.0002895900015573716,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_clear",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00012002200037386501
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0002892829998017987
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.933600030199159e-05
+        }
+      },
+      "duration_s": 0.0004586410004776553,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_pickle_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00010408699927211273
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00028641700009757187
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.370500028016977e-05
+        }
+      },
+      "duration_s": 0.0004342089996498544,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_decorator_slots",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.727200020075543e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00044586300009541446
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.092900028103031e-05
+        }
+      },
+      "duration_s": 0.0005840640005772002,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_lock_nospace",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.840000075200805e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001659640001889784
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.354900011094287e-05
+        }
+      },
+      "duration_s": 0.0003079130010519293,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::CacheMethodTest::test_nospace",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.786900045583025e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00032164699950953946
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.232200030353852e-05
+        }
+      },
+      "duration_s": 0.0004818380002689082,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::DictMethodTest::test_decorator_different_names",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00017974499951378675
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0002148650000890484
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.730299951916095e-05
+        }
+      },
+      "duration_s": 0.0004419129991219961,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::DictMethodTest::test_decorator_immutable_dict",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011091000033047749
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00036109199936618097
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.454499958228553e-05
+        }
+      },
+      "duration_s": 0.000516546999278944,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::DictMethodTest::test_decorator_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.02600004337728e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0003063909998672898
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.00014094000016484642
+        }
+      },
+      "duration_s": 0.000537591000465909,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::DictMethodTest::test_decorator_lock_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00010447099975863239
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00013769100041827187
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.539800076803658e-05
+        }
+      },
+      "duration_s": 0.00029756000094494084,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::NoneMethodTest::test_none_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0004655229995478294
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00010515999929339159
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.566200070461491e-05
+        }
+      },
+      "duration_s": 0.0006263449995458359,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::UnboundMethodTest::test_class_access_alias",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00029369799995038193
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0002463119999447372
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.3786999412986916e-05
+        }
+      },
+      "duration_s": 0.000583796999308106,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::UnboundMethodTest::test_class_access_copy",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.542100087855943e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 8.886900013749255e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 8.555200020055054e-05
+        }
+      },
+      "duration_s": 0.0002698420012166025,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_cachedmethod.py::UnboundMethodTest::test_class_call_keyword_receiver",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00010016099986387417
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00047509399973932886
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 9.154500003205612e-05
+        }
+      },
+      "duration_s": 0.0006667999996352592,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_classmethod.py::CachedClassMethodTest::test_clear_locked",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00014017200010130182
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001467869997213711
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.103500032215379e-05
+        }
+      },
+      "duration_s": 0.0003279940001448267,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_classmethod.py::CachedClassMethodTest::test_info",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.316599996760488e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00011175400049978634
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.347899968910497e-05
+        }
+      },
+      "duration_s": 0.0002483990001564962,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_fifo.py::FIFOCacheTest::test_clear_getsizeof",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.000164559999575431
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00010130999999091728
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.401400019560242e-05
+        }
+      },
+      "duration_s": 0.0003098839997619507,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_fifo.py::FIFOCacheTest::test_fifo_getsizeof",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00045595299980050186
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00014826900041953195
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.871900000580354e-05
+        }
+      },
+      "duration_s": 0.0006529410002258373,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_fifo.py::FIFOCacheTest::test_getsizeof_replace_shrink",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.788100032892544e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 7.867099975555902e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.3307999476382975e-05
+        }
+      },
+      "duration_s": 0.00021985999956086744,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_fifo.py::FIFOCacheTest::test_popitem_exception_context",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.486599926982308e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00011076499959017383
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.919700015510898e-05
+        }
+      },
+      "duration_s": 0.0002548279990151059,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::FIFODecoratorTest::test_decorator_needs_rlock",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00014296899917098926
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00025533600000926526
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 7.097900015651248e-05
+        }
+      },
+      "duration_s": 0.000469283999336767,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::FIFODecoratorTest::test_decorator_typed",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.854499967332231e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00013558800037571928
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.285099930712022e-05
+        }
+      },
+      "duration_s": 0.0002769839993561618,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::FIFODecoratorTest::test_decorator_unbound",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.405700009461725e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.580300047673518e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 8.57640006870497e-05
+        }
+      },
+      "duration_s": 0.00026562400125840213,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::LFUDecoratorTest::test_decorator_method",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00013983499957248569
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00024219199985964224
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.666899985750206e-05
+        }
+      },
+      "duration_s": 0.00042869599928963,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::LFUDecoratorTest::test_decorator_needs_rlock",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0001049069996952312
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00013233899971965002
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.1554999370418955e-05
+        }
+      },
+      "duration_s": 0.0002788009987853002,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::LFUDecoratorTest::test_decorator_unbound",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00013228900024842005
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00018036100027529756
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.168099935166538e-05
+        }
+      },
+      "duration_s": 0.000374330999875383,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::LRUDecoratorTest::test_decorator_nocache",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0001397340001858538
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00012503699963417603
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.018700019514654e-05
+        }
+      },
+      "duration_s": 0.00030495800001517637,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::LRUDecoratorTest::test_decorator_unbound",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.953999986260897e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.808300001168391e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 3.9479000406572595e-05
+        }
+      },
+      "duration_s": 0.00022710200028086547,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::LRUDecoratorTest::test_decorator_user_function",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 7.990500034793513e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00010119799935637275
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.99360003232141e-05
+        }
+      },
+      "duration_s": 0.00023103900002752198,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::RRDecoratorTest::test_decorator_unbound",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011218700001336401
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.974899967346573e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.379600017680787e-05
+        }
+      },
+      "duration_s": 0.0002757319998636376,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::RRDecoratorTest::test_decorator_user_function",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.959199996956158e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00012155199965491192
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 3.964400002587354e-05
+        }
+      },
+      "duration_s": 0.00026078799965034705,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::RRDecoratorTest::test_stacked_decorators",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0003443850000621751
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00013987700003781356
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.494900051417062e-05
+        }
+      },
+      "duration_s": 0.0005392110006141593,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::TTLDecoratorTest::test_decorator_clear",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00013264900007925462
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00020724299974972382
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.789600006915862e-05
+        }
+      },
+      "duration_s": 0.00038778799989813706,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::TTLDecoratorTest::test_decorator_needs_rlock",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.970500013878336e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001449390001653228
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.47409993284964e-05
+        }
+      },
+      "duration_s": 0.00028938499963260256,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_func.py::TTLDecoratorTest::test_decorator_unbound",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.874400075204903e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00013117500020598527
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.550399964704411e-05
+        }
+      },
+      "duration_s": 0.0002854230006050784,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_keys.py::CacheKeysTest::test_addkeys",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0001273319994652411
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 6.80780003676773e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 8.548599998903228e-05
+        }
+      },
+      "duration_s": 0.0002808959998219507,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_keys.py::CacheKeysTest::test_typedkey",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.000157820999447722
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001440129999537021
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.811299979541218e-05
+        }
+      },
+      "duration_s": 0.00035994699919683626,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_lfu.py::LFUCacheTest::test_missing",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00015721500039944658
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00018388399985269643
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 7.138999990274897e-05
+        }
+      },
+      "duration_s": 0.000412489000154892,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_lfu.py::LFUCacheTest::test_popitem_exception_context",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.943800003180513e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00027902100009669084
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.742099918075837e-05
+        }
+      },
+      "duration_s": 0.00041587999930925434,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_lfu.py::LFUCacheTest::test_update",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00013769100041827187
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00010422700052004075
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.076800036680652e-05
+        }
+      },
+      "duration_s": 0.00030268600130511913,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_lru.py::LRUCacheTest::test_getsizeof_param",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00012758499997289618
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00012321599933784455
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 3.860600008920301e-05
+        }
+      },
+      "duration_s": 0.00028940699939994374,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_lru.py::LRUCacheTest::test_missing_getsizeof",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00027530300030775834
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00014648400065198075
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.4936999984201975e-05
+        }
+      },
+      "duration_s": 0.00046672400094394106,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_lru.py::LRUCacheTest::test_popitem_exception_context",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.174200022243895e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 7.36679994588485e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.00023359300030278973
+        }
+      },
+      "duration_s": 0.0003990029999840772,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_rr.py::RRCacheTest::test_popitem_exception_context",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00013256599959277082
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.851300001173513e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.320199968788074e-05
+        }
+      },
+      "duration_s": 0.0002742809992923867,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_rr.py::RRCacheTest::test_rr_default_choice",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.371100077260053e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 6.93239999236539e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.123899998376146e-05
+        }
+      },
+      "duration_s": 0.0002042740006800159,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_rr.py::RRCacheTest::test_rr_getsizeof",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.063099994615186e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.51470001382404e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.467500043072505e-05
+        }
+      },
+      "duration_s": 0.0002404530005151173,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_threading.py::ThreadingTest::test_cached_lock_cond",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00013498299995262641
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.002121632000125828
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.97830003243871e-05
+        }
+      },
+      "duration_s": 0.0023163980004028417,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_threading.py::ThreadingTest::test_cachedmethod_lock",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011595999967539683
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.008096016000308737
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.0001142129995059804
+        }
+      },
+      "duration_s": 0.008326188999490114,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_threading.py::ThreadingTest::test_cachedmethod_lock_cond",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011729600009857677
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0018339509997531422
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 7.399599962809589e-05
+        }
+      },
+      "duration_s": 0.002025242999479815,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_getsizeof_negative",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00015328199970099377
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00012768800024787197
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.8831999922404066e-05
+        }
+      },
+      "duration_s": 0.0003398019998712698,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_missing",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.419599973625736e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00024852600017766235
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.1817999772320036e-05
+        }
+      },
+      "duration_s": 0.00038453999968623975,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_overwrite_existing_with_expired",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00019261099987488706
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00036356300006445963
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.241700000624405e-05
+        }
+      },
+      "duration_s": 0.0006085909999455907,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_popitem_exception_context",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0001025990004563937
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.111199960898375e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.00015112199980649166
+        }
+      },
+      "duration_s": 0.0003448329998718691,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_ttu",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.727199994813418e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00020933999985572882
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 0.0001195679997181287
+        }
+      },
+      "duration_s": 0.0004261799995219917,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_ttu_heap_cleanup",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.94189997779904e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00011751099918910768
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.120799985685153e-05
+        }
+      },
+      "duration_s": 0.0002481379988239496,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_ttu_reverse_insert",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 7.961299979797332e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00014131399984762538
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.439900021679932e-05
+        }
+      },
+      "duration_s": 0.000265325999862398,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_tlru.py::TLRUCacheTest::test_ttu_tuple_key",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.754800001042895e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 8.997099939733744e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.311299966910155e-05
+        }
+      },
+      "duration_s": 0.00024063199907686794,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_defaults",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0001218899997184053
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.376299931318499e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.266700034349924e-05
+        }
+      },
+      "duration_s": 0.00025831999937508954,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_getsizeof_replace_grow",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.641699969302863e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00013107499944453593
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.4022999645676464e-05
+        }
+      },
+      "duration_s": 0.000261514998783241,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_maxsize_negative",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.0003396140000404557
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 9.480900007474702e-05
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.381600047054235e-05
+        }
+      },
+      "duration_s": 0.0004782390005857451,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_pickle",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.616700051788939e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00029363799967541127
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 5.388000045059016e-05
+        }
+      },
+      "duration_s": 0.0004336850006438908,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_popitem",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 9.774400041351328e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.00010563099931459874
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 3.9552999623992946e-05
+        }
+      },
+      "duration_s": 0.00024292799935210496,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_ttl",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.805700053926557e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001816180001696921
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.372000057628611e-05
+        }
+      },
+      "duration_s": 0.0003133950012852438,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_ttl_expire",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 8.968299971456872e-05
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0002930330001618131
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 4.286700004740851e-05
+        }
+      },
+      "duration_s": 0.00042558299992379034,
+      "call_outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_ttl.py::TTLCacheTest::test_ttl_tuple_key",
+      "phases": {
+        "setup": {
+          "outcome": "passed",
+          "duration_s": 0.00011526500020409003
+        },
+        "call": {
+          "outcome": "passed",
+          "duration_s": 0.0001505800000813906
+        },
+        "teardown": {
+          "outcome": "passed",
+          "duration_s": 6.282300000748364e-05
+        }
+      },
+      "duration_s": 0.0003286680002929643,
+      "call_outcome": "passed"
+    }
+  ],
+  "outcomes": {
+    "passed": 79
+  },
+  "failed_reports": [],
+  "special_reports": {
+    "SubtestReport": 8
+  },
+  "package_file": "/workspace/scratch/f3cd84c5991c/software_track_j/build/mutants-t2u41o77/M04/src/cachetools/__init__.py",
+  "package_version": "7.2.8",
+  "trace_enabled": false
+}

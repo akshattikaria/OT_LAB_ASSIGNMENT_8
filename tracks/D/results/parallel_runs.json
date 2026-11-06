@@ -1,0 +1,3871 @@
+{
+  "inference": [
+    {
+      "kind": "serial",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.10469261699995513,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "serial",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.09765821900009541,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "serial",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.08992864100002862,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 2,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.04876813500004573,
+      "end_to_end_s": 0.08538578999991842,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 4,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.036854096999945796,
+      "end_to_end_s": 0.053326052999977946,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.07928636199994799,
+      "end_to_end_s": 0.13510222299998986,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 4,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.03960783399998036,
+      "end_to_end_s": 0.056277621000049294,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 2,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.054044273000044996,
+      "end_to_end_s": 0.08233512799995424,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.084565489000056,
+      "end_to_end_s": 0.11525903300002938,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.0858399379999355,
+      "end_to_end_s": 0.11781434499994248,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.09067626399996698,
+      "end_to_end_s": 0.12322356300001047,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.09125963599990428,
+      "end_to_end_s": 0.12483156000007511,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 4,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.05361662500001785,
+      "end_to_end_s": 0.07524983000007524,
+      "max_abs_error": 3.219646771412954e-15
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 8,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.057909859999995206,
+      "end_to_end_s": 0.09288082399996256,
+      "max_abs_error": 3.1086244689504383e-15
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 4,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.04433214100004079,
+      "end_to_end_s": 0.06811942699994233,
+      "max_abs_error": 3.219646771412954e-15
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 8,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.043444077000003745,
+      "end_to_end_s": 0.06153599700007817,
+      "max_abs_error": 3.1086244689504383e-15
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 2,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.06673835200001577,
+      "end_to_end_s": 0.08890527599999132,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 8,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.02385133899997527,
+      "end_to_end_s": 0.03728169600003639,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 8,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.04958910699997432,
+      "end_to_end_s": 0.07093319199998405,
+      "max_abs_error": 3.1086244689504383e-15
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 8,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.027563073999999688,
+      "end_to_end_s": 0.04181224399997063,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 2,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.07070749499996509,
+      "end_to_end_s": 0.09241330099996503,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 2,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.05929143899993505,
+      "end_to_end_s": 0.08356365200006621,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 8,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.026568336999957864,
+      "end_to_end_s": 0.03900919399995928,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 4,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.05247680499996932,
+      "end_to_end_s": 0.07414161700000932,
+      "max_abs_error": 3.219646771412954e-15
+    },
+    {
+      "kind": "model",
+      "batch": 2048,
+      "workers": 1,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.14135350899994137,
+      "end_to_end_s": 0.22697490500002004,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 2,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.11065069200003563,
+      "end_to_end_s": 0.15143834399998468,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 2048,
+      "workers": 4,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.05808651799998188,
+      "end_to_end_s": 0.08156950700004018,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "serial",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.5401195340000413,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "serial",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.36674164900000505,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "serial",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.3632458370000222,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.4056479930000023,
+      "end_to_end_s": 0.6463455709999835,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 8,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.10928491799995754,
+      "end_to_end_s": 0.15536958000006962,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 4,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.258213048000016,
+      "end_to_end_s": 0.3596654530000478,
+      "max_abs_error": 3.1086244689504383e-15
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.42533200600007603,
+      "end_to_end_s": 0.6254222759999948,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 8,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.12073378599995976,
+      "end_to_end_s": 0.17181509200008804,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.37622308000004523,
+      "end_to_end_s": 0.5132914640000763,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 2,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.3012162889999672,
+      "end_to_end_s": 0.422410181000032,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 4,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.15212537500008239,
+      "end_to_end_s": 0.22285175199999685,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 2,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.26905535800005964,
+      "end_to_end_s": 0.36077419200000804,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 8,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.1813815530000511,
+      "end_to_end_s": 0.25915515299993785,
+      "max_abs_error": 3.3306690738754696e-15
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 4,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.2088059649998968,
+      "end_to_end_s": 0.2846152639999673,
+      "max_abs_error": 3.1086244689504383e-15
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 4,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.25626615499993477,
+      "end_to_end_s": 0.3326632090000885,
+      "max_abs_error": 3.1086244689504383e-15
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 8,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.1710200810000515,
+      "end_to_end_s": 0.2302673539999205,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 2,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.22970256100006736,
+      "end_to_end_s": 0.34240395300003,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 8,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.18059002699999382,
+      "end_to_end_s": 0.2542635289998998,
+      "max_abs_error": 3.3306690738754696e-15
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 8,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.16107293799996114,
+      "end_to_end_s": 0.23715285100001893,
+      "max_abs_error": 3.3306690738754696e-15
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.3465250870000318,
+      "end_to_end_s": 0.5163092489999599,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 4,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.17893102200002886,
+      "end_to_end_s": 0.2904728209999803,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 2,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.21250280700007806,
+      "end_to_end_s": 0.3284087360000285,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 4,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.15368440400004602,
+      "end_to_end_s": 0.22583063199999742,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 2,
+      "repeat": 1,
+      "forwards": 3,
+      "seconds": 0.29030126399993605,
+      "end_to_end_s": 0.3875435740000057,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.47302528800003074,
+      "end_to_end_s": 0.6600831199999675,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "model",
+      "batch": 8192,
+      "workers": 1,
+      "repeat": 0,
+      "forwards": 3,
+      "seconds": 0.38801303499997175,
+      "end_to_end_s": 0.6916364649999878,
+      "max_abs_error": 0.0
+    },
+    {
+      "kind": "data",
+      "batch": 8192,
+      "workers": 2,
+      "repeat": 2,
+      "forwards": 3,
+      "seconds": 0.2614444480000202,
+      "end_to_end_s": 0.3675709399999505,
+      "max_abs_error": 0.0
+    }
+  ],
+  "pipeline": [
+    {
+      "microbatches": 1,
+      "workers": 2,
+      "steady_s": 0.11952261800001907,
+      "end_to_end_s": 0.11985343399999238,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 6.0174000054757926e-05,
+          "finish": 0.060716333000073064
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.060761862
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.06093477900003563,
+          "finish": 0.11774421300003723
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.05690087
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.5,
+      "ideal_balanced_stage_speedup": 1.0,
+      "repeat": 0,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 1,
+      "workers": 2,
+      "steady_s": 0.12660455500008538,
+      "end_to_end_s": 0.12707258299997193,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 4.393900007926277e-05,
+          "finish": 0.06712635700000646
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.06714576100000001
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.06726246200003061,
+          "finish": 0.12493091900000763
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.057620222
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.5,
+      "ideal_balanced_stage_speedup": 1.0,
+      "repeat": 1,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 1,
+      "workers": 2,
+      "steady_s": 0.12367662400004065,
+      "end_to_end_s": 0.12400759100000869,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.693000007842784e-05,
+          "finish": 0.06363711699998476
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.063873316
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.06403247800005829,
+          "finish": 0.12043221999999787
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.056443629
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.5,
+      "ideal_balanced_stage_speedup": 1.0,
+      "repeat": 2,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 4,
+      "workers": 2,
+      "steady_s": 0.09044903699998486,
+      "end_to_end_s": 0.09082109399992078,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 4.162699997323216e-05,
+          "finish": 0.017058575999953973
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.0171067869999888,
+          "finish": 0.0357854789999692
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.017151231999946503,
+          "finish": 0.0380425619999869
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.03581586400002834,
+          "finish": 0.049960890999955154
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.03806232099998397,
+          "finish": 0.05629507799994826
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.049990313999956015,
+          "finish": 0.06953721200000018
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.069523343
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.05632481099996767,
+          "finish": 0.074544097999933
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.07456200399997215,
+          "finish": 0.08870934399999442
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.071623105
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.2,
+      "ideal_balanced_stage_speedup": 1.6,
+      "repeat": 0,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 4,
+      "workers": 2,
+      "steady_s": 0.10003569599996354,
+      "end_to_end_s": 0.10049064500003624,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.990899995187647e-05,
+          "finish": 0.015679272999932437
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.01577124199991431,
+          "finish": 0.03740129400000569
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.015729165999914585,
+          "finish": 0.03792758299994148
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.03801293300000452,
+          "finish": 0.061167005000015706
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.03795953999997437,
+          "finish": 0.061881260999939514
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.061977245999969455,
+          "finish": 0.08351963899997372
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.061913747999938096,
+          "finish": 0.0842937620000157
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.084218523
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.08448317499994573,
+          "finish": 0.09592757199993684
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.078025819
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.2,
+      "ideal_balanced_stage_speedup": 1.6,
+      "repeat": 1,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 4,
+      "workers": 2,
+      "steady_s": 0.08080680000000484,
+      "end_to_end_s": 0.08133064000003287,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.1691000003775116e-05,
+          "finish": 0.017772884999999405
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.017860013000017716,
+          "finish": 0.031683425999972314
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.0178197039999759,
+          "finish": 0.033215669000014714
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.03329455499999767,
+          "finish": 0.046555001999990964
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.03324671500001841,
+          "finish": 0.049204145999965476
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.0492884000000231,
+          "finish": 0.06299097700002676
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.049241040999959296,
+          "finish": 0.0654063980000501
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.065416586
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.06564737200005766,
+          "finish": 0.07932657399999243
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.054726583
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.2,
+      "ideal_balanced_stage_speedup": 1.6,
+      "repeat": 2,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 16,
+      "workers": 2,
+      "steady_s": 0.09690036699998927,
+      "end_to_end_s": 0.0974464060000173,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.4019999930023914e-05,
+          "finish": 0.009775146000038148
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.009841854000001149,
+          "finish": 0.013791600999979892
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.009810268000023825,
+          "finish": 0.016677914999945642
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.01674060699997426,
+          "finish": 0.02241035399993052
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.016703493000022718,
+          "finish": 0.02252487199996267
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.022571501000015814,
+          "finish": 0.02805486199997631
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.022552463000010903,
+          "finish": 0.028243689999953858
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.02829302199995709,
+          "finish": 0.03359332499996981
+        },
+        {
+          "stage": 0,
+          "microbatch": 4,
+          "start": 0.028269378000004508,
+          "finish": 0.03381196700001965
+        },
+        {
+          "stage": 1,
+          "microbatch": 4,
+          "start": 0.03385903599996709,
+          "finish": 0.03924312200001623
+        },
+        {
+          "stage": 0,
+          "microbatch": 5,
+          "start": 0.03383645299993532,
+          "finish": 0.03941714799998408
+        },
+        {
+          "stage": 1,
+          "microbatch": 5,
+          "start": 0.03947736600002827,
+          "finish": 0.04472013399993102
+        },
+        {
+          "stage": 0,
+          "microbatch": 6,
+          "start": 0.039443687000016325,
+          "finish": 0.044978624000009404
+        },
+        {
+          "stage": 1,
+          "microbatch": 6,
+          "start": 0.04502278899997236,
+          "finish": 0.05021703599993543
+        },
+        {
+          "stage": 0,
+          "microbatch": 7,
+          "start": 0.04500230899998314,
+          "finish": 0.05047134999995251
+        },
+        {
+          "stage": 1,
+          "microbatch": 7,
+          "start": 0.05051556499995513,
+          "finish": 0.05576526400000148
+        },
+        {
+          "stage": 0,
+          "microbatch": 8,
+          "start": 0.05049451399997906,
+          "finish": 0.055966508999972575
+        },
+        {
+          "stage": 1,
+          "microbatch": 8,
+          "start": 0.056011475999980576,
+          "finish": 0.06106833000001188
+        },
+        {
+          "stage": 0,
+          "microbatch": 9,
+          "start": 0.05598925300000701,
+          "finish": 0.061491771999953926
+        },
+        {
+          "stage": 1,
+          "microbatch": 9,
+          "start": 0.061531149999950685,
+          "finish": 0.06673515199997837
+        },
+        {
+          "stage": 0,
+          "microbatch": 10,
+          "start": 0.06151251300002514,
+          "finish": 0.06707338900002924
+        },
+        {
+          "stage": 1,
+          "microbatch": 10,
+          "start": 0.06713859499996033,
+          "finish": 0.0701913829999512
+        },
+        {
+          "stage": 0,
+          "microbatch": 11,
+          "start": 0.06709210700000767,
+          "finish": 0.07148320299995703
+        },
+        {
+          "stage": 1,
+          "microbatch": 11,
+          "start": 0.0715314839999337,
+          "finish": 0.0744707850000168
+        },
+        {
+          "stage": 0,
+          "microbatch": 12,
+          "start": 0.07150177999994867,
+          "finish": 0.07563557699995727
+        },
+        {
+          "stage": 1,
+          "microbatch": 12,
+          "start": 0.07572413799994138,
+          "finish": 0.08114722100003746
+        },
+        {
+          "stage": 0,
+          "microbatch": 13,
+          "start": 0.07568135500002882,
+          "finish": 0.08123412899999494
+        },
+        {
+          "stage": 1,
+          "microbatch": 13,
+          "start": 0.08127650099993389,
+          "finish": 0.08654668999997739
+        },
+        {
+          "stage": 0,
+          "microbatch": 14,
+          "start": 0.08125800400000571,
+          "finish": 0.08682274599993889
+        },
+        {
+          "stage": 1,
+          "microbatch": 14,
+          "start": 0.0868691040000158,
+          "finish": 0.09207015999993473
+        },
+        {
+          "stage": 0,
+          "microbatch": 15,
+          "start": 0.08684651099997609,
+          "finish": 0.09229211699994266
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.09227565
+        },
+        {
+          "stage": 1,
+          "microbatch": 15,
+          "start": 0.09239436699999715,
+          "finish": 0.09547573700001522
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.077198979
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.058823529411764705,
+      "ideal_balanced_stage_speedup": 1.8823529411764706,
+      "repeat": 0,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 16,
+      "workers": 2,
+      "steady_s": 0.0823641450000423,
+      "end_to_end_s": 0.08281349599997156,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 8.214499996483937e-05,
+          "finish": 0.0040407850000292456
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.004087723999987247,
+          "finish": 0.007745140999986688
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.004062055999952463,
+          "finish": 0.007788754999978664
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.007822694999958912,
+          "finish": 0.011397081000040998
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.00780751299998883,
+          "finish": 0.011956013000030907
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.01199215600001935,
+          "finish": 0.015073797000013656
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.011977193999996416,
+          "finish": 0.01599190699994324
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.016034709999985353,
+          "finish": 0.01941226500002813
+        },
+        {
+          "stage": 0,
+          "microbatch": 4,
+          "start": 0.016012866999972175,
+          "finish": 0.01989824999998291
+        },
+        {
+          "stage": 1,
+          "microbatch": 4,
+          "start": 0.019970375999946555,
+          "finish": 0.024817362000021603
+        },
+        {
+          "stage": 0,
+          "microbatch": 5,
+          "start": 0.01991957099994579,
+          "finish": 0.024964623999949254
+        },
+        {
+          "stage": 1,
+          "microbatch": 5,
+          "start": 0.02501586400001088,
+          "finish": 0.030583869999986746
+        },
+        {
+          "stage": 0,
+          "microbatch": 6,
+          "start": 0.02499046200000521,
+          "finish": 0.030819712000038635
+        },
+        {
+          "stage": 1,
+          "microbatch": 6,
+          "start": 0.030877100999987306,
+          "finish": 0.036167118999969716
+        },
+        {
+          "stage": 0,
+          "microbatch": 7,
+          "start": 0.030843086000004405,
+          "finish": 0.036364413999990575
+        },
+        {
+          "stage": 1,
+          "microbatch": 7,
+          "start": 0.03641129799996179,
+          "finish": 0.04177163899998959
+        },
+        {
+          "stage": 0,
+          "microbatch": 8,
+          "start": 0.03638845000000401,
+          "finish": 0.04193400299993755
+        },
+        {
+          "stage": 1,
+          "microbatch": 8,
+          "start": 0.04197845299995606,
+          "finish": 0.04722568700003649
+        },
+        {
+          "stage": 0,
+          "microbatch": 9,
+          "start": 0.041958238999995956,
+          "finish": 0.047464563999938036
+        },
+        {
+          "stage": 1,
+          "microbatch": 9,
+          "start": 0.047505929999942964,
+          "finish": 0.05279936199997337
+        },
+        {
+          "stage": 0,
+          "microbatch": 10,
+          "start": 0.04748661600001469,
+          "finish": 0.05298904699998275
+        },
+        {
+          "stage": 1,
+          "microbatch": 10,
+          "start": 0.053035178999948585,
+          "finish": 0.05843380700002854
+        },
+        {
+          "stage": 0,
+          "microbatch": 11,
+          "start": 0.053013321999969776,
+          "finish": 0.05849860700004683
+        },
+        {
+          "stage": 1,
+          "microbatch": 11,
+          "start": 0.058541153999954076,
+          "finish": 0.06379166299996086
+        },
+        {
+          "stage": 0,
+          "microbatch": 12,
+          "start": 0.058520509000004495,
+          "finish": 0.06403229299996838
+        },
+        {
+          "stage": 1,
+          "microbatch": 12,
+          "start": 0.06407628199997362,
+          "finish": 0.06922493199999735
+        },
+        {
+          "stage": 0,
+          "microbatch": 13,
+          "start": 0.0640567990000136,
+          "finish": 0.06975839200003975
+        },
+        {
+          "stage": 1,
+          "microbatch": 13,
+          "start": 0.06979390799995144,
+          "finish": 0.07344112099997346
+        },
+        {
+          "stage": 0,
+          "microbatch": 14,
+          "start": 0.06977464499993857,
+          "finish": 0.07347901200000706
+        },
+        {
+          "stage": 1,
+          "microbatch": 14,
+          "start": 0.07353965599997991,
+          "finish": 0.07671668700004375
+        },
+        {
+          "stage": 0,
+          "microbatch": 15,
+          "start": 0.07349255199994786,
+          "finish": 0.07742399200003547
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.077317939
+        },
+        {
+          "stage": 1,
+          "microbatch": 15,
+          "start": 0.07755580000002738,
+          "finish": 0.0807554440000331
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.071427028
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.058823529411764705,
+      "ideal_balanced_stage_speedup": 1.8823529411764706,
+      "repeat": 1,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 16,
+      "workers": 2,
+      "steady_s": 0.0663815870000235,
+      "end_to_end_s": 0.06668531299999358,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.8315999972837744e-05,
+          "finish": 0.003959520999956112
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.004017795999970986,
+          "finish": 0.007589006999978665
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.003980262000027324,
+          "finish": 0.007998448999956054
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.008037005000005593,
+          "finish": 0.011442832999932762
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.008017777999953069,
+          "finish": 0.01146889199992529
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.011506976999953622,
+          "finish": 0.01471737800000028
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.011486056999956418,
+          "finish": 0.015199046000020644
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.015230561999942438,
+          "finish": 0.018151726999917628
+        },
+        {
+          "stage": 0,
+          "microbatch": 4,
+          "start": 0.015214860000014596,
+          "finish": 0.018407653999929607
+        },
+        {
+          "stage": 0,
+          "microbatch": 5,
+          "start": 0.01842318699993939,
+          "finish": 0.02154423499996483
+        },
+        {
+          "stage": 1,
+          "microbatch": 4,
+          "start": 0.018443375999936507,
+          "finish": 0.021685071999968386
+        },
+        {
+          "stage": 1,
+          "microbatch": 5,
+          "start": 0.021692552999979853,
+          "finish": 0.024556883999935053
+        },
+        {
+          "stage": 0,
+          "microbatch": 6,
+          "start": 0.021549592999917877,
+          "finish": 0.024851346999980706
+        },
+        {
+          "stage": 1,
+          "microbatch": 6,
+          "start": 0.024889131999998426,
+          "finish": 0.027932306000025164
+        },
+        {
+          "stage": 0,
+          "microbatch": 7,
+          "start": 0.02487067599997772,
+          "finish": 0.02828495500000372
+        },
+        {
+          "stage": 1,
+          "microbatch": 7,
+          "start": 0.028340325999920424,
+          "finish": 0.031736789999968096
+        },
+        {
+          "stage": 0,
+          "microbatch": 8,
+          "start": 0.028302650999989964,
+          "finish": 0.03237818299999162
+        },
+        {
+          "stage": 1,
+          "microbatch": 8,
+          "start": 0.03241758100000425,
+          "finish": 0.03515800999991825
+        },
+        {
+          "stage": 0,
+          "microbatch": 9,
+          "start": 0.03239820299995699,
+          "finish": 0.036167254000019966
+        },
+        {
+          "stage": 1,
+          "microbatch": 9,
+          "start": 0.03621347199998581,
+          "finish": 0.03923927099992852
+        },
+        {
+          "stage": 0,
+          "microbatch": 10,
+          "start": 0.03619529599995985,
+          "finish": 0.03991150000001653
+        },
+        {
+          "stage": 1,
+          "microbatch": 10,
+          "start": 0.03995126799998161,
+          "finish": 0.04485110199993869
+        },
+        {
+          "stage": 0,
+          "microbatch": 11,
+          "start": 0.03993170899991583,
+          "finish": 0.045864882999921974
+        },
+        {
+          "stage": 0,
+          "microbatch": 12,
+          "start": 0.04590108599995801,
+          "finish": 0.049457985000003646
+        },
+        {
+          "stage": 1,
+          "microbatch": 11,
+          "start": 0.04593436400000428,
+          "finish": 0.049633973000027254
+        },
+        {
+          "stage": 0,
+          "microbatch": 13,
+          "start": 0.049468369999999595,
+          "finish": 0.052635377000001426
+        },
+        {
+          "stage": 1,
+          "microbatch": 12,
+          "start": 0.0496427659999199,
+          "finish": 0.05269374199997401
+        },
+        {
+          "stage": 1,
+          "microbatch": 13,
+          "start": 0.052699070000016945,
+          "finish": 0.05588055800001257
+        },
+        {
+          "stage": 0,
+          "microbatch": 14,
+          "start": 0.05264047399998617,
+          "finish": 0.05612955399999464
+        },
+        {
+          "stage": 1,
+          "microbatch": 14,
+          "start": 0.056256710999946336,
+          "finish": 0.05942453799991654
+        },
+        {
+          "stage": 0,
+          "microbatch": 15,
+          "start": 0.05614890300000752,
+          "finish": 0.05971033899993472
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.059687610999999995
+        },
+        {
+          "stage": 1,
+          "microbatch": 15,
+          "start": 0.05983439599992835,
+          "finish": 0.06293108900001698
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.052865549
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.058823529411764705,
+      "ideal_balanced_stage_speedup": 1.8823529411764706,
+      "repeat": 2,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 64,
+      "workers": 2,
+      "steady_s": 0.09261774099991271,
+      "end_to_end_s": 0.09327619900000172,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 4.102499997316045e-05,
+          "finish": 0.0010367289999066998
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.0010710189999372233,
+          "finish": 0.0018681609999475768
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.0010541239998929086,
+          "finish": 0.0019173839999666598
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.0019434619999856295,
+          "finish": 0.0026541669999460282
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.0019292609999865817,
+          "finish": 0.003101003999972818
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.003202602999976989,
+          "finish": 0.0045910849999017955
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.0031269019999626835,
+          "finish": 0.004648198999916531
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.004689719999987574,
+          "finish": 0.005989480999915031
+        },
+        {
+          "stage": 0,
+          "microbatch": 4,
+          "start": 0.004667326999992838,
+          "finish": 0.006117809999977908
+        },
+        {
+          "stage": 1,
+          "microbatch": 4,
+          "start": 0.0061591399999088026,
+          "finish": 0.007492790999890531
+        },
+        {
+          "stage": 0,
+          "microbatch": 5,
+          "start": 0.006136987999980192,
+          "finish": 0.0075630549999914365
+        },
+        {
+          "stage": 1,
+          "microbatch": 5,
+          "start": 0.007601862000001347,
+          "finish": 0.008966577999899528
+        },
+        {
+          "stage": 0,
+          "microbatch": 6,
+          "start": 0.007581250999919575,
+          "finish": 0.009016971999926682
+        },
+        {
+          "stage": 1,
+          "microbatch": 6,
+          "start": 0.00905059199999414,
+          "finish": 0.010413114999892059
+        },
+        {
+          "stage": 0,
+          "microbatch": 7,
+          "start": 0.009032765999904768,
+          "finish": 0.010450499999933527
+        },
+        {
+          "stage": 1,
+          "microbatch": 7,
+          "start": 0.010471390999896357,
+          "finish": 0.011793414999942797
+        },
+        {
+          "stage": 0,
+          "microbatch": 8,
+          "start": 0.010463518999927146,
+          "finish": 0.011868043999925248
+        },
+        {
+          "stage": 1,
+          "microbatch": 8,
+          "start": 0.0118927009999652,
+          "finish": 0.013276184999995166
+        },
+        {
+          "stage": 0,
+          "microbatch": 9,
+          "start": 0.011882204999892565,
+          "finish": 0.013331545999903938
+        },
+        {
+          "stage": 1,
+          "microbatch": 9,
+          "start": 0.013366396999913377,
+          "finish": 0.014706366999917009
+        },
+        {
+          "stage": 0,
+          "microbatch": 10,
+          "start": 0.013343973999894843,
+          "finish": 0.01475031199993282
+        },
+        {
+          "stage": 1,
+          "microbatch": 10,
+          "start": 0.014772774999983085,
+          "finish": 0.01609327599999233
+        },
+        {
+          "stage": 0,
+          "microbatch": 11,
+          "start": 0.014762659999973948,
+          "finish": 0.016147295999985545
+        },
+        {
+          "stage": 1,
+          "microbatch": 11,
+          "start": 0.016167134999932387,
+          "finish": 0.017547754999895915
+        },
+        {
+          "stage": 0,
+          "microbatch": 12,
+          "start": 0.01616036499990514,
+          "finish": 0.017596375999914926
+        },
+        {
+          "stage": 1,
+          "microbatch": 12,
+          "start": 0.01765011499992397,
+          "finish": 0.018959269999982098
+        },
+        {
+          "stage": 0,
+          "microbatch": 13,
+          "start": 0.017610296999919228,
+          "finish": 0.019003935000000638
+        },
+        {
+          "stage": 1,
+          "microbatch": 13,
+          "start": 0.01902716999995846,
+          "finish": 0.020366838999962056
+        },
+        {
+          "stage": 0,
+          "microbatch": 14,
+          "start": 0.01901771599989388,
+          "finish": 0.020413877999999386
+        },
+        {
+          "stage": 1,
+          "microbatch": 14,
+          "start": 0.02043603099991742,
+          "finish": 0.02176593599995158
+        },
+        {
+          "stage": 0,
+          "microbatch": 15,
+          "start": 0.020426566999958595,
+          "finish": 0.02183734099992307
+        },
+        {
+          "stage": 1,
+          "microbatch": 15,
+          "start": 0.021859593999920435,
+          "finish": 0.023155898999903002
+        },
+        {
+          "stage": 0,
+          "microbatch": 16,
+          "start": 0.02185018999989552,
+          "finish": 0.023236958999973467
+        },
+        {
+          "stage": 1,
+          "microbatch": 16,
+          "start": 0.02328989599993747,
+          "finish": 0.02462463899996692
+        },
+        {
+          "stage": 0,
+          "microbatch": 17,
+          "start": 0.023269305999974677,
+          "finish": 0.02467957999999726
+        },
+        {
+          "stage": 1,
+          "microbatch": 17,
+          "start": 0.024701751999941735,
+          "finish": 0.02599908999991385
+        },
+        {
+          "stage": 0,
+          "microbatch": 18,
+          "start": 0.024691987999972298,
+          "finish": 0.026078746999928626
+        },
+        {
+          "stage": 1,
+          "microbatch": 18,
+          "start": 0.026099546999944323,
+          "finish": 0.027433247999965715
+        },
+        {
+          "stage": 0,
+          "microbatch": 19,
+          "start": 0.026092015999893192,
+          "finish": 0.027522238999949877
+        },
+        {
+          "stage": 1,
+          "microbatch": 19,
+          "start": 0.027547115999936977,
+          "finish": 0.028897781999944527
+        },
+        {
+          "stage": 0,
+          "microbatch": 20,
+          "start": 0.027536840999914602,
+          "finish": 0.02894958799993219
+        },
+        {
+          "stage": 1,
+          "microbatch": 20,
+          "start": 0.028982625999901757,
+          "finish": 0.030306542999937847
+        },
+        {
+          "stage": 0,
+          "microbatch": 21,
+          "start": 0.028963297999894166,
+          "finish": 0.03037683599995944
+        },
+        {
+          "stage": 1,
+          "microbatch": 21,
+          "start": 0.030399218999946243,
+          "finish": 0.031717356999934054
+        },
+        {
+          "stage": 0,
+          "microbatch": 22,
+          "start": 0.030389584999966246,
+          "finish": 0.031768662999979824
+        },
+        {
+          "stage": 1,
+          "microbatch": 22,
+          "start": 0.03179267799998797,
+          "finish": 0.0331215119999797
+        },
+        {
+          "stage": 0,
+          "microbatch": 23,
+          "start": 0.031783844999949906,
+          "finish": 0.033191805000001295
+        },
+        {
+          "stage": 1,
+          "microbatch": 23,
+          "start": 0.033266344999901776,
+          "finish": 0.034573647000001984
+        },
+        {
+          "stage": 0,
+          "microbatch": 24,
+          "start": 0.033205364999957965,
+          "finish": 0.03461195299996689
+        },
+        {
+          "stage": 1,
+          "microbatch": 24,
+          "start": 0.03463252399990324,
+          "finish": 0.035940295999921545
+        },
+        {
+          "stage": 0,
+          "microbatch": 25,
+          "start": 0.03462512299995524,
+          "finish": 0.03601107999998021
+        },
+        {
+          "stage": 1,
+          "microbatch": 25,
+          "start": 0.03603106999992178,
+          "finish": 0.03737709899996844
+        },
+        {
+          "stage": 0,
+          "microbatch": 26,
+          "start": 0.036024229999952695,
+          "finish": 0.037457867999933114
+        },
+        {
+          "stage": 1,
+          "microbatch": 26,
+          "start": 0.037481922999972994,
+          "finish": 0.03878451799994309
+        },
+        {
+          "stage": 0,
+          "microbatch": 27,
+          "start": 0.03747191799993743,
+          "finish": 0.0388575149999042
+        },
+        {
+          "stage": 1,
+          "microbatch": 27,
+          "start": 0.0388781059999701,
+          "finish": 0.04019170699996266
+        },
+        {
+          "stage": 0,
+          "microbatch": 28,
+          "start": 0.038870213999985026,
+          "finish": 0.040272925999943254
+        },
+        {
+          "stage": 1,
+          "microbatch": 28,
+          "start": 0.04029511899989302,
+          "finish": 0.04163293599992812
+        },
+        {
+          "stage": 0,
+          "microbatch": 29,
+          "start": 0.040284172999918155,
+          "finish": 0.04169872199997826
+        },
+        {
+          "stage": 1,
+          "microbatch": 29,
+          "start": 0.04171881199999916,
+          "finish": 0.04301746099997672
+        },
+        {
+          "stage": 0,
+          "microbatch": 30,
+          "start": 0.0417117719999851,
+          "finish": 0.04309578599998076
+        },
+        {
+          "stage": 1,
+          "microbatch": 30,
+          "start": 0.04311476399993808,
+          "finish": 0.04442150499994568
+        },
+        {
+          "stage": 0,
+          "microbatch": 31,
+          "start": 0.043107913999961056,
+          "finish": 0.044544575999907465
+        },
+        {
+          "stage": 1,
+          "microbatch": 31,
+          "start": 0.04462588599994888,
+          "finish": 0.04595510999990893
+        },
+        {
+          "stage": 0,
+          "microbatch": 32,
+          "start": 0.04460742899993875,
+          "finish": 0.046019143999956214
+        },
+        {
+          "stage": 1,
+          "microbatch": 32,
+          "start": 0.046064210999929855,
+          "finish": 0.04736404199991284
+        },
+        {
+          "stage": 0,
+          "microbatch": 33,
+          "start": 0.046039403999998285,
+          "finish": 0.04744168599995646
+        },
+        {
+          "stage": 1,
+          "microbatch": 33,
+          "start": 0.04746524099994076,
+          "finish": 0.048725583999953415
+        },
+        {
+          "stage": 0,
+          "microbatch": 34,
+          "start": 0.047454814999923656,
+          "finish": 0.04888129299990851
+        },
+        {
+          "stage": 1,
+          "microbatch": 34,
+          "start": 0.04890602899990881,
+          "finish": 0.050229575000003024
+        },
+        {
+          "stage": 0,
+          "microbatch": 35,
+          "start": 0.048895723999976326,
+          "finish": 0.05028972299999168
+        },
+        {
+          "stage": 1,
+          "microbatch": 35,
+          "start": 0.050311324999938734,
+          "finish": 0.051592618999961815
+        },
+        {
+          "stage": 0,
+          "microbatch": 36,
+          "start": 0.050300849999985076,
+          "finish": 0.05167623199997706
+        },
+        {
+          "stage": 1,
+          "microbatch": 36,
+          "start": 0.05171021199998904,
+          "finish": 0.053056731999959084
+        },
+        {
+          "stage": 0,
+          "microbatch": 37,
+          "start": 0.05168914099999711,
+          "finish": 0.05309314499993434
+        },
+        {
+          "stage": 1,
+          "microbatch": 37,
+          "start": 0.053116018999958214,
+          "finish": 0.054406515999971816
+        },
+        {
+          "stage": 0,
+          "microbatch": 38,
+          "start": 0.053105723999919974,
+          "finish": 0.05450817599989932
+        },
+        {
+          "stage": 1,
+          "microbatch": 38,
+          "start": 0.054533051999897,
+          "finish": 0.055825101999971594
+        },
+        {
+          "stage": 0,
+          "microbatch": 39,
+          "start": 0.054523507999988396,
+          "finish": 0.0559017439999252
+        },
+        {
+          "stage": 1,
+          "microbatch": 39,
+          "start": 0.05592107299992222,
+          "finish": 0.05727181899999323
+        },
+        {
+          "stage": 0,
+          "microbatch": 40,
+          "start": 0.05591417299990553,
+          "finish": 0.057336613999950714
+        },
+        {
+          "stage": 1,
+          "microbatch": 40,
+          "start": 0.05735592199994244,
+          "finish": 0.05865075599990632
+        },
+        {
+          "stage": 0,
+          "microbatch": 41,
+          "start": 0.05734889199993631,
+          "finish": 0.05875277599989204
+        },
+        {
+          "stage": 1,
+          "microbatch": 41,
+          "start": 0.05877500899998722,
+          "finish": 0.06006159999992633
+        },
+        {
+          "stage": 0,
+          "microbatch": 42,
+          "start": 0.05876668599989898,
+          "finish": 0.06015466699989247
+        },
+        {
+          "stage": 1,
+          "microbatch": 42,
+          "start": 0.06017646899999818,
+          "finish": 0.06151257299995905
+        },
+        {
+          "stage": 0,
+          "microbatch": 43,
+          "start": 0.06016941899997619,
+          "finish": 0.061612690999936603
+        },
+        {
+          "stage": 1,
+          "microbatch": 43,
+          "start": 0.06163502299989432,
+          "finish": 0.06292006299997865
+        },
+        {
+          "stage": 0,
+          "microbatch": 44,
+          "start": 0.061626531000001705,
+          "finish": 0.06301105699992604
+        },
+        {
+          "stage": 1,
+          "microbatch": 44,
+          "start": 0.06303112599994165,
+          "finish": 0.06436310499998399
+        },
+        {
+          "stage": 0,
+          "microbatch": 45,
+          "start": 0.06302354499996454,
+          "finish": 0.06442384399997536
+        },
+        {
+          "stage": 1,
+          "microbatch": 45,
+          "start": 0.06444267199992737,
+          "finish": 0.06576909199998227
+        },
+        {
+          "stage": 0,
+          "microbatch": 46,
+          "start": 0.06443629199998213,
+          "finish": 0.06583393699997941
+        },
+        {
+          "stage": 1,
+          "microbatch": 46,
+          "start": 0.06585912399998506,
+          "finish": 0.06718680599999516
+        },
+        {
+          "stage": 0,
+          "microbatch": 47,
+          "start": 0.06584838799994941,
+          "finish": 0.0672319029999926
+        },
+        {
+          "stage": 1,
+          "microbatch": 47,
+          "start": 0.06728018399996927,
+          "finish": 0.06860543199991298
+        },
+        {
+          "stage": 0,
+          "microbatch": 48,
+          "start": 0.06726067499994315,
+          "finish": 0.0686657709999281
+        },
+        {
+          "stage": 1,
+          "microbatch": 48,
+          "start": 0.06868594099989878,
+          "finish": 0.06995528699997067
+        },
+        {
+          "stage": 0,
+          "microbatch": 49,
+          "start": 0.06867867999994814,
+          "finish": 0.07006350599999678
+        },
+        {
+          "stage": 1,
+          "microbatch": 49,
+          "start": 0.07008446699990145,
+          "finish": 0.07137726700000258
+        },
+        {
+          "stage": 0,
+          "microbatch": 50,
+          "start": 0.07007703599992965,
+          "finish": 0.07147634299997208
+        },
+        {
+          "stage": 1,
+          "microbatch": 50,
+          "start": 0.07149667299995599,
+          "finish": 0.07269333199997163
+        },
+        {
+          "stage": 0,
+          "microbatch": 51,
+          "start": 0.07148867099999734,
+          "finish": 0.07294991899993875
+        },
+        {
+          "stage": 1,
+          "microbatch": 51,
+          "start": 0.0729966379999496,
+          "finish": 0.07431460599991624
+        },
+        {
+          "stage": 0,
+          "microbatch": 52,
+          "start": 0.07296941799995693,
+          "finish": 0.07436953599994922
+        },
+        {
+          "stage": 1,
+          "microbatch": 52,
+          "start": 0.07438902499995947,
+          "finish": 0.0756762669999489
+        },
+        {
+          "stage": 0,
+          "microbatch": 53,
+          "start": 0.07438196499992955,
+          "finish": 0.07576879299995198
+        },
+        {
+          "stage": 1,
+          "microbatch": 53,
+          "start": 0.0758053969999537,
+          "finish": 0.0771434749999571
+        },
+        {
+          "stage": 0,
+          "microbatch": 54,
+          "start": 0.0757859489999646,
+          "finish": 0.07719505000000026
+        },
+        {
+          "stage": 1,
+          "microbatch": 54,
+          "start": 0.07722848999992493,
+          "finish": 0.07854768899994724
+        },
+        {
+          "stage": 0,
+          "microbatch": 55,
+          "start": 0.07720944199991209,
+          "finish": 0.07862420199990083
+        },
+        {
+          "stage": 1,
+          "microbatch": 55,
+          "start": 0.07865853199996309,
+          "finish": 0.07996140799991736
+        },
+        {
+          "stage": 0,
+          "microbatch": 56,
+          "start": 0.07863713099993674,
+          "finish": 0.08002470099995662
+        },
+        {
+          "stage": 1,
+          "microbatch": 56,
+          "start": 0.08004432999996425,
+          "finish": 0.08137549699995361
+        },
+        {
+          "stage": 0,
+          "microbatch": 57,
+          "start": 0.0800374099999317,
+          "finish": 0.08146250499999041
+        },
+        {
+          "stage": 1,
+          "microbatch": 57,
+          "start": 0.0814832959999876,
+          "finish": 0.08279593599991131
+        },
+        {
+          "stage": 0,
+          "microbatch": 58,
+          "start": 0.08147587499991005,
+          "finish": 0.082850164999968
+        },
+        {
+          "stage": 1,
+          "microbatch": 58,
+          "start": 0.08287941799994769,
+          "finish": 0.0841729999999643
+        },
+        {
+          "stage": 0,
+          "microbatch": 59,
+          "start": 0.08285829699991609,
+          "finish": 0.08427335799990487
+        },
+        {
+          "stage": 1,
+          "microbatch": 59,
+          "start": 0.08429268599991246,
+          "finish": 0.08559165599990592
+        },
+        {
+          "stage": 0,
+          "microbatch": 60,
+          "start": 0.08428496499993798,
+          "finish": 0.08569923400000334
+        },
+        {
+          "stage": 1,
+          "microbatch": 60,
+          "start": 0.08572017499989215,
+          "finish": 0.087012123999898
+        },
+        {
+          "stage": 0,
+          "microbatch": 61,
+          "start": 0.08571237299997847,
+          "finish": 0.08709847099999024
+        },
+        {
+          "stage": 1,
+          "microbatch": 61,
+          "start": 0.08712162499989518,
+          "finish": 0.0884255219999659
+        },
+        {
+          "stage": 0,
+          "microbatch": 62,
+          "start": 0.08711169099990457,
+          "finish": 0.08853537400000278
+        },
+        {
+          "stage": 1,
+          "microbatch": 62,
+          "start": 0.08856090099993708,
+          "finish": 0.08985066699995059
+        },
+        {
+          "stage": 0,
+          "microbatch": 63,
+          "start": 0.08854648999999881,
+          "finish": 0.08993137599998136
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.08973170600000001
+        },
+        {
+          "stage": 1,
+          "microbatch": 63,
+          "start": 0.09001355699990654,
+          "finish": 0.09073813199995584
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.083495385
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.015384615384615385,
+      "ideal_balanced_stage_speedup": 1.9692307692307693,
+      "repeat": 0,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 64,
+      "workers": 2,
+      "steady_s": 0.09128725000005034,
+      "end_to_end_s": 0.09164433500006908,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.0790999971941346e-05,
+          "finish": 0.0013058050000154253
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.0014125769999964177,
+          "finish": 0.0022032489999901372
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.0013836000000537751,
+          "finish": 0.00238262899995334
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.0024133880000363206,
+          "finish": 0.003095892000033018
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.0023985719999473076,
+          "finish": 0.0033454839999649266
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.0033743510000476817,
+          "finish": 0.004048561999979938
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.003359885000008944,
+          "finish": 0.004310672999963572
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.004340651999996226,
+          "finish": 0.005038477999960378
+        },
+        {
+          "stage": 0,
+          "microbatch": 4,
+          "start": 0.004324844000052508,
+          "finish": 0.005435697000052642
+        },
+        {
+          "stage": 1,
+          "microbatch": 4,
+          "start": 0.005464663999987351,
+          "finish": 0.006135129999961464
+        },
+        {
+          "stage": 0,
+          "microbatch": 5,
+          "start": 0.005451519999951415,
+          "finish": 0.006444050000027346
+        },
+        {
+          "stage": 1,
+          "microbatch": 5,
+          "start": 0.006472646000020177,
+          "finish": 0.007136833000004117
+        },
+        {
+          "stage": 0,
+          "microbatch": 6,
+          "start": 0.006459191999965697,
+          "finish": 0.007706665999990037
+        },
+        {
+          "stage": 1,
+          "microbatch": 6,
+          "start": 0.0077418619999889415,
+          "finish": 0.008529429999953209
+        },
+        {
+          "stage": 0,
+          "microbatch": 7,
+          "start": 0.0077217880000262085,
+          "finish": 0.008669631999964622
+        },
+        {
+          "stage": 1,
+          "microbatch": 7,
+          "start": 0.008751026000027196,
+          "finish": 0.009712700000022778
+        },
+        {
+          "stage": 0,
+          "microbatch": 8,
+          "start": 0.008682830999987345,
+          "finish": 0.009720335999986673
+        },
+        {
+          "stage": 0,
+          "microbatch": 9,
+          "start": 0.009733815999993567,
+          "finish": 0.010558489000004556
+        },
+        {
+          "stage": 1,
+          "microbatch": 8,
+          "start": 0.009788450999963061,
+          "finish": 0.010868308999988585
+        },
+        {
+          "stage": 1,
+          "microbatch": 9,
+          "start": 0.010874026999999842,
+          "finish": 0.011596599999961654
+        },
+        {
+          "stage": 0,
+          "microbatch": 10,
+          "start": 0.010561502999962613,
+          "finish": 0.011620680999953947
+        },
+        {
+          "stage": 1,
+          "microbatch": 10,
+          "start": 0.01165223199996035,
+          "finish": 0.012407361999976274
+        },
+        {
+          "stage": 0,
+          "microbatch": 11,
+          "start": 0.011636623999947915,
+          "finish": 0.012615984000035496
+        },
+        {
+          "stage": 1,
+          "microbatch": 11,
+          "start": 0.01264724500003922,
+          "finish": 0.01341858900002535
+        },
+        {
+          "stage": 0,
+          "microbatch": 12,
+          "start": 0.012629454000034457,
+          "finish": 0.013571809000040957
+        },
+        {
+          "stage": 1,
+          "microbatch": 12,
+          "start": 0.013599624999983462,
+          "finish": 0.01434882600005949
+        },
+        {
+          "stage": 0,
+          "microbatch": 13,
+          "start": 0.013585609999950066,
+          "finish": 0.014394839000033244
+        },
+        {
+          "stage": 1,
+          "microbatch": 13,
+          "start": 0.014411919000053786,
+          "finish": 0.015079950999961511
+        },
+        {
+          "stage": 0,
+          "microbatch": 14,
+          "start": 0.014405225000018618,
+          "finish": 0.015520454000011341
+        },
+        {
+          "stage": 1,
+          "microbatch": 14,
+          "start": 0.015548831000046448,
+          "finish": 0.016258473999982925
+        },
+        {
+          "stage": 0,
+          "microbatch": 15,
+          "start": 0.015535506999981408,
+          "finish": 0.016523658999972213
+        },
+        {
+          "stage": 1,
+          "microbatch": 15,
+          "start": 0.016548851000038667,
+          "finish": 0.01721265699995911
+        },
+        {
+          "stage": 0,
+          "microbatch": 16,
+          "start": 0.016536257999973714,
+          "finish": 0.01751656900000853
+        },
+        {
+          "stage": 1,
+          "microbatch": 16,
+          "start": 0.017544755000017176,
+          "finish": 0.018203313999947568
+        },
+        {
+          "stage": 0,
+          "microbatch": 17,
+          "start": 0.017531942000005074,
+          "finish": 0.018370153999967442
+        },
+        {
+          "stage": 1,
+          "microbatch": 17,
+          "start": 0.01839410399998087,
+          "finish": 0.019055026000046382
+        },
+        {
+          "stage": 0,
+          "microbatch": 18,
+          "start": 0.018382543000029727,
+          "finish": 0.019305249000012736
+        },
+        {
+          "stage": 1,
+          "microbatch": 18,
+          "start": 0.019331843000031768,
+          "finish": 0.019992604999970354
+        },
+        {
+          "stage": 0,
+          "microbatch": 19,
+          "start": 0.019317967999995744,
+          "finish": 0.020286651999981586
+        },
+        {
+          "stage": 1,
+          "microbatch": 19,
+          "start": 0.020312705000037568,
+          "finish": 0.021071249999977226
+        },
+        {
+          "stage": 0,
+          "microbatch": 20,
+          "start": 0.020299951999959376,
+          "finish": 0.02135966000003009
+        },
+        {
+          "stage": 1,
+          "microbatch": 20,
+          "start": 0.02145540499998333,
+          "finish": 0.02212957599999754
+        },
+        {
+          "stage": 0,
+          "microbatch": 21,
+          "start": 0.021429552999961743,
+          "finish": 0.022326070999952208
+        },
+        {
+          "stage": 1,
+          "microbatch": 21,
+          "start": 0.02235535800002708,
+          "finish": 0.023019213999987187
+        },
+        {
+          "stage": 0,
+          "microbatch": 22,
+          "start": 0.02234014099997239,
+          "finish": 0.023314073000051394
+        },
+        {
+          "stage": 1,
+          "microbatch": 22,
+          "start": 0.02334025599998313,
+          "finish": 0.024014406999981475
+        },
+        {
+          "stage": 0,
+          "microbatch": 23,
+          "start": 0.023327762999997503,
+          "finish": 0.024292431000048964
+        },
+        {
+          "stage": 1,
+          "microbatch": 23,
+          "start": 0.024318624999978056,
+          "finish": 0.025022850000027574
+        },
+        {
+          "stage": 0,
+          "microbatch": 24,
+          "start": 0.02430559100002938,
+          "finish": 0.025507959000037772
+        },
+        {
+          "stage": 1,
+          "microbatch": 24,
+          "start": 0.02562330299997484,
+          "finish": 0.026325465000013537
+        },
+        {
+          "stage": 0,
+          "microbatch": 25,
+          "start": 0.025597609999977067,
+          "finish": 0.02652784800000063
+        },
+        {
+          "stage": 1,
+          "microbatch": 25,
+          "start": 0.026553831000001082,
+          "finish": 0.027323302000013427
+        },
+        {
+          "stage": 0,
+          "microbatch": 26,
+          "start": 0.026542229000028783,
+          "finish": 0.027528359000029923
+        },
+        {
+          "stage": 1,
+          "microbatch": 26,
+          "start": 0.027586869000060688,
+          "finish": 0.02829436000001806
+        },
+        {
+          "stage": 0,
+          "microbatch": 27,
+          "start": 0.027545594000002893,
+          "finish": 0.02864799500002846
+        },
+        {
+          "stage": 1,
+          "microbatch": 27,
+          "start": 0.028680036999958247,
+          "finish": 0.029457780000029743
+        },
+        {
+          "stage": 0,
+          "microbatch": 28,
+          "start": 0.028662255999961417,
+          "finish": 0.029704908999974577
+        },
+        {
+          "stage": 1,
+          "microbatch": 28,
+          "start": 0.029740825999965637,
+          "finish": 0.030435176999958458
+        },
+        {
+          "stage": 0,
+          "microbatch": 29,
+          "start": 0.02971974100000807,
+          "finish": 0.030743985999947654
+        },
+        {
+          "stage": 1,
+          "microbatch": 29,
+          "start": 0.030775347000030706,
+          "finish": 0.03148383899997498
+        },
+        {
+          "stage": 0,
+          "microbatch": 30,
+          "start": 0.030757887000049777,
+          "finish": 0.03188483400003861
+        },
+        {
+          "stage": 0,
+          "microbatch": 31,
+          "start": 0.03190084699997442,
+          "finish": 0.032745479000027444
+        },
+        {
+          "stage": 1,
+          "microbatch": 30,
+          "start": 0.03191817699996591,
+          "finish": 0.03290827299997545
+        },
+        {
+          "stage": 0,
+          "microbatch": 32,
+          "start": 0.0327484629999617,
+          "finish": 0.033648215999960485
+        },
+        {
+          "stage": 1,
+          "microbatch": 31,
+          "start": 0.032914081000058104,
+          "finish": 0.03368936100002884
+        },
+        {
+          "stage": 1,
+          "microbatch": 32,
+          "start": 0.03369479900004535,
+          "finish": 0.034393586999954096
+        },
+        {
+          "stage": 0,
+          "microbatch": 33,
+          "start": 0.033652201999984754,
+          "finish": 0.03450812100004441
+        },
+        {
+          "stage": 1,
+          "microbatch": 33,
+          "start": 0.03453751799997917,
+          "finish": 0.03520582099997682
+        },
+        {
+          "stage": 0,
+          "microbatch": 34,
+          "start": 0.034523032000038256,
+          "finish": 0.035577151999973466
+        },
+        {
+          "stage": 1,
+          "microbatch": 34,
+          "start": 0.03560810199996922,
+          "finish": 0.03629906799994842
+        },
+        {
+          "stage": 0,
+          "microbatch": 35,
+          "start": 0.035593897000012475,
+          "finish": 0.03671676800001933
+        },
+        {
+          "stage": 1,
+          "microbatch": 35,
+          "start": 0.036768649000009646,
+          "finish": 0.037481135999996695
+        },
+        {
+          "stage": 0,
+          "microbatch": 36,
+          "start": 0.036732250999989446,
+          "finish": 0.03758612599995104
+        },
+        {
+          "stage": 1,
+          "microbatch": 36,
+          "start": 0.03761468300001525,
+          "finish": 0.03830459699997846
+        },
+        {
+          "stage": 0,
+          "microbatch": 37,
+          "start": 0.03759998700002143,
+          "finish": 0.03850453699999434
+        },
+        {
+          "stage": 1,
+          "microbatch": 37,
+          "start": 0.03853012900003705,
+          "finish": 0.03920017400002962
+        },
+        {
+          "stage": 0,
+          "microbatch": 38,
+          "start": 0.038517985999988014,
+          "finish": 0.03943793899998127
+        },
+        {
+          "stage": 1,
+          "microbatch": 38,
+          "start": 0.03946768699995573,
+          "finish": 0.04013692099999844
+        },
+        {
+          "stage": 0,
+          "microbatch": 39,
+          "start": 0.03945301099997778,
+          "finish": 0.040356199000029847
+        },
+        {
+          "stage": 1,
+          "microbatch": 39,
+          "start": 0.04038131100003284,
+          "finish": 0.041220334000058756
+        },
+        {
+          "stage": 0,
+          "microbatch": 40,
+          "start": 0.0403692280000314,
+          "finish": 0.04129777399998602
+        },
+        {
+          "stage": 1,
+          "microbatch": 40,
+          "start": 0.04132891400001881,
+          "finish": 0.04203950900000564
+        },
+        {
+          "stage": 0,
+          "microbatch": 41,
+          "start": 0.04131596000001991,
+          "finish": 0.04209853099996508
+        },
+        {
+          "stage": 1,
+          "microbatch": 41,
+          "start": 0.042122230000018135,
+          "finish": 0.04289647899997817
+        },
+        {
+          "stage": 0,
+          "microbatch": 42,
+          "start": 0.04211044800001673,
+          "finish": 0.043098321000002215
+        },
+        {
+          "stage": 1,
+          "microbatch": 42,
+          "start": 0.043167887999970844,
+          "finish": 0.043962426000007326
+        },
+        {
+          "stage": 0,
+          "microbatch": 43,
+          "start": 0.043154433000040626,
+          "finish": 0.04457147699997677
+        },
+        {
+          "stage": 1,
+          "microbatch": 43,
+          "start": 0.0446720989999676,
+          "finish": 0.045361802999991596
+        },
+        {
+          "stage": 0,
+          "microbatch": 44,
+          "start": 0.04459293800005071,
+          "finish": 0.0456020520000493
+        },
+        {
+          "stage": 0,
+          "microbatch": 45,
+          "start": 0.04561744499994802,
+          "finish": 0.04647624699998687
+        },
+        {
+          "stage": 1,
+          "microbatch": 44,
+          "start": 0.045629556999983834,
+          "finish": 0.046580635000054826
+        },
+        {
+          "stage": 1,
+          "microbatch": 45,
+          "start": 0.0465869649999604,
+          "finish": 0.0472754969999869
+        },
+        {
+          "stage": 0,
+          "microbatch": 46,
+          "start": 0.04648019299997941,
+          "finish": 0.047635090999960994
+        },
+        {
+          "stage": 1,
+          "microbatch": 46,
+          "start": 0.04766884499997559,
+          "finish": 0.0483617840000079
+        },
+        {
+          "stage": 0,
+          "microbatch": 47,
+          "start": 0.04765171500002907,
+          "finish": 0.048537807999991855
+        },
+        {
+          "stage": 1,
+          "microbatch": 47,
+          "start": 0.049097335000055864,
+          "finish": 0.04987724199997956
+        },
+        {
+          "stage": 0,
+          "microbatch": 48,
+          "start": 0.04855505299997276,
+          "finish": 0.05026638900005764
+        },
+        {
+          "stage": 1,
+          "microbatch": 48,
+          "start": 0.0503109899999572,
+          "finish": 0.050990799000032894
+        },
+        {
+          "stage": 0,
+          "microbatch": 49,
+          "start": 0.05028586800005996,
+          "finish": 0.05119557499995153
+        },
+        {
+          "stage": 1,
+          "microbatch": 49,
+          "start": 0.05122370100002627,
+          "finish": 0.051974484999959714
+        },
+        {
+          "stage": 0,
+          "microbatch": 50,
+          "start": 0.051209825999990244,
+          "finish": 0.05246090599996478
+        },
+        {
+          "stage": 1,
+          "microbatch": 50,
+          "start": 0.05251852499998222,
+          "finish": 0.0534059699999716
+        },
+        {
+          "stage": 0,
+          "microbatch": 51,
+          "start": 0.0524768090000407,
+          "finish": 0.053583746999947834
+        },
+        {
+          "stage": 1,
+          "microbatch": 51,
+          "start": 0.053614846999948895,
+          "finish": 0.054355485999963093
+        },
+        {
+          "stage": 0,
+          "microbatch": 52,
+          "start": 0.05360067100002652,
+          "finish": 0.054560473000037746
+        },
+        {
+          "stage": 0,
+          "microbatch": 53,
+          "start": 0.054579961000058574,
+          "finish": 0.05555312199999207
+        },
+        {
+          "stage": 1,
+          "microbatch": 52,
+          "start": 0.05466747499997382,
+          "finish": 0.05557662100000016
+        },
+        {
+          "stage": 1,
+          "microbatch": 53,
+          "start": 0.055582270000059,
+          "finish": 0.056307917000026464
+        },
+        {
+          "stage": 0,
+          "microbatch": 54,
+          "start": 0.05555723800000578,
+          "finish": 0.05642669700000624
+        },
+        {
+          "stage": 1,
+          "microbatch": 54,
+          "start": 0.05653376899999785,
+          "finish": 0.057357550000006086
+        },
+        {
+          "stage": 0,
+          "microbatch": 55,
+          "start": 0.05644229999995787,
+          "finish": 0.05742353200002981
+        },
+        {
+          "stage": 1,
+          "microbatch": 55,
+          "start": 0.05744355599995288,
+          "finish": 0.05825580099997296
+        },
+        {
+          "stage": 0,
+          "microbatch": 56,
+          "start": 0.057435910999970474,
+          "finish": 0.05831268999997974
+        },
+        {
+          "stage": 1,
+          "microbatch": 56,
+          "start": 0.058338182000056804,
+          "finish": 0.059060242999976253
+        },
+        {
+          "stage": 0,
+          "microbatch": 57,
+          "start": 0.058325058000036734,
+          "finish": 0.05920940800001517
+        },
+        {
+          "stage": 1,
+          "microbatch": 57,
+          "start": 0.059260216999973636,
+          "finish": 0.05992673699995521
+        },
+        {
+          "stage": 0,
+          "microbatch": 58,
+          "start": 0.05922645299995111,
+          "finish": 0.060097513999949115
+        },
+        {
+          "stage": 0,
+          "microbatch": 59,
+          "start": 0.06011145399997986,
+          "finish": 0.06107590199997048
+        },
+        {
+          "stage": 1,
+          "microbatch": 58,
+          "start": 0.0601240380000263,
+          "finish": 0.06110687299997153
+        },
+        {
+          "stage": 1,
+          "microbatch": 59,
+          "start": 0.06111283100005949,
+          "finish": 0.06276047899996229
+        },
+        {
+          "stage": 0,
+          "microbatch": 60,
+          "start": 0.06108023900003445,
+          "finish": 0.06302745100003904
+        },
+        {
+          "stage": 1,
+          "microbatch": 60,
+          "start": 0.06316256499997053,
+          "finish": 0.06387205800001539
+        },
+        {
+          "stage": 0,
+          "microbatch": 61,
+          "start": 0.06312359300000026,
+          "finish": 0.06442506600001252
+        },
+        {
+          "stage": 1,
+          "microbatch": 61,
+          "start": 0.0644588710000562,
+          "finish": 0.06520191300000988
+        },
+        {
+          "stage": 0,
+          "microbatch": 62,
+          "start": 0.06444416399995134,
+          "finish": 0.06568346599999586
+        },
+        {
+          "stage": 1,
+          "microbatch": 62,
+          "start": 0.06571753100001843,
+          "finish": 0.06644894600003681
+        },
+        {
+          "stage": 0,
+          "microbatch": 63,
+          "start": 0.06570183300004828,
+          "finish": 0.06687271500004499
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.066855228
+        },
+        {
+          "stage": 1,
+          "microbatch": 63,
+          "start": 0.06878240200001073,
+          "finish": 0.06956609400003799
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.04958824
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.015384615384615385,
+      "ideal_balanced_stage_speedup": 1.9692307692307693,
+      "repeat": 1,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    },
+    {
+      "microbatches": 64,
+      "workers": 2,
+      "steady_s": 0.10730068300006224,
+      "end_to_end_s": 0.10776294200002212,
+      "events": [
+        {
+          "stage": 0,
+          "microbatch": 0,
+          "start": 3.870200009714608e-05,
+          "finish": 0.000989691000086168
+        },
+        {
+          "stage": 0,
+          "microbatch": 1,
+          "start": 0.0010072970000010173,
+          "finish": 0.0019073299999945448
+        },
+        {
+          "stage": 1,
+          "microbatch": 0,
+          "start": 0.0010256380001010257,
+          "finish": 0.001924890000054802
+        },
+        {
+          "stage": 0,
+          "microbatch": 2,
+          "start": 0.00191246700001102,
+          "finish": 0.0026867660000107207
+        },
+        {
+          "stage": 1,
+          "microbatch": 1,
+          "start": 0.0019305490000078862,
+          "finish": 0.0029497970000420537
+        },
+        {
+          "stage": 0,
+          "microbatch": 3,
+          "start": 0.002689870000040173,
+          "finish": 0.0036050060000434314
+        },
+        {
+          "stage": 1,
+          "microbatch": 2,
+          "start": 0.0029556760000559734,
+          "finish": 0.003678008000065347
+        },
+        {
+          "stage": 1,
+          "microbatch": 3,
+          "start": 0.0036811630000102014,
+          "finish": 0.004601476000061666
+        },
+        {
+          "stage": 0,
+          "microbatch": 4,
+          "start": 0.003609182000104738,
+          "finish": 0.004879069000025993
+        },
+        {
+          "stage": 0,
+          "microbatch": 5,
+          "start": 0.004896625000014865,
+          "finish": 0.005826532000014595
+        },
+        {
+          "stage": 1,
+          "microbatch": 4,
+          "start": 0.004919814000004408,
+          "finish": 0.005860407000000123
+        },
+        {
+          "stage": 1,
+          "microbatch": 5,
+          "start": 0.005866155000035178,
+          "finish": 0.006533276000027399
+        },
+        {
+          "stage": 0,
+          "microbatch": 6,
+          "start": 0.00583127900006275,
+          "finish": 0.006799863000082951
+        },
+        {
+          "stage": 0,
+          "microbatch": 7,
+          "start": 0.006815746000029321,
+          "finish": 0.007675731000063024
+        },
+        {
+          "stage": 1,
+          "microbatch": 6,
+          "start": 0.00683099300010781,
+          "finish": 0.007730366000032518
+        },
+        {
+          "stage": 1,
+          "microbatch": 7,
+          "start": 0.0077352330000621805,
+          "finish": 0.008798766000040814
+        },
+        {
+          "stage": 0,
+          "microbatch": 8,
+          "start": 0.00767931600000793,
+          "finish": 0.008850938000023234
+        },
+        {
+          "stage": 1,
+          "microbatch": 8,
+          "start": 0.00888249900003757,
+          "finish": 0.009613865000005717
+        },
+        {
+          "stage": 0,
+          "microbatch": 9,
+          "start": 0.008866982000085954,
+          "finish": 0.00964104000001953
+        },
+        {
+          "stage": 0,
+          "microbatch": 10,
+          "start": 0.009657044000050519,
+          "finish": 0.010680699000090499
+        },
+        {
+          "stage": 1,
+          "microbatch": 9,
+          "start": 0.009904963000053613,
+          "finish": 0.010696767000013097
+        },
+        {
+          "stage": 1,
+          "microbatch": 10,
+          "start": 0.01072087200009264,
+          "finish": 0.011390196000093056
+        },
+        {
+          "stage": 0,
+          "microbatch": 11,
+          "start": 0.010686447000011867,
+          "finish": 0.011616444000082993
+        },
+        {
+          "stage": 1,
+          "microbatch": 11,
+          "start": 0.011648446000094737,
+          "finish": 0.012593535000064549
+        },
+        {
+          "stage": 0,
+          "microbatch": 12,
+          "start": 0.01163240800008225,
+          "finish": 0.012638287000072523
+        },
+        {
+          "stage": 1,
+          "microbatch": 12,
+          "start": 0.012668235000091954,
+          "finish": 0.013808271000016248
+        },
+        {
+          "stage": 0,
+          "microbatch": 13,
+          "start": 0.012654240000074424,
+          "finish": 0.013905069000088588
+        },
+        {
+          "stage": 1,
+          "microbatch": 13,
+          "start": 0.013950270000009368,
+          "finish": 0.01526349100004154
+        },
+        {
+          "stage": 0,
+          "microbatch": 14,
+          "start": 0.01392490800003543,
+          "finish": 0.01530280400004358
+        },
+        {
+          "stage": 1,
+          "microbatch": 14,
+          "start": 0.015339803000074426,
+          "finish": 0.016683058000012352
+        },
+        {
+          "stage": 0,
+          "microbatch": 15,
+          "start": 0.015322092000019438,
+          "finish": 0.016752295000060258
+        },
+        {
+          "stage": 1,
+          "microbatch": 15,
+          "start": 0.016791858000033244,
+          "finish": 0.018098970000096415
+        },
+        {
+          "stage": 0,
+          "microbatch": 16,
+          "start": 0.016771473000062542,
+          "finish": 0.018167165000022578
+        },
+        {
+          "stage": 1,
+          "microbatch": 16,
+          "start": 0.018193639000060102,
+          "finish": 0.019500681000067743
+        },
+        {
+          "stage": 0,
+          "microbatch": 17,
+          "start": 0.01818208700001378,
+          "finish": 0.01956673300003331
+        },
+        {
+          "stage": 1,
+          "microbatch": 17,
+          "start": 0.019588520000070275,
+          "finish": 0.0210396130000845
+        },
+        {
+          "stage": 0,
+          "microbatch": 18,
+          "start": 0.019581294000090566,
+          "finish": 0.021103983000102744
+        },
+        {
+          "stage": 1,
+          "microbatch": 18,
+          "start": 0.02114284500009944,
+          "finish": 0.022485119000066334
+        },
+        {
+          "stage": 0,
+          "microbatch": 19,
+          "start": 0.02111975600007554,
+          "finish": 0.022522259000083977
+        },
+        {
+          "stage": 0,
+          "microbatch": 20,
+          "start": 0.022528358000045046,
+          "finish": 0.02393581700005143
+        },
+        {
+          "stage": 1,
+          "microbatch": 19,
+          "start": 0.02266472300004807,
+          "finish": 0.0240513410000176
+        },
+        {
+          "stage": 1,
+          "microbatch": 20,
+          "start": 0.024057581000079153,
+          "finish": 0.025357462000101805
+        },
+        {
+          "stage": 0,
+          "microbatch": 21,
+          "start": 0.0239420960000416,
+          "finish": 0.025384968000025765
+        },
+        {
+          "stage": 1,
+          "microbatch": 21,
+          "start": 0.025406594000060068,
+          "finish": 0.02676476100009495
+        },
+        {
+          "stage": 0,
+          "microbatch": 22,
+          "start": 0.02539874800004327,
+          "finish": 0.026798566000024948
+        },
+        {
+          "stage": 1,
+          "microbatch": 22,
+          "start": 0.02681790900010128,
+          "finish": 0.028197618000035618
+        },
+        {
+          "stage": 0,
+          "microbatch": 23,
+          "start": 0.02681039399999463,
+          "finish": 0.028219946000035634
+        },
+        {
+          "stage": 1,
+          "microbatch": 23,
+          "start": 0.028240130000085628,
+          "finish": 0.029557868000097187
+        },
+        {
+          "stage": 0,
+          "microbatch": 24,
+          "start": 0.028232434000074136,
+          "finish": 0.029616920000080427
+        },
+        {
+          "stage": 1,
+          "microbatch": 24,
+          "start": 0.029639618000032897,
+          "finish": 0.030961942000089948
+        },
+        {
+          "stage": 0,
+          "microbatch": 25,
+          "start": 0.029629859000010583,
+          "finish": 0.031031509000058577
+        },
+        {
+          "stage": 1,
+          "microbatch": 25,
+          "start": 0.031054458000085106,
+          "finish": 0.03238372200007689
+        },
+        {
+          "stage": 0,
+          "microbatch": 26,
+          "start": 0.031046191000086765,
+          "finish": 0.03246075100003054
+        },
+        {
+          "stage": 1,
+          "microbatch": 26,
+          "start": 0.032481936000067435,
+          "finish": 0.033804431000021395
+        },
+        {
+          "stage": 0,
+          "microbatch": 27,
+          "start": 0.03247498200005339,
+          "finish": 0.03387214600002153
+        },
+        {
+          "stage": 1,
+          "microbatch": 27,
+          "start": 0.03392414700010704,
+          "finish": 0.035239810999996735
+        },
+        {
+          "stage": 0,
+          "microbatch": 28,
+          "start": 0.03388428300002033,
+          "finish": 0.03529204300002675
+        },
+        {
+          "stage": 1,
+          "microbatch": 28,
+          "start": 0.035314620999997715,
+          "finish": 0.036352317000023504
+        },
+        {
+          "stage": 0,
+          "microbatch": 29,
+          "start": 0.03530436100004408,
+          "finish": 0.03708841400009533
+        },
+        {
+          "stage": 1,
+          "microbatch": 29,
+          "start": 0.03714379000007284,
+          "finish": 0.03846077600007902
+        },
+        {
+          "stage": 0,
+          "microbatch": 30,
+          "start": 0.0371117580000373,
+          "finish": 0.03851018400007433
+        },
+        {
+          "stage": 1,
+          "microbatch": 30,
+          "start": 0.038548355000102674,
+          "finish": 0.03988208600003418
+        },
+        {
+          "stage": 0,
+          "microbatch": 31,
+          "start": 0.038524686000073416,
+          "finish": 0.03994111800000155
+        },
+        {
+          "stage": 1,
+          "microbatch": 31,
+          "start": 0.04000306400007503,
+          "finish": 0.041325728000060735
+        },
+        {
+          "stage": 0,
+          "microbatch": 32,
+          "start": 0.039988478000054783,
+          "finish": 0.04137712900001134
+        },
+        {
+          "stage": 1,
+          "microbatch": 32,
+          "start": 0.041399697000088054,
+          "finish": 0.042722843000092325
+        },
+        {
+          "stage": 0,
+          "microbatch": 33,
+          "start": 0.04139182100004746,
+          "finish": 0.04283096700009992
+        },
+        {
+          "stage": 1,
+          "microbatch": 33,
+          "start": 0.04287094000005709,
+          "finish": 0.044208888000071056
+        },
+        {
+          "stage": 0,
+          "microbatch": 34,
+          "start": 0.04284810200010725,
+          "finish": 0.04426434500010146
+        },
+        {
+          "stage": 1,
+          "microbatch": 34,
+          "start": 0.04428651200009881,
+          "finish": 0.04557812100006231
+        },
+        {
+          "stage": 0,
+          "microbatch": 35,
+          "start": 0.04427830500003438,
+          "finish": 0.04566467300003296
+        },
+        {
+          "stage": 1,
+          "microbatch": 35,
+          "start": 0.04569053600005191,
+          "finish": 0.05827596000005997
+        },
+        {
+          "stage": 0,
+          "microbatch": 36,
+          "start": 0.045679986000095596,
+          "finish": 0.06039473000009821
+        },
+        {
+          "stage": 1,
+          "microbatch": 36,
+          "start": 0.06087882700001046,
+          "finish": 0.06218215300009433
+        },
+        {
+          "stage": 0,
+          "microbatch": 37,
+          "start": 0.06052248800006055,
+          "finish": 0.0623796190000121
+        },
+        {
+          "stage": 1,
+          "microbatch": 37,
+          "start": 0.0624197220000724,
+          "finish": 0.06379796900000656
+        },
+        {
+          "stage": 0,
+          "microbatch": 38,
+          "start": 0.06239811600005396,
+          "finish": 0.06392407000009825
+        },
+        {
+          "stage": 0,
+          "microbatch": 39,
+          "start": 0.0639422360000026,
+          "finish": 0.06533955100007915
+        },
+        {
+          "stage": 1,
+          "microbatch": 38,
+          "start": 0.06399113300005865,
+          "finish": 0.06535456700009945
+        },
+        {
+          "stage": 1,
+          "microbatch": 39,
+          "start": 0.06535923400008414,
+          "finish": 0.06684849400005533
+        },
+        {
+          "stage": 0,
+          "microbatch": 40,
+          "start": 0.06534512900009304,
+          "finish": 0.06687558900000568
+        },
+        {
+          "stage": 0,
+          "microbatch": 41,
+          "start": 0.06688897900005486,
+          "finish": 0.06821974600006797
+        },
+        {
+          "stage": 1,
+          "microbatch": 40,
+          "start": 0.06689625400008481,
+          "finish": 0.0683856340000375
+        },
+        {
+          "stage": 0,
+          "microbatch": 42,
+          "start": 0.06822497300004216,
+          "finish": 0.06951338700002907
+        },
+        {
+          "stage": 1,
+          "microbatch": 41,
+          "start": 0.0683908020000672,
+          "finish": 0.06986163400006262
+        },
+        {
+          "stage": 0,
+          "microbatch": 43,
+          "start": 0.0695183550000138,
+          "finish": 0.07086740800002644
+        },
+        {
+          "stage": 1,
+          "microbatch": 42,
+          "start": 0.0699410810000245,
+          "finish": 0.07127552300005391
+        },
+        {
+          "stage": 0,
+          "microbatch": 44,
+          "start": 0.07087250600000061,
+          "finish": 0.07231510600001911
+        },
+        {
+          "stage": 1,
+          "microbatch": 43,
+          "start": 0.0712797190000174,
+          "finish": 0.07257006600002569
+        },
+        {
+          "stage": 0,
+          "microbatch": 45,
+          "start": 0.07232142600003044,
+          "finish": 0.07512002000009943
+        },
+        {
+          "stage": 0,
+          "microbatch": 46,
+          "start": 0.07512668000003941,
+          "finish": 0.07646782200004054
+        },
+        {
+          "stage": 1,
+          "microbatch": 44,
+          "start": 0.074933430000101,
+          "finish": 0.07658148300004086
+        },
+        {
+          "stage": 0,
+          "microbatch": 47,
+          "start": 0.07647323000003325,
+          "finish": 0.0779102620000458
+        },
+        {
+          "stage": 1,
+          "microbatch": 45,
+          "start": 0.07658727200009707,
+          "finish": 0.07793774700007816
+        },
+        {
+          "stage": 0,
+          "microbatch": 48,
+          "start": 0.07791597100003855,
+          "finish": 0.07938126500005183
+        },
+        {
+          "stage": 1,
+          "microbatch": 46,
+          "start": 0.07794345600007091,
+          "finish": 0.0794738460000417
+        },
+        {
+          "stage": 1,
+          "microbatch": 47,
+          "start": 0.07947914300007142,
+          "finish": 0.08081793200005905
+        },
+        {
+          "stage": 0,
+          "microbatch": 49,
+          "start": 0.07938664300002074,
+          "finish": 0.08085262800000237
+        },
+        {
+          "stage": 1,
+          "microbatch": 48,
+          "start": 0.08082305900006759,
+          "finish": 0.08210275100009312
+        },
+        {
+          "stage": 0,
+          "microbatch": 50,
+          "start": 0.08085736500004259,
+          "finish": 0.08228936100010742
+        },
+        {
+          "stage": 1,
+          "microbatch": 49,
+          "start": 0.08210774799999854,
+          "finish": 0.08334651000006943
+        },
+        {
+          "stage": 0,
+          "microbatch": 51,
+          "start": 0.08229398700007096,
+          "finish": 0.0837338340000997
+        },
+        {
+          "stage": 1,
+          "microbatch": 50,
+          "start": 0.08335072600004878,
+          "finish": 0.0846185500000729
+        },
+        {
+          "stage": 0,
+          "microbatch": 52,
+          "start": 0.08373858100003417,
+          "finish": 0.08524157100009688
+        },
+        {
+          "stage": 1,
+          "microbatch": 51,
+          "start": 0.0846233070000153,
+          "finish": 0.08594264700002441
+        },
+        {
+          "stage": 0,
+          "microbatch": 53,
+          "start": 0.08524732000000768,
+          "finish": 0.08666332200004945
+        },
+        {
+          "stage": 1,
+          "microbatch": 52,
+          "start": 0.08594779400004882,
+          "finish": 0.08720620500002951
+        },
+        {
+          "stage": 0,
+          "microbatch": 54,
+          "start": 0.08666748800010282,
+          "finish": 0.08813673800000288
+        },
+        {
+          "stage": 1,
+          "microbatch": 53,
+          "start": 0.0872118130000672,
+          "finish": 0.08849677200009864
+        },
+        {
+          "stage": 0,
+          "microbatch": 55,
+          "start": 0.08814245700000356,
+          "finish": 0.08947043900002427
+        },
+        {
+          "stage": 1,
+          "microbatch": 54,
+          "start": 0.08850255100003324,
+          "finish": 0.08980860100007249
+        },
+        {
+          "stage": 0,
+          "microbatch": 56,
+          "start": 0.08947533600007773,
+          "finish": 0.09103144400000929
+        },
+        {
+          "stage": 1,
+          "microbatch": 55,
+          "start": 0.08981352800003606,
+          "finish": 0.0910884030000716
+        },
+        {
+          "stage": 1,
+          "microbatch": 56,
+          "start": 0.09109282900010385,
+          "finish": 0.09242119200007437
+        },
+        {
+          "stage": 0,
+          "microbatch": 57,
+          "start": 0.09103673200002049,
+          "finish": 0.09246095600008175
+        },
+        {
+          "stage": 1,
+          "microbatch": 57,
+          "start": 0.09250471500001822,
+          "finish": 0.09382914200000414
+        },
+        {
+          "stage": 0,
+          "microbatch": 58,
+          "start": 0.09247978400003376,
+          "finish": 0.09388302700006079
+        },
+        {
+          "stage": 1,
+          "microbatch": 58,
+          "start": 0.09391495800002758,
+          "finish": 0.09520976200008135
+        },
+        {
+          "stage": 0,
+          "microbatch": 59,
+          "start": 0.09389889000010498,
+          "finish": 0.09528187300008994
+        },
+        {
+          "stage": 1,
+          "microbatch": 59,
+          "start": 0.09530211800006327,
+          "finish": 0.09660877900000742
+        },
+        {
+          "stage": 0,
+          "microbatch": 60,
+          "start": 0.09529463200010468,
+          "finish": 0.09669317800000954
+        },
+        {
+          "stage": 1,
+          "microbatch": 60,
+          "start": 0.09675280000010389,
+          "finish": 0.0980463220000729
+        },
+        {
+          "stage": 0,
+          "microbatch": 61,
+          "start": 0.09673017200009326,
+          "finish": 0.09810805800009348
+        },
+        {
+          "stage": 1,
+          "microbatch": 61,
+          "start": 0.09813248900002236,
+          "finish": 0.09941326200009826
+        },
+        {
+          "stage": 0,
+          "microbatch": 62,
+          "start": 0.09812298000008468,
+          "finish": 0.09950353000010637
+        },
+        {
+          "stage": 0,
+          "microbatch": 63,
+          "start": 0.09951641899999686,
+          "finish": 0.10083557800010112
+        },
+        {
+          "stage": 0,
+          "thread_cpu_s": 0.09596634300000001
+        },
+        {
+          "stage": 1,
+          "microbatch": 62,
+          "start": 0.0995248660000243,
+          "finish": 0.10197080200009623
+        },
+        {
+          "stage": 1,
+          "microbatch": 63,
+          "start": 0.10198127700004989,
+          "finish": 0.10269616800007952
+        },
+        {
+          "stage": 1,
+          "thread_cpu_s": 0.09445289200000001
+        }
+      ],
+      "ideal_balanced_stage_bubble_fraction": 0.015384615384615385,
+      "ideal_balanced_stage_speedup": 1.9692307692307693,
+      "repeat": 2,
+      "batch": 8192,
+      "max_abs_error": 0.0
+    }
+  ],
+  "references": {
+    "2048": {
+      "shape": [
+        2048,
+        256
+      ],
+      "sum": -18.446380231962394,
+      "squared_norm": 206513.11021155148
+    },
+    "8192": {
+      "shape": [
+        8192,
+        256
+      ],
+      "sum": 111.29547366944743,
+      "squared_norm": 836403.4491168425
+    }
+  },
+  "note": "Shared-memory CPU threads with native BLAS limited to one thread per kernel. Model parallelism splits hidden units and sums partial outputs. Pipeline is forward inference only, not GPipe training or a GPU measurement. Steady inference includes partition/sum/concatenation, excludes pool warmup."
+}

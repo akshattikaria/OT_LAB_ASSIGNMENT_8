@@ -1,0 +1,8 @@
+{
+  "status": "REJECTED_INCOMPLETE",
+  "latency_records": 660,
+  "expected_latency_records": 750,
+  "batch_records": 22,
+  "expected_batch_records": 25,
+  "reason": "Final audit rejected missing three trial blocks in saved aggregate checkpoints, despite completion messages. Cause not established. Entire protocol rerun; no initial timings enter final conclusions."
+}

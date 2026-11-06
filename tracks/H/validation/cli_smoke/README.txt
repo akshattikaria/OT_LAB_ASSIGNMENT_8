@@ -1,0 +1,1 @@
+Separate functional public-CLI run: 5,000 bookings, one profile/evaluation/write repetition and 20 inserted rows. Main performance results are exclusively under results/. This summary retains actual run/audit metadata; tiny timings are excluded from final conclusions.

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": 188,
+  "benchmark_runs": 24,
+  "benchmark_boots": 4,
+  "full_validated_variants": 4,
+  "upstream_named_tests_per_full_run": 74,
+  "pristine_full_test_pass": true,
+  "note": "All numeric records matched to UART, work units/flags/time conversions checked, source and UART hashes verified. Complete real guest usertests sets and custom invariants verified for all four configurations. No workload timings rerun or reconstructed."
+}

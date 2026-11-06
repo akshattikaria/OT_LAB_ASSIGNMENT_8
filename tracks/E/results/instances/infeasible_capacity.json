@@ -1,0 +1,37 @@
+{
+  "name": "infeasible_capacity",
+  "slot_minutes": 15,
+  "prices": [
+    8,
+    8,
+    8,
+    8
+  ],
+  "capacity_kw": [
+    7,
+    7,
+    7,
+    7
+  ],
+  "vehicles": [
+    {
+      "id": "A",
+      "arrival": 0,
+      "departure": 4,
+      "required_slots": 3,
+      "power_kw": 7.0
+    },
+    {
+      "id": "B",
+      "arrival": 0,
+      "departure": 4,
+      "required_slots": 3,
+      "power_kw": 7.0
+    }
+  ],
+  "metadata": {
+    "source": "synthetic",
+    "scenario": "infeasible_control",
+    "clock_start": "08:00"
+  }
+}

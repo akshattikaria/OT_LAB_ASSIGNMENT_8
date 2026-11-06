@@ -1,0 +1,669 @@
+{
+  "runs": [
+    {
+      "seed": 0,
+      "final_energy": 0.3104642349244929,
+      "exact_ground_energy": -1.0190429700579249,
+      "ground_energy_gap": 1.3295072049824177,
+      "trace": [
+        {
+          "step": 0,
+          "energy_before": 0.4751217037314832,
+          "energy_after": 0.4718636456652085,
+          "postselection_probability": 0.7061365140150357,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 363
+        },
+        {
+          "step": 1,
+          "energy_before": 0.4718636456652085,
+          "energy_after": 0.4678159095809269,
+          "postselection_probability": 0.7067555723541155,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 246
+        },
+        {
+          "step": 2,
+          "energy_before": 0.4678159095809269,
+          "energy_after": 0.46277647110533,
+          "postselection_probability": 0.7075255309339914,
+          "fit_infidelity": 6.661338147750939e-16,
+          "fit_success": false,
+          "fit_evaluations": 417
+        },
+        {
+          "step": 3,
+          "energy_before": 0.46277647110533,
+          "energy_after": 0.4564952946295464,
+          "postselection_probability": 0.7084850626990035,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 156
+        },
+        {
+          "step": 4,
+          "energy_before": 0.4564952946295464,
+          "energy_after": 0.44866565787507817,
+          "postselection_probability": 0.7096820482304032,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 336
+        },
+        {
+          "step": 5,
+          "energy_before": 0.44866565787507817,
+          "energy_after": 0.4389156400233759,
+          "postselection_probability": 0.7111752469285444,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 138
+        },
+        {
+          "step": 6,
+          "energy_before": 0.4389156400233759,
+          "energy_after": 0.42680105313483474,
+          "postselection_probability": 0.7130359412264493,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 390
+        },
+        {
+          "step": 7,
+          "energy_before": 0.42680105313483474,
+          "energy_after": 0.4118020594755068,
+          "postselection_probability": 0.7153493102281481,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 156
+        },
+        {
+          "step": 8,
+          "energy_before": 0.4118020594755068,
+          "energy_after": 0.3933265718708695,
+          "postselection_probability": 0.7182151048155841,
+          "fit_infidelity": 4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 250
+        },
+        {
+          "step": 9,
+          "energy_before": 0.3933265718708695,
+          "energy_after": 0.3707249118311688,
+          "postselection_probability": 0.721747031800131,
+          "fit_infidelity": 6.661338147750939e-16,
+          "fit_success": false,
+          "fit_evaluations": 120
+        },
+        {
+          "step": 10,
+          "energy_before": 0.3707249118311688,
+          "energy_after": 0.34332084863001927,
+          "postselection_probability": 0.7260699904582396,
+          "fit_infidelity": 4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 300
+        },
+        {
+          "step": 11,
+          "energy_before": 0.34332084863001927,
+          "energy_after": 0.3104642349244929,
+          "postselection_probability": 0.7313141775751749,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 156
+        }
+      ],
+      "final_angles": [
+        0.055994766797642904,
+        0.28238263671959424,
+        -0.12665306208110896,
+        0.12260134585237867,
+        -0.17956298902959272,
+        -0.5224293312519469,
+        -0.12371303918391122,
+        -0.12465805529393353
+      ]
+    },
+    {
+      "seed": 1,
+      "final_energy": -0.319473003641299,
+      "exact_ground_energy": -1.0190429700579249,
+      "ground_energy_gap": 0.6995699664166259,
+      "trace": [
+        {
+          "step": 0,
+          "energy_before": 0.3108675974867608,
+          "energy_after": 0.2723948580458876,
+          "postselection_probability": 0.7375198789523101,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 165
+        },
+        {
+          "step": 1,
+          "energy_before": 0.2723948580458876,
+          "energy_after": 0.22825871075742266,
+          "postselection_probability": 0.7448636457744725,
+          "fit_infidelity": 6.661338147750939e-16,
+          "fit_success": false,
+          "fit_evaluations": 398
+        },
+        {
+          "step": 2,
+          "energy_before": 0.22825871075742266,
+          "energy_after": 0.17866728638140802,
+          "postselection_probability": 0.7532892530022546,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 156
+        },
+        {
+          "step": 3,
+          "energy_before": 0.17866728638140802,
+          "energy_after": 0.12423343942109843,
+          "postselection_probability": 0.7627571637145254,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 174
+        },
+        {
+          "step": 4,
+          "energy_before": 0.12423343942109843,
+          "energy_after": 0.06599679711117766,
+          "postselection_probability": 0.7731505864535813,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 345
+        },
+        {
+          "step": 5,
+          "energy_before": 0.06599679711117766,
+          "energy_after": 0.005375486548587603,
+          "postselection_probability": 0.7842712500993843,
+          "fit_infidelity": 4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 165
+        },
+        {
+          "step": 6,
+          "energy_before": 0.005375486548587603,
+          "energy_after": -0.055957070236625765,
+          "postselection_probability": 0.7958486021258764,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 291
+        },
+        {
+          "step": 7,
+          "energy_before": -0.055957070236625765,
+          "energy_after": -0.1162523472707085,
+          "postselection_probability": 0.8075633142489144,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 372
+        },
+        {
+          "step": 8,
+          "energy_before": -0.1162523472707085,
+          "energy_after": -0.17388409206213903,
+          "postselection_probability": 0.819081673617857,
+          "fit_infidelity": 4.6629367034256575e-15,
+          "fit_success": false,
+          "fit_evaluations": 183
+        },
+        {
+          "step": 9,
+          "energy_before": -0.17388409206213903,
+          "energy_after": -0.22751772049659785,
+          "postselection_probability": 0.8300932641783062,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 201
+        },
+        {
+          "step": 10,
+          "energy_before": -0.22751772049659785,
+          "energy_after": -0.27621674493076037,
+          "postselection_probability": 0.8403433153919942,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 201
+        },
+        {
+          "step": 11,
+          "energy_before": -0.27621674493076037,
+          "energy_after": -0.319473003641299,
+          "postselection_probability": 0.8496530362690807,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 219
+        }
+      ],
+      "final_angles": [
+        0.011228984216308278,
+        -0.1223627126397108,
+        -0.10451105187400891,
+        -0.5035050597506435,
+        -0.45986366804876017,
+        -0.5917674237422403,
+        0.07903823603974433,
+        -0.33891521782856215
+      ]
+    },
+    {
+      "seed": 2,
+      "final_energy": -0.15921234144908689,
+      "exact_ground_energy": -1.0190429700579249,
+      "ground_energy_gap": 0.859830628608838,
+      "trace": [
+        {
+          "step": 0,
+          "energy_before": 0.43616067299153866,
+          "energy_after": 0.42128840445063803,
+          "postselection_probability": 0.7136480878631225,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 147
+        },
+        {
+          "step": 1,
+          "energy_before": 0.42128840445063803,
+          "energy_after": 0.40252355669395734,
+          "postselection_probability": 0.7165041244404471,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 201
+        },
+        {
+          "step": 2,
+          "energy_before": 0.40252355669395734,
+          "energy_after": 0.37898570903913437,
+          "postselection_probability": 0.7201106759906875,
+          "fit_infidelity": 4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 201
+        },
+        {
+          "step": 3,
+          "energy_before": 0.37898570903913437,
+          "energy_after": 0.34969811442485554,
+          "postselection_probability": 0.7246384034041485,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 165
+        },
+        {
+          "step": 4,
+          "energy_before": 0.34969811442485554,
+          "energy_after": 0.3136440005538389,
+          "postselection_probability": 0.7302770339797294,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 291
+        },
+        {
+          "step": 5,
+          "energy_before": 0.3136440005538389,
+          "energy_after": 0.26986635382905466,
+          "postselection_probability": 0.7372246404662379,
+          "fit_infidelity": 2.220446049250313e-16,
+          "fit_success": false,
+          "fit_evaluations": 165
+        },
+        {
+          "step": 6,
+          "energy_before": 0.26986635382905466,
+          "energy_after": 0.21761746095304466,
+          "postselection_probability": 0.7456685099219458,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 156
+        },
+        {
+          "step": 7,
+          "energy_before": 0.21761746095304466,
+          "energy_after": 0.15655064116472375,
+          "postselection_probability": 0.7557563417984217,
+          "fit_infidelity": 4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 263
+        },
+        {
+          "step": 8,
+          "energy_before": 0.15655064116472375,
+          "energy_after": 0.08692355200662386,
+          "postselection_probability": 0.7675591689539163,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 138
+        },
+        {
+          "step": 9,
+          "energy_before": 0.08692355200662386,
+          "energy_after": 0.009756692538254275,
+          "postselection_probability": 0.7810318448677163,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 319
+        },
+        {
+          "step": 10,
+          "energy_before": 0.009756692538254275,
+          "energy_after": -0.07312351373771495,
+          "postselection_probability": 0.7959819480426866,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 191
+        },
+        {
+          "step": 11,
+          "energy_before": -0.07312351373771495,
+          "energy_after": -0.15921234144908689,
+          "postselection_probability": 0.8120607830552385,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 426
+        }
+      ],
+      "final_angles": [
+        -0.4301435230700252,
+        -0.11947028979949928,
+        0.19605089077530036,
+        -0.3750499341775993,
+        -0.8081553473528255,
+        0.00013925289224757362,
+        0.012846535213192716,
+        -0.02342601736787318
+      ]
+    },
+    {
+      "seed": 3,
+      "final_energy": -0.07805790821781991,
+      "exact_ground_energy": -1.0190429700579249,
+      "ground_energy_gap": 0.940985061840105,
+      "trace": [
+        {
+          "step": 0,
+          "energy_before": 0.4296080215129132,
+          "energy_after": 0.41299064891442955,
+          "postselection_probability": 0.714911508742156,
+          "fit_infidelity": 6.661338147750939e-16,
+          "fit_success": false,
+          "fit_evaluations": 156
+        },
+        {
+          "step": 1,
+          "energy_before": 0.41299064891442955,
+          "energy_after": 0.39261053091543213,
+          "postselection_probability": 0.7180828346235283,
+          "fit_infidelity": 2.220446049250313e-16,
+          "fit_success": false,
+          "fit_evaluations": 147
+        },
+        {
+          "step": 2,
+          "energy_before": 0.39261053091543213,
+          "energy_after": 0.3678569187688841,
+          "postselection_probability": 0.7219723869058977,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 345
+        },
+        {
+          "step": 3,
+          "energy_before": 0.3678569187688841,
+          "energy_after": 0.3381436363723841,
+          "postselection_probability": 0.7266967867833675,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 138
+        },
+        {
+          "step": 4,
+          "energy_before": 0.3381436363723841,
+          "energy_after": 0.30297807808892896,
+          "postselection_probability": 0.7323679870863152,
+          "fit_infidelity": 2.220446049250313e-16,
+          "fit_success": false,
+          "fit_evaluations": 200
+        },
+        {
+          "step": 5,
+          "energy_before": 0.30297807808892896,
+          "energy_after": 0.26205038034041367,
+          "postselection_probability": 0.7390801076862095,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 192
+        },
+        {
+          "step": 6,
+          "energy_before": 0.26205038034041367,
+          "energy_after": 0.21533413070180454,
+          "postselection_probability": 0.7468924191832604,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 138
+        },
+        {
+          "step": 7,
+          "energy_before": 0.21533413070180454,
+          "energy_after": 0.16317992878559498,
+          "postselection_probability": 0.7558101218230592,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 168
+        },
+        {
+          "step": 8,
+          "energy_before": 0.16317992878559498,
+          "energy_after": 0.10637581332098014,
+          "postselection_probability": 0.765766484687196,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 228
+        },
+        {
+          "step": 9,
+          "energy_before": 0.10637581332098014,
+          "energy_after": 0.04614659043076265,
+          "postselection_probability": 0.7766113038948869,
+          "fit_infidelity": 4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 129
+        },
+        {
+          "step": 10,
+          "energy_before": 0.04614659043076265,
+          "energy_after": -0.015925894505250726,
+          "postselection_probability": 0.7881110178164702,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 201
+        },
+        {
+          "step": 11,
+          "energy_before": -0.015925894505250726,
+          "energy_after": -0.07805790821781991,
+          "postselection_probability": 0.7999639087972953,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 246
+        }
+      ],
+      "final_angles": [
+        -0.07467339857661116,
+        -0.1962432609927716,
+        -0.03761068047381074,
+        -0.3695911951918226,
+        -0.05236121381117078,
+        -0.10163441548051941,
+        0.4040039212485672,
+        -0.3887341470075959
+      ]
+    },
+    {
+      "seed": 4,
+      "final_energy": -0.4302699769850822,
+      "exact_ground_energy": -1.0190429700579249,
+      "ground_energy_gap": 0.5887729930728427,
+      "trace": [
+        {
+          "step": 0,
+          "energy_before": 0.39349685445080945,
+          "energy_after": 0.3671120946906327,
+          "postselection_probability": 0.7218686290997067,
+          "fit_infidelity": -8.881784197001252e-16,
+          "fit_success": false,
+          "fit_evaluations": 174
+        },
+        {
+          "step": 1,
+          "energy_before": 0.3671120946906327,
+          "energy_after": 0.33395342621374413,
+          "postselection_probability": 0.7269647611777126,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 183
+        },
+        {
+          "step": 2,
+          "energy_before": 0.33395342621374413,
+          "energy_after": 0.2927687805749006,
+          "postselection_probability": 0.7333761084593077,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 246
+        },
+        {
+          "step": 3,
+          "energy_before": 0.2927687805749006,
+          "energy_after": 0.24240181398926572,
+          "postselection_probability": 0.7413478682032852,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 156
+        },
+        {
+          "step": 4,
+          "energy_before": 0.24240181398926572,
+          "energy_after": 0.18200736323183284,
+          "postselection_probability": 0.7511075913958076,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 173
+        },
+        {
+          "step": 5,
+          "energy_before": 0.18200736323183284,
+          "energy_after": 0.11132365292589061,
+          "postselection_probability": 0.7628234026204576,
+          "fit_infidelity": 2.220446049250313e-16,
+          "fit_success": false,
+          "fit_evaluations": 183
+        },
+        {
+          "step": 6,
+          "energy_before": 0.11132365292589061,
+          "energy_after": 0.030947560555715906,
+          "postselection_probability": 0.7765509948838636,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 214
+        },
+        {
+          "step": 7,
+          "energy_before": 0.030947560555715906,
+          "energy_after": -0.057482142037318044,
+          "postselection_probability": 0.7921797373606627,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 219
+        },
+        {
+          "step": 8,
+          "energy_before": -0.057482142037318044,
+          "energy_after": -0.15130026410719555,
+          "postselection_probability": 0.80939634304202,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 309
+        },
+        {
+          "step": 9,
+          "energy_before": -0.15130026410719555,
+          "energy_after": -0.24709237317642505,
+          "postselection_probability": 0.8276869353939518,
+          "fit_infidelity": 0.0,
+          "fit_success": false,
+          "fit_evaluations": 236
+        },
+        {
+          "step": 10,
+          "energy_before": -0.24709237317642505,
+          "energy_after": -0.34119457185144964,
+          "postselection_probability": 0.8463900139205671,
+          "fit_infidelity": 2.220446049250313e-16,
+          "fit_success": false,
+          "fit_evaluations": 354
+        },
+        {
+          "step": 11,
+          "energy_before": -0.34119457185144964,
+          "energy_after": -0.4302699769850822,
+          "postselection_probability": 0.8647930399609477,
+          "fit_infidelity": -4.440892098500626e-16,
+          "fit_success": false,
+          "fit_evaluations": 174
+        }
+      ],
+      "final_angles": [
+        0.060283436831368914,
+        -0.43122925433635645,
+        -0.08877066231626693,
+        -0.3861340478203906,
+        0.36751733906850914,
+        -0.1274376749902405,
+        -0.2837864254598113,
+        -0.503244681013994
+      ]
+    }
+  ],
+  "hamiltonian": [
+    [
+      0.4,
+      0.3,
+      0.0,
+      0.0
+    ],
+    [
+      0.3,
+      -0.5,
+      0.2,
+      0.0
+    ],
+    [
+      0.0,
+      0.2,
+      -0.8,
+      0.4
+    ],
+    [
+      0.0,
+      0.0,
+      0.4,
+      0.2
+    ]
+  ],
+  "step_size": 0.12,
+  "block_encoding_scale": 1.1222851564069507,
+  "unitarity_error": 1.0391170583002948e-15,
+  "scope": "Li et al. NOM Table 1, p=1 Hermitian-quadratic specialization. Actual ancilla dilation and postselected gradient-filter state, followed by PQC fidelity fitting. Dense 8x8 simulator replaces the paper scalable sparse-oracle/LCU implementation; fixed real ansatz replaces RL structure search. Quantum query or runtime advantage is not claimed.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "scope": "Shared cloud CPU; not student laptop; one BLAS thread."
+  }
+}

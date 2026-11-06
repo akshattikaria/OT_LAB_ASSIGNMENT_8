@@ -1,0 +1,371 @@
+[
+  {
+    "scenario": "flexible",
+    "instances": 15,
+    "methods": {
+      "baseline": {
+        "feasible": 15,
+        "optimal": 0,
+        "median_runtime_s": 9.679599997980404e-05,
+        "runtime_q1_s": 7.723650003299554e-05,
+        "runtime_q3_s": 0.0001336054999683256
+      },
+      "greedy": {
+        "feasible": 15,
+        "optimal": 0,
+        "median_runtime_s": 0.00013945000000603613,
+        "runtime_q1_s": 0.00011280450002004727,
+        "runtime_q3_s": 0.000198247499952231
+      },
+      "ilp": {
+        "feasible": 15,
+        "optimal": 15,
+        "median_runtime_s": 0.005587826999999379,
+        "runtime_q1_s": 0.00426658399999269,
+        "runtime_q3_s": 0.0072449804999337175
+      }
+    },
+    "comparisons": {
+      "baseline": {
+        "paired_instances": 15,
+        "positive_cost_pairs": 15,
+        "mean_savings_pct": 49.44032880029046,
+        "sd_savings_pct": 4.5545434430298135,
+        "min_savings_pct": 40.55944055944056,
+        "max_savings_pct": 57.4585635359116,
+        "values_pct": [
+          48.83720930232558,
+          54.42176870748299,
+          52.27272727272727,
+          40.55944055944056,
+          57.4585635359116,
+          48.18481848184818,
+          49.685534591194966,
+          47.16981132075472,
+          44.44444444444444,
+          54.59940652818991,
+          51.24282982791587,
+          47.67932489451477,
+          44.398340248962654,
+          46.98275862068966,
+          53.66795366795367
+        ]
+      },
+      "greedy": {
+        "paired_instances": 15,
+        "positive_cost_pairs": 15,
+        "mean_savings_pct": 2.795843066902013,
+        "sd_savings_pct": 2.664336291956647,
+        "min_savings_pct": 0.0,
+        "max_savings_pct": 6.976744186046512,
+        "values_pct": [
+          0.0,
+          0.0,
+          6.666666666666667,
+          0.0,
+          0.0,
+          0.0,
+          6.976744186046512,
+          5.084745762711864,
+          1.7857142857142858,
+          2.857142857142857,
+          1.7341040462427746,
+          4.061895551257253,
+          6.782608695652174,
+          1.7964071856287425,
+          4.191616766467066
+        ]
+      }
+    }
+  },
+  {
+    "scenario": "flat_prices",
+    "instances": 15,
+    "methods": {
+      "baseline": {
+        "feasible": 15,
+        "optimal": 0,
+        "median_runtime_s": 0.00010897399999976187,
+        "runtime_q1_s": 6.149249998088635e-05,
+        "runtime_q3_s": 0.00015225399999962974
+      },
+      "greedy": {
+        "feasible": 15,
+        "optimal": 0,
+        "median_runtime_s": 0.00013331999991805787,
+        "runtime_q1_s": 7.467699998642274e-05,
+        "runtime_q3_s": 0.00017585900002359267
+      },
+      "ilp": {
+        "feasible": 15,
+        "optimal": 15,
+        "median_runtime_s": 0.0050031700000090495,
+        "runtime_q1_s": 0.003503298999987692,
+        "runtime_q3_s": 0.007041890499976944
+      }
+    },
+    "comparisons": {
+      "baseline": {
+        "paired_instances": 15,
+        "positive_cost_pairs": 15,
+        "mean_savings_pct": 0.0,
+        "sd_savings_pct": 0.0,
+        "min_savings_pct": 0.0,
+        "max_savings_pct": 0.0,
+        "values_pct": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "greedy": {
+        "paired_instances": 15,
+        "positive_cost_pairs": 15,
+        "mean_savings_pct": 0.0,
+        "sd_savings_pct": 0.0,
+        "min_savings_pct": 0.0,
+        "max_savings_pct": 0.0,
+        "values_pct": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "scenario": "tight_deadlines",
+    "instances": 15,
+    "methods": {
+      "baseline": {
+        "feasible": 13,
+        "optimal": 0,
+        "median_runtime_s": 9.251900007711811e-05,
+        "runtime_q1_s": 5.964400003222181e-05,
+        "runtime_q3_s": 0.00012394100002666164
+      },
+      "greedy": {
+        "feasible": 12,
+        "optimal": 0,
+        "median_runtime_s": 8.713099998658436e-05,
+        "runtime_q1_s": 6.992999999511085e-05,
+        "runtime_q3_s": 0.00011291949999758799
+      },
+      "ilp": {
+        "feasible": 15,
+        "optimal": 15,
+        "median_runtime_s": 0.0021063919999733116,
+        "runtime_q1_s": 0.0017050345000484413,
+        "runtime_q3_s": 0.0023898375000044325
+      }
+    },
+    "comparisons": {
+      "baseline": {
+        "paired_instances": 13,
+        "positive_cost_pairs": 13,
+        "mean_savings_pct": 8.356918683812705,
+        "sd_savings_pct": 2.1405316291685605,
+        "min_savings_pct": 3.2697547683923704,
+        "max_savings_pct": 11.155378486055778,
+        "values_pct": [
+          8.791208791208792,
+          9.364548494983278,
+          6.130268199233717,
+          8.403361344537815,
+          8.385744234800839,
+          10.053859964093357,
+          6.94980694980695,
+          11.155378486055778,
+          8.944099378881987,
+          9.51188986232791,
+          6.827309236947791,
+          3.2697547683923704,
+          10.852713178294573
+        ]
+      },
+      "greedy": {
+        "paired_instances": 12,
+        "positive_cost_pairs": 12,
+        "mean_savings_pct": 0.0357653791130186,
+        "sd_savings_pct": 0.12389490755142184,
+        "min_savings_pct": 0.0,
+        "max_savings_pct": 0.4291845493562232,
+        "values_pct": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4291845493562232,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "scenario": "limited_power",
+    "instances": 15,
+    "methods": {
+      "baseline": {
+        "feasible": 8,
+        "optimal": 0,
+        "median_runtime_s": 0.00011298999993414327,
+        "runtime_q1_s": 8.806250002635352e-05,
+        "runtime_q3_s": 0.00013917900002979877
+      },
+      "greedy": {
+        "feasible": 13,
+        "optimal": 0,
+        "median_runtime_s": 0.00016142199990554218,
+        "runtime_q1_s": 0.0001111019999484597,
+        "runtime_q3_s": 0.00018493750002335219
+      },
+      "ilp": {
+        "feasible": 15,
+        "optimal": 15,
+        "median_runtime_s": 0.00660035600003539,
+        "runtime_q1_s": 0.004777550999961022,
+        "runtime_q3_s": 0.009088158499935162
+      }
+    },
+    "comparisons": {
+      "baseline": {
+        "paired_instances": 8,
+        "positive_cost_pairs": 8,
+        "mean_savings_pct": 18.143969174554506,
+        "sd_savings_pct": 12.044799211768462,
+        "min_savings_pct": 8.013937282229966,
+        "max_savings_pct": 41.72932330827068,
+        "values_pct": [
+          13.621262458471762,
+          41.72932330827068,
+          21.05263157894737,
+          8.582089552238806,
+          29.310344827586206,
+          8.16326530612245,
+          14.678899082568808,
+          8.013937282229966
+        ]
+      },
+      "greedy": {
+        "paired_instances": 13,
+        "positive_cost_pairs": 13,
+        "mean_savings_pct": 0.5038810469509541,
+        "sd_savings_pct": 0.9944344124750155,
+        "min_savings_pct": 0.0,
+        "max_savings_pct": 3.7267080745341614,
+        "values_pct": [
+          0.0,
+          3.7267080745341614,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.398406374501992,
+          0.36900369003690037,
+          0.19011406844106463,
+          0.6410256410256411,
+          0.4825090470446321,
+          0.49079754601226994,
+          0.2518891687657431
+        ]
+      }
+    }
+  },
+  {
+    "scenario": "mixed_power",
+    "instances": 15,
+    "methods": {
+      "baseline": {
+        "feasible": 13,
+        "optimal": 0,
+        "median_runtime_s": 0.00010749099999429745,
+        "runtime_q1_s": 0.00010238900000558715,
+        "runtime_q3_s": 0.0001397554999584827
+      },
+      "greedy": {
+        "feasible": 15,
+        "optimal": 0,
+        "median_runtime_s": 0.0001445059999696241,
+        "runtime_q1_s": 9.716649998381399e-05,
+        "runtime_q3_s": 0.0002038315000163493
+      },
+      "ilp": {
+        "feasible": 15,
+        "optimal": 10,
+        "median_runtime_s": 0.13456756600010067,
+        "runtime_q1_s": 0.057218307000027835,
+        "runtime_q3_s": 3.0053173824999817
+      }
+    },
+    "comparisons": {
+      "baseline": {
+        "paired_instances": 8,
+        "positive_cost_pairs": 8,
+        "mean_savings_pct": 39.249536049074656,
+        "sd_savings_pct": 13.717898272961845,
+        "min_savings_pct": 23.101555352241537,
+        "max_savings_pct": 54.804270462633454,
+        "values_pct": [
+          28.39472237493128,
+          54.804270462633454,
+          42.295597484276726,
+          54.59742734635541,
+          34.677234091431195,
+          23.101555352241537,
+          23.431063726677973,
+          52.69441755404969
+        ]
+      },
+      "greedy": {
+        "paired_instances": 10,
+        "positive_cost_pairs": 10,
+        "mean_savings_pct": 3.6356509061575677,
+        "sd_savings_pct": 3.0479067168875145,
+        "min_savings_pct": 0.0,
+        "max_savings_pct": 9.922861150070126,
+        "values_pct": [
+          4.4036697247706424,
+          3.145853193517636,
+          9.922861150070126,
+          0.0,
+          1.701908200103146,
+          1.0810123362584256,
+          3.0680074995738877,
+          2.9305615706655117,
+          2.3183925811437405,
+          7.784242805472559
+        ]
+      }
+    }
+  }
+]
