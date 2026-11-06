@@ -1,0 +1,45 @@
+{
+  "original_commit": "692a02f4653aa65d42e8bcb667c521471f118a7e",
+  "original_author_date": "2026-11-04T05:32:34Z",
+  "original_subject": "[AI:ChatGPT] Implement toy frontend, SSA passes, and stateful pass-order DP",
+  "track": "F",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/F/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "e8f8e1533eefdb2948474a0bbcff16fab9f7e959"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "def132cbbdc1f2b65bc65dddf97bcff597a78faf"
+    },
+    {
+      "path": "toycc/__init__.py",
+      "mode": "100644",
+      "sha": "ccdfe5e1579ed84307440eaeacf0e7397a5da23d"
+    },
+    {
+      "path": "toycc/frontend.py",
+      "mode": "100644",
+      "sha": "5452269c6163d5e77ad3bc08a7121724bb978386"
+    },
+    {
+      "path": "toycc/ir.py",
+      "mode": "100644",
+      "sha": "9f241f37f9b404600c784487d7d568a11dc91e20"
+    },
+    {
+      "path": "toycc/passes.py",
+      "mode": "100644",
+      "sha": "6c893f06b34dc7468df3e3f9569d9671f66943ca"
+    },
+    {
+      "path": "toycc/search.py",
+      "mode": "100644",
+      "sha": "d02426982bb20eee4647c3ac0a93bfd7b9799aa9"
+    }
+  ]
+}
