@@ -1,3 +1,5 @@
+> REJECTED INCOMPLETE RUN. This diagnostic report is retained only as development history. Its timings and conclusions are excluded from the final submission analysis. Use results/report.html instead.
+
 # Track H: SQLite Index Selection
 
 Prepared for Akshat Tikaria, roll 241070005. Optimization Techniques, Assignment 8.
