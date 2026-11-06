@@ -1,7 +1,7 @@
 {
-  "original_commit": "f7e43eb599c474f138fb1b4b3150d51a88ee4219",
-  "original_author_date": "2026-11-04T08:44:39Z",
-  "original_subject": "[AI:ChatGPT] Pass process-size bound to the pinned xv6 copyout API",
+  "original_commit": "4adc2fae0483c106aa8c9eec6c3b98d864dd1766",
+  "original_author_date": "2026-11-04T08:58:20Z",
+  "original_subject": "[AI:ChatGPT] Freeze six guest workloads and QEMU validation workflow",
   "track": "G",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/G/history.bundle",
@@ -17,9 +17,29 @@
       "sha": "e643a7405ce8860be077c24959539c36bb606142"
     },
     {
+      "path": "oslab/__main__.py",
+      "mode": "100644",
+      "sha": "728248a18bc229f5bd854b1a67be8e56e63ce21e"
+    },
+    {
+      "path": "oslab/audit.py",
+      "mode": "100644",
+      "sha": "4347b0cbf0e665016f584d8c0cc048eb900b8f10"
+    },
+    {
+      "path": "oslab/experiment.py",
+      "mode": "100644",
+      "sha": "809c339ded7884cd9d5a63d0e098f91c5b45bba6"
+    },
+    {
       "path": "oslab/runtime.py",
       "mode": "100644",
       "sha": "f38e4778b96efb197cf570910c4d0d0564deb473"
+    },
+    {
+      "path": "tests/test_host.py",
+      "mode": "100644",
+      "sha": "a6807eb23901b6068c136890b6db0800e83217e9"
     },
     {
       "path": "xv6/.github/workflows/test.yml",
@@ -304,7 +324,7 @@
     {
       "path": "xv6/user/gbench.c",
       "mode": "100644",
-      "sha": "8ab333d5558504ee2abf95f0f6b7eb37e73315e2"
+      "sha": "706edacc1b415f056ce31c75d8bf2d841d51e271"
     },
     {
       "path": "xv6/user/gcheck.c",

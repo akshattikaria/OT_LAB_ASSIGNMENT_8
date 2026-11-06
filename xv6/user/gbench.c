@@ -59,39 +59,44 @@ worker(char *kind, int iterations, int rank)
 static void
 name(int index, char *result)
 {
-  result[0] = 'g'; result[1] = 'b';
+  result[0] = 'g'; result[1] = 's';
   result[2] = '0' + index / 10; result[3] = '0' + index % 10;
   result[4] = 0;
 }
 
 static void
-readfile(int index)
+readblock(int fd, int file, int offset)
 {
-  char path[5]; name(index, path);
-  int fd = open(path, O_RDONLY);
   if (fd < 0 || read(fd, block, sizeof(block)) != sizeof(block))
     fail("file read");
   for (int j = 0; j < sizeof(block); j++)
-    if ((uchar)block[j] != (uchar)(index * 17 + j))
+    if ((uchar)block[j] != (uchar)(file * 17 + offset * 31 + j))
       fail("file bytes");
-  close(fd);
 }
 
 static void
-prepare(int files)
+prepare(int files, int blocks)
 {
   for (int i = 0; i < files; i++) {
     char path[5]; name(i, path); unlink(path);
-    for (int j = 0; j < sizeof(block); j++)
-      block[j] = i * 17 + j;
     int fd = open(path, O_CREATE | O_TRUNC | O_WRONLY);
-    if (fd < 0 || write(fd, block, sizeof(block)) != sizeof(block))
+    if (fd < 0)
       fail("file create");
+    for (int offset = 0; offset < blocks; offset++) {
+      for (int j = 0; j < sizeof(block); j++)
+        block[j] = i * 17 + offset * 31 + j;
+      if (write(fd, block, sizeof(block)) != sizeof(block))
+        fail("file write");
+    }
     close(fd);
   }
   sync();
-  for (int i = 0; i < files; i++)
-    readfile(i);
+  for (int i = 0; i < files; i++) {
+    char path[5]; name(i, path); int fd = open(path, O_RDONLY);
+    for (int offset = 0; offset < blocks; offset++)
+      readblock(fd, i, offset);
+    close(fd);
+  }
 }
 
 static void
@@ -158,20 +163,30 @@ main(int argc, char **argv)
     close(ready[0]); close(go[1]);
     operations = (uint64)WORKERS * iterations * (!strcmp(kind,"pages") ? PAGE_BATCH : 1);
   } else if (!strcmp(kind, "hotseq") || !strcmp(kind, "hotrand") || !strcmp(kind, "scan")) {
-    int files = !strcmp(kind, "scan") ? 64 : 16;
-    prepare(files);
+    // One 16-block hot stream, two interleaved eight-block hot streams,
+    // or one 96-block scan exceeding the 30-buffer cache.
+    int files = !strcmp(kind, "hotrand") ? 2 : 1;
+    int blocks = !strcmp(kind, "scan") ? 96 : (!strcmp(kind,"hotrand") ? 8 : 16);
+    prepare(files, blocks);
+    int descriptors[2], offsets[2] = {0, 0};
+    for (int i = 0; i < files; i++) { char path[5]; name(i,path); descriptors[i]=open(path,O_RDONLY); }
     if (labcheck() < 0 || labstats(&a) < 0)
       fail("prepared invariants");
     uint random = 12345;
     for (int round = 0; round < iterations; round++) {
       int index;
       if (!strcmp(kind, "hotrand")) { random=random*1664525+1013904223; index=(random>>16)%files; }
-      else index = round % files;
-      readfile(index);
+      else index = 0;
+      if (offsets[index] == blocks) {
+        close(descriptors[index]); char path[5]; name(index,path);
+        descriptors[index] = open(path,O_RDONLY); offsets[index] = 0;
+      }
+      readblock(descriptors[index], index, offsets[index]++);
     }
     if (labstats(&b) < 0)
       fail("stats after cache");
     operations = iterations;
+    for (int i = 0; i < files; i++) close(descriptors[i]);
     for (int i = 0; i < files; i++) { char path[5]; name(i, path); unlink(path); }
     sync();
   } else fail("unknown workload");
