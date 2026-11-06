@@ -11,7 +11,9 @@ FIXED=('fold','cse','strength','dce')
 def greedy(ir):
     current=canonical(ir);remaining=list(PASS_NAMES);order=[];evaluations=0
     while remaining:
-        candidates=[(score(PASSES[name](current)),index,name,PASSES[name](current)) for index,name in enumerate(remaining)]
+        candidates=[]
+        for index,name in enumerate(remaining):
+            candidate=PASSES[name](current);candidates.append((score(candidate),index,name,candidate))
         evaluations+=len(candidates);_,_,name,current=min(candidates,key=lambda item:(item[0],item[1]));order.append(name);remaining.remove(name)
     return current,{'order':order,'transition_evaluations':evaluations,'method':'immediate-score greedy'}
 
