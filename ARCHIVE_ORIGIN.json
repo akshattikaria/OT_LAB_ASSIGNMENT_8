@@ -1,7 +1,7 @@
 {
-  "original_commit": "b5d6cc9aa0038348244bbb2714d6738e85838e50",
-  "original_author_date": "2026-10-31T18:19:49Z",
-  "original_subject": "[AI:ChatGPT] Fix cancellation in convergence control and clarify uncertainty plots",
+  "original_commit": "ed5802a45d402c5e405bc22f2f1cec256323736e",
+  "original_author_date": "2026-10-31T18:24:07Z",
+  "original_subject": "[AI:ChatGPT] Complete Track A documentation and validation record",
   "track": "A",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/A/history.bundle",
@@ -10,6 +10,11 @@
       "path": ".gitignore",
       "mode": "100644",
       "sha": "bc077c9b77f7bb72a3f522e003807e579f6916ee"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "4cf03713d2a8318acae0a4e51b25f1b2ac7c3df4"
     },
     {
       "path": "contopt/__init__.py",
@@ -50,6 +55,41 @@
       "path": "contopt/supplement.py",
       "mode": "100644",
       "sha": "d38111c0bf2e1fa9877ca1a0f7bdacc75774775f"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "152e7b47ee0ce91b1effcc970fd73b60edaf7d1d"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "7e4009e259d7fde645d40d02fa1ec3e5a5a21305"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "effd95870f5276209b53396dbc4e9c81746ad077"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "b6b4c6c84d2f7e635b470486a9db3420eabd172c"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "05b5d09515f2fd2d47ea0183855dc60309418421"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "3b80bfde416bb9e474d6bc5eba8c2bd1fcfea214"
+    },
+    {
+      "path": "prompts/A/001_move_to_next.md",
+      "mode": "100644",
+      "sha": "5efd4a6e2f71fc8b044140abad58e629524cfc9f"
     },
     {
       "path": "requirements.txt",
