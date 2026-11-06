@@ -1,32 +1,39 @@
-# Final submission review — 6 November 2026
+# Final submission review - 6 November 2026
 
-**The technical package passes the checks below. A Drive-only submission is not complete under the written brief.**
-
-The original seven-page assignment brief and all four Chapter 6 decks were reread against the latest deliverables. Section 9 requires a public GitHub repository. Section 8 requires sanitized chat exports or screenshots from each AI tool, in addition to the prompt excerpts, tool register, failures and commit history already included.
+**The expanded technical package passes its checks. Public GitHub publication and authentic AI platform evidence remain submission tasks. Six detailed research policies also remain unavailable.**
 
 | Check | Result |
 |---|---|
-| All ten experiment tracks | Code, data, results, tests and histories present |
-| Fresh host tests | 243/243 pass across A–J |
-| Fresh supplement tests | 7/7 pass |
-| Fresh common AI comparison tests | ChatGPT 9/9; Gemini 9/9; 100 exhaustive small cases per candidate |
-| Original imported files | All 2,013 original source/evidence digests verified after tests |
-| EV conclusions | Matched certified savings, feasibility counts and timeout limits retained consistently |
-| Failure/negative-result reporting | Original defects/fixes and unfavorable outcomes retained |
-| Report/demo | 22-page report; 100-second silent captioned demonstration; visual checks recorded |
-| Chapter inventory | 112 core/supporting topics and corrected 22 research-reference entries |
-| Public assignment repository | Still required; no public repository has been selected/published |
-| AI platform evidence | Sanitized exports/screenshots from ChatGPT and Gemini still need to be attached |
+| All ten original experiment tracks | Code, data, results, tests and histories present |
+| Original imported files | All 2,013 hashes preserved |
+| Core host checks | 243/243 pass in the retained 6 November final review |
+| Original supplement | 7/7 tests pass |
+| Common AI comparison | ChatGPT 9/9; Gemini 9/9; 100 exhaustive small cases each |
+| New research checks | 20/20 independent numerical/mathematical tests pass |
+| Research result audit | 14 result files, source links, units, certificates and splits verified |
+| Native SpMV control | 210 timed trials on two real OpenMP threads |
+| Source-linked research entries | 22: 10 scoped source ports, four variants, two survey demonstrations, six mechanism controls |
+| Main report | 27 pages; rendered visual checks recorded |
+| Captioned demonstration | Approximately 100 seconds, silent, 1080p; actual EV command output and retained results |
+| Original scientific conclusions | Preserved, including failures and negative results |
+| Public assignment repository | Pending the student's new repository link |
+| AI platform evidence | Sanitized ChatGPT/Gemini exports or screenshots still required |
 
-Five quantum research spotlights from PPT3 slides 37–39 were missing from the earlier inventory: TensorHyper-VQC, negative learning-rate phases, quantum measurement temperature, quantum-gradient nested optimization and QML-Liver. The inventory and report now account for them. They are explicitly **not reproduced**; adding a reference does not complete an experimental requirement. The other research-paper boundaries also remain explicit. Section 5 says every explicitly taught technique needs verifiable demonstration, so confirm whether the research spotlights count before claiming full strict chapter coverage.
+The original seven-page brief requires a public GitHub repository (Section 9) and sanitized platform chat exports or screenshots (Section 8). Prompt excerpts, model register, real error records and AI-assisted local history are included, but do not replace authentic platform evidence. A Drive-only submission does not satisfy those written requirements.
 
-The fresh checks validate the submitted source and retained arithmetic; they do not rerun every performance experiment, physical quantum hardware, or the complete xv6 guest measurement campaign. Main performance records and original A–J files remain unchanged. All earlier environment limitations and simulator/synthetic-data disclosures still apply.
+## Research extension and remaining fidelity limits
 
-## What remains before submission
+All 22 research entries now have experiments or controls. The five previously omitted quantum spotlights have actual small experiments, including a port of the author's two-qubit liver architecture on the real author CSV. Source equations, code identities, adaptations and result paths are listed in `research_supplement/METHOD_COVERAGE.md` and `SOURCE_REGISTRY.json`.
 
-1. Publish the extracted project to the correct **public assignment GitHub repository**, including all A–J folders. Follow PUBLISHING.md and the staging helper; a plain git add alone omits the deliberately ignored imported tracks. Use public commit URLs to complete the prompt/commit references after publishing.
-2. Attach sanitized platform chat exports or screenshots from **both ChatGPT and Gemini**, with the relevant displayed model labels and prompt/code evidence. Existing excerpt logs are indexed in prompts/README.md. Do not invent unavailable serving revisions, timings or conversations.
-3. Resolve the research-spotlight interpretation with the instructor; if all paper-specific methods are required, those experiments remain additional work.
-4. Put the final report, project ZIP, demo, AI evidence and a short file containing the public GitHub URL in one Drive folder. Confirm sir can open the folder and files without requesting access. Rehearse explaining and modifying the code without AI for the viva.
+A scoped source port means only the declared small specialization, not an entire paper or its performance. Detailed public policies for **PANA, PackStealLB, GSHetero, architecture-aware currying, OFLight and EAHP** could not be retrieved. Their controls are explicitly original related mechanisms; they do not close strict exact-method coverage. Full papers/code or detailed algorithm specifications are needed to close those six gaps. No instructor clarification is a prerequisite to this completed extension, and no instructor answer is fabricated.
 
-The suggested fourteen-day plan is not a reason to invent a diary. The actual activity dates are recorded. A recorded negative performance result is permitted by the brief when the experiment and explanation are sound.
+Negative outcomes remain visible: regularized natural-gradient controls lag ordinary NG here; the TT generator loses to direct parameters; the liver hybrid loses two of three splits to logistic; the strategy GA misses the model optimum; nested optimization keeps positive energy gaps. Synthetic models, CPU quantum simulation and logical communication units are distinguished from actual native/threaded execution.
+
+## Before submission
+
+1. Provide the correct new assignment GitHub repository and publish this reviewed source, including all A-J folders using `docs/PUBLISHING.md` and the staging helper. Do not use the unrelated VoltNest repository. After publication, add public commit URLs to the prompt/history index.
+2. Attach sanitized platform evidence from both ChatGPT and Gemini, including available displayed model labels, prompts and representative answers. No missing revision, response time or conversation is invented.
+3. Keep the six research-policy gaps visible. If exact source implementations are required, obtain those detailed policies before claiming strict completion.
+4. Put the final report, project ZIP, demonstration, AI evidence and public repository URL together in Drive; check that the instructor can open the files. Rehearse explaining the formulation and modifying a small input without AI.
+
+The fresh research checks do not rerun every historical performance experiment or the xv6 guest campaign. Source hashes establish that the original measurements are unchanged. The actual dated activity is recorded; no fourteen-day diary is invented.

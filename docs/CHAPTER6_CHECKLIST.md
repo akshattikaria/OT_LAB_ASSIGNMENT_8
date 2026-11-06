@@ -117,33 +117,33 @@ The root status supersedes historical per-track progress notes. Numerical models
 | Real SQLite: budgeted index portfolios | Assignment Track H | implemented | `tracks/H/dblab/select.py`, `tracks/H/results/summary.json` |  |
 | Real software: test selection and fault trade-off | Assignment Track J | implemented | `tracks/J/selci/selection.py`, `tracks/J/results/summary.json` |  |
 
-## Research boundary
+## Research extension and remaining boundary
 
-The slides label these as research references/spotlights. Listing or bibliographic verification does not count as reproducing an algorithm. Related standard Fisher, greedy, stealing, SVD or GA demonstrations are not relabeled with paper names. If sir expects each paper-specific method as an experiment, the unreproduced rows remain additional work.
+All 22 entries now have executable experiments or controls. A source port means only its stated small equation/code specialization. The six mechanism-only entries lack publicly retrieved detailed policies; they do not close a strict exact-method requirement. See research_supplement/METHOD_COVERAGE.md for every adaptation and source locator. No full paper performance reproduction is claimed.
 
-| Entry | Lecture | Verification | Experimental status |
-|---|---|---|---|
-| GRNG | PPT1 35 | primary_checked_in_conversation | paper_not_reproduced |
-| AdaFisher | PPT1 35,38 | primary_checked_in_conversation | paper_not_reproduced |
-| Dynamic nonmonotone submodular methods | PPT1 36 | slide_citation_only | paper_not_reproduced |
-| Differentially private submodular methods | PPT1 36 | slide_citation_only | paper_not_reproduced |
-| OmniOpt taxonomy/benchmark | PPT1 38 | slide_citation_only | paper_not_reproduced |
-| ResQue Greedy | PPT1 38 | primary_checked_in_conversation | paper_not_reproduced |
-| PANA SpMV | PPT2 31 | primary_checked_in_conversation | paper_not_reproduced |
-| PackStealLB | PPT2 31-32 | slide_citation_only | paper_not_reproduced |
-| GSHetero | PPT2 31 | slide_citation_only | paper_not_reproduced |
-| Architecture-aware currying | PPT2 33 | slide_citation_only | paper_not_reproduced |
-| Subspace Networks | PPT2 33 | slide_citation_only | paper_not_reproduced |
-| OFLight | PPT2 33 | slide_citation_only | paper_not_reproduced |
-| TensorHyper-VQC | PPT3 37 | slide_citation_only | paper_not_reproduced |
-| Negative learning-rate phases | PPT3 37 | slide_citation_only | paper_not_reproduced |
-| Quantum measurement temperature | PPT3 38 | slide_citation_only | paper_not_reproduced |
-| Quantum-gradient nested optimization | PPT3 38 | slide_citation_only | paper_not_reproduced |
-| QML-Liver | PPT3 39 | slide_citation_only | paper_not_reproduced |
-| EAHP | PPT4 22,24-25 | slide_citation_only | paper_not_reproduced |
-| GAGS SVM | PPT4 22,24 | slide_citation_only | paper_not_reproduced |
-| Astra | PPT4 22,24-25 | primary_checked_in_conversation | paper_not_reproduced |
-| HPO tutorial/survey | PPT4 22,24,26 | slide_citation_only | paper_not_reproduced |
-| ASHA systems paper | PPT4 27 | primary_checked_in_conversation | mechanism_replay_only |
+| Entry | Lecture | Fidelity | Evidence | Scope |
+|---|---|---|---|---|
+| GRNG | PPT1 35 | source_port | `research_supplement/curvature.py`, `research_supplement/results/curvature.json` | One-layer full-batch model, exact Fisher expectation, S=1 and explicit analytic gradient-norm derivative; no large-model reproduction. |
+| AdaFisher | PPT1 35,38 | source_port | `research_supplement/curvature.py`, `research_supplement/results/curvature.json` | Three-class single layer. Follows printed Eq. 3 gamma weighting; author current running-factor code differs. Initial scalar-block port corrected and retained. |
+| Dynamic nonmonotone submodular methods | PPT1 36 | algorithm_variant | `research_supplement/submodular.py`, `research_supplement/results/submodular.json` | Finite threshold grid, explicit disjoint candidates and exact offline solver on selected union. No polynomial update bound or 0.277 guarantee claimed. |
+| Differentially private submodular methods | PPT1 36 | source_port | `research_supplement/submodular.py`, `research_supplement/results/submodular.json` | Monotone coverage knapsack, GRNM and exponential noisy max. Conservative pure basic composition replaces advanced composition; no DP-2GG optimal-ratio claim. |
+| OmniOpt taxonomy/benchmark | PPT1 38 | survey_demonstration | `research_supplement/hpo.py`, `research_supplement/results/hpo.json` | L1/L2/Linf/spectral dual-norm certificates and small quadratic optimization. Survey is not invented as one algorithm; no cross-domain benchmark reproduction. |
+| ResQue Greedy | PPT1 38 | source_port | `research_supplement/submodular.py`, `research_supplement/results/submodular.json` | Curvature trigger and step-back, with explicit no-deterioration exchange and retained greedy incumbent. Raw and guarded paths are both saved. |
+| PANA SpMV | PPT2 31 | mechanism_only | `research_supplement/spmv.py`, `research_supplement/results/spmv.json` | Native nonzero-tile/runtime-adaptive control; published SIMD micro-operation policy unavailable. Author repo had README and LICENSE only; publisher PDF returned 403. |
+| PackStealLB | PPT2 31-32 | mechanism_only | `research_supplement/placement.py`, `research_supplement/results/placement.json` | Original finite task-pack transfer control; no Charm++/epsilon-Nash packing-policy fidelity claim. Open manuscript could not be retrieved. |
+| GSHetero | PPT2 31 | mechanism_only | `research_supplement/placement.py`, `research_supplement/results/placement.json` | MCL grouping plus an explicitly original speed-aware placement heuristic. Detailed GSHetero placement policy unavailable; no Hadoop reproduction. |
+| Architecture-aware currying | PPT2 33 | mechanism_only | `research_supplement/placement.py`, `research_supplement/results/placement.json` | Finite mesh with partial application, near-data evaluation and postponed reduction. Does not implement the unavailable published compiler algorithm. |
+| Subspace Networks | PPT2 33 | source_port | `research_supplement/communication.py`, `research_supplement/results/communication.json` | Two-block constrained residual network, fixed high-rank embeddings, shared subspace, dense/compressed trajectory check; separate Grassmann operator test. No billion-parameter training. |
+| OFLight | PPT2 33 | mechanism_only | `research_supplement/communication.py`, `research_supplement/results/communication.json` | Low-rank OTA/feedback controls with explicitly original SVD/refresh rules. Full projection-construction policy unavailable; exact OFLight algorithm NOT claimed. |
+| TensorHyper-VQC | PPT3 37 | source_port | `research_supplement/quantum_studies.py`, `research_supplement/results/tensorhyper.json` | Rank-one TT-matrix and Gaussian input, explicit classical chain rule, 3-qubit circuit. No source performance theorem or hardware reproduction. |
+| Negative learning-rate phases | PPT3 37 | source_port | `research_supplement/quantum_studies.py`, `research_supplement/results/negative_learning.json` | Loss-triggered negative step, 256-shot gradients and exact acceptance values; 3-qubit simulator. Every unfavorable outcome retained. |
+| Quantum measurement temperature | PPT3 38 | source_port | `research_supplement/quantum_studies.py`, `research_supplement/results/qmt.json` | Joint positive-temperature/circuit training on synthetic six-class data. No microscopy/Fashion-MNIST reproduction. |
+| Quantum-gradient nested optimization | PPT3 38 | source_port | `research_supplement/quantum_studies.py`, `research_supplement/results/nom.json` | Explicit dense unitary dilation/postselection and PQC fidelity fitting. Sparse-oracle construction and RL circuit-structure search are not reproduced. |
+| QML-Liver | PPT3 39 | source_port | `research_supplement/liver.py`, `research_supplement/results/liver.json` | NumPy port of two-qubit architecture on author ILPD CSV; new stratified splits, training-only preprocessing, 80-epoch cap, no clinical or published-score claim. |
+| EAHP | PPT4 22,24-25 | mechanism_only | `research_supplement/strategies.py`, `research_supplement/results/strategies.json` | Explicit synthetic cost-model GA and one-hot LP control. Full EAHP cost equations/planner unavailable; no exact method or LLM training claim. |
+| GAGS SVM | PPT4 22,24 | algorithm_variant | `research_supplement/svmplus.py`, `research_supplement/results/svmplus.json` | Exact SVM+ dual with primal certificate, two log-grid GA islands. Reduced search range/population and independent privileged SVC tiebreak are declared variants; no MNIST/CWRU reproduction. |
+| Astra | PPT4 22,24-25 | algorithm_variant | `research_supplement/strategies.py`, `research_supplement/results/strategies.json` | Finite synthetic heterogeneous GPipe cost model, exhaustive choices and financial trade-off; no calibrated Megatron kernels or heterogeneous GPU run. |
+| HPO tutorial/survey | PPT4 22,24,26 | survey_demonstration | `research_supplement/hpo.py`, `research_supplement/results/hpo.json` | Exact ridge hypergradient, finite-difference check, grid/random/Sobol controls and live halving. Survey/tutorial are not a single algorithm. |
+| ASHA systems paper | PPT4 27 | algorithm_variant | `research_supplement/hpo.py`, `research_supplement/results/hpo.json` | Real four-worker stopping variant, completed-only rung scores, checkpoint continuation and explicit three-observation warm start. No 500-worker systems reproduction. |
 
 Names explicitly marked not found/not cited in the slides are not fabricated: DiCTR, Mixer, RLDPSO, AutoHAAP, SSGS, OSCAR, LS-GT and AFS-GNN.

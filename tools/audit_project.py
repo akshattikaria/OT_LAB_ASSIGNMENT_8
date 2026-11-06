@@ -1,7 +1,9 @@
 """Retained-data checks; does not replace historical measurements."""
-import hashlib,json,math,re,random,statistics
+import hashlib,json,math,re,random,statistics,sys,io
+from contextlib import redirect_stdout
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT))
 def read(p):return json.loads((ROOT/p).read_text())
 def main():
     hashes=read('provenance/imported_files.json')
@@ -95,10 +97,16 @@ def main():
     assert math.isclose(j['ilp']['wall_speedup'],j['full']['wall_median_s']/j['ilp']['wall_median_s'],rel_tol=1e-12)
     video=read('validation/video_check.json');assert 99<=video['duration_s']<=102 and video['source_cli_verified']
     from pypdf import PdfReader
-    pdf=PdfReader(ROOT/'reports/Assignment_8_Integrated_Technical_Report.pdf');assert len(pdf.pages)==22
+    pdf=PdfReader(ROOT/'reports/Assignment_8_Integrated_Technical_Report.pdf');assert len(pdf.pages)==27
     text='\n'.join(p.extract_text() for p in pdf.pages);assert all('Track '+l+':' in text for l in 'ABCDEFGHIJ');assert '\ufffd' not in text
     assert 'Two-tool comparison: ChatGPT and Gemini' in text and 'Argon High' in text
+    from research_supplement.audit import main as research_audit
+    with redirect_stdout(io.StringIO()):research=research_audit()
+    assert research['passed'] and research['new_mathematical_tests']==20
+    assert checklist['fidelity_counts']==read('research_supplement/SOURCE_REGISTRY.json')['fidelity_counts']
+    assert 'QML-Liver on author data' in text and 'six mechanism-only' in text
     result={'passed':True,'imported_files_verified':len(hashes),'tracks':len(sources),'retained_track_host_tests':243,'retained_host_test_date':'2026-11-04','supplement_tests':7,'comparison_baseline_tests':9,'comparison_tools':2,'shared_tests_per_tool':9,'exhaustive_small_cases_per_tool':100,'timed_function_calls':56,'generation_latency_comparable':False,'course_topic_entries':len(checklist['topics']),'research_reference_entries':len(checklist['research_references']),'hpo_policy_rows':30,'compression_runs':20,'native_control_trials':14,'pdf_pages':len(pdf.pages),'demo_seconds':video['duration_s'],'scope':'Integrity, evidence links and retained arithmetic. Original A-J code/results unchanged; supplied Gemini comparison recorded. Full chat exports, publication and research interpretation remain open.'}
-    result.update(final_review_track_host_tests=243,final_review_supplement_tests=7,final_review_shared_tests_per_tool=9,submission_ready=False)
+    result.update(final_review_track_host_tests=243,final_review_supplement_tests=7,final_review_shared_tests_per_tool=9,submission_ready=False,research=research)
+    result['scope']='Integrity, source links and retained arithmetic/certificates. Original A-J code/results unchanged; 22 research experiments/controls added. Public repository, authentic AI platform evidence and six exact published policies remain open.'
     print(json.dumps(result,indent=2));return result
 if __name__=='__main__':main()

@@ -8,13 +8,13 @@ The EV experiment achieves 49.44% mean cost reduction on 15 matched, feasible, c
 
 ## Current status
 
-The ten core tracks, integrated report, supporting chapter experiments, reproducibility checks and demonstration artifact are built. The 4 November integration run and 6 November final-review rerun each pass **243 track host tests** plus **7 supplement tests**. On 6 November, both original AI candidates passed the **same 9 comparison tests**, including 100 exhaustive small cases each. The supplied Gemini response and 56 paired function-runtime measurements are recorded in `ai_tool_comparison/COMPARISON.md`. These are separate from archived xv6 guest tests and the cachetools subject suite.
+The ten core tracks, integrated report, supporting chapter experiments, reproducibility checks and demonstration artifact are built. The 4 November integration run and 6 November final-review rerun each pass **243 track host tests** plus **7 supplement tests**. On 6 November, both original AI candidates passed the **same 9 comparison tests**, including 100 exhaustive small cases each. The supplied Gemini response and 56 paired function-runtime measurements are recorded in `ai_tool_comparison/COMPARISON.md`. The new research extension passes **20 additional mathematical tests** and audits **14 result files**, including **210 native SpMV timing trials**. These are separate from archived xv6 guest tests and the cachetools subject suite.
 
 The final review is in `docs/FINAL_REVIEW.md`. The assignment is **not yet unconditionally ready for submission**. Complete these real remaining items:
 
 1. Attach sanitized chat exports or screenshots/model-header evidence from each AI tool. Earlier prompt excerpts and AI-assisted commits are preserved; they are not a replacement for a full export.
 2. Select the correct assignment GitHub repository and publish the reviewed project. No remote was selected here; the unrelated VoltNest repository is not used.
-3. Confirm whether sir expects paper-specific research spotlights to be reproduced. The chapter checklist explicitly separates 112 core/supporting topic entries from 22 research references. Reference-only rows are not claimed implemented.
+3. Review the explicit research scope: all 22 entries now have experiments or controls (10 scoped ports, four variants, two survey demonstrations, six mechanism-only). The detailed published policies for PANA, PackStealLB, GSHetero, architecture-aware currying, OFLight and EAHP were not publicly retrievable. Exact implementations of those six remain a source-access gap if strict paper-method coverage is required. No instructor conversation is a prerequisite to the completed extension.
 
 The included captioned video demonstrates actual EV CLI output and retained results. Rehearse it and explain/modify the code yourself for the viva. Add your own narration or live presentation if your instructor requires it.
 
@@ -45,6 +45,9 @@ The four-vehicle example prints fictional costs **406 -> 182 -> 182** for baseli
 ```bash
 python -m chapter_supplement.study --out chapter_supplement/results-rerun
 python tools/run_host_tests.py --out validation/host-rerun
+python -m unittest research_supplement.test_methods -v
+python -m research_supplement.audit
+python -m research_supplement.run --out research_supplement/results-rerun
 ```
 
 Historical timings are retained, not replaced by host-test elapsed times. Seeds do not fix host scheduling, solver tie choices or noisy shot outcomes. Read each track's timer scope and environment before quoting a speedup. The measurement host is a shared cloud environment, not Akshat's i3 laptop.
@@ -64,6 +67,7 @@ Historical timings are retained, not replaced by host-test elapsed times. Seeds 
 | `tracks/I` | Explicit algorithms, calibrated-noise model and matched QML study |
 | `tracks/J` | Real-codebase test selection, fresh coverage and mutation challenge |
 | `chapter_supplement` | Search-policy replay, compression, layout/embedding/control experiments |
+| `research_supplement` | 22 source-linked research experiments/controls; exact fidelity mapping and six gaps |
 | `docs` | Exact course checklist, submission status, final answers and demo guide |
 | `provenance` | Current source archive hashes and all 2,013 imported file hashes |
 | `validation` | Dated test logs, audit and report/video checks |

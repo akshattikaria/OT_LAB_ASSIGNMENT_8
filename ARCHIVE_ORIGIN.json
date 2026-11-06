@@ -1,7 +1,7 @@
 {
-  "original_commit": "95100a4a7125d684286a43dd281aa11e4dab8a1b",
-  "original_author_date": "2026-11-06T11:33:38Z",
-  "original_subject": "[AI:ChatGPT] Add first source-linked research experiments and independent numerical checks",
+  "original_commit": "63fa5d8044fc845d4c888cb1d6a9e63c5f7c386e",
+  "original_author_date": "2026-11-06T12:11:15Z",
+  "original_subject": "[AI:ChatGPT] Complete scoped research studies and integrate verified report and demo",
   "track": "integration",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "integration_history.bundle",
@@ -14,7 +14,7 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha": "fe4bb386b640a1c59e4d0dabff87f8a2bf331cf7"
+      "sha": "954feaa37704fe49bd7a55550e1339f9edf81248"
     },
     {
       "path": "ai_tool_comparison/COMPARISON.md",
@@ -74,32 +74,32 @@
     {
       "path": "docs/ACTIVITY_RECORD.md",
       "mode": "100644",
-      "sha": "1ebdd5ea2fa4e3c82d6275b042b07d1666a63605"
+      "sha": "955f33310e2e536b13f82ffe5c702f317f5983f8"
     },
     {
       "path": "docs/AI_TOOL_REGISTER.md",
       "mode": "100644",
-      "sha": "6cdbd598c8507001294a5715744f6fb25832e5a5"
+      "sha": "b2f40934d7aa15238b6133bdb32fe515f562b27e"
     },
     {
       "path": "docs/CHAPTER6_CHECKLIST.md",
       "mode": "100644",
-      "sha": "4dfc599b0e0d205a9f4fa658ec3b962b158a39c4"
+      "sha": "8c8f5132b26efeffc76cc731ec9d72bdd116c502"
     },
     {
       "path": "docs/DEMONSTRATION_GUIDE.md",
       "mode": "100644",
-      "sha": "df3a024bf6562e2dcd68c0757dd739d552398c94"
+      "sha": "301bb633b01dc2c73ffba5a2fae198b2fc95ee72"
     },
     {
       "path": "docs/FINAL_QUESTIONS.md",
       "mode": "100644",
-      "sha": "c05ad4fc2214e3348d126c75e933ab6479fa3d34"
+      "sha": "4db6d426ed190f9b5699f6ca90a2712a65ac41f3"
     },
     {
       "path": "docs/FINAL_REVIEW.md",
       "mode": "100644",
-      "sha": "67d0dbe3270b72878e7dc63f6512e7e430e763a3"
+      "sha": "8cfebfbba88c94522f720eceaf3a607b1c8e8b8f"
     },
     {
       "path": "docs/PUBLISHING.md",
@@ -109,12 +109,12 @@
     {
       "path": "docs/SUBMISSION_CHECKLIST.md",
       "mode": "100644",
-      "sha": "ff528a7f200fea9c67df458b823cda1ff500a6ec"
+      "sha": "4024e308759fca6407007d99b1a0bec29a50fd6b"
     },
     {
       "path": "docs/VALIDATION_RECORD.md",
       "mode": "100644",
-      "sha": "8fc9db3db2e7d4fb6a0aa3937d78ed7b71403f7c"
+      "sha": "3fbd8cba4724d05017f031d7bc318608223b607a"
     },
     {
       "path": "prompts/Integration/001_continue.md",
@@ -132,6 +132,11 @@
       "sha": "5575a5243edbf7f5102cfda9691311b6c1a55ff4"
     },
     {
+      "path": "prompts/Integration/004_research_extension.md",
+      "mode": "100644",
+      "sha": "2962f5255b333c17b91eadf11d13e8e4e5c2ebb4"
+    },
+    {
       "path": "prompts/README.md",
       "mode": "100644",
       "sha": "08d11e9360bbd2d04851c9642779eca2f63087f0"
@@ -142,9 +147,24 @@
       "sha": "b9486ef5a2380fdbac798db410c9697b09aae99e"
     },
     {
+      "path": "research_supplement/METHOD_COVERAGE.md",
+      "mode": "100644",
+      "sha": "4cf1a8e42d605efe01bffe1d225c5979e1288a24"
+    },
+    {
+      "path": "research_supplement/README.md",
+      "mode": "100644",
+      "sha": "7fb8c9a91408e5702cbc995012822064b7cbe4e4"
+    },
+    {
       "path": "research_supplement/__init__.py",
       "mode": "100644",
       "sha": "90e11226521aa1c014675b2d93c8c510bee3384a"
+    },
+    {
+      "path": "research_supplement/audit.py",
+      "mode": "100644",
+      "sha": "3b4d0a488577063225bbc3a51bee829c128371b5"
     },
     {
       "path": "research_supplement/common.py",
@@ -152,9 +172,29 @@
       "sha": "5c9a4d4a1a84f81ec1c17739f72b030f9818bb56"
     },
     {
+      "path": "research_supplement/communication.py",
+      "mode": "100644",
+      "sha": "8af7ee4beabe3461ba19c9824413a2ae765848a6"
+    },
+    {
       "path": "research_supplement/curvature.py",
       "mode": "100644",
-      "sha": "9926ff4b83facfcacf131613732e1126b545550a"
+      "sha": "775ee26ade7b4fe5332cd7529439d65971857c5e"
+    },
+    {
+      "path": "research_supplement/hpo.py",
+      "mode": "100644",
+      "sha": "e56ad4143d4b0a36fca69f6208a9b31f77c0d9b4"
+    },
+    {
+      "path": "research_supplement/liver.py",
+      "mode": "100644",
+      "sha": "197f8d032c953a144c804b2d51ed0a56a389d1d1"
+    },
+    {
+      "path": "research_supplement/placement.py",
+      "mode": "100644",
+      "sha": "d45bb28bb37f7b4fc52007c84c8607f7e5595b6d"
     },
     {
       "path": "research_supplement/quantum.py",
@@ -169,27 +209,47 @@
     {
       "path": "research_supplement/run.py",
       "mode": "100644",
-      "sha": "8e69e0c4362a697080c4541c59861f8af40a7212"
+      "sha": "17df029bfe056d46e9b1192d9978d70e209821cc"
+    },
+    {
+      "path": "research_supplement/spmv.c",
+      "mode": "100644",
+      "sha": "14b31e1747f35e07a382c09cae130a6e7abf00ce"
+    },
+    {
+      "path": "research_supplement/spmv.py",
+      "mode": "100644",
+      "sha": "ed8926f33591d639a33b7d74216078440171f351"
+    },
+    {
+      "path": "research_supplement/strategies.py",
+      "mode": "100644",
+      "sha": "745d7b0035fdbf211e9be32560bcc13a227d9b1e"
     },
     {
       "path": "research_supplement/submodular.py",
       "mode": "100644",
-      "sha": "e0ca2f10edb311441a625acdb0fe985a822711e7"
+      "sha": "25568915373aad73ac91bfd5b422807902afe79f"
+    },
+    {
+      "path": "research_supplement/svmplus.py",
+      "mode": "100644",
+      "sha": "5458414d739f573d1c0a4aa13350f0b34a7bf4be"
     },
     {
       "path": "research_supplement/test_methods.py",
       "mode": "100644",
-      "sha": "dbad0e5af20125df160597f56cbbb9755ef30688"
+      "sha": "69b3009e8243cd8ad727fd7cd9bc5142789f92d2"
     },
     {
       "path": "tools/audit_project.py",
       "mode": "100644",
-      "sha": "f8659b1e053ea8974143429a0c1e81f549ba4a9d"
+      "sha": "7c2dd9859e0f6b1da93f4c6a5f39fec4ab7044d8"
     },
     {
       "path": "tools/build_checklist.py",
       "mode": "100644",
-      "sha": "bc57764521284a90db21a4a2f27b70eebda5fe85"
+      "sha": "46b6d3e7ac2cc3206232caf15751292776a6c237"
     },
     {
       "path": "tools/build_comparison_summary.py",
@@ -199,12 +259,17 @@
     {
       "path": "tools/build_demo.py",
       "mode": "100644",
-      "sha": "0a77a095e5d2430e7c700cf610d04063ddb6b299"
+      "sha": "38c84121c71c9bfcdee5afb412abeb94e70b29b5"
     },
     {
       "path": "tools/build_report.py",
       "mode": "100644",
-      "sha": "ed519aabda6db3e39efd3133f96af0aa02a2ebac"
+      "sha": "4f751a29fcfccc7bf63c305c4a7b3d20afeae581"
+    },
+    {
+      "path": "tools/build_research_report.py",
+      "mode": "100644",
+      "sha": "12b362b162e5f5b99dd6526f818767c6b453f5f8"
     },
     {
       "path": "tools/package_project.py",

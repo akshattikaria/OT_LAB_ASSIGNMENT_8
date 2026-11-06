@@ -175,6 +175,45 @@ def dp_density_greedy_plus(f,costs,budget,epsilon,rng,beta=.1):
     return result,trace,{'per_step_epsilon':eps0,'maximum_greedy_steps':k,'final_selection_epsilon':epsilon/2,'total_pure_epsilon_upper_bound':eps0*k+epsilon/2,'delta':0.,'final_candidates':candidates}
 
 
+def noisy_max_probabilities(scores,rate):
+    """Independent integral of exponential-noise argmax, no random draws."""
+    scores=np.asarray(scores);answer=[]
+    for i,q in enumerate(scores):
+        lower=max(0.,float(scores.max()-q));limit=np.exp(-rate*lower);polynomial=np.array([1.])
+        for j,v in enumerate(scores):
+            if j!=i:polynomial=np.polynomial.polynomial.polymul(polynomial,[1.,-np.exp(rate*(v-q-lower))])
+        integral=sum(c/(k+1) for k,c in enumerate(polynomial));answer.append(limit*integral)
+    p=np.maximum(np.asarray(answer),0);assert abs(p.sum()-1)<1e-8
+    return p/p.sum()
+
+
+def exact_dp_distribution(f,costs,budget,epsilon,beta=.1):
+    """Enumerate every private greedy path and integrate final noisy max.
+
+    Only used on a three-item control. This validates the actual algorithm's
+    complete output distribution, beyond an empirical privacy check.
+    """
+    k=min(len(costs),int(budget/min(costs)));eps0=epsilon/(2*max(1,k));distribution={}
+    def visit(s,partials,probability):
+        candidates=[i for i in range(len(costs)) if i not in s and sum(costs[j] for j in s)+costs[i]<=budget]
+        if candidates:
+            scores=np.array([(f(s|{i})-f(s))/costs[i] for i in candidates]);sens=1/np.array([costs[i] for i in candidates]);t=2/eps0*np.log(len(candidates)/(beta/max(1,k)));a=scores-t*sens
+            auxiliary=np.min((a[:,None]-a[None,:])/(sens[:,None]+sens[None,:]),axis=1)
+            p=noisy_max_probabilities(auxiliary,eps0/2)
+            for i,weight in zip(candidates,p):visit(s|{i},partials+[s|{i}],probability*weight)
+        else:
+            extensions={tuple(sorted(s))}
+            for prefix in partials:
+                for i in range(len(costs)):
+                    candidate=prefix|{i}
+                    if sum(costs[j] for j in candidate)<=budget:extensions.add(tuple(sorted(candidate)))
+            extensions=sorted(extensions);p=noisy_max_probabilities([f(set(q)) for q in extensions],epsilon/4)
+            for candidate,weight in zip(extensions,p):distribution[candidate]=distribution.get(candidate,0.)+probability*weight
+    visit(set(),[set()],1.)
+    assert abs(sum(distribution.values())-1)<1e-8
+    return distribution
+
+
 def run():
     rewired=[];dynamic=[];private=[];paper_private=[]
     for seed in range(5):

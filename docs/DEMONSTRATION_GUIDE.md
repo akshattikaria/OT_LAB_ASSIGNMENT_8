@@ -11,3 +11,7 @@ The captioned video shows actual EV command output and project evidence. It is a
 7. Explain one real AI bug/fix from A, B or D, then distinguish quantum query advantage from CPU simulation speed.
 
 Practice changing a tariff or capacity in a copied tiny EV input and predicting the effect before running it. Be able to explain code and modify it without AI during the viva. The second-tool comparison is recorded in ai_tool_comparison/COMPARISON.md: both original answers pass; Gemini’s approximate generation time is student-estimated and ChatGPT’s is unknown. Explain that function timing is separate from response generation. Do not claim physical QPU access, real station savings or a general model ranking.
+
+## Research extension walkthrough
+
+Run `python -m research_supplement.audit`, then show `research_supplement/METHOD_COVERAGE.md`. Explain the four evidence levels and identify the six mechanism-only rows. Show measurement-temperature paired outcomes and the actual author-data liver results, including losses against logistic; show 210 native two-thread SpMV timings and the actual four-thread halving search. Distinguish modeled GPU strategies and logical communication counts from hardware measurements. Run `python -m unittest research_supplement.test_methods -v` to demonstrate independent numerical checks. All 22 entries have experiments/controls, but the six unavailable detailed policies are not exact paper implementations.
