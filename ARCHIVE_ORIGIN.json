@@ -1,7 +1,7 @@
 {
-  "original_commit": "ec3d8b248890dcd3b7544082885158a272495bfc",
-  "original_author_date": "2026-10-31T18:19:13Z",
-  "original_subject": "[AI:ChatGPT] Implement Track A optimizer experiments and initial benchmark",
+  "original_commit": "b5d6cc9aa0038348244bbb2714d6738e85838e50",
+  "original_author_date": "2026-10-31T18:19:49Z",
+  "original_subject": "[AI:ChatGPT] Fix cancellation in convergence control and clarify uncertainty plots",
   "track": "A",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/A/history.bundle",
@@ -44,12 +44,12 @@
     {
       "path": "contopt/report.py",
       "mode": "100644",
-      "sha": "e7a4dc2026be42a3e79e88a8a5c2fb25d21cfc4f"
+      "sha": "b174193e42b7ab8d622adcad01d6cc86a865b93f"
     },
     {
       "path": "contopt/supplement.py",
       "mode": "100644",
-      "sha": "df4f7b46a1f9afc382f540cd69fb6d604c15d8a9"
+      "sha": "d38111c0bf2e1fa9877ca1a0f7bdacc75774775f"
     },
     {
       "path": "requirements.txt",
@@ -59,7 +59,7 @@
     {
       "path": "tests/test_continuous.py",
       "mode": "100644",
-      "sha": "4b082cd08bc12e29397dafd17213a80e3c558184"
+      "sha": "aa3ba5186c2f87f8aa4fca56c15162a8919d69e1"
     }
   ]
 }

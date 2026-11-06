@@ -35,9 +35,9 @@ def comparison_plot(output,runs,summary,protocol):
                 x=[p["data_derivative_passes"] for p in r["trace"]]
                 y=[p["objective"]-(r["reference_objective"] or 0) for p in r["trace"]]
                 ys.append(np.interp(grid,x,y))
-            values=np.array(ys);mean=values.mean(axis=0);sd=values.std(axis=0,ddof=1) if len(values)>1 else np.zeros_like(mean)
+            values=np.array(ys);mean=np.median(values,axis=0);low,high=np.percentile(values,[25,75],axis=0)
             line,=ax.plot(grid,np.maximum(mean,1e-16),label=method,color=COLORS[method],linewidth=1.7)
-            ax.fill_between(grid,np.maximum(mean-sd,1e-16),np.maximum(mean+sd,1e-16),color=COLORS[method],alpha=.08)
+            ax.fill_between(grid,np.maximum(low,1e-16),np.maximum(high,1e-16),color=COLORS[method],alpha=.08)
             if kind=="ridge":handles.append(line);labels.append(method)
         ax.set(xlabel="Data derivative passes (diagnostics excluded)",ylabel="Training objective gap" if kind=="ridge" else "Training objective",
                title="Strongly convex ridge regression" if kind=="ridge" else "Non-convex neural-network training")
@@ -89,9 +89,9 @@ def noise_plot(output,supplements):
         for method in ("GD_constant","GD_decay","Momentum","Adam"):
             rr=[r for r in records if r["sigma"]==sigma and r["method"]==method]
             arr=np.array([[p["true_objective"] for p in r["trace"]] for r in rr]);k=[p["k"] for p in rr[0]["trace"]]
-            mean=arr.mean(axis=0);sd=arr.std(axis=0,ddof=1)
+            mean=np.median(arr,axis=0);low,high=np.percentile(arr,[25,75],axis=0)
             line,=ax.semilogy(k,np.maximum(mean,1e-20),label=method)
-            ax.fill_between(k,np.maximum(mean-sd,1e-20),np.maximum(mean+sd,1e-20),alpha=.08,color=line.get_color())
+            ax.fill_between(k,np.maximum(low,1e-20),np.maximum(high,1e-20),alpha=.08,color=line.get_color())
         ax.set(title=f"Additive oracle noise: sigma={sigma:g}",xlabel="Gradient queries",ylabel="True objective gap");ax.legend(fontsize=8);style(ax)
     fig.suptitle("Step-size sensitivity and noise floors | 10 noise seeds",fontsize=16)
     fig.savefig(output/"tuning_and_noise.png",dpi=160);plt.close(fig)
@@ -157,7 +157,7 @@ def build_report(directory):
         accuracy="n/a" if s["test_accuracy_mean"] is None else f"{100*s['test_accuracy_mean']:.2f}% +/- {100*s['test_accuracy_sd']:.2f} pp"
         L.append(f"| {s['problem']} | {s['method']} | {s['lr']:g} | {s['usable']}/{s['instances']} | {fmt(s['final_objective_mean'])} +/- {fmt(s['final_objective_sd'])} | {fmt(s['reference_gap_mean'])} | {accuracy} | {1000*s['median_runtime_s']:.3f} |")
     L += ["", "![Optimizer comparison](optimizer_comparison.png)", "",
-          "Shaded convergence bands show one sample SD across data seeds. For display only, stopped trajectories are held at their final value and near-zero ridge gaps are floored at 1e-16. The horizontal work coordinate counts sample-gradient passes plus full Hessian/Jacobian evaluations, excluding diagnostics; it is an accounting proxy, not a FLOP-equivalence claim. Raw values are unchanged.", "",
+          "Convergence curves show medians and shaded interquartile ranges across data seeds; neural accuracy bars use means and sample SD. For display only, stopped trajectories are held at their final value and near-zero ridge gaps are floored at 1e-16. The horizontal work coordinate counts sample-gradient passes plus full Hessian/Jacobian evaluations, excluding diagnostics; it is an accounting proxy, not a FLOP-equivalence claim. Raw main benchmark values are unchanged.", "",
           "Ridge Newton and Gauss-Newton coincide because the residual model is linear and its J-transpose-J is the exact Hessian, including regularization. A small iteration count can still involve more work per iteration. SGD's many inexpensive updates and a full-batch GD update have different overhead. Adaptive methods can retain a residual error at a fixed rate. The neural results concern this small dataset and budget, and establish no universal optimizer ranking.", "",
           "## Work and resource accounting", "",
           "| Problem | Method | Mean updates | Mean derivative passes | Hessian calls | Jacobian calls |",
@@ -173,7 +173,7 @@ def build_report(directory):
           "The neural loss is non-convex. Full-gradient stationarity would not prove a global minimum. Smoothness/step-size assumptions supporting the convex controls are not automatically imposed on the neural model or transferred to Adam/noisy updates.", "",
           "![Landscape controls](landscape_controls.png)", "",
           "## Step-size sensitivity and noisy objectives", "",
-          "For (w-3)^2, error is multiplied by 1-2*eta. The recorded rates 0.1, 0.5, 1 and 1.1 show contraction, a one-step solution, oscillation and divergence. A separate noisy oracle adds zero-mean Gaussian gradient and value noise to a known quadratic. Each method sees the same seeded noise stream; true costs are available only because this control is synthetic. Ten seeds and sigma 0/0.1/0.5 show variability and residual noise floors. Schedules/learning rates are prescribed controls rather than a second tuned optimizer contest.", "",
+          "For (w-3)^2, error is multiplied by 1-2*eta. The recorded rates 0.1, 0.5, 1 and 1.1 show contraction, a one-step solution, oscillation and divergence. A separate noisy oracle adds zero-mean Gaussian gradient and value noise to a known quadratic. Each method sees the same seeded noise stream; true costs are available only because this control is synthetic. Ten seeds and sigma 0/0.1/0.5 show variability and residual noise floors. Noise curves display medians and interquartile ranges; the table reports means and sample SD. Learning rates are prescribed controls rather than a second tuned optimizer contest.", "",
           "![Tuning and noise](tuning_and_noise.png)", "",
           "| Noise sigma | Method | Final true gap mean | SD across noise seeds |",
           "|---|---|---:|---:|"]

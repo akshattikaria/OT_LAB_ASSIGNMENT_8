@@ -4,7 +4,7 @@ import numpy as np
 from contopt.checks import audit_run,finite_gradient,finite_hessian,relative_error
 from contopt.optimizers import FIRST_ORDER,FirstOrder,train
 from contopt.problems import ExpFit,Logistic,MLP,Ridge,make_dataset
-from contopt.supplement import conjugate_gradient,curvature_experiment,foundations,landscapes,nonlinear_fit
+from contopt.supplement import conjugate_gradient,curvature_experiment,foundations,landscapes,nonlinear_fit,smooth_convex_value
 
 
 class Updates(unittest.TestCase):
@@ -94,6 +94,11 @@ class Training(unittest.TestCase):
 
 
 class Controls(unittest.TestCase):
+    def test_small_positive_convex_loss_is_not_cancelled(self):
+        value=smooth_convex_value(1e-10)
+        self.assertGreater(value,0)
+        self.assertAlmostEqual(value/5e-21,1.0,places=12)
+
     def test_bounds_and_saddles(self):
         r=landscapes();self.assertTrue(r["bounds_verified"])
         self.assertAlmostEqual(r["saddle"][0]["trace"][-1]["objective"],1,places=8)

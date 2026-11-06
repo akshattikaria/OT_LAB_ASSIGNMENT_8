@@ -10,10 +10,15 @@ from .optimizers import FirstOrder,armijo,positive_direction,train
 from .problems import ExpFit,Logistic,Ridge,make_dataset
 
 
+def smooth_convex_value(x):
+    """Rationalized sqrt(1+x^2)-1, avoiding cancellation for small x."""
+    return float(x*x/(np.hypot(1,x)+1))
+
+
 def landscapes():
     x=10.0;convex=[]
     for k in range(81):
-        f=float(np.hypot(1,x)-1)
+        f=smooth_convex_value(x)
         convex.append({"k":k,"x":x,"gap":f,"bound":None if not k else 100/(2*k)})
         x-=x/np.hypot(1,x)
     w=np.array([5.0,5.0]);strong=[];f0=137.5
