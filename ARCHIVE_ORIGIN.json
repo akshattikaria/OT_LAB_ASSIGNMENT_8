@@ -1,0 +1,100 @@
+{
+  "original_commit": "d5bc98285a4884a36a5b3748c83291a48cd6f9ec",
+  "original_author_date": "2026-10-31T02:05:46-07:00",
+  "original_subject": "[AI:ChatGPT] Implement and validate Track E EV scheduling experiment",
+  "track": "E",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/E/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "b73d1142dd7c76f01b5a1eb14d34694bf9505d33"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "09d024468b8ddca0c2f6180f893879ad19b51b61"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "10b898c0f6eee688f3877f491e7423b9c5cb4453"
+    },
+    {
+      "path": "docs/ASSIGNMENT_STATUS.md",
+      "mode": "100644",
+      "sha": "f7c70681888c8181c93a25dcd3d2318b4470dd2d"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "5b56a4f4df989498456022ec1439c9749204bb83"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "956d015e947e0ecbd289990f58559972823e3f21"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "61e51d5e1bbfce6dc7a1f8b0f94f28f8b0c50f48"
+    },
+    {
+      "path": "evcharge/__init__.py",
+      "mode": "100644",
+      "sha": "58e659754b4a4f8322c402d4c9a6576c7f5993b1"
+    },
+    {
+      "path": "evcharge/__main__.py",
+      "mode": "100644",
+      "sha": "92c376d14603fdd5e1ab91eda62cf595d740e80d"
+    },
+    {
+      "path": "evcharge/data.py",
+      "mode": "100644",
+      "sha": "5390684976c5d6d41fd2b71e02797b6ce7c2c1cd"
+    },
+    {
+      "path": "evcharge/experiment.py",
+      "mode": "100644",
+      "sha": "09ecedd62d206163c8a9e219eda013f0f41d22bf"
+    },
+    {
+      "path": "evcharge/model.py",
+      "mode": "100644",
+      "sha": "752a6ac069cb89d23fed852fab1d7020f72d2fa5"
+    },
+    {
+      "path": "evcharge/reporting.py",
+      "mode": "100644",
+      "sha": "b6e906b052112c4f7432d8e33850c303f44982bc"
+    },
+    {
+      "path": "evcharge/solvers.py",
+      "mode": "100644",
+      "sha": "faac46e7c7d51484199166978a8b8a33d0ee248c"
+    },
+    {
+      "path": "evcharge/verify.py",
+      "mode": "100644",
+      "sha": "35f70e191032e16509db413c16f6483f3ca04bcf"
+    },
+    {
+      "path": "prompts/E/001_start.md",
+      "mode": "100644",
+      "sha": "455b17ba7f0f9f86e64a0eabdf0b12eb01f6d945"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "tests/test_core.py",
+      "mode": "100644",
+      "sha": "b692d5cfddc6b72ce6a51dde393ee831653e2c23"
+    }
+  ]
+}
