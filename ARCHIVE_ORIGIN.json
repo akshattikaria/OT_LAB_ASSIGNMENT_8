@@ -1,7 +1,7 @@
 {
-  "original_commit": "b80da3e99cbe3c24d61a3118752e7ae1f79916be",
-  "original_author_date": "2026-11-04T12:40:29Z",
-  "original_subject": "[AI:ChatGPT] Fix child working directory and verify coverage with seven regression tests",
+  "original_commit": "ba623ad329cf0ee597f46f75ea7c3e5000a748db",
+  "original_author_date": "2026-11-04T12:45:18Z",
+  "original_subject": "[AI:ChatGPT] Add set-cover experiment with precise process timing and independent mutation checks",
   "track": "J",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/J/history.bundle",
@@ -22,14 +22,34 @@
       "sha": "d7402a45663d9a217395149f582a098b01241ffb"
     },
     {
+      "path": "selci/experiment.py",
+      "mode": "100644",
+      "sha": "f153a5cdf7742937858dbe2a3a764d0e233833df"
+    },
+    {
+      "path": "selci/mutations.py",
+      "mode": "100644",
+      "sha": "2e836b134b85c35a9169897e42d3eafc495e0c71"
+    },
+    {
+      "path": "selci/process.py",
+      "mode": "100644",
+      "sha": "8dee571bfbe2be819608028f378c5970d79b5d0a"
+    },
+    {
       "path": "selci/runner.py",
       "mode": "100644",
-      "sha": "fb2eb574ae625837d6ed3635e6c92cb3757bf16b"
+      "sha": "6acbe0343f2a791f796e307e48f6c7bba51c6537"
     },
     {
       "path": "selci/selection.py",
       "mode": "100644",
       "sha": "d77a34249fd410e01a551527ebbeb1914fc82597"
+    },
+    {
+      "path": "tests/test_mutations.py",
+      "mode": "100644",
+      "sha": "0c54faa47e75a3da1e350560d88b7f16793f4c5e"
     },
     {
       "path": "tests/test_selection.py",

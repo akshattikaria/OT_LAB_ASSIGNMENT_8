@@ -49,7 +49,9 @@ def execute(subject,output,nodes=None,trace=False):
                     if context in matrix:matrix[context].add(key)
                     elif context=='__collection__':collection.add(key)
         incidence={'test_nodes':observer.collected,'coverage':{node:sorted(lines) for node,lines in matrix.items()},'universe':sorted(set().union(*matrix.values())),'collection_lines':sorted(collection),'measured_files':file_paths,'definition':'Union of source lines exercised in per-test setup/call/teardown contexts, excluding collection-only execution. This is not all possible statement/branch coverage.'}
-        dump(output/'incidence.json',incidence);cov.json_report(outfile=str(output/'coverage_report.json'),pretty_print=True,show_contexts=True)
+        # The SQLite file and incidence.json already retain all contexts. Expanding
+        # them at every JSON source line created hundreds of MB of redundant data.
+        dump(output/'incidence.json',incidence);cov.json_report(outfile=str(output/'coverage_report.json'),pretty_print=True,show_contexts=False)
     return result
 
 
