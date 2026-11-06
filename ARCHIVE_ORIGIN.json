@@ -1,7 +1,7 @@
 {
-  "original_commit": "7bfdfdba4a729798ec0a4033b2560e3f04dbc6ae",
-  "original_author_date": "2026-11-04T05:32:39Z",
-  "original_subject": "[AI:ChatGPT] Reuse each greedy candidate transform and correct evaluation accounting",
+  "original_commit": "cd071e5a0ad3a8879336617c052be55a08f91f10",
+  "original_author_date": "2026-11-04T05:37:43Z",
+  "original_subject": "[AI:ChatGPT] Verify compiler semantics and add native benchmark controls",
   "track": "F",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/F/history.bundle",
@@ -17,9 +17,24 @@
       "sha": "def132cbbdc1f2b65bc65dddf97bcff597a78faf"
     },
     {
+      "path": "tests/test_compiler.py",
+      "mode": "100644",
+      "sha": "42f86de06cad745dda79f89f0c5333371bedcd73"
+    },
+    {
       "path": "toycc/__init__.py",
       "mode": "100644",
       "sha": "ccdfe5e1579ed84307440eaeacf0e7397a5da23d"
+    },
+    {
+      "path": "toycc/__main__.py",
+      "mode": "100644",
+      "sha": "ea2a1f03bb82680f2ab47bb76172053d0a9a149f"
+    },
+    {
+      "path": "toycc/experiment.py",
+      "mode": "100644",
+      "sha": "0de1b8cca831149cf6bbfb9602d54831da36d43d"
     },
     {
       "path": "toycc/frontend.py",
@@ -29,12 +44,22 @@
     {
       "path": "toycc/ir.py",
       "mode": "100644",
-      "sha": "9f241f37f9b404600c784487d7d568a11dc91e20"
+      "sha": "b04cc34bdb55f9aa40a39e1dcef955009054c5cc"
+    },
+    {
+      "path": "toycc/native.py",
+      "mode": "100644",
+      "sha": "a9024ccb3014ce8db1ab154a821c004464a9ddb9"
     },
     {
       "path": "toycc/passes.py",
       "mode": "100644",
       "sha": "6c893f06b34dc7468df3e3f9569d9671f66943ca"
+    },
+    {
+      "path": "toycc/programs.py",
+      "mode": "100644",
+      "sha": "3ae8fee9e9226ee32332da1deeacc2568f73e542"
     },
     {
       "path": "toycc/search.py",

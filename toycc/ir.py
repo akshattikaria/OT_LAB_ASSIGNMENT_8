@@ -4,7 +4,7 @@ from .frontend import MASK
 
 OPNAMES={'+':'add','-':'sub','*':'mul','^':'xor','&':'and','|':'or','<<':'shl','>>':'shr'}
 COMMUTATIVE={'add','mul','xor','and','or'}
-COST={'arg':0,'const':1,'copy':1,'add':1,'sub':1,'mul':4,'xor':1,'and':1,'or':1,'shl':1,'shr':1}
+COST={'arg':1,'const':1,'copy':1,'add':1,'sub':1,'mul':4,'xor':1,'and':1,'or':1,'shl':1,'shr':1}
 
 
 @dataclass(frozen=True)
