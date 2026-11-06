@@ -54,6 +54,10 @@ def audit(directory):
         if row['elapsed_ns']<=0 or row['sha256']!=truth[row['case']]['sha256'] or row['rows']!=len(truth[row['case']]['rows']) or row['kind']!=by_id[row['case']]['kind'] or row['split']!=by_id[row['case']]['split']:raise AssertionError('Invalid latency/result record')
         checks+=1
     traces=read('throughput_traces.json');batch=read('throughput_runs.json');writes=read('write_runs.json')
+    blocks=[json.loads(path.read_text()) for path in sorted((root/'trial_blocks').glob('*.json'))]
+    key=lambda row:(row['portfolio'],row['repeat'],row.get('case',''))
+    if len(blocks)!=len(portfolios)*protocol['repeats'] or sorted([r for block in blocks for r in block['latencies']],key=key)!=sorted(latency,key=key) or sorted([block['throughput'] for block in blocks],key=key)!=sorted(batch,key=key):raise AssertionError('Per-trial records differ from aggregates')
+    checks+=len(blocks)
     if {(r['portfolio'],r['repeat']) for r in batch}!={(p,r) for p in portfolios for r in range(protocol['repeats'])} or len(batch)!=len(portfolios)*protocol['repeats']:raise AssertionError('Missing throughput trial')
     for row in batch:
         trace=traces[row['repeat']];frequencies=Counter(by_id[i]['kind'] for i in trace)

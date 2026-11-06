@@ -2,13 +2,25 @@ from contextlib import closing
 import itertools
 import random
 import sqlite3
+import json
+from pathlib import Path
+import tempfile
 import unittest
 import numpy as np
-from dblab.core import SCHEMA,INDEXES,QUERIES,CITIES,cases,fingerprint,generate_rows,reference,sqlsum
+from dblab.core import SCHEMA,INDEXES,QUERIES,CITIES,cases,fingerprint,generate_rows,reference,sqlsum,dump
 from dblab.select import greedy,ilp,exhaustive,utility
 
 
 class SelectionTests(unittest.TestCase):
+    def test_saved_json_replacement_and_readback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'saved.json';dump(path,{'records':[1]});dump(path,{'records':list(range(1000))})
+            self.assertEqual(json.loads(path.read_text()),{'records':list(range(1000))});self.assertFalse(path.with_suffix('.json.tmp').exists())
+    def test_invalid_json_keeps_previous_record(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'saved.json';dump(path,{'records':[1]})
+            with self.assertRaises(ValueError):dump(path,{'records':[float('nan')]})
+            self.assertEqual(json.loads(path.read_text()),{'records':[1]})
     def test_overlap_not_double_counted(self):
         gains=[[10,9],[0,0]];self.assertEqual(utility([0,1],gains),10);self.assertEqual(greedy([1,1],gains,2)['selected'],[0])
     def test_greedy_can_be_suboptimal(self):

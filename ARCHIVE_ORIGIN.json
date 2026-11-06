@@ -1,7 +1,7 @@
 {
-  "original_commit": "cb844bcc7d66196faf468d92ec598f25e8d13bf9",
-  "original_author_date": "2026-11-04T11:04:25Z",
-  "original_subject": "[AI:ChatGPT] Require atomic readback and complete persisted trial blocks after audit rejected missing records",
+  "original_commit": "f0270c446a4849b3d1563bf251ca6c0f535e39ad",
+  "original_author_date": "2026-11-04T11:14:30Z",
+  "original_subject": "[AI:ChatGPT] Preserve complete audited SQLite experiments, rejected evidence, all-portfolio report and viva notes",
   "track": "H",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/H/history.bundle",
@@ -10,6 +10,11 @@
       "path": ".gitignore",
       "mode": "100644",
       "sha": "b02e26dcd476c3e80354e0844b25180b15be6f09"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "de50c393fe06b5bb2b946a3e4a1fdda9499276a8"
     },
     {
       "path": "dblab/__init__.py",
@@ -24,7 +29,7 @@
     {
       "path": "dblab/audit.py",
       "mode": "100644",
-      "sha": "896f6ae32c8f481894b1c54edc761dabe21b8de6"
+      "sha": "12e1c790b56e8e6b69719ef914c1e655de13b011"
     },
     {
       "path": "dblab/core.py",
@@ -39,7 +44,7 @@
     {
       "path": "dblab/report.py",
       "mode": "100644",
-      "sha": "4c1b7ebf5b35288b61b6d4a367cdf1dc83bf8612"
+      "sha": "8d925fb6d30e657e56e81abfd90aa94c61ae0f03"
     },
     {
       "path": "dblab/select.py",
@@ -47,14 +52,59 @@
       "sha": "9289ff2ff9cf610d5961839c55b250de61687054"
     },
     {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "72ead0e97ea779745aafcaa6d29b675ce959ec98"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "ac8945a2b4864878e431fd672d5a64eb2ac89376"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "45bcbe27769e67dea7903f53cf63f34a1a420ba7"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "c6ea5496e896257632408f529e7c1e7fb3e6734d"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "97af80364a2ce79803e51dec8f683074ba51cdc5"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "942deac5b0bca80880a330e6b6ab20be9ce7cd17"
+    },
+    {
       "path": "docs/schema_cache_reproducer.py",
       "mode": "100644",
       "sha": "155d165c2e85be2050f5ed59d852cde28a75afea"
     },
     {
+      "path": "prompts/H/001_continue.md",
+      "mode": "100644",
+      "sha": "d595245e8479a22aec1a5a3ddfd1ff16de26e1fd"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
       "path": "tests/test_dbms.py",
       "mode": "100644",
-      "sha": "fd43a726966b186d7fa913fd8ab1565a6d2e9bca"
+      "sha": "90481685576237809fc9137d36b7e18f491e4fe1"
+    },
+    {
+      "path": "validation/initial_incomplete_run/REPORT.md",
+      "mode": "100644",
+      "sha": "0a79838bb206f3c47eff42772335732f1ad2f78a"
     }
   ]
 }
