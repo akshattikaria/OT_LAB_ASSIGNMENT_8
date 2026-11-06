@@ -1,5 +1,8 @@
 import itertools
 import math
+import json
+from pathlib import Path
+import tempfile
 import unittest
 import numpy as np
 from qiskit.quantum_info import Statevector,Operator
@@ -60,6 +63,13 @@ class CircuitTests(unittest.TestCase):
 
 
 class LearningTests(unittest.TestCase):
+    def test_calibrated_metadata_is_json_serializable(self):
+        from qstudy.experiment import FrozenManila,noise_metadata
+        from qstudy.common import dump
+        from qiskit_aer.noise import NoiseModel
+        backend=FrozenManila();metadata=noise_metadata(backend,NoiseModel.from_backend(backend))
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'metadata.json';dump(path,metadata);saved=json.loads(path.read_text());self.assertEqual(len(saved['coupling_map']),8);self.assertTrue(saved['calibration_date'].startswith('2024-05-27'))
     def test_feature_map_independent_amplitudes(self):
         for x in ([0,0],[.2,-.5],[-1.1,.7]):np.testing.assert_allclose(Statevector.from_instruction(feature_map(x)).data,analytic_feature_state(x),atol=1e-12)
     def test_overlap_grams_and_counts(self):

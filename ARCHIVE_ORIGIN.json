@@ -1,7 +1,7 @@
 {
-  "original_commit": "1a921930be9132f1358e1ece6fd9668ed3077898",
-  "original_author_date": "2026-11-04T11:56:08Z",
-  "original_subject": "[AI:ChatGPT] Add explicit SDK circuits and kernel workflow; retain actual EdgeList metadata failure",
+  "original_commit": "8c1d83da4fc9d357cebf04a23c4496a070766d38",
+  "original_author_date": "2026-11-04T11:57:32Z",
+  "original_subject": "[AI:ChatGPT] Serialize calibrated coupling edges and verify full small workflow before main measurements",
   "track": "I",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/I/history.bundle",
@@ -22,6 +22,11 @@
       "sha": "cab1afdddb838019b863314d63e1fae321b186fa"
     },
     {
+      "path": "qstudy/__main__.py",
+      "mode": "100644",
+      "sha": "cbcda5c8110d0c005eafcfabbd5b10b3fa669a91"
+    },
+    {
       "path": "qstudy/circuits.py",
       "mode": "100644",
       "sha": "7cc288828d5b5a9da6fa225431ef6dada39f8d38"
@@ -34,17 +39,17 @@
     {
       "path": "qstudy/experiment.py",
       "mode": "100644",
-      "sha": "1d7ea87263e48ebb6906f99b72f6e08cfe62750a"
+      "sha": "21e01e75de401b9beb6c6c4fc38f7935fc3f668a"
     },
     {
       "path": "qstudy/learning.py",
       "mode": "100644",
-      "sha": "639c2e5bdd0414611403a9981a6653211fe85cd4"
+      "sha": "30d2a2bab42442bbdf1b16214a3e44aee6227db6"
     },
     {
       "path": "tests/test_quantum.py",
       "mode": "100644",
-      "sha": "2a81e367eef0cac41a83963bb94ffc24efcac63b"
+      "sha": "efa1163ecf9a223acf9ee6ac113a7bb5b5ff0c49"
     }
   ]
 }

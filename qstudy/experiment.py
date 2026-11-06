@@ -133,6 +133,10 @@ def hybrid_study(output,seeds,steps,maxfev):
     dump(output/'annealing_runs.json',{'gate_based_adiabatic_simulation':anneal_rows,'classical_simulated_annealing':classical,'exact_cut':float(values.max()),'interpretation':'Gate-based Trotter approximation to a closed-system annealing schedule, not an execution on annealing hardware or evidence of tunneling advantage.'})
 
 
+def noise_metadata(backend,noise):
+    return {'backend':backend.name,'calibration_date':backend.properties().last_update_date.isoformat(),'basis_gates':noise.basis_gates,'coupling_map':[list(edge) for edge in backend.coupling_map.get_edges()],'source':'Pinned qiskit-ibm-runtime FakeManila snapshot copied into inputs/fake_manila, loaded by FrozenManila','models':'Aer NoiseModel.from_backend with gate/depolarizing, thermal relaxation and readout errors; incomplete approximation, not all device effects.','physical_hardware_used':False}
+
+
 def noise_study(output,seeds,shots):
     backend=FrozenManila();noise=NoiseModel.from_backend(backend);dump(output/'calibrated_noise_model.json',noise.to_dict(serializable=True))
     programs=[('bv',bernstein_vazirani(3,5),3,[5]),('dj',deutsch_jozsa([int((x&5).bit_count()%2) for x in range(8)]),3,list(range(1,8))),('grover',grover(3,3),3,[3]),('qpe',phase_estimation(3,3/8),3,[3])];rows=[]
@@ -146,14 +150,14 @@ def noise_study(output,seeds,shots):
                 if sum(counts.values())!=shots:raise AssertionError('Noise shot count mismatch')
                 rows.append({'program':name,'seed':seed,'condition':condition,'shots':shots,'counts':counts,'success_count':success_count,'success_probability':success_count/shots,'success_outcomes':success,'runtime_s':elapsed,'native_operations':dict(compiled.count_ops()),'native_depth':compiled.depth(),**circuit_record})
         dump(output/'noise_runs.json',rows);print('Historical calibrated noise and paired ideal control: '+name,flush=True)
-    dump(output/'noise_provenance.json',{'backend':backend.name,'calibration_date':backend.properties().last_update_date.isoformat(),'basis_gates':noise.basis_gates,'coupling_map':backend.coupling_map.get_edges(),'source':'Pinned qiskit-ibm-runtime FakeManila snapshot copied into inputs/fake_manila, loaded by FrozenManila','models':'Aer NoiseModel.from_backend with gate/depolarizing, thermal relaxation and readout errors; incomplete approximation, not all device effects.','physical_hardware_used':False})
+    dump(output/'noise_provenance.json',noise_metadata(backend,noise))
 
 
 def learning_study(output,seeds,train_size,test_size):
     records=[];shot_records=[];folder=output/'qml_data';folder.mkdir()
     for family in ('moons','circles'):
         for seed in seeds:
-            data=dataset(family,seed,train_size,test_size);rows,matrices,shots=fit_pair(data);name=f'{family}_{seed}.npz';np.savez_compressed(folder/name,**data,**matrices)
+            data=dataset(family,seed,train_size,test_size);order=('quantum','rbf') if seed%2==0 else ('rbf','quantum');rows,matrices,shots=fit_pair(data,order);name=f'{family}_{seed}.npz';np.savez_compressed(folder/name,**data,**matrices)
             for row in rows:records.append({'family':family,'seed':seed,'train_size':train_size,'test_size':test_size,'data_file':'qml_data/'+name,**row})
             for row in shots:shot_records.append({'family':family,'seed':seed,**row})
             dump(output/'qml_runs.json',records);dump(output/'kernel_shots.json',shot_records);print(f'Kernel classifiers {family}, seed {seed}: exact circuits and RBF control complete',flush=True)

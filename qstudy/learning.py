@@ -36,23 +36,24 @@ def dataset(family,seed,train_size=60,test_size=60):
 
 
 def quantum_grams(x_train,x_test):
-    n=len(x_train);m=len(x_test);train=np.eye(n);test=np.empty((m,n));encoders=[feature_map(x) for x in np.r_[x_train,x_test]];inverses=[c.inverse() for c in encoders[:n]];calls=0;start=time.perf_counter()
+    n=len(x_train);m=len(x_test);train=np.eye(n);test=np.empty((m,n));calls=0;start=time.perf_counter();encoders=[feature_map(x) for x in x_train];inverses=[c.inverse() for c in encoders]
     def overlap(i,j):
         nonlocal calls
         circuit=encoders[i].compose(inverses[j]);calls+=1
         return float(np.clip(abs(Statevector.from_instruction(circuit).data[0])**2,0,1))
     for i in range(n):
         for j in range(i):train[i,j]=train[j,i]=overlap(i,j)
-    train_s=time.perf_counter()-start;start=time.perf_counter()
+    train_s=time.perf_counter()-start;start=time.perf_counter();encoders.extend(feature_map(x) for x in x_test)
     for i in range(m):
         for j in range(n):test[i,j]=overlap(n+i,j)
     test_s=time.perf_counter()-start
-    return train,test,{'training_kernel_s':train_s,'test_kernel_s':test_s,'overlap_circuit_evaluations':calls,'train_overlap_circuits':n*(n-1)//2,'test_overlap_circuits':n*m,'feature_definitions':n+m,'encoding_block_applications':2*calls,'trainable_circuit_parameters':0}
+    return train,test,{'training_kernel_s':train_s,'test_kernel_s':test_s,'overlap_circuit_evaluations':calls,'train_overlap_circuits':n*(n-1)//2,'test_overlap_circuits':n*m,'feature_definitions':n+m,'encoding_block_applications':2*calls,'trainable_circuit_parameters':0,'overlap_logical_operations':dict(encoders[0].compose(inverses[0]).count_ops())}
 
 
-def fit_pair(data):
+def fit_pair(data,order=('quantum','rbf')):
     x=data['x_train'];xt=data['x_test'];y=data['y_train'];yt=data['y_test'];records=[];saved={};models={}
-    for name in ('quantum','rbf'):
+    if len(order)!=2 or set(order)!={'quantum','rbf'}:raise ValueError('Both models must be measured once')
+    for name in order:
         if name=='quantum':ktrain,ktest,counters=quantum_grams(x,xt)
         else:
             gamma=1/(x.shape[1]*x.var());start=time.perf_counter();ktrain=rbf_kernel(x,x,gamma=gamma);train_s=time.perf_counter()-start;start=time.perf_counter();ktest=rbf_kernel(xt,x,gamma=gamma);test_s=time.perf_counter()-start
