@@ -9,7 +9,8 @@ All commits in this Track G project are AI-assisted and use the [AI:ChatGPT] pre
 | f7e43eb599c474f138fb1b4b3150d51a88ee4219 | Fix copyout by supplying the pinned API's process-size bound |
 | 4adc2fae0483c106aa8c9eec6c3b98d864dd1766 | Freeze six native guest workloads and QEMU workflow; exact native source used for validation and measurement |
 | f1a4399d4d383ef19e86845d4e0c24e747dd89dd | Preserve all four full guest suites, host checks, verified patch and AI-error evidence |
+| db937a2ee2bb28914d34ebe5bfb4cc5a14eebec5 | Retain all 72 main measurements, raw UART, full negative-result analysis, CLI replay, README and viva notes |
 
-Subsequent AI-assisted evidence/report and final manifest commits are included in the bundle and are discoverable with `git log --oneline`. This index does not embed its own future commit hash or claim public commit URLs. The upstream MIT commit is independent of this local history and recorded in UPSTREAM.json.
+The subsequent AI-assisted final manifest commit is included in the bundle and is discoverable with `git log --oneline`. This index does not embed its own future commit hash or claim public commit URLs. The upstream MIT commit is independent of this local history and recorded in UPSTREAM.json.
 
 The original/fixed source is directly reviewable with `git show HASH:xv6/kernel/sysproc.c`. The patch contains only the final native xv6 changes; the host scripts, reports and logs accompany it separately. The native source remained unchanged while full suites and measurements were running.
