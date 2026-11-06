@@ -24,6 +24,15 @@ def assignments(jobs,p,kind):
     return queues
 
 
+def _deque_pop(deque,back=False):
+    """Caller holds the deque's lock. Fixed storage, moving head/tail bounds."""
+    buffer,head,tail=deque
+    if head.value>=tail.value:return None
+    if back:tail.value-=1;index=tail.value
+    else:index=head.value;head.value+=1
+    return (int(buffer[2*index]),int(buffer[2*index+1]))
+
+
 def _worker(rank,kind,own,shared,locks,barrier,ready,results,iterations):
     rows=[];cpu=process_time()
     try:
@@ -37,12 +46,13 @@ def _worker(rank,kind,own,shared,locks,barrier,ready,results,iterations):
             elif kind=='work_stealing':
                 job=None
                 with locks[rank]:
-                    if len(shared[rank]):job=shared[rank].pop(0)
+                    job=_deque_pop(shared[rank])
                 if job is None:
                     # Only unstarted jobs can be moved. Never execute under a queue lock.
                     for victim in [(rank+offset)%len(shared) for offset in range(1,len(shared))]:
                         with locks[victim]:
-                            if len(shared[victim]):job=shared[victim].pop();donor=victim;break
+                            job=_deque_pop(shared[victim],back=True)
+                            if job is not None:donor=victim;break
                 if job is None:break
             else:
                 if not own:break
@@ -57,14 +67,16 @@ def _worker(rank,kind,own,shared,locks,barrier,ready,results,iterations):
 def schedule(jobs,p,kind,iterations_per_unit=30000):
     if kind not in ('static_block','static_lpt','dynamic_pool','work_stealing') or not isinstance(p,int) or p<1:raise ValueError('Invalid scheduling method/workers')
     if not jobs or len(set(j[0] for j in jobs))!=len(jobs) or any(j[1]<1 for j in jobs):raise ValueError('Invalid jobs')
-    ctx=mp.get_context('spawn');outer=perf_counter();manager=None;shared=None;locks=None
+    ctx=mp.get_context('spawn');outer=perf_counter();shared=None;locks=None
     local=assignments(jobs,p,kind);barrier=ctx.Barrier(p+1);results=ctx.Queue();ready=ctx.Queue()
     if kind=='dynamic_pool':
         shared=ctx.Queue()
         for job in jobs:shared.put(job)
         for _ in range(p):shared.put(None)
     elif kind=='work_stealing':
-        manager=ctx.Manager();shared=[manager.list(q) for q in local];locks=[ctx.Lock() for _ in range(p)]
+        shared=[(ctx.Array('q',[value for job in q for value in job],lock=False),
+                 ctx.Value('q',0,lock=False),ctx.Value('q',len(q),lock=False)) for q in local]
+        locks=[ctx.Lock() for _ in range(p)]
     processes=[ctx.Process(target=_worker,args=(rank,kind,local[rank],shared,locks,barrier,ready,results,iterations_per_unit)) for rank in range(p)]
     try:
         for process in processes:process.start()
@@ -86,7 +98,6 @@ def schedule(jobs,p,kind,iterations_per_unit=30000):
     finally:
         for process in processes:
             if process.is_alive():process.terminate();process.join()
-        if manager is not None:manager.shutdown()
         if kind=='dynamic_pool':shared.close();shared.join_thread()
         results.close();results.join_thread()
         ready.close();ready.join_thread()

@@ -1,7 +1,7 @@
 {
-  "original_commit": "3e037b9d4513de8b27bc4dfdc07524270818f7b5",
-  "original_author_date": "2026-11-03T12:17:30Z",
-  "original_subject": "[AI:ChatGPT] Exclude worker initialization from steady timing with readiness handshake",
+  "original_commit": "92593d395b57358aa690084a6a8613b9703e2d3e",
+  "original_author_date": "2026-11-03T12:26:53Z",
+  "original_subject": "[AI:ChatGPT] Validate shared-memory schedulers and retain all Track D experiments",
   "track": "D",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/D/history.bundle",
@@ -17,9 +17,24 @@
       "sha": "8b3fff99ac0fde368db1f8a16399ed8f46b66871"
     },
     {
+      "path": "distopt/__main__.py",
+      "mode": "100644",
+      "sha": "161f22e6fcfa2cc473c8e93ac97e894966a7e6d1"
+    },
+    {
+      "path": "distopt/audit.py",
+      "mode": "100644",
+      "sha": "957024b96413ec2b788f96b8fbf81759dc21e27a"
+    },
+    {
       "path": "distopt/coverage.py",
       "mode": "100644",
       "sha": "5235c7ece30928ac3959cdb4dda3d9cf350981c0"
+    },
+    {
+      "path": "distopt/experiment.py",
+      "mode": "100644",
+      "sha": "ad3c219fa85b1459673faef0e533edfb428d1583"
     },
     {
       "path": "distopt/federated.py",
@@ -42,9 +57,19 @@
       "sha": "298818a9de9224d8b57fdd201c4f9724ef98a47c"
     },
     {
+      "path": "distopt/report.py",
+      "mode": "100644",
+      "sha": "bc2191afbefd61f7752480f2ce235d442c2ced79"
+    },
+    {
+      "path": "distopt/resume_resources.py",
+      "mode": "100644",
+      "sha": "d48403557bec0f44ba2829812bd1a2ce4c74cf1c"
+    },
+    {
       "path": "distopt/scheduling.py",
       "mode": "100644",
-      "sha": "3d15482b0e0022b42336dba0273ad33a2ddde614"
+      "sha": "df377cfaf55ef45b606872d094260277fec133e6"
     },
     {
       "path": "native/locality.c",
@@ -55,6 +80,11 @@
       "path": "requirements.txt",
       "mode": "100644",
       "sha": "d9810ecca3de5754420b8836ad37ac21897d6e68"
+    },
+    {
+      "path": "tests/test_track_d.py",
+      "mode": "100644",
+      "sha": "2be723efb69aadb8b24ae0f9d56cd35f2a70f338"
     }
   ]
 }
