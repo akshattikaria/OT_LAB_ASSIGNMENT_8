@@ -1,6 +1,7 @@
 from contextlib import closing
 from datetime import datetime,timezone
 import hashlib
+import json
 import os
 from pathlib import Path
 import platform
@@ -123,7 +124,13 @@ def run(directory,rows=200000,repeats=5,profile_repeats=3,stream_size=100,write_
             for identifier,result in zip(trace,outputs):
                 if fingerprint(result)!=truth[identifier]['sha256']:raise AssertionError('Throughput query result differs')
             throughput.append({'portfolio':name,'repeat':repeat,'requests':len(trace),'elapsed_ns':elapsed,'queries_per_second':len(trace)*1e9/elapsed,'trace_sha256':fingerprint(trace),'output_sha256':fingerprint(outputs)})
-        dump(output/'latency_runs.json',latencies);dump(output/'throughput_runs.json',throughput);print(f'{name}, repetition {repeat}: checked 30 query cases and {stream_size} mixed requests',flush=True)
+        dump(output/'trial_blocks'/f'{name}_{repeat}.json',{'portfolio':name,'repeat':repeat,'latencies':latencies[-len(order):],'throughput':throughput[-1]})
+        print(f'{name}, repetition {repeat}: checked 30 query cases and {stream_size} mixed requests',flush=True)
+    blocks=[json.loads(path.read_text()) for path in sorted((output/'trial_blocks').glob('*.json'))]
+    saved_latency=[r for block in blocks for r in block['latencies']];saved_throughput=[block['throughput'] for block in blocks]
+    key=lambda r:(r['portfolio'],r['repeat'],r.get('case',''))
+    if len(blocks)!=len(trials) or sorted(saved_latency,key=key)!=sorted(latencies,key=key) or sorted(saved_throughput,key=key)!=sorted(throughput,key=key):raise AssertionError('Persisted trial blocks differ from completed measurements')
+    dump(output/'latency_runs.json',saved_latency);dump(output/'throughput_runs.json',saved_throughput)
     writes=[]
     for name,path in portfolios.items():
         for repeat in range(write_repeats):
@@ -135,5 +142,6 @@ def run(directory,rows=200000,repeats=5,profile_repeats=3,stream_size=100,write_
             writes.append({'portfolio':name,'repeat':repeat,'inserted':write_rows,'elapsed_ns':elapsed,'rows_per_second':write_rows*1e9/elapsed,'inserted_sha256':fingerprint(inserted),'file_bytes_after':trial.stat().st_size})
         print(name+' write-cost trials complete',flush=True)
     dump(output/'write_runs.json',writes)
+    if len(json.loads((output/'latency_runs.json').read_text()))!=len(portfolios)*repeats*len(query_cases) or len(json.loads((output/'throughput_runs.json').read_text()))!=len(portfolios)*repeats:raise AssertionError('Final saved sample count incomplete')
     if sha_file(base)!=facts['file_sha256']:raise AssertionError('Baseline data changed')
     dump(output/'evidence_sha256.json',{str(path.relative_to(output)):sha_file(path) for path in sorted(output.rglob('*')) if path.is_file()});return output

@@ -1,7 +1,7 @@
 {
-  "original_commit": "d4eea40495ff1f04ec559b546828e4760ccd38d3",
-  "original_author_date": "2026-11-04T10:59:07Z",
-  "original_subject": "[AI:ChatGPT] Isolate fixture portfolios on fresh connections and verify parameter switching",
+  "original_commit": "cb844bcc7d66196faf468d92ec598f25e8d13bf9",
+  "original_author_date": "2026-11-04T11:04:25Z",
+  "original_subject": "[AI:ChatGPT] Require atomic readback and complete persisted trial blocks after audit rejected missing records",
   "track": "H",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/H/history.bundle",
@@ -22,14 +22,24 @@
       "sha": "fabbe16436879d0027692496c86ce0f564403ced"
     },
     {
+      "path": "dblab/audit.py",
+      "mode": "100644",
+      "sha": "896f6ae32c8f481894b1c54edc761dabe21b8de6"
+    },
+    {
       "path": "dblab/core.py",
       "mode": "100644",
-      "sha": "5fe50cde51622c52a90d7f532e47f975898c6793"
+      "sha": "dca9ecbd1e7a897254e9c38879195f4ac46e38ab"
     },
     {
       "path": "dblab/experiment.py",
       "mode": "100644",
-      "sha": "57241fc2a476c964deaecd74a95c2a87c175c463"
+      "sha": "3485b8c58307947bebc7936a52dabe0f704b32f4"
+    },
+    {
+      "path": "dblab/report.py",
+      "mode": "100644",
+      "sha": "4c1b7ebf5b35288b61b6d4a367cdf1dc83bf8612"
     },
     {
       "path": "dblab/select.py",
@@ -39,7 +49,7 @@
     {
       "path": "docs/schema_cache_reproducer.py",
       "mode": "100644",
-      "sha": "2b4afd05607a20564abfc53b43b78fb6491e664f"
+      "sha": "155d165c2e85be2050f5ed59d852cde28a75afea"
     },
     {
       "path": "tests/test_dbms.py",

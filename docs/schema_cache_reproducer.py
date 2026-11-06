@@ -6,6 +6,7 @@ tests create schema before querying and reopen connections for each portfolio.
 """
 import sys
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'tests'))
 from test_dbms import QueryTests
 from dblab.core import INDEXES,QUERIES,reference

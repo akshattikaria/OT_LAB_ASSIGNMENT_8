@@ -1,5 +1,6 @@
 import hashlib
 import json
+import os
 from pathlib import Path
 import random
 import sqlite3
@@ -48,7 +49,10 @@ QUERIES={
 
 
 def dump(path,value):
-    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(value,indent=2,allow_nan=False)+'\n')
+    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True);text=json.dumps(value,indent=2,allow_nan=False)+'\n';temporary=path.with_suffix(path.suffix+'.tmp')
+    with temporary.open('w') as stream:stream.write(text);stream.flush();os.fsync(stream.fileno())
+    os.replace(temporary,path)
+    if path.read_text()!=text:raise IOError('Saved JSON differs from requested content: '+str(path))
 
 
 def fingerprint(rows):
