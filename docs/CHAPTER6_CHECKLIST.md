@@ -123,7 +123,7 @@ The slides label these as research references/spotlights. Listing or bibliograph
 
 | Entry | Lecture | Verification | Experimental status |
 |---|---|---|---|
-| GRNG / RENG / RING | PPT1 35 | primary_checked_in_conversation | paper_not_reproduced |
+| GRNG | PPT1 35 | primary_checked_in_conversation | paper_not_reproduced |
 | AdaFisher | PPT1 35,38 | primary_checked_in_conversation | paper_not_reproduced |
 | Dynamic nonmonotone submodular methods | PPT1 36 | slide_citation_only | paper_not_reproduced |
 | Differentially private submodular methods | PPT1 36 | slide_citation_only | paper_not_reproduced |
@@ -135,6 +135,11 @@ The slides label these as research references/spotlights. Listing or bibliograph
 | Architecture-aware currying | PPT2 33 | slide_citation_only | paper_not_reproduced |
 | Subspace Networks | PPT2 33 | slide_citation_only | paper_not_reproduced |
 | OFLight | PPT2 33 | slide_citation_only | paper_not_reproduced |
+| TensorHyper-VQC | PPT3 37 | slide_citation_only | paper_not_reproduced |
+| Negative learning-rate phases | PPT3 37 | slide_citation_only | paper_not_reproduced |
+| Quantum measurement temperature | PPT3 38 | slide_citation_only | paper_not_reproduced |
+| Quantum-gradient nested optimization | PPT3 38 | slide_citation_only | paper_not_reproduced |
+| QML-Liver | PPT3 39 | slide_citation_only | paper_not_reproduced |
 | EAHP | PPT4 22,24-25 | slide_citation_only | paper_not_reproduced |
 | GAGS SVM | PPT4 22,24 | slide_citation_only | paper_not_reproduced |
 | Astra | PPT4 22,24-25 | primary_checked_in_conversation | paper_not_reproduced |

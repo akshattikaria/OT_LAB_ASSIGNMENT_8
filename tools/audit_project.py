@@ -41,6 +41,17 @@ def main():
             for key,value in [('median_ms',statistics.median(times)),('min_ms',min(times)),('max_ms',max(times))]:assert math.isclose(summary[method][key],value,rel_tol=1e-12)
         assert math.isclose(summary['chatgpt_over_gemini_time_ratio'],summary['chatgpt']['median_ms']/summary['gemini']['median_ms'],rel_tol=1e-12)
     checklist=read('docs/CHAPTER6_CHECKLIST.json')
+    assert len(checklist['research_references'])==22
+    quantum_refs={'TensorHyper-VQC','Negative learning-rate phases','Quantum measurement temperature','Quantum-gradient nested optimization','QML-Liver'}
+    assert quantum_refs <= {r['topic'] for r in checklist['research_references']}
+    review_hosts=read('validation/final-review-host/summary.json')
+    assert {r['track'] for r in review_hosts}==set('ABCDEFGHIJ')
+    assert all(r['passed'] and r['exit_code']==0 for r in review_hosts) and sum(r['tests'] for r in review_hosts)==243
+    review_supplement=(ROOT/'validation/final_review_supplement.log').read_text()
+    assert 'Ran 7 tests' in review_supplement and '\nOK' in review_supplement
+    for method,source in [('chatgpt','chatgpt_candidate.py'),('gemini','gemini_candidate_01.py')]:
+        result=read(f'validation/final_review_{method}_result.json')
+        assert result['passed'] and result['tests']==9 and result['sha256']==hashlib.sha256((ROOT/'ai_tool_comparison'/source).read_bytes()).hexdigest()
     for row in checklist['topics']:
         for p in row['evidence']:assert (ROOT/p).is_file(),p
     hp=read('chapter_supplement/results/hpo.json');assert len(hp['summary'])==30 and len(hp['raw'])==5
@@ -88,5 +99,6 @@ def main():
     text='\n'.join(p.extract_text() for p in pdf.pages);assert all('Track '+l+':' in text for l in 'ABCDEFGHIJ');assert '\ufffd' not in text
     assert 'Two-tool comparison: ChatGPT and Gemini' in text and 'Argon High' in text
     result={'passed':True,'imported_files_verified':len(hashes),'tracks':len(sources),'retained_track_host_tests':243,'retained_host_test_date':'2026-11-04','supplement_tests':7,'comparison_baseline_tests':9,'comparison_tools':2,'shared_tests_per_tool':9,'exhaustive_small_cases_per_tool':100,'timed_function_calls':56,'generation_latency_comparable':False,'course_topic_entries':len(checklist['topics']),'research_reference_entries':len(checklist['research_references']),'hpo_policy_rows':30,'compression_runs':20,'native_control_trials':14,'pdf_pages':len(pdf.pages),'demo_seconds':video['duration_s'],'scope':'Integrity, evidence links and retained arithmetic. Original A-J code/results unchanged; supplied Gemini comparison recorded. Full chat exports, publication and research interpretation remain open.'}
+    result.update(final_review_track_host_tests=243,final_review_supplement_tests=7,final_review_shared_tests_per_tool=9,submission_ready=False)
     print(json.dumps(result,indent=2));return result
 if __name__=='__main__':main()

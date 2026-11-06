@@ -4,7 +4,7 @@ No GitHub repository was selected, created or pushed in this stage. The unrelate
 
 The integration history bundle records the added supplement/report/validation work. Original A-J local histories are preserved in their individual history bundles. The integration Git ignore deliberately keeps imported tracks separate until publication; **a plain git add . alone will not stage them**.
 
-From the extracted package, after attaching the remaining full export evidence and reviewing the recorded comparison and files:
+From the extracted package, after attaching the remaining sanitized platform export/screenshot evidence and reviewing the recorded comparison and files:
 
 ```bash
 git init -b main

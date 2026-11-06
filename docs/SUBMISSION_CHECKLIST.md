@@ -2,17 +2,17 @@
 
 | Requirement | State | Evidence / action |
 |---|---|---|
-| All core tracks A-J | Built and host-tested | tracks/A through tracks/J; 243 host tests retained from 4 November |
+| All core tracks A-J | Built and host-tested | tracks/A through tracks/J; 243 tests pass again in 6 November final review |
 | Main EV formulation and comparisons | Present | E formulation, 75 main cases, raw inputs/results |
 | Integrated technical report | Present | reports/ PDF and Markdown |
 | Tables, plots, units and limitations | Present | Combined report and complete per-track reports |
-| Exact chapter inventory | Present with research boundary | 112 core/supporting entries and 17 research references |
+| Exact chapter inventory | Present with research boundary | 112 core/supporting entries and 22 research references |
 | Supporting search/compression/embedding topics | Demonstrated with explicit scope | chapter_supplement/results/ |
 | Correctness/source integrity | Passed | Imported file hashes, host tests, supplement tests, audit |
 | At least three actual corrected AI errors | Present | A/B/D/F/G/H/I/J failure records; minimum exceeded |
-| AI tool register and prompt excerpts | Present; full exports still needed | Original track logs plus integration record |
+| AI tool register and prompt excerpts | Present; platform evidence still needed | Original track logs plus integration record |
 | Two different AI tools on one task | Comparison recorded using supplied evidence | ChatGPT and Gemini “Argon High”; 9/9 tests each, 56 timed calls; COMPARISON.md |
-| Exact exposed model labels/full sanitized chats | User evidence needed | Full platform exports pending; supplied screenshot confirms Gemini selector, not underlying revision |
+| Displayed model labels and platform evidence | User evidence needed | Sanitized ChatGPT/Gemini exports or screenshots needed; supplied screenshot confirms Gemini selector only |
 | Public GitHub repository | Pending repository choice/publication | Do not reuse unrelated VoltNest repository |
 | Short demonstration | Captioned artifact and guide prepared | Actual CLI output and saved results; rehearse for viva |
 | Paper-specific research reproductions | Not claimed | Confirm instructor interpretation; unreproduced rows stay open |

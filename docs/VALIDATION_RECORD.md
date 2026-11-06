@@ -11,3 +11,9 @@ The updated integrated audit verifies all 2,013 imported file hashes, checklist 
 All 22 updated PDF pages were rendered for visual review, including enlarged checks of the changed comparison/conclusion pages. All six 1080p video scenes were checked; ffprobe confirms the approximately 100-second silent captioned demonstration. It uses actual retained EV CLI output and project results. See validation/report_visual_check.json for completed review evidence.
 
 The final ZIP is checked for CRC integrity, full manifest equality and imported-file agreement, then re-extracted for a relocation audit. Original A-J sources remain unchanged. Global integration history and per-track histories stay separate. The screenshot's private URL, account and browser details are not redistributed; a textual observation and digest preserve evidence attribution.
+
+## Final review on 6 November
+
+A new complete host-test run passes all 243 tests, and new supplemental and comparison runs pass 7 and 9 per candidate respectively. Logs are under validation/final-review-host/ and validation/final_review_*. Source hashes are checked after the tests. No main performance experiment or historical timing is replaced.
+
+The original seven-page brief and all four course decks were reread. Five quantum research spotlights on PPT3 slides 37–39 were missing from the inventory; these are now included as unverified slide citations and explicitly not reproduced. The corrected inventory has 112 core/supporting topics and 22 research-reference entries. This fixes the inventory, not an experimental-reproduction gap. The brief requires a public GitHub repository and sanitized chat exports or screenshots from each AI tool; a Drive-only submission does not meet those requirements.
