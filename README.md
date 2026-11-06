@@ -19,6 +19,8 @@ The assignment is **not yet unconditionally ready for submission**. Complete the
 
 The included captioned video demonstrates actual EV CLI output and retained results. Rehearse it and explain/modify the code yourself for the viva. Add your own narration or live presentation if your instructor requires it.
 
+When choosing the public repository, follow `docs/PUBLISHING.md`: the supplied staging helper includes the exact imported tracks, which are intentionally separate from the integration-only Git history.
+
 The brief's suggested fourteen-day plan does not justify inventing daily work records. Actual dated work is recorded in `docs/ACTIVITY_RECORD.md`.
 
 ## Read and reproduce

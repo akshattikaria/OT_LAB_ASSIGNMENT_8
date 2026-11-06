@@ -1,7 +1,7 @@
 {
-  "original_commit": "cfb335a60716e368e5a0857ecf2fb8d9617a65ba",
-  "original_author_date": "2026-11-04T17:51:23Z",
-  "original_subject": "[AI:ChatGPT] Integrate A-J, verify chapter supplement, and prepare report/demo",
+  "original_commit": "7ea752fad0f77a3eab422436433b114c3ad657f8",
+  "original_author_date": "2026-11-04T17:52:44Z",
+  "original_subject": "[AI:ChatGPT] Add explicit publication staging and verified package export",
   "track": "integration",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "integration_history.bundle",
@@ -14,7 +14,7 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha": "02b3d4a61c8645e37584c6f82fe013188f6b2386"
+      "sha": "ca49c34553fd9ba16732e5bdb4eb331944b7cbe8"
     },
     {
       "path": "ai_tool_comparison/README.md",
@@ -120,6 +120,11 @@
       "path": "tools/build_report.py",
       "mode": "100644",
       "sha": "670ff00d18c3a2ec09720e422dd65e5d888bbeea"
+    },
+    {
+      "path": "tools/package_project.py",
+      "mode": "100644",
+      "sha": "24b65333733612fa0df146359ab1a2833a46d96f"
     },
     {
       "path": "tools/replay_track_audits.py",
