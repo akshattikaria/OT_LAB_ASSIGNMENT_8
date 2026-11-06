@@ -11,7 +11,7 @@ This is a CPU simulation study using Qiskit Statevector and Qiskit Aer, explicit
 | moons | 58.33% | 75.00% |
 | circles | 58.33% | 66.67% |
 
-Each value averages 1 dataset/split seeds. The fixed two-qubit kernel is less accurate and more expensive to simulate on both datasets. This does not rank all possible QML models. Grover exhibits its expected logical query scaling while the simulator is much slower than the tiny classical search. The historical device noise reduces success in the four tested programs. These negative results are retained, including finite-budget QAOA runs that stop without optimizer success.
+Each value averages 1 dataset/split seeds. The fixed two-qubit kernel scores lower on 2 of two datasets and takes longer to train in simulation on 2 of two. This does not rank all possible QML models. Grover exhibits its expected logical query scaling while the simulator is much slower than the tiny classical search. The historical device noise reduces success in the four tested programs. All outcomes and finite-budget optimizer statuses are retained.
 
 # Setup, source and existing coverage
 
@@ -63,7 +63,7 @@ The query plot separates the analytic uniform-target classical expectation from 
 | 16 | 3 + 1 | 8.5 | 14.0 | 0.96132 | 84 | 33.462 |
 | 64 | 6 + 1 | 32.5 | 50.0 | 0.99659 | 984 | 57.241 |
 
-With one marked item, r is rounded from pi/(4 asin(1/sqrt(N))) minus 1/2; the marked probability is sin squared of (2r+1)asin(1/sqrt(N)). The known black-box advantage is quadratic query scaling. Some sampled targets are found early by linear search, and one amplification attempt is probabilistic. Raw outcomes and verification are retained. Circuit construction, MCX decomposition, transpilation, statevector evolution and output sampling have costs absent from the unit-query model; these are included in the recorded simulator total. No QRAM, realistic database loading, fault tolerance or scalable oracle synthesis is demonstrated.
+With one marked item, r is rounded from pi/(4 asin(1/sqrt(N))) minus 1/2; the marked probability is sin squared of (2r+1)asin(1/sqrt(N)). The known black-box advantage is quadratic query scaling. Some sampled targets are found early by linear search, and one amplification attempt is probabilistic. Raw outcomes and verification are retained. Circuit construction, MCX decomposition, transpilation, statevector evolution and output sampling have costs absent from the unit-query model; these are included in the recorded simulator total. Transpilation supplies the u/cx resource count, while Statevector evolves the logical circuit; the total includes this inspection compilation and is not bare evolution time. Component timings remain separate. No QRAM, realistic database loading, fault tolerance or scalable oracle synthesis is demonstrated.
 
 # Historical calibrated hardware-noise model
 

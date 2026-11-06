@@ -14,7 +14,7 @@ Shor's toy example prepares four counting and four work qubits for N=15. Modular
 
 For one marked element among N=2^n, theta=asin(1/sqrt(N)) and r is the nearest integer to pi/(4*theta)-1/2. The success probability after r rounds is sin^2((2r+1)*theta). The benchmark stores r oracle calls, one additional classical verification query, an actual sampled outcome, and a separately timed classical scan on the same marked element.
 
-Uniform-target expected classical checks are (N+1)/2. Observed checks are marked_index+1 and can be much smaller for an early target. Both are shown. The known query-model difference is O(sqrt(N)) versus O(N), with a reversible oracle assumed available. Decomposed MCX gates, loading, routing, measurements, error correction and circuit construction are additional costs. The CPU total here includes circuit build, transpilation to u/cx, exact statevector simulation and output sampling/verification. It is not an estimate of QPU time.
+Uniform-target expected classical checks are (N+1)/2. Observed checks are marked_index+1 and can be much smaller for an early target. Both are shown. The known query-model difference is O(sqrt(N)) versus O(N), with a reversible oracle assumed available. Decomposed MCX gates, loading, routing, measurements, error correction and circuit construction are additional costs. The CPU total here includes circuit build, transpilation to u/cx for resource accounting, exact statevector simulation of the logical circuit and output sampling/verification. Component timings are separate; the total includes resource inspection rather than representing bare circuit evolution. It is not an estimate of QPU time.
 
 ## Hybrid optimization
 
