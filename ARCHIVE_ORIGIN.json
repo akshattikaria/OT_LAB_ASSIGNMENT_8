@@ -1,7 +1,7 @@
 {
-  "original_commit": "d25351c65a9e5533289c1785bd78705b3bf12d8a",
-  "original_author_date": "2026-11-04T17:52:44Z",
-  "original_subject": "[AI:ChatGPT] Record integration provenance before final export",
+  "original_commit": "0e1a0a862ef7d6d271290923ddb0fca4e7afae24",
+  "original_author_date": "2026-11-05T19:13:28Z",
+  "original_subject": "[AI:ChatGPT] Record verified Gemini comparison and update report/demo",
   "track": "integration",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "integration_history.bundle",
@@ -14,12 +14,22 @@
     {
       "path": "README.md",
       "mode": "100644",
-      "sha": "ca49c34553fd9ba16732e5bdb4eb331944b7cbe8"
+      "sha": "071eff5bd19445734b9f6d80d33aea1a7029f3af"
+    },
+    {
+      "path": "ai_tool_comparison/COMPARISON.md",
+      "mode": "100644",
+      "sha": "b5ed21c17cba292b0a69f6fc317e57f5b3107f0f"
     },
     {
       "path": "ai_tool_comparison/README.md",
       "mode": "100644",
-      "sha": "cbc508062e98e6d13cd4a395f9e71d17c47a357f"
+      "sha": "99436a417997f6a21406584b072f837dc7b4740b"
+    },
+    {
+      "path": "ai_tool_comparison/benchmark_pair.py",
+      "mode": "100644",
+      "sha": "a61d4c9bf2924324029a06eb9dc49ef8c62f778c"
     },
     {
       "path": "ai_tool_comparison/chatgpt_candidate.py",
@@ -30,6 +40,16 @@
       "path": "ai_tool_comparison/evaluate.py",
       "mode": "100644",
       "sha": "27c7a63900c318ee065eb24b2b7708e506bd51ab"
+    },
+    {
+      "path": "ai_tool_comparison/gemini_candidate_01.py",
+      "mode": "100644",
+      "sha": "17bcb7f4032703f004e7fb94e5e214bf3c1e20ff"
+    },
+    {
+      "path": "ai_tool_comparison/gemini_evidence.md",
+      "mode": "100644",
+      "sha": "97a34ec18f74455a4d3a8068fdaebaa4d45fd3d5"
     },
     {
       "path": "chapter_supplement/__init__.py",
@@ -54,12 +74,12 @@
     {
       "path": "docs/ACTIVITY_RECORD.md",
       "mode": "100644",
-      "sha": "6912a5f304029b9f59324b31637faa68923fe0f9"
+      "sha": "c4ea78eb5bb798507815d9783deec20659fd29cf"
     },
     {
       "path": "docs/AI_TOOL_REGISTER.md",
       "mode": "100644",
-      "sha": "2dcf58dac9ff0e80165103099680adc7fe0510b2"
+      "sha": "71458c7ec668004278ccc1d0584bddbab74189bf"
     },
     {
       "path": "docs/CHAPTER6_CHECKLIST.md",
@@ -69,32 +89,37 @@
     {
       "path": "docs/DEMONSTRATION_GUIDE.md",
       "mode": "100644",
-      "sha": "856fd49679d57592705cfbae5fc5bcb490354e35"
+      "sha": "df3a024bf6562e2dcd68c0757dd739d552398c94"
     },
     {
       "path": "docs/FINAL_QUESTIONS.md",
       "mode": "100644",
-      "sha": "e9e54252ac4bc28f5b12bbdf2634dd65c5e31bd1"
+      "sha": "9b7f7eb470d9cd8c19faedc854787398575e79f2"
     },
     {
       "path": "docs/PUBLISHING.md",
       "mode": "100644",
-      "sha": "d27cbb5af235d12608d4a1af09fb30e3436d3d81"
+      "sha": "1e1b9087002458fb3a306938f4cca2a16d3e5b87"
     },
     {
       "path": "docs/SUBMISSION_CHECKLIST.md",
       "mode": "100644",
-      "sha": "d15cf32b81724868d7cb7562de2143e0ab42ef67"
+      "sha": "1d326a82b7724afda6eee8489f8b7498dffcb107"
     },
     {
       "path": "docs/VALIDATION_RECORD.md",
       "mode": "100644",
-      "sha": "f59a73b8138acff47b89a55e75ab359666295208"
+      "sha": "2787684d149fe141f801706d710dfa20862538e2"
     },
     {
       "path": "prompts/Integration/001_continue.md",
       "mode": "100644",
       "sha": "75e518b039c1352a17f758851a2c58198241f779"
+    },
+    {
+      "path": "prompts/Integration/002_gemini_comparison.md",
+      "mode": "100644",
+      "sha": "212eb8fb60b81b32ea8fc6320636ad0f43625dbf"
     },
     {
       "path": "requirements.txt",
@@ -104,7 +129,7 @@
     {
       "path": "tools/audit_project.py",
       "mode": "100644",
-      "sha": "c65d6aa4692f402e1608b4abaf1f769eec9eba65"
+      "sha": "349a052012486f3873f955308d611d0907b2869b"
     },
     {
       "path": "tools/build_checklist.py",
@@ -112,14 +137,19 @@
       "sha": "3134a2523c3f3908c3863c8c9b567b0ce2645b24"
     },
     {
+      "path": "tools/build_comparison_summary.py",
+      "mode": "100644",
+      "sha": "e297e8abe916451d5012043ceaa8e834f4944901"
+    },
+    {
       "path": "tools/build_demo.py",
       "mode": "100644",
-      "sha": "8e63ddb4e0165814d17b52bcaf2e3c286d470b3b"
+      "sha": "0a77a095e5d2430e7c700cf610d04063ddb6b299"
     },
     {
       "path": "tools/build_report.py",
       "mode": "100644",
-      "sha": "670ff00d18c3a2ec09720e422dd65e5d888bbeea"
+      "sha": "048a2348ba2b896c208987044760f96eed14f200"
     },
     {
       "path": "tools/package_project.py",

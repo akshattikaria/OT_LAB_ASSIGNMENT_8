@@ -51,10 +51,10 @@ def main():
         'but misses 3 of the 16 faults caught by the full suite.',
         'Line coverage, lower operation counts and lower contention are surrogate metrics.'],18))
     scenes.append(frame(6,'Reproduce, explain and finish the evidence',[
-        '243 original track host tests, 7 supplement tests and 9 comparison tests pass.',
+        'Retained tests: 243 track + 7 supplement. New comparison: 9/9 per tool.',
         'Run: python tools/audit_project.py',
         'Read the report, exact chapter checklist and raw per-track evidence.',
-        'Finish the real second-AI-tool comparison, chat exports and correct GitHub publication.',
+        'ChatGPT/Gemini comparison recorded. Finish chat exports and GitHub publication.',
         'Research-paper reproductions remain explicit if sir requires them.',
         'Practice explaining the formulation and changing a small input without AI.'],16))
     concat=WORK/'scenes.txt';concat.write_text(''.join(f"file '{p}'\nduration {seconds}\n" for p,seconds in scenes)+f"file '{scenes[-1][0]}'\n")

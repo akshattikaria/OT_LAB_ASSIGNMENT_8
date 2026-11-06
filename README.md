@@ -8,14 +8,13 @@ The EV experiment achieves 49.44% mean cost reduction on 15 matched, feasible, c
 
 ## Current status
 
-The ten core tracks, integrated report, supporting chapter experiments, reproducibility checks and demonstration artifact are built. The fresh integration run passes **243 existing track host tests** plus **7 supplement tests**. These are separate from archived xv6 guest tests and the cachetools subject suite.
+The ten core tracks, integrated report, supporting chapter experiments, reproducibility checks and demonstration artifact are built. The retained 4 November integration run passes **243 existing track host tests** plus **7 supplement tests**. On 6 November, both original AI candidates passed the **same 9 comparison tests**, including 100 exhaustive small cases each. The supplied Gemini response and 56 paired function-runtime measurements are recorded in `ai_tool_comparison/COMPARISON.md`. These are separate from archived xv6 guest tests and the cachetools subject suite.
 
 The assignment is **not yet unconditionally ready for submission**. Complete these real remaining items:
 
-1. Run the fixed task in a second AI tool and retain its original answer, model label, timing and revisions. `ai_tool_comparison/` contains the exact prompt, ChatGPT baseline and common evaluator.
-2. Attach full sanitized chat exports/model-header evidence. Earlier prompt excerpts and AI-assisted commits are preserved; they are not a replacement for a full export.
-3. Select the correct assignment GitHub repository and publish the reviewed project. No remote was selected here; the unrelated VoltNest repository is not used.
-4. Confirm whether sir expects paper-specific research spotlights to be reproduced. The chapter checklist explicitly separates 112 core/supporting topic entries from 17 research references. Reference-only rows are not claimed implemented.
+1. Attach full sanitized chat exports/model-header evidence. Earlier prompt excerpts and AI-assisted commits are preserved; they are not a replacement for a full export.
+2. Select the correct assignment GitHub repository and publish the reviewed project. No remote was selected here; the unrelated VoltNest repository is not used.
+3. Confirm whether sir expects paper-specific research spotlights to be reproduced. The chapter checklist explicitly separates 112 core/supporting topic entries from 17 research references. Reference-only rows are not claimed implemented.
 
 The included captioned video demonstrates actual EV CLI output and retained results. Rehearse it and explain/modify the code yourself for the viva. Add your own narration or live presentation if your instructor requires it.
 
@@ -67,13 +66,13 @@ Historical timings are retained, not replaced by host-test elapsed times. Seeds 
 | `chapter_supplement` | Search-policy replay, compression, layout/embedding/control experiments |
 | `docs` | Exact course checklist, submission status, final answers and demo guide |
 | `provenance` | Current source archive hashes and all 2,013 imported file hashes |
-| `validation` | Fresh test logs, audit and report/video checks |
-| `ai_tool_comparison` | Same-task two-tool comparison kit; second response pending |
+| `validation` | Dated test logs, audit and report/video checks |
+| `ai_tool_comparison` | Supplied Gemini response, common tests and paired function-runtime comparison |
 
 Per-track READMEs/reports are original dated milestones. Their earlier “next track” notes are historical. **This root README and `docs/SUBMISSION_CHECKLIST.md` describe current progress.** The imported originals are preserved for traceability.
 
 ## AI tools register
 
-All implementation and documentation here are AI-assisted. Historical stage records disclose ChatGPT with session-reported `gpt-6.1-sol` for A/B/C/D/F/G and `gpt-6-astra` for E. H/I/J and integration identify the GPT-6 family where an exact serving revision is unavailable. These historical labels need confirmation from original exports; no unexposed version is guessed. See `docs/AI_TOOL_REGISTER.md` and the original registers for dates/scope. No manual student correction or second independent AI-tool result is fabricated.
+All implementation and documentation here are AI-assisted. Historical stage records disclose ChatGPT with session-reported `gpt-6.1-sol` for A/B/C/D/F/G and `gpt-6-astra` for E. H/I/J and integration identify the GPT-6 family where an exact serving revision is unavailable. These historical labels need confirmation from original exports; no unexposed version is guessed. See `docs/AI_TOOL_REGISTER.md` and the original registers for dates/scope. Google Gemini supplied the second-tool function, with selector “Argon High” shown in student evidence received 6 November. Its approximately 60 ± 3 second generation time is a student estimate; ChatGPT generation latency is unavailable. No repair was needed. Full exports remain pending; no unexposed model revision or manual student correction is invented.
 
 More than three genuine corrected AI-code defects are documented across the tracks. Intentional mutants, unstable controls and heuristic limitations are not counted as AI mistakes. Supplied course slides are acknowledged and hashed rather than redistributed; vendored public sources retain their licenses.

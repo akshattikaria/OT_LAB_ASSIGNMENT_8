@@ -10,4 +10,4 @@ The captioned video shows actual EV command output and project evidence. It is a
 6. Show J: 391 to 74 tests and 41.5% lower median wall time, but three of 16 full-suite-detected faults missed. Line coverage is a surrogate.
 7. Explain one real AI bug/fix from A, B or D, then distinguish quantum query advantage from CPU simulation speed.
 
-Practice changing a tariff or capacity in a copied tiny EV input and predicting the effect before running it. Be able to explain code and modify it without AI during the viva. Do not claim physical QPU access, real station savings or a completed second-tool comparison.
+Practice changing a tariff or capacity in a copied tiny EV input and predicting the effect before running it. Be able to explain code and modify it without AI during the viva. The second-tool comparison is recorded in ai_tool_comparison/COMPARISON.md: both original answers pass; Gemini’s approximate generation time is student-estimated and ChatGPT’s is unknown. Explain that function timing is separate from response generation. Do not claim physical QPU access, real station savings or a general model ranking.

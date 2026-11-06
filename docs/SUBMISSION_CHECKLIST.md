@@ -2,7 +2,7 @@
 
 | Requirement | State | Evidence / action |
 |---|---|---|
-| All core tracks A-J | Built and host-tested | tracks/A through tracks/J; 243 fresh host tests |
+| All core tracks A-J | Built and host-tested | tracks/A through tracks/J; 243 host tests retained from 4 November |
 | Main EV formulation and comparisons | Present | E formulation, 75 main cases, raw inputs/results |
 | Integrated technical report | Present | reports/ PDF and Markdown |
 | Tables, plots, units and limitations | Present | Combined report and complete per-track reports |
@@ -11,8 +11,8 @@
 | Correctness/source integrity | Passed | Imported file hashes, host tests, supplement tests, audit |
 | At least three actual corrected AI errors | Present | A/B/D/F/G/H/I/J failure records; minimum exceeded |
 | AI tool register and prompt excerpts | Present; full exports still needed | Original track logs plus integration record |
-| Two different AI tools on one task | Pending actual second response | ai_tool_comparison/TASK_PROMPT.txt and evaluator |
-| Exact exposed model labels/full sanitized chats | User evidence needed | Attach exports/screenshots; preserve unknowns honestly |
+| Two different AI tools on one task | Comparison recorded using supplied evidence | ChatGPT and Gemini “Argon High”; 9/9 tests each, 56 timed calls; COMPARISON.md |
+| Exact exposed model labels/full sanitized chats | User evidence needed | Full platform exports pending; supplied screenshot confirms Gemini selector, not underlying revision |
 | Public GitHub repository | Pending repository choice/publication | Do not reuse unrelated VoltNest repository |
 | Short demonstration | Captioned artifact and guide prepared | Actual CLI output and saved results; rehearse for viva |
 | Paper-specific research reproductions | Not claimed | Confirm instructor interpretation; unreproduced rows stay open |
