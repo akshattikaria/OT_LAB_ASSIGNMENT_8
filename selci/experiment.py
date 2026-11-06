@@ -134,7 +134,7 @@ def main():
         profile = pristine_check(directory, nodes)
         profiles.append({row['nodeid']: row['duration_s'] for row in profile['tests']})
     costs = [max(1, math.ceil(statistics.median(p[n] for p in profiles) * 1e6)) for n in nodes]
-    dump(out / 'costs.json', {'unit': 'microseconds', 'rule': 'max(1, ceil(median of uninstrumented setup+call+teardown seconds across three profile runs * 1e6))',
+    dump(out / 'costs.json', {'unit': 'microseconds', 'rule': 'max(1, ceil(median of uninstrumented setup+call+teardown seconds across the recorded profile_runs * 1e6))',
                             'profile_runs': args.profile_runs, 'nodes': nodes, 'costs': costs})
     cprofile_process = checked_run(SUBJECT, out / 'cprofile', profile=True)
     dump(out / 'profile_summary.json', profile_table(out / 'cprofile/baseline.pstats'))

@@ -1,7 +1,7 @@
 {
-  "original_commit": "ba623ad329cf0ee597f46f75ea7c3e5000a748db",
-  "original_author_date": "2026-11-04T12:45:18Z",
-  "original_subject": "[AI:ChatGPT] Add set-cover experiment with precise process timing and independent mutation checks",
+  "original_commit": "2166f835f921362978d2d149f9d4f8abca7496a4",
+  "original_author_date": "2026-11-04T12:55:46Z",
+  "original_subject": "[AI:ChatGPT] Complete Track J report, raw evidence, audits and genuine failure documentation",
   "track": "J",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/J/history.bundle",
@@ -9,12 +9,62 @@
     {
       "path": ".gitignore",
       "mode": "100644",
-      "sha": "b02e26dcd476c3e80354e0844b25180b15be6f09"
+      "sha": "c8fa729b4b65ca1d9bbadeff69c5426fd6f46b8e"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "9b1b551e814f907615672cf40cbe94235e86e1d1"
+    },
+    {
+      "path": "REPORT.md",
+      "mode": "100644",
+      "sha": "3fc4637119333a1d5e920e7a26ed8855da1c4071"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "8916e77c682a9aa71f4540f778be6356af208e59"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "7a9e8de73549b1825bdb9283c836f5ef4097fbe1"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "a51c3b0f0ca6e798db851185b989ed1f1991f71a"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "28b0fbd52c8a67bf8fcbe149a5883ab0c7dc46a9"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "07119b24fd2b1f10c3ec1049742d7d641ee14531"
+    },
+    {
+      "path": "prompts/J/001_continue.md",
+      "mode": "100644",
+      "sha": "0dfb723a66e52dc0dc30fa997bfd70106d94d4d5"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "ce2df2cb1f827511bdcd049ea5c55a5170c53dc1"
     },
     {
       "path": "selci/__init__.py",
       "mode": "100644",
       "sha": "10de17be734a8c88313c3145000e634b0a29eb90"
+    },
+    {
+      "path": "selci/audit.py",
+      "mode": "100644",
+      "sha": "386dc7ae05b4fc445375f8f8aae8f767b8c1b1e7"
     },
     {
       "path": "selci/common.py",
@@ -24,7 +74,7 @@
     {
       "path": "selci/experiment.py",
       "mode": "100644",
-      "sha": "f153a5cdf7742937858dbe2a3a764d0e233833df"
+      "sha": "715ae5eda7a3bdaca53658101cc3d5eda85703a7"
     },
     {
       "path": "selci/mutations.py",
@@ -35,6 +85,11 @@
       "path": "selci/process.py",
       "mode": "100644",
       "sha": "8dee571bfbe2be819608028f378c5970d79b5d0a"
+    },
+    {
+      "path": "selci/report.py",
+      "mode": "100644",
+      "sha": "a7fc3afa389af768063fa9dc222c3bc38526f3a3"
     },
     {
       "path": "selci/runner.py",
