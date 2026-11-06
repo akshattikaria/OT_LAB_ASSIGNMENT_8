@@ -4,7 +4,7 @@ from pathlib import Path
 import tempfile
 import unittest
 from oslab.experiment import parse_result,expected_operations,NUMERIC
-from oslab.runtime import ROOT,qemu_arguments,source_hash
+from oslab.runtime import ROOT,qemu_arguments,source_hash,parse_timebase
 
 
 def line(**changes):
@@ -50,6 +50,9 @@ class HostTests(unittest.TestCase):
         metadata=json.loads((ROOT/'UPSTREAM.json').read_text());self.assertEqual(len(metadata['files']),82)
         for file in metadata['files']:
             data=(ROOT/'vendor'/'xv6'/file['path']).read_bytes();sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest();self.assertEqual(sha,file['sha'])
+    def test_saved_qemu_timebase(self):
+        self.assertEqual(parse_timebase((ROOT/'validation/device_tree/virt.dtb').read_bytes()),10000000)
+        with self.assertRaises(ValueError):parse_timebase(b'not a device tree')
 
 
 if __name__=='__main__':unittest.main()

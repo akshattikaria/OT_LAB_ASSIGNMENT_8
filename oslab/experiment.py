@@ -1,6 +1,7 @@
 from datetime import datetime,timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import platform
 import random
@@ -62,7 +63,9 @@ def run_benchmark(directory,toolchain=None,repeats=3,cpus=3,scale=1):
     env=tool_environment(toolchain);output.mkdir(parents=True,exist_ok=True);frequency=timebase(env,output/'device_tree');versions={}
     for command in ('qemu-system-riscv64','riscv64-linux-gnu-gcc'):
         versions[command]=subprocess.run([command,'--version'],env=env,check=True,capture_output=True,text=True).stdout.splitlines()[0]
-    write_json(output/'environment.json',{'utc':datetime.now(timezone.utc).isoformat(),'platform':platform.platform(),'versions':versions,'timebase_frequency_hz':frequency,'guest_cpus':cpus,'guest_ram':'128 MiB','acceleration':'QEMU TCG full-system RISC-V emulation','source_sha256':source_hash(ROOT/'xv6')})
+    quota=Path('/sys/fs/cgroup/cpu.max')
+    write_json(output/'environment.json',{'utc':datetime.now(timezone.utc).isoformat(),'platform':platform.platform(),'versions':versions,'timebase_frequency_hz':frequency,'guest_cpus':cpus,'guest_ram':'128 MiB','acceleration':'QEMU TCG full-system RISC-V emulation','source_sha256':source_hash(ROOT/'xv6'),
+        'host_logical_cpus':os.cpu_count(),'host_affinity':sorted(os.sched_getaffinity(0)) if hasattr(os,'sched_getaffinity') else None,'host_cpu_max':quota.read_text().strip() if quota.exists() else None})
     budgets={name:max(1,int(iterations*scale)) for name,iterations in WORKLOADS.items()}
     write_json(output/'protocol.json',{'variants':VARIANTS,'repeats':repeats,'guest_cpus':cpus,'scale':scale,'workload_iterations':budgets,
         'allocator':'Three real guest worker processes use pipe readiness/start barriers. Initial forks occur before the snapshot; work and worker exit/reaping occur inside it. 16 pages/batch, nested fork/wait and pipe churn are distinct workloads.',

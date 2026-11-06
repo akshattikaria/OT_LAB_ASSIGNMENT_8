@@ -43,7 +43,8 @@ def build(variant,env,log_directory):
     with log.open('w') as stream:result=subprocess.run(argv,cwd=target,env=env,stdout=stream,stderr=subprocess.STDOUT)
     if result.returncode:raise RuntimeError(f'{variant} build failed; see {log}')
     shutil.copyfile(target/'fs.img',target/'fresh.img')
-    return target,{'variant':variant,'source_sha256':digest,'command':argv,'seconds':time.monotonic()-start,'kernel_bytes':(target/'kernel/kernel').stat().st_size,'kernel_sha256':hashlib.sha256((target/'kernel/kernel').read_bytes()).hexdigest()}
+    return target,{'variant':variant,'source_sha256':digest,'command':argv,'seconds':time.monotonic()-start,'kernel_bytes':(target/'kernel/kernel').stat().st_size,'kernel_sha256':hashlib.sha256((target/'kernel/kernel').read_bytes()).hexdigest(),
+        'filesystem_bytes':(target/'fresh.img').stat().st_size,'filesystem_sha256':hashlib.sha256((target/'fresh.img').read_bytes()).hexdigest()}
 
 
 def qemu_arguments(directory,cpus=3,image='fs.img'):
@@ -82,7 +83,13 @@ class Guest:
 def timebase(env,directory):
     path=Path(directory).resolve()/'virt.dtb';path.parent.mkdir(parents=True,exist_ok=True)
     argv=['qemu-system-riscv64','-machine',f'virt,dumpdtb={path}','-bios','none','-m','128M','-smp','3','-display','none','-serial','none','-monitor','none','-nic','none']
-    subprocess.run(argv,env=env,capture_output=True,check=True,timeout=20);raw=path.read_bytes();header=struct.unpack('>10I',raw[:40]);cursor=header[2];strings=raw[header[3]:];frequency=None
+    subprocess.run(argv,env=env,capture_output=True,check=True,timeout=20)
+    return parse_timebase(path.read_bytes())
+
+
+def parse_timebase(raw):
+    if len(raw)<40 or raw[:4]!=bytes.fromhex('d00dfeed'):raise ValueError('Not a flattened device tree')
+    header=struct.unpack('>10I',raw[:40]);cursor=header[2];strings=raw[header[3]:];frequency=None
     while cursor<len(raw):
         token=struct.unpack_from('>I',raw,cursor)[0];cursor+=4
         if token==1:cursor=(raw.index(b'\0',cursor)+4)&~3

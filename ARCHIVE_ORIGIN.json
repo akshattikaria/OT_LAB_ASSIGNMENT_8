@@ -1,7 +1,7 @@
 {
-  "original_commit": "4adc2fae0483c106aa8c9eec6c3b98d864dd1766",
-  "original_author_date": "2026-11-04T08:58:20Z",
-  "original_subject": "[AI:ChatGPT] Freeze six guest workloads and QEMU validation workflow",
+  "original_commit": "f1a4399d4d383ef19e86845d4e0c24e747dd89dd",
+  "original_author_date": "2026-11-04T09:21:08Z",
+  "original_subject": "[AI:ChatGPT] Verify four kernels with full guest suites and preserve patch and API failure evidence",
   "track": "G",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/G/history.bundle",
@@ -10,6 +10,26 @@
       "path": ".gitignore",
       "mode": "100644",
       "sha": "e8f8e1533eefdb2948474a0bbcff16fab9f7e959"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "b44d00f10dbf332c85c1f4a6a7140f75de3097db"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "a6e6ad09683c07b660f23e7060568b2c33126c18"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "15958b179b5709c5c7b42d0100a080683fd55dda"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "2c0ff13903053c0c70a88a935e7b74eeda1ad49f"
     },
     {
       "path": "oslab/__init__.py",
@@ -24,22 +44,42 @@
     {
       "path": "oslab/audit.py",
       "mode": "100644",
-      "sha": "4347b0cbf0e665016f584d8c0cc048eb900b8f10"
+      "sha": "5596c535c79629913fb1ebe1bf59f5709366db97"
     },
     {
       "path": "oslab/experiment.py",
       "mode": "100644",
-      "sha": "809c339ded7884cd9d5a63d0e098f91c5b45bba6"
+      "sha": "706a6333af6b0760895e9b55faeeeaef82accecb"
+    },
+    {
+      "path": "oslab/report.py",
+      "mode": "100644",
+      "sha": "4f0e5ad340e0245ad9952fc779d267cc296a34e8"
     },
     {
       "path": "oslab/runtime.py",
       "mode": "100644",
-      "sha": "f38e4778b96efb197cf570910c4d0d0564deb473"
+      "sha": "dcc6a6e88ba5749bb5e3e3df2ed09ce461d88643"
+    },
+    {
+      "path": "patches/track_g.patch",
+      "mode": "100644",
+      "sha": "500ee44b74e208ea934d6caa28bcf19a88b3948c"
+    },
+    {
+      "path": "prompts/G/001_continue.md",
+      "mode": "100644",
+      "sha": "a09dab86cc903152bcb8148430888e2d39a5cf2d"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "def132cbbdc1f2b65bc65dddf97bcff597a78faf"
     },
     {
       "path": "tests/test_host.py",
       "mode": "100644",
-      "sha": "a6807eb23901b6068c136890b6db0800e83217e9"
+      "sha": "9c36d4b659a868b6e85731d00fb6795815b56a55"
     },
     {
       "path": "xv6/.github/workflows/test.yml",
