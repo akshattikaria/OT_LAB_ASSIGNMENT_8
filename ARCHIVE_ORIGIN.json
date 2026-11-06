@@ -1,0 +1,50 @@
+{
+  "original_commit": "527dad2de9a3a89f29323bdc58558f5a9a8ab6e4",
+  "original_author_date": "2026-11-03T05:51:52Z",
+  "original_subject": "[AI:ChatGPT] Implement Track B solvers and initial QUBO mapping",
+  "track": "B",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/B/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "bc077c9b77f7bb72a3f522e003807e579f6916ee"
+    },
+    {
+      "path": "discopt/__init__.py",
+      "mode": "100644",
+      "sha": "f580a9a4e882eabc0d7dda196d1e7882f9bbd5a3"
+    },
+    {
+      "path": "discopt/data.py",
+      "mode": "100644",
+      "sha": "782c0bd5bd6ec22a518890b65c67741ad8c58bb3"
+    },
+    {
+      "path": "discopt/model.py",
+      "mode": "100644",
+      "sha": "8ffd3150d28d670032ede45a89c88eeb465cd441"
+    },
+    {
+      "path": "discopt/qubo.py",
+      "mode": "100644",
+      "sha": "582f79d675b1d1aca7941d3ad112e0ca02882824"
+    },
+    {
+      "path": "discopt/solvers.py",
+      "mode": "100644",
+      "sha": "a64c6fb30e75de95a0ea80a66b2146604fc366da"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "tests/test_discrete.py",
+      "mode": "100644",
+      "sha": "f1a508479f1a0272660697b24a3b1af7b3cec1e1"
+    }
+  ]
+}
