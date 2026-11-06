@@ -1,7 +1,7 @@
 {
-  "original_commit": "cd071e5a0ad3a8879336617c052be55a08f91f10",
-  "original_author_date": "2026-11-04T05:37:43Z",
-  "original_subject": "[AI:ChatGPT] Verify compiler semantics and add native benchmark controls",
+  "original_commit": "ea0774f1114f5eba21278a6b37788490e382fcf3",
+  "original_author_date": "2026-11-04T05:48:26Z",
+  "original_subject": "[AI:ChatGPT] Retain compiler experiments, native controls, report, and audit",
   "track": "F",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/F/history.bundle",
@@ -32,6 +32,11 @@
       "sha": "ea2a1f03bb82680f2ab47bb76172053d0a9a149f"
     },
     {
+      "path": "toycc/audit.py",
+      "mode": "100644",
+      "sha": "ffeaca3c54c77b265a6f079cdc7c8e0d863fe77d"
+    },
+    {
       "path": "toycc/experiment.py",
       "mode": "100644",
       "sha": "0de1b8cca831149cf6bbfb9602d54831da36d43d"
@@ -60,6 +65,11 @@
       "path": "toycc/programs.py",
       "mode": "100644",
       "sha": "3ae8fee9e9226ee32332da1deeacc2568f73e542"
+    },
+    {
+      "path": "toycc/report.py",
+      "mode": "100644",
+      "sha": "0207ea03bc9971d1d05e827b7e527e6863557dba"
     },
     {
       "path": "toycc/search.py",
