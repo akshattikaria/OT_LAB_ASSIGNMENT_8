@@ -41,7 +41,7 @@ def build_report(directory):
                 summary[level+'_'+key+'_ratio']=float(np.mean(fractions))
         summaries.append(summary)
     fig,axes=plt.subplots(1,2,figsize=(12,4.5));matrix=np.array([[np.mean([first[name,method]['ir_instructions']/first[name,'baseline']['ir_instructions'] for name in ids if first[name,'baseline']['family']==family]) for method in VARIANTS] for family in families])
-    axes[0].imshow(matrix,cmap='YlGnBu',vmin=0,vmax=1,aspect='auto');axes[0].set_xticks(range(8),short,rotation=30,ha='right');axes[0].set_yticks(range(4),[x.replace('_',' ') for x in families]);axes[0].grid(False);axes[0].set_title('Mean retained IR body instructions')
+    axes[0].imshow(matrix,cmap='YlGnBu',vmin=0,vmax=max(1,float(matrix.max())),aspect='auto');axes[0].set_xticks(range(8),short,rotation=30,ha='right');axes[0].set_yticks(range(4),[x.replace('_',' ') for x in families]);axes[0].grid(False);axes[0].set_title('Mean retained IR body instructions')
     for y in range(4):
         for x in range(8):axes[0].text(x,y,f'{matrix[y,x]:.0%}',ha='center',va='center',color='white' if matrix[y,x]>.6 else '#16343d',fontsize=9)
     axes[1].bar(range(4),[s['mean_ir_reduction']*100 for s in summaries],color='#087f8c');axes[1].set_xticks(range(4),[x.replace('_','\n') for x in families]);axes[1].set_ylabel('Mean reduction (%)');axes[1].set_title('DP vs unoptimized IR');save(fig,'ir_changes.png')

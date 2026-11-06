@@ -1,7 +1,7 @@
 {
-  "original_commit": "ea0774f1114f5eba21278a6b37788490e382fcf3",
-  "original_author_date": "2026-11-04T05:48:26Z",
-  "original_subject": "[AI:ChatGPT] Retain compiler experiments, native controls, report, and audit",
+  "original_commit": "5e354ef23aee3c8024f3558a092eba6353b5c8d2",
+  "original_author_date": "2026-11-04T05:49:50Z",
+  "original_subject": "[AI:ChatGPT] Document Track F evidence, limitations, validation, and provenance",
   "track": "F",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/F/history.bundle",
@@ -10,6 +10,46 @@
       "path": ".gitignore",
       "mode": "100644",
       "sha": "e8f8e1533eefdb2948474a0bbcff16fab9f7e959"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "68544dfd3e588c409815ed87211eb9459da0e100"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "2a16336a4e149b155ef632d2fc69009f773f68f6"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "90bea2f13927c5252def5cb3b66d0298ae73b431"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "1f3811a347837bfd647e06f3adfadf9ae9fed19e"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "b3d15e8ee3c1833c1fd9f3ff89e9b79949c6c00d"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "440a49a9495fb10a0223639bcac0ae36ab7cad6d"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "cb0dc5014aecff18930936cb58f4fe15eeaced86"
+    },
+    {
+      "path": "prompts/F/001_continue.md",
+      "mode": "100644",
+      "sha": "b60582eca3462360049b1bd6bcf41cb243d3cb5b"
     },
     {
       "path": "requirements.txt",
@@ -69,7 +109,7 @@
     {
       "path": "toycc/report.py",
       "mode": "100644",
-      "sha": "0207ea03bc9971d1d05e827b7e527e6863557dba"
+      "sha": "94cd7cc9c9e935a0b7dcb0bef89b7846cac932cc"
     },
     {
       "path": "toycc/search.py",
