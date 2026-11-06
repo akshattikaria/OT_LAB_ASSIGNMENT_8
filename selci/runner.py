@@ -2,6 +2,7 @@
 import argparse
 from collections import Counter
 import json
+import os
 from pathlib import Path
 import sys
 import time
@@ -11,7 +12,7 @@ from .common import dump
 
 
 class Observer:
-    def __init__(self,cov=None):self.cov=cov;self.records={};self.collected=[]
+    def __init__(self,cov=None):self.cov=cov;self.records={};self.collected=[];self.failed_reports=[];self.special_reports=Counter()
     def pytest_collection_finish(self,session):self.collected=[item.nodeid for item in session.items]
     @pytest.hookimpl(hookwrapper=True,tryfirst=True)
     def pytest_runtest_protocol(self,item,nextitem):
@@ -20,6 +21,8 @@ class Observer:
         if self.cov:self.cov.switch_context('__collection__')
     def pytest_runtest_logreport(self,report):
         self.records.setdefault(report.nodeid,{})[report.when]={'outcome':report.outcome,'duration_s':report.duration}
+        if type(report).__name__!='TestReport':self.special_reports[type(report).__name__]+=1
+        if report.failed:self.failed_reports.append({'nodeid':report.nodeid,'phase':report.when,'report_type':type(report).__name__})
 
 
 def execute(subject,output,nodes=None,trace=False):
@@ -34,7 +37,7 @@ def execute(subject,output,nodes=None,trace=False):
     rows=[]
     for node in observer.collected:
         phases=observer.records.get(node,{});rows.append({'nodeid':node,'phases':phases,'duration_s':sum(p['duration_s'] for p in phases.values()),'call_outcome':phases.get('call',{}).get('outcome','not_called')})
-    result={'exit_code':code,'pytest_elapsed_ns':elapsed,'collected':observer.collected,'tests':rows,'outcomes':dict(Counter(row['call_outcome'] for row in rows)),'package_file':str(package_file),'package_version':cachetools.__version__,'trace_enabled':trace}
+    result={'exit_code':code,'pytest_elapsed_ns':elapsed,'collected':observer.collected,'tests':rows,'outcomes':dict(Counter(row['call_outcome'] for row in rows)),'failed_reports':observer.failed_reports,'special_reports':dict(observer.special_reports),'package_file':str(package_file),'package_version':cachetools.__version__,'trace_enabled':trace}
     dump(output/'run.json',result)
     if cov:
         data=cov.get_data();matrix={node:set() for node in observer.collected};file_paths={};collection=set()
@@ -52,7 +55,8 @@ def execute(subject,output,nodes=None,trace=False):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--subject',required=True);p.add_argument('--out',required=True);p.add_argument('--nodes');p.add_argument('--trace',action='store_true');args=p.parse_args();nodes=json.loads(Path(args.nodes).read_text()) if args.nodes else None
-    result=execute(args.subject,args.out,nodes,args.trace);raise SystemExit(result['exit_code'])
+    subject=Path(args.subject).resolve();output=Path(args.out).resolve();os.chdir(subject)
+    result=execute(subject,output,nodes,args.trace);raise SystemExit(result['exit_code'])
 
 
 if __name__=='__main__':main()

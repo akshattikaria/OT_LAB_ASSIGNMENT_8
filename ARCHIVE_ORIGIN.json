@@ -1,7 +1,7 @@
 {
-  "original_commit": "c4ed2abc155ff101baef27331cc8460c9fe70df9",
-  "original_author_date": "2026-11-04T12:37:37Z",
-  "original_subject": "[AI:ChatGPT] Pin verified cachetools source and retain initial wrong-directory collection failure",
+  "original_commit": "b80da3e99cbe3c24d61a3118752e7ae1f79916be",
+  "original_author_date": "2026-11-04T12:40:29Z",
+  "original_subject": "[AI:ChatGPT] Fix child working directory and verify coverage with seven regression tests",
   "track": "J",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/J/history.bundle",
@@ -24,12 +24,17 @@
     {
       "path": "selci/runner.py",
       "mode": "100644",
-      "sha": "07a6c92c2736710d333994ac73cfb37a6fdec7c1"
+      "sha": "fb2eb574ae625837d6ed3635e6c92cb3757bf16b"
     },
     {
       "path": "selci/selection.py",
       "mode": "100644",
       "sha": "d77a34249fd410e01a551527ebbeb1914fc82597"
+    },
+    {
+      "path": "tests/test_selection.py",
+      "mode": "100644",
+      "sha": "b705f5660cb7797ee9be7a42141d3dc0807d6329"
     }
   ]
 }
