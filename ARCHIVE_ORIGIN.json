@@ -1,0 +1,65 @@
+{
+  "original_commit": "ec3d8b248890dcd3b7544082885158a272495bfc",
+  "original_author_date": "2026-10-31T18:19:13Z",
+  "original_subject": "[AI:ChatGPT] Implement Track A optimizer experiments and initial benchmark",
+  "track": "A",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/A/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "bc077c9b77f7bb72a3f522e003807e579f6916ee"
+    },
+    {
+      "path": "contopt/__init__.py",
+      "mode": "100644",
+      "sha": "99e9e147d76d7ddb7060bd085a7ae841645aa84c"
+    },
+    {
+      "path": "contopt/__main__.py",
+      "mode": "100644",
+      "sha": "a8d79778edef13ac30b27d330919cc5af5e5014b"
+    },
+    {
+      "path": "contopt/checks.py",
+      "mode": "100644",
+      "sha": "95808661f5945e0cd8eca2c30c40fd84d33c27e6"
+    },
+    {
+      "path": "contopt/experiment.py",
+      "mode": "100644",
+      "sha": "b3077ee9862c44121147f6b4d22e8ba27510b617"
+    },
+    {
+      "path": "contopt/optimizers.py",
+      "mode": "100644",
+      "sha": "322746a350299f38e270d8cb040eb0b88a178940"
+    },
+    {
+      "path": "contopt/problems.py",
+      "mode": "100644",
+      "sha": "fb759ff1fbac9db6262138e58fe1c111da9c7698"
+    },
+    {
+      "path": "contopt/report.py",
+      "mode": "100644",
+      "sha": "e7a4dc2026be42a3e79e88a8a5c2fb25d21cfc4f"
+    },
+    {
+      "path": "contopt/supplement.py",
+      "mode": "100644",
+      "sha": "df4f7b46a1f9afc382f540cd69fb6d604c15d8a9"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "tests/test_continuous.py",
+      "mode": "100644",
+      "sha": "4b082cd08bc12e29397dafd17213a80e3c558184"
+    }
+  ]
+}
