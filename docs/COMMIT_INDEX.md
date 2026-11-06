@@ -11,6 +11,6 @@ All listed commits are AI-assisted and use `[AI:ChatGPT]`. These are local Git i
 
 `c4ed2ab` retains the actual wrong-directory failure, `b80da3e` fixes it, and `ba623ad` implements the experiment and removes redundant context expansion from future reports. `2166f83` completes the report/audit/evidence and removes remaining pilot serialization fragments from the final snapshot. Historical oversized JSON is retained only in compressed Git history.
 
-A following packaging commit contains this index and validation metadata. The manifest is committed after it; its hash is discoverable in the bundle's log. A commit cannot embed its own hash or the final bundle hash without a circular dependency, so those are not invented here. `FILE_SHA256.json` verifies final exported files, including the separately generated `history.bundle`.
+A following packaging commit contains this index and validation metadata. The bundle captures the tracked project through the final packaging-source commit. The export manifest is generated afterward and is not tracked in that bundle: it hashes the final exported files, including `history.bundle`, while excluding itself. This avoids a circular bundle/manifest hash. When restoring only through `git clone`, copy `FILE_SHA256.json` from the archive if desired. No commit is claimed to embed its own hash.
 
 Raw pytest failure logs retain their original trailing spaces; source and authored documentation whitespace checks are separate. No manual student edits, a second AI tool, public publication or fabricated user revisions are claimed.
