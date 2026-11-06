@@ -34,6 +34,31 @@ def load_problems(folder):
     return {name:DiagonalProblem(folder/f'{name}_model.json',folder/f'{name}_classical.json') for name in ('maxcut_4bit','knapsack_6bit')}
 
 
+def classical_baselines(problems,repeats=31):
+    """Fresh exhaustive search/eigensolve, with input I/O excluded from timing."""
+    rows=[]
+    for name,problem in problems.items():
+        timings=[]
+        for repeat in range(repeats+1):
+            clock=perf_counter();energies=[]
+            for index in range(1<<problem.n):
+                bits=np.array([(index>>q)&1 for q in range(problem.n)])
+                energies.append(float(problem.offset+bits@problem.Q@bits))
+            minimum=min(energies);indices=[i for i,e in enumerate(energies) if abs(e-minimum)<1e-9]
+            elapsed=perf_counter()-clock
+            if repeat:timings.append(elapsed)
+        if minimum!=problem.minimum:raise AssertionError('Independent enumeration mismatch')
+        rows.append({'model':name,'method':'exhaustive binary enumeration','states':1<<problem.n,
+            'minimum':minimum,'ground_indices':indices,'timings_s':timings,'median_runtime_s':float(np.median(timings))})
+    timings=[]
+    for repeat in range(repeats+1):
+        clock=perf_counter();eigenvalues=np.linalg.eigvalsh(hamiltonian());elapsed=perf_counter()-clock
+        if repeat:timings.append(elapsed)
+    rows.append({'model':'vqe_2qubit','method':'dense Hermitian eigensolve','matrix_dimension':4,
+        'minimum':float(eigenvalues[0]),'timings_s':timings,'median_runtime_s':float(np.median(timings))})
+    return {'results':rows,'timing_note':'31 timed repeats after one warmup. Tiny CPU baselines exclude input I/O. Quantum entries also run on CPU; these comparisons cannot establish quantum speedup.'}
+
+
 def qaoa_train(problem,name,p,seed,maxfev=600):
     rng=np.random.default_rng(seed+3000);initial=np.concatenate((rng.uniform(0,2*np.pi,p),rng.uniform(0,np.pi,p)))
     trace=[];clock=perf_counter()
@@ -138,6 +163,7 @@ def run_benchmark(directory,seeds=(0,1,2,3,4),steps=80,qaoa_maxfev=600,barren_sa
     output.mkdir(parents=True,exist_ok=True)
     inputs=Path(__file__).resolve().parents[1]/'inputs'/'track_b';problems=load_problems(inputs)
     write_json(output/'environment.json',environment())
+    write_json(output/'classical_baselines.json',classical_baselines(problems))
     write_json(output/'protocol.json',{'seeds':list(seeds),'vqe_steps':steps,'qaoa_maxfev':qaoa_maxfev,'barren_samples':barren_samples,
         'simulator':'Authored NumPy exact statevector and density-matrix simulator; dense-matrix independent tests',
         'hardware':'No physical quantum hardware; generic local depolarizing/readout model only',

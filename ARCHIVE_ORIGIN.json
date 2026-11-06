@@ -1,7 +1,7 @@
 {
-  "original_commit": "ae19cf3b860b6e0a45ab416c0a6adcf26b599631",
-  "original_author_date": "2026-11-03T06:16:49Z",
-  "original_subject": "[AI:ChatGPT] Implement Track C simulator, models, and experiment protocol",
+  "original_commit": "593e829c71b2501c193ee30357a318c4c2fcedd1",
+  "original_author_date": "2026-11-03T06:22:50Z",
+  "original_subject": "[AI:ChatGPT] Verify quantum mathematics and retain complete simulator experiments",
   "track": "C",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/C/history.bundle",
@@ -22,9 +22,14 @@
       "sha": "d7c1c1da59a3c4697ee919d41a65af652029a81f"
     },
     {
+      "path": "qopt/audit.py",
+      "mode": "100644",
+      "sha": "6f80ecaea7fb26ad8c386b8efdb34ba1f220712c"
+    },
+    {
       "path": "qopt/experiment.py",
       "mode": "100644",
-      "sha": "cb7ed4ff2cd240d0dc0ed87b7e652209488d73f3"
+      "sha": "fccbddc5c5f9ccc72e3653a0a1505f9251fb772e"
     },
     {
       "path": "qopt/models.py",
@@ -42,6 +47,11 @@
       "sha": "ae2798702ea8d5e30473346ef7536a3a8b991382"
     },
     {
+      "path": "qopt/report.py",
+      "mode": "100644",
+      "sha": "aed1f0b38d89866c3ba2d53e9122c4bfe4c3d5cd"
+    },
+    {
       "path": "qopt/simulator.py",
       "mode": "100644",
       "sha": "389ea496db3a43b31b6d5f65832f2e6976a89673"
@@ -50,6 +60,11 @@
       "path": "requirements.txt",
       "mode": "100644",
       "sha": "471f776f67541bcaadd042782a1c0a438d0009f3"
+    },
+    {
+      "path": "tests/test_quantum.py",
+      "mode": "100644",
+      "sha": "47fb2e317c321cc029afe062a144c5e517ca9fc8"
     }
   ]
 }
