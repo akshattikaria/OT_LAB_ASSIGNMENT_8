@@ -1,7 +1,7 @@
 {
-  "original_commit": "593e829c71b2501c193ee30357a318c4c2fcedd1",
-  "original_author_date": "2026-11-03T06:22:50Z",
-  "original_subject": "[AI:ChatGPT] Verify quantum mathematics and retain complete simulator experiments",
+  "original_commit": "292b3ba9b6852fa997dcc4ad354785f7c9e80d1e",
+  "original_author_date": "2026-11-03T06:23:10Z",
+  "original_subject": "[AI:ChatGPT] Document Track C findings, limitations, validation, and provenance",
   "track": "C",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/C/history.bundle",
@@ -10,6 +10,46 @@
       "path": ".gitignore",
       "mode": "100644",
       "sha": "bc077c9b77f7bb72a3f522e003807e579f6916ee"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "c865bc38b2277f699fb4c6cbc919c975bd4766a8"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "e55884670870e4c1a090864443ad726bb3a0ec67"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "595abbd4d90b3c9490b610e001f71ee168eaa6ba"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "cdd9b69532908f96d60e8a2491764f12a1a5ed19"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "3d49ceee06cc383fe539d53cf2e14c2769d9708a"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "f4619545acd24b9fd4d0cac00fb97630ba75dea5"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "6574dcc72cfcb5a0b754e0edb231db42554d5879"
+    },
+    {
+      "path": "prompts/C/001_continue.md",
+      "mode": "100644",
+      "sha": "00b3ba964e6730c83bbbe9a1da376acd489a55dc"
     },
     {
       "path": "qopt/__init__.py",
