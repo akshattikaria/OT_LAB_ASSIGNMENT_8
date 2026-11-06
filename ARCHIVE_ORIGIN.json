@@ -1,7 +1,7 @@
 {
-  "original_commit": "f1a4399d4d383ef19e86845d4e0c24e747dd89dd",
-  "original_author_date": "2026-11-04T09:21:08Z",
-  "original_subject": "[AI:ChatGPT] Verify four kernels with full guest suites and preserve patch and API failure evidence",
+  "original_commit": "db937a2ee2bb28914d34ebe5bfb4cc5a14eebec5",
+  "original_author_date": "2026-11-04T09:28:01Z",
+  "original_subject": "[AI:ChatGPT] Retain 72 real guest measurements, negative allocator result, audited report and viva notes",
   "track": "G",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/G/history.bundle",
@@ -12,9 +12,19 @@
       "sha": "e8f8e1533eefdb2948474a0bbcff16fab9f7e959"
     },
     {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "3c1d13739c2228a8663bf4e7594cbda266d9a740"
+    },
+    {
       "path": "docs/AI_FAILURE_LOG.md",
       "mode": "100644",
       "sha": "b44d00f10dbf332c85c1f4a6a7140f75de3097db"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "e064d69cfe47a7ea130e3c566c79d6abb1a82adb"
     },
     {
       "path": "docs/COVERAGE.md",
@@ -25,6 +35,11 @@
       "path": "docs/FORMULATION.md",
       "mode": "100644",
       "sha": "15958b179b5709c5c7b42d0100a080683fd55dda"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "c7e5cbffbf80c43ff206e42ad658b56397e68246"
     },
     {
       "path": "docs/VIVA_GUIDE.md",
@@ -54,7 +69,7 @@
     {
       "path": "oslab/report.py",
       "mode": "100644",
-      "sha": "4f0e5ad340e0245ad9952fc779d267cc296a34e8"
+      "sha": "8b933637959b5a84043da6c19b8e1ac12aaa7026"
     },
     {
       "path": "oslab/runtime.py",
