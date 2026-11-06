@@ -18,9 +18,13 @@ class QUBO:
         if self.Q.shape!=(self.n,self.n) or not np.all(np.isfinite(self.Q)) or not np.isfinite(self.offset):
             raise ValueError("Finite matching Q matrix and offset required")
         if np.any(np.tril(self.Q,-1)!=0):raise ValueError("Q must be upper triangular; off-diagonals counted once")
+        magnitude=abs(float(self.offset))+float(np.abs(self.Q).sum())
+        if magnitude>2**45:
+            raise ValueError("Expanded QUBO coefficients exceed this float encoder's validated range; reduce/rescale the problem explicitly")
         return self
 
     def energy(self,x):
+        self.validate()
         x=np.asarray(x,dtype=float)
         if x.shape!=(self.n,) or not np.all((x==0)|(x==1)):raise ValueError("Binary vector required")
         return float(self.offset+x@self.Q@x)

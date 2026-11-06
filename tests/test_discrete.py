@@ -77,6 +77,10 @@ class Validation(unittest.TestCase):
 
 
 class QuantumMapping(unittest.TestCase):
+    def test_large_coefficient_cancellation_is_rejected(self):
+        p=Knapsack('large_coefficients',(1,),(1,),1_000_000_000)
+        with self.assertRaisesRegex(ValueError,'validated range'):knapsack_qubo(p)
+
     def test_all_teaching_qubo_states(self):
         q=knapsack_qubo(teaching());r=enumerate_qubo(q)
         self.assertEqual(q.n,6);self.assertEqual(len(r['states']),64)

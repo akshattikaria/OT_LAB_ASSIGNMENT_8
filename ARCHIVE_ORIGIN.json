@@ -1,7 +1,7 @@
 {
-  "original_commit": "527dad2de9a3a89f29323bdc58558f5a9a8ab6e4",
-  "original_author_date": "2026-11-03T05:51:52Z",
-  "original_subject": "[AI:ChatGPT] Implement Track B solvers and initial QUBO mapping",
+  "original_commit": "3d170da82844171f67691db27df5ffa1c5c53c9b",
+  "original_author_date": "2026-11-03T05:51:56Z",
+  "original_subject": "[AI:ChatGPT] Reject unsafe QUBO coefficient ranges and add regression check",
   "track": "B",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/B/history.bundle",
@@ -29,7 +29,7 @@
     {
       "path": "discopt/qubo.py",
       "mode": "100644",
-      "sha": "582f79d675b1d1aca7941d3ad112e0ca02882824"
+      "sha": "9717a3fbf1c64eb930c9d7defa61039fd68398e4"
     },
     {
       "path": "discopt/solvers.py",
@@ -44,7 +44,7 @@
     {
       "path": "tests/test_discrete.py",
       "mode": "100644",
-      "sha": "f1a508479f1a0272660697b24a3b1af7b3cec1e1"
+      "sha": "68b1281368933d6581519c70be3e77588ec6c986"
     }
   ]
 }
