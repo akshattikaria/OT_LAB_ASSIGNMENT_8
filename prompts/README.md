@@ -3,20 +3,20 @@
 > Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
 
 
-Original track prompt/excerpt records remain in their imported packages, together with their own correction logs, commit indexes and portable histories. No missing platform transcript or screenshot is fabricated.
+Each root prompts/A–J directory contains the original track excerpt and an index linking its public revisions, actual correction log, fresh verification and authentic platform export. The same originals remain unchanged in their imported packages with their correction logs, commit indexes and portable histories. No missing platform transcript or screenshot is fabricated.
 
 | Track | Original prompt/excerpt folder |
 |---|---|
-| A | ../tracks/A/prompts/A/ |
-| B | ../tracks/B/prompts/B/ |
-| C | ../tracks/C/prompts/C/ |
-| D | ../tracks/D/prompts/D/ |
-| E | ../tracks/E/prompts/E/ |
-| F | ../tracks/F/prompts/F/ |
-| G | ../tracks/G/prompts/G/ |
-| H | ../tracks/H/prompts/H/ |
-| I | ../tracks/I/prompts/I/ |
-| J | ../tracks/J/prompts/J/ |
+| A | [A/](A/) — original excerpt, public revisions and evidence links |
+| B | [B/](B/) — original excerpt, public revisions and evidence links |
+| C | [C/](C/) — original excerpt, public revisions and evidence links |
+| D | [D/](D/) — original excerpt, public revisions and evidence links |
+| E | [E/](E/) — original excerpt, public revisions and evidence links |
+| F | [F/](F/) — original excerpt, public revisions and evidence links |
+| G | [G/](G/) — original excerpt, public revisions and evidence links |
+| H | [H/](H/) — original excerpt, public revisions and evidence links |
+| I | [I/](I/) — original excerpt, public revisions and evidence links |
+| J | [J/](J/) — original excerpt, public revisions and evidence links |
 
 Integration/ holds continuation/update records. The unchanged Gemini response and supplied screenshot observations are in ../ai_tool_comparison/; the screenshot itself is not redistributed with private browser/account details. Attach sanitized chat exports or screenshots from each actual AI platform before submission, and add public commit URLs after publishing the assignment repository. See ../docs/AI_TOOL_REGISTER.md and ../docs/FINAL_REVIEW.md.
 

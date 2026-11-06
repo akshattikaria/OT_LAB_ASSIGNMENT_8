@@ -51,6 +51,10 @@ def main():
     for r in com['low_rank_fl']:assert max(t['feedback_conservation_error'] for t in r['trace'])<1e-10
     svm=read('results/svmplus.json');assert len(svm['runs'])==6
     for r in svm['runs']:
+        levels=[np.linspace(-1,1,7),np.linspace(-1,1,7),np.linspace(-.7,.3,7),np.linspace(-.7,.3,7)]
+        for trial in r['trials']:
+            np.testing.assert_allclose([10**levels[j][trial['grid_indices'][j]] for j in range(4)],trial['parameters'],rtol=1e-12)
+        selected=r['selected_model'];np.testing.assert_allclose([10**levels[j][r['selected_grid_indices'][j]] for j in range(4)],[selected['C'],selected['gamma'],selected['sigma'],selected['sigma_star']],rtol=1e-12)
         assert r['unique_candidate_evaluations']==16
         model=r['selected_model'];x=np.array(r['features']);priv=np.array(r['privileged_features']);y=np.array(r['labels']);ids=r['train_indices'];test=r['test_indices']
         normal=np.array(model['coefficients']);correct=np.array(model['correcting_coefficients']);kernel=rbf(x[ids],x[ids],model['sigma']);star=rbf(priv[ids],priv[ids],model['sigma_star']);alpha=np.array(model['alpha']);beta=np.array(model['beta'])
@@ -79,6 +83,10 @@ def main():
     for r in placement['currying']:assert r['absolute_error']<1e-10
     for r in placement['packing']:assert sorted(i for node in r['final_nodes'] for i in node)==list(range(40))
     hpo=read('results/hpo.json');assert len(hpo['live_halving']['runs'])==9
+    from itertools import product
+    configs=[list(v) for v in product([.005,.02,.06],[0.,.03,.2],[0.,.5,.8])]
+    assert hpo['live_halving']['configs']==configs
+    for row in hpo['live_halving']['runs']:assert row['selected_configuration']==configs[row['selected_trial']]
     for r in hpo['live_halving']['runs']:
         assert sum(e['to']-e['from'] for e in r['events'])==r['epoch_units']
         for e in r['events']:
@@ -86,6 +94,8 @@ def main():
             if 'decision_time' in e:assert e['decision_time']>=e['finish']
         assert r['completed_max_resource']>=1
     strategies=read('results/strategies.json');plans=strategies['plans']
+    for plan in plans:
+        assert all(used<=strategies['devices'][kind]['memory_bytes'] for used,kind in zip(plan['stage_memory_bytes'],plan['device_types']))
     feasible=[i for i,p in enumerate(plans) if p['hourly_cost']<=strategies['hourly_budget']]
     exact=min(plans[i]['modeled_iteration_s'] for i in feasible)
     assert abs(plans[strategies['exact_time_optimum_index']]['modeled_iteration_s']-exact)<1e-10
@@ -100,9 +110,10 @@ def main():
     record={'passed':True,'source_entries':23,'source_ports':11,'algorithm_variants':4,'survey_demonstrations':2,'mechanism_only_entries':6,'result_json_files':15,'new_mathematical_tests':int(match[1]),'native_spmv_timed_trials':210,'liver_splits':3,'svmplus_candidate_fits':96,'strict_paper_method_coverage_complete':False,'scope':'Recomputed stored mathematical certificates, data/source integrity and units; retained timings are not replaced. Six exact published policies remain unavailable; controls are explicitly not relabeled paper implementations.'}
     from .qflair import audit_result
     record['qflair']=audit_result()
-    completion=(ROOT/'validation/research_completion_tests.log').read_text()
-    assert 'Ran 29 tests' in completion and '\nOK' in completion
-    record['completion_mathematical_tests']=29
+    completion_path=ROOT/'validation/submission_research_20261107.log'
+    completion=(completion_path if completion_path.exists() else ROOT/'validation/research_completion_tests.log').read_text()
+    completion_match=re.search(r'Ran (\d+) tests',completion);assert completion_match and int(completion_match[1])>=29 and '\nOK' in completion
+    record['completion_mathematical_tests']=int(completion_match[1])
     record['qflair_tests']=9
     print(json.dumps(record,indent=2));return record
 

@@ -34,3 +34,5 @@ The ChatGPT comparison candidate was generated inside the original implementatio
 ## Completion update
 
 Q-FLAIR is now implemented and verified; see research_supplement/QFLAIR.md and the actual completion request/activity record in prompts/Integration/006_completion.md. Public source-history branches and the original-to-public commit mapping are in HISTORY_LINKS.md. The four original evidence files remain unchanged. The six existing exact-policy limitations remain disclosed in the current submission checklist.
+
+The final 7 November corrections and deep audit are disclosed in [Integration/007_final_submission_audit.md](../prompts/Integration/007_final_submission_audit.md). They add no new AI tool or guessed backend label. The four original platform evidence files remain unchanged.

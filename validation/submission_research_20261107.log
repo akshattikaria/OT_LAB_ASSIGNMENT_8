@@ -1,0 +1,39 @@
+test_circuit_norms_and_parameter_shift (research_supplement.test_methods.MathematicalChecks.test_circuit_norms_and_parameter_shift) ... ok
+test_complete_private_algorithm_distribution (research_supplement.test_methods.MathematicalChecks.test_complete_private_algorithm_distribution) ... ok
+test_constant_minmax_convention (research_supplement.test_methods.MathematicalChecks.test_constant_minmax_convention) ... ok
+test_dynamic_insert_delete_invariants (research_supplement.test_methods.MathematicalChecks.test_dynamic_insert_delete_invariants) ... ok
+test_energy_gradient (research_supplement.test_methods.MathematicalChecks.test_energy_gradient) ... ok
+test_gradient_filter_ancilla (research_supplement.test_methods.MathematicalChecks.test_gradient_filter_ancilla) ... ok
+test_grnm_and_pure_composition (research_supplement.test_methods.MathematicalChecks.test_grnm_and_pure_composition) ... ok
+test_implicit_hypergradient (research_supplement.test_methods.MathematicalChecks.test_implicit_hypergradient) ... ok
+test_json_export_preserves_ordered_assignments (research_supplement.test_methods.MathematicalChecks.test_json_export_preserves_ordered_assignments) ... ok
+test_kalman_covariance_is_positive (research_supplement.test_methods.MathematicalChecks.test_kalman_covariance_is_positive) ... ok
+test_liver_focal_and_classical_backprop (research_supplement.test_methods.MathematicalChecks.test_liver_focal_and_classical_backprop) ... ok
+test_logistic_hessian_and_double_backprop (research_supplement.test_methods.MathematicalChecks.test_logistic_hessian_and_double_backprop) ... ok
+test_mcl_known_partition (research_supplement.test_methods.MathematicalChecks.test_mcl_known_partition) ... ok
+test_norm_oracle_duality_certificates (research_supplement.test_methods.MathematicalChecks.test_norm_oracle_duality_certificates) ... ok
+test_pipeline_hand_trace (research_supplement.test_methods.MathematicalChecks.test_pipeline_hand_trace) ... ok
+test_preprocessing_has_no_test_leakage (research_supplement.test_methods.MathematicalChecks.test_preprocessing_has_no_test_leakage) ... ok
+test_private_likelihood_ratio (research_supplement.test_methods.MathematicalChecks.test_private_likelihood_ratio) ... ok
+test_quantum_input_jacobian (research_supplement.test_methods.MathematicalChecks.test_quantum_input_jacobian) ... ok
+test_subspace_parameter_gradients_and_trajectory (research_supplement.test_methods.MathematicalChecks.test_subspace_parameter_gradients_and_trajectory) ... ok
+test_svmplus_primal_dual_and_inference (research_supplement.test_methods.MathematicalChecks.test_svmplus_primal_dual_and_inference) ... ok
+test_tt_core_backprop (research_supplement.test_methods.MathematicalChecks.test_tt_core_backprop) ... ok
+test_candidate_grid_matches_exhaustive_matrix_calculation (research_supplement.test_qflair.QFlairChecks.test_candidate_grid_matches_exhaustive_matrix_calculation) ... ok
+test_fixed_dataset_splits_are_disjoint_and_nested (research_supplement.test_qflair.QFlairChecks.test_fixed_dataset_splits_are_disjoint_and_nested) ... ok
+test_full_training_matches_direct_grid (research_supplement.test_qflair.QFlairChecks.test_full_training_matches_direct_grid) ... ok
+test_nll_and_invalid_training (research_supplement.test_qflair.QFlairChecks.test_nll_and_invalid_training) ... ok
+test_preprocessing_does_not_use_test_rows (research_supplement.test_qflair.QFlairChecks.test_preprocessing_does_not_use_test_rows) ... ok
+test_reconstruction_against_direct_and_author_function (research_supplement.test_qflair.QFlairChecks.test_reconstruction_against_direct_and_author_function) ... ok
+test_reconstruction_query_budget_independent_of_feature_count (research_supplement.test_qflair.QFlairChecks.test_reconstruction_query_budget_independent_of_feature_count) ... ok
+test_rotation_against_matrix_exponential (research_supplement.test_qflair.QFlairChecks.test_rotation_against_matrix_exponential) ... ok
+test_sdk_circuit_matches_stored_chain_convention (research_supplement.test_qflair.QFlairChecks.test_sdk_circuit_matches_stored_chain_convention) ... /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py:606: SparseEfficiencyWarning: splu converted its input to CSC format
+  return splu(A).solve
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/sparse/linalg/_matfuncs.py:707: SparseEfficiencyWarning: spsolve is more efficient when sparse b is in the CSC matrix format
+  return spsolve(Q, P)
+ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.432s
+
+OK

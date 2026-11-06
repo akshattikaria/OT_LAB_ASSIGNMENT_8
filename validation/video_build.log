@@ -1,5 +1,5 @@
-ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers
-  built with gcc 13 (Ubuntu 13.2.0-23ubuntu3)
+/workspace/scratch/30339dafe129/evidence_update/assignment8_integrated/reports/Assignment_8_Captioned_Demo.mp4
+23ubuntu3)
   configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
   libavutil      58. 29.100 / 58. 29.100
   libavcodec     60. 31.102 / 60. 31.102
@@ -16,11 +16,11 @@ Input #0, concat, from '/workspace/scratch/30339dafe129/evidence_update/tmp/inte
 Stream mapping:
   Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
 Press [q] to stop, [?] for help
-[out_0_0 @ 0x5635cb7a8340] 100 buffers queued in out_0_0, something may be wrong.
-[out_0_0 @ 0x5635cb7a8340] 1000 buffers queued in out_0_0, something may be wrong.
-[libx264 @ 0x5635cb7a1300] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
-[libx264 @ 0x5635cb7a1300] profile High, level 4.0, 4:2:0, 8-bit
-[libx264 @ 0x5635cb7a1300] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=13 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=12 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=24.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[out_0_0 @ 0x560268f12340] 100 buffers queued in out_0_0, something may be wrong.
+[out_0_0 @ 0x560268f12340] 1000 buffers queued in out_0_0, something may be wrong.
+[libx264 @ 0x560268f0b300] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x560268f0b300] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x560268f0b300] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=13 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=12 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=24.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
 Output #0, mp4, to '/workspace/scratch/30339dafe129/evidence_update/assignment8_integrated/reports/Assignment_8_Captioned_Demo.mp4':
   Metadata:
     encoder         : Lavf60.16.100
@@ -29,21 +29,21 @@ Output #0, mp4, to '/workspace/scratch/30339dafe129/evidence_update/assignment8_
       encoder         : Lavc60.31.102 libx264
     Side data:
       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-frame=  983 fps=196 q=27.0 size=     256kB time=00:01:21.66 bitrate=  25.7kbits/s speed=16.3x    frame=  984 fps=117 q=27.0 size=     256kB time=00:01:21.75 bitrate=  25.7kbits/s speed=9.69x    frame= 1089 fps=122 q=27.0 size=     512kB time=00:01:30.58 bitrate=  46.3kbits/s speed=10.1x    [mp4 @ 0x5635cb7a0900] Starting second pass: moving the moov atom to the beginning of the file
-[out#0/mp4 @ 0x5635cb79f7c0] video:614kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.424180%
-frame= 1200 fps=128 q=-1.0 Lsize=     629kB time=00:01:39.75 bitrate=  51.6kbits/s speed=10.6x    
-[libx264 @ 0x5635cb7a1300] frame I:5     Avg QP: 8.48  size: 62713
-[libx264 @ 0x5635cb7a1300] frame P:302   Avg QP:14.25  size:   823
-[libx264 @ 0x5635cb7a1300] frame B:893   Avg QP:16.54  size:    73
-[libx264 @ 0x5635cb7a1300] consecutive B-frames:  0.8%  0.0%  0.2% 99.0%
-[libx264 @ 0x5635cb7a1300] mb I  I16..4: 86.4%  0.1% 13.5%
-[libx264 @ 0x5635cb7a1300] mb P  I16..4:  0.2%  0.0%  0.1%  P16..4:  0.1%  0.0%  0.0%  0.0%  0.0%    skip:99.5%
-[libx264 @ 0x5635cb7a1300] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.0%  skip:99.9%  L0:77.3% L1:22.7% BI: 0.0%
-[libx264 @ 0x5635cb7a1300] 8x8 transform intra:0.1% inter:4.8%
-[libx264 @ 0x5635cb7a1300] coded y,uvDC,uvAC intra: 10.9% 15.9% 14.8% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x5635cb7a1300] i16 v,h,dc,p: 89%  9%  2%  0%
-[libx264 @ 0x5635cb7a1300] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 39% 18%  2%  1%  1%  0%  0%  2%
-[libx264 @ 0x5635cb7a1300] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 18% 23%  2%  4%  4%  4%  4%  3%
-[libx264 @ 0x5635cb7a1300] i8c dc,h,v,p: 79% 15%  6%  1%
-[libx264 @ 0x5635cb7a1300] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x5635cb7a1300] kb/s:50.22
+frame=  982 fps=260 q=27.0 size=     256kB time=00:01:21.66 bitrate=  25.7kbits/s speed=21.6x    frame=  983 fps=140 q=27.0 size=     256kB time=00:01:21.75 bitrate=  25.7kbits/s speed=11.7x    frame= 1088 fps=145 q=27.0 size=     512kB time=00:01:30.50 bitrate=  46.4kbits/s speed=  12x    [mp4 @ 0x560268f0a900] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x560268f097c0] video:613kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.426338%
+frame= 1200 fps=151 q=-1.0 Lsize=     628kB time=00:01:39.75 bitrate=  51.6kbits/s speed=12.5x    
+[libx264 @ 0x560268f0b300] frame I:5     Avg QP: 8.48  size: 62713
+[libx264 @ 0x560268f0b300] frame P:302   Avg QP:14.22  size:   821
+[libx264 @ 0x560268f0b300] frame B:893   Avg QP:16.54  size:    73
+[libx264 @ 0x560268f0b300] consecutive B-frames:  0.8%  0.0%  0.2% 99.0%
+[libx264 @ 0x560268f0b300] mb I  I16..4: 86.4%  0.1% 13.5%
+[libx264 @ 0x560268f0b300] mb P  I16..4:  0.2%  0.0%  0.1%  P16..4:  0.1%  0.0%  0.0%  0.0%  0.0%    skip:99.5%
+[libx264 @ 0x560268f0b300] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.1%  0.0%  0.0%  direct: 0.0%  skip:99.9%  L0:77.3% L1:22.7% BI: 0.0%
+[libx264 @ 0x560268f0b300] 8x8 transform intra:0.1% inter:4.6%
+[libx264 @ 0x560268f0b300] coded y,uvDC,uvAC intra: 10.9% 15.9% 14.8% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0x560268f0b300] i16 v,h,dc,p: 89%  9%  2%  0%
+[libx264 @ 0x560268f0b300] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 39% 18%  2%  1%  1%  0%  0%  2%
+[libx264 @ 0x560268f0b300] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 18% 23%  2%  4%  4%  4%  4%  3%
+[libx264 @ 0x560268f0b300] i8c dc,h,v,p: 79% 15%  6%  1%
+[libx264 @ 0x560268f0b300] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x560268f0b300] kb/s:50.18

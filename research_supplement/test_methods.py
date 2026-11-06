@@ -7,6 +7,15 @@ from .quantum_studies import tt_generate,tt_pullback
 
 
 class MathematicalChecks(unittest.TestCase):
+    def test_json_export_preserves_ordered_assignments(self):
+        from .common import jsonable
+        import json
+        original={'device_types':(1,0),'nested':[(3,1,2)],'members':{3,1,2}}
+        decoded=json.loads(json.dumps(jsonable(original)))
+        self.assertEqual(decoded['device_types'],[1,0])
+        self.assertEqual(decoded['nested'],[[3,1,2]])
+        self.assertEqual(decoded['members'],[1,2,3])
+
     def test_logistic_hessian_and_double_backprop(self):
         rng=np.random.default_rng(5);x=rng.normal(size=(12,4));y=rng.integers(0,2,12);w=rng.normal(size=4);_,g,h=logistic(w,x,y);eps=1e-5
         numeric=np.column_stack([(logistic(w+eps*np.eye(4)[j],x,y)[1]-logistic(w-eps*np.eye(4)[j],x,y)[1])/(2*eps) for j in range(4)])

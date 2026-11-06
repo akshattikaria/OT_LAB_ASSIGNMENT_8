@@ -1,0 +1,28 @@
+test_all_deutsch_functions (test_quantum.CircuitTests.test_all_deutsch_functions) ... ok
+test_all_promised_two_bit_dj_functions (test_quantum.CircuitTests.test_all_promised_two_bit_dj_functions) ... ok
+test_all_three_bit_hidden_strings (test_quantum.CircuitTests.test_all_three_bit_hidden_strings) ... ok
+test_anneal_one_step_independent_trotter_product (test_quantum.CircuitTests.test_anneal_one_step_independent_trotter_product) ... ok
+test_anneal_zero_time_uniform (test_quantum.CircuitTests.test_anneal_zero_time_uniform) ... ok
+test_dj_promise_rejected (test_quantum.CircuitTests.test_dj_promise_rejected) ... ok
+test_factor_postprocessing_rejects_unhelpful_results (test_quantum.CircuitTests.test_factor_postprocessing_rejects_unhelpful_results) ... ok
+test_fourier_inverse_identity (test_quantum.CircuitTests.test_fourier_inverse_identity) ... ok
+test_grover_analytic_probability_sizes (test_quantum.CircuitTests.test_grover_analytic_probability_sizes) ... ok
+test_grover_every_two_bit_mark (test_quantum.CircuitTests.test_grover_every_two_bit_mark) ... ok
+test_invalid_modular_multiply (test_quantum.CircuitTests.test_invalid_modular_multiply) ... ok
+test_modular_matrix_bijection (test_quantum.CircuitTests.test_modular_matrix_bijection) ... ok
+test_qaoa_baseline_and_problem_optimum (test_quantum.CircuitTests.test_qaoa_baseline_and_problem_optimum) ... ok
+test_qft_matches_independent_fourier_matrix (test_quantum.CircuitTests.test_qft_matches_independent_fourier_matrix) ... ok
+test_qpe_every_three_bit_exact_phase (test_quantum.CircuitTests.test_qpe_every_three_bit_exact_phase) ... ok
+test_qpe_non_grid_dirichlet_distribution (test_quantum.CircuitTests.test_qpe_non_grid_dirichlet_distribution) ... ok
+test_shor_order_finding_peaks_without_period_in_circuit (test_quantum.CircuitTests.test_shor_order_finding_peaks_without_period_in_circuit) ... ok
+test_vqe_dense_energy_and_shift_gradient (test_quantum.CircuitTests.test_vqe_dense_energy_and_shift_gradient) ... ok
+test_calibrated_metadata_is_json_serializable (test_quantum.LearningTests.test_calibrated_metadata_is_json_serializable) ... ok
+test_feature_map_independent_amplitudes (test_quantum.LearningTests.test_feature_map_independent_amplitudes) ... ok
+test_invalid_features_rejected (test_quantum.LearningTests.test_invalid_features_rejected) ... ok
+test_no_test_leakage_and_reproducibility (test_quantum.LearningTests.test_no_test_leakage_and_reproducibility) ... ok
+test_overlap_grams_and_counts (test_quantum.LearningTests.test_overlap_grams_and_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.942s
+
+OK

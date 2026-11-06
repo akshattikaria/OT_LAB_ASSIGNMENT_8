@@ -3,9 +3,9 @@
 > Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
 
 
-This extension adds executable experiments or controls for all **22** Chapter 6 research entries. It preserves the original A-J packages and their measurements. It contains **10 scoped source ports, four algorithm variants, two survey demonstrations and six mechanism-only controls**. None claims an entire paper or its reported performance has been reproduced.
+This extension adds executable experiments or controls for all **23** Chapter 6 research entries, including Q-FLAIR. It preserves the original A-J packages and their measurements. It contains **11 scoped source ports, four algorithm variants, two survey demonstrations and six mechanism-only controls**. None claims an entire paper or its reported performance has been reproduced.
 
-A **source port** implements the declared small specialization of a paper's equations or author architecture; its scale, data and any omissions remain explicit. An **algorithm variant** changes a source strategy or policy. A **survey demonstration** implements representative families discussed by a survey. A **mechanism-only control** is our original related example, whose detailed published algorithm was unavailable. These categories must not be merged into a claim of 22 exact implementations.
+A **source port** implements the declared small specialization of a paper's equations or author architecture; its scale, data and any omissions remain explicit. An **algorithm variant** changes a source strategy or policy. A **survey demonstration** implements representative families discussed by a survey. A **mechanism-only control** is our original related example, whose detailed published algorithm was unavailable. These categories must not be merged into a claim of 23 exact implementations.
 
 Read [METHOD_COVERAGE.md](METHOD_COVERAGE.md) for the complete mapping. Machine-readable identities and scope are in [SOURCE_REGISTRY.json](SOURCE_REGISTRY.json). Source-document hashes and unsuccessful public access are recorded in `provenance/research_source_documents.json`; papers themselves are not redistributed. Author dataset provenance and licenses are in `data/`.
 
@@ -14,12 +14,12 @@ Read [METHOD_COVERAGE.md](METHOD_COVERAGE.md) for the complete mapping. Machine-
 From the project root, using the root Python 3.12 requirements:
 
 ```bash
-python -m unittest research_supplement.test_methods -v
+python -m unittest research_supplement.test_methods research_supplement.test_qflair -v
 python -m research_supplement.audit
 python -m research_supplement.run --out research_supplement/results-rerun
 ```
 
-The retained `results/` folder is intentionally immutable. Use a new output folder for every repetition. A complete run executes 14 result groups and can take several minutes; `liver` and statevector training dominate. GCC with OpenMP is required for `spmv`; its binary is compiled into a temporary directory. No physical QPU, GPU cluster, Hadoop, radio or MPI installation is needed. All original runs used shared cloud CPUs and one BLAS thread, not the student's laptop. Native SpMV uses two threads; live HPO uses four; SVM+ search uses two. Thread counts refer to actual execution only in these stated studies.
+The retained `results/` folder is intentionally immutable. Use a new output folder for every repetition. A complete run executes 15 result groups and can take several minutes; `liver` and statevector training dominate. GCC with OpenMP is required for `spmv`; its binary is compiled into a temporary directory. No physical QPU, GPU cluster, Hadoop, radio or MPI installation is needed. All original runs used shared cloud CPUs and one BLAS thread, not the student's laptop. Native SpMV uses two threads; live HPO uses four; SVM+ search uses two. Thread counts refer to actual execution only in these stated studies.
 
 For selected groups:
 
@@ -27,7 +27,7 @@ For selected groups:
 python -m research_supplement.run --groups qmt privacy_certificate --out research_supplement/results-selected
 ```
 
-The audit checks the **retained** results, source links, certificates and units. It does not remeasure historical performance. The 20 tests independently check analytic derivatives, parameter/input shifts, a TT chain rule, a unitary dilation/postselection branch, complete finite privacy distributions, constrained parameter-gradient equivalence, norm-oracle certificates, implicit differentiation, SVM+ primal/dual feasibility, training-only preprocessing and live-search invariants. A passing finite test is not a universal theorem.
+The audit checks the **retained** results, source links, certificates and units. It does not remeasure historical performance. The 30 checks independently verify JSON ordering and check analytic derivatives, parameter/input shifts, a TT chain rule, a unitary dilation/postselection branch, complete finite privacy distributions, constrained parameter-gradient equivalence, norm-oracle certificates, implicit differentiation, SVM+ primal/dual feasibility, training-only preprocessing and live-search invariants. A passing finite test is not a universal theorem.
 
 ## Evidence and comparison limits
 
@@ -42,6 +42,8 @@ Negative results are retained: TT parameter generation is worse here; regularize
 1. The initial scalar-output AdaFisher factor collapsed under min-max normalization, reducing its intended curvature information. The primary experiment was changed to three-class softmax with both nontrivial factors. The initial diagnostic is retained in `diagnostics/curvature_scalar_initial.json` and the first implementation remains in Git history. Printed factor weighting is distinguished from the author's current source code.
 2. A liver counter labelled state evaluations counted batched calls rather than per-example circuits. The corrected output separately records batched statevector calls and circuit instances, including validation/test work. Epochs, quality and measured timings are unchanged; the earlier diagnostic remains in `diagnostics/liver_initial_counter.json`.
 3. SVM+ initially saved insufficient fields for independently recomputing its primal certificate. The complete correcting coefficients, intercept, slack and hyperparameters were added, then the six searches were rerun. The earlier result remains in `diagnostics/svmplus_before_full_certificate.json`.
+
+4. The final audit caught an exporter that sorted tuples together with sets. This scrambled ordered strategy device assignments, HPO configurations and SVM+ grid indices. Tuples now retain order; a regression checks nested sequences. Affected metadata were recovered from deterministic catalogs or unchanged numerical parameter records. All original diagnostics are retained. Objective values, training timings, selected fitted models and conclusions were independently checked unchanged; see validation/strategy_export_correction_20261107.json.
 
 ## Remaining exact-method gaps
 

@@ -1,0 +1,34 @@
+test_departure_is_exclusive (test_core.CheckerAdversarial.test_departure_is_exclusive) ... ok
+test_excess_energy (test_core.CheckerAdversarial.test_excess_energy) ... ok
+test_fractional (test_core.CheckerAdversarial.test_fractional) ... ok
+test_missing_energy (test_core.CheckerAdversarial.test_missing_energy) ... ok
+test_nan (test_core.CheckerAdversarial.test_nan) ... ok
+test_negative (test_core.CheckerAdversarial.test_negative) ... ok
+test_none (test_core.CheckerAdversarial.test_none) ... ok
+test_small_numerical_error_is_accepted (test_core.CheckerAdversarial.test_small_numerical_error_is_accepted) ... ok
+test_station_overload (test_core.CheckerAdversarial.test_station_overload) ... ok
+test_wrong_shape (test_core.CheckerAdversarial.test_wrong_shape) ... ok
+test_eighty_random_small_instances (test_core.IndependentOracle.test_eighty_random_small_instances) ... ok
+test_generator_reproducibility_and_witnesses (test_core.IndependentOracle.test_generator_reproducibility_and_witnesses) ... ok
+test_oracle_guard (test_core.IndependentOracle.test_oracle_guard) ... ok
+test_bad_demand (test_core.InputValidation.test_bad_demand) ... ok
+test_bad_power_or_lengths (test_core.InputValidation.test_bad_power_or_lengths) ... ok
+test_bad_prices (test_core.InputValidation.test_bad_prices) ... ok
+test_bad_window (test_core.InputValidation.test_bad_window) ... ok
+test_duplicate_ids (test_core.InputValidation.test_duplicate_ids) ... ok
+test_json_roundtrip (test_core.InputValidation.test_json_roundtrip) ... ok
+test_demand_exceeds_window (test_core.KnownAnswers.test_demand_exceeds_window) ... ok
+test_empty_fleet (test_core.KnownAnswers.test_empty_fleet) ... ok
+test_flat_prices_equal_service_equal_cost (test_core.KnownAnswers.test_flat_prices_equal_service_equal_cost) ... ok
+test_greedy_can_fail_on_feasible_input (test_core.KnownAnswers.test_greedy_can_fail_on_feasible_input) ... ok
+test_no_capacity (test_core.KnownAnswers.test_no_capacity) ... ok
+test_overloaded_is_infeasible (test_core.KnownAnswers.test_overloaded_is_infeasible) ... ok
+test_quarter_hour_units (test_core.KnownAnswers.test_quarter_hour_units) ... ok
+test_teaching_values (test_core.KnownAnswers.test_teaching_values) ... ok
+test_variable_capacity_and_power (test_core.KnownAnswers.test_variable_capacity_and_power) ... ok
+test_zero_demand (test_core.KnownAnswers.test_zero_demand) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.171s
+
+OK

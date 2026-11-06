@@ -12,3 +12,7 @@ UTC timestamps remain in original environment/protocol files; the report was com
 During integration, the workspace resumed from an earlier snapshot. The ten saved packages were restored and their 2,013 files checked byte-for-byte; supporting measurements and host tests were rerun with fresh logs. Earlier lost working timings are not substituted for these new integration measurements. Original A-J timing evidence is unchanged.
 
 On 6 November 2026, the student supplied and authorized publication to https://github.com/akshattikaria/OT_LAB_ASSIGNMENT_8. The complete source tree, report, demonstration and original track evidence are included. GitHub publication details and verification are recorded in `PUBLICATION.md`.
+
+## 7 November 2026 — final submission audit
+
+The student requested immediate corrections and a deep audit before the reported 02:00 deadline. The root AI-tools table, per-track prompt folders and link-only submission instructions were completed. All 298 correctness checks passed. An independent stored-result replay caught ordered tuples being sorted during JSON export; the exporter and recoverable metadata were corrected with a regression, retaining original diagnostics and all measured numerical outcomes/timings. Report/demo captions, integrity records and the published snapshot were refreshed. This actual activity does not imply a fabricated fourteen-day diary or instructor approval.

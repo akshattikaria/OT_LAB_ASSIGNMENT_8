@@ -9,6 +9,7 @@
 | ChatGPT | Historical session-reported gpt-6.1-sol | 2026-10-31, 2026-11-03, 2026-11-04 | A/B/C/D/F/G and earlier chapter planning as recorded per stage |
 | ChatGPT / Codex | GPT-6 family; exact serving revision not independently exposed | 2026-11-04, 2026-11-06 | H/I/J and integration; later comparison testing, source-linked research extension, report and demonstration update |
 | Google Gemini | Displayed selector “Argon High”; underlying revision unverified | Evidence received 2026-11-06 | Original knapsack answer, unchanged; common tests and runtime comparison |
+| ChatGPT / Codex | Serving revision not independently exposed in this completion session | 2026-11-07 | Final submission-document corrections, independent audit, verification and publication |
 
 These preserve original stage declarations; they are not independent confirmation of serving revisions. Confirm available labels using actual exports/headers. All substantial implementation is AI-assisted. No manual student fixes are claimed. Python, SciPy/HiGHS, SQLite, Qiskit and compilers are dependencies, not additional AI assistants.
 

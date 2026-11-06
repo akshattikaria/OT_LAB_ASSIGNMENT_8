@@ -12,7 +12,9 @@ The EV experiment achieves 49.44% mean cost reduction on 15 matched, feasible, c
 
 ## Current status
 
-The ten core tracks, integrated report, supporting chapter experiments, reproducibility checks and demonstration artifact are built. The 4 November integration run and 6 November final-review rerun each pass **243 track host tests** plus **7 supplement tests**. On 6 November, both original AI candidates passed the **same 9 comparison tests**, including 100 exhaustive small cases each. The supplied Gemini response and 56 paired function-runtime measurements are recorded in `ai_tool_comparison/COMPARISON.md`. The new research extension passes **29 mathematical tests** and audits **15 result files**, including **210 native SpMV timing trials**. These are separate from archived xv6 guest tests and the cachetools subject suite.
+Final audit, 7 November 2026: **298 fresh correctness checks pass**. The AI-tools table is included below, prompts/A–J contain the original records and public revisions, and submission is by repository URL. The final audit corrected JSON ordering in research metadata while preserving numerical results and timings. See the [final submission audit](docs/FINAL_SUBMISSION_AUDIT.md) for the exact checks and declared research scope.
+
+The ten core tracks, integrated report, supporting chapter experiments, reproducibility checks and demonstration artifact are built. The 4 November integration run and 6 November final-review rerun each pass **243 track host tests** plus **7 supplement tests**. On 6 November, both original AI candidates passed the **same 9 comparison tests**, including 100 exhaustive small cases each. The supplied Gemini response and 56 paired function-runtime measurements are recorded in `ai_tool_comparison/COMPARISON.md`. The new research extension passes **30 research checks** and audits **15 result files**, including **210 native SpMV timing trials**. These are separate from archived xv6 guest tests and the cachetools subject suite.
 
 The four follow-ups are complete: original ChatGPT/Gemini platform evidence is included, Q-FLAIR is implemented and verified, public source-history revision links are available, and the report/package are refreshed. See the [AI evidence index](docs/AI_EVIDENCE_INDEX.md), [53-revision history map](docs/HISTORY_LINKS.md), and [current checklist](docs/SUBMISSION_CHECKLIST.md).
 
@@ -82,6 +84,14 @@ Historical timings are retained, not replaced by host-test elapsed times. Seeds 
 Per-track READMEs/reports are original dated milestones. Their earlier “next track” notes are historical. **This root README and `docs/SUBMISSION_CHECKLIST.md` describe current progress.** The imported originals are preserved for traceability.
 
 ## AI tools register
+
+| Tool | Recorded model information | Dates | Scope |
+|---|---|---|---|
+| ChatGPT | Historical session-reported gpt-6-astra | 2026-10-31 | E implementation, benchmarking and documentation |
+| ChatGPT | Historical session-reported gpt-6.1-sol | 2026-10-31, 2026-11-03, 2026-11-04 | A/B/C/D/F/G and earlier chapter planning as recorded per stage |
+| ChatGPT / Codex | GPT-6 family; exact serving revision not independently exposed | 2026-11-04, 2026-11-06 | H/I/J and integration; later comparison testing, source-linked research extension, report and demonstration update |
+| Google Gemini | Displayed selector “Argon High”; underlying revision unverified | Evidence received 2026-11-06 | Original knapsack answer, unchanged; common tests and runtime comparison |
+| ChatGPT / Codex | Serving revision not independently exposed in this completion session | 2026-11-07 | Final submission-document corrections, independent audit, verification and publication |
 
 All implementation and documentation here are AI-assisted. Historical stage records disclose ChatGPT with session-reported `gpt-6.1-sol` for A/B/C/D/F/G and `gpt-6-astra` for E. H/I/J and integration identify the GPT-6 family where an exact serving revision is unavailable. Original exports now contain historical message labels; the native screenshot shows the current selector. No unexposed backend version is guessed. See `docs/AI_TOOL_REGISTER.md` and the original registers for dates/scope. Google Gemini supplied the second-tool function, with selector “Argon High” shown in student evidence received 6 November. Its approximately 60 ± 3 second generation time is a student estimate; ChatGPT generation latency is unavailable. No repair was needed. Original platform exports and native selector screenshots are included under evidence/ai/; no unexposed model revision or manual student correction is invented.
 

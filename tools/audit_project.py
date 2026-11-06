@@ -115,5 +115,10 @@ def main():
     result={'passed':True,'imported_files_verified':len(hashes),'tracks':len(sources),'retained_track_host_tests':243,'retained_host_test_date':'2026-11-04','supplement_tests':7,'comparison_baseline_tests':9,'comparison_tools':2,'shared_tests_per_tool':9,'exhaustive_small_cases_per_tool':100,'timed_function_calls':56,'generation_latency_comparable':False,'course_topic_entries':len(checklist['topics']),'research_reference_entries':len(checklist['research_references']),'hpo_policy_rows':30,'compression_runs':20,'native_control_trials':14,'pdf_pages':len(pdf.pages),'demo_seconds':video['duration_s'],'scope':'Integrity, evidence links and retained arithmetic. Original A-J code/results unchanged; supplied Gemini comparison recorded. Full chat exports, publication and research interpretation remain open.'}
     result.update(completion_host_tests=297,requested_followups_complete=True,authentic_evidence_files=4,public_archival_source_revisions=53,public_archival_branches=11,final_review_track_host_tests=243,final_review_supplement_tests=7,final_review_shared_tests_per_tool=9,submission_ready=False,research=research)
     result['scope']='Integrity, source links and retained arithmetic/certificates. Original A-J code/results unchanged; 23 research experiments/controls present, including Q-FLAIR. Public repository is supplied. AI platform evidence is included. Q-FLAIR is verified; public archival revision links are mapped separately. Six exact published policies remain unavailable.'
+    current=ROOT/'validation/submission_readiness_20261107.json'
+    if current.exists():
+        readiness=json.loads(current.read_text());result['submission_ready']=readiness['submission_ready']
+        result['readiness_basis']=readiness['readiness_basis'];result['strict_paper_method_coverage_complete']=False
+        result['final_submission_correctness_tests']=readiness['fresh_correctness_tests']
     print(json.dumps(result,indent=2));return result
 if __name__=='__main__':main()

@@ -51,7 +51,7 @@ def main():
         'but misses 3 of the 16 faults caught by the full suite.',
         'Line coverage, lower operation counts and lower contention are surrogate metrics.'],18))
     scenes.append(frame(6,'Reproduce, explain and review the evidence',[
-        'Tests: 243 track + 7 supplement + 29 research; comparison 9/9 per tool.',
+        'Tests: 243 track + 7 supplement + 30 research; comparison 9/9 per tool.',
         'Run: python tools/audit_project.py',
         'Read the report and checklist; six studies remain mechanism-only.',
         'Original AI exports, screenshots and public source-history links are included.',

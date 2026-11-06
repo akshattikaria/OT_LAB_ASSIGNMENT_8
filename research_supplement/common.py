@@ -18,7 +18,8 @@ def softmax(x):
 def jsonable(x):
     if isinstance(x,np.ndarray):return x.tolist()
     if isinstance(x,np.generic):return x.item()
-    if isinstance(x,(set,tuple)):return [jsonable(v) for v in sorted(x)]
+    if isinstance(x,set):return [jsonable(v) for v in sorted(x)]
+    if isinstance(x,tuple):return [jsonable(v) for v in x]
     if isinstance(x,list):return [jsonable(v) for v in x]
     if isinstance(x,dict):return {str(k):jsonable(v) for k,v in x.items()}
     return x

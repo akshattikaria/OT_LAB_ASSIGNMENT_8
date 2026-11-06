@@ -1,0 +1,22 @@
+{
+  "correction": "Preserve ordered tuples in research JSON export; repair ordered metadata using deterministic catalogs or retained numeric parameters",
+  "result_metadata_sha256": {
+    "strategies": {
+      "before_sha256": "76d7f685536560954f352c87a19fd06d67c6d87417c4d7cfd3a4864edc0c1c68",
+      "after_sha256": "5c50170f375643a7d8763859767e89cdce2cb35b426455270c40a6d5d5969011"
+    },
+    "hpo": {
+      "before_sha256": "4019702712a0d57a59bfad3cec6cdab984d28b9e877e0d24d95c8c0096bdcdcc",
+      "after_sha256": "41af34e05f698ebc01a13770b5e241eb3f5b4e7380a104f9f7fcc439e1f41752"
+    },
+    "svmplus": {
+      "before_sha256": "c422476d349ba80facd13347a08cba214a15e587b15515fb3c7fde532265b2f2",
+      "after_sha256": "15cbbd5c93b53e748f240ef37bf82cbab85cf3b604faf0d31ab7143e1568ec3c"
+    }
+  },
+  "fresh_correctness_checks": 298,
+  "original_imports_unchanged": 2013,
+  "submitted_scope": "Verifiable experimental demonstrations under written brief Section 5; exact paper-policy limits remain explicit",
+  "submission": "Public GitHub repository URL; no Drive upload required",
+  "record": "prompts/Integration/007_final_submission_audit.md"
+}

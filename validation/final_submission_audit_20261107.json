@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "audit_date_local": "2026-11-07",
+  "core_host_tests_fresh": 243,
+  "supporting_tests_fresh": 55,
+  "total_correctness_tests_fresh": 298,
+  "original_imports_verified": 2013,
+  "pdf_pages": 28,
+  "demo_seconds": 100.0,
+  "ai_register_in_readme": true,
+  "submission_route": "public GitHub repository URL",
+  "separate_drive_upload_required": false,
+  "core_guest_validation_records_verified": 4,
+  "guest_campaign_rerun_now": false,
+  "ev": {
+    "retained_rows": 711,
+    "schedules_recomputed": 708,
+    "feasible_schedules": 651,
+    "largest_binary_solver_deviation": 1.2854339814794002e-10,
+    "binary_replay_tolerance": 1e-08
+  },
+  "research_mechanism_certificates": {
+    "packing_trace_replays": 10,
+    "grouped_placement_exhaustive_rechecks": 5,
+    "currying_numeric_replays": 15,
+    "low_rank_fl_objective_certificates": 2000,
+    "hybrid_layout_memory_and_cost_checks": 1611,
+    "native_spmv_correctness_trials": 210,
+    "exact_paper_policy_reproduction": false
+  },
+  "coverage_entries": 112,
+  "research_entries": 23,
+  "exact_paper_method_coverage_complete": false,
+  "scope": "Fresh correctness and retained-data certificates. Original timings, raw results and guest logs unchanged. Six research spotlight demonstrations retain declared mechanism-only scope; no exact unpublished paper policies or instructor approval are asserted."
+}

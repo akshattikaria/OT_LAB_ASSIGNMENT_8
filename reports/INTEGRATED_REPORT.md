@@ -1,6 +1,6 @@
 # Assignment 8 - Integrated technical report
 
-Akshat Tikaria | 241070005 | Updated 6 November 2026
+Akshat Tikaria | 241070005 | Updated 7 November 2026
 
 
 ## Overview: ten tracks, one optimization workflow
@@ -768,7 +768,7 @@ The remaining exact-method gaps are PANA, PackStealLB, GSHetero, architecture-aw
 Six quantum spotlights have scoped experiments, including Q-FLAIR and the two-qubit author-data liver port. GRNG, AdaFisher, private density greedy+, ResQue and Subspace Networks also have source-linked numerical ports. All algorithms, adaptations, equation locators, datasets and result paths are listed in METHOD_COVERAGE.md; source-document hashes and access limitations are recorded separately.
 
 
-The user chose to proceed without waiting for an instructor clarification. No such conversation is recorded as having occurred. If strict exact-method coverage is required, the six detailed policies/full texts are still needed. Names explicitly marked absent from the slides are not fabricated.
+Section 5 of the brief permits verifiable experimental demonstrations. The research spotlights use that route where full published policies could not be verified. Exact paper-policy fidelity remains separately limited; no instructor approval or source-scale hardware reproduction is asserted. Names explicitly marked absent from the slides are not fabricated.
 
 
 Evidence: docs/CHAPTER6_CHECKLIST.json and .md; research_supplement/SOURCE_REGISTRY.json; METHOD_COVERAGE.md; provenance/research_source_documents.json
@@ -777,7 +777,7 @@ Evidence: docs/CHAPTER6_CHECKLIST.json and .md; research_supplement/SOURCE_REGIS
 ## Correctness, actual AI failures and disclosures
 
 
-The 6 November final review again passes 243 original host tests: A30/B30/C32/D29/E29/F29/G14/H17/I23/J10. The fresh review also passes seven supplement tests and nine shared tests per AI candidate, with 100 exhaustive small cases each. Twenty original research tests and nine Q-FLAIR checks verify numerical and mathematical references. Earlier logs and original performance measurements are retained. These counts do not include subject cachetools or archived xv6 guest suites. Imported source/result hashes are preserved.
+The 7 November final review again passes 243 original host tests: A30/B30/C32/D29/E29/F29/G14/H17/I23/J10. The fresh review also passes seven supplement tests and nine shared tests per AI candidate, with 100 exhaustive small cases each. Twenty-one research checks (including JSON sequence ordering) and nine Q-FLAIR checks verify numerical and mathematical references. Earlier logs and original performance measurements are retained. These counts do not include subject cachetools or archived xv6 guest suites. Imported source/result hashes are preserved.
 
 
 | Track | Actual observed AI-code defect | Fix / retained check |
@@ -801,13 +801,13 @@ The 6 November final review again passes 243 original host tests: A30/B30/C32/D2
 | J | Wrong test cwd and redundant huge JSON | Resolve/chdir; compact context evidence |
 
 
-Each original/fix and test is documented in its track. Intentional mutants, weak penalties, unstable-rate controls and heuristic failures are not invented AI mistakes. The minimum three genuine corrected cases is exceeded.
+Each original/fix is documented in its track. The final audit also fixed ordered-tuple JSON export: strategy assignments, HPO configs and SVM+ grid labels are corrected from retained numeric records; original diagnostics remain. Numerical scores, fitted models and timings are unchanged. Intentional controls are not invented AI mistakes.
 
 
 All substantial work is AI-assisted. Historical registers disclose gpt-6.1-sol for A/B/C/D/F/G and gpt-6-astra for E; H/I/J/integration retain GPT-6 family where serving revision is not exposed. Student evidence received 6 November adds Google Gemini with selector Argon High for the comparison function only; its underlying revision is unverified. Original ChatGPT/Gemini platform exports and native selector screenshots are now included; see docs/AI_EVIDENCE_INDEX.md. No manual student fixes or missing transcripts are invented.
 
 
-Evidence: validation/completion-host/summary.json; tracks/*/docs/AI_FAILURE_LOG.md; docs/AI_TOOL_REGISTER.md
+Evidence: validation/submission-host-20261107/summary.json; final_submission_audit_20261107.json; docs/AI_TOOL_REGISTER.md
 
 
 ## Two-tool comparison: ChatGPT and Gemini
@@ -889,7 +889,7 @@ The captioned video shows actual command output and saved evidence; it is an edi
 Optimization improves a chosen objective under declared assumptions. E improves synthetic cost/feasibility; H buys reads with storage/writes; F/G show model-versus-time mismatch; J loses assertion strength despite line preservation. Quantum logical query gains and CPU parallel speedups use different cost models. No universal optimizer ranking or practical quantum advantage is claimed.
 
 
-Actual activity is recorded on 31 October and 3/4/6 November 2026. No fourteen-day diary is invented. The supplied Gemini comparison is recorded, with estimated generation timing clearly attributed. AI platform evidence is included and the public repository is published. Q-FLAIR is verified and the historical source-revision mapping is published. All 23 research entries now have experiments or controls; six detailed published policies remain inaccessible and are explicitly mechanism-only. Those source-fidelity gaps remain visible without making an instructor conversation a prerequisite for this extension.
+Actual activity is recorded on 31 October and 3/4/6/7 November 2026. No fourteen-day diary is invented. The supplied Gemini comparison is recorded, with estimated generation timing clearly attributed. AI platform evidence is included and the public repository is published. Q-FLAIR is verified and the historical source-revision mapping is published. All 23 research entries now have experiments or controls; six detailed published policies remain inaccessible and are explicitly mechanism-only. Those source-fidelity gaps remain visible without making an instructor conversation a prerequisite for this extension.
 
 
 Evidence: README.md; docs/FINAL_QUESTIONS.md; docs/DEMONSTRATION_GUIDE.md; docs/SUBMISSION_CHECKLIST.md

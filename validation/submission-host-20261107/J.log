@@ -1,0 +1,15 @@
+test_exact_official_distribution_files_unchanged (test_mutations.MutationTests.test_exact_official_distribution_files_unchanged) ... ok
+test_seeded_design_and_one_ast_operator_change (test_mutations.MutationTests.test_seeded_design_and_one_ast_operator_change) ... ok
+test_timeout_and_invalid_are_not_counted_as_kills (test_mutations.MutationTests.test_timeout_and_invalid_are_not_counted_as_kills) ... ok
+test_bad_models_rejected (test_selection.SelectionTests.test_bad_models_rejected) ... ok
+test_empty_tests_are_not_selected (test_selection.SelectionTests.test_empty_tests_are_not_selected) ... ok
+test_overlap_coverage_preserved (test_selection.SelectionTests.test_overlap_coverage_preserved) ... ok
+test_random_ilp_matches_all_subsets (test_selection.SelectionTests.test_random_ilp_matches_all_subsets) ... ok
+test_redundant_tests_pruned (test_selection.SelectionTests.test_redundant_tests_pruned) ... ok
+test_runner_resolves_subject_from_project_root (test_selection.SelectionTests.test_runner_resolves_subject_from_project_root) ... ok
+test_weighted_and_count_greedy_are_distinct (test_selection.SelectionTests.test_weighted_and_count_greedy_are_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.067s
+
+OK

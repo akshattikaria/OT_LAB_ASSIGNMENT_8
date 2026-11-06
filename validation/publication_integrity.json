@@ -27,7 +27,7 @@
   "final_review_track_host_tests": 243,
   "final_review_supplement_tests": 7,
   "final_review_shared_tests_per_tool": 9,
-  "submission_ready": false,
+  "submission_ready": true,
   "research": {
     "passed": true,
     "source_entries": 23,
@@ -49,7 +49,10 @@
       "independent_matrix_exponential_max_error": 5.551115123125783e-16,
       "scope": "Stored raw data, disjoint splits, train-only scaling/thresholds, paired circuit outputs and logical query accounts."
     },
-    "completion_mathematical_tests": 29,
+    "completion_mathematical_tests": 30,
     "qflair_tests": 9
-  }
+  },
+  "readiness_basis": "Declared experimental portfolio under written brief Section 5, which permits verifiable experimental demonstrations; research spotlight slides PPT2 31\u201333 and PPT4 22,24\u201325 distinguish illustrative demonstrations from authors reported results. No instructor approval or exact full-paper reproduction is claimed.",
+  "strict_paper_method_coverage_complete": false,
+  "final_submission_correctness_tests": 298
 }

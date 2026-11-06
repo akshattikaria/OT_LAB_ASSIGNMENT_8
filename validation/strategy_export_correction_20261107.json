@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "correction_date_local": "2026-11-07",
+  "changed_fields": {
+    "device_types": 1033
+  },
+  "unchanged": [
+    "catalog order and size",
+    "all numerical cost and memory values",
+    "GA traces/selections and gaps",
+    "exact model optimum",
+    "reported strategy conclusions",
+    "environment describing original modeled study"
+  ],
+  "old_result": "research_supplement/diagnostics/strategies_before_tuple_order_fix.json",
+  "corrected_result": "research_supplement/results/strategies.json",
+  "cause": "Exporter sorted tuples, although device_types is an ordered per-stage assignment. Sets remain deterministically sorted; tuples now retain sequence order.",
+  "additional_groups": {
+    "hpo": {
+      "corrected_metadata_records": 26,
+      "original_saved": "research_supplement/diagnostics/hpo_before_tuple_order_fix.json",
+      "recovery_basis": "Original deterministic configuration grid and selected trial IDs",
+      "timings_scores_models_and_outcomes_unchanged": true
+    },
+    "svmplus": {
+      "corrected_metadata_records": 86,
+      "original_saved": "research_supplement/diagnostics/svmplus_before_tuple_order_fix.json",
+      "recovery_basis": "Unchanged retained numerical hyperparameters uniquely identify each original grid index",
+      "timings_scores_models_and_outcomes_unchanged": true
+    }
+  },
+  "source_scan": "Ordered serialized tuples occurred in strategy device types, HPO configs and SVM+ grid indices; set-derived tuples are canonical sorted sets. Other recorded parameter/state arrays remain ordered NumPy arrays/lists.",
+  "regression_test": "research_supplement.test_methods.MathematicalChecks.test_json_export_preserves_ordered_assignments"
+}

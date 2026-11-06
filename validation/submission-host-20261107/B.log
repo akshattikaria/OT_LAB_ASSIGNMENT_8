@@ -1,0 +1,35 @@
+test_scaled_integer_units_preserve_optimum (test_discrete.FeatureAndScaling.test_scaled_integer_units_preserve_optimum) ... ok
+test_selection_and_fit_counts (test_discrete.FeatureAndScaling.test_selection_and_fit_counts) ... ok
+test_test_labels_do_not_change_selection (test_discrete.FeatureAndScaling.test_test_labels_do_not_change_selection) ... ok
+test_zero_features (test_discrete.FeatureAndScaling.test_zero_features) ... ok
+test_all_zero_values (test_discrete.KnownAnswers.test_all_zero_values) ... ok
+test_dp_memory_guard (test_discrete.KnownAnswers.test_dp_memory_guard) ... ok
+test_empty_and_zero (test_discrete.KnownAnswers.test_empty_and_zero) ... ok
+test_greedy_counterexample (test_discrete.KnownAnswers.test_greedy_counterexample) ... ok
+test_item_used_once_in_dp (test_discrete.KnownAnswers.test_item_used_once_in_dp) ... ok
+test_large_item_does_not_block_later_items (test_discrete.KnownAnswers.test_large_item_does_not_block_later_items) ... ok
+test_node_limit_retains_feasible_incumbent_and_bound (test_discrete.KnownAnswers.test_node_limit_retains_feasible_incumbent_and_bound) ... ok
+test_teaching (test_discrete.KnownAnswers.test_teaching) ... ok
+test_generators_reproduce (test_discrete.OracleTests.test_generators_reproduce) ... ok
+test_integer_density_order_avoids_float_rounding (test_discrete.OracleTests.test_integer_density_order_avoids_float_rounding) ... ok
+test_one_hundred_random_instances_against_exhaustive (test_discrete.OracleTests.test_one_hundred_random_instances_against_exhaustive) ... ok
+test_oracle_guard (test_discrete.OracleTests.test_oracle_guard) ... ok
+test_all_teaching_qubo_states (test_discrete.QuantumMapping.test_all_teaching_qubo_states) ... ok
+test_bad_qubo_inputs (test_discrete.QuantumMapping.test_bad_qubo_inputs) ... ok
+test_bit_order_roundtrip (test_discrete.QuantumMapping.test_bit_order_roundtrip) ... ok
+test_four_node_maxcut (test_discrete.QuantumMapping.test_four_node_maxcut) ... ok
+test_large_coefficient_cancellation_is_rejected (test_discrete.QuantumMapping.test_large_coefficient_cancellation_is_rejected) ... ok
+test_spin_convention_and_offsets (test_discrete.QuantumMapping.test_spin_convention_and_offsets) ... ok
+test_triangle_maxcut (test_discrete.QuantumMapping.test_triangle_maxcut) ... ok
+test_twenty_random_constrained_models (test_discrete.QuantumMapping.test_twenty_random_constrained_models) ... ok
+test_weak_penalty_can_change_problem (test_discrete.QuantumMapping.test_weak_penalty_can_change_problem) ... ok
+test_audit_budget (test_discrete.Validation.test_audit_budget) ... ok
+test_audit_fractional (test_discrete.Validation.test_audit_fractional) ... ok
+test_audit_recomputes_values (test_discrete.Validation.test_audit_recomputes_values) ... ok
+test_audit_shape_and_nan (test_discrete.Validation.test_audit_shape_and_nan) ... ok
+test_malformed_inputs (test_discrete.Validation.test_malformed_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.300s
+
+OK
