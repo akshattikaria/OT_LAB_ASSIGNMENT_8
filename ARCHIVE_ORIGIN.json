@@ -1,0 +1,35 @@
+{
+  "original_commit": "c4ed2abc155ff101baef27331cc8460c9fe70df9",
+  "original_author_date": "2026-11-04T12:37:37Z",
+  "original_subject": "[AI:ChatGPT] Pin verified cachetools source and retain initial wrong-directory collection failure",
+  "track": "J",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/J/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "b02e26dcd476c3e80354e0844b25180b15be6f09"
+    },
+    {
+      "path": "selci/__init__.py",
+      "mode": "100644",
+      "sha": "10de17be734a8c88313c3145000e634b0a29eb90"
+    },
+    {
+      "path": "selci/common.py",
+      "mode": "100644",
+      "sha": "d7402a45663d9a217395149f582a098b01241ffb"
+    },
+    {
+      "path": "selci/runner.py",
+      "mode": "100644",
+      "sha": "07a6c92c2736710d333994ac73cfb37a6fdec7c1"
+    },
+    {
+      "path": "selci/selection.py",
+      "mode": "100644",
+      "sha": "d77a34249fd410e01a551527ebbeb1914fc82597"
+    }
+  ]
+}
