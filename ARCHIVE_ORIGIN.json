@@ -1,7 +1,7 @@
 {
-  "original_commit": "92593d395b57358aa690084a6a8613b9703e2d3e",
-  "original_author_date": "2026-11-03T12:26:53Z",
-  "original_subject": "[AI:ChatGPT] Validate shared-memory schedulers and retain all Track D experiments",
+  "original_commit": "5ba86d466c065c4ba733f200154cbd9d270614a3",
+  "original_author_date": "2026-11-03T12:32:09Z",
+  "original_subject": "[AI:ChatGPT] Document Track D results, corrected failure, validation, and remaining scope",
   "track": "D",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/D/history.bundle",
@@ -10,6 +10,11 @@
       "path": ".gitignore",
       "mode": "100644",
       "sha": "e8f8e1533eefdb2948474a0bbcff16fab9f7e959"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "7acbdbbdefa2276056bfc8638cfc24aadba23963"
     },
     {
       "path": "distopt/__init__.py",
@@ -59,7 +64,7 @@
     {
       "path": "distopt/report.py",
       "mode": "100644",
-      "sha": "bc2191afbefd61f7752480f2ce235d442c2ced79"
+      "sha": "a20cf5aac80932848780d54c4c61ed5b5122ea94"
     },
     {
       "path": "distopt/resume_resources.py",
@@ -72,9 +77,44 @@
       "sha": "df377cfaf55ef45b606872d094260277fec133e6"
     },
     {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "feb60fd539b415627169232cbbaffa7847d57a52"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "414173a466c92ba916ef281246a649b82439bbaf"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "20203c2e25ba1523564e3d3644c8a854cbd1203d"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "6db4bf1b6cafd8a24b99169b34f46731cafbbcf8"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "1732d6fe59b200a9916100558e15f1736c75bfb7"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "d68d06abb8365be3ee92146a06001425b75bf3d8"
+    },
+    {
       "path": "native/locality.c",
       "mode": "100644",
       "sha": "3a9c85ceaf98400fa3b6034c6cb5fcb335708baf"
+    },
+    {
+      "path": "prompts/D/001_continue.md",
+      "mode": "100644",
+      "sha": "4431c5642514e4a6cf090712e5f82f482bf1ff9e"
     },
     {
       "path": "requirements.txt",
