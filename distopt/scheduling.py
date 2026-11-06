@@ -24,9 +24,10 @@ def assignments(jobs,p,kind):
     return queues
 
 
-def _worker(rank,kind,own,shared,locks,barrier,results,iterations):
+def _worker(rank,kind,own,shared,locks,barrier,ready,results,iterations):
     rows=[];cpu=process_time()
     try:
+        ready.put({'worker':rank,'at':perf_counter()})
         barrier.wait(timeout=120)
         while True:
             donor=rank
@@ -57,16 +58,17 @@ def schedule(jobs,p,kind,iterations_per_unit=30000):
     if kind not in ('static_block','static_lpt','dynamic_pool','work_stealing') or not isinstance(p,int) or p<1:raise ValueError('Invalid scheduling method/workers')
     if not jobs or len(set(j[0] for j in jobs))!=len(jobs) or any(j[1]<1 for j in jobs):raise ValueError('Invalid jobs')
     ctx=mp.get_context('spawn');outer=perf_counter();manager=None;shared=None;locks=None
-    local=assignments(jobs,p,kind);barrier=ctx.Barrier(p+1);results=ctx.Queue()
+    local=assignments(jobs,p,kind);barrier=ctx.Barrier(p+1);results=ctx.Queue();ready=ctx.Queue()
     if kind=='dynamic_pool':
         shared=ctx.Queue()
         for job in jobs:shared.put(job)
         for _ in range(p):shared.put(None)
     elif kind=='work_stealing':
         manager=ctx.Manager();shared=[manager.list(q) for q in local];locks=[ctx.Lock() for _ in range(p)]
-    processes=[ctx.Process(target=_worker,args=(rank,kind,local[rank],shared,locks,barrier,results,iterations_per_unit)) for rank in range(p)]
+    processes=[ctx.Process(target=_worker,args=(rank,kind,local[rank],shared,locks,barrier,ready,results,iterations_per_unit)) for rank in range(p)]
     try:
         for process in processes:process.start()
+        readiness=[ready.get(timeout=120) for _ in range(p)]
         start=perf_counter();barrier.wait(timeout=120)
         workers=[results.get(timeout=120) for _ in range(p)];end=perf_counter()
         for process in processes:process.join(timeout=120)
@@ -78,20 +80,24 @@ def schedule(jobs,p,kind,iterations_per_unit=30000):
         active=[sum(row['finish']-row['start'] for row in rows if row['worker']==rank) for rank in range(p)]
         return_value={'method':kind,'workers':p,'steady_s':end-start,'jobs':rows,'worker_records':[{k:v for k,v in w.items() if k!='jobs'} for w in workers],
             'active_compute_s':active,'observed_utilization':sum(active)/(p*(end-start)),'stolen_jobs':sum(row['stolen'] for row in rows),
-            'predicted_total_units':sum(job[1] for job in jobs),'iterations_per_unit':iterations_per_unit,'start_method':'spawn'}
+            'predicted_total_units':sum(job[1] for job in jobs),'iterations_per_unit':iterations_per_unit,'start_method':'spawn',
+            'worker_readiness':[{'worker':r['worker'],'ready_s':r['at']-outer} for r in readiness],
+            'steady_start_s':start-outer,'steady_finish_s':end-outer}
     finally:
         for process in processes:
             if process.is_alive():process.terminate();process.join()
         if manager is not None:manager.shutdown()
         if kind=='dynamic_pool':shared.close();shared.join_thread()
         results.close();results.join_thread()
+        ready.close();ready.join_thread()
     return_value['end_to_end_s']=perf_counter()-outer
     return_value['setup_cleanup_s']=return_value['end_to_end_s']-return_value['steady_s']
     return return_value
 
 
-def _counter_worker(count,mode,counter,barrier,results):
+def _counter_worker(count,mode,counter,barrier,ready,results):
     try:
+        ready.put(perf_counter())
         barrier.wait(timeout=120)
         if mode=='locked_each':
             for _ in range(count):
@@ -106,15 +112,18 @@ def _counter_worker(count,mode,counter,barrier,results):
 
 def synchronization(p,mode,total=120000):
     if mode not in ('locked_each','private_reduce'):raise ValueError('Unknown synchronization mode')
-    ctx=mp.get_context('spawn');counter=ctx.Value('q',0);barrier=ctx.Barrier(p+1);results=ctx.Queue();outer=perf_counter()
+    ctx=mp.get_context('spawn');counter=ctx.Value('q',0);barrier=ctx.Barrier(p+1);results=ctx.Queue();ready=ctx.Queue();outer=perf_counter()
     sizes=[total//p+(rank<total%p) for rank in range(p)]
-    processes=[ctx.Process(target=_counter_worker,args=(size,mode,counter,barrier,results)) for size in sizes]
+    processes=[ctx.Process(target=_counter_worker,args=(size,mode,counter,barrier,ready,results)) for size in sizes]
     for process in processes:process.start()
+    readiness=[ready.get(timeout=120) for _ in processes]
     start=perf_counter();barrier.wait(timeout=120);states=[results.get(timeout=120) for _ in processes];seconds=perf_counter()-start
     for process in processes:process.join(timeout=120)
     if states!=[True]*p or counter.value!=total:raise AssertionError('Reduction correctness failure')
     results.close();results.join_thread()
-    return {'workers':p,'mode':mode,'total_increments':total,'result':counter.value,'steady_s':seconds,'end_to_end_s':perf_counter()-outer}
+    ready.close();ready.join_thread()
+    return {'workers':p,'mode':mode,'total_increments':total,'result':counter.value,'steady_s':seconds,'end_to_end_s':perf_counter()-outer,
+        'steady_start_s':start-outer,'last_ready_s':max(readiness)-outer}
 
 
 def _echo(connection):

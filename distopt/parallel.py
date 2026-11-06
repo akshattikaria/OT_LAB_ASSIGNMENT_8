@@ -28,9 +28,10 @@ def partitioned(X,W1,W2,workers,kind,pool):
 
 def pipeline(X,W1,W2,microbatches):
     if not 1<=microbatches<=len(X):raise ValueError('Invalid microbatch count')
-    pieces=np.array_split(X,microbatches);channel=queue.Queue(maxsize=2);barrier=threading.Barrier(3);outputs=[None]*microbatches;stages=[];errors=[]
+    pieces=np.array_split(X,microbatches);channel=queue.Queue(maxsize=2);ready=queue.Queue();barrier=threading.Barrier(3);outputs=[None]*microbatches;stages=[];errors=[]
     def first():
         try:
+            ready.put(True)
             barrier.wait(timeout=120);cpu=thread_time()
             for index,chunk in enumerate(pieces):
                 start=perf_counter();activation=np.tanh(chunk@W1);finish=perf_counter()
@@ -39,6 +40,7 @@ def pipeline(X,W1,W2,microbatches):
         except Exception as error:errors.append(repr(error))
     def second():
         try:
+            ready.put(True)
             barrier.wait(timeout=120);cpu=thread_time()
             while True:
                 message=channel.get(timeout=120)
@@ -49,6 +51,7 @@ def pipeline(X,W1,W2,microbatches):
         except Exception as error:errors.append(repr(error))
     threads=[threading.Thread(target=first),threading.Thread(target=second)];outer=perf_counter()
     for thread in threads:thread.start()
+    for _ in threads:ready.get(timeout=120)
     start=perf_counter();barrier.wait(timeout=120)
     for thread in threads:thread.join(timeout=120)
     if errors or any(thread.is_alive() for thread in threads):raise RuntimeError(str(errors))

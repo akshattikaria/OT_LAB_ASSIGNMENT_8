@@ -1,7 +1,7 @@
 {
-  "original_commit": "1546c0f6c477e69b394cb08d421205b4e5a249b2",
-  "original_author_date": "2026-11-03T12:16:20Z",
-  "original_subject": "[AI:ChatGPT] Implement Track D methods and actual CPU parallel kernels",
+  "original_commit": "3e037b9d4513de8b27bc4dfdc07524270818f7b5",
+  "original_author_date": "2026-11-03T12:17:30Z",
+  "original_subject": "[AI:ChatGPT] Exclude worker initialization from steady timing with readiness handshake",
   "track": "D",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/D/history.bundle",
@@ -39,12 +39,12 @@
     {
       "path": "distopt/parallel.py",
       "mode": "100644",
-      "sha": "1d159fdd682773f6dc246144b2e0d830c0257235"
+      "sha": "298818a9de9224d8b57fdd201c4f9724ef98a47c"
     },
     {
       "path": "distopt/scheduling.py",
       "mode": "100644",
-      "sha": "dd478aa2163fb1c72eeab313cf8e0d815ab7116e"
+      "sha": "3d15482b0e0022b42336dba0273ad33a2ddde614"
     },
     {
       "path": "native/locality.c",
