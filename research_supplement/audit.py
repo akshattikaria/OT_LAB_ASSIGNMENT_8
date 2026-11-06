@@ -14,7 +14,7 @@ def read(name):return json.loads((ROOT/'research_supplement'/name).read_text())
 
 
 def main():
-    registry=read('SOURCE_REGISTRY.json');assert len(registry['entries'])==22
+    registry=read('SOURCE_REGISTRY.json');assert len(registry['entries'])==23
     counts=dict(Counter(r['fidelity'] for r in registry['entries']))
     assert counts==registry['fidelity_counts'] and counts['mechanism_only']==6
     assert registry['strict_paper_method_coverage_complete'] is False
@@ -96,8 +96,14 @@ def main():
         assert r['model_optimality_gap']>=-1e-8
     for key in ['astra_throughput_choice','astra_economical_choice']:assert plans[strategies[key]]['hourly_cost']<=strategies['hourly_budget']
     log=(ROOT/'validation/research_tests_final.log').read_text();match=re.search(r'Ran (\d+) tests',log);assert match and '\nOK' in log
-    assert len(list((ROOT/'research_supplement/results').glob('*.json')))==14
-    record={'passed':True,'source_entries':22,'source_ports':10,'algorithm_variants':4,'survey_demonstrations':2,'mechanism_only_entries':6,'result_json_files':14,'new_mathematical_tests':int(match[1]),'native_spmv_timed_trials':210,'liver_splits':3,'svmplus_candidate_fits':96,'strict_paper_method_coverage_complete':False,'scope':'Recomputed stored mathematical certificates, data/source integrity and units; retained timings are not replaced. Six exact published policies remain unavailable; controls are explicitly not relabeled paper implementations.'}
+    assert len(list((ROOT/'research_supplement/results').glob('*.json')))==15
+    record={'passed':True,'source_entries':23,'source_ports':11,'algorithm_variants':4,'survey_demonstrations':2,'mechanism_only_entries':6,'result_json_files':15,'new_mathematical_tests':int(match[1]),'native_spmv_timed_trials':210,'liver_splits':3,'svmplus_candidate_fits':96,'strict_paper_method_coverage_complete':False,'scope':'Recomputed stored mathematical certificates, data/source integrity and units; retained timings are not replaced. Six exact published policies remain unavailable; controls are explicitly not relabeled paper implementations.'}
+    from .qflair import audit_result
+    record['qflair']=audit_result()
+    completion=(ROOT/'validation/research_completion_tests.log').read_text()
+    assert 'Ran 29 tests' in completion and '\nOK' in completion
+    record['completion_mathematical_tests']=29
+    record['qflair_tests']=9
     print(json.dumps(record,indent=2));return record
 
 

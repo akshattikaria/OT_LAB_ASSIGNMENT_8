@@ -1466,14 +1466,28 @@
       "scope": "Real four-worker stopping variant, completed-only rung scores, checkpoint continuation and explicit three-observation warm start. No 500-worker systems reproduction.",
       "full_paper_reproduction": false,
       "remaining_exact_method_gap": false
+    },
+    {
+      "topic": "Q-FLAIR",
+      "lecture": "PPT3 37",
+      "url": "https://arxiv.org/abs/2510.03389v2",
+      "source_status": "source_and_scope_recorded",
+      "experiment_status": "source_port",
+      "evidence": [
+        "research_supplement/qflair.py",
+        "research_supplement/results/qflair.json"
+      ],
+      "scope": "Two-qubit QNN port with eight Pauli generators, shared two-shift reconstructions, simultaneous gate/feature/grid-weight selection, 41 weights, 64/64 synthetic rows and 12-gate cap. Twelve paired finite-grid controls. No QSVM, MNIST, IBM or paper-score reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
     }
   ],
   "fidelity_counts": {
-    "source_port": 10,
+    "source_port": 11,
     "algorithm_variant": 4,
     "survey_demonstration": 2,
     "mechanism_only": 6
   },
   "strict_paper_method_coverage_complete": false,
-  "interpretation": "All 22 research entries have experiments or controls. Ten scoped source ports, four algorithm variants, two survey demonstrations and six mechanism-only controls are distinguished; no entire paper or source-scale performance is reproduced."
+  "interpretation": "All 23 research entries have experiments or controls. Eleven scoped source ports, four algorithm variants, two survey demonstrations and six mechanism-only controls are distinguished; no entire paper or source-scale performance is reproduced."
 }

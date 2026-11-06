@@ -271,15 +271,30 @@
       "result_section": "live_halving",
       "scope": "Real four-worker stopping variant, completed-only rung scores, checkpoint continuation and explicit three-observation warm start. No 500-worker systems reproduction.",
       "full_paper_reproduction": false
+    },
+    {
+      "topic": "Q-FLAIR",
+      "lecture": "PPT3 37",
+      "fidelity": "source_port",
+      "primary_url": "https://arxiv.org/abs/2510.03389v2",
+      "source_locator": "Sec. III, Algorithm 1, Eqs. 13\u201324; Appendix A.1; author QNN/QNN_cost.py and QNN_logLoss.py at 4f331783fc5bda5492fa3fffff0a845b0805eb39",
+      "code": "research_supplement/qflair.py",
+      "result": "research_supplement/results/qflair.json",
+      "result_section": "runs",
+      "scope": "Two-qubit QNN port with eight Pauli generators, shared two-shift reconstructions, simultaneous gate/feature/grid-weight selection, 41 weights, 64/64 synthetic rows and 12-gate cap. Twelve paired finite-grid controls. No QSVM, MNIST, IBM or paper-score reproduction.",
+      "full_paper_reproduction": false,
+      "remaining_exact_method_gap": false
     }
   ],
   "fidelity_counts": {
-    "source_port": 10,
+    "source_port": 11,
     "algorithm_variant": 4,
     "survey_demonstration": 2,
     "mechanism_only": 6
   },
   "strict_paper_method_coverage_complete": false,
-  "interpretation": "All 22 entries now have a source-linked experiment/control. Six remain mechanism-only because detailed source policies were inaccessible; they are not relabeled exact paper implementations. Hardware/dataset-scale reproduction is not claimed for any entry.",
-  "source_access_record": "provenance/research_source_documents.json"
+  "interpretation": "23 research entries have scoped experiments: 11 source ports, four variants, two survey demonstrations, six mechanism-only controls. Six exact-policy limitations remain; no full paper performance reproduction is claimed.",
+  "source_access_record": "provenance/research_source_documents.json",
+  "deferred_unimplemented_topics": [],
+  "research_spotlight_inventory_complete": true
 }

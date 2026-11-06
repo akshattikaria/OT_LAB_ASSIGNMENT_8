@@ -527,7 +527,7 @@ Evidence: chapter_supplement/results/compression.json; layouts.json; embedding.j
 ## Research extension: optimization and privacy
 
 
-The 6 November extension adds experiments for all 22 research entries: 10 scoped equation/code ports, four algorithm variants, two survey demonstrations and six mechanism-only controls. A port means the stated small specialization is implemented; none reproduces an entire paper or its performance. Detailed sources, equation locators, changes and gaps are in METHOD_COVERAGE.md and SOURCE_REGISTRY.json.
+The 6 November extension adds experiments for all 23 research entries: 11 scoped equation/code ports, four algorithm variants, two survey demonstrations and six mechanism-only controls. A port means the stated small specialization is implemented; none reproduces an entire paper or its performance. Detailed sources, equation locators, changes and gaps are in METHOD_COVERAGE.md and SOURCE_REGISTRY.json.
 
 
 | Binary logistic, 5 seeds | Mean reference gap | Training ms |
@@ -706,23 +706,54 @@ The GAGS-inspired two-island GA and random search each evaluate 16 unique log-gr
 The Astra-related finite planner enumerates 1611 memory-feasible data/tensor/pipeline/device choices using explicit synthetic profiles and a GPipe DAG. Its exact model optimum is 0.6255 s/iteration on 4 modeled devices at $8.00/hour. The EAHP-related original GA misses that finite optimum in all five runs; the one-hot LP/exhaustive reference exposes the gaps. Profiles are fictional, not measured GPU costs; evaluating the catalog is included in the workflow and GA query counts are not total savings.
 
 
-Twenty new tests check derivatives, unitary/postselection behavior, privacy distributions, exact SVM+ certificates, preprocessing and parallel/search invariants. The research audit verifies all 14 result files. All 2,013 original A-J imported files and their performance evidence remain unchanged.
+Twenty new tests check derivatives, unitary/postselection behavior, privacy distributions, exact SVM+ certificates, preprocessing and parallel/search invariants. The research audit verifies all 15 result files. All 2,013 original A-J imported files and their performance evidence remain unchanged.
 
 
 Evidence: research_supplement/hpo.py; svmplus.py; strategies.py; test_methods.py; audit.py; results/{hpo,svmplus,strategies}.json
 
 
+## Research extension: Q-FLAIR feature-map learning
+
+
+Q-FLAIR (PPT3 slide 37) learns its quantum feature map gate by gate. This scoped QNN port grows a two-qubit circuit, reconstructs candidate outputs using shared zero and ±π/2 evaluations, then classically selects gate, feature and weight. Source: Jäger et al., arXiv:2510.03389v2, Sec. III / Algorithm 1 / Appendix A.1; author code commit 4f331783.
+
+
+| Synthetic task | Features | Q-FLAIR accuracy | Logistic accuracy | Query ratio |
+
+|---|---|---|---|---|
+
+| linear | 4 | 97.9 ± 0.9% | 97.4 ± 1.8% | 121.3x |
+
+| linear | 12 | 93.2 ± 2.4% | 95.3 ± 1.6% | 293.3x |
+
+| xor | 4 | 58.9 ± 21.7% | 51.0 ± 5.5% | 116.0x |
+
+| xor | 12 | 51.0 ± 12.1% | 50.5 ± 3.9% | 290.3x |
+
+
+![Every seed is retained. The paired direct-grid QNN matches Q-FLAIR output; logistic is a separate classical reference.](reports/figures/qflair_comparison.png)
+
+
+Twelve paired cases use 64 training/64 disjoint test rows, 41 weight values and an eight-generator pool. Train-only scaling and threshold selection prevent test leakage. Nine new tests compare author reconstruction, dense matrix exponentials, exhaustive candidates and Qiskit circuits. Independent replay agrees within 6e-16.
+
+
+6/12 cases reach the 12-gate cap. XOR generalization is mixed; classical logistic wins on several splits. The query ratio counts logical black-box output evaluations, not measured QPU time or CPU speedup. Classical feature/weight scoring still grows with dimension. This is not the paper's QSVM, MNIST or IBM-hardware reproduction.
+
+
+Evidence: research_supplement/qflair.py; test_qflair.py; QFLAIR.md; results/qflair.json; author_checks/; provenance/qflair_completion_20261106.json
+
+
 ## Chapter checklist and paper-specific research boundary
 
 
-The checklist maps 112 core/supporting topics and all 22 research entries to executable evidence. The extension adds 10 scoped equation/code ports, four algorithm variants, two survey demonstrations and six mechanism-only controls. A source port does not mean an entire paper or its reported performance has been reproduced.
+The checklist maps 112 core/supporting topics and 23 research entries to executable evidence, including Q-FLAIR. The extension adds 11 scoped equation/code ports, four algorithm variants, two survey demonstrations and six mechanism-only controls. A source port does not mean an entire paper or its reported performance has been reproduced.
 
 
 | Evidence level | Count | Meaning |
 
 |---|---|---|
 
-| Scoped source port | 10 | Declared source equations/code specialized to small CPU experiments |
+| Scoped source port | 11 | Declared source equations/code specialized to small CPU experiments |
 
 | Algorithm variant | 4 | Source strategy with explicit changes to policy, scale or model |
 
@@ -734,7 +765,7 @@ The checklist maps 112 core/supporting topics and all 22 research entries to exe
 The remaining exact-method gaps are PANA, PackStealLB, GSHetero, architecture-aware currying, OFLight and EAHP. Public retrieval reached abstracts, unavailable manuscripts or incomplete author repositories. These experiments demonstrate the related mechanisms but are not relabeled exact paper implementations. Strict paper-method coverage therefore remains incomplete.
 
 
-The five quantum spotlights now have actual scoped experiments, including the two-qubit author-data liver port. GRNG, AdaFisher, private density greedy+, ResQue and Subspace Networks also have source-linked numerical ports. All algorithms, adaptations, equation locators, datasets and result paths are listed in METHOD_COVERAGE.md; source-document hashes and access limitations are recorded separately.
+Six quantum spotlights have scoped experiments, including Q-FLAIR and the two-qubit author-data liver port. GRNG, AdaFisher, private density greedy+, ResQue and Subspace Networks also have source-linked numerical ports. All algorithms, adaptations, equation locators, datasets and result paths are listed in METHOD_COVERAGE.md; source-document hashes and access limitations are recorded separately.
 
 
 The user chose to proceed without waiting for an instructor clarification. No such conversation is recorded as having occurred. If strict exact-method coverage is required, the six detailed policies/full texts are still needed. Names explicitly marked absent from the slides are not fabricated.
@@ -746,7 +777,7 @@ Evidence: docs/CHAPTER6_CHECKLIST.json and .md; research_supplement/SOURCE_REGIS
 ## Correctness, actual AI failures and disclosures
 
 
-The 6 November final review again passes 243 original host tests: A30/B30/C32/D29/E29/F29/G14/H17/I23/J10. The fresh review also passes seven supplement tests and nine shared tests per AI candidate, with 100 exhaustive small cases each. Twenty additional research tests check independent numerical and mathematical references. Earlier logs and original performance measurements are retained. These counts do not include subject cachetools or archived xv6 guest suites. Imported source/result hashes are preserved.
+The 6 November final review again passes 243 original host tests: A30/B30/C32/D29/E29/F29/G14/H17/I23/J10. The fresh review also passes seven supplement tests and nine shared tests per AI candidate, with 100 exhaustive small cases each. Twenty original research tests and nine Q-FLAIR checks verify numerical and mathematical references. Earlier logs and original performance measurements are retained. These counts do not include subject cachetools or archived xv6 guest suites. Imported source/result hashes are preserved.
 
 
 | Track | Actual observed AI-code defect | Fix / retained check |
@@ -773,16 +804,16 @@ The 6 November final review again passes 243 original host tests: A30/B30/C32/D2
 Each original/fix and test is documented in its track. Intentional mutants, weak penalties, unstable-rate controls and heuristic failures are not invented AI mistakes. The minimum three genuine corrected cases is exceeded.
 
 
-All substantial work is AI-assisted. Historical registers disclose gpt-6.1-sol for A/B/C/D/F/G and gpt-6-astra for E; H/I/J/integration retain GPT-6 family where serving revision is not exposed. Student evidence received 6 November adds Google Gemini with selector Argon High for the comparison function only; its underlying revision is unverified. Sanitized platform exports/screenshots remain pending. No manual student fixes or missing transcripts are invented.
+All substantial work is AI-assisted. Historical registers disclose gpt-6.1-sol for A/B/C/D/F/G and gpt-6-astra for E; H/I/J/integration retain GPT-6 family where serving revision is not exposed. Student evidence received 6 November adds Google Gemini with selector Argon High for the comparison function only; its underlying revision is unverified. Original ChatGPT/Gemini platform exports and native selector screenshots are now included; see docs/AI_EVIDENCE_INDEX.md. No manual student fixes or missing transcripts are invented.
 
 
-Evidence: validation/host_tracks/summary.json; tracks/*/docs/AI_FAILURE_LOG.md; docs/AI_TOOL_REGISTER.md
+Evidence: validation/completion-host/summary.json; tracks/*/docs/AI_FAILURE_LOG.md; docs/AI_TOOL_REGISTER.md
 
 
 ## Two-tool comparison: ChatGPT and Gemini
 
 
-The fixed Python 3.12 task is a 0-1 knapsack function: maximize value, minimize weight, then select lexicographically smallest indices. The student supplied an unchanged Gemini answer and screenshot on 6 November. The screenshot shows selector Argon High and the prompt/code beginnings; underlying revision and complete platform export remain unverified.
+The fixed Python 3.12 task is a 0-1 knapsack function: maximize value, minimize weight, then select lexicographically smallest indices. The student supplied an unchanged Gemini answer and screenshot on 6 November. The screenshot shows selector Argon High and the prompt/code beginnings; the complete supplied prompt/response PDF is now included; the underlying backend revision remains unverified.
 
 
 | Measure | ChatGPT / Codex | Google Gemini |
@@ -841,7 +872,7 @@ Use Python 3.12 and root or per-track requirements. Native C/OpenMP and xv6 repl
 
 | Supplement checks | python -m unittest chapter_supplement.test_study -v |
 
-| Research audit / tests | python -m research_supplement.audit; python -m unittest research_supplement.test_methods -v |
+| Research audit / tests | python -m research_supplement.audit; python -m unittest research_supplement.test_methods research_supplement.test_qflair -v |
 
 | New research run | python -m research_supplement.run --out research_supplement/results-rerun |
 
@@ -858,7 +889,7 @@ The captioned video shows actual command output and saved evidence; it is an edi
 Optimization improves a chosen objective under declared assumptions. E improves synthetic cost/feasibility; H buys reads with storage/writes; F/G show model-versus-time mismatch; J loses assertion strength despite line preservation. Quantum logical query gains and CPU parallel speedups use different cost models. No universal optimizer ranking or practical quantum advantage is claimed.
 
 
-Actual activity is recorded on 31 October and 3/4/6 November 2026. No fourteen-day diary is invented. The supplied Gemini comparison is recorded, with estimated generation timing clearly attributed. Pending steps are sanitized AI platform exports/screenshots and correct public repository publication. All 22 research entries now have experiments or controls; six detailed published policies remain inaccessible and are explicitly mechanism-only. Those source-fidelity gaps remain visible without making an instructor conversation a prerequisite for this extension.
+Actual activity is recorded on 31 October and 3/4/6 November 2026. No fourteen-day diary is invented. The supplied Gemini comparison is recorded, with estimated generation timing clearly attributed. AI platform evidence is included and the public repository is published. Q-FLAIR is verified and the historical source-revision mapping is published. All 23 research entries now have experiments or controls; six detailed published policies remain inaccessible and are explicitly mechanism-only. Those source-fidelity gaps remain visible without making an instructor conversation a prerequisite for this extension.
 
 
 Evidence: README.md; docs/FINAL_QUESTIONS.md; docs/DEMONSTRATION_GUIDE.md; docs/SUBMISSION_CHECKLIST.md
@@ -910,6 +941,12 @@ All numerical results are this project's recorded measurements/models. Supplied 
 
 
 - Astra - finite-model variant: https://arxiv.org/abs/2502.13480
+
+
+- Q-FLAIR - scoped QNN port: https://arxiv.org/html/2510.03389v2
+
+
+- Q-FLAIR author implementation: https://github.com/phels23/Q-FLAIR
 
 
 External references support methods and research identification; they do not supply this project's measured gains. Historical calibration, CPU simulation, synthetic prices and modeled controls remain explicitly identified. Original local AI-assisted history bundles and the integration history are retained.

@@ -1,5 +1,8 @@
 # AI disclosure register
 
+> Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
+
+
 | Tool | Recorded model information | Dates | Scope |
 |---|---|---|---|
 | ChatGPT | Historical session-reported gpt-6-astra | 2026-10-31 | E implementation, benchmarking and documentation |
@@ -9,6 +12,10 @@
 
 These preserve original stage declarations; they are not independent confirmation of serving revisions. Confirm available labels using actual exports/headers. All substantial implementation is AI-assisted. No manual student fixes are claimed. Python, SciPy/HiGHS, SQLite, Qiskit and compilers are dependencies, not additional AI assistants.
 
-Original per-track prompts and local AI-assisted history bundles remain unchanged. The integration prompt record includes the actual continuation requests and significant decisions. The supplied Gemini screenshot establishes the visible selector label and prompt/code beginnings. Its original pasted code is retained unchanged; generation took approximately 60 ± 3 seconds by student estimate. No repair was needed. Sanitized platform exports or screenshots from each tool remain evidence to attach; the underlying model revision and complete prompt history are not inferred. ChatGPT generation latency is unavailable. See ai_tool_comparison/gemini_evidence.md.
+Original per-track prompts and local AI-assisted history bundles remain unchanged. The integration prompt record includes the actual continuation requests and significant decisions. The supplied Gemini screenshot establishes the visible selector label and prompt/code beginnings. Its original pasted code is retained unchanged; generation took approximately 60 ± 3 seconds by student estimate. No repair was needed. Original exports and native screenshots from each tool are included (AI_EVIDENCE_INDEX.md); the underlying model revision and complete prompt history are not inferred. ChatGPT generation latency is unavailable. See ai_tool_comparison/gemini_evidence.md.
 
 The 6 November research extension is also ChatGPT/Codex-assisted. It contains original small equation/architecture ports, declared variants and explicitly original mechanism controls. Public source code was inspected for architecture/factor conventions; only the author liver CSV and its attribution/license are bundled. Failed approaches and counter/certificate corrections are retained in research_supplement/README.md and diagnostics/. No unavailable model label or instructor approval is inferred.
+
+## Completion work
+
+ChatGPT/Codex completed Q-FLAIR, evidence indexing, source-history archival mapping and the final report/package on 6 November 2026. The exact serving revision was not independently exposed. All substantial new code is AI-assisted; no manual student code correction or new independent AI tool is claimed. The actual request and observed audit-reader correction are recorded in prompts/Integration/006_completion.md.

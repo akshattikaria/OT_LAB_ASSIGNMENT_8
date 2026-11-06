@@ -1,5 +1,8 @@
 # Source-linked research extension - 6 November 2026
 
+> Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
+
+
 This extension adds executable experiments or controls for all **22** Chapter 6 research entries. It preserves the original A-J packages and their measurements. It contains **10 scoped source ports, four algorithm variants, two survey demonstrations and six mechanism-only controls**. None claims an entire paper or its reported performance has been reproduced.
 
 A **source port** implements the declared small specialization of a paper's equations or author architecture; its scale, data and any omissions remain explicit. An **algorithm variant** changes a source strategy or policy. A **survey demonstration** implements representative families discussed by a survey. A **mechanism-only control** is our original related example, whose detailed published algorithm was unavailable. These categories must not be merged into a claim of 22 exact implementations.

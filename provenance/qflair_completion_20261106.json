@@ -1,0 +1,25 @@
+{
+  "author_repository_commit": "4f331783fc5bda5492fa3fffff0a845b0805eb39",
+  "author_source": "QNN/QNN_cost.py",
+  "paper": "https://arxiv.org/abs/2510.03389v2",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "libraries": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0"
+    },
+    "qiskit_test_version": "2.6.1",
+    "scope": "Shared cloud CPU, one BLAS thread for Q-FLAIR training; not the student laptop."
+  },
+  "implementation_sha256": "0c8e21b083c35659ac2ca53a136a84b3ea9cb9491fb351dd16f841b09ea587e2",
+  "results_sha256": "8763afcf7126e8b290cd714da4535a2de611f594ded81dfcdbcb8c6c35be10a7",
+  "paired_cases": 12,
+  "new_tests": 9,
+  "original_imports_unchanged": 2013,
+  "author_checks": {
+    "qflair_reconstruction.py": "Extracted determine_sine_curve and eq_sin from author QNN/QNN_cost.py",
+    "license": "Apache-2.0; author_checks/QFLAIR_LICENSE.txt"
+  }
+}

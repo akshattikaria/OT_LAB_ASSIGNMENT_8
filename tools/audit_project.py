@@ -11,6 +11,11 @@ def main():
     hashes=read('provenance/imported_files.json')
     for name,digest in hashes.items():assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest,name
     sources=read('provenance/source_archives.json');assert {r['track'] for r in sources}==set('ABCDEFGHIJ')
+    evidence=read('provenance/ai_evidence_received_20261106.json')['files'];assert len(evidence)==4
+    for row in evidence:assert hashlib.sha256((ROOT/row['path']).read_bytes()).hexdigest()==row['sha256']
+    history=read('provenance/public_history.json');assert len(history['mapping'])==53 and len(history['branches'])==11
+    assert history['source_only_archival_reconstruction'] and history['original_source_blobs_unchanged']
+    completion=read('validation/completion-host/summary.json');assert completion['passed'] and completion['total_tests']==297
     hosts=read('validation/host_tracks/summary.json');assert all(r['passed'] and r['exit_code']==0 for r in hosts);assert sum(r['tests'] for r in hosts)==243
     assert 'Ran 7 tests' in (ROOT/'validation/supplement_tests.log').read_text() and '\nOK' in (ROOT/'validation/supplement_tests.log').read_text()
     candidate=read('ai_tool_comparison/chatgpt_result_01.json');assert candidate['passed'] and candidate['tests']==9
@@ -45,7 +50,7 @@ def main():
             for key,value in [('median_ms',statistics.median(times)),('min_ms',min(times)),('max_ms',max(times))]:assert math.isclose(summary[method][key],value,rel_tol=1e-12)
         assert math.isclose(summary['chatgpt_over_gemini_time_ratio'],summary['chatgpt']['median_ms']/summary['gemini']['median_ms'],rel_tol=1e-12)
     checklist=read('docs/CHAPTER6_CHECKLIST.json')
-    assert len(checklist['research_references'])==22
+    assert len(checklist['research_references'])==23
     quantum_refs={'TensorHyper-VQC','Negative learning-rate phases','Quantum measurement temperature','Quantum-gradient nested optimization','QML-Liver'}
     assert quantum_refs <= {r['topic'] for r in checklist['research_references']}
     review_hosts=read('validation/final-review-host/summary.json')
@@ -99,7 +104,7 @@ def main():
     assert math.isclose(j['ilp']['wall_speedup'],j['full']['wall_median_s']/j['ilp']['wall_median_s'],rel_tol=1e-12)
     video=read('validation/video_check.json');assert 99<=video['duration_s']<=102 and video['source_cli_verified']
     from pypdf import PdfReader
-    pdf=PdfReader(ROOT/'reports/Assignment_8_Integrated_Technical_Report.pdf');assert len(pdf.pages)==27
+    pdf=PdfReader(ROOT/'reports/Assignment_8_Integrated_Technical_Report.pdf');assert len(pdf.pages)==28
     text='\n'.join(p.extract_text() for p in pdf.pages);assert all('Track '+l+':' in text for l in 'ABCDEFGHIJ');assert '\ufffd' not in text
     assert 'Two-tool comparison: ChatGPT and Gemini' in text and 'Argon High' in text
     from research_supplement.audit import main as research_audit
@@ -108,7 +113,7 @@ def main():
     assert checklist['fidelity_counts']==read('research_supplement/SOURCE_REGISTRY.json')['fidelity_counts']
     assert 'QML-Liver on author data' in text and 'six mechanism-only' in text
     result={'passed':True,'imported_files_verified':len(hashes),'tracks':len(sources),'retained_track_host_tests':243,'retained_host_test_date':'2026-11-04','supplement_tests':7,'comparison_baseline_tests':9,'comparison_tools':2,'shared_tests_per_tool':9,'exhaustive_small_cases_per_tool':100,'timed_function_calls':56,'generation_latency_comparable':False,'course_topic_entries':len(checklist['topics']),'research_reference_entries':len(checklist['research_references']),'hpo_policy_rows':30,'compression_runs':20,'native_control_trials':14,'pdf_pages':len(pdf.pages),'demo_seconds':video['duration_s'],'scope':'Integrity, evidence links and retained arithmetic. Original A-J code/results unchanged; supplied Gemini comparison recorded. Full chat exports, publication and research interpretation remain open.'}
-    result.update(final_review_track_host_tests=243,final_review_supplement_tests=7,final_review_shared_tests_per_tool=9,submission_ready=False,research=research)
-    result['scope']='Integrity, source links and retained arithmetic/certificates. Original A-J code/results unchanged; 22 research experiments/controls added. Public repository is supplied. Authentic AI platform evidence and six exact published policies remain open.'
+    result.update(completion_host_tests=297,requested_followups_complete=True,authentic_evidence_files=4,public_archival_source_revisions=53,public_archival_branches=11,final_review_track_host_tests=243,final_review_supplement_tests=7,final_review_shared_tests_per_tool=9,submission_ready=False,research=research)
+    result['scope']='Integrity, source links and retained arithmetic/certificates. Original A-J code/results unchanged; 23 research experiments/controls present, including Q-FLAIR. Public repository is supplied. AI platform evidence is included. Q-FLAIR is verified; public archival revision links are mapped separately. Six exact published policies remain unavailable.'
     print(json.dumps(result,indent=2));return result
 if __name__=='__main__':main()

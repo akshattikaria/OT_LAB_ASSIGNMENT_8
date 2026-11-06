@@ -1,5 +1,8 @@
 # AI prompt and evidence index
 
+> Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
+
+
 Original track prompt/excerpt records remain in their imported packages, together with their own correction logs, commit indexes and portable histories. No missing platform transcript or screenshot is fabricated.
 
 | Track | Original prompt/excerpt folder |
@@ -20,3 +23,5 @@ Integration/ holds continuation/update records. The unchanged Gemini response an
 ## Public repository history
 
 The source snapshot is published at [https://github.com/akshattikaria/OT_LAB_ASSIGNMENT_8](https://github.com/akshattikaria/OT_LAB_ASSIGNMENT_8). See [PUBLICATION.md](../docs/PUBLICATION.md) and the [public commit history](https://github.com/akshattikaria/OT_LAB_ASSIGNMENT_8/commits/main). Original track hashes and portable histories are retained; those local historical commits are not presented as remote commits.
+
+Current public revision links: [History mapping](../docs/HISTORY_LINKS.md). Current authentic platform evidence: [AI evidence index](../docs/AI_EVIDENCE_INDEX.md). Completion requests and verification: Integration/006_completion.md.

@@ -119,7 +119,7 @@ The root status supersedes historical per-track progress notes. Numerical models
 
 ## Research extension and remaining boundary
 
-All 22 entries now have executable experiments or controls. A source port means only its stated small equation/code specialization. The six mechanism-only entries lack publicly retrieved detailed policies; they do not close a strict exact-method requirement. See research_supplement/METHOD_COVERAGE.md for every adaptation and source locator. No full paper performance reproduction is claimed.
+All 23 entries now have executable experiments or controls. A source port means only its stated small equation/code specialization. The six mechanism-only entries lack publicly retrieved detailed policies; they do not close a strict exact-method requirement. See research_supplement/METHOD_COVERAGE.md for every adaptation and source locator. No full paper performance reproduction is claimed.
 
 | Entry | Lecture | Fidelity | Evidence | Scope |
 |---|---|---|---|---|
@@ -145,5 +145,6 @@ All 22 entries now have executable experiments or controls. A source port means 
 | Astra | PPT4 22,24-25 | algorithm_variant | `research_supplement/strategies.py`, `research_supplement/results/strategies.json` | Finite synthetic heterogeneous GPipe cost model, exhaustive choices and financial trade-off; no calibrated Megatron kernels or heterogeneous GPU run. |
 | HPO tutorial/survey | PPT4 22,24,26 | survey_demonstration | `research_supplement/hpo.py`, `research_supplement/results/hpo.json` | Exact ridge hypergradient, finite-difference check, grid/random/Sobol controls and live halving. Survey/tutorial are not a single algorithm. |
 | ASHA systems paper | PPT4 27 | algorithm_variant | `research_supplement/hpo.py`, `research_supplement/results/hpo.json` | Real four-worker stopping variant, completed-only rung scores, checkpoint continuation and explicit three-observation warm start. No 500-worker systems reproduction. |
+| Q-FLAIR | PPT3 37 | source_port | `research_supplement/qflair.py`, `research_supplement/results/qflair.json` | Two-qubit QNN port with eight Pauli generators, shared two-shift reconstructions, simultaneous gate/feature/grid-weight selection, 41 weights, 64/64 synthetic rows and 12-gate cap. Twelve paired finite-grid controls. No QSVM, MNIST, IBM or paper-score reproduction. |
 
 Names explicitly marked not found/not cited in the slides are not fabricated: DiCTR, Mixer, RLDPSO, AutoHAAP, SSGS, OSCAR, LS-GT and AFS-GNN.

@@ -1,6 +1,9 @@
 # Research method coverage
 
-Updated 6 November 2026 (Asia/Calcutta). All 22 entries have executable experiments or controls. Ten source ports, four variants, two survey demonstrations and six mechanism-only controls remain distinct. A source port covers the declared small specialization, not an entire paper or its performance. No physical QPU or GPU-cluster experiments are claimed.
+> Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
+
+
+Updated 6 November 2026 (Asia/Calcutta). All 23 entries have executable experiments or controls. Ten source ports, four variants, two survey demonstrations and six mechanism-only controls remain distinct. A source port covers the declared small specialization, not an entire paper or its performance. No physical QPU or GPU-cluster experiments are claimed.
 
 | Entry / slides | Evidence level | Source / locator | Code and retained result | Scope and adaptations |
 |---|---|---|---|---|
@@ -28,3 +31,7 @@ Updated 6 November 2026 (Asia/Calcutta). All 22 entries have executable experime
 | ASHA systems paper (PPT4 27) | Algorithm variant | [Primary source](https://arxiv.org/abs/1810.05934); Asynchronous successive-halving policy | `research_supplement/hpo.py`; `research_supplement/results/hpo.json` -> live_halving | Real four-worker stopping variant, completed-only rung scores, checkpoint continuation and explicit three-observation warm start. No 500-worker systems reproduction. |
 
 The source-access log is `provenance/research_source_documents.json`. Dataset/code attribution is in `research_supplement/data/`. Original A-J source and evidence remain unchanged. See README.md for commands, comparison budgets, actual failures and corrections. The six mechanism-only rows do not close a strict published-policy implementation requirement.
+
+## Q-FLAIR completion
+
+PPT3 slide 37 now maps to qflair.py, results/qflair.json and test_qflair.py. This is a scoped QNN source port of Section III / Algorithm 1 / Appendix A.1: eight Pauli generators, shared two-shift reconstruction, 41 weights, 64/64 synthetic rows, 12-gate cap and a direct-grid control. Author reconstruction functions are checked unchanged. The paper's QSVM, MNIST, real IBM and source-scale performance are not reproduced. See QFLAIR.md for every adaptation and verification result.

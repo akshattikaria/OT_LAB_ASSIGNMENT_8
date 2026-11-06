@@ -10,7 +10,7 @@ from .common import save
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--groups',nargs='+',default=['curvature','submodular','tensorhyper','negative_learning','qmt','nom','communication','placement','hpo','svmplus','strategies','spmv','liver','privacy_certificate'])
+    parser.add_argument('--groups',nargs='+',default=['curvature','submodular','tensorhyper','negative_learning','qmt','nom','communication','placement','hpo','svmplus','strategies','spmv','liver','privacy_certificate','qflair'])
     parser.add_argument('--out',type=Path,default=Path(__file__).parent/'results')
     a=parser.parse_args()
     with threadpool_limits(limits=1):
@@ -18,6 +18,9 @@ def main():
             start=time.perf_counter();print('Running',name,flush=True)
             if name in ['tensorhyper','negative_learning','qmt','nom']:
                 value=getattr(importlib.import_module('research_supplement.quantum_studies'),name)()
+            elif name=='qflair':
+                from .qflair import run_experiments
+                value=run_experiments()
             elif name=='privacy_certificate':
                 from .submodular import exact_dp_distribution
                 import numpy as np

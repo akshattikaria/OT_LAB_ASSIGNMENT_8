@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "suites": [
+    {
+      "suite": "A",
+      "exit_code": 0,
+      "tests": 30,
+      "passed": true,
+      "validation_wall_s": 1.0587937299997066
+    },
+    {
+      "suite": "B",
+      "exit_code": 0,
+      "tests": 30,
+      "passed": true,
+      "validation_wall_s": 1.2167658549997213
+    },
+    {
+      "suite": "C",
+      "exit_code": 0,
+      "tests": 32,
+      "passed": true,
+      "validation_wall_s": 1.2646140699998796
+    },
+    {
+      "suite": "D",
+      "exit_code": 0,
+      "tests": 29,
+      "passed": true,
+      "validation_wall_s": 2.0728303269997923
+    },
+    {
+      "suite": "E",
+      "exit_code": 0,
+      "tests": 29,
+      "passed": true,
+      "validation_wall_s": 1.0649715239997022
+    },
+    {
+      "suite": "F",
+      "exit_code": 0,
+      "tests": 29,
+      "passed": true,
+      "validation_wall_s": 1.4896738260003985
+    },
+    {
+      "suite": "G",
+      "exit_code": 0,
+      "tests": 14,
+      "passed": true,
+      "validation_wall_s": 0.08090265800001362
+    },
+    {
+      "suite": "H",
+      "exit_code": 0,
+      "tests": 17,
+      "passed": true,
+      "validation_wall_s": 1.1351426169994738
+    },
+    {
+      "suite": "I",
+      "exit_code": 0,
+      "tests": 23,
+      "passed": true,
+      "validation_wall_s": 4.563093153999944
+    },
+    {
+      "suite": "J",
+      "exit_code": 0,
+      "tests": 10,
+      "passed": true,
+      "validation_wall_s": 2.434891931000493
+    },
+    {
+      "suite": "chapter",
+      "exit_code": 0,
+      "tests": 7,
+      "passed": true,
+      "validation_wall_s": 2.6478556430001845
+    },
+    {
+      "suite": "chatgpt",
+      "exit_code": 0,
+      "tests": 9,
+      "passed": true,
+      "validation_wall_s": 0.07684391600014351
+    },
+    {
+      "suite": "gemini",
+      "exit_code": 0,
+      "tests": 9,
+      "passed": true,
+      "validation_wall_s": 0.081499089999852
+    }
+  ],
+  "research_tests": 29,
+  "total_tests": 297,
+  "scope": "Correctness tests in completion runtime; not new performance measurements or xv6 guest runs.",
+  "runtime_note": "Initial J replay lacked documented test dependencies; installed pinned coverage/pytest and their dependencies locally, then reran J. Original source unchanged."
+}

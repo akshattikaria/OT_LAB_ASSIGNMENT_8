@@ -1,6 +1,9 @@
 # Same-task comparison: ChatGPT/Codex and Google Gemini
 
-Updated 6 November 2026 (Asia/Calcutta). Task: the same Python 3.12 0–1 knapsack function with maximum value, minimum weight and lexicographic index tie-breaking (TASK_PROMPT.txt). Gemini evidence is student-supplied. The screenshot shows the prompt beginning and selector; a complete platform export remains pending.
+> Current completion status: original AI evidence is included, Q-FLAIR is verified, and public archival source-revision links are mapped in docs/HISTORY_LINKS.md. The six exact-policy limitations remain. Earlier dated statements below describe their original stage.
+
+
+Updated 6 November 2026 (Asia/Calcutta). Task: the same Python 3.12 0–1 knapsack function with maximum value, minimum weight and lexicographic index tie-breaking (TASK_PROMPT.txt). Gemini evidence is student-supplied. The screenshot shows the prompt beginning and selector; the complete supplied platform PDF is included.
 
 | Measure | ChatGPT/Codex | Google Gemini |
 |---|---|---|
@@ -49,4 +52,4 @@ python ai_tool_comparison/evaluate.py --candidate ai_tool_comparison/gemini_cand
 python ai_tool_comparison/benchmark_pair.py --out ai_tool_comparison/benchmark_results_rerun.json
 ```
 
-Use new output filenames to preserve evidence. New timings may differ. Full sanitized chat exports and stronger model/prompt authentication remain evidence to attach; no general model ranking or generation-speed winner is justified.
+Use new output filenames to preserve evidence. New timings may differ. Original supplied chat exports and native selector screenshots are included; hidden backend revisions remain unverified; no general model ranking or generation-speed winner is justified.

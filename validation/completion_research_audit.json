@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "source_entries": 23,
+  "source_ports": 11,
+  "algorithm_variants": 4,
+  "survey_demonstrations": 2,
+  "mechanism_only_entries": 6,
+  "result_json_files": 15,
+  "new_mathematical_tests": 20,
+  "native_spmv_timed_trials": 210,
+  "liver_splits": 3,
+  "svmplus_candidate_fits": 96,
+  "strict_paper_method_coverage_complete": false,
+  "scope": "Recomputed stored mathematical certificates, data/source integrity and units; retained timings are not replaced. Six exact published policies remain unavailable; controls are explicitly not relabeled paper implementations.",
+  "qflair": {
+    "passed": true,
+    "cases": 12,
+    "paired_training_runs": 24,
+    "independent_matrix_exponential_max_error": 5.551115123125783e-16,
+    "scope": "Stored raw data, disjoint splits, train-only scaling/thresholds, paired circuit outputs and logical query accounts."
+  },
+  "completion_mathematical_tests": 29,
+  "qflair_tests": 9
+}

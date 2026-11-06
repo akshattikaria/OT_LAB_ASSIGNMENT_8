@@ -12,7 +12,8 @@
     "original_result": "chatgpt_result_01.json",
     "validation_date": "2026-11-06",
     "repair_rounds_recorded": 0,
-    "unsupported_external_claims_observed": false
+    "unsupported_external_claims_observed": false,
+    "chat_export": "../evidence/ai/ChatGPT_Conversation.pdf"
   },
   "second_tool": {
     "tool": "Google Gemini",
@@ -23,9 +24,9 @@
     "candidate": "gemini_candidate_01.py",
     "result": "gemini_result_01.json",
     "candidate_sha256": "6e93b3033c03fff753de327cb46b753ee3602cb1023710f8d56a35648caacb1a",
-    "response_source": "Student-pasted original answer; screenshot corroborates visible beginning and selector label",
+    "response_source": "Original student-supplied answer, now corroborated by full supplied prompt/response PDF and native selector screenshot",
     "evidence": "gemini_evidence.md",
-    "chat_export": null,
+    "chat_export": "../evidence/ai/Gemini_Conversation.pdf",
     "ai_generation_latency_s": null,
     "user_reported_generation_latency": {
       "estimate_s": 60,
@@ -43,7 +44,8 @@
       "filename": "image(20261105-185811).png",
       "sha256": "2b06dbee5e4aaccc3bb9c78af76954a6bcc093d77c38e96f25f4a3066499cb6f",
       "included_in_project": false
-    }
+    },
+    "provided_selector_screenshot": "../evidence/ai/Gemini_Model_Selector.png"
   },
   "conclusion": "Both original candidates passed the common tests without repair. Gemini had lower median function runtime on all four retained cases (ChatGPT/Gemini median ratios 1.49\u20133.03). This supports a local implementation-runtime finding only. ChatGPT generation latency is unavailable, so there is no AI generation-speed winner.",
   "updated_date": "2026-11-06",
@@ -60,9 +62,10 @@
     "host": "Shared cloud Python host, not student laptop"
   },
   "limitations": [
-    "Full platform prompt/chat export pending; screenshot covers only visible beginning.",
+    "Supplied original platform exports and screenshots are included; ChatGPT comparison baseline originated within the implementation workflow.",
     "Underlying Gemini model revision and ChatGPT serving revision are not independently established.",
     "Gemini generation latency is student-estimated; ChatGPT latency unavailable.",
     "Small single-task study; no general AI quality, hallucination, repair or generation-speed ranking."
-  ]
+  ],
+  "platform_evidence_index": "../docs/AI_EVIDENCE_INDEX.md"
 }

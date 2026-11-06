@@ -1,0 +1,36 @@
+test_exact_official_distribution_files_unchanged (test_mutations.MutationTests.test_exact_official_distribution_files_unchanged) ... ok
+test_seeded_design_and_one_ast_operator_change (test_mutations.MutationTests.test_seeded_design_and_one_ast_operator_change) ... ok
+test_timeout_and_invalid_are_not_counted_as_kills (test_mutations.MutationTests.test_timeout_and_invalid_are_not_counted_as_kills) ... ok
+test_bad_models_rejected (test_selection.SelectionTests.test_bad_models_rejected) ... ok
+test_empty_tests_are_not_selected (test_selection.SelectionTests.test_empty_tests_are_not_selected) ... ok
+test_overlap_coverage_preserved (test_selection.SelectionTests.test_overlap_coverage_preserved) ... ok
+test_random_ilp_matches_all_subsets (test_selection.SelectionTests.test_random_ilp_matches_all_subsets) ... ok
+test_redundant_tests_pruned (test_selection.SelectionTests.test_redundant_tests_pruned) ... ok
+test_runner_resolves_subject_from_project_root (test_selection.SelectionTests.test_runner_resolves_subject_from_project_root) ... FAIL
+test_weighted_and_count_greedy_are_distinct (test_selection.SelectionTests.test_weighted_and_count_greedy_are_distinct) ... ok
+
+======================================================================
+FAIL: test_runner_resolves_subject_from_project_root (test_selection.SelectionTests.test_runner_resolves_subject_from_project_root)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/30339dafe129/evidence_update/assignment8_integrated/tracks/J/tests/test_selection.py", line 46, in test_runner_resolves_subject_from_project_root
+    run=subprocess.run(command,cwd=ROOT,env=env,capture_output=True,text=True,timeout=30);self.assertEqual(run.returncode,0,run.stdout+run.stderr)
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/scratch/30339dafe129/evidence_update/assignment8_integrated/tracks/J/selci/runner.py", line 10, in <module>
+    import pytest
+  File "/workspace/scratch/30339dafe129/task_deps/pytest/__init__.py", line 8, in <module>
+    from _pytest._code import ExceptionInfo
+  File "/workspace/scratch/30339dafe129/task_deps/_pytest/_code/__init__.py", line 5, in <module>
+    from .code import Code
+  File "/workspace/scratch/30339dafe129/task_deps/_pytest/_code/code.py", line 36, in <module>
+    import pluggy
+ModuleNotFoundError: No module named 'pluggy'
+
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.104s
+
+FAILED (failures=1)

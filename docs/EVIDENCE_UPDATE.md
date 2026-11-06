@@ -1,0 +1,3 @@
+# Completed follow-ups — 6 November 2026
+
+The student first requested an evidence-only update, then explicitly authorized completing all tasks and pushing to GitHub. This final scope includes the four original AI evidence files and index; Q-FLAIR implementation, experiments and verification; public source-history archival branches/mapping; and the refreshed report, checklists, manifests and project ZIP. No follow-up is deferred. The original 2,013 imported files and their performance evidence remain unchanged. Source-only public archives are clearly distinguished from the complete original bundles. Six original exact-policy research limitations remain visible.
