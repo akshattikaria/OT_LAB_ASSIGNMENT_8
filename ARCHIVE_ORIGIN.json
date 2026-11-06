@@ -1,7 +1,7 @@
 {
-  "original_commit": "50da8f425c439397c54a27eb240134a1ba3bc16d",
-  "original_author_date": "2026-11-05T21:39:04Z",
-  "original_subject": "[AI:ChatGPT] Record full-review integration history",
+  "original_commit": "95100a4a7125d684286a43dd281aa11e4dab8a1b",
+  "original_author_date": "2026-11-06T11:33:38Z",
+  "original_subject": "[AI:ChatGPT] Add first source-linked research experiments and independent numerical checks",
   "track": "integration",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "integration_history.bundle",
@@ -140,6 +140,46 @@
       "path": "requirements.txt",
       "mode": "100644",
       "sha": "b9486ef5a2380fdbac798db410c9697b09aae99e"
+    },
+    {
+      "path": "research_supplement/__init__.py",
+      "mode": "100644",
+      "sha": "90e11226521aa1c014675b2d93c8c510bee3384a"
+    },
+    {
+      "path": "research_supplement/common.py",
+      "mode": "100644",
+      "sha": "5c9a4d4a1a84f81ec1c17739f72b030f9818bb56"
+    },
+    {
+      "path": "research_supplement/curvature.py",
+      "mode": "100644",
+      "sha": "9926ff4b83facfcacf131613732e1126b545550a"
+    },
+    {
+      "path": "research_supplement/quantum.py",
+      "mode": "100644",
+      "sha": "149154f9d7e34e56d9409b39d945def91c9dd4a7"
+    },
+    {
+      "path": "research_supplement/quantum_studies.py",
+      "mode": "100644",
+      "sha": "c3bbdfb6244d7d1b6e528cc13842dcf0ee042324"
+    },
+    {
+      "path": "research_supplement/run.py",
+      "mode": "100644",
+      "sha": "8e69e0c4362a697080c4541c59861f8af40a7212"
+    },
+    {
+      "path": "research_supplement/submodular.py",
+      "mode": "100644",
+      "sha": "e0ca2f10edb311441a625acdb0fe985a822711e7"
+    },
+    {
+      "path": "research_supplement/test_methods.py",
+      "mode": "100644",
+      "sha": "dbad0e5af20125df160597f56cbbb9755ef30688"
     },
     {
       "path": "tools/audit_project.py",
