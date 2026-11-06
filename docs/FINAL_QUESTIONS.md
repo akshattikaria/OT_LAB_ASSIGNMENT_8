@@ -1,0 +1,12 @@
+# Answers to the assignment's final questions
+
+1. **Process/evidence:** EV charging can be shifted within availability windows to avoid expensive energy; shared capacity can cause service failures. Synthetic baseline measurements demonstrate that mechanism, not a field station's inefficiency.
+2. **Formulation:** Binary vehicle-slot decisions minimize price × power × slot duration, with exact required slots, availability and station-capacity constraints.
+3. **Methods:** Greedy/ILP suit discrete scheduling; A supplies continuous optimizers/curvature, B exact/discrete references, C/I quantum simulation, D parallel/distributed methods, F pass-order DP, H index portfolios and J set cover. The checklist gives exact paths and assumptions.
+4. **Improvement:** Main flexible-window cases save 49.44% on 15 certified pairs; feasibility improves from 64/75 baseline to 75/75 ILP. Other tracks report their own objectives/units and preserve negative results.
+5. **Trade-offs:** Compute/proof overhead, model/runtime mismatch, write/storage costs, noise/trainability and lost fault detection. Zero savings for flat tariffs and major xv6 slowdown remain visible.
+6. **Correctness/reproducibility:** Independent mathematical references, source/data hashes, seeds, all raw records, same-input comparisons, 243 fresh track host tests, supplement checks and original per-track audits. Finite tests are not universal proofs.
+7. **Adaptation:** Refresh data/costs, add physical EV constraints, change budgets/hardware and reassess algorithms. Reprofile/revalidate rather than transferring a speedup or guarantee automatically.
+8. **Compiler/OS/DBMS:** Four compiler passes with exact pass-order checks and native equivalence; real xv6 per-CPU allocation/buffer hashing with preserved guest invariants/usertests; real SQLite greedy/ILP indexes with identical query results, plans, latency/storage/write measurements.
+9. **Quantum/parallel:** Grover has a logical query advantage, but tiny CPU simulations are slower. The tested quantum kernels lose to classical RBF. CPU work stealing has 5.40x steady versus 1.026x end-to-end speedup at eight workers. These are different cost models.
+10. **AI tools/errors:** ChatGPT/Codex generated the substantial implementation. Actual cancellation, coefficient-range, timing, search-accounting and integration defects were fixed and traced. The second independent tool comparison is prepared but needs a real second response; no comparison is invented.

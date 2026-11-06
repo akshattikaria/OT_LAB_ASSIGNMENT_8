@@ -1,0 +1,140 @@
+{
+  "original_commit": "cfb335a60716e368e5a0857ecf2fb8d9617a65ba",
+  "original_author_date": "2026-11-04T17:51:23Z",
+  "original_subject": "[AI:ChatGPT] Integrate A-J, verify chapter supplement, and prepare report/demo",
+  "track": "integration",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "integration_history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "3588b74b2c94a17ceda3a47d8caad71700f96c4a"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "02b3d4a61c8645e37584c6f82fe013188f6b2386"
+    },
+    {
+      "path": "ai_tool_comparison/README.md",
+      "mode": "100644",
+      "sha": "cbc508062e98e6d13cd4a395f9e71d17c47a357f"
+    },
+    {
+      "path": "ai_tool_comparison/chatgpt_candidate.py",
+      "mode": "100644",
+      "sha": "71cdad274497ba9914565e6d2eaee77bbc31366d"
+    },
+    {
+      "path": "ai_tool_comparison/evaluate.py",
+      "mode": "100644",
+      "sha": "27c7a63900c318ee065eb24b2b7708e506bd51ab"
+    },
+    {
+      "path": "chapter_supplement/__init__.py",
+      "mode": "100644",
+      "sha": "996f0fab11f4d693a357637a95b076c0e1327c5c"
+    },
+    {
+      "path": "chapter_supplement/false_sharing.c",
+      "mode": "100644",
+      "sha": "129e9dd747feef8dbfb8f35714a25c7e3ad0b66d"
+    },
+    {
+      "path": "chapter_supplement/study.py",
+      "mode": "100644",
+      "sha": "690f35945029a773bcc0b273f0c313432f1e386b"
+    },
+    {
+      "path": "chapter_supplement/test_study.py",
+      "mode": "100644",
+      "sha": "97b00faa10e28cc33b4de8e29753f763d3a66c60"
+    },
+    {
+      "path": "docs/ACTIVITY_RECORD.md",
+      "mode": "100644",
+      "sha": "6912a5f304029b9f59324b31637faa68923fe0f9"
+    },
+    {
+      "path": "docs/AI_TOOL_REGISTER.md",
+      "mode": "100644",
+      "sha": "2dcf58dac9ff0e80165103099680adc7fe0510b2"
+    },
+    {
+      "path": "docs/CHAPTER6_CHECKLIST.md",
+      "mode": "100644",
+      "sha": "24447fc30d590e737a38d6273d31a51f137021bb"
+    },
+    {
+      "path": "docs/DEMONSTRATION_GUIDE.md",
+      "mode": "100644",
+      "sha": "856fd49679d57592705cfbae5fc5bcb490354e35"
+    },
+    {
+      "path": "docs/FINAL_QUESTIONS.md",
+      "mode": "100644",
+      "sha": "e9e54252ac4bc28f5b12bbdf2634dd65c5e31bd1"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "mode": "100644",
+      "sha": "d27cbb5af235d12608d4a1af09fb30e3436d3d81"
+    },
+    {
+      "path": "docs/SUBMISSION_CHECKLIST.md",
+      "mode": "100644",
+      "sha": "d15cf32b81724868d7cb7562de2143e0ab42ef67"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "f59a73b8138acff47b89a55e75ab359666295208"
+    },
+    {
+      "path": "prompts/Integration/001_continue.md",
+      "mode": "100644",
+      "sha": "75e518b039c1352a17f758851a2c58198241f779"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "b9486ef5a2380fdbac798db410c9697b09aae99e"
+    },
+    {
+      "path": "tools/audit_project.py",
+      "mode": "100644",
+      "sha": "c65d6aa4692f402e1608b4abaf1f769eec9eba65"
+    },
+    {
+      "path": "tools/build_checklist.py",
+      "mode": "100644",
+      "sha": "3134a2523c3f3908c3863c8c9b567b0ce2645b24"
+    },
+    {
+      "path": "tools/build_demo.py",
+      "mode": "100644",
+      "sha": "8e63ddb4e0165814d17b52bcaf2e3c286d470b3b"
+    },
+    {
+      "path": "tools/build_report.py",
+      "mode": "100644",
+      "sha": "670ff00d18c3a2ec09720e422dd65e5d888bbeea"
+    },
+    {
+      "path": "tools/replay_track_audits.py",
+      "mode": "100644",
+      "sha": "2336aa02e958e06e2db2303d0aa75fa19bf897b6"
+    },
+    {
+      "path": "tools/run_host_tests.py",
+      "mode": "100644",
+      "sha": "36fc724aed37eef11ce2252a9bbebf1a808a6c5d"
+    },
+    {
+      "path": "tools/stage_for_publication.py",
+      "mode": "100644",
+      "sha": "1ebabf3e5f055b747118af99fff6636b748e9409"
+    }
+  ]
+}
