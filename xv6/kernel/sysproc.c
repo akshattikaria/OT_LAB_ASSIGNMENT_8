@@ -21,7 +21,8 @@ sys_labstats(void)
   kallocstats(&s);
   bcachestats(&s);
   s.timestamp = r_time();
-  return copyout(myproc()->pagetable, address, (char *)&s, sizeof(s));
+  struct proc *p = myproc();
+  return copyout(p->pagetable, p->sz, address, (char *)&s, sizeof(s));
 }
 
 uint64

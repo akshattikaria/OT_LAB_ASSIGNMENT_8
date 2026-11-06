@@ -1,7 +1,7 @@
 {
-  "original_commit": "bb501fb8adfaf52a2dd6cd604f3b227a9090be2d",
-  "original_author_date": "2026-11-04T08:43:28Z",
-  "original_subject": "[AI:ChatGPT] Add kernel features, instrumentation, and guest checks before API compatibility fix",
+  "original_commit": "f7e43eb599c474f138fb1b4b3150d51a88ee4219",
+  "original_author_date": "2026-11-04T08:44:39Z",
+  "original_subject": "[AI:ChatGPT] Pass process-size bound to the pinned xv6 copyout API",
   "track": "G",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/G/history.bundle",
@@ -224,7 +224,7 @@
     {
       "path": "xv6/kernel/sysproc.c",
       "mode": "100644",
-      "sha": "338d67756a01d30919ec3da782858af0ca7ebcf7"
+      "sha": "6eb123fab40102305b5e34f17d04c4444308dcad"
     },
     {
       "path": "xv6/kernel/trampoline.S",
