@@ -1,0 +1,60 @@
+{
+  "original_commit": "1546c0f6c477e69b394cb08d421205b4e5a249b2",
+  "original_author_date": "2026-11-03T12:16:20Z",
+  "original_subject": "[AI:ChatGPT] Implement Track D methods and actual CPU parallel kernels",
+  "track": "D",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/D/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "e8f8e1533eefdb2948474a0bbcff16fab9f7e959"
+    },
+    {
+      "path": "distopt/__init__.py",
+      "mode": "100644",
+      "sha": "8b3fff99ac0fde368db1f8a16399ed8f46b66871"
+    },
+    {
+      "path": "distopt/coverage.py",
+      "mode": "100644",
+      "sha": "5235c7ece30928ac3959cdb4dda3d9cf350981c0"
+    },
+    {
+      "path": "distopt/federated.py",
+      "mode": "100644",
+      "sha": "9af7147e1bd13a3b6ea6757549a98ce2b1e62c58"
+    },
+    {
+      "path": "distopt/locality.py",
+      "mode": "100644",
+      "sha": "9a5cb0fb95056d0a25ed32423a21419364ed8a0a"
+    },
+    {
+      "path": "distopt/multitask.py",
+      "mode": "100644",
+      "sha": "d01d10567b4761d3f639446886da2ee2dab784e1"
+    },
+    {
+      "path": "distopt/parallel.py",
+      "mode": "100644",
+      "sha": "1d159fdd682773f6dc246144b2e0d830c0257235"
+    },
+    {
+      "path": "distopt/scheduling.py",
+      "mode": "100644",
+      "sha": "dd478aa2163fb1c72eeab313cf8e0d815ab7116e"
+    },
+    {
+      "path": "native/locality.c",
+      "mode": "100644",
+      "sha": "3a9c85ceaf98400fa3b6034c6cb5fcb335708baf"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "d9810ecca3de5754420b8836ad37ac21897d6e68"
+    }
+  ]
+}
