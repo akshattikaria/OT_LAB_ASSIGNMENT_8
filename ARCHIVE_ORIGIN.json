@@ -1,0 +1,45 @@
+{
+  "original_commit": "eb7589881b4489f133c06e7f0c950ebf3b9d6cdf",
+  "original_author_date": "2026-11-04T10:58:27Z",
+  "original_subject": "[AI:ChatGPT] Implement real SQLite selection workflow and retain initial schema-cache test failure",
+  "track": "H",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/H/history.bundle",
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha": "b02e26dcd476c3e80354e0844b25180b15be6f09"
+    },
+    {
+      "path": "dblab/__init__.py",
+      "mode": "100644",
+      "sha": "7013d775e655994c5ba69e1aa85bc0cd5b70f5d3"
+    },
+    {
+      "path": "dblab/__main__.py",
+      "mode": "100644",
+      "sha": "fabbe16436879d0027692496c86ce0f564403ced"
+    },
+    {
+      "path": "dblab/core.py",
+      "mode": "100644",
+      "sha": "5fe50cde51622c52a90d7f532e47f975898c6793"
+    },
+    {
+      "path": "dblab/experiment.py",
+      "mode": "100644",
+      "sha": "57241fc2a476c964deaecd74a95c2a87c175c463"
+    },
+    {
+      "path": "dblab/select.py",
+      "mode": "100644",
+      "sha": "9289ff2ff9cf610d5961839c55b250de61687054"
+    },
+    {
+      "path": "tests/test_dbms.py",
+      "mode": "100644",
+      "sha": "a9830837e863966a9e5f956c291c6d77c2f7be09"
+    }
+  ]
+}
