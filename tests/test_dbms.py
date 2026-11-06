@@ -42,14 +42,19 @@ class QueryTests(unittest.TestCase):
         c.executemany('INSERT INTO customers VALUES(?,?)',[(i,'City00') for i in (1,2,3)]);c.executemany('INSERT INTO stations VALUES(?,?)',[(i,CITIES[(i-1)%10]) for i in (1,2,600)])
         c.executemany('INSERT INTO bookings VALUES(?,?,?,?,?,?,?)',self.rows);return c
     def test_all_64_real_index_portfolios_preserve_null_ties_and_boundaries(self):
-        with closing(self.database()) as c:
-            for flags in itertools.product((0,1),repeat=len(INDEXES)):
+        for flags in itertools.product((0,1),repeat=len(INDEXES)):
+            # Match the actual experiment: a fresh schema/connection per portfolio.
+            with closing(self.database()) as c:
                 for name,enabled in zip(INDEXES,flags):
                     if enabled:c.execute(INDEXES[name])
                 c.execute('ANALYZE')
                 for case in self.fixture_cases():self.assertEqual(c.execute(QUERIES[case['kind']],case['params']).fetchall(),reference(self.rows,case),(flags,case))
-                for name,enabled in zip(INDEXES,flags):
-                    if enabled:c.execute('DROP INDEX '+name)
+    def test_partial_index_parameter_switch_in_fresh_portfolio(self):
+        with closing(self.database()) as c:
+            c.execute(INDEXES['confirmed_station']);c.execute('ANALYZE')
+            for status in ('confirmed','pending','confirmed','pending'):
+                case={'kind':'status','params':(status,0,8760)}
+                self.assertEqual(c.execute(QUERIES['status'],case['params']).fetchall(),reference(self.rows,case))
     def test_tied_top_k_is_deterministic(self):
         expected=reference(self.rows,{'kind':'customer','params':[1]});self.assertEqual([r[0] for r in expected],[4,2,1])
     def test_sql_null_sum(self):

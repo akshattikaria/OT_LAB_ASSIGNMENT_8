@@ -1,7 +1,7 @@
 {
-  "original_commit": "eb7589881b4489f133c06e7f0c950ebf3b9d6cdf",
-  "original_author_date": "2026-11-04T10:58:27Z",
-  "original_subject": "[AI:ChatGPT] Implement real SQLite selection workflow and retain initial schema-cache test failure",
+  "original_commit": "d4eea40495ff1f04ec559b546828e4760ccd38d3",
+  "original_author_date": "2026-11-04T10:59:07Z",
+  "original_subject": "[AI:ChatGPT] Isolate fixture portfolios on fresh connections and verify parameter switching",
   "track": "H",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/H/history.bundle",
@@ -37,9 +37,14 @@
       "sha": "9289ff2ff9cf610d5961839c55b250de61687054"
     },
     {
+      "path": "docs/schema_cache_reproducer.py",
+      "mode": "100644",
+      "sha": "2b4afd05607a20564abfc53b43b78fb6491e664f"
+    },
+    {
       "path": "tests/test_dbms.py",
       "mode": "100644",
-      "sha": "a9830837e863966a9e5f956c291c6d77c2f7be09"
+      "sha": "fd43a726966b186d7fa913fd8ab1565a6d2e9bca"
     }
   ]
 }
