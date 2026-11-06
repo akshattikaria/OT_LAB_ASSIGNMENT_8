@@ -1,0 +1,380 @@
+{
+  "original_commit": "31a3d9b8a32494a2b9dcb99ac5cb3c8f77fd3ff6",
+  "original_author_date": "2026-11-04T08:30:14Z",
+  "original_subject": "[AI:ChatGPT] Pin official MIT xv6 source and pristine comparison snapshot",
+  "track": "G",
+  "source_only_reconstruction": true,
+  "original_full_history_bundle": "tracks/G/history.bundle",
+  "source_files": [
+    {
+      "path": "xv6/.github/workflows/test.yml",
+      "mode": "100644",
+      "sha": "73905e198effec75235e1ddb10426f22aff23ca2"
+    },
+    {
+      "path": "xv6/.gitignore",
+      "mode": "100644",
+      "sha": "6c545f1f4e5f9a613d3c4694e0e316b5c5852c4c"
+    },
+    {
+      "path": "xv6/LICENSE",
+      "mode": "100644",
+      "sha": "af50cb2508331d748e7fa5340ec882720f24f1af"
+    },
+    {
+      "path": "xv6/Makefile",
+      "mode": "100644",
+      "sha": "a26f3db5109b4a021bb803e1acf5f6f89d0c3167"
+    },
+    {
+      "path": "xv6/kernel/bio.c",
+      "mode": "100644",
+      "sha": "973880465e8a6db620afbdfa8f76dfbf26057505"
+    },
+    {
+      "path": "xv6/kernel/buf.h",
+      "mode": "100644",
+      "sha": "75a60037ec5f21e102f0d39e95de43148f8daa2d"
+    },
+    {
+      "path": "xv6/kernel/console.c",
+      "mode": "100644",
+      "sha": "74d5757180ee54d500d8f27d77b129587fb16b83"
+    },
+    {
+      "path": "xv6/kernel/defs.h",
+      "mode": "100644",
+      "sha": "0ae6896e410611c93d3cc402bee22b9ca7e86def"
+    },
+    {
+      "path": "xv6/kernel/elf.h",
+      "mode": "100644",
+      "sha": "5735abebec0649c71c18d2661242a6994ba24aa4"
+    },
+    {
+      "path": "xv6/kernel/entry.S",
+      "mode": "100644",
+      "sha": "6e26fbe108fde547324c26eeacf9944ec4c35c16"
+    },
+    {
+      "path": "xv6/kernel/exec.c",
+      "mode": "100644",
+      "sha": "8c9673f4cbd0cd389cdfb89fb4443a35ecdcf6f9"
+    },
+    {
+      "path": "xv6/kernel/fcntl.h",
+      "mode": "100644",
+      "sha": "1b57ebbe7dc3159625e88384771e2e4ccc619f12"
+    },
+    {
+      "path": "xv6/kernel/file.c",
+      "mode": "100644",
+      "sha": "31693e9403de6e6b618765b2f74e7589a9248d8f"
+    },
+    {
+      "path": "xv6/kernel/file.h",
+      "mode": "100644",
+      "sha": "03ea70e657699c5829b0404acc24a3ae3aeb1cde"
+    },
+    {
+      "path": "xv6/kernel/fs.c",
+      "mode": "100644",
+      "sha": "7a4381a568dfb1b5e1bbb8e9b09805e265c9a829"
+    },
+    {
+      "path": "xv6/kernel/fs.h",
+      "mode": "100644",
+      "sha": "b65929194d16e7a3133d2ce2e6f54351a4cfaa8c"
+    },
+    {
+      "path": "xv6/kernel/kalloc.c",
+      "mode": "100644",
+      "sha": "2fcec38e38502dc1f70a3c30117f7e852b889b6a"
+    },
+    {
+      "path": "xv6/kernel/kernelvec.S",
+      "mode": "100644",
+      "sha": "4d9ce02e18e28b74eaff48d583fbd53702ee0655"
+    },
+    {
+      "path": "xv6/kernel/log.c",
+      "mode": "100644",
+      "sha": "13edb4fed43a25cdf2a88ddb6ffdef9723128620"
+    },
+    {
+      "path": "xv6/kernel/main.c",
+      "mode": "100644",
+      "sha": "df58e329c1d2eebe276e941eaa94780054c16e01"
+    },
+    {
+      "path": "xv6/kernel/memlayout.h",
+      "mode": "100644",
+      "sha": "4f026ed84032218e7fa3de76304ea9481e12a26d"
+    },
+    {
+      "path": "xv6/kernel/param.h",
+      "mode": "100644",
+      "sha": "1d6980196fae0d7a4db7398c4fa2e4c07b0cd229"
+    },
+    {
+      "path": "xv6/kernel/pipe.c",
+      "mode": "100644",
+      "sha": "e35b07226637f3910ce6a7abdb822bbb0e130ae5"
+    },
+    {
+      "path": "xv6/kernel/plic.c",
+      "mode": "100644",
+      "sha": "84d0002e3f5b2381351e23e6e4dabdae07183288"
+    },
+    {
+      "path": "xv6/kernel/printk.c",
+      "mode": "100644",
+      "sha": "9752597f11cea4a2da4e7ae701bba56a835cc349"
+    },
+    {
+      "path": "xv6/kernel/proc.c",
+      "mode": "100644",
+      "sha": "31f23a3148a6a5ff2f61055db7313bddf91656e0"
+    },
+    {
+      "path": "xv6/kernel/proc.h",
+      "mode": "100644",
+      "sha": "560369730e0f2031737d8e36bb9bd0d93028e784"
+    },
+    {
+      "path": "xv6/kernel/riscv.h",
+      "mode": "100644",
+      "sha": "3e982abb34396031b18af88a35a23143d6667cb4"
+    },
+    {
+      "path": "xv6/kernel/sleeplock.c",
+      "mode": "100644",
+      "sha": "d285a3aa18694060cd0cfedbff296e02ddee271e"
+    },
+    {
+      "path": "xv6/kernel/sleeplock.h",
+      "mode": "100644",
+      "sha": "f06e988530fa9172261b21de42797e1215b4a428"
+    },
+    {
+      "path": "xv6/kernel/spinlock.c",
+      "mode": "100644",
+      "sha": "9a6aab19cc8900f243d25439c132ab44bd4c4873"
+    },
+    {
+      "path": "xv6/kernel/spinlock.h",
+      "mode": "100644",
+      "sha": "9c93b4203ad2ee0fece2b68d3ed442bebe554aec"
+    },
+    {
+      "path": "xv6/kernel/start.c",
+      "mode": "100644",
+      "sha": "62cce195e792b781b06bc77c8011e1e90df63a14"
+    },
+    {
+      "path": "xv6/kernel/stat.h",
+      "mode": "100644",
+      "sha": "0b4a1899e0618d884658f862c8fff9c95fb48415"
+    },
+    {
+      "path": "xv6/kernel/string.c",
+      "mode": "100644",
+      "sha": "adaa708d7e8b347ccced094b62f27c8a51af421b"
+    },
+    {
+      "path": "xv6/kernel/swtch.S",
+      "mode": "100644",
+      "sha": "17a86637cb1f94b66b1369bbcc45e4f8b72feb88"
+    },
+    {
+      "path": "xv6/kernel/syscall.c",
+      "mode": "100644",
+      "sha": "1800f20442a00fe8b61203c0ada8fb360c7b8a35"
+    },
+    {
+      "path": "xv6/kernel/syscall.h",
+      "mode": "100644",
+      "sha": "5a4a39fe709ceea74df275efd96a20567a21850e"
+    },
+    {
+      "path": "xv6/kernel/sysfile.c",
+      "mode": "100644",
+      "sha": "778128765c2f921e80fb70f90fa375fe0afad998"
+    },
+    {
+      "path": "xv6/kernel/sysproc.c",
+      "mode": "100644",
+      "sha": "cd25557393522c926642fa68aecc39c4140fd450"
+    },
+    {
+      "path": "xv6/kernel/trampoline.S",
+      "mode": "100644",
+      "sha": "d753f75dea41ce5b07a8fdfea53490da5c3d82e2"
+    },
+    {
+      "path": "xv6/kernel/trap.c",
+      "mode": "100644",
+      "sha": "00e99bced82613ddab0a8558ef5c0078bda660ec"
+    },
+    {
+      "path": "xv6/kernel/types.h",
+      "mode": "100644",
+      "sha": "e576fd49ceaed6d3dbf8348d65a79f27b34345d2"
+    },
+    {
+      "path": "xv6/kernel/uart.c",
+      "mode": "100644",
+      "sha": "14f41ce1bede033cfac6c822bf6d5920a6f58d47"
+    },
+    {
+      "path": "xv6/kernel/virtio.h",
+      "mode": "100644",
+      "sha": "81ebd9f511b2c4a842860b3aa3d79f0a0d39102f"
+    },
+    {
+      "path": "xv6/kernel/virtio_disk.c",
+      "mode": "100644",
+      "sha": "2a00dde115cbbf80bec6cecdf15c27070007893c"
+    },
+    {
+      "path": "xv6/kernel/vm.c",
+      "mode": "100644",
+      "sha": "f50650b41622188f656f0680b1f1ec08d579365e"
+    },
+    {
+      "path": "xv6/kernel/vm.h",
+      "mode": "100644",
+      "sha": "3145dca4e4906e288bf3b48f3d753614fb7109a6"
+    },
+    {
+      "path": "xv6/mkfs/mkfs.c",
+      "mode": "100644",
+      "sha": "1a1693e5986be0ed7b3bfdfd6668cd4dbd9cdd8f"
+    },
+    {
+      "path": "xv6/test-xv6.py",
+      "mode": "100755",
+      "sha": "b5f5ef85823ec8cca1dfae45f2b8e278c7797786"
+    },
+    {
+      "path": "xv6/user/cat.c",
+      "mode": "100644",
+      "sha": "d34437d93b2e85ac2d8d7a324a39fbfd94e31e50"
+    },
+    {
+      "path": "xv6/user/dorphan.c",
+      "mode": "100644",
+      "sha": "99772a20307d388f915c590608719af61a6f2ba1"
+    },
+    {
+      "path": "xv6/user/echo.c",
+      "mode": "100644",
+      "sha": "2d345083bd674088d7bc84599eb1aa824876d54d"
+    },
+    {
+      "path": "xv6/user/forktest.c",
+      "mode": "100644",
+      "sha": "880ab703995291c66845a9fb91aa4c151be40494"
+    },
+    {
+      "path": "xv6/user/forphan.c",
+      "mode": "100644",
+      "sha": "b534e0ac2bf5c6013ce8b03c81979ecf00ee47a0"
+    },
+    {
+      "path": "xv6/user/grep.c",
+      "mode": "100644",
+      "sha": "94008dc61295bb1dee4fada0e5650646f32a5bac"
+    },
+    {
+      "path": "xv6/user/grind.c",
+      "mode": "100644",
+      "sha": "b825f9c0d5ab33f0c6ed3d6810722868f6241a78"
+    },
+    {
+      "path": "xv6/user/init.c",
+      "mode": "100644",
+      "sha": "925d568fe99c51a99522cfbec30d8fd6a88a5bdc"
+    },
+    {
+      "path": "xv6/user/kill.c",
+      "mode": "100644",
+      "sha": "fdca04ea4e03a5f528e0402d08e159174dfc5d2f"
+    },
+    {
+      "path": "xv6/user/ln.c",
+      "mode": "100644",
+      "sha": "c0234372d2ae6c6ad5dfb383abf70115b7fee42c"
+    },
+    {
+      "path": "xv6/user/logstress.c",
+      "mode": "100644",
+      "sha": "efe4de8d803750530eb7ae2442e0407ed2a6779d"
+    },
+    {
+      "path": "xv6/user/ls.c",
+      "mode": "100644",
+      "sha": "dfb027d2655ca4bae33eb556165461ce198f23b9"
+    },
+    {
+      "path": "xv6/user/mkdir.c",
+      "mode": "100644",
+      "sha": "e2665501ad5a63098cf8c9fa33a15929a9b5bd54"
+    },
+    {
+      "path": "xv6/user/printf.c",
+      "mode": "100644",
+      "sha": "05382705280774b53df2bce1470a8fc079115c52"
+    },
+    {
+      "path": "xv6/user/rm.c",
+      "mode": "100644",
+      "sha": "7b4217bef1c0d26fd1bf6e7043902c1c4f617d09"
+    },
+    {
+      "path": "xv6/user/sh.c",
+      "mode": "100644",
+      "sha": "507ce420824a66235d055c822804fe8cb6609c3f"
+    },
+    {
+      "path": "xv6/user/stressfs.c",
+      "mode": "100644",
+      "sha": "095eaac9524494ae7f4df1f67c53452043218511"
+    },
+    {
+      "path": "xv6/user/sync.c",
+      "mode": "100644",
+      "sha": "8f6df77f50f12a69519b7819687f82b6e9a87a92"
+    },
+    {
+      "path": "xv6/user/ulib.c",
+      "mode": "100644",
+      "sha": "4c5dbe90214891c0af9bc06ed5e24a99556563bb"
+    },
+    {
+      "path": "xv6/user/umalloc.c",
+      "mode": "100644",
+      "sha": "0a4fe0b5e0da67f5a771ca64d3dbfd554cedbc4b"
+    },
+    {
+      "path": "xv6/user/user.h",
+      "mode": "100644",
+      "sha": "29aad5930c0eefdb7beb1dfdfeaafbe04232cf26"
+    },
+    {
+      "path": "xv6/user/usertests.c",
+      "mode": "100644",
+      "sha": "14bc434ed65bc0331cdd79e6b9301b38b2887cb0"
+    },
+    {
+      "path": "xv6/user/wc.c",
+      "mode": "100644",
+      "sha": "4ca77eb887c574e1f00e5ffce50921a5800c88d3"
+    },
+    {
+      "path": "xv6/user/zombie.c",
+      "mode": "100644",
+      "sha": "ecf6c17ab20a46f2ac1e77529058bf4aad213b43"
+    }
+  ]
+}
