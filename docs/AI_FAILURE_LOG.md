@@ -1,0 +1,11 @@
+# Actual AI-assisted failure and correction
+
+Tool: ChatGPT/Codex, GPT-6 family as identified by this environment; exact serving revision is not independently exposed. Date: 2026-11-04. All corrections are AI-assisted; no manual student edit or independent second-tool review is attributed.
+
+The initial noise-provenance writer directly passed `backend.coupling_map.get_edges()` to JSON. In the installed SDK this returns a Rust-backed EdgeList, not a native list. The first pilot executed the algorithm, hybrid and eight noise/control cases, then stopped with `TypeError: Object of type EdgeList is not JSON serializable` before classification and final completeness checks. The failure was also reproduced in a minimal actual backend/dump call, retained verbatim in initial_metadata_failure.log.
+
+Original source is commit 1a921930be9132f1358e1ece6fd9668ed3077898. The fix in commit 8c1d83da4fc9d357cebf04a23c4496a070766d38 serializes `[list(edge) for edge in backend.coupling_map.get_edges()]` and provides a noise_metadata helper. A regression instantiates the archived backend, creates its noise model, writes/reads metadata and checks all eight coupling edges and the historical calibration date. The corrected small workflow and full main workflow both completed. The partial initial pilot remains explicitly diagnostic and does not contribute to the main report.
+
+Before main measurements, review also moved feature encoder/inverse construction into the relevant kernel timers and alternated quantum/RBF execution order by seed. Additional resource fields make logical encoding applications and overlap calls explicit. These revisions preceded the frozen main implementation; no timing sample was relabeled to conceal them.
+
+The main quantum classifier's lower accuracy, simulator overhead, finite-budget QAOA termination and incomplete Shor measurement outcomes are retained scientific results, not counted as extra AI code errors. Earlier A/B/D already supply three genuine corrected cases, with further evidence in F/G/H. This package's prompt log contains actual excerpts, not a full chat export; exact model-header confirmation and the independent two-tool comparison remain overall submission tasks.

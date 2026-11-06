@@ -60,6 +60,13 @@ class CircuitTests(unittest.TestCase):
         values=cut_values();self.assertEqual(values.max(),4);self.assertEqual(sum(values==4),2);self.assertAlmostEqual(float(marginal(qaoa([0,0]),4)@values),2.5)
     def test_anneal_zero_time_uniform(self):
         np.testing.assert_allclose(marginal(annealing(0,8),4),np.ones(16)/16,atol=1e-12)
+    def test_anneal_one_step_independent_trotter_product(self):
+        from scipy.linalg import expm
+        total=.3;driver=np.zeros((16,16),complex)
+        for x in range(16):
+            for qubit in range(4):driver[x^(1<<qubit),x]-=1
+        expected=expm(.5j*total*np.diag(cut_values()))@expm(-.5j*total*driver)@(np.ones(16)/4);actual=Statevector.from_instruction(annealing(total,1)).data
+        self.assertAlmostEqual(abs(np.vdot(expected,actual))**2,1,places=10)
 
 
 class LearningTests(unittest.TestCase):

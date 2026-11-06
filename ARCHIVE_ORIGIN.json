@@ -1,7 +1,7 @@
 {
-  "original_commit": "8c1d83da4fc9d357cebf04a23c4496a070766d38",
-  "original_author_date": "2026-11-04T11:57:32Z",
-  "original_subject": "[AI:ChatGPT] Serialize calibrated coupling edges and verify full small workflow before main measurements",
+  "original_commit": "ae153b7d4292ebc15edbce5a17cc48ad3d387922",
+  "original_author_date": "2026-11-04T12:21:01Z",
+  "original_subject": "[AI:ChatGPT] Retain audited algorithm, calibrated-noise and kernel experiments with negative results and viva notes",
   "track": "I",
   "source_only_reconstruction": true,
   "original_full_history_bundle": "tracks/I/history.bundle",
@@ -12,9 +12,49 @@
       "sha": "591b9814cce4ed290929a8d1540f524f46401057"
     },
     {
+      "path": "README.md",
+      "mode": "100644",
+      "sha": "ff31aee42470ac069c408dd3197ec74ef2aac844"
+    },
+    {
+      "path": "docs/AI_FAILURE_LOG.md",
+      "mode": "100644",
+      "sha": "780ab83ee9b58f252b9cf02e59783395657d19b3"
+    },
+    {
+      "path": "docs/COMMIT_INDEX.md",
+      "mode": "100644",
+      "sha": "a3d276b7d5cd374c58fe3b74699d6e0a619f826e"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "mode": "100644",
+      "sha": "21fefe091301699bd05a8e6fdcb36b9957ddf489"
+    },
+    {
+      "path": "docs/FORMULATION.md",
+      "mode": "100644",
+      "sha": "06ec4813010b42404bb4972403c68c82eb1ba44f"
+    },
+    {
+      "path": "docs/VALIDATION_RECORD.md",
+      "mode": "100644",
+      "sha": "6955ced0243f5390a58111373b12ea61bedf109e"
+    },
+    {
+      "path": "docs/VIVA_GUIDE.md",
+      "mode": "100644",
+      "sha": "273b11bedc08ee1848b8040285547ed0243c9214"
+    },
+    {
       "path": "inputs/track_c/COVERAGE.md",
       "mode": "100644",
       "sha": "cdd9b69532908f96d60e8a2491764f12a1a5ed19"
+    },
+    {
+      "path": "prompts/I/001_next.md",
+      "mode": "100644",
+      "sha": "20a49d37304a3ebc58aea925fef49f5bf6687f82"
     },
     {
       "path": "qstudy/__init__.py",
@@ -25,6 +65,11 @@
       "path": "qstudy/__main__.py",
       "mode": "100644",
       "sha": "cbcda5c8110d0c005eafcfabbd5b10b3fa669a91"
+    },
+    {
+      "path": "qstudy/audit.py",
+      "mode": "100644",
+      "sha": "a66d70622242bacbce22c712b6f7618a8960bb84"
     },
     {
       "path": "qstudy/circuits.py",
@@ -47,9 +92,24 @@
       "sha": "30d2a2bab42442bbdf1b16214a3e44aee6227db6"
     },
     {
+      "path": "qstudy/report.py",
+      "mode": "100644",
+      "sha": "97cd3cc17e8d0abb356a6e441f35d988be8b39f2"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "sha": "96534d13b9d36019c40afe9d1c95ccc08e5ebd7b"
+    },
+    {
       "path": "tests/test_quantum.py",
       "mode": "100644",
-      "sha": "efa1163ecf9a223acf9ee6ac113a7bb5b5ff0c49"
+      "sha": "39eed7f85f86f13ba659555c956527cfddc20886"
+    },
+    {
+      "path": "validation/cli_smoke/REPORT.md",
+      "mode": "100644",
+      "sha": "e97655b961afcf84c2f67a3866014163d3418c9e"
     }
   ]
 }
