@@ -1,82 +1,164 @@
-// Physical memory allocator, for user processes,
-// kernel stacks, page-table pages,
-// and pipe buffers. Allocates whole 4096-byte pages.
-
+// Physical page allocator: baseline global list or per-CPU lists with batch stealing.
 #include "types.h"
 #include "param.h"
 #include "memlayout.h"
 #include "spinlock.h"
 #include "riscv.h"
 #include "defs.h"
+#include "labstats.h"
 
-void freerange(void *pa_start, void *pa_end);
+#if KMEM_PERCPU
+#define NKMEM NCPU
+#else
+#define NKMEM 1
+#endif
+#define STEAL_BATCH 32
+#define MAXPAGES ((PHYSTOP - KERNBASE) / PGSIZE)
 
-extern char end[]; // first address after kernel.
-                   // defined by kernel.ld.
-
-struct run {
-  struct run *next;
-};
-
+extern char end[];
+struct run { struct run *next; };
 struct {
   struct spinlock lock;
   struct run *freelist;
-} kmem;
+  uint64 nfree, allocations, frees, steals, stolen;
+} kmem[NKMEM];
+static struct spinlock checklock;
+static uchar seen[MAXPAGES / 8];
 
 void
-kinit()
+kinit(void)
 {
-  initlock(&kmem.lock, "kmem");
-  freerange(end, (void *)PHYSTOP);
-}
-
-void
-freerange(void *pa_start, void *pa_end)
-{
-  char *p;
-  p = (char *)PGROUNDUP((uint64)pa_start);
-  for (; p + PGSIZE <= (char *)pa_end; p += PGSIZE)
+  for (int i = 0; i < NKMEM; i++)
+    initlock(&kmem[i].lock, "kmem");
+  initlock(&checklock, "kmemcheck");
+  for (char *p = (char *)PGROUNDUP((uint64)end);
+       p + PGSIZE <= (char *)PHYSTOP; p += PGSIZE)
     kfree(p);
 }
 
-// Free the page of physical memory pointed at by pa,
-// which normally should have been returned by a
-// call to kalloc().  (The exception is when
-// initializing the allocator; see kinit above.)
 void
 kfree(void *pa)
 {
-  struct run *r;
-
-  if (((uint64)pa % PGSIZE) != 0 || (char *)pa < end || (uint64)pa >= PHYSTOP)
+  if (((uint64)pa % PGSIZE) != 0 || (char *)pa < end ||
+      (uint64)pa >= PHYSTOP)
     panic("kfree");
-
-  // Fill with junk to catch dangling refs.
   memset(pa, 1, PGSIZE);
-
-  r = (struct run *)pa;
-
-  acquire(&kmem.lock);
-  r->next = kmem.freelist;
-  kmem.freelist = r;
-  release(&kmem.lock);
+  push_off();
+  int id = KMEM_PERCPU ? cpuid() : 0;
+  struct run *r = (struct run *)pa;
+  acquire(&kmem[id].lock);
+  r->next = kmem[id].freelist;
+  kmem[id].freelist = r;
+  kmem[id].nfree++;
+  kmem[id].frees++;
+  release(&kmem[id].lock);
+  pop_off();
 }
 
-// Allocate one 4096-byte page of physical memory.
-// Returns a pointer that the kernel can use.
-// Returns 0 if the memory cannot be allocated.
 void *
 kalloc(void)
 {
+  push_off(); // Pin cpuid while choosing and updating the local list.
+  int id = KMEM_PERCPU ? cpuid() : 0;
   struct run *r;
-
-  acquire(&kmem.lock);
-  r = kmem.freelist;
+  acquire(&kmem[id].lock);
+  kmem[id].allocations++;
+  r = kmem[id].freelist;
+  if (r) {
+    kmem[id].freelist = r->next;
+    kmem[id].nfree--;
+  }
+  release(&kmem[id].lock);
+#if KMEM_PERCPU
+  if (r == 0) {
+    for (int offset = 1; offset < NKMEM; offset++) {
+      int victim = (id + offset) % NKMEM;
+      acquire(&kmem[victim].lock);
+      struct run *head = kmem[victim].freelist;
+      if (head == 0) {
+        release(&kmem[victim].lock);
+        continue;
+      }
+      struct run *tail = head;
+      int count = 1;
+      while (count < STEAL_BATCH && tail->next) {
+        tail = tail->next;
+        count++;
+      }
+      kmem[victim].freelist = tail->next;
+      tail->next = 0;
+      kmem[victim].nfree -= count;
+      release(&kmem[victim].lock);
+      // No two allocator locks are held at once on the allocation path.
+      r = head;
+      struct run *extra = head->next;
+      acquire(&kmem[id].lock);
+      if (extra) {
+        tail->next = kmem[id].freelist;
+        kmem[id].freelist = extra;
+        kmem[id].nfree += count - 1;
+      }
+      kmem[id].steals++;
+      kmem[id].stolen += count;
+      release(&kmem[id].lock);
+      break;
+    }
+  }
+#endif
+  pop_off();
   if (r)
-    kmem.freelist = r->next;
-  release(&kmem.lock);
-
-  if (r)
-    memset((char *)r, 5, PGSIZE); // fill with junk
+    memset((char *)r, 5, PGSIZE);
   return (void *)r;
+}
+
+void
+kallocstats(struct labstats *s)
+{
+  for (int i = 0; i < NKMEM; i++) {
+    acquire(&kmem[i].lock);
+    s->alloc_acquires += kmem[i].lock.acquisitions;
+    s->alloc_spins += kmem[i].lock.failed;
+    s->free_pages += kmem[i].nfree;
+    s->alloc_calls += kmem[i].allocations;
+    s->free_calls += kmem[i].frees;
+    s->steals += kmem[i].steals;
+    s->stolen_pages += kmem[i].stolen;
+    release(&kmem[i].lock);
+  }
+}
+
+// Full validation is outside timed workloads. The normal allocator never
+// holds multiple list locks; this read-only check takes them in fixed order.
+int
+kalloccheck(void)
+{
+  int ok = 1;
+  acquire(&checklock);
+  memset(seen, 0, sizeof(seen));
+  for (int i = 0; i < NKMEM; i++)
+    acquire(&kmem[i].lock);
+  for (int i = 0; i < NKMEM; i++) {
+    uint64 count = 0;
+    for (struct run *r = kmem[i].freelist; r; r = r->next) {
+      uint64 address = (uint64)r;
+      if (address < (uint64)end || address >= PHYSTOP ||
+          address % PGSIZE || count >= MAXPAGES) {
+        ok = 0;
+        break;
+      }
+      uint64 bit = (address - KERNBASE) / PGSIZE;
+      if (seen[bit / 8] & (1 << (bit % 8))) {
+        ok = 0;
+        break;
+      }
+      seen[bit / 8] |= 1 << (bit % 8);
+      count++;
+    }
+    if (count != kmem[i].nfree)
+      ok = 0;
+  }
+  for (int i = NKMEM - 1; i >= 0; i--)
+    release(&kmem[i].lock);
+  release(&checklock);
+  return ok;
 }

@@ -14,6 +14,8 @@ initlock(struct spinlock *lk, char *name)
   lk->name = name;
   lk->locked = 0;
   lk->cpu = 0;
+  lk->acquisitions = 0;
+  lk->failed = 0;
 }
 
 // Acquire the lock.
@@ -34,8 +36,12 @@ acquire(struct spinlock *lk)
   // the C compiler and the processor to not move loads or stores
   // past this point, to ensure that the critical section's memory
   // references happen strictly after the lock is acquired.
+  uint64 failed = 0;
   while (__atomic_exchange_n(&lk->locked, 1, __ATOMIC_ACQUIRE) != 0)
-    ;
+    failed++;
+  // Updated only by the owner; snapshot readers acquire the same lock.
+  lk->acquisitions++;
+  lk->failed += failed;
 
   // Record info about lock acquisition for holding() and debugging.
   lk->cpu = mycpu();

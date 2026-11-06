@@ -9,6 +9,11 @@ struct spinlock;
 struct sleeplock;
 struct stat;
 struct superblock;
+struct labstats;
+void kallocstats(struct labstats*);
+int kalloccheck(void);
+void bcachestats(struct labstats*);
+int bcachecheck(void);
 
 // bio.c
 void            binit(void);

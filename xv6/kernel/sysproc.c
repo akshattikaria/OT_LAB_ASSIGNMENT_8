@@ -6,6 +6,29 @@
 #include "spinlock.h"
 #include "proc.h"
 #include "vm.h"
+#include "labstats.h"
+
+uint64
+sys_labstats(void)
+{
+  uint64 address;
+  argaddr(0, &address);
+  struct labstats s;
+  memset(&s, 0, sizeof(s));
+  s.version = 1;
+  s.percpu = KMEM_PERCPU;
+  s.hash = HASHBCACHE;
+  kallocstats(&s);
+  bcachestats(&s);
+  s.timestamp = r_time();
+  return copyout(myproc()->pagetable, address, (char *)&s, sizeof(s));
+}
+
+uint64
+sys_labcheck(void)
+{
+  return kalloccheck() && bcachecheck() ? 0 : -1;
+}
 
 uint64
 sys_exit(void)

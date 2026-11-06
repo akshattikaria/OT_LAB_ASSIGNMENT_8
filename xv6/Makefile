@@ -65,6 +65,9 @@ DETFLAGS = -ffile-prefix-map=$(CURDIR)=.
 
 CFLAGS = -Wall -Werror -Wno-unknown-attributes -O -fno-omit-frame-pointer -ggdb -gdwarf-2
 CFLAGS += $(DETFLAGS)
+KMEM_PERCPU ?= 0
+HASHBCACHE ?= 0
+CFLAGS += -DKMEM_PERCPU=$(KMEM_PERCPU) -DHASHBCACHE=$(HASHBCACHE)
 CFLAGS += -march=rv64gc
 CFLAGS += -std=gnu99
 CFLAGS += -MD
@@ -131,6 +134,8 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h $K/param.h
 .PRECIOUS: %.o
 
 UPROGS=\
+	$U/_gbench\
+	$U/_gcheck\
 	$U/_cat\
 	$U/_echo\
 	$U/_forktest\

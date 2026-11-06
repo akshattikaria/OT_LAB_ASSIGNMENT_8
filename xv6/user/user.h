@@ -1,6 +1,9 @@
 #define SBRK_ERROR ((char *)-1)
 
 struct stat;
+struct labstats;
+int labstats(struct labstats *);
+int labcheck(void);
 
 // system calls
 int fork(void);
